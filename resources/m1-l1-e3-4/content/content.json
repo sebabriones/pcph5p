@@ -1,0 +1,309 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 14.161220043572984,
+                        "y": 25.821222462742128,
+                        "width": 71.89542483660131,
+                        "height": 64.55305615685532,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "4193522d-43c8-4fe2-b6d1-eccc302b142d",
+                                        "question": "<p>1. Palabra que se refiere a las partes F\u00cdSICAS del computador (que se pueden ver y tocar).<\/p>",
+                                        "answers": [
+                                            "<p>Hardware<\/p>",
+                                            "<p>Freeware<\/p>",
+                                            "<p>Software<\/p>",
+                                            "<p>Malware<\/p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "3ada31ba-8022-4fb9-bb7a-6ef6fc3a6008",
+                                        "question": "<p>2. \u00bfQu\u00e9 componente del Hardware se encarga de \"ayudar\" al Procesador guardando la informaci\u00f3n de manera moment\u00e1nea mientras realiza los procesos?<\/p>",
+                                        "answers": [
+                                            "<p>Memoria RAM<\/p>",
+                                            "<p>Disco Duro<\/p>",
+                                            "<p>Gabinete<\/p>",
+                                            "<p>Pendrive<\/p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "74e7a7f1-c163-4b33-85ba-a97d5295cd79",
+                                        "question": "<p>3. Windows, Android, iOS, Linux son algunos ejemplos de:<\/p>",
+                                        "answers": [
+                                            "<p>Sistemas Operativos<\/p>",
+                                            "<p>Hardware<\/p>",
+                                            "<p>Lenguajes de Programaci\u00f3n<\/p>",
+                                            "<p>Aplicaciones<\/p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "468d2b91-f05f-442a-bde0-d7385ec784f2",
+                                        "question": "<p>4. \u00bfA qu\u00e9 corresponde el Lenguaje Binario?<\/p>",
+                                        "answers": [
+                                            "<p>Lenguaje que utiliza los d\u00edgitos 0 y 1<\/p>",
+                                            "<p>Lenguaje que utiliza letras y n\u00fameros<\/p>",
+                                            "<p>Lenguaje que utiliza los d\u00edgitos del 0 al 9<\/p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 1000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": true,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar soluci\u00f3n",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Soluci\u00f3n",
+                                    "correctText": "\u00a1Correcto!",
+                                    "incorrectText": "\u00a1Incorrecto!",
+                                    "shouldSelect": "Deber\u00eda haber sido seleccionada",
+                                    "shouldNotSelect": "NO deber\u00eda haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentaci\u00f3n",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la soluci\u00f3n. La tarea se calificar\u00e1 con su soluci\u00f3n correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "737b0294-2d0f-46dc-b389-910d8c832d77",
+                            "metadata": {
+                                "contentType": "Single Choice Set",
+                                "license": "U",
+                                "title": "Sin t\u00edtulo Single Choice Set"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 0,
+                        "y": 10.758842692809221,
+                        "width": 60.617538126361666,
+                        "height": 77.46366738822638,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/resources/m1-l1-e3-4/content/images/file-682225b48286d.png",
+                                    "mime": "image\/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1620,
+                                    "height": 1048
+                                }
+                            },
+                            "subContentId": "1981e27f-c715-4162-b731-e5912ad0004b",
+                            "metadata": {
+                                "contentType": "Image",
+                                "license": "U",
+                                "title": "Sin t\u00edtulo Image"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 59.912854030501094,
+                        "y": 15.062379769932909,
+                        "width": 39.99869281045751,
+                        "height": 80.69132019606916,
+                        "action": {
+                            "library": "H5P.Blanks 1.14",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "text": "<p>Escribe en el recuadro todos los n\u00fameros que conforman la palabra que aparece a continuaci\u00f3n:<\/p><p><strong>HOLA<\/strong><\/p>",
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "showSolutions": "Mostrar soluci\u00f3n",
+                                "tryAgain": "Intentar de nuevo",
+                                "checkAnswer": "Comprobar",
+                                "submitAnswer": "Enviar",
+                                "notFilledOut": "Por favor, completa todos los huecos para poder ver la soluci\u00f3n",
+                                "answerIsCorrect": "&#039;:ans&#039; es correcta",
+                                "answerIsWrong": "&#039;:ans&#039; es incorrecta",
+                                "answeredCorrectly": "Contestado correctamente",
+                                "answeredIncorrectly": "Contestado incorrectamente",
+                                "solutionLabel": "Respuesta correcta:",
+                                "inputLabel": "Hueco @num de @total",
+                                "inputHasTipLabel": "Pista disponible",
+                                "tipLabel": "Pista",
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": true,
+                                    "enableCheckButton": true,
+                                    "autoCheck": false,
+                                    "caseSensitive": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "separateLines": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "acceptSpellingErrors": false
+                                },
+                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas ser\u00e1n marcadas como correcta, incorrectas o sin contestar.",
+                                "a11yShowSolution": "Mostrar la soluci\u00f3n. La tarea se marcar\u00e1 con su soluci\u00f3n correcta.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "a11yCheckingModeHeader": "Modo de Comprobaci\u00f3n",
+                                "confirmCheck": {
+                                    "header": "\u00bf Terminar ?",
+                                    "body": "\u00bfEst\u00e1 seguro que desea terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "\u00bfIntentar de nuevo?",
+                                    "body": "\u00bfSeguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "questions": [
+                                    "<p>*0100 1000 0100 1111 0100 1100 0100 0001*<\/p>"
+                                ]
+                            },
+                            "subContentId": "f8c25646-4190-45dd-bc4e-484e874686fe",
+                            "metadata": {
+                                "contentType": "Fill in the Blanks",
+                                "license": "U",
+                                "title": "Sin t\u00edtulo Fill in the Blanks"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        }
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje M\u00e1ximo",
+        "total": "Total",
+        "totalScore": "Puntuaci\u00f3n Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "\u00daltima Diapositiva",
+        "solutionModeTitle": "Salir del modo de soluci\u00f3n",
+        "solutionModeText": "Modo de soluci\u00f3n",
+        "summaryMultipleTaskText": "Tareas m\u00faltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "\u00bfC\u00f3mo te gustar\u00eda imprimir esta presentaci\u00f3n?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin t\u00edtulo",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa direcci\u00f3n siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentaci\u00f3n. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacci\u00f3n no completada",
+        "containsCompleted": "@slideName contiene una interacci\u00f3n completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Env\u00eda tus respuestas",
+        "confirmDialogText": "Esto enviar\u00e1 tus resultados, \u00bfquieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegaci\u00f3n por la presentaci\u00f3n de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

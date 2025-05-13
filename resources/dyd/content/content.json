@@ -1,0 +1,457 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 800,
+                "height": 600
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 3.75,
+                    "y": 63.333333333333336,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "subContentId": "34cb41b4-664b-48e5-bec9-7ed9e644973f",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 3.75,
+                    "y": 76.66666666666667,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "0f547107-99df-452b-a65c-fb4b317c49d7"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 78.75,
+                    "y": 63.333333333333336,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "79dbdf7d-d935-4393-a773-c7cf586e6f2b"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 41.25,
+                    "y": 90,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "caf0810d-7888-4be2-843a-369432b719b9"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 22.5,
+                    "y": 90,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "ff059a9e-1d81-4864-9ef6-3c22409bee67"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 3.75,
+                    "y": 90,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "f16f2422-f83e-4284-a53f-f9b462d4328f"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 22.5,
+                    "y": 76.66666666666667,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "3d5fc658-a002-4e0d-9a55-84474039c432"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 78.75,
+                    "y": 90,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "53c791bc-b1d8-4db4-84c5-d0eee1bd2a2f"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 22.5,
+                    "y": 63.333333333333336,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "d8334e56-5400-42e6-aef0-5944cf8a8fb6"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 78.75,
+                    "y": 76.66666666666667,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "1b29810e-3ab6-494f-8ec1-f9d1dfaf5f34"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 60,
+                    "y": 63.333333333333336,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "5c5f44b9-66f2-4f62-85aa-939e84925a25"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 41.25,
+                    "y": 76.66666666666667,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "0fc78812-7d9b-4745-8257-1be7b82dabf3"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 60,
+                    "y": 90,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "3e772758-a931-4463-9745-5bc1dabd1326"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 60,
+                    "y": 76.66666666666667,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "a5ceea53-4588-4880-aab1-ff0da77f34c1"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 41.25,
+                    "y": 63.333333333333336,
+                    "width": 6.70078125,
+                    "height": 2.32578125,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Elemento</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "a343e085-31da-4703-8800-903a87a9cde8"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 18.75,
+                    "y": 10,
+                    "width": 32.5,
+                    "height": 18.125,
+                    "correctElements": [
+                        "0",
+                        "2",
+                        "4",
+                        "6",
+                        "8",
+                        "10",
+                        "12",
+                        "14"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Zona</div>\n"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": true
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

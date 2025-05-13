@@ -1,0 +1,359 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 600
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 22.831050228310502,
+                    "y": 17.123287671232877,
+                    "width": 9.631849315068493,
+                    "height": 9.631849315068493,
+                    "dropZones": [],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": true,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "images/image-uR8A88X6.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 130,
+                                "height": 130
+                            }
+                        },
+                        "subContentId": "35be5421-89ee-47ba-90f7-eb0614b41ae8",
+                        "metadata": {
+                            "contentType": "Imagen",
+                            "license": "U",
+                            "title": "Sin título Imagen",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 60.50228310502283,
+                    "y": 17.123287671232877,
+                    "width": 9.631849315068493,
+                    "height": 9.631825235445206,
+                    "dropZones": [],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": true,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "images/image-KYvKCJvm.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 130,
+                                "height": 130
+                            }
+                        },
+                        "subContentId": "291ba93b-af63-4d1a-b096-02315f76f559",
+                        "metadata": {
+                            "contentType": "Imagen",
+                            "license": "U",
+                            "title": "Sin título Imagen",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 14.840182648401827,
+                    "y": 63.35616438356165,
+                    "width": 8.191085188356164,
+                    "height": 2.4119772046232875,
+                    "dropZones": [
+                        1,
+                        "1",
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Computadores de escritorio</p>\n"
+                        },
+                        "subContentId": "59d74bdb-23aa-4b04-8ea6-18651164bbf4",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 33.10502283105023,
+                    "y": 63.35616438356165,
+                    "width": 8.191061108732876,
+                    "height": 2.411975599315068,
+                    "dropZones": [
+                        1,
+                        "1",
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Notebooks</p>\n"
+                        },
+                        "subContentId": "2c13d121-b3b9-4cd1-ab7d-1deb5eb34c01",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 51.369863013698634,
+                    "y": 63.35616438356165,
+                    "width": 8.191061108732876,
+                    "height": 2.411975599315068,
+                    "dropZones": [
+                        1,
+                        "1",
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Tableta</p>\n"
+                        },
+                        "subContentId": "603d3564-6bdb-4d21-8a22-3c5b50bc0263",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 69.63470319634703,
+                    "y": 63.35616438356165,
+                    "width": 8.191061108732876,
+                    "height": 2.411975599315068,
+                    "dropZones": [
+                        1,
+                        "1",
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Teléfonos inteligentes</p>\n"
+                        },
+                        "subContentId": "e32c06fe-21f2-464f-b0f8-510121e694f8",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 23.972602739726028,
+                    "y": 75.34246575342466,
+                    "width": 8.191086793664383,
+                    "height": 2.411975599315068,
+                    "dropZones": [
+                        1,
+                        "1",
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Servidores</p>\n"
+                        },
+                        "subContentId": "fe77eaf5-4401-491a-b93f-6de006d9f23d",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 42.23744292237443,
+                    "y": 75.34246575342466,
+                    "width": 8.191086793664383,
+                    "height": 2.411975599315068,
+                    "dropZones": [
+                        1,
+                        "1",
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Supercomputador</p>\n"
+                        },
+                        "subContentId": "82de1d75-995a-4c44-8798-29a31f7b0b67",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 60.50228310502283,
+                    "y": 75.34246575342466,
+                    "width": 8.191086793664383,
+                    "height": 2.411975599315068,
+                    "dropZones": [
+                        1,
+                        "1",
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Servidores de red</p>\n"
+                        },
+                        "subContentId": "7d78b940-63c1-41df-bf51-24b78801023e",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 14.840182648401827,
+                    "y": 10.273972602739727,
+                    "width": 17.97945205479452,
+                    "height": 17.97945205479452,
+                    "correctElements": [
+                        "3",
+                        "5",
+                        "7"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona1</div>\n"
+                },
+                {
+                    "x": 53.65296803652968,
+                    "y": 10.273972602739727,
+                    "width": 17.97945205479452,
+                    "height": 17.97945205479452,
+                    "correctElements": [
+                        "2",
+                        "4",
+                        "6",
+                        "8"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona2</div>\n"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}
