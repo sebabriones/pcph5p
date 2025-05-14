@@ -60,8 +60,8 @@
                                 ],
                                 "behaviour": {
                                     "autoContinue": true,
-                                    "timeoutCorrect": 1000,
-                                    "timeoutWrong": 3000,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 1000,
                                     "soundEffectsEnabled": false,
                                     "enableRetry": true,
                                     "enableSolutionsButton": true,

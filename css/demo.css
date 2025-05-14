@@ -143,11 +143,12 @@ a {
 
 .instructions-text{
     word-break: break-all;
+    padding: 15px 0;
 }
 
 .tab-content {
     background-color: var(--tabs-lite-color); 
-    padding: 20px;
+    padding: 10px 20px;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 0 0 10px 0;
     position: relative;
@@ -167,8 +168,8 @@ a {
 }
 
 .loader {
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
     border:10px solid #FFF;
     border-radius: 50%;
     position: relative;

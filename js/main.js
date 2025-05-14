@@ -6,10 +6,11 @@ jQuery(document).ready(()=>{
 
     const options = {
         //h5pJsonPath:  'resources/dyd',
-        //h5pJsonPath:  'resources/M1_L1_E1(respaldo)',
+        h5pJsonPath:  'resources/M1_L1_E1(respaldo)',
         //h5pJsonPath:  'resources/pasapalabra',
         //h5pJsonPath:  'resources/ordenar',
-        h5pJsonPath:  'resources/m1-l1-e3-4',
+        //h5pJsonPath:  'resources/m1-l1-e3-4',
+        //h5pJsonPath:  'resources/shuffle',
         frameCss: 'assets/styles/h5p.css',
         frameJs: 'assets/frame.bundle.js',
         copyright: false,
@@ -50,7 +51,9 @@ jQuery(document).ready(()=>{
                                                                                                                     ? 'Ordene la secuencia de acuerdo a los pasos de inicio de una computadora.'
                                                                                                                     : (options.h5pJsonPath=='resources/M1_L1_E1(respaldo)')
                                                                                                                         ? 'Clasifica el tipo de dispositivo electrónico digital arrastrando los elementos al lugar que corresponda.'
-                                                                                                                        : ''
+                                                                                                                        : (options.h5pJsonPath=='resources/m1-l1-e3-4')
+                                                                                                                            ? 'Instrucciones'
+                                                                                                                            : ''
                                                                                 }</div>
                                                                                 <span class="loader"></span>
                                                                             </div>
