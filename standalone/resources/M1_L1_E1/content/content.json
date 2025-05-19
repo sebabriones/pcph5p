@@ -7,97 +7,35 @@
         "settings": {
             "size": {
                 "width": 900,
-                "height": 600
+                "height": 537
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/M1_L1_E1/content/images/m1l1e1.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1074
             }
         },
         "task": {
             "elements": [
                 {
-                    "x": 22.831050228310502,
-                    "y": 17.123287671232877,
-                    "width": 9.631849315068493,
-                    "height": 9.631849315068493,
-                    "dropZones": [],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": true,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "images/image-uR8A88X6.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 130,
-                                "height": 130
-                            }
-                        },
-                        "subContentId": "35be5421-89ee-47ba-90f7-eb0614b41ae8",
-                        "metadata": {
-                            "contentType": "Imagen",
-                            "license": "U",
-                            "title": "Sin título Imagen",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 100,
-                    "multiple": false
-                },
-                {
-                    "x": 60.50228310502283,
-                    "y": 17.123287671232877,
-                    "width": 9.631849315068493,
-                    "height": 9.631825235445206,
-                    "dropZones": [],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": true,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "images/image-KYvKCJvm.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 130,
-                                "height": 130
-                            }
-                        },
-                        "subContentId": "291ba93b-af63-4d1a-b096-02315f76f559",
-                        "metadata": {
-                            "contentType": "Imagen",
-                            "license": "U",
-                            "title": "Sin título Imagen",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 100,
-                    "multiple": false
-                },
-                {
-                    "x": 14.840182648401827,
-                    "y": 63.35616438356165,
-                    "width": 8.191085188356164,
-                    "height": 2.4119772046232875,
+                    "x": 15.5,
+                    "y": 66,
+                    "width": 8.39,
+                    "height": 2.026701626712329,
                     "dropZones": [
-                        1,
-                        "1",
-                        "0"
+                        "0",
+                        "1"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Computadores de escritorio</p>\n"
+                            "text": "<p style=\"text-align:center\">Computadores</p>\n\n<p style=\"text-align:center\">de escritorio</p>\n"
                         },
-                        "subContentId": "59d74bdb-23aa-4b04-8ea6-18651164bbf4",
+                        "subContentId": "25765744-9098-44a2-8d25-a646d5050b22",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -110,163 +48,157 @@
                     "multiple": false
                 },
                 {
-                    "x": 33.10502283105023,
-                    "y": 63.35616438356165,
-                    "width": 8.191061108732876,
-                    "height": 2.411975599315068,
+                    "x": 33.2,
+                    "y": 66,
+                    "width": 8.39,
+                    "height": 2.026701626712329,
                     "dropZones": [
-                        1,
-                        "1",
-                        "0"
+                        "0",
+                        "1"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Notebooks</p>\n"
+                            "text": "<p style=\"text-align:center\">Servidores</p>\n"
                         },
-                        "subContentId": "2c13d121-b3b9-4cd1-ab7d-1deb5eb34c01",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
                             "title": "Sin título Texto",
                             "authors": [],
                             "changes": []
-                        }
+                        },
+                        "subContentId": "913c99e3-7cc7-456c-84d8-9f14816ead48"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
                 },
                 {
-                    "x": 51.369863013698634,
-                    "y": 63.35616438356165,
-                    "width": 8.191061108732876,
-                    "height": 2.411975599315068,
+                    "x": 50.8,
+                    "y": 66,
+                    "width": 8.39,
+                    "height": 2.026701626712329,
                     "dropZones": [
-                        1,
-                        "1",
-                        "0"
+                        "0",
+                        "1"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Tableta</p>\n"
+                            "text": "<p style=\"text-align:center\">Servidores</p>\n\n<p style=\"text-align:center\">de red</p>\n"
                         },
-                        "subContentId": "603d3564-6bdb-4d21-8a22-3c5b50bc0263",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
                             "title": "Sin título Texto",
                             "authors": [],
                             "changes": []
-                        }
+                        },
+                        "subContentId": "8602a3e0-ed19-4bc3-93d7-62a0f058710f"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
                 },
                 {
-                    "x": 69.63470319634703,
-                    "y": 63.35616438356165,
-                    "width": 8.191061108732876,
-                    "height": 2.411975599315068,
+                    "x": 68.52,
+                    "y": 66,
+                    "width": 8.39,
+                    "height": 2.026701626712329,
                     "dropZones": [
-                        1,
-                        "1",
-                        "0"
+                        "0",
+                        "1"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Teléfonos inteligentes</p>\n"
+                            "text": "<p style=\"text-align:center\">Teléfonos Inteligentes</p>\n"
                         },
-                        "subContentId": "e32c06fe-21f2-464f-b0f8-510121e694f8",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
                             "title": "Sin título Texto",
                             "authors": [],
                             "changes": []
-                        }
+                        },
+                        "subContentId": "df7c9ed7-9db1-4266-b546-18caa2bc7085"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
                 },
                 {
-                    "x": 23.972602739726028,
-                    "y": 75.34246575342466,
-                    "width": 8.191086793664383,
-                    "height": 2.411975599315068,
+                    "x": 21.47,
+                    "y": 76.65,
+                    "width": 8.39,
+                    "height": 2.026703232020548,
                     "dropZones": [
-                        1,
-                        "1",
-                        "0"
+                        "0",
+                        "1"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Servidores</p>\n"
+                            "text": "<p style=\"text-align:center\">Notebook</p>\n"
                         },
-                        "subContentId": "fe77eaf5-4401-491a-b93f-6de006d9f23d",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
                             "title": "Sin título Texto",
                             "authors": [],
                             "changes": []
-                        }
+                        },
+                        "subContentId": "ae6c3edc-8c82-4134-99b7-153b3e8d3e03"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
                 },
                 {
-                    "x": 42.23744292237443,
-                    "y": 75.34246575342466,
-                    "width": 8.191086793664383,
-                    "height": 2.411975599315068,
+                    "x": 39.2,
+                    "y": 76.65,
+                    "width": 11.5,
+                    "height": 2.026701626712329,
                     "dropZones": [
-                        1,
-                        "1",
-                        "0"
+                        "0",
+                        "1"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Supercomputador</p>\n"
+                            "text": "<p style=\"text-align:center\">Supercomputadores</p>\n"
                         },
-                        "subContentId": "82de1d75-995a-4c44-8798-29a31f7b0b67",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
                             "title": "Sin título Texto",
                             "authors": [],
                             "changes": []
-                        }
+                        },
+                        "subContentId": "45f8aada-82ea-4cdb-8d8e-695c80e8c6fc"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
                 },
                 {
-                    "x": 60.50228310502283,
-                    "y": 75.34246575342466,
-                    "width": 8.191086793664383,
-                    "height": 2.411975599315068,
+                    "x": 62.4,
+                    "y": 76.65,
+                    "width": 8.39,
+                    "height": 2.026701626712329,
                     "dropZones": [
-                        1,
-                        "1",
-                        "0"
+                        "0",
+                        "1"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Servidores de red</p>\n"
+                            "text": "<p style=\"text-align:center\">Tableta</p>\n"
                         },
-                        "subContentId": "7d78b940-63c1-41df-bf51-24b78801023e",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
                             "title": "Sin título Texto",
                             "authors": [],
                             "changes": []
-                        }
+                        },
+                        "subContentId": "f172defa-c301-4477-b947-2a89694c1c55"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
@@ -274,14 +206,14 @@
             ],
             "dropZones": [
                 {
-                    "x": 14.840182648401827,
-                    "y": 10.273972602739727,
-                    "width": 17.97945205479452,
-                    "height": 17.97945205479452,
+                    "x": 11.187214611872147,
+                    "y": 9.566228916031468,
+                    "width": 19.90579783818493,
+                    "height": 16.181506849315067,
                     "correctElements": [
-                        "3",
+                        "1",
                         "5",
-                        "7"
+                        "2"
                     ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
@@ -293,18 +225,18 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>zona1</div>\n"
+                    "label": "<div>zona 1</div>\n"
                 },
                 {
-                    "x": 53.65296803652968,
-                    "y": 10.273972602739727,
-                    "width": 17.97945205479452,
-                    "height": 17.97945205479452,
+                    "x": 53.42465753424658,
+                    "y": 9.18357975939021,
+                    "width": 19.90579783818493,
+                    "height": 16.181506849315067,
                     "correctElements": [
-                        "2",
+                        "0",
                         "4",
-                        "6",
-                        "8"
+                        "3",
+                        "6"
                     ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
@@ -316,7 +248,7 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>zona2</div>\n"
+                    "label": "<div>zona 2</div>\n"
                 }
             ]
         }

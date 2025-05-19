@@ -20,6 +20,7 @@
         <li>Módulo 3</li>
         <li>Otros</li>
             <ul>
+                <li><a href="./standalone/h5p.php?id=ordenar">Ordenar</a></li>
                 <li><a href="./standalone/h5p.php?id=pasapalabra">Pasapalabra</a></li>
             </ul>
     </ul>

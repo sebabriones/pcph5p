@@ -17,8 +17,11 @@ jQuery(document).ready(()=>{
     }
 
     if(id == 'm1l1e1'){
-        options.h5pJsonPath = 'resources/M1_L1_E1(respaldo)';
-    }else if(id == 'm1l1e2'){
+        options.h5pJsonPath = 'resources/M1_L1_E1';
+        //options.h5pJsonPath = 'resources/M1_L1_E1(respaldo)';
+    }if(id == 'm1l1e2'){
+        options.h5pJsonPath = 'resources/M1_L1_E2';
+    }else if(id == 'ordenar'){
         options.h5pJsonPath = 'resources/ordenar';
     }else if(id == 'pasapalabra'){
         options.h5pJsonPath = 'resources/pasapalabra';
