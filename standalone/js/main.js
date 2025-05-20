@@ -17,8 +17,7 @@ jQuery(document).ready(()=>{
     }
 
     if(id == 'm1l1e1'){
-        options.h5pJsonPath = 'resources/m1_l1_e1_v2';
-        //options.h5pJsonPath = 'resources/M1_L1_E1';
+        options.h5pJsonPath = 'resources/m1_l1_e1';
         //options.h5pJsonPath = 'resources/M1_L1_E1(respaldo)';
     }if(id == 'm1l1e2'){
         options.h5pJsonPath = 'resources/M1_L1_E2';
