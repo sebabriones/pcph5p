@@ -7,25 +7,25 @@
         "settings": {
             "size": {
                 "width": 900,
-                "height": 537
+                "height": 538
             },
             "background": {
-                "path": "http://localhost/pcph5p/standalone/resources/M1_L1_E1/content/images/m1l1e1.png",
+                "path": "http://localhost/pcph5p/standalone/resources/m1_l1_e1_v2/content/images/m1l1e1.png",
                 "mime": "image/png",
                 "copyright": {
                     "license": "U"
                 },
                 "width": 1800,
-                "height": 1074
+                "height": 1080
             }
         },
         "task": {
             "elements": [
                 {
-                    "x": 15.5,
-                    "y": 66,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 14.840182648401827,
+                    "y": 66.83371813895398,
+                    "width": 8.190089897260274,
+                    "height": 2.4119589041095892,
                     "dropZones": [
                         "0",
                         "1"
@@ -48,10 +48,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 33.2,
-                    "y": 66,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 33.10502283105023,
+                    "y": 66.83968596805828,
+                    "width": 7.934203767123288,
+                    "height": 2.6678215967465753,
                     "dropZones": [
                         "0",
                         "1"
@@ -74,10 +74,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 50.8,
-                    "y": 66,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 51.369863013698634,
+                    "y": 66.83968596805828,
+                    "width": 7.934203767123288,
+                    "height": 2.6678215967465753,
                     "dropZones": [
                         "0",
                         "1"
@@ -100,10 +100,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 68.52,
-                    "y": 66,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 69.63470319634703,
+                    "y": 66.83968596805828,
+                    "width": 7.933240582191781,
+                    "height": 2.6678215967465753,
                     "dropZones": [
                         "0",
                         "1"
@@ -111,7 +111,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Teléfonos Inteligentes</p>\n"
+                            "text": "<p style=\"text-align:center\">Teléfonos</p>\n\n<p style=\"text-align:center\">Inteligentes</p>\n"
                         },
                         "metadata": {
                             "contentType": "Texto",
@@ -126,9 +126,9 @@
                     "multiple": false
                 },
                 {
-                    "x": 21.47,
-                    "y": 76.65,
-                    "width": 8.39,
+                    "x": 23.972602739726028,
+                    "y": 80.20762316166993,
+                    "width": 7.9342438998287665,
                     "height": 2.026703232020548,
                     "dropZones": [
                         "0",
@@ -152,10 +152,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 39.2,
-                    "y": 76.65,
-                    "width": 11.5,
-                    "height": 2.026701626712329,
+                    "x": 42.23744292237443,
+                    "y": 80.20762316166993,
+                    "width": 7.934203767123288,
+                    "height": 2.0256983090753424,
                     "dropZones": [
                         "0",
                         "1"
@@ -163,7 +163,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Supercomputadores</p>\n"
+                            "text": "<p style=\"text-align:center\"><span style=\"font-size:1em\">Super-</span></p>\n\n<p style=\"text-align:center\"><span style=\"font-size:1em\">computadores</span></p>\n"
                         },
                         "metadata": {
                             "contentType": "Texto",
@@ -178,10 +178,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 62.4,
-                    "y": 76.65,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 60.50228310502283,
+                    "y": 80.20762316166993,
+                    "width": 7.934203767123288,
+                    "height": 2.0256983090753424,
                     "dropZones": [
                         "0",
                         "1"
@@ -206,8 +206,8 @@
             ],
             "dropZones": [
                 {
-                    "x": 11.187214611872147,
-                    "y": 9.566228916031468,
+                    "x": 10.273972602739727,
+                    "y": 13.367937193611656,
                     "width": 19.90579783818493,
                     "height": 16.181506849315067,
                     "correctElements": [
@@ -228,8 +228,8 @@
                     "label": "<div>zona 1</div>\n"
                 },
                 {
-                    "x": 53.42465753424658,
-                    "y": 9.18357975939021,
+                    "x": 52.51141552511416,
+                    "y": 13.367937193611656,
                     "width": 19.90579783818493,
                     "height": 16.181506849315067,
                     "correctElements": [
