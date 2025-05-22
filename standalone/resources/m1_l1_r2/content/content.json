@@ -1,1 +1,1035 @@
-{"presentation":{"slides":[{"elements":[{"x":0,"y":0,"width":100,"height":99.99677234719216,"action":{"library":"H5P.DragQuestion 1.14","params":{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuaci\u00f3n m\u00e1s baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images\/background-682f8ccd6ce54.png","mime":"image\/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":71.91780821917808,"y":13.31826466816592,"width":8.631549657534245,"height":2.429033604452054,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Memoria principal<\/p>"},"subContentId":"97e7660c-3dfb-496c-a6bf-769bfd4e8579","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":24.730947271087565,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Matem\u00e1ticas<\/p>"},"subContentId":"b3b0e893-7414-41fb-9016-84e14294be8a","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":36.14660270094407,"width":8.631848886986301,"height":2.067836044520548,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">\u00c1baco<\/p>"},"subContentId":"bed4a690-7d98-4719-9204-7979e7eb676b","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":47.56523095773543,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Placa madre<\/p>"},"subContentId":"9565d982-898e-4c26-b228-90e26814e56d","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":58.98088638759194,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Computador<\/p>"},"subContentId":"d56ef55e-59d4-4f3c-88f0-3f6eb38d6429","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":70.39654181744844,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Computaci\u00f3n<\/p>"},"subContentId":"b76e720e-d354-421b-a487-e7f2bf1f7fbe","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":70.77625570776256,"y":79.90958800899553,"width":9.273972174657533,"height":2.7099593321917808,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Inteligencia Artificial<\/p>"},"subContentId":"237c64e1-191c-4498-8535-1d7e5cec86e2","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false}],"dropZones":[{"x":11.415525114155251,"y":19.026092383094173,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["5"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 1<\/div>"},{"x":11.415525114155251,"y":36.143629874009214,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["4"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 2<\/div>"},{"x":11.415525114155251,"y":53.267113018793964,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["3"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 3<\/div>"},{"x":11.415525114155251,"y":72.29320540188814,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["0"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 4<\/div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":true,"enableCheckButton":true,"singlePoint":false,"applyPenalties":false,"enableScoreExplanation":true,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":false,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocaci\u00f3n {num}.","dropzonePrefix":"Zona de colocaci\u00f3n {num} de {total}.","noDropzone":"No es zona de colocaci\u00f3n.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentaci\u00f3n","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicaci\u00f3n de la puntuaci\u00f3n","a11yCheck":"Comprobar las respuestas. Las respuestas ser\u00e1n marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}},"subContentId":"8c927425-8152-4488-acc6-2ebc38310ae0","metadata":{"contentType":"Drag and Drop","license":"U","title":"r2-1"}},"alwaysDisplayComments":false,"backgroundOpacity":0,"displayAsButton":false,"buttonSize":"big","goToSlideType":"specified","invisible":false,"solution":""}],"slideBackgroundSelector":{}},{"elements":[{"x":0,"y":0,"width":100,"height":99.99677234719216,"action":{"library":"H5P.DragQuestion 1.14","params":{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuaci\u00f3n m\u00e1s baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images\/background-682f8f93859b5.png","mime":"image\/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":71.91780821917808,"y":13.31826466816592,"width":8.631549657534245,"height":2.429033604452054,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Procesador<\/p>"},"subContentId":"5f9bbdc4-ec28-4b46-975c-0e1ebfc8ac29","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":24.730947271087565,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Bit<\/p>"},"subContentId":"7d5f4235-444e-4fc3-af32-941c464ca12d","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":36.14660270094407,"width":8.631848886986301,"height":2.067836044520548,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Byte<\/p>"},"subContentId":"74b0146f-e530-4bb7-ac4f-f66f7863034f","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":47.56523095773543,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Bytes<\/p>"},"subContentId":"f81320c0-ecc5-41fa-86c4-8aaee53dab26","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":58.98088638759194,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Memoria secundaria<\/p>"},"subContentId":"cbc40de5-3ce6-4af9-8cb3-a63b991eda26","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":70.39654181744844,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Megabytes<\/p>"},"subContentId":"55feb413-3ba0-4df8-b28b-a0d9d514e735","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":73.05936073059361,"y":79.90958800899553,"width":8.261301369863014,"height":2.481202910958904,"dropZones":["0","1","2","3"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Software<\/p>"},"subContentId":"d2546083-1089-47bb-83a6-ddf261247eb1","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false}],"dropZones":[{"x":11.415525114155251,"y":19.026092383094173,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["4"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 1<\/div>"},{"x":11.415525114155251,"y":36.143629874009214,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["1"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 2<\/div>"},{"x":11.415525114155251,"y":53.267113018793964,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["2"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 3<\/div>"},{"x":11.415525114155251,"y":72.29320540188814,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["6"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 4<\/div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":false,"enableCheckButton":true,"singlePoint":false,"applyPenalties":false,"enableScoreExplanation":true,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":false,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocaci\u00f3n {num}.","dropzonePrefix":"Zona de colocaci\u00f3n {num} de {total}.","noDropzone":"No es zona de colocaci\u00f3n.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentaci\u00f3n","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicaci\u00f3n de la puntuaci\u00f3n","a11yCheck":"Comprobar las respuestas. Las respuestas ser\u00e1n marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}},"subContentId":"bfc41733-6609-4b31-8e05-3339ab139fd7","metadata":{"contentType":"Drag and Drop","license":"U","title":"r2-2"}},"alwaysDisplayComments":false,"backgroundOpacity":0,"displayAsButton":false,"buttonSize":"big","goToSlideType":"specified","invisible":false,"solution":""}],"slideBackgroundSelector":{}},{"elements":[{"x":0,"y":0,"width":100,"height":99.99677234719216,"action":{"library":"H5P.DragQuestion 1.14","params":{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuaci\u00f3n m\u00e1s baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images\/background-682f90f4c822b.png","mime":"image\/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":71.91780821917808,"y":36.14957552787893,"width":8.631549657534245,"height":2.0648293022260273,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Dispositivos<\/p><p style=\"text-align:center;\">de entrada<\/p>"},"subContentId":"bf6c3dff-2265-4f55-ac90-25f76cea6cb8","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":45.659648892491155,"width":8.631549657534245,"height":2.4821917808219176,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Computador personal<\/p>"},"subContentId":"ee90cfde-b328-4754-935d-dbcfba0a7052","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":58.98088638759194,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Hardware<\/p>"},"subContentId":"626cd343-0e2b-4094-b330-1f09fa84a9c4","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":68.49393257913903,"width":8.631549657534245,"height":2.0684935787671233,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Super-<\/p><p style=\"text-align:center;\">computador<\/p>"},"subContentId":"cd62c686-8954-480a-a40e-5b6b6d18a7e6","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false},{"x":71.91780821917808,"y":24.733920098022423,"width":8.631549657534245,"height":2.429033604452054,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p style=\"text-align:center;\">Servidor en Red<\/p>"},"subContentId":"c22af13f-fc9f-4a43-87d2-89487a69ced5","metadata":{"contentType":"Text","license":"U","title":"Sin t\u00edtulo Text"}},"backgroundOpacity":100,"multiple":false}],"dropZones":[{"x":11.415525114155251,"y":26.63652933633184,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["2"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 1<\/div>"},{"x":11.415525114155251,"y":43.7600124811166,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["4"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 2<\/div>"},{"x":11.415525114155251,"y":62.78610486421077,"width":31.46404109589041,"height":3.852739726027397,"correctElements":["1"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"label":"<div>Zona 3<\/div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":false,"enableCheckButton":true,"singlePoint":false,"applyPenalties":false,"enableScoreExplanation":true,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":false,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocaci\u00f3n {num}.","dropzonePrefix":"Zona de colocaci\u00f3n {num} de {total}.","noDropzone":"No es zona de colocaci\u00f3n.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentaci\u00f3n","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicaci\u00f3n de la puntuaci\u00f3n","a11yCheck":"Comprobar las respuestas. Las respuestas ser\u00e1n marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}},"subContentId":"399cb1dd-6e96-4101-bf99-c8d9cd915510","metadata":{"contentType":"Drag and Drop","license":"U","title":"r2-3"}},"alwaysDisplayComments":false,"backgroundOpacity":0,"displayAsButton":false,"buttonSize":"big","goToSlideType":"specified","invisible":false,"solution":""}],"slideBackgroundSelector":{}}],"keywordListEnabled":false,"globalBackgroundSelector":{},"keywordListAlwaysShow":false,"keywordListAutoHide":false,"keywordListOpacity":90},"override":{"activeSurface":false,"hideSummarySlide":false,"summarySlideSolutionButton":false,"summarySlideRetryButton":true,"enablePrintButton":false,"social":{"showFacebookShare":false,"facebookShare":{"url":"@currentpageurl","quote":"He conseguido @score de @maxScore en una tarea en @currentpageurl."},"showTwitterShare":false,"twitterShare":{"statement":"He conseguido @score de @maxScore en una tarea en @currentpageurl.","url":"@currentpageurl","hashtags":"h5p, curso"},"showGoogleShare":false,"googleShareUrl":"@currentpageurl"},"showSolutionButton":"off","retryButton":"off"},"l10n":{"slide":"Diapositiva","score":"Puntaje","yourScore":"Tu Puntaje","maxScore":"Puntaje M\u00e1ximo","total":"Total","totalScore":"Puntuaci\u00f3n Total","showSolutions":"Mostrar soluciones","retry":"Intentar de nuevo","exportAnswers":"Exportar texto","hideKeywords":"Ocultar lista de palabras clave","showKeywords":"Mostrar lista de palabras clave","fullscreen":"Pantalla Completa","exitFullscreen":"Salir de Pantalla completa","prevSlide":"Diapositiva anterior","nextSlide":"Diapositiva siguiente","currentSlide":"Diapositiva actual","lastSlide":"\u00daltima Diapositiva","solutionModeTitle":"Salir del modo de soluci\u00f3n","solutionModeText":"Modo de soluci\u00f3n","summaryMultipleTaskText":"Tareas m\u00faltiples","scoreMessage":"Has obtenido:","shareFacebook":"Compartir en Facebook","shareTwitter":"Compartir en Twitter","shareGoogle":"Compartir en Google+","summary":"Resumen","solutionsButtonTitle":"Mostrar comentarios","printTitle":"Imprimir","printIngress":"\u00bfC\u00f3mo te gustar\u00eda imprimir esta presentaci\u00f3n?","printAllSlides":"Imprimir todas las diapositivas","printCurrentSlide":"Imprimir diapositiva actual","noTitle":"Sin t\u00edtulo","accessibilitySlideNavigationExplanation":"Usa las flecha izquierda y derecha para cambiar la diapositiva en esa direcci\u00f3n siempre que se haya seleccionado el lienzo","accessibilityCanvasLabel":"Lienzo de presentaci\u00f3n. Usa las flechas izquierda y derecha para moverte entre diapositivas.","accessibilityProgressBarLabel":"Elegir diapositiva para mostrar","containsNotCompleted":"@slideName contiene una interacci\u00f3n no completada","containsCompleted":"@slideName contiene una interacci\u00f3n completada","slideCount":"Diapositiva @index de @total","containsOnlyCorrect":"@slideName solamente contiene respuestas correctas","containsIncorrectAnswers":"@slideName contiene respuestas incorrectas","shareResult":"Compartir Resultado","accessibilityTotalScore":"Has obtenido @score de un total de @maxScore puntos","accessibilityEnteredFullscreen":"Has pasado a pantalla completa","accessibilityExitedFullscreen":"Has salido de pantalla completa","confirmDialogHeader":"Env\u00eda tus respuestas","confirmDialogText":"Esto enviar\u00e1 tus resultados, \u00bfquieres continuar?","confirmDialogConfirmText":"Enviar y ver resultados","slideshowNavigationLabel":"Navegaci\u00f3n por la presentaci\u00f3n de diapositivas","confirmDialogConfirmLabel":"Confirmar","confirmDialogCancelLabel":"Cancelar"}}
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "width": 100,
+                        "height": 99.99677234719216,
+                        "action": {
+                            "library": "H5P.DragQuestion 1.14",
+                            "params": {
+                                "scoreShow": "Comprobar",
+                                "submit": "Enviar",
+                                "tryAgain": "Intentar de nuevo",
+                                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuaci\u00f3n m\u00e1s baja posible es 0.",
+                                "question": {
+                                    "settings": {
+                                        "size": {
+                                            "width": 900,
+                                            "height": 540
+                                        },
+                                        "background": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m1_l1_r2/content/images/m1l1r2-1.png",
+                                            "mime": "image\/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 1800,
+                                            "height": 1080
+                                        }
+                                    },
+                                    "task": {
+                                        "elements": [
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 13.31826466816592,
+                                                "width": 8.631549657534245,
+                                                "height": 2.429033604452054,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Memoria principal<\/p>"
+                                                    },
+                                                    "subContentId": "97e7660c-3dfb-496c-a6bf-769bfd4e8579",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 24.730947271087565,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Matem\u00e1ticas<\/p>"
+                                                    },
+                                                    "subContentId": "b3b0e893-7414-41fb-9016-84e14294be8a",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 36.14660270094407,
+                                                "width": 8.631848886986301,
+                                                "height": 2.067836044520548,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">\u00c1baco<\/p>"
+                                                    },
+                                                    "subContentId": "bed4a690-7d98-4719-9204-7979e7eb676b",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 47.56523095773543,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Placa madre<\/p>"
+                                                    },
+                                                    "subContentId": "9565d982-898e-4c26-b228-90e26814e56d",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 58.98088638759194,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Computador<\/p>"
+                                                    },
+                                                    "subContentId": "d56ef55e-59d4-4f3c-88f0-3f6eb38d6429",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 70.39654181744844,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Computaci\u00f3n<\/p>"
+                                                    },
+                                                    "subContentId": "b76e720e-d354-421b-a487-e7f2bf1f7fbe",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 70.77625570776256,
+                                                "y": 79.90958800899553,
+                                                "width": 9.273972174657533,
+                                                "height": 2.7099593321917808,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Inteligencia Artificial<\/p>"
+                                                    },
+                                                    "subContentId": "237c64e1-191c-4498-8535-1d7e5cec86e2",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            }
+                                        ],
+                                        "dropZones": [
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 19.026092383094173,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "5"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 1<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 36.143629874009214,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "4"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 2<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 53.267113018793964,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "3"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 3<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 72.29320540188814,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "0"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 4<\/div>"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableCheckButton": true,
+                                    "singlePoint": false,
+                                    "applyPenalties": false,
+                                    "enableScoreExplanation": true,
+                                    "dropZoneHighlighting": "dragging",
+                                    "autoAlignSpacing": 2,
+                                    "enableFullScreen": false,
+                                    "showScorePoints": false,
+                                    "showTitle": false
+                                },
+                                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                                "grabbableSuffix": "Colocado en zona de colocaci\u00f3n {num}.",
+                                "dropzonePrefix": "Zona de colocaci\u00f3n {num} de {total}.",
+                                "noDropzone": "No es zona de colocaci\u00f3n.",
+                                "tipLabel": "Mostrar pista.",
+                                "tipAvailable": "Pista disponible",
+                                "correctAnswer": "Respuesta correcta",
+                                "wrongAnswer": "Respuesta incorrecta",
+                                "feedbackHeader": "Retroalimentaci\u00f3n",
+                                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                                "scoreExplanationButtonLabel": "Mostrar explicaci\u00f3n de la puntuaci\u00f3n",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas ser\u00e1n marcadas como correcta, incorrecta o sin contestar.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "localize": {
+                                    "fullscreen": "Pantalla completa",
+                                    "exitFullscreen": "Salir de pantalla completa"
+                                }
+                            },
+                            "subContentId": "8c927425-8152-4488-acc6-2ebc38310ae0",
+                            "metadata": {
+                                "contentType": "Drag and Drop",
+                                "license": "U",
+                                "title": "r2-1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "width": 100,
+                        "height": 99.99677234719216,
+                        "action": {
+                            "library": "H5P.DragQuestion 1.14",
+                            "params": {
+                                "scoreShow": "Comprobar",
+                                "submit": "Enviar",
+                                "tryAgain": "Intentar de nuevo",
+                                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuaci\u00f3n m\u00e1s baja posible es 0.",
+                                "question": {
+                                    "settings": {
+                                        "size": {
+                                            "width": 900,
+                                            "height": 540
+                                        },
+                                        "background": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m1_l1_r2/content/images/m1l1r2-2.png",
+                                            "mime": "image\/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 1800,
+                                            "height": 1080
+                                        }
+                                    },
+                                    "task": {
+                                        "elements": [
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 13.31826466816592,
+                                                "width": 8.631549657534245,
+                                                "height": 2.429033604452054,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Procesador<\/p>"
+                                                    },
+                                                    "subContentId": "5f9bbdc4-ec28-4b46-975c-0e1ebfc8ac29",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 24.730947271087565,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Bit<\/p>"
+                                                    },
+                                                    "subContentId": "7d5f4235-444e-4fc3-af32-941c464ca12d",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 36.14660270094407,
+                                                "width": 8.631848886986301,
+                                                "height": 2.067836044520548,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Byte<\/p>"
+                                                    },
+                                                    "subContentId": "74b0146f-e530-4bb7-ac4f-f66f7863034f",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 47.56523095773543,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Bytes<\/p>"
+                                                    },
+                                                    "subContentId": "f81320c0-ecc5-41fa-86c4-8aaee53dab26",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 58.98088638759194,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Memoria secundaria<\/p>"
+                                                    },
+                                                    "subContentId": "cbc40de5-3ce6-4af9-8cb3-a63b991eda26",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 70.39654181744844,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Megabytes<\/p>"
+                                                    },
+                                                    "subContentId": "55feb413-3ba0-4df8-b28b-a0d9d514e735",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 73.05936073059361,
+                                                "y": 79.90958800899553,
+                                                "width": 8.261301369863014,
+                                                "height": 2.481202910958904,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Software<\/p>"
+                                                    },
+                                                    "subContentId": "d2546083-1089-47bb-83a6-ddf261247eb1",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            }
+                                        ],
+                                        "dropZones": [
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 19.026092383094173,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "4"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 1<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 36.143629874009214,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "1"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 2<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 53.267113018793964,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "2"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 3<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 72.29320540188814,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "6"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 4<\/div>"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableCheckButton": true,
+                                    "singlePoint": false,
+                                    "applyPenalties": false,
+                                    "enableScoreExplanation": true,
+                                    "dropZoneHighlighting": "dragging",
+                                    "autoAlignSpacing": 2,
+                                    "enableFullScreen": false,
+                                    "showScorePoints": false,
+                                    "showTitle": false
+                                },
+                                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                                "grabbableSuffix": "Colocado en zona de colocaci\u00f3n {num}.",
+                                "dropzonePrefix": "Zona de colocaci\u00f3n {num} de {total}.",
+                                "noDropzone": "No es zona de colocaci\u00f3n.",
+                                "tipLabel": "Mostrar pista.",
+                                "tipAvailable": "Pista disponible",
+                                "correctAnswer": "Respuesta correcta",
+                                "wrongAnswer": "Respuesta incorrecta",
+                                "feedbackHeader": "Retroalimentaci\u00f3n",
+                                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                                "scoreExplanationButtonLabel": "Mostrar explicaci\u00f3n de la puntuaci\u00f3n",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas ser\u00e1n marcadas como correcta, incorrecta o sin contestar.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "localize": {
+                                    "fullscreen": "Pantalla completa",
+                                    "exitFullscreen": "Salir de pantalla completa"
+                                }
+                            },
+                            "subContentId": "bfc41733-6609-4b31-8e05-3339ab139fd7",
+                            "metadata": {
+                                "contentType": "Drag and Drop",
+                                "license": "U",
+                                "title": "r2-2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "width": 100,
+                        "height": 99.99677234719216,
+                        "action": {
+                            "library": "H5P.DragQuestion 1.14",
+                            "params": {
+                                "scoreShow": "Comprobar",
+                                "submit": "Enviar",
+                                "tryAgain": "Intentar de nuevo",
+                                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuaci\u00f3n m\u00e1s baja posible es 0.",
+                                "question": {
+                                    "settings": {
+                                        "size": {
+                                            "width": 900,
+                                            "height": 540
+                                        },
+                                        "background": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m1_l1_r2/content/images/m1l1r2-3.png",
+                                            "mime": "image\/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 1800,
+                                            "height": 1080
+                                        }
+                                    },
+                                    "task": {
+                                        "elements": [
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 36.14957552787893,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0648293022260273,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Dispositivos<\/p><p style=\"text-align:center;\">de entrada<\/p>"
+                                                    },
+                                                    "subContentId": "bf6c3dff-2265-4f55-ac90-25f76cea6cb8",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 45.659648892491155,
+                                                "width": 8.631549657534245,
+                                                "height": 2.4821917808219176,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Computador personal<\/p>"
+                                                    },
+                                                    "subContentId": "ee90cfde-b328-4754-935d-dbcfba0a7052",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 58.98088638759194,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Hardware<\/p>"
+                                                    },
+                                                    "subContentId": "626cd343-0e2b-4094-b330-1f09fa84a9c4",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 68.49393257913903,
+                                                "width": 8.631549657534245,
+                                                "height": 2.0684935787671233,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Super-<\/p><p style=\"text-align:center;\">computador<\/p>"
+                                                    },
+                                                    "subContentId": "cd62c686-8954-480a-a40e-5b6b6d18a7e6",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 71.91780821917808,
+                                                "y": 24.733920098022423,
+                                                "width": 8.631549657534245,
+                                                "height": 2.429033604452054,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p style=\"text-align:center;\">Servidor en Red<\/p>"
+                                                    },
+                                                    "subContentId": "c22af13f-fc9f-4a43-87d2-89487a69ced5",
+                                                    "metadata": {
+                                                        "contentType": "Text",
+                                                        "license": "U",
+                                                        "title": "Sin t\u00edtulo Text"
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            }
+                                        ],
+                                        "dropZones": [
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 26.63652933633184,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "2"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 1<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 43.7600124811166,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "4"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 2<\/div>"
+                                            },
+                                            {
+                                                "x": 11.415525114155251,
+                                                "y": 62.78610486421077,
+                                                "width": 31.46404109589041,
+                                                "height": 3.852739726027397,
+                                                "correctElements": [
+                                                    "1"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "label": "<div>Zona 3<\/div>"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableCheckButton": true,
+                                    "singlePoint": false,
+                                    "applyPenalties": false,
+                                    "enableScoreExplanation": true,
+                                    "dropZoneHighlighting": "dragging",
+                                    "autoAlignSpacing": 2,
+                                    "enableFullScreen": false,
+                                    "showScorePoints": false,
+                                    "showTitle": false
+                                },
+                                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                                "grabbableSuffix": "Colocado en zona de colocaci\u00f3n {num}.",
+                                "dropzonePrefix": "Zona de colocaci\u00f3n {num} de {total}.",
+                                "noDropzone": "No es zona de colocaci\u00f3n.",
+                                "tipLabel": "Mostrar pista.",
+                                "tipAvailable": "Pista disponible",
+                                "correctAnswer": "Respuesta correcta",
+                                "wrongAnswer": "Respuesta incorrecta",
+                                "feedbackHeader": "Retroalimentaci\u00f3n",
+                                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                                "scoreExplanationButtonLabel": "Mostrar explicaci\u00f3n de la puntuaci\u00f3n",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas ser\u00e1n marcadas como correcta, incorrecta o sin contestar.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "localize": {
+                                    "fullscreen": "Pantalla completa",
+                                    "exitFullscreen": "Salir de pantalla completa"
+                                }
+                            },
+                            "subContentId": "399cb1dd-6e96-4101-bf99-c8d9cd915510",
+                            "metadata": {
+                                "contentType": "Drag and Drop",
+                                "license": "U",
+                                "title": "r2-3"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": false,
+        "globalBackgroundSelector": {},
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "off"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje M\u00e1ximo",
+        "total": "Total",
+        "totalScore": "Puntuaci\u00f3n Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "\u00daltima Diapositiva",
+        "solutionModeTitle": "Salir del modo de soluci\u00f3n",
+        "solutionModeText": "Modo de soluci\u00f3n",
+        "summaryMultipleTaskText": "Tareas m\u00faltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "\u00bfC\u00f3mo te gustar\u00eda imprimir esta presentaci\u00f3n?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin t\u00edtulo",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa direcci\u00f3n siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentaci\u00f3n. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacci\u00f3n no completada",
+        "containsCompleted": "@slideName contiene una interacci\u00f3n completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Env\u00eda tus respuestas",
+        "confirmDialogText": "Esto enviar\u00e1 tus resultados, \u00bfquieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegaci\u00f3n por la presentaci\u00f3n de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}
