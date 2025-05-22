@@ -18,13 +18,20 @@ jQuery(document).ready(()=>{
 
     if(id == 'm1l1e1'){
         options.h5pJsonPath = 'resources/m1_l1_e1';
-        //options.h5pJsonPath = 'resources/M1_L1_E1(respaldo)';
-    }if(id == 'm1l1e2'){
-        options.h5pJsonPath = 'resources/M1_L1_E2';
+    }else if(id == 'm1l1e2'){
+        options.h5pJsonPath = 'resources/m1_l1_e2';
+    }else if(id == 'm1l1r2'){
+        options.h5pJsonPath = 'resources/m1_l1_r2';
+    }else if(id == 'm1l1r3'){
+        options.h5pJsonPath = 'resources/m1_l1_r3';
+    }else if(id == 'm1l1r4'){
+        options.h5pJsonPath = 'resources/m1_l1_r4';
     }else if(id == 'ordenar'){
         options.h5pJsonPath = 'resources/ordenar';
     }else if(id == 'pasapalabra'){
         options.h5pJsonPath = 'resources/pasapalabra';
+    }else if(id == 'prueba'){
+        options.h5pJsonPath = 'resources/m1-l1-e3-4';
     }
 
     /*const options = {

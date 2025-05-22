@@ -14,6 +14,9 @@
             <ul>
                 <li><a href="./standalone/h5p.php?id=m1l1e1">M1L1E1</a></li>
                 <li><a href="./standalone/h5p.php?id=m1l1e2">M1L1E2</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l1r2">M1L1R2</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l1r3">M1L1R3</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l1r4">M1L1R4</a></li>
             </ul>
         </ul>
         <li>Módulo 2</li>
@@ -22,6 +25,7 @@
             <ul>
                 <li><a href="./standalone/h5p.php?id=ordenar">Ordenar</a></li>
                 <li><a href="./standalone/h5p.php?id=pasapalabra">Pasapalabra</a></li>
+                <li><a href="./standalone/h5p.php?id=prueba">Prueba</a></li>
             </ul>
     </ul>
 </body>

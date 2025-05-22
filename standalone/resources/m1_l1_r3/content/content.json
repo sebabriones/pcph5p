@@ -1,0 +1,318 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m1_l1_r3/content/images/m1l1r3.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 14.34,
+                    "y": 66.9,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Teclado</p>\n"
+                        },
+                        "subContentId": "6e7dc819-47d8-4604-838b-138971e68654",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 32.7,
+                    "y": 66.9,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Mouse</p>\n"
+                        },
+                        "subContentId": "0321eb7b-8d54-43f7-a84f-7cdaa66f8fb0",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 51,
+                    "y": 66.9,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Word</p>\n"
+                        },
+                        "subContentId": "9dc841eb-9cce-4c5e-97a6-d39030bababe",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 69.4,
+                    "y": 66.9,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Tik Tok</p>\n"
+                        },
+                        "subContentId": "3204a5e4-997a-410a-9c59-bb0ddcc71dfb",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 14.34,
+                    "y": 78.8,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Monitor</p>\n"
+                        },
+                        "subContentId": "3a08c834-face-4c0a-9d3b-bd19e26c778f",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 32.7,
+                    "y": 78.8,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Instagram</p>\n"
+                        },
+                        "subContentId": "301c94f5-8a1a-46a0-944d-a0179ef57508",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 51,
+                    "y": 78.8,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Photomath</p>\n"
+                        },
+                        "subContentId": "f9ec3f94-9228-4411-9fc0-3d17e5a5391e",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 69.4,
+                    "y": 78.8,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Placa madre</p>\n"
+                        },
+                        "subContentId": "7405b723-cce5-4840-8e7c-62da7efc3716",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 11.415525114155251,
+                    "y": 13.31826466816592,
+                    "width": 19.90579783818493,
+                    "height": 16.181506849315067,
+                    "correctElements": [
+                        "0",
+                        "1",
+                        "4",
+                        "7"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 1</div>\n"
+                },
+                {
+                    "x": 53.65296803652968,
+                    "y": 13.31826466816592,
+                    "width": 19.90582191780822,
+                    "height": 16.181506849315067,
+                    "correctElements": [
+                        "2",
+                        "3",
+                        "5",
+                        "6"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 2</div>\n"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

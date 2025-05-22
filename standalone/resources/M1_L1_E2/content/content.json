@@ -7,25 +7,25 @@
         "settings": {
             "size": {
                 "width": 900,
-                "height": 537
+                "height": 540
             },
             "background": {
-                "path": "http://localhost/pcph5p/standalone/resources/M1_L1_E2/content/images/m1l1e2.png",
+                "path": "http://localhost/pcph5p/standalone/resources/m1_l1_e2/content/images/m1l1e2.png",
                 "mime": "image/png",
                 "copyright": {
                     "license": "U"
                 },
                 "width": 1800,
-                "height": 1074
+                "height": 1080
             }
         },
         "task": {
             "elements": [
                 {
-                    "x": 23.85,
-                    "y": 66.1,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 23.3,
+                    "y": 66.9,
+                    "width": 8.68,
+                    "height": 2.74,
                     "dropZones": [
                         "0"
                     ],
@@ -47,10 +47,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 41.98,
-                    "y": 66.1,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 41.76,
+                    "y": 66.9,
+                    "width": 8.68,
+                    "height": 2.74,
                     "dropZones": [
                         "0"
                     ],
@@ -72,10 +72,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 60.1,
-                    "y": 66.1,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 60.2,
+                    "y": 66.9,
+                    "width": 8.68,
+                    "height": 2.74,
                     "dropZones": [
                         "0"
                     ],
@@ -97,35 +97,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 23.85,
-                    "y": 76.76,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
-                    "dropZones": [
-                        "0"
-                    ],
-                    "type": {
-                        "library": "H5P.AdvancedText 1.1",
-                        "params": {
-                            "text": "<p style=\"text-align:center\">Marca</p>\n"
-                        },
-                        "metadata": {
-                            "contentType": "Texto",
-                            "license": "U",
-                            "title": "Sin título Texto",
-                            "authors": [],
-                            "changes": []
-                        },
-                        "subContentId": "df7c9ed7-9db1-4266-b546-18caa2bc7085"
-                    },
-                    "backgroundOpacity": 100,
-                    "multiple": false
-                },
-                {
-                    "x": 41.98,
-                    "y": 76.76,
-                    "width": 8.39,
-                    "height": 2.026703232020548,
+                    "x": 60.2,
+                    "y": 78.8,
+                    "width": 8.68,
+                    "height": 2.74,
                     "dropZones": [
                         "0"
                     ],
@@ -141,16 +116,16 @@
                             "authors": [],
                             "changes": []
                         },
-                        "subContentId": "ae6c3edc-8c82-4134-99b7-153b3e8d3e03"
+                        "subContentId": "df7c9ed7-9db1-4266-b546-18caa2bc7085"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
                 },
                 {
-                    "x": 60.1,
-                    "y": 76.76,
-                    "width": 8.39,
-                    "height": 2.026701626712329,
+                    "x": 23.3,
+                    "y": 78.8,
+                    "width": 8.68,
+                    "height": 2.74,
                     "dropZones": [
                         "0"
                     ],
@@ -166,7 +141,32 @@
                             "authors": [],
                             "changes": []
                         },
-                        "subContentId": "f172defa-c301-4477-b947-2a89694c1c55"
+                        "subContentId": "ae6c3edc-8c82-4134-99b7-153b3e8d3e03"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 41.76,
+                    "y": 78.6,
+                    "width": 8.68,
+                    "height": 2.74,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Marca</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "45f8aada-82ea-4cdb-8d8e-695c80e8c6fc"
                     },
                     "backgroundOpacity": 100,
                     "multiple": false
@@ -174,15 +174,15 @@
             ],
             "dropZones": [
                 {
-                    "x": 32.3,
-                    "y": 9.2,
-                    "width": 19.90579783818493,
+                    "x": 31.963470319634705,
+                    "y": 13.31826466816592,
+                    "width": 20.2,
                     "height": 16.181506849315067,
                     "correctElements": [
                         "1",
                         "2",
                         "0",
-                        "5"
+                        "4"
                     ],
                     "showLabel": false,
                     "backgroundOpacity": 100,

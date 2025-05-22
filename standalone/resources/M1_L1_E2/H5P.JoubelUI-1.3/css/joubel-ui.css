@@ -10,7 +10,7 @@
   padding: 0.5em 1.25em;
   border-radius: 2em;
 
-  background: #c9621b;
+  background: #026ec3;
   color: #ffffff;
 
   cursor: pointer;
@@ -24,6 +24,8 @@
   text-shadow: none;
   text-decoration: none;
   vertical-align: baseline;
+
+  float: right; /*nuevo*/
 }
 .h5p-joubelui-button:first-child {
   margin: 0 0.5em 1em 0;
@@ -50,9 +52,8 @@
   padding: 0;
 }
 
-.h5p-joubelui-button:hover,
-.h5p-joubelui-button:focus {
-  background: #026ec3;
+.h5p-joubelui-button:hover {
+  background: #c9621b;
   color: #fff;
   text-decoration: none;
   -webkit-transition: initial;
