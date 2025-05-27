@@ -17,21 +17,45 @@ jQuery(document).ready(()=>{
     }
 
     if(id == 'm1l1e1'){
-        options.h5pJsonPath = 'resources/m1_l1_e1';
+        options.h5pJsonPath = 'resources/l1/m1_l1_e1';
     }else if(id == 'm1l1e2'){
-        options.h5pJsonPath = 'resources/m1_l1_e2';
+        options.h5pJsonPath = 'resources/l1/m1_l1_e2';
+    }else if(id == 'm1l1e3'){
+        options.h5pJsonPath = 'resources/l1/m1_l1_e3';
+    }else if(id == 'm1l1e4'){
+        options.h5pJsonPath = 'resources/l1/m1_l1_e4';
+    }else if(id == 'm1l1e5'){
+        options.h5pJsonPath = 'resources/l1/m1_l1_e5';
+    }else if(id == 'm1l1r1'){
+        options.h5pJsonPath = 'resources/l1/m1_l1_r1';
     }else if(id == 'm1l1r2'){
-        options.h5pJsonPath = 'resources/m1_l1_r2';
+        options.h5pJsonPath = 'resources/l1/m1_l1_r2';
     }else if(id == 'm1l1r3'){
-        options.h5pJsonPath = 'resources/m1_l1_r3';
+        options.h5pJsonPath = 'resources/l1/m1_l1_r3';
     }else if(id == 'm1l1r4'){
-        options.h5pJsonPath = 'resources/m1_l1_r4';
+        options.h5pJsonPath = 'resources/l1/m1_l1_r4';
+    }else if(id == 'm1l1r5'){
+        options.h5pJsonPath = 'resources/l1/m1_l1_r5';
+    }else if(id == 'm1l2e1'){
+        options.h5pJsonPath = 'resources/l2/m1_l2_e1';
+    }else if(id == 'm1l2e2'){
+        options.h5pJsonPath = 'resources/l2/m1_l2_e2';
+    }else if(id == 'm1l2e3'){
+        options.h5pJsonPath = 'resources/l2/m1_l2_e3';
+    }else if(id == 'm1l2e4'){
+        options.h5pJsonPath = 'resources/l2/m1_l2_e4';
+    }else if(id == 'm1l2r1'){
+        options.h5pJsonPath = 'resources/l2/m1_l2_r1';
+    }else if(id == 'm1l2r2'){
+        options.h5pJsonPath = 'resources/l2/m1_l2_r2';
     }else if(id == 'ordenar'){
         options.h5pJsonPath = 'resources/ordenar';
     }else if(id == 'pasapalabra'){
         options.h5pJsonPath = 'resources/pasapalabra';
     }else if(id == 'prueba'){
         options.h5pJsonPath = 'resources/m1-l1-e3-4';
+    }else if(id == 'coursepresentation'){
+        options.h5pJsonPath = 'resources/m1_leccion1_7';
     }
 
     /*const options = {
@@ -134,6 +158,23 @@ jQuery(document).ready(()=>{
 
     }
 
+    const selectFunction = function(){
+        /*$('iframe').contents().find('option').on('click', (e)=>{
+            console.log(e.target);
+            e.target.classList.add('select-changed');
+            e.target.style.background = '#fff';
+            e.target.style.color = 'red';
+        });
+
+        $('iframe').contents().find('select').on('change', (e)=>{
+            console.log(e.target);
+            e.target.classList.add('select-changed');
+            e.target.style.background = 'linear-gradient(180deg, #5166ad 0%, #062971 90%)';
+            e.target.style.color = '#fff';
+        });*/
+
+    }
+
     /*new H5PStandalone.H5P( element, options ).then(
         function(){
             //H5P.externalDispatcher.on('domChanged', h5pFunction);
@@ -145,11 +186,12 @@ jQuery(document).ready(()=>{
 
     function a(opt){
         new H5PStandalone.H5P( element, opt ).then(
-            /*function(){
+            function(){
                 setTimeout(() => {
-                    h5pFunction();
+                    //h5pFunction();
+                    selectFunction();
                 }, 150);
-            }*/
+            }
         );
     }
 
