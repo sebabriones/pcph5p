@@ -126,9 +126,9 @@
                     },
                     {
                         "x": 53.37690631808279,
-                        "y": 23.238925199709513,
+                        "y": 22.238925199709513,
                         "width": 43.57298474945534,
-                        "height": 15.492616799806342,
+                        "height": 24.493,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
@@ -157,7 +157,9 @@
             }
         ],
         "keywordListEnabled": false,
-        "globalBackgroundSelector": {},
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
         "keywordListAlwaysShow": false,
         "keywordListAutoHide": false,
         "keywordListOpacity": 90

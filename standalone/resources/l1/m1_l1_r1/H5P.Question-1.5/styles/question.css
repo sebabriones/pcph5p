@@ -104,9 +104,10 @@
 }
 
 .h5p-question-introduction {
-  margin: 1em;
+  /*margin: 1em;
   font-size: 1.125em;
-  line-height: 1;
+  line-height: 1;*/
+  display: none;
 }
 
 .h5p-question-introduction > p {
@@ -117,6 +118,11 @@
 
 .h5p-question-content {
   margin: 1em;
+}
+
+/*nuevo*/
+.h5p-text-input{
+  /*width: 11.9826% !important;*/
 }
 
 .h5p-question-content.h5p-has-question-popup {

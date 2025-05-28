@@ -16,7 +16,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/l1/m1_l1_r1/content/images/image-s54aaAYZ.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/l1/m1_l1_r1/content/images/image-dXoskDUa.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -301,7 +301,7 @@
                         "solution": ""
                     },
                     {
-                        "x": 62.41830065359477,
+                        "x": 62.091503267973856,
                         "y": 40.66811909949165,
                         "width": 37.58169934640523,
                         "height": 59.331880900508345,
@@ -337,7 +337,7 @@
                                     "enableCheckButton": true,
                                     "autoCheck": false,
                                     "caseSensitive": true,
-                                    "showSolutionsRequiresInput": true,
+                                    "showSolutionsRequiresInput": false,
                                     "separateLines": false,
                                     "confirmCheckDialog": false,
                                     "confirmRetryDialog": false,
@@ -390,7 +390,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>BYTES</span></p>"
+                                "text": "<p style=\"text-align:center;color:#fff;\"><span>BYTES</span></p>"
                             },
                             "subContentId": "72876097-f9fc-4b90-9180-6878c31be206",
                             "metadata": {
@@ -417,7 +417,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>NÚMERO</span></p>"
+                                "text": "<p style=\"text-align:center;color:#fff;\"><span>NÚMERO</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -444,7 +444,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>ASCII</span></p>"
+                                "text": "<p style=\"text-align:center;color:#fff;\"><span>ASCII</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -577,7 +577,9 @@
             }
         ],
         "keywordListEnabled": false,
-        "globalBackgroundSelector": {},
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
         "keywordListAlwaysShow": false,
         "keywordListAutoHide": false,
         "keywordListOpacity": 90
@@ -602,8 +604,7 @@
             },
             "showGoogleShare": false,
             "googleShareUrl": "@currentpageurl"
-        },
-        "showSolutionButton": "on"
+        }
     },
     "l10n": {
         "slide": "Diapositiva",

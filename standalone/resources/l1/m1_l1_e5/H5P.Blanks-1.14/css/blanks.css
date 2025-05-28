@@ -6,15 +6,17 @@
   position: relative;
 }
 .h5p-blanks .h5p-text-input {
-  font-family: H5PDroidSans, sans-serif;
+  /*font-family: H5PDroidSans, sans-serif;*/
   font-size: 1em;
   border-radius: 0.25em;
   border: 1px solid #a0a0a0;
-  padding: 0.1875em 1em 0.1875em 0.5em;
+  /*padding: 0.1875em 1em 0.1875em 0.5em;*/
+  padding: 0.5em 1em 0.5em 0.5em;/*nuevo*/
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 6em;
+  /*width: 6em;*/
+  width: 44.5% !important; /*nuevo*/
 }
 .h5p-blanks .h5p-text-input:focus {
   outline: none;
@@ -38,9 +40,11 @@
 
 /* Correctly answered input */
 .h5p-blanks .h5p-correct .h5p-text-input {
-  background: #9dd8bb;
+  /*background: #9dd8bb;
   border: 1px solid #9dd8bb;
-  color: #255c41;
+  color: #255c41;*/
+  background: #fff; /*nuevo*/
+  border: 3px solid #8dc336; /*nuevo*/
 }
 /* Showing solution */
 .h5p-blanks .h5p-correct-answer {
@@ -54,29 +58,41 @@
 }
 .h5p-blanks .h5p-correct:after {
   position: absolute;
-  right: 0.5em;
-  top: 0;
+  /*right: 0.5em;
+  top: 0;*/
   text-decoration: none;
-  content: "\f00c";
+  /*content: "\f00c";
   font-family: 'H5PFontAwesome4';
-  color: #255c41;
+  color: #255c41;*/
+  right: 0.4em; /*nuevo*/
+  top: 0.5em; /*nuevo*/
+  content: url(../../content/images/True.svg); /*nuevo*/
+  width: 24px; /*nuevo*/
+  height: 24px;/*nuevo*/
 }
 
 /* Wrongly answered input */
 .h5p-blanks .h5p-wrong .h5p-text-input {
-  background-color: #f7d0d0;
+  /*background-color: #f7d0d0;
   border: 1px solid #f7d0d0;
   color: #b71c1c;
-  text-decoration: line-through;
+  text-decoration: line-through;*/
+  background: #fff; /*nuevo*/
+  border: 3px solid #d40202; /*nuevo*/
 }
 .h5p-blanks .h5p-wrong:after {
   position: absolute;
-  right: 0.5em;
-  top: 0;
-  font-family: 'H5PFontAwesome4';
+  /*right: 0.5em;
+  top: 0;*/
+  /*font-family: 'H5PFontAwesome4';*/
   text-decoration: none;
-  content: "\f00d";
-  color: #b71c1c;
+  /*content: "\f00d";
+  color: #b71c1c;*/
+  right: 0.4em; /*nuevo*/
+  top: 0.5em; /*nuevo*/
+  content: url(../../content/images/false.svg); /*nuevo*/
+  width: 24px; /*nuevo*/
+  height: 24px;/*nuevo*/
 }
 
 /* Actual text paragraphs */
