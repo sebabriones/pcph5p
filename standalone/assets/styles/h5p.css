@@ -30,6 +30,16 @@
   src: url(../fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraLight';
+  src: url(../fonts/Poppins-ExtraLight.ttf);
+}
+
 html.h5p-iframe, html.h5p-iframe > body {
   /*font-family: Sans-Serif; /* Use the browser's default sans-serif font. (Since Heletica doesn't look nice on Windows, and Arial on OS X.) */
   font-family: 'Poppins-regular';

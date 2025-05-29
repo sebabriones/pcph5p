@@ -301,9 +301,9 @@
                         "solution": ""
                     },
                     {
-                        "x": 69.71677559912854,
+                        "x": 0,
                         "y": 40.66811909949165,
-                        "width": 30.28148148148148,
+                        "width": 100,
                         "height": 59.331880900508345,
                         "action": {
                             "library": "H5P.Blanks 1.14",
@@ -337,7 +337,7 @@
                                     "enableCheckButton": true,
                                     "autoCheck": false,
                                     "caseSensitive": true,
-                                    "showSolutionsRequiresInput": true,
+                                    "showSolutionsRequiresInput": false,
                                     "separateLines": false,
                                     "confirmCheckDialog": false,
                                     "confirmRetryDialog": false,
@@ -390,7 +390,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>BYTES</span></p>"
+                                "text": "<p style=\"text-align:center;color:#fff;\"><span>BYTES</span></p>"
                             },
                             "subContentId": "72876097-f9fc-4b90-9180-6878c31be206",
                             "metadata": {
@@ -417,7 +417,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>NÚMERO</span></p>"
+                                "text": "<p style=\"text-align:center;color:#fff;\"><span>NÚMERO</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -444,7 +444,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>ASCII</span></p>"
+                                "text": "<p style=\"text-align:center;color:#fff;\"><span>ASCII</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -552,7 +552,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>0100 1111</span></p>"
+                                "text": "<p style=\"text-align:center;letter-spacing: 0.08em;\"><span>0100 1111</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -577,7 +577,9 @@
             }
         ],
         "keywordListEnabled": false,
-        "globalBackgroundSelector": {},
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
         "keywordListAlwaysShow": false,
         "keywordListAutoHide": false,
         "keywordListOpacity": 90

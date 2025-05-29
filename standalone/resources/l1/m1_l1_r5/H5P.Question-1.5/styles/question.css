@@ -104,9 +104,10 @@
 }
 
 .h5p-question-introduction {
-  margin: 1em;
+  /*margin: 1em;
   font-size: 1.125em;
-  line-height: 1;
+  line-height: 1;*/
+  display: none; /*nuevo*/
 }
 
 .h5p-question-introduction > p {
@@ -116,7 +117,13 @@
 }
 
 .h5p-question-content {
-  margin: 1em;
+  /*margin: 1em;*/
+}
+
+/*nuevo*/
+.h5p-question-check-answer,
+.h5p-question-try-again {
+  float: right; /*nuevo*/
 }
 
 .h5p-question-content.h5p-has-question-popup {
@@ -141,9 +148,11 @@
 .h5p-question-scorebar.h5p-question-visible {
   width: 13em;
   max-width: calc(100% - 2em);
-  margin: 0 0 1em 1em;
+  /*margin: 0 0 1em 1em;*/
+  margin: 0 0 0 1em; /*nuevo*/
   padding-right: 0.5em;
   display: inline-block;
+  /*padding-left: 2em; /*nuevo*/
 }
 
 .h5p-question-scorebar.full-width {
@@ -155,13 +164,15 @@
   width: 100%;
 }
 
-.h5p-question-feedback {
-  font-weight: bold;
+.h5p-question-feedback,
+.h5p-question-feedback.h5p-question-visible /*nuevo*/ {
+  /*font-weight: bold;
   color: #1a73d9;
   margin: 0 1em;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+  transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);*/
+  display: none; /*nuevo*/
 }
 
 .h5p-question-feedback.h5p-question-visible {
@@ -173,6 +184,16 @@
   display: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+/*nuevo*/
+.h5p-question-scorebar.h5p-question-visible,
+.h5p-question-buttons.h5p-question-visible {
+  padding-top: 2em; /*nuevo*/
+}
+
+.h5p-question-scorebar.h5p-question-visible {
+  padding-left: 2em; /*nuevo*/
 }
 
 .h5p-question-visible .h5p-question-feedback-content.has-content {
@@ -196,7 +217,8 @@
   white-space: nowrap;
 }
 .h5p-question-buttons.has-scorebar {
-  width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
+  /*width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
+  width: calc(100% - 17em - 1px); /*nuevo*/ /*Este valor puede variar*/
   margin-left: 0;
 }
 

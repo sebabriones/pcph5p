@@ -275,9 +275,9 @@
                     },
                     {
                         "x": 49.01960784313726,
-                        "y": 11.619462599854756,
+                        "y": 10.619462599854756,
                         "width": 39.21568627450981,
-                        "height": 17.429193899782135,
+                        "height": 19.429193899782135,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
@@ -301,9 +301,9 @@
                         "solution": ""
                     },
                     {
-                        "x": 62.091503267973856,
+                        "x": 49.092,
                         "y": 40.66811909949165,
-                        "width": 37.58169934640523,
+                        "width": 51.58169934640523,
                         "height": 59.331880900508345,
                         "action": {
                             "library": "H5P.Blanks 1.14",
@@ -498,7 +498,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>0110 1111</span></p>"
+                                "text": "<p style=\"text-align:center;letter-spacing: 0.1em;\"><span>0110 1111</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -525,7 +525,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>0110 1100</span></p>"
+                                "text": "<p style=\"text-align:center;letter-spacing: 0.05em;\"><span>0110 1100</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -552,7 +552,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>0110 1001</span></p>"
+                                "text": "<p style=\"text-align:center;letter-spacing: 0.05em;\"><span>0110 1001</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",

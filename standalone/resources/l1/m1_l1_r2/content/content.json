@@ -20,7 +20,7 @@
                             "height": 540
                         },
                         "background": {
-                            "path": "http://localhost/pcph5p/standalone/resources/m1_l1_r2/content/images/background-6830751d9c63f.png",
+                            "path": "http://localhost/pcph5p/standalone/resources/l1/m1_l1_r2/content/images/background-6830751d9c63f.png",
                             "mime": "image\/png",
                             "copyright": {
                                 "license": "U"
@@ -343,7 +343,7 @@
                             "height": 540
                         },
                         "background": {
-                            "path": "http://localhost/pcph5p/standalone/resources/m1_l1_r2/content/images/background-683077663f164.png",
+                            "path": "http://localhost/pcph5p/standalone/resources/l1/m1_l1_r2/content/images/background-683077663f164.png",
                             "mime": "image\/png",
                             "copyright": {
                                 "license": "U"
@@ -666,7 +666,7 @@
                             "height": 540
                         },
                         "background": {
-                            "path": "http://localhost/pcph5p/standalone/resources/m1_l1_r2/content/images/background-683078d74027d.png",
+                            "path": "http://localhost/pcph5p/standalone/resources/l1/m1_l1_r2/content/images/background-683078d74027d.png",
                             "mime": "image\/png",
                             "copyright": {
                                 "license": "U"
