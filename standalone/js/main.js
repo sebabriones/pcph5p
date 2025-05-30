@@ -175,6 +175,96 @@ jQuery(document).ready(()=>{
 
     }
 
+    const quizFunction = function(){
+        if($('iframe').contents().find('.h5p-question-next')){
+            console.log('next existe');
+
+            /*const liPrev = d.createElement('li'), 
+                  liNext = d.createElement('li');
+            //let dotsCont = $('iframe').contents().find('.dots-container');
+
+            liPrev.classList.add('progress-item', 'prev-item');
+            liNext.classList.add('progress-item', 'next-item');
+
+            dotsCont[0].appendChild(liNext);
+            dotsCont[0].children[0].parentNode.insertBefore(liPrev, dotsCont[0].children[0]);
+
+            //const nextBtn = $('iframe').contents().find('.h5p-question-next');
+            /*const questionBtn = $('iframe').contents().find('.h5p-question-buttons');
+            console.log(questionBtn);
+            const prevBtn = questionBtn[1].children[2];
+            const nextBtn = questionBtn[1].children[1];
+            console.log(nextBtn, prevBtn);
+
+            let dotsCont = $('iframe').contents().find('.dots-container');
+            console.log(dotsCont[0]);
+
+            //dotsCont[0].appendChild(liPrev);
+
+            dotsCont[0].appendChild(liNext);
+            dotsCont[0].children[0].parentNode.insertBefore(liPrev, dotsCont[0].children[0]);
+
+            liPrev.appendChild(prevBtn);
+            liNext.appendChild(nextBtn);*/
+
+            
+            /*function sliderBtn(){
+                //console.log($('iframe').contents().find('.question-container[style=""]').find('.h5p-question-prev')[0]);
+                //console.log($('iframe').contents().find('.question-container[style=""]').find('.h5p-question-next')[0]);
+                const prevBtn = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-prev')[0] || null,
+                      nextBtn = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-next')[0] || null;
+
+                //console.log(prevBtn, nextBtn);
+                //console.log(e);
+
+                if(prevBtn == null){
+                    console.log('no existe prev');
+                    if(target != null) liNext.removeChild(target);
+                    liNext.appendChild(nextBtn);
+                }else if(prevBtn && nextBtn){
+                    console.log('ambos existen');
+                    liNext.removeChild(target);
+                    liNext.appendChild(nextBtn);
+                    liNext.removeChild(target);
+                    liNext.appendChild(nextBtn);
+                }else if(nextBtn == null){
+                    console.log('no existe next');
+                }
+            }
+
+            liPrev.addEventListener('click', (e)=>{
+                sliderBtn(e.target);
+            });
+            liNext.addEventListener('click', (e)=>{
+                sliderBtn(e.target);
+            });
+            /*$('iframe').contents().find('.progress-dot').each((i,el)=>{
+                el.addEventListener('click', sliderBtn);
+            });*/
+
+            let qsProgress = $('iframe').contents().find('.qs-progress')[0];
+            let bnext = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-next')[0];
+            bnext.style.pointerEvents = 'none';//({'pointer-events':'none'});
+
+            console.log(qsProgress);
+
+            qsProgress.appendChild(bnext);
+
+            function sliderBtn(){
+
+            }
+
+            /*liPrev.addEventListener('click', (e)=>{
+                sliderBtn();
+            });
+            liNext.addEventListener('click', (e)=>{
+                sliderBtn();
+            });*/
+
+            sliderBtn();
+        }
+    }
+
     /*new H5PStandalone.H5P( element, options ).then(
         function(){
             //H5P.externalDispatcher.on('domChanged', h5pFunction);
@@ -190,6 +280,7 @@ jQuery(document).ready(()=>{
                 setTimeout(() => {
                     //h5pFunction();
                     selectFunction();
+                    quizFunction();
                 }, 150);
             }
         );
