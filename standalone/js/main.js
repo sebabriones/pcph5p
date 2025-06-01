@@ -175,93 +175,55 @@ jQuery(document).ready(()=>{
 
     }
 
+    /*Función que permite posicionar los botones prev y next en el mismo div que el progressbar*/
     const quizFunction = function(){
         if($('iframe').contents().find('.h5p-question-next')){
-            console.log('next existe');
+            const qContainer = $('iframe').contents().find('.question-container'),
+                  qsProgress = $('iframe').contents().find('.qs-progress')[0],
+                  qCheck = $('iframe').contents().find('.h5p-question-check-answer');
 
-            /*const liPrev = d.createElement('li'), 
-                  liNext = d.createElement('li');
-            //let dotsCont = $('iframe').contents().find('.dots-container');
+            if(qContainer.length >= 3){
+                const btnPrev = qContainer[1].children[1].children[2],
+                      btnNext = qContainer[1].children[1].children[1];
 
-            liPrev.classList.add('progress-item', 'prev-item');
-            liNext.classList.add('progress-item', 'next-item');
+                qsProgress.children[0].parentNode.insertBefore(btnPrev, qsProgress.children[0]);
+                qsProgress.appendChild(btnNext);
+            }
 
-            dotsCont[0].appendChild(liNext);
-            dotsCont[0].children[0].parentNode.insertBefore(liPrev, dotsCont[0].children[0]);
+            $('iframe').contents().find('.h5p-question-buttons').find('a').css({'display':'none'});
 
-            //const nextBtn = $('iframe').contents().find('.h5p-question-next');
-            /*const questionBtn = $('iframe').contents().find('.h5p-question-buttons');
-            console.log(questionBtn);
-            const prevBtn = questionBtn[1].children[2];
-            const nextBtn = questionBtn[1].children[1];
-            console.log(nextBtn, prevBtn);
+            function actionBtn(){
+                const btnPrev = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-prev')[0] || null,
+                      btnNext = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-next')[0] || null;
 
-            let dotsCont = $('iframe').contents().find('.dots-container');
-            console.log(dotsCont[0]);
-
-            //dotsCont[0].appendChild(liPrev);
-
-            dotsCont[0].appendChild(liNext);
-            dotsCont[0].children[0].parentNode.insertBefore(liPrev, dotsCont[0].children[0]);
-
-            liPrev.appendChild(prevBtn);
-            liNext.appendChild(nextBtn);*/
-
-            
-            /*function sliderBtn(){
-                //console.log($('iframe').contents().find('.question-container[style=""]').find('.h5p-question-prev')[0]);
-                //console.log($('iframe').contents().find('.question-container[style=""]').find('.h5p-question-next')[0]);
-                const prevBtn = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-prev')[0] || null,
-                      nextBtn = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-next')[0] || null;
-
-                //console.log(prevBtn, nextBtn);
-                //console.log(e);
-
-                if(prevBtn == null){
-                    console.log('no existe prev');
-                    if(target != null) liNext.removeChild(target);
-                    liNext.appendChild(nextBtn);
-                }else if(prevBtn && nextBtn){
-                    console.log('ambos existen');
-                    liNext.removeChild(target);
-                    liNext.appendChild(nextBtn);
-                    liNext.removeChild(target);
-                    liNext.appendChild(nextBtn);
-                }else if(nextBtn == null){
-                    console.log('no existe next');
+                if(btnPrev === null && btnNext !== null){
+                    $('iframe').contents().find('.qs-progress .h5p-question-prev')[0].style.pointerEvents = 'none';
+                    $('iframe').contents().find('.qs-progress .h5p-question-next')[0].style.pointerEvents = 'auto';
+                }else if(btnPrev !== null && btnNext === null){
+                    $('iframe').contents().find('.qs-progress .h5p-question-prev')[0].style.pointerEvents = 'auto';
+                    $('iframe').contents().find('.qs-progress .h5p-question-next')[0].style.pointerEvents = 'none';
+                }else if((btnPrev !== null && btnNext !== null)||(btnPrev === null && btnNext === null)){
+                    $('iframe').contents().find('.qs-progress .h5p-question-prev')[0].style.pointerEvents = 'auto';
+                    $('iframe').contents().find('.qs-progress .h5p-question-next')[0].style.pointerEvents = 'auto';
                 }
             }
 
-            liPrev.addEventListener('click', (e)=>{
-                sliderBtn(e.target);
+            qsProgress.addEventListener('click', actionBtn);
+
+            qCheck.each((i,el)=>{
+                el.addEventListener('click', ()=>{
+                    setTimeout(() => {
+                        const qFinish = $('iframe').contents().find('.h5p-question-finish')[0] || null;
+                        if(qFinish !== null){
+                            qFinish.addEventListener('click', ()=>{
+                                $('iframe').contents().find('.questionset-results').find('.qs-retrybutton')[0].addEventListener('click', actionBtn);
+                            })
+                        }
+                    }, 400);
+                })
             });
-            liNext.addEventListener('click', (e)=>{
-                sliderBtn(e.target);
-            });
-            /*$('iframe').contents().find('.progress-dot').each((i,el)=>{
-                el.addEventListener('click', sliderBtn);
-            });*/
 
-            let qsProgress = $('iframe').contents().find('.qs-progress')[0];
-            let bnext = $('iframe').contents().find('.question-container[style=""]').find('.h5p-question-next')[0];
-            bnext.style.pointerEvents = 'none';//({'pointer-events':'none'});
-
-            console.log(qsProgress);
-
-            qsProgress.appendChild(bnext);
-
-            function sliderBtn(){
-
-            }
-
-            /*liPrev.addEventListener('click', (e)=>{
-                sliderBtn();
-            });
-            liNext.addEventListener('click', (e)=>{
-                sliderBtn();
-            });*/
-
-            sliderBtn();
+            actionBtn();
         }
     }
 
@@ -281,7 +243,7 @@ jQuery(document).ready(()=>{
                     //h5pFunction();
                     selectFunction();
                     quizFunction();
-                }, 150);
+                }, 450);
             }
         );
     }
