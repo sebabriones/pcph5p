@@ -37,14 +37,16 @@
   border-radius: 50%;
   margin: 0 0.25em;
   cursor: pointer;
-  background-color: #026ec3;
-  border: 1px solid #026ec3;
+  /*border: 1px solid #1356a3;*/
   position: relative;
   transition: transform 0.2s;
+  background-color: #026ec3; /*nuevo*/
+  border: 1px solid #026ec3; /*nuevo*/
 }
 
+/*nuevo*/
 .progress-dot.current {
-  background-color: #c9621b;
+  background-color: #c9621b; /*nuevo*/
 }
 
 .progress-dot.disabled {
@@ -55,7 +57,7 @@
   transform: scale(1.25);
 }
 .progress-dot.answered {
-  background: #026ec3;
+  /*background: #1356a3;*/
 }
 .progress-dot:before {
   display: block;
@@ -115,10 +117,10 @@
   text-align: center;
 }
 .qs-footer {
-  background: #f8feef;
   overflow: hidden;
   clear: both;
-  padding-bottom: 2em;
+  background: #f8feef; /*nuevo*/
+  padding-bottom: 2em; /*nuevo*/
 }
 
 .qs-footer > .prev {
@@ -151,6 +153,44 @@
   position: absolute;
   overflow: hidden;
 }
+
+/*nuevo*/
+.qs-footer .h5p-question-prev,
+.qs-footer .h5p-question-next {
+  background: #fcf446;
+  /*border-color: #fcf446;*/
+  border: none;
+  padding: 0.5em 0;
+  width: 2.1875em;
+  box-shadow: none;
+}
+
+.qs-footer .h5p-question-prev:hover,
+.qs-footer .h5p-question-next:hover {
+}
+
+.qs-footer .h5p-question-prev.truncated,
+.qs-footer .h5p-question-next.truncated {
+  padding: 0;
+  line-height: 2.2335em;
+}
+
+.qs-footer .h5p-question-next:before {
+  content: "\f054";
+  padding-right: 0;
+  position: relative;
+  left: 2px;
+  color: #026ec3;
+}
+
+.qs-footer .h5p-question-prev:before {
+  content: "\f053";
+  padding-right: 0;
+  position: relative;
+  left: -2px;
+  color: #026ec3;
+}
+/*fin nuevo*/
 
 .h5p-question .h5p-question-prev,
 .h5p-question .h5p-question-finish,
@@ -208,13 +248,18 @@
 }
 
 .qs-progress {
-  text-align: center;
+  /*text-align: center;*/
   line-height: 1.5em;
+  display: flex; /*nuevo*/
+  justify-content: center; /*nuevo*/
+  align-items: baseline; /*nuevo*/
 }
 
 .questionset-results {
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
+  /*background: rgba(255, 255, 255, 0.9);*/
+  background: #f8feef; /*nuevo*/
+  padding: 11em 0;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6FFFFFF,endColorstr=#E6FFFFFF);
 }
 

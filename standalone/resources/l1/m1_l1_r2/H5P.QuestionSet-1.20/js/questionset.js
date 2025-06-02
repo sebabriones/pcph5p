@@ -43,8 +43,7 @@ H5P.QuestionSet = function (options, contentId, contentData) {
       unansweredText: 'Unanswered',
       answeredText: 'Answered',
       currentQuestionText: 'Current question',
-      navigationLabel: 'Questions',
-      questionSetInstruction: 'Choose question to display'
+      navigationLabel: 'Questions'
     },
     endGame: {
       showResultPage: true,
@@ -302,15 +301,9 @@ H5P.QuestionSet = function (options, contentId, contentData) {
     ((params.introPage.showIntroPage && params.noOfQuestionAnswered === 0) ? 'hidden' : ''),
   });
 
-  const tabIDs = Array.from({length: params.questions.length}, () => H5P.createUUID());
-  const tabPanelIDs = Array.from({length: params.questions.length}, () => H5P.createUUID());
-
   for (let i=0; i<params.questions.length; i++) {
     $('<div>', {
       class: 'question-container',
-      role: 'tabpanel',
-      id: tabPanelIDs[i],
-      'aria-labelledby': tabIDs[i],
       appendTo: self.$questionsContainer
     });
   }
@@ -330,8 +323,6 @@ H5P.QuestionSet = function (options, contentId, contentData) {
   if (params.progressType == "dots") {
     self.$dotsContainer = $('<ul>', {
       class: 'dots-container',
-      role: 'tablist',
-      'aria-label': params.texts.questionSetInstruction,
       appendTo: self.$progressBar
     });
 
@@ -341,9 +332,6 @@ H5P.QuestionSet = function (options, contentId, contentData) {
         html: '<a href="#" class= "progress-dot unanswered ' + 
               (params.disableBackwardsNavigation ? 'disabled' : '') +
               '" ' +
-              'id="' +
-              tabIDs[i] +
-              '" ' +
               'aria-label=' +
                 '"' +
                 params.texts.jumpToQuestion.replace("%d", i + 1).replace("%total", params.questions.length) +
@@ -352,11 +340,7 @@ H5P.QuestionSet = function (options, contentId, contentData) {
                 '" ' +
               'tabindex="-1" ' +
               (params.disableBackwardsNavigation ? 'aria-disabled="true"' : '') +
-              ' aria-controls="' +
-              tabPanelIDs[i] +
-              '" ' +
-              'aria-selected="false" ' +
-              'role="tab"></a>',
+              '></a>',
         appendTo: self.$dotsContainer
       })
     }
@@ -657,8 +641,6 @@ H5P.QuestionSet = function (options, contentId, contentData) {
     }
 
     if (currentQuestion + direction >= questionInstances.length) {
-      toggleCurrentDot(currentQuestion, false);
-      toggleAnsweredDot(currentQuestion, questionInstances[currentQuestion].getAnswerGiven());
       _displayEndGame();
     }
     else {
@@ -720,8 +702,7 @@ H5P.QuestionSet = function (options, contentId, contentData) {
     var disabledTabindex = params.disableBackwardsNavigation && !showingSolutions;
     $el.toggleClass('current', isCurrent)
       .attr('aria-label', label)
-      .attr('tabindex', isCurrent && !disabledTabindex ? 0 : -1)
-      .attr('aria-selected', isCurrent && !disabledTabindex);
+      .attr('tabindex', isCurrent && !disabledTabindex ? 0 : -1);
   };
 
   var _displayEndGame = function () {

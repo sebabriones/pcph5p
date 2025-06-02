@@ -113,10 +113,6 @@
         {
           "label": "Navigationsetikett för skärmläsare",
           "default": "Frågor"
-        },
-        {
-          "label": "Instruction for navigating question set with screenreader",
-          "default": "Choose question to display"
         }
       ]
     },

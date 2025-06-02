@@ -113,10 +113,6 @@
         {
           "label": "Ярлык навигации для динамиков",
           "default": "Вопросы"
-        },
-        {
-          "label": "Instruction for navigating question set with screenreader",
-          "default": "Choose question to display"
         }
       ]
     },
@@ -176,7 +172,8 @@
                   {
                     "label": "Диапазон баллов"
                   },
-                  {},
+                  {
+                  },
                   {
                     "label": "Обратная связь для определенного диапазона оценок",
                     "placeholder": "Заполните отзыв"

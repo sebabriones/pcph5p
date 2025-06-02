@@ -5,8 +5,8 @@
     "language": "en",
     "defaultLanguage": "es",
     "license": "U",
-    "extraTitle": "m1_l1_e1_v2",
-    "title": "m1_l1_e1_v2",
+    "extraTitle": "Leccion 1 - Ejercicio 1",
+    "title": "Leccion 1 - Ejercicio 1",
     "mainLibrary": "H5P.DragQuestion",
     "preloadedDependencies": [
         {
