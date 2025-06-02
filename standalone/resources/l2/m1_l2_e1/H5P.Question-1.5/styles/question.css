@@ -1,5 +1,6 @@
 .h5p-question {
-  background: #f8feef;
+  /*background: rgba(255, 255, 255, 0.9);*/
+  background: #f8feef; /*nuevo*/
   position: relative;
 }
 .h5p-question-audio {
@@ -212,7 +213,7 @@
   /*margin-left: 1em;
   margin-right: 0.5em;
   margin-bottom: 1em;*/
-  padding: 1em 2em 2em 0;
+  padding: 1em 2em 2em 0; /*nuevo*/
 }
 .h5p-question-buttons .h5p-joubelui-button,
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {

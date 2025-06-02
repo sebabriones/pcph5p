@@ -65,8 +65,8 @@
         "confirmRetryDialog": false
     },
     "showSolutions": "Show solution",
-    "tryAgain": "Retry",
-    "checkAnswer": "Check",
+    "tryAgain": "Intentar de nuevo",
+    "checkAnswer": "Comprobar",
     "notFilledOut": "Please fill in all blanks to view solution",
     "tipLabel": "Tip",
     "spellingMistakeWarning": "Check your spelling: @mistake",

@@ -52,8 +52,8 @@
   padding: 0;
 }
 
-.h5p-joubelui-button:hover,
-.h5p-joubelui-button:focus {
+/*nuevo*/
+.h5p-joubelui-button:hover {
   /*background: #1356a3;*/
   background: #c9621b; /*nuevo*/
   color: #fff;
@@ -63,6 +63,17 @@
   -o-transition: initial;
   transition: initial;
 }
+
+/*.h5p-joubelui-button:hover,
+.h5p-joubelui-button:focus {
+  background: #1356a3;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: initial;
+  -moz-transition: initial;
+  -o-transition: initial;
+  transition: initial;
+}*/
 .h5p-joubelui-button:active {
   position: relative;
   background: #104888;

@@ -63,7 +63,13 @@
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-paragraph-corrections {
     font-size: 1.5em;
-    padding-top: .5em
+    /*padding-top: .5em*/
+    padding-top: .3em /*nuevo*/
+}
+
+/*nuevo*/
+.h5p-sort-paragraphs-paragraph-button-container:first-child {
+    display: none; /*nuevo*/
 }
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph.h5p-sort-paragraphs-correct {
@@ -71,13 +77,14 @@
     border-color: #b6e4ce;
     box-shadow: 0 .1em 0 #a2bdb0;
     color: #255c41;*/
-    background: linear-gradient(180deg, #8bae54 0%, #456f06 90%);
-    color: #fff;
+    background: linear-gradient(180deg, #8bae54 0%, #456f06 90%); /*nuevo*/
+    color: #fff; /*nuevo*/
+    flex-direction: row-reverse; /*nuevo*/
 }
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph.h5p-sort-paragraphs-correct .h5p-sort-paragraphs-paragraph-corrections::before {
     content: "";
-    font-family: "H5PFontAwesome4", sans-serif
+    font-family: "H5PFontAwesome4", sans-serif;
 }
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph.h5p-sort-paragraphs-correct .h5p-sort-paragraphs-paragraph-button-container {
@@ -89,13 +96,15 @@
     border-color: #fbd7d8;
     box-shadow: 0 .1em 0 #deb8b8;
     color: #b71c1c;*/
-    background: linear-gradient(180deg, #870202 0%, #3c0505 90%);
-    color: #fff;
+    background: linear-gradient(180deg, #870202 0%, #3c0505 90%); /*nuevo*/
+    color: #fff; /*nuevo*/
+    flex-direction: row-reverse; /*nuevo*/
 }
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph.h5p-sort-paragraphs-wrong .h5p-sort-paragraphs-paragraph-corrections::before {
     content: "";
-    font-family: "H5PFontAwesome4", sans-serif
+    font-family: "H5PFontAwesome4", sans-serif;
+    float: left;
 }
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph.h5p-sort-paragraphs-wrong .h5p-sort-paragraphs-paragraph-button-container {
@@ -124,8 +133,15 @@
     display: flex
 }
 
+/*nuevo*/
+div .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-buttons-container:first-child {
+    display: none !important;
+    background-color: red;
+}
+
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-buttons-container:not(.vertical) {
-    flex-direction: row
+    /*flex-direction: row*/
+    /*flex-direction: row-reverse; /*nuevo*/
 }
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-buttons-container:not(.vertical) .h5p-sort-paragraphs-paragraph-button-container {

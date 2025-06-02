@@ -243,7 +243,7 @@ jQuery(document).ready(()=>{
                     //h5pFunction();
                     selectFunction();
                     quizFunction();
-                }, 450);
+                }, 150);
             }
         );
     }
