@@ -1,0 +1,256 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/l3/m1_l3_r1/content/images/image-hxbGAmPA.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 70,
+                    "y": 25.9,
+                    "width": 11.23,
+                    "height": 2.4792,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Procesamiento de</p><p style=\"text-align:center\">lenguaje natural</p>"
+                        },
+                        "subContentId": "f3089a31-961c-459e-8e02-055049fbacc5",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 70,
+                    "y": 39.51,
+                    "width": 11.23,
+                    "height": 2.4792,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Aprendizaje</p><p style=\"text-align:center\">automático</p>"
+                        },
+                        "subContentId": "6d1b42b3-7f0a-4193-90bd-6797d0ca5fb5",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 70,
+                    "y": 53.1,
+                    "width": 11.23,
+                    "height": 2.4792,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Razonamiento</p><p style=\"text-align:center\">automático</p>"
+                        },
+                        "subContentId": "cad5b6d9-0cc3-4960-bc7d-08e1450270bc",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 70,
+                    "y": 66.57943203309017,
+                    "width": 11.23,
+                    "height": 2.4792,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Representación </p><p style=\"text-align:center\">del conocimiento</p>"
+                        },
+                        "subContentId": "e434d01e-b3fe-4938-b492-7a619bd26bfd",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 9.1,
+                    "y": 18.9,
+                    "width": 31.6,
+                    "height": 4.1,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Capacidad que tiene un sistema computacional inteligente para comunicarse de forma similar a los humanos</div>"
+                },
+                {
+                    "x": 9.1,
+                    "y": 36.14660270094407,
+                    "width": 31.6,
+                    "height": 4.1,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Capacidad que tiene un sistema computacional inteligente para aprender de la experiencia e ir adaptándose, detectando patrones de comportamiento</div>"
+                },
+                {
+                    "x": 9.1,
+                    "y": 53.27008584572882,
+                    "width": 31.6,
+                    "height": 4.1,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Capacidad que tiene un sistema computacional inteligente para procesar información, obtener conclusiones lógicas de esta y tomar decisiones en base a la información disponible</div>"
+                },
+                {
+                    "x": 9.1,
+                    "y": 70.39356899051359,
+                    "width": 31.6,
+                    "height": 4.1,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Capacidad que tiene un sistema computacional inteligente para almacenar los datos y todo lo que conoce para permitir la toma de decisiones inteligentes</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

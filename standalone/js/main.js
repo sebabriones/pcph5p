@@ -48,6 +48,16 @@ jQuery(document).ready(()=>{
         options.h5pJsonPath = 'resources/l2/m1_l2_r1';
     }else if(id == 'm1l2r2'){
         options.h5pJsonPath = 'resources/l2/m1_l2_r2';
+    }else if(id == 'm1l3e1'){
+        options.h5pJsonPath = 'resources/l3/m1_l3_e1';
+    }else if(id == 'm1l3e2'){
+        options.h5pJsonPath = 'resources/l3/m1_l3_e2';
+    }else if(id == 'm1l3r1'){
+        options.h5pJsonPath = 'resources/l3/m1_l3_r1';
+    }else if(id == 'm1l3r2'){
+        options.h5pJsonPath = 'resources/l3/m1_l3_r2';
+    }else if(id == 'm1l3r3'){
+        options.h5pJsonPath = 'resources/l3/m1_l3_r3';
     }else if(id == 'ordenar'){
         options.h5pJsonPath = 'resources/ordenar';
     }else if(id == 'pasapalabra'){

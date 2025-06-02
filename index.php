@@ -32,6 +32,14 @@
                 <li><a href="./standalone/h5p.php?id=m1l2r1">Refuerzo 1</a></li>
                 <li><a href="./standalone/h5p.php?id=m1l2r2">Refuerzo 2</a></li>
             </ul>
+            <li>Leccion 3</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?id=m1l3e1">Ejercicio 1</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l3e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l3r1">Refuerzo 1</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l3r2">Refuerzo 2</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l3r3">Refuerzo 3</a></li>
+            </ul>
         </ul>
         <li>Módulo 2</li>
         <li>Módulo 3</li>
