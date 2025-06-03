@@ -1,6 +1,7 @@
 .h5p-question {
   /*background: rgba(255, 255, 255, 0.9);*/
   background: #f8feef; /*nuevo*/
+  font-family: "Poppins-regular" !important; /*nuevo*/
   position: relative;
 }
 .h5p-question-video {
@@ -129,11 +130,11 @@
 }
 
 /*nuevo*/
-.h5p-question-content .h5p-text-input {
+/*.h5p-question-content .h5p-text-input {
   background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
   border-radius: 1em !important;
   color: #062971;
-}
+}*/
 
 .h5p-question-content.h5p-has-question-popup {
   position: relative;

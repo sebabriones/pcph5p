@@ -183,6 +183,127 @@ jQuery(document).ready(()=>{
             e.target.style.color = '#fff';
         });*/
 
+        if($('iframe').contents().find('select')){
+            /*const h5pInputWrapper = $('iframe').contents().find('.h5p-input-wrapper'),
+                  selects = $('iframe').contents().find('select');
+
+            h5pInputWrapper.each((i,el)=>{
+                const div = d.createElement('div'),
+                      span1 = d.createElement('span'),
+                      span2 = d.createElement('span'),
+                      ul = d.createElement('ul');
+                div.classList.add('custom-select-display');
+                span1.classList.add('selected-value');
+                span2.classList.add('dropdown-arrow');
+                span2.innerText = '▼';
+                ul.classList.add('custom-select-options');
+
+                el.appendChild(div);
+                el.appendChild(ul);
+                div.appendChild(span1);
+                div.appendChild(span2);
+            });
+
+            const uls = $('iframe').contents().find('.custom-select-options');
+
+            selects.each((x,sel)=>{
+                sel.classList.add('hidden-select');
+
+                $(sel.children).each((i,opt)=>{
+                    const li = d.createElement('li');
+                    li.dataset.value = `option${i+1}`;
+                    li.innerText = opt.value;
+
+                    uls[x].appendChild(li);
+                });
+            });*/
+
+            const h5pInputWrapper = $('iframe').contents().find('.h5p-input-wrapper'),
+                  selects = $('iframe').contents().find('select');
+
+            h5pInputWrapper.each((i,el)=>{
+                const div = d.createElement('div'),
+                      ul = d.createElement('ul');
+                div.classList.add('custom-select-display');
+                ul.classList.add('custom-options','hidden');
+
+                el.appendChild(div);
+                el.appendChild(ul);
+            });
+
+            const uls = $('iframe').contents().find('.custom-options');
+
+            selects.each((x,sel)=>{
+                sel.classList.add('original-select');
+
+                $(sel.children).each((i,opt)=>{
+                    const li = d.createElement('li');
+                    li.dataset.value = `option${i+1}`;
+                    li.innerText = opt.value;
+
+                    uls[x].appendChild(li);
+                });
+            });
+
+            // JavaScript para la lógica (ejemplo simplificado)
+            //const wrapper = document.querySelector('.custom-select-wrapper');
+            //const display = wrapper.querySelector('.custom-select-display');
+            //const optionsList = wrapper.querySelector('.custom-options');
+            //const originalSelect = wrapper.querySelector('.original-select');
+
+            const display = $('iframe').contents().find('.custom-select-display')[0];
+            const optionsList = $('iframe').contents().find('.custom-options')[0];
+            //const originalSelect = $('iframe').contents().find('.original-select');
+
+            //console.log(h5pInputWrapper);
+            //console.log(selects);
+            //console.log(display);
+            //console.log(optionsList);
+
+            // Rellenar las opciones personalizadas desde el select original
+            /*Array.from(select.options).forEach(option => {
+                const li = document.createElement('li');
+                li.textContent = option.textContent;
+                li.dataset.value = option.value;
+                optionsList.appendChild(li);
+            });*/
+
+            // Abrir/cerrar el menú
+            display.addEventListener('click', () => {
+                console.log('click');
+                optionsList.classList.toggle('hidden');
+            });
+
+            // Seleccionar una opción
+            optionsList.addEventListener('click', (e) => {
+                if (e.target.tagName === 'LI') {
+                    const selectedValue = e.target.dataset.value;
+                    const selectedText = e.target.textContent;
+
+                    display.textContent = selectedText; // Actualizar el display
+                    selects[0].value = selectedValue; // Actualizar el select original
+                    optionsList.classList.add('hidden'); // Cerrar el menú
+
+                    // Actualizar la clase 'selected'
+                    optionsList.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
+                    e.target.classList.add('selected');
+                }
+            });
+
+            // Cerrar al hacer clic fuera
+            document.addEventListener('click', (e) => {
+                if (!h5pInputWrapper[0].contains(e.target)) {
+                    optionsList.classList.add('hidden');
+                }
+            });
+
+            // Inicializar con el valor por defecto
+            if (selects[0].value) {
+                display.textContent = selects[0].options[selects[0].selectedIndex].textContent;
+                optionsList.querySelector(`li[data-value="${selects[0].value}"]`)?.classList.add('selected');
+            }
+
+        }
     }
 
     /*Función que permite posicionar los botones prev y next en el mismo div que el progressbar*/

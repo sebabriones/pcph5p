@@ -216,3 +216,55 @@ a {
     0% {margin-top: -118px;}
     100% {margin-top: 0;}
 }*/
+
+/*Estilos Selects*/
+/* CSS */
+.original-select {
+  display: none; /* Oculta el select nativo */
+}
+
+/* Estilos de la caja visible del select personalizado */
+.custom-select-display {
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Estilos del menú desplegable personalizado (el UL) */
+.custom-options {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute; /* Para que aparezca sobre otros elementos */
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.custom-options.hidden {
+  display: none;
+}
+
+/* Estilos para cada opción (el LI) */
+.custom-options li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: #f8f8f8; /* Color de fondo de la opción */
+  color: #333; /* Color de texto de la opción */
+}
+
+.custom-options li:hover {
+  background-color: #e0f2f7; /* Color al pasar el ratón por la opción */
+  color: #007bff;
+}
+
+.custom-options li.selected {
+  background-color: #007bff;
+  color: white;
+}
