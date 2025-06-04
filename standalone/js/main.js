@@ -12,7 +12,7 @@ jQuery(document).ready(()=>{
         copyright: false,
         export: false,
         icon: false,
-        customCss: [ 'css/demo.css' ],
+        customCss: [ 'css/demo.scss' ],
         customJs: [ 'js/resources/demo.js' ],
     }
 
@@ -169,67 +169,26 @@ jQuery(document).ready(()=>{
     }
 
     const selectFunction = function(){
-        /*$('iframe').contents().find('option').on('click', (e)=>{
-            console.log(e.target);
-            e.target.classList.add('select-changed');
-            e.target.style.background = '#fff';
-            e.target.style.color = 'red';
-        });
-
-        $('iframe').contents().find('select').on('change', (e)=>{
-            console.log(e.target);
-            e.target.classList.add('select-changed');
-            e.target.style.background = 'linear-gradient(180deg, #5166ad 0%, #062971 90%)';
-            e.target.style.color = '#fff';
-        });*/
-
-        if($('iframe').contents().find('select')){
-            /*const h5pInputWrapper = $('iframe').contents().find('.h5p-input-wrapper'),
-                  selects = $('iframe').contents().find('select');
-
-            h5pInputWrapper.each((i,el)=>{
-                const div = d.createElement('div'),
-                      span1 = d.createElement('span'),
-                      span2 = d.createElement('span'),
-                      ul = d.createElement('ul');
-                div.classList.add('custom-select-display');
-                span1.classList.add('selected-value');
-                span2.classList.add('dropdown-arrow');
-                span2.innerText = '▼';
-                ul.classList.add('custom-select-options');
-
-                el.appendChild(div);
-                el.appendChild(ul);
-                div.appendChild(span1);
-                div.appendChild(span2);
-            });
-
-            const uls = $('iframe').contents().find('.custom-select-options');
-
-            selects.each((x,sel)=>{
-                sel.classList.add('hidden-select');
-
-                $(sel.children).each((i,opt)=>{
-                    const li = d.createElement('li');
-                    li.dataset.value = `option${i+1}`;
-                    li.innerText = opt.value;
-
-                    uls[x].appendChild(li);
-                });
-            });*/
-
+        if($('iframe').contents().find('.h5p-advanced-blanks') && id == 'm1l2r1'){
             const h5pInputWrapper = $('iframe').contents().find('.h5p-input-wrapper'), //contenedor del select original
                   selects = $('iframe').contents().find('select'); //array con los selects
 
             //Se crean los elementos del nuevo select y se insertan en el contenedor del select original                  
             h5pInputWrapper.each((i,el)=>{
                 const div = d.createElement('div'),
-                      ul = d.createElement('ul');
+                      ul = d.createElement('ul'),
+                      span1 = d.createElement('div'),
+                      span2 = d.createElement('div');
                 div.classList.add('custom-select-display');
                 ul.classList.add('custom-options','hidden');
+                span1.classList.add('custom-select-text');
+                span2.classList.add('custom-select-icon');
+                span2.innerText = '▼';
 
                 el.appendChild(div);
                 el.appendChild(ul);
+                div.appendChild(span1);
+                div.appendChild(span2);
             });
 
             //array con las uls que contendrán las options
@@ -250,75 +209,87 @@ jQuery(document).ready(()=>{
                 });
             });
 
-            // JavaScript para la lógica (ejemplo simplificado)
-            //const wrapper = document.querySelector('.custom-select-wrapper');
-            //const display = wrapper.querySelector('.custom-select-display');
-            //const optionsList = wrapper.querySelector('.custom-options');
-            //const originalSelect = wrapper.querySelector('.original-select');
+            const display = $('iframe').contents().find('.custom-select-display'); //Nuevo select
+            const text = $('iframe').contents().find('.custom-select-text'); //Texto dentro del nuevo select
+            const optionsList = $('iframe').contents().find('.custom-options'); //Nuevas options
 
-            const display = $('iframe').contents().find('.custom-select-display')[0];
-            const optionsList = $('iframe').contents().find('.custom-options')[0];
-            //const originalSelect = $('iframe').contents().find('.original-select');
+            for(let i=0; i<selects.length; i++){
 
-            //console.log(h5pInputWrapper);
-            //console.log(selects);
-            //console.log(display);
-            //console.log(optionsList);
+                // Abrir/cerrar el menú
+                display[i].addEventListener('click', () => {
+                    optionsList[i].classList.toggle('hidden');
+                });
 
+                // Seleccionar una opción
+                optionsList[i].addEventListener('click', (e) => {
+                    if (e.target.tagName === 'LI') {
+                        const selectedValue = e.target.dataset.value;
+                        const selectedText = e.target.textContent;
 
-            // Rellenar las opciones personalizadas desde el select original
-            /*Array.from(select.options).forEach(option => {
-                const li = document.createElement('li');
-                li.textContent = option.textContent;
-                li.dataset.value = option.value;
-                optionsList.appendChild(li);
-            });*/
+                        //display[i].textContent = selectedText; // Actualizar el display
+                        text[i].textContent = selectedText;
+                        selects[i].value = selectedValue; // Actualizar el select original
+                        optionsList[i].classList.add('hidden'); // Cerrar el menú
 
-            // Abrir/cerrar el menú
-            display.addEventListener('click', () => {
-                console.log('click');
-                optionsList.classList.toggle('hidden');
-            });
+                        // Crea un nuevo evento 'change'
+                        const event = new Event('change', {
+                            bubbles: true,   // El evento "burbujeará" por el DOM
+                            cancelable: true // El evento se puede cancelar
+                        });
 
-            // Seleccionar una opción
-            optionsList.addEventListener('click', (e) => {
-                if (e.target.tagName === 'LI') {
-                    const selectedValue = e.target.dataset.value;
-                    const selectedText = e.target.textContent;
+                        // Dispara el evento 'change' en el elemento select
+                        selects[i].dispatchEvent(event);
 
-                    display.textContent = selectedText; // Actualizar el display
-                    selects[0].value = selectedValue; // Actualizar el select original
-                    optionsList.classList.add('hidden'); // Cerrar el menú
+                        // Actualizar la clase 'selected'
+                        optionsList[i].querySelectorAll('li').forEach(li => li.classList.remove('selected'));
+                        e.target.classList.add('selected');
+                    }
+                    console.log(selects[i]);
+                });
 
-                    // Crea un nuevo evento 'change'
-                    const event = new Event('change', {
-                        bubbles: true,   // El evento "burbujeará" por el DOM
-                        cancelable: true // El evento se puede cancelar
+                // Cerrar al hacer clic fuera
+                document.addEventListener('click', (e) => {
+                    if (!h5pInputWrapper[i].contains(e.target)) {
+                        optionsList[i].classList.add('hidden');
+                    }
+                });
+
+                $('iframe').contents().on('click', (e) => {
+                    console.log('click');
+                    if (!h5pInputWrapper[i].contains(e.target)) {
+                        optionsList[i].classList.add('hidden');
+                    }
+                });
+
+                // Inicializar con el valor por defecto
+                if (selects[i].value) {
+                    text[i].textContent = selects[i].options[selects[i].selectedIndex].textContent;
+                    optionsList[i].querySelector(`li[data-value="${selects[i].value}"]`)?.classList.add('selected');
+                }
+
+                //Activa o desactiva el pointer-event (bloquea o activa) del nuevo select al checkear o resetear el ejercicio
+                //Además resetea los nuevos selects
+                $('iframe').contents().find('.h5p-question-buttons').on('click', (e)=>{
+                    if([...e.target.classList].includes('h5p-question-check-answer')){ //Si se clickea "Comprobar"
+                        $(display[i]).css({'pointer-events':'none'});
+                    }else if([...e.target.classList].includes('h5p-question-try-again')){ //Si se clickea "Intentar de nuevo"
+                        text[i].textContent = selects[i].options[selects[i].selectedIndex].textContent;
+                        if($(optionsList[i]).find('.selected').length > 0) $(optionsList[i]).find('.selected')[0].classList.remove('selected');                        
+                        $(display[i]).css({'pointer-events':'auto'});
+                        $('iframe').contents().find('.option-selected').removeClass('option-selected');
+                    }
+                });
+
+                $(optionsList[i].children).each((i,option)=>{
+                    $(option).on('click', (e)=>{
+                        if(e.target.textContent !== ""){
+                            e.target.parentNode.previousElementSibling.classList.add('option-selected');
+                        }else{
+                            e.target.parentNode.previousElementSibling.classList.remove('option-selected');
+                        }
                     });
-
-                    // Dispara el evento 'change' en el elemento select
-                    selects[0].dispatchEvent(event);
-
-                    // Actualizar la clase 'selected'
-                    optionsList.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
-                    e.target.classList.add('selected');
-                }
-                console.log(selects[0]);
-            });
-
-            // Cerrar al hacer clic fuera
-            document.addEventListener('click', (e) => {
-                if (!h5pInputWrapper[0].contains(e.target)) {
-                    optionsList.classList.add('hidden');
-                }
-            });
-
-            // Inicializar con el valor por defecto
-            if (selects[0].value) {
-                display.textContent = selects[0].options[selects[0].selectedIndex].textContent;
-                optionsList.querySelector(`li[data-value="${selects[0].value}"]`)?.classList.add('selected');
+                });
             }
-
         }
     }
 
@@ -366,7 +337,7 @@ jQuery(document).ready(()=>{
                                 $('iframe').contents().find('.questionset-results').find('.qs-retrybutton')[0].addEventListener('click', actionBtn);
                             })
                         }
-                    }, 400);
+                    }, 200);
                 })
             });
 
@@ -390,7 +361,7 @@ jQuery(document).ready(()=>{
                     //h5pFunction();
                     selectFunction();
                     //quizFunction();
-                }, 400);
+                }, 250);
             }
         );
     }

@@ -217,29 +217,79 @@ a {
     100% {margin-top: 0;}
 }*/
 
-/*Estilos Selects*/
+/*Estilos Nuevos Selects*/
 /* CSS */
-.original-select {
+.h5p-advanced-blank .h5p-input-wrapper {
+  vertical-align: bottom;
+}
+
+.h5p-advanced-blank .original-select {
   display: none; /* Oculta el select nativo */
 }
 
 /* Estilos de la caja visible del select personalizado */
-.custom-select-display {
-  padding: 10px 15px;
-  border: 1px solid #007bff;
-  border-radius: 5px;
-  background-color: #f0f0f0;
+.h5p-advanced-blank .custom-select-display {
+  padding: 0.1875em 0.5em 0.1875em 0.5em;
+  border-radius: 1em;
+  background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
   cursor: pointer;
-  width: 10em;
+  width: 12em;
+  /*max-width: calc(100vw - 36px);*/
+  height: 1.3em;
+  margin: 0 !important;
+  font-size: 14px;
+  display: flex;
+}
+
+.h5p-advanced-blank .custom-select-display.option-selected {
+  background: linear-gradient(to bottom, #5166ad, #062971);
+  color: #fff;
+}
+
+.h5p-advanced-blank .custom-select-icon {
+}
+
+.h5p-advanced-blank .correct .custom-select-display .custom-select-icon,
+.h5p-advanced-blank .error .custom-select-display .custom-select-icon {
+  /*display: none;*/
+  visibility: hidden;
+}
+
+.h5p-advanced-blank .correct .custom-select-display {
+  background: linear-gradient(180deg, #8bae54 0%, #456f06 90%);
+  color: #fff;
+}
+
+.h5p-advanced-blank .error .custom-select-display {
+  background: linear-gradient(180deg, #870202 0%, #3c0505 90%);
+  color: #fff;
+}
+
+.h5p-advanced-blank .correct .h5p-input-wrapper:after,
+.h5p-advanced-blank .error .h5p-input-wrapper:after {
+  color: #fff !important;
+}
+
+.h5p-advanced-blank .custom-select-text {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.h5p-advanced-blank .custom-select-text,
+.h5p-advanced-blank .custom-select-icon {
+  line-height: 1.3em !important;
 }
 
 /* Estilos del menú desplegable personalizado (el UL) */
-.custom-options {
+.h5p-advanced-blank .custom-options {
   list-style: none;
   padding: 0;
   margin: 5px 0 0 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #fff841;
+  border-radius: 10px;
   background-color: #fff;
   position: absolute; /* Para que aparezca sobre otros elementos */
   width: 100%;
@@ -247,25 +297,34 @@ a {
   z-index: 1000;
 }
 
-.custom-options.hidden {
+.h5p-advanced-blank .custom-options.hidden {
   display: none;
 }
 
 /* Estilos para cada opción (el LI) */
-.custom-options li {
-  padding: 10px 15px;
+.h5p-advanced-blank .custom-options li {
+  padding: 2px 15px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  background-color: #f8f8f8; /* Color de fondo de la opción */
-  color: #333; /* Color de texto de la opción */
+  background-color: #fff; /* Color de fondo de la opción */
+  color: #062971; /* Color de texto de la opción */
 }
 
-.custom-options li:hover {
-  background-color: #e0f2f7; /* Color al pasar el ratón por la opción */
-  color: #007bff;
+.h5p-advanced-blank .custom-options > li:first-child {
+    border-radius: 10px 10px 0 0;
+    padding: 14px 0;
 }
 
-.custom-options li.selected {
-  background-color: #007bff;
-  color: white;
+.h5p-advanced-blank .custom-options li:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.h5p-advanced-blank .custom-options li:hover {
+  background-color: #c1fbfd; /* Color al pasar el ratón por la opción */
+  color: #062971;
+}
+
+.h5p-advanced-blank .custom-options li.selected {
+  background-color: #062971;
+  color: #fff;
 }
