@@ -218,9 +218,10 @@ jQuery(document).ready(()=>{
                 });
             });*/
 
-            const h5pInputWrapper = $('iframe').contents().find('.h5p-input-wrapper'),
-                  selects = $('iframe').contents().find('select');
+            const h5pInputWrapper = $('iframe').contents().find('.h5p-input-wrapper'), //contenedor del select original
+                  selects = $('iframe').contents().find('select'); //array con los selects
 
+            //Se crean los elementos del nuevo select y se insertan en el contenedor del select original                  
             h5pInputWrapper.each((i,el)=>{
                 const div = d.createElement('div'),
                       ul = d.createElement('ul');
@@ -231,15 +232,19 @@ jQuery(document).ready(()=>{
                 el.appendChild(ul);
             });
 
+            //array con las uls que contendrán las options
             const uls = $('iframe').contents().find('.custom-options');
 
+            //Se crean los li's que contienen las opciones del nuevo select
             selects.each((x,sel)=>{
                 sel.classList.add('original-select');
 
                 $(sel.children).each((i,opt)=>{
                     const li = d.createElement('li');
-                    li.dataset.value = `option${i+1}`;
+                    li.dataset.value = `${opt.text}`;
                     li.innerText = opt.value;
+                    opt.value = `${opt.text}`;
+                    //console.log(opt);
 
                     uls[x].appendChild(li);
                 });
@@ -259,6 +264,7 @@ jQuery(document).ready(()=>{
             //console.log(selects);
             //console.log(display);
             //console.log(optionsList);
+
 
             // Rellenar las opciones personalizadas desde el select original
             /*Array.from(select.options).forEach(option => {
@@ -284,10 +290,20 @@ jQuery(document).ready(()=>{
                     selects[0].value = selectedValue; // Actualizar el select original
                     optionsList.classList.add('hidden'); // Cerrar el menú
 
+                    // Crea un nuevo evento 'change'
+                    const event = new Event('change', {
+                        bubbles: true,   // El evento "burbujeará" por el DOM
+                        cancelable: true // El evento se puede cancelar
+                    });
+
+                    // Dispara el evento 'change' en el elemento select
+                    selects[0].dispatchEvent(event);
+
                     // Actualizar la clase 'selected'
                     optionsList.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
                     e.target.classList.add('selected');
                 }
+                console.log(selects[0]);
             });
 
             // Cerrar al hacer clic fuera
@@ -373,8 +389,8 @@ jQuery(document).ready(()=>{
                 setTimeout(() => {
                     //h5pFunction();
                     selectFunction();
-                    quizFunction();
-                }, 150);
+                    //quizFunction();
+                }, 400);
             }
         );
     }

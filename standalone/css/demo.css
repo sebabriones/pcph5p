@@ -230,6 +230,7 @@ a {
   border-radius: 5px;
   background-color: #f0f0f0;
   cursor: pointer;
+  width: 10em;
 }
 
 /* Estilos del menú desplegable personalizado (el UL) */
