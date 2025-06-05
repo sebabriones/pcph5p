@@ -130,11 +130,12 @@
 }
 
 /*nuevo*/
-/*.h5p-question-content .h5p-text-input {
-  background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
+.h5p-question-content .h5p-text-input {
+  /*background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
   border-radius: 1em !important;
-  color: #062971;
-}*/
+  color: #062971;*/
+  display: none;
+}
 
 .h5p-question-content.h5p-has-question-popup {
   position: relative;

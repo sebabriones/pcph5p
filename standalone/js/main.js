@@ -295,7 +295,8 @@ jQuery(document).ready(()=>{
 
     /*Función que permite posicionar los botones prev y next en el mismo div que el progressbar*/
     const quizFunction = function(){
-        if($('iframe').contents().find('.h5p-question-next')){
+        //if($('iframe').contents().find('.h5p-question-next')){
+        if($('iframe').contents().find('.questionset')){
             const qContainer = $('iframe').contents().find('.question-container'),
                   qsProgress = $('iframe').contents().find('.qs-progress')[0],
                   qCheck = $('iframe').contents().find('.h5p-question-check-answer');
@@ -345,6 +346,12 @@ jQuery(document).ready(()=>{
         }
     }
 
+    const draggableFunction = function(){
+        if(id == 'm1l1e1'){
+            console.log('l1e1');
+        }
+    }
+
     /*new H5PStandalone.H5P( element, options ).then(
         function(){
             //H5P.externalDispatcher.on('domChanged', h5pFunction);
@@ -360,7 +367,8 @@ jQuery(document).ready(()=>{
                 setTimeout(() => {
                     //h5pFunction();
                     selectFunction();
-                    //quizFunction();
+                    quizFunction();
+                    draggableFunction();
                 }, 250);
             }
         );
