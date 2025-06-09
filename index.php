@@ -40,6 +40,19 @@
                 <li><a href="./standalone/h5p.php?id=m1l3r2">Refuerzo 2</a></li>
                 <li><a href="./standalone/h5p.php?id=m1l3r3">Refuerzo 3</a></li>
             </ul>
+            <li>Leccion 4</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?id=m1l4e1">Ejercicio 1</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4e3">Ejercicio 3</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4e4">Ejercicio 4</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4e5">Ejercicio 5</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4e7">Ejercicio 7</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4r1">Refuerzo 1</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4r2">Refuerzo 2</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4r3">Refuerzo 3</a></li>
+                <li><a href="./standalone/h5p.php?id=m1l4r4">Refuerzo 4</a></li>
+            </ul>
         </ul>
         <li>Módulo 2</li>
         <li>Módulo 3</li>

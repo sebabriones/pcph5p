@@ -1,0 +1,104 @@
+{
+    "words": [
+        {
+            "fixWord": false,
+            "orientation": "across",
+            "clue": "Entrega instrucciones concretas y sencillas.",
+            "answer": "EFECTIVIDAD"
+        },
+        {
+            "fixWord": false,
+            "orientation": "across",
+            "clue": "Grupo de instrucciones definidas para resolver un problema.",
+            "answer": "ALGORITMO"
+        },
+        {
+            "fixWord": false,
+            "orientation": "across",
+            "clue": "Es aplicable a diferentes instancias del problema.",
+            "answer": "GENERALIDAD"
+        },
+        {
+            "fixWord": false,
+            "orientation": "across",
+            "clue": "Es el resultado o solución producida.",
+            "answer": "SALIDA"
+        },
+        {
+            "fixWord": false,
+            "orientation": "across",
+            "clue": "Es la información sobre la cual opera un algoritmo.",
+            "answer": "ENTRADA"
+        },
+        {
+            "fixWord": false,
+            "orientation": "across",
+            "clue": "Tiene un número limitado de pasos.",
+            "answer": "FINITUD"
+        },
+        {
+            "fixWord": false,
+            "orientation": "across",
+            "clue": "Posee pasos específicos y comprensibles.",
+            "answer": "PRECISION"
+        }
+    ],
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "theme": {
+        "backgroundColor": "#f8feef",
+        "gridColor": "#f8feef",
+        "cellBackgroundColor": "#cfffcf",
+        "cellColor": "#000000",
+        "clueIdColor": "#606060",
+        "cellBackgroundColorHighlight": "#6fb06f",
+        "cellColorHighlight": "#ffffff",
+        "clueIdColorHighlight": "#ffffff"
+    },
+    "behaviour": {
+        "enableInstantFeedback": false,
+        "scoreWords": true,
+        "applyPenalties": false,
+        "enableRetry": true,
+        "enableSolutionsButton": false,
+        "keepCorrectAnswers": false
+    },
+    "l10n": {
+        "across": "Horizontal",
+        "down": "Vertical",
+        "checkAnswer": "Comprobar",
+        "submitAnswer": "Enviar",
+        "tryAgain": "Intentar de nuevo",
+        "showSolution": "Mostrar solución",
+        "couldNotGenerateCrossword": "No se pudo generar un crucigrama con las palabras dadas. Por favor inténtalo nuevamente con menos palabras, o con palabras que tengan más caracteres en común.",
+        "couldNotGenerateCrosswordTooFewWords": "No se pudo generar un crucigrama. Necesitas por lo menos dos palabras.",
+        "probematicWords": "Algunas palabras no pudieron ser colocadas. Si está usando palabras fijadas, por favor asegúrese de que su posición no impida que otras palabras sean colocadas. Las palabras con la misma alineación podrían no estar colocadas tocándose ambas. Palabras problemáticas: @words",
+        "extraClue": "Pista extra",
+        "closeWindow": "Cerrar ventana"
+    },
+    "a11y": {
+        "crosswordGrid": "Cuadrícula de crucigramas. Use las teclas de flecha para navegar y el teclado para ingresar caracteres. También puedes usar la tecla Tab para navegar y escribir las respuestas en los campos de estilo \"Rellenar los espacios en blanco\" en lugar de la cuadrícula.",
+        "column": "Columna",
+        "row": "Fila",
+        "across": "Horizontal",
+        "down": "Vertical",
+        "empty": "Vacío",
+        "resultFor": "Resultado para: @clue",
+        "correct": "Correcto",
+        "wrong": "Incorrecto",
+        "point": "punto",
+        "solutionFor": "Para @clue la solución es: @solution",
+        "extraClueFor": "Abrir pista extra para @clue",
+        "letterSevenOfNine": "Letra @position de @length",
+        "lettersWord": "palabra de @length letras",
+        "check": "Comprueba los caracteres. Las respuestas serán marcadas como correctas, incorrectas, o sin contestar.",
+        "showSolution": "Mostrar la solución. El crucigrama se completará con su solución correcta.",
+        "retry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+        "yourResult": "Has conseguido @score de un total de @total puntos."
+    },
+    "taskDescription": "<p>Resuelve el crucigrama de las características de un buen algoritmo escribiendo en cada casilla las letras que componen la palabra. Sigue las pistas para solucionarlo. Puedes escribir en el crucigrama o en las líneas punteadas. (No considerar tildes).</p>"
+}

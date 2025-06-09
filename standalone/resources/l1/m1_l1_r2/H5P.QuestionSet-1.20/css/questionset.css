@@ -200,8 +200,9 @@
 
 .h5p-question .h5p-question-prev,
 .h5p-question .h5p-question-next {
-  padding: 0.5em 0;
-  width: 2.1875em;
+  /*padding: 0.5em 0;
+  width: 2.1875em;*/
+  display: none; /*nuevo*/
 }
 
 .h5p-question .h5p-question-prev.truncated,

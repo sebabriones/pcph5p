@@ -69,10 +69,9 @@
   font-family: 'H5PFontAwesome4';
   color: #255c41;*/
   right: 0.6em; /*nuevo*/
-  top: 0.7em; /*nuevo*/
+  top: 0.6em; /*nuevo*/
   content: url(../../content/images/True.svg); /*nuevo*/
-  width: 22px; /*nuevo*/
-  height: 22px;/*nuevo*/
+  width: 1.2em; /*nuevo*/
 }
 
 /* Wrongly answered input */
@@ -94,10 +93,9 @@
   /*content: "\f00d";
   color: #b71c1c;*/
   right: 0.6em; /*nuevo*/
-  top: 0.7em; /*nuevo*/
+  top: 0.6em; /*nuevo*/
   content: url(../../content/images/false.svg); /*nuevo*/
-  width: 22px; /*nuevo*/
-  height: 22px;/*nuevo*/
+  width: 1.2em; /*nuevo*/
 }
 
 /* Actual text paragraphs */

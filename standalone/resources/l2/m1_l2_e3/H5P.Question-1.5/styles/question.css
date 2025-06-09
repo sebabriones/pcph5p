@@ -106,8 +106,9 @@
 
 .h5p-question-introduction {
   /*margin: 1em;
-  font-size: 1.125em;*/
-  line-height: 1;
+  font-size: 1.125em;
+  line-height: 1;*/
+  line-height: 1.3em; /*nuevo*/
   font-family: "Poppins-Light"; /*nuevo*/
   padding: 6em 4em 0.5em 4em; /*nuevo*/
   color: #062971; /*nuevo*/
@@ -204,6 +205,7 @@
 
 .h5p-question-feedback-content-text {
   display: inline-block;
+  line-height: 1.3em; /*nuevo*/
   /*padding: 1em; /*nuevo En caso que feedback tenga background-color*/ 
   /*background: red; /*nuevo En caso que feedback tenga background-color*/
 }

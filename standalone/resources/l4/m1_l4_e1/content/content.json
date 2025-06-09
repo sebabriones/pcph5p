@@ -1,0 +1,785 @@
+{
+    "introPage": {
+        "showIntroPage": false,
+        "startButtonText": "Iniciar prueba",
+        "introduction": ""
+    },
+    "progressType": "dots",
+    "passPercentage": 50,
+    "questions": [
+        {
+            "params": {
+                "scoreShow": "Comprobar",
+                "submit": "Enviar",
+                "tryAgain": "Intentar de nuevo",
+                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                "question": {
+                    "settings": {
+                        "size": {
+                            "width": 900,
+                            "height": 540
+                        },
+                        "background": {
+                            "path": "http://localhost/pcph5p/standalone/resources/l4/m1_l4_e1/content/images/image-BFtpNFpN.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 1800,
+                            "height": 1080
+                        }
+                    },
+                    "task": {
+                        "elements": [
+                            {
+                                "x": 56.54281098546041,
+                                "y": 40.38870085704823,
+                                "width": 18.300878432956377,
+                                "height": 1.9338799979806138,
+                                "dropZones": [
+                                    "0",
+                                    "1"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Cambiar el canal</p>"
+                                    },
+                                    "subContentId": "0b758020-7b4b-4869-adfb-be46318d4565",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 51.159021085594425,
+                                "width": 18.301454563812598,
+                                "height": 1.9438146203554119,
+                                "dropZones": [
+                                    "0",
+                                    "1"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Ubicarse frente a un televisor</p>"
+                                    },
+                                    "subContentId": "400c62ef-04be-4e75-8982-a1734631f8f1",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 64.61771421493789,
+                                "width": 18.301454563812598,
+                                "height": 1.9438146203554119,
+                                "dropZones": [
+                                    "0",
+                                    "1"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Presionar el botón Encender o Power</p>"
+                                    },
+                                    "subContentId": "2fbe4906-9b80-4cf3-93e7-702333eba3ce",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            }
+                        ],
+                        "dropZones": [
+                            {
+                                "x": 14.539579967689821,
+                                "y": 51.146399616576595,
+                                "width": 18.174474959612276,
+                                "height": 2.7261712439418413,
+                                "correctElements": [
+                                    "1"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 1</div>"
+                            },
+                            {
+                                "x": 14.539579967689821,
+                                "y": 78.07220018794209,
+                                "width": 18.174474959612276,
+                                "height": 2.7261712439418413,
+                                "correctElements": [
+                                    "2"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 2</div>"
+                            }
+                        ]
+                    }
+                },
+                "overallFeedback": [
+                    {
+                        "from": 0,
+                        "to": 100
+                    }
+                ],
+                "behaviour": {
+                    "enableRetry": false,
+                    "enableCheckButton": true,
+                    "singlePoint": false,
+                    "applyPenalties": false,
+                    "enableScoreExplanation": false,
+                    "dropZoneHighlighting": "dragging",
+                    "autoAlignSpacing": 2,
+                    "enableFullScreen": false,
+                    "showScorePoints": false,
+                    "showTitle": false
+                },
+                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                "noDropzone": "No es zona de colocación.",
+                "tipLabel": "Mostrar pista.",
+                "tipAvailable": "Pista disponible",
+                "correctAnswer": "Respuesta correcta",
+                "wrongAnswer": "Respuesta incorrecta",
+                "feedbackHeader": "Retroalimentación",
+                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                "localize": {
+                    "fullscreen": "Pantalla completa",
+                    "exitFullscreen": "Salir de pantalla completa"
+                }
+            },
+            "library": "H5P.DragQuestion 1.14",
+            "metadata": {
+                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                "license": "U",
+                "title": "Leccion 4 - Ejercicio 1 - 1",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Leccion 4 - Ejercicio 1 - 1"
+            },
+            "subContentId": "e76f77cb-3234-4fe8-9e91-6ecb141276b4"
+        },
+        {
+            "params": {
+                "scoreShow": "Comprobar",
+                "submit": "Enviar",
+                "tryAgain": "Intentar de nuevo",
+                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                "question": {
+                    "settings": {
+                        "size": {
+                            "width": 900,
+                            "height": 540
+                        },
+                        "background": {
+                            "path": "http://localhost/pcph5p/standalone/resources/l4/m1_l4_e1/content/images/image-LeBUPjRb.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 1800,
+                            "height": 1080
+                        }
+                    },
+                    "task": {
+                        "elements": [
+                            {
+                                "x": 56.54281098546041,
+                                "y": 37.69612079991168,
+                                "width": 18.300878432956377,
+                                "height": 2.849700878432956,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Desconectar el cable del enchufe y teléfono una vez que se haya realizado la carga</p>"
+                                    },
+                                    "subContentId": "12d19158-be17-4584-a862-7c6b85814721",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 51.15060677291587,
+                                "width": 18.301454563812598,
+                                "height": 1.942397011308562,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Conectar el cable del cargador al enchufe de corriente eléctrica</p>"
+                                    },
+                                    "subContentId": "32514c49-bc8a-4520-bbf7-a60128ae10e5",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 61.92092700146207,
+                                "width": 18.301454563812598,
+                                "height": 1.9438146203554119,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Tomar el cargador del teléfono</p>"
+                                    },
+                                    "subContentId": "73c889f7-f6b4-44f1-a7d9-67f8438da2a2",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            }
+                        ],
+                        "dropZones": [
+                            {
+                                "x": 14.539579967689821,
+                                "y": 43.077073757845504,
+                                "width": 18.174474959612276,
+                                "height": 2.4975726978998383,
+                                "correctElements": [
+                                    "2"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 1</div>"
+                            },
+                            {
+                                "x": 14.539579967689821,
+                                "y": 78.08061450062064,
+                                "width": 18.174474959612276,
+                                "height": 2.498990306946688,
+                                "correctElements": [
+                                    "1"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 2</div>"
+                            },
+                            {
+                                "x": 14.539579967689821,
+                                "y": 88.84672757282755,
+                                "width": 18.174474959612276,
+                                "height": 2.498990306946688,
+                                "correctElements": [
+                                    "0"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 3</div>"
+                            }
+                        ]
+                    }
+                },
+                "overallFeedback": [
+                    {
+                        "from": 0,
+                        "to": 100
+                    }
+                ],
+                "behaviour": {
+                    "enableRetry": false,
+                    "enableCheckButton": true,
+                    "singlePoint": false,
+                    "applyPenalties": false,
+                    "enableScoreExplanation": false,
+                    "dropZoneHighlighting": "dragging",
+                    "autoAlignSpacing": 2,
+                    "enableFullScreen": false,
+                    "showScorePoints": false,
+                    "showTitle": false
+                },
+                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                "noDropzone": "No es zona de colocación.",
+                "tipLabel": "Mostrar pista.",
+                "tipAvailable": "Pista disponible",
+                "correctAnswer": "Respuesta correcta",
+                "wrongAnswer": "Respuesta incorrecta",
+                "feedbackHeader": "Retroalimentación",
+                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                "localize": {
+                    "fullscreen": "Pantalla completa",
+                    "exitFullscreen": "Salir de pantalla completa"
+                }
+            },
+            "library": "H5P.DragQuestion 1.14",
+            "metadata": {
+                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                "license": "U",
+                "title": "Leccion 4 - Ejercicio 1 - 2",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Leccion 4 - Ejercicio 1 - 2"
+            },
+            "subContentId": "1bceeb1c-8add-49cd-b53b-f967c9baae27"
+        },
+        {
+            "params": {
+                "scoreShow": "Comprobar",
+                "submit": "Enviar",
+                "tryAgain": "Intentar de nuevo",
+                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                "question": {
+                    "settings": {
+                        "size": {
+                            "width": 900,
+                            "height": 540
+                        },
+                        "background": {
+                            "path": "http://localhost/pcph5p/standalone/resources/l4/m1_l4_e1/content/images/image-HPu22Due.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 1800,
+                            "height": 1080
+                        }
+                    },
+                    "task": {
+                        "elements": [
+                            {
+                                "x": 56.54281098546041,
+                                "y": 26.917386258686935,
+                                "width": 17.392730815831985,
+                                "height": 1.9438146203554119,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "4"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Mojarse las manos</p>"
+                                    },
+                                    "subContentId": "4283cfaa-ca5b-44d2-9d1b-5ccf35b55dbe",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 37.691913643572406,
+                                "width": 17.392730815831985,
+                                "height": 1.9438146203554119,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "4"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Cerrar la llave de agua</p>"
+                                    },
+                                    "subContentId": "9dfe5ac3-333a-46ad-a888-aace62967553",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 51.159021085594425,
+                                "width": 17.392730815831985,
+                                "height": 1.9438146203554119,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "4"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Abrir la llave de agua</p>"
+                                    },
+                                    "subContentId": "b24c2d9f-606b-4401-aaa0-d00d3c053337",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 61.925134157801345,
+                                "width": 17.392730815831985,
+                                "height": 1.9438146203554119,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "4"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Enjuagarse las manos</p>"
+                                    },
+                                    "subContentId": "ba49b38e-59c3-42a6-a223-e01508a10ef0",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 56.54281098546041,
+                                "y": 75.38803444348409,
+                                "width": 17.392730815831985,
+                                "height": 1.942397011308562,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "4"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Secarse las manos con papel o toalla</p>"
+                                    },
+                                    "subContentId": "9cca9097-1c5f-4c94-87ed-802391274628",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            }
+                        ],
+                        "dropZones": [
+                            {
+                                "x": 14.539579967689821,
+                                "y": 43.077073757845504,
+                                "width": 18.174474959612276,
+                                "height": 2.498990306946688,
+                                "correctElements": [
+                                    "2"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 1</div>"
+                            },
+                            {
+                                "x": 14.539579967689821,
+                                "y": 51.15060677291587,
+                                "width": 18.174474959612276,
+                                "height": 2.498990306946688,
+                                "correctElements": [
+                                    "0"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 2</div>"
+                            },
+                            {
+                                "x": 14.539579967689821,
+                                "y": 69.9986671728717,
+                                "width": 18.174474959612276,
+                                "height": 2.498990306946688,
+                                "correctElements": [
+                                    "3"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 3</div>"
+                            },
+                            {
+                                "x": 14.539579967689821,
+                                "y": 78.07640734428136,
+                                "width": 18.174474959612276,
+                                "height": 2.498990306946688,
+                                "correctElements": [
+                                    "1"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 4</div>"
+                            },
+                            {
+                                "x": 14.539579967689821,
+                                "y": 88.84672757282755,
+                                "width": 18.174474959612276,
+                                "height": 2.498990306946688,
+                                "correctElements": [
+                                    "4"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>zona 5</div>"
+                            }
+                        ]
+                    }
+                },
+                "overallFeedback": [
+                    {
+                        "from": 0,
+                        "to": 100
+                    }
+                ],
+                "behaviour": {
+                    "enableRetry": false,
+                    "enableCheckButton": true,
+                    "singlePoint": false,
+                    "applyPenalties": false,
+                    "enableScoreExplanation": false,
+                    "dropZoneHighlighting": "dragging",
+                    "autoAlignSpacing": 2,
+                    "enableFullScreen": false,
+                    "showScorePoints": false,
+                    "showTitle": false
+                },
+                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                "noDropzone": "No es zona de colocación.",
+                "tipLabel": "Mostrar pista.",
+                "tipAvailable": "Pista disponible",
+                "correctAnswer": "Respuesta correcta",
+                "wrongAnswer": "Respuesta incorrecta",
+                "feedbackHeader": "Retroalimentación",
+                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                "localize": {
+                    "fullscreen": "Pantalla completa",
+                    "exitFullscreen": "Salir de pantalla completa"
+                }
+            },
+            "library": "H5P.DragQuestion 1.14",
+            "metadata": {
+                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                "license": "U",
+                "title": "Leccion 4 - Ejercicio 1 - 3",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Leccion 4 - Ejercicio 1 - 3"
+            },
+            "subContentId": "cc910380-61ec-491e-a0d1-c69684f80840"
+        }
+    ],
+    "disableBackwardsNavigation": false,
+    "randomQuestions": false,
+    "endGame": {
+        "showResultPage": true,
+        "showSolutionButton": false,
+        "showRetryButton": true,
+        "noResultMessage": "Terminado",
+        "message": "Tu resultado:",
+        "scoreBarLabel": "Has conseguido @finals de @totals puntos",
+        "overallFeedback": [
+            {
+                "from": 0,
+                "to": 100
+            }
+        ],
+        "solutionButtonText": "Mostrar solución",
+        "retryButtonText": "Intentar de nuevo",
+        "finishButtonText": "Terminar",
+        "submitButtonText": "Enviar",
+        "showAnimations": false,
+        "skippable": false,
+        "skipButtonText": "Saltar vídeo"
+    },
+    "override": {
+        "checkButton": true,
+        "showSolutionButton": "off"
+    },
+    "texts": {
+        "prevButton": "Pregunta anterior",
+        "nextButton": "Pregunta siguiente",
+        "finishButton": "Terminar",
+        "submitButton": "Enviar",
+        "textualProgress": "Pregunta: @current de @total preguntas",
+        "jumpToQuestion": "Pregunta %d de %total",
+        "questionLabel": "Pregunta",
+        "readSpeakerProgress": "Pregunta @current de @total",
+        "unansweredText": "No contestada",
+        "answeredText": "Contestada",
+        "currentQuestionText": "Pregunta actual",
+        "navigationLabel": "Preguntas",
+        "questionSetInstruction": "Choose question to display"
+    }
+}

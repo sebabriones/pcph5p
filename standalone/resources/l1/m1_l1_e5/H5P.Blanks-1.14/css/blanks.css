@@ -68,8 +68,7 @@
   right: 0.4em; /*nuevo*/
   top: 0.5em; /*nuevo*/
   content: url(../../content/images/True.svg); /*nuevo*/
-  width: 24px; /*nuevo*/
-  height: 24px;/*nuevo*/
+  width: 1.6em; /*nuevo*/
 }
 
 /* Wrongly answered input */
@@ -90,10 +89,9 @@
   /*content: "\f00d";
   color: #b71c1c;*/
   right: 0.4em; /*nuevo*/
-  top: 0.5em; /*nuevo*/
+  top: 0.6em; /*nuevo*/
   content: url(../../content/images/false.svg); /*nuevo*/
-  width: 24px; /*nuevo*/
-  height: 24px;/*nuevo*/
+  width: 1.6em; /*nuevo*/
 }
 
 /* Actual text paragraphs */

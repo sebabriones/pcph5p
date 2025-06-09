@@ -122,7 +122,7 @@
   /*color: #1a4473;
   background: #cee0f4;*/
   color: #fff; /*nuevo*/
-  background: linear-gradient(to bottom, #5166ad, #062971); /*nuevo*/
+  background: linear-gradient(180deg, #5166ad 0%, #062971 90%); /*nuevo*/
   /*border: 2px solid #388EFF;*/
   box-shadow: none;
 }

@@ -58,6 +58,26 @@ jQuery(document).ready(()=>{
         options.h5pJsonPath = 'resources/l3/m1_l3_r2';
     }else if(id == 'm1l3r3'){
         options.h5pJsonPath = 'resources/l3/m1_l3_r3';
+    }else if(id == 'm1l4e1'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_e1';
+    }else if(id == 'm1l4e2'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_e2';
+    }else if(id == 'm1l4e3'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_e3';
+    }else if(id == 'm1l4e4'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_e4';
+    }else if(id == 'm1l4e5'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_e5';
+    }else if(id == 'm1l4e7'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_e7';
+    }else if(id == 'm1l4r1'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_r1';
+    }else if(id == 'm1l4r2'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_r2';
+    }else if(id == 'm1l4er3'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_r3';
+    }else if(id == 'm1l4r4'){
+        options.h5pJsonPath = 'resources/l4/m1_l4_r4';
     }else if(id == 'ordenar'){
         options.h5pJsonPath = 'resources/ordenar';
     }else if(id == 'pasapalabra'){
@@ -296,7 +316,7 @@ jQuery(document).ready(()=>{
     /*Función que permite posicionar los botones prev y next en el mismo div que el progressbar*/
     const quizFunction = function(){
         //if($('iframe').contents().find('.h5p-question-next')){
-        if($('iframe').contents().find('.questionset')){
+        if($('iframe').contents().find('.questionset') || id==='m1l1r2' || id==='m1l4e1'){
             const qContainer = $('iframe').contents().find('.question-container'),
                   qsProgress = $('iframe').contents().find('.qs-progress')[0],
                   qCheck = $('iframe').contents().find('.h5p-question-check-answer');
@@ -347,8 +367,8 @@ jQuery(document).ready(()=>{
     }
 
     const draggableFunction = function(){
-        if(id == 'm1l1e1'){
-            console.log('l1e1');
+        if(id == 'm1l1r1' || id == 'm1l3r1'){
+            console.log('dragableFunction');
         }
     }
 

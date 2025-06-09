@@ -71,8 +71,7 @@
   right: 0.6em; /*nuevo*/
   top: 0.6em; /*nuevo*/
   content: url(../../content/images/True.svg); /*nuevo*/
-  width: 22px; /*nuevo*/
-  height: 22px;/*nuevo*/
+  width: 1.2em; /*nuevo*/
 }
 
 /* Wrongly answered input */
@@ -96,8 +95,7 @@
   right: 0.6em; /*nuevo*/
   top: 0.6em; /*nuevo*/
   content: url(../../content/images/false.svg); /*nuevo*/
-  width: 22px; /*nuevo*/
-  height: 22px;/*nuevo*/
+  width: 1.2em; /*nuevo*/
 }
 
 /* Actual text paragraphs */
