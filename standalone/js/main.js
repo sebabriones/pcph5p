@@ -12,7 +12,7 @@ jQuery(document).ready(()=>{
         copyright: false,
         export: false,
         icon: false,
-        customCss: [ 'css/demo.scss' ],
+        customCss: [ 'css/demo.css' ],
         customJs: [ 'js/resources/demo.js' ],
     }
 
@@ -124,6 +124,9 @@ jQuery(document).ready(()=>{
             if(ind === 0) el.append(draggableContainer);
         });*/
 
+        /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
+
+
         /////////////////////////INSTRUCCIONES PARA H5P/////////////////////////////
 
         //$('iframe').contents().find('.h5p-question-introduction').remove();
@@ -137,9 +140,8 @@ jQuery(document).ready(()=>{
                                                                                                                         ? 'Clasifica el tipo de dispositivo electrónico digital arrastrando los elementos al lugar que corresponda.'
                                                                                                                         : (options.h5pJsonPath=='resources/m1-l1-e3-4')
                                                                                                                             ? 'Instrucciones'
-                                                                                                                            : ''
+                                                                                                                            : 'ESTAS SON LAS INSTRUCCIONES PARA UN EJERCICIO H5P PARA EL PROYECTO PCYP fdsfksfksdmf sdofspodkfposkdofpsd sodkfopsdkfposkdopf sdfksdopfkopsdkfopsdfsodkfso'
                                                                                 }</div>
-                                                                                <span class="loader"></span>
                                                                             </div>
                                                                             <a class="instructions-btn" href="">Instrucciones</a>
                                                                         </div>
@@ -184,7 +186,7 @@ jQuery(document).ready(()=>{
                 marginTop:'0',
             }, 1000);
             $('iframe').contents().find('.loader').css({'display':'none'});
-        }, 5000);
+        }, 500);
 
     }
 
@@ -385,7 +387,7 @@ jQuery(document).ready(()=>{
         new H5PStandalone.H5P( element, opt ).then(
             function(){
                 setTimeout(() => {
-                    //h5pFunction();
+                    h5pFunction();
                     selectFunction();
                     quizFunction();
                     draggableFunction();

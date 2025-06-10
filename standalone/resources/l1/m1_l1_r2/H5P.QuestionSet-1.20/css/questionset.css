@@ -257,10 +257,10 @@
 }
 
 .questionset-results {
-  text-align: center;
   /*background: rgba(255, 255, 255, 0.9);*/
   background: #f8feef; /*nuevo*/
-  padding: 11em 0;
+  text-align: center; /*nuevo*/
+  padding: 11em 0; /*nuevo*/
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6FFFFFF,endColorstr=#E6FFFFFF);
 }
 

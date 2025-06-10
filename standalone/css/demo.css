@@ -97,13 +97,15 @@
 
 /*Estilos de instrucciones*/
 :root {
-    --tabs-border-color: #ABCDEF;
+    /*--tabs-border-color: #ABCDEF;*/
     --tabs-border-size: 3px;
     --tabs-text-color: white;
-    --tabs-dark-color: #012345;
+    /*--tabs-dark-color: #012345;
     --tabs-lite-color: #345678;
     --tabs-width: 120px;
-    --tabs-height: 40px;
+    --tabs-height: 40px;*/
+    --tabs-border-color: #529ed8;
+    --tabs-lite-color: #026ec3;
 }
 
 h2, p {
@@ -126,11 +128,15 @@ a {
 .tab>a {
     text-align: center;
     position: absolute;
-    width: calc(var(--tabs-width));
-    height: calc(var(--tabs-height) + var(--tabs-border-size)); 
+    /*width: calc(var(--tabs-width));*/
+    /*height: calc(var(--tabs-height) + var(--tabs-border-size));*/
     left: calc(var(--tabs-width) * var(--tabs-position)); /* posición de cada pestaña */
+    width: 12vw;
+    height: 40px;
+    font-size: 1.5vw;
     background-color: var(--tabs-dark-color); 
-    padding: 10px;
+    /*padding: 10px;*/
+    padding: 0.5em 0;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 0 0 10px 10px;
     border-top: 0;
@@ -142,7 +148,7 @@ a {
 }
 
 .instructions-text{
-    word-break: break-all;
+    word-break: break-word;
     padding: 15px 0;
 }
 
@@ -153,8 +159,8 @@ a {
     border-radius: 0 0 10px 0;
     position: relative;
     z-index: 100;
-    display: grid;
-    grid-template-columns: 11fr 1fr;
+    /*display: grid;
+    grid-template-columns: 11fr 1fr;*/
 }
 
 .tab:target>a, .tab:last-of-type>a {
@@ -167,7 +173,7 @@ a {
     z-index: 0; 
 }
 
-.loader {
+/*.loader {
     width: 30px;
     height: 30px;
     border:10px solid #FFF;
@@ -194,7 +200,7 @@ a {
     50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
-}
+}*/
 
 /*Estilos para ocultar y mostrar instrucciones*/
 /*.instructions-hidden{
