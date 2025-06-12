@@ -1,92 +1,36 @@
-let d = document;
+let d = document,
+    instructions = {};
+
+(async()=>{
+    try{
+        let response = await fetch('./js/resources/instructions.json');
+        instructions = await response.json();
+    }catch(error){
+        console.log(error);
+    }
+})();
 
 jQuery(document).ready(()=>{
     //console.log(window);
     const element = document.getElementById('h5p-container'),
-          id = new URLSearchParams(window.location.search).get('id');
+          id = new URLSearchParams(window.location.search).get('id'),
+          path = new URLSearchParams(window.location.search).get('path');
 
     const options = {
-        h5pJsonPath:  '',
+        h5pJsonPath:  path,
         frameCss: 'assets/styles/h5p.css',
         frameJs: 'assets/frame.bundle.js',
         copyright: false,
         export: false,
         icon: false,
-        customCss: [ 'css/demo.css' ],
+        customCss: [ 'css/demo.scss' ],
         customJs: [ 'js/resources/demo.js' ],
     }
 
-    if(id == 'm1l1e1'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_e1';
-    }else if(id == 'm1l1e2'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_e2';
-    }else if(id == 'm1l1e3'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_e3';
-    }else if(id == 'm1l1e4'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_e4';
-    }else if(id == 'm1l1e5'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_e5';
-    }else if(id == 'm1l1r1'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_r1';
-    }else if(id == 'm1l1r2'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_r2';
-    }else if(id == 'm1l1r3'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_r3';
-    }else if(id == 'm1l1r4'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_r4';
-    }else if(id == 'm1l1r5'){
-        options.h5pJsonPath = 'resources/l1/m1_l1_r5';
-    }else if(id == 'm1l2e1'){
-        options.h5pJsonPath = 'resources/l2/m1_l2_e1';
-    }else if(id == 'm1l2e2'){
-        options.h5pJsonPath = 'resources/l2/m1_l2_e2';
-    }else if(id == 'm1l2e3'){
-        options.h5pJsonPath = 'resources/l2/m1_l2_e3';
-    }else if(id == 'm1l2e4'){
-        options.h5pJsonPath = 'resources/l2/m1_l2_e4';
-    }else if(id == 'm1l2r1'){
-        options.h5pJsonPath = 'resources/l2/m1_l2_r1';
-    }else if(id == 'm1l2r2'){
-        options.h5pJsonPath = 'resources/l2/m1_l2_r2';
-    }else if(id == 'm1l3e1'){
-        options.h5pJsonPath = 'resources/l3/m1_l3_e1';
-    }else if(id == 'm1l3e2'){
-        options.h5pJsonPath = 'resources/l3/m1_l3_e2';
-    }else if(id == 'm1l3r1'){
-        options.h5pJsonPath = 'resources/l3/m1_l3_r1';
-    }else if(id == 'm1l3r2'){
-        options.h5pJsonPath = 'resources/l3/m1_l3_r2';
-    }else if(id == 'm1l3r3'){
-        options.h5pJsonPath = 'resources/l3/m1_l3_r3';
-    }else if(id == 'm1l4e1'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_e1';
-    }else if(id == 'm1l4e2'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_e2';
-    }else if(id == 'm1l4e3'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_e3';
-    }else if(id == 'm1l4e4'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_e4';
-    }else if(id == 'm1l4e5'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_e5';
-    }else if(id == 'm1l4e7'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_e7';
-    }else if(id == 'm1l4r1'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_r1';
-    }else if(id == 'm1l4r2'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_r2';
-    }else if(id == 'm1l4er3'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_r3';
-    }else if(id == 'm1l4r4'){
-        options.h5pJsonPath = 'resources/l4/m1_l4_r4';
-    }else if(id == 'ordenar'){
-        options.h5pJsonPath = 'resources/ordenar';
-    }else if(id == 'pasapalabra'){
-        options.h5pJsonPath = 'resources/pasapalabra';
-    }else if(id == 'prueba'){
-        options.h5pJsonPath = 'resources/m1-l1-e3-4';
-    }else if(id == 'coursepresentation'){
-        options.h5pJsonPath = 'resources/m1_leccion1_7';
-    }
+    /*const instructions = {
+        'm1l1e1': 'Clasifica el tipo de dispositivo electrónico digital arrastrando las imágenes al lugar que corresponda.',
+        'm1l1e2': 'Arrastra los componentes que son necesarios para formar un sistema computacional.'
+    }*/
 
     /*const options = {
         //h5pJsonPath:  'resources/dyd',
@@ -105,27 +49,25 @@ jQuery(document).ready(()=>{
     }*/
 
     const h5pFunction = function(event){
-        console.log('h5pFunction');
-
-        ///////////////////////////////////////////////
-
-        /*let draggableContainer = d.createElement('div');
-        draggableContainer.classList.add('draggable-container');
-
-        let draggables = $('iframe').contents().find('.h5p-draggable').length;
-
-        $('iframe').contents().find('.h5p-draggable').each((ind,el)=>{
-            (draggables) 
-            draggableContainer.appendChild(el);
-        });
-
-        //$('iframe').contents().find('.h5p-question-content').append(draggableContainer);
-        $('iframe').contents().find('.h5p-inner').each((ind,el)=>{
-            if(ind === 0) el.append(draggableContainer);
-        });*/
+        //console.log('h5pFunction');
 
         /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
+        $('iframe').contents().find('body').prepend(`<div class="intro">
+                                                        <div class="text-content">
+                                                            <div class="intro-text">${instructions[id]}</div>
+                                                            <a class="intro-btn">Comenzar</a>
+                                                        </div>
+                                                    </div>`);
 
+        $('iframe').contents().find('.intro-btn').on('click',(e)=>{
+            $('iframe').contents().find('.intro').animate({
+                    marginLeft:`-${$('iframe').contents().find('.h5p-container').outerWidth()}px`,
+            }, 1000);
+
+            setTimeout(() => {
+                $('iframe').contents().find('.intro').css({'display':'none'});
+            }, 1000);
+        });
 
         /////////////////////////INSTRUCCIONES PARA H5P/////////////////////////////
 
@@ -134,21 +76,14 @@ jQuery(document).ready(()=>{
                                                                     <div class="tab-container">
                                                                         <div id="tab" class="tab">
                                                                             <div class="tab-content">
-                                                                                <div class="instructions-text">${(options.h5pJsonPath=='resources/ordenar')
-                                                                                                                    ? 'Ordene la secuencia de acuerdo a los pasos de inicio de una computadora.'
-                                                                                                                    : (options.h5pJsonPath=='resources/M1_L1_E1(respaldo)')
-                                                                                                                        ? 'Clasifica el tipo de dispositivo electrónico digital arrastrando los elementos al lugar que corresponda.'
-                                                                                                                        : (options.h5pJsonPath=='resources/m1-l1-e3-4')
-                                                                                                                            ? 'Instrucciones'
-                                                                                                                            : 'ESTAS SON LAS INSTRUCCIONES PARA UN EJERCICIO H5P PARA EL PROYECTO PCYP fdsfksfksdmf sdofspodkfposkdofpsd sodkfopsdkfposkdopf sdfksdopfkopsdkfopsdfsodkfso'
-                                                                                }</div>
+                                                                                <div class="instructions-text">${instructions[id]}</div>
                                                                             </div>
                                                                             <a class="instructions-btn" href="">Instrucciones</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>`);
 
-        $('iframe').contents().find('.h5p-container').css({'margin-top':`-${$('iframe').contents().find('.tab-content').outerHeight()}px`});
+        //$('iframe').contents().find('.h5p-container').css({'margin-top':`-${$('iframe').contents().find('.tab-content').outerHeight()}px`});
 
         $('iframe').contents().find('.instructions-btn').on('click',(e)=>{
             e.preventDefault();
@@ -160,9 +95,9 @@ jQuery(document).ready(()=>{
                 }, 1000);
 
                 //$('iframe').contents().find('.h5p-question-content').css({'margin-top':'0'});
-                $('iframe').contents().find('.h5p-container').animate({
+                /*$('iframe').contents().find('.h5p-container').animate({
                     marginTop:'0',
-                }, 1000);
+                }, 1000);*/
             }else if(parseInt($('iframe').contents().find('.custom-instructions').css('margin-top').split("px")[0]) < 0){
                 //$('iframe').contents().find('.custom-instructions').css({'margin-top':'0', 'animation-name':'instructions-display','animation-duration':'1s'});
                 $('iframe').contents().find('.custom-instructions').animate({
@@ -170,9 +105,9 @@ jQuery(document).ready(()=>{
                 }, 1000);
 
                 //$('iframe').contents().find('.h5p-question-content').css({'margin-top':`-${$('iframe').contents().find('.tab-content').outerHeight()}px`});
-                $('iframe').contents().find('.h5p-container').animate({
+                /*$('iframe').contents().find('.h5p-container').animate({
                     marginTop:`-${$('iframe').contents().find('.tab-content').outerHeight()}px`,
-                }, 1000);
+                }, 1000);*/
             }
         });
 
@@ -182,10 +117,9 @@ jQuery(document).ready(()=>{
             }, 1000);
 
             //$('iframe').contents().find('.h5p-question-content').css({'margin-top':'0'});
-            $('iframe').contents().find('.h5p-container').animate({
+            /*$('iframe').contents().find('.h5p-container').animate({
                 marginTop:'0',
-            }, 1000);
-            $('iframe').contents().find('.loader').css({'display':'none'});
+            }, 1000);*/
         }, 500);
 
     }

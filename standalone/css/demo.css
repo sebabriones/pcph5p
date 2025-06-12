@@ -95,7 +95,7 @@
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }*/
 
-/*Estilos de instrucciones*/
+/*Estilos de instrucciones como pestaña*/
 :root {
     /*--tabs-border-color: #ABCDEF;*/
     --tabs-border-size: 3px;
