@@ -124,6 +124,7 @@ jQuery(document).ready(()=>{
 
     }
 
+    //Función que oculta y crea nuevos selects (personalizables) en los ejercicios advanced blank
     const selectFunction = function(){
         if($('iframe').contents().find('.h5p-advanced-blanks') && id == 'm1l2r1'){
             const h5pInputWrapper = $('iframe').contents().find('.h5p-input-wrapper'), //contenedor del select original
@@ -249,7 +250,7 @@ jQuery(document).ready(()=>{
         }
     }
 
-    /*Función que permite posicionar los botones prev y next en el mismo div que el progressbar*/
+    /*Función que permite posicionar los botones prev y next en el mismo div que el progressbar dentro de un cuestionario(quiz)*/
     const quizFunction = function(){
         //if($('iframe').contents().find('.h5p-question-next')){
         if($('iframe').contents().find('.questionset') || id==='m1l1r2' || id==='m1l4e1'){
@@ -308,6 +309,13 @@ jQuery(document).ready(()=>{
         }
     }
 
+    const pruebaFunction = () => {
+        console.log('pruebaFunction');
+        $('iframe').contents().find('.h5p-sc-alternative').each((el,i)=>{
+            console.log(el);
+        })
+    }
+
     /*new H5PStandalone.H5P( element, options ).then(
         function(){
             //H5P.externalDispatcher.on('domChanged', h5pFunction);
@@ -317,6 +325,17 @@ jQuery(document).ready(()=>{
         }
     );*/
 
+    //OBSERVER PRUEBA
+    /*let h5pContainer = d.getElementById('h5p-container');
+    console.log(h5pContainer);
+
+    const h5pObserver = new MutationObserver((mutationList, observer) => {
+        console.log('cargo el iframe');
+        
+    });
+
+    h5pObserver.observe(h5pContainer, {childList: true, subtree: true});*/
+
     function a(opt){
         new H5PStandalone.H5P( element, opt ).then(
             function(){
@@ -325,6 +344,7 @@ jQuery(document).ready(()=>{
                     selectFunction();
                     quizFunction();
                     draggableFunction();
+                    pruebaFunction();
                 }, 250);
             }
         );

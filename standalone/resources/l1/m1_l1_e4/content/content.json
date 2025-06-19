@@ -49,7 +49,7 @@
         "nextParagraph": "Párrafo siguiente",
         "correctParagraph": "Párrafo correcto en la posición"
     },
-    "taskDescription": "<p>¿Cómo procesa la información el computador?</p><p>Ordena la secuencia del ciclo de procesamiento de datos de un computador, moviendo hacia arriba y abajo, o apretando las flechas arriba y abajo, en cada uno de los pasos que se presentan a continuación.</p>",
+    "taskDescription": "<p>Ordene los pasos del algoritmo que describe la secuencia del ciclo de procesamiento de datos de un computador. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.</p>",
     "paragraphs": [
         "<p>Entrada</p>",
         "<p>Decodificación o procesamiento</p>",

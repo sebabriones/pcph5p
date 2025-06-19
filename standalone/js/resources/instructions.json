@@ -2,7 +2,7 @@
     "m1l1e1": "Clasifica el tipo de dispositivo electrónico digital arrastrando la definición al lugar que corresponda.",
     "m1l1e2": "Arrastra los componentes que son necesarios para formar un sistema computacional.",
     "m1l1e3": "Tu notebook se pone lento cuando tienes muchas ventanas abiertas en el navegador.\nSelecciona las alternativas correctas que indiquen dónde puede estar el problema.",
-    "m1l1e4": "¿Cómo procesa la información el computador? \nOrdena la secuencia del ciclo de procesamiento de datos de un computador.",
+    "m1l1e4": "Ordene los pasos del algoritmo que describe la secuencia del ciclo de procesamiento de datos de un computador. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.",
     "m1l1e5": "Transcribe el texto a números del sistema decimal utilizando la tabla ASCII.",
     "m1l1r1": "Considerando la información de la tabla con el código ASCII, ¿qué números en base 10 y qué letras representa la siguiente cadena de bytes?",
     "m1l1r2": "Lee atentamente los conceptos y relaciona cada elemento con su correspondiente par, verifica tus respuestas para asegurar que todas las asociaciones sean correctas.",
@@ -25,12 +25,12 @@
 
     "m1l4e1": "Arrastra los pasos faltantes, ordenando de forma tal que el algoritmo permita resolver el problema dado.",
     "m1l4e2": "Resuelve el crucigrama de las características de un buen algoritmo escribiendo en cada casilla las letras que componen la palabra. Sigue las pistas para solucionarlo. Puedes escribir en el crucigrama o en las lineas punteadas. (No considerar tildes)",
-    "m1l4e3": "",
-    "m1l4e4": "",
-    "m1l4e5": "",
-    "m1l4e7": "",
-    "m1l4r1": "",
-    "m1l4r2": "",
+    "m1l4e3": "Ordene los pasos del algoritmo para que encuentre el número mayor de entre una lista de números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.  La entrada es una lista de números enteros, la salida esperada es le número mayor de la lista.",
+    "m1l4e4": "Ordene los pasos del algoritmo para que calcule el promedio de 3 números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.",
+    "m1l4e5": "Ordene los pasos del algoritmo para crear un grupo de WhatsApp y agregar participantes. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.",
+    "m1l4e7": "Tome y arrastre uno de los términos al espacio faltante.",
+    "m1l4r1": "Arrastra las definiciones dentro del concepto que corresponda.",
+    "m1l4r2": "Considera el siguiente algoritmo y selecciona si cada característica presentada se cumple o no en su estructura.",
     "m1l4r3": "",
     "m1l4r4": ""
 }

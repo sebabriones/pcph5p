@@ -147,8 +147,7 @@
 .h5p-question-scorebar.h5p-question-visible {
   width: 13em;
   max-width: calc(100% - 2em);
-  /*margin: 0 0 1em 1em;*/
-  margin: 0 0 1em 1em; /*nuevo*/
+  margin: 0 0 1em 1em;
   padding-right: 0.5em;
   display: inline-block;
   padding-left: 2em; /*nuevo*/
