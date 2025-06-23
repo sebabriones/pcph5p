@@ -303,13 +303,69 @@ jQuery(document).ready(()=>{
         }
     }
 
+    //Función que centra los elementos draggeables y que quita el background azul cuando vuelva a su lugar original
     const draggableFunction = function(){
         if(id == 'm1l1r1' || id == 'm1l3r1'){
             console.log('dragableFunction');
         }
     }
 
-    const pruebaFunction = () => {
+    //Función que posiciona las flechas del footer de navegación a los costados de la navegación (puntos)
+    //y cuando se hayan respondido todas las slides envía de forma automática al slide de resumen
+    const coursePreFunction = function(){
+        //if(id=='m1l4r3' || id=='m1l4r4'){ //se deben revisar estas condicionales*
+        if($('iframe').contents().find('.h5p-course-presentation')){ //se deben revisar estas condicionales*
+            $('iframe').contents().find('.h5p-footer').css({'display':'none'});
+            $('iframe').contents().find('.h5p-tooltip').css({'display':'none'});
+
+            const h5pNavigation = $('iframe').contents().find('.h5p-cp-navigation')[0],
+                  btnPrev = $('iframe').contents().find('.h5p-footer-previous-slide')[0],
+                  btnNext = $('iframe').contents().find('.h5p-footer-next-slide')[0],
+                  taskAnswered = $('iframe').contents().find('.h5p-progressbar-part-has-task'),
+                  slides = $('iframe').contents().find('.h5p-slides-wrapper')[0].children,
+                  summarySlide = $('iframe').contents().find('.progressbar-part-summary-slide');
+
+            summarySlide.css({'display':'none'});
+
+            h5pNavigation.children[0].parentNode.insertBefore(btnPrev, h5pNavigation.children[0]);
+            h5pNavigation.appendChild(btnNext);
+
+            //Si la diapo que se esta observando es la ultima antes del summary, bloquea el boton de avanzar
+            const observerSlides = new MutationObserver((mutationList, observerInstance)=>{
+                if($('iframe').contents().find('.h5p-current')[0].id == slides[slides.length-2].id){
+                    $('iframe').contents().find('.h5p-footer-next-slide').css({'pointer-events':'none'});
+                }else{
+                    $('iframe').contents().find('.h5p-footer-next-slide').css({'pointer-events':'auto'});
+                }
+            })
+
+            $(slides).each((i,el)=>{
+                observerSlides.observe(el, {
+                    attributes: true,
+                    attributeFilter: ['class'],
+                    attributeOldValue: true
+                })
+            });
+            
+            //Si se responden todas las diapos aparece el boton de "terminar"
+            //para ir al slide de resumen
+            const observerAnswered = new MutationObserver((mutationList, observerInstance)=>{
+                if($('iframe').contents().find('.h5p-answered').length == taskAnswered.length){
+                    summarySlide[0].children[0].click();
+                }
+            })
+
+            $(taskAnswered).each((i,el)=>{
+                observerAnswered.observe(el, {
+                    attributes: true,
+                    attributeFilter: ['class'],
+                    attributeOldValue: true
+                })
+            });
+        }
+    }
+
+    const pruebaFunction = function(){
         console.log('pruebaFunction');
         $('iframe').contents().find('.h5p-sc-alternative').each((el,i)=>{
             console.log(el);
@@ -336,7 +392,7 @@ jQuery(document).ready(()=>{
 
     h5pObserver.observe(h5pContainer, {childList: true, subtree: true});*/
 
-    function a(opt){
+    /*function a(opt){
         new H5PStandalone.H5P( element, opt ).then(
             function(){
                 setTimeout(() => {
@@ -345,10 +401,24 @@ jQuery(document).ready(()=>{
                     quizFunction();
                     draggableFunction();
                     pruebaFunction();
-                }, 250);
+                    coursePreFunction();
+                }, 350);
             }
         );
     }
 
-    a(options);
+    a(options);*/
+
+    new H5PStandalone.H5P( element, options ).then(
+        function(){
+            setTimeout(() => {
+                h5pFunction();
+                selectFunction();
+                //quizFunction(); //Esta funcion arroja un error de que no encuentra un elemento, si ocurre el resto de funciones no se llaman, se debe corregir*
+                //draggableFunction();
+                coursePreFunction();
+                //pruebaFunction();
+            }, 300);
+        }
+    );
 });
