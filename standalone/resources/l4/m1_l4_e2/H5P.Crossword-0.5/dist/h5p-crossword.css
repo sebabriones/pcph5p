@@ -221,6 +221,7 @@
     overflow-y: auto;
     width: 50%;
     color: #062971; /*nuevo*/
+    font-size: 1.5vw; /*nuevo*/
 }
 
 .h5p-crossword .h5p-crossword-input-container.has-scrollbar {
@@ -619,7 +620,7 @@
 
     .h5p-crossword .h5p-crossword-input-container .h5p-crossword-input-fields-group:first-child {
         /*margin-top: 0;*/
-        margin-top: 25%; /*nuevo*/
+        margin-top: 10vh; /*nuevo*/
     }
 }
 

@@ -53,6 +53,18 @@
                 <li><a href="./standalone/h5p.php?path=resources/l4/m1_l4_r3&id=m1l4r3">Refuerzo 3</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/l4/m1_l4_r4&id=m1l4r4">Refuerzo 4</a></li>
             </ul>
+            <li>Leccion 5</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_e2&id=m1l5e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_e3&id=m1l5e3">Ejercicio 3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_e5&id=m1l5e5">Ejercicio 5</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_e6&id=m1l5e6">Ejercicio 6</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_e7&id=m1l5e7">Ejercicio 7</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_e8&id=m1l5e8">Ejercicio 8</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_e9&id=m1l5e9">Ejercicio 9</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_r1&id=m1l5r1">Refuerzo 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/l5/m1_l5_r2&id=m1l5r2">Refuerzo 2</a></li>
+            </ul>
         </ul>
         <li>Módulo 2</li>
         <li>Módulo 3</li>

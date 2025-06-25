@@ -1494,7 +1494,7 @@
 
 .h5p-course-presentation .h5p-progressbar {
     /*width: 100%;*/
-    width: 25%; /*nuevo*/
+    width: 15%; /*nuevo*/
     height: 100%;
     overflow: visible;
     /*background: #666;*/ /*nuevo cambio*/
@@ -1806,10 +1806,17 @@
     color: #062971;
 }
 
+.h5p-footer-previous-slide {
+    margin-right: 0.5em;
+}
+.h5p-footer-next-slide {
+    margin-left: 0.5em;
+}
+
 .h5p-footer-previous-slide,
 .h5p-footer-next-slide {
     cursor: pointer;
-    padding-top: 0.3em;
+    padding-top: 0.2em;
 }
 
 .h5p-footer-previous-slide:before {

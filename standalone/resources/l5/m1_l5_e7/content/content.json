@@ -1,0 +1,185 @@
+{
+    "media": {
+        "disableImageZooming": false
+    },
+    "answers": [
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Ubicarse de pie frente a la escalera.</div>"
+        },
+        {
+            "correct": true,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Ubicar una de las manos sobre una baranda de la escalera.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Levantar el pie izquierdo un poco más arriba del primer peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Situar el pie izquierdo sobre el primer peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Inclinarse levemente hacia adelante.</div>"
+        },
+        {
+            "correct": true,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Subir el pie derecho al primer peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Levantar el pie derecho un poco más arriba del segundo peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Situar el pie derecho sobre el segundo peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Inclinarse levemente hacia adelante.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Levantar el pie izquierdo un poco más arriba del tercer peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Situar el pie izquierdo sobre el tercer peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Inclinarse levemente hacia adelante.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Levantar el pie derecho un poco más arriba del tercer peldaño.</div>"
+        },
+        {
+            "correct": false,
+            "tipsAndFeedback": {
+                "tip": "",
+                "chosenFeedback": "",
+                "notChosenFeedback": ""
+            },
+            "text": "<div>Situar el pie derecho sobre el tercer peldaño.</div>"
+        }
+    ],
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableSolutionsButton": false,
+        "enableCheckButton": true,
+        "type": "auto",
+        "singlePoint": false,
+        "randomAnswers": true,
+        "showSolutionsRequiresInput": false,
+        "confirmCheckDialog": false,
+        "confirmRetryDialog": false,
+        "autoCheck": false,
+        "passPercentage": 100,
+        "showScorePoints": true
+    },
+    "UI": {
+        "checkAnswerButton": "Comprobar",
+        "submitAnswerButton": "Enviar",
+        "showSolutionButton": "Mostrar solución",
+        "tryAgainButton": "Intentar de nuevo",
+        "tipsLabel": "Mostrar pista",
+        "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+        "tipAvailable": "Pista disponible",
+        "feedbackAvailable": "Retroalimentación disponible",
+        "readFeedback": "Leer retroalimentación",
+        "wrongAnswer": "Respuesta incorrecta",
+        "correctAnswer": "Respuesta correcta",
+        "shouldCheck": "Debería haber sido marcada",
+        "shouldNotCheck": "No debería haber sido marcada",
+        "noInput": "Por favor responde antes de ver la solución",
+        "a11yCheck": "Revisa tus respuestas. Las respuestas se marcarán como correcta, incorrecta o sin contestar.",
+        "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+        "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+    },
+    "confirmCheck": {
+        "header": "¿Terminar?",
+        "body": "¿Seguro que quieres terminar ?",
+        "cancelLabel": "Cancelar",
+        "confirmLabel": "Terminar"
+    },
+    "confirmRetry": {
+        "header": "¿Intentar de nuevo?",
+        "body": "¿Seguro que quieres volver a intentarlo?",
+        "cancelLabel": "Cancelar",
+        "confirmLabel": "Confirmar"
+    },
+    "question": "<p>Algoritmo para subir una escalera de tres peldaños.</p>"
+}
