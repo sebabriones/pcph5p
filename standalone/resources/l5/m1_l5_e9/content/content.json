@@ -1,0 +1,364 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_e9/content/images/image-WeU5Ru2j.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 70.8,
+                    "y": 21.9,
+                    "width": 10.5,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_e9/content/images/image-hLiepnrP.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 222,
+                                "height": 64
+                            },
+                            "alt": "Año actual / Año nacimiento"
+                        },
+                        "subContentId": "304d1157-5185-4d81-b2d3-bb74466b1e2a",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 71.8,
+                    "y": 33.6,
+                    "width": 9.3,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_e9/content/images/image-SG2FUWlu.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 188,
+                                "height": 54
+                            },
+                            "alt": "Año actual / Año nacimiento"
+                        },
+                        "subContentId": "22662779-ee26-481b-9837-94017818dc53",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 70.8,
+                    "y": 44.9,
+                    "width": 10.5,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_e9/content/images/image-sSgu8pYf.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 222,
+                                "height": 64
+                            },
+                            "alt": "E=Edad actual"
+                        },
+                        "subContentId": "d6d8fdcb-791c-4da6-a28a-fd317c4663a9",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 71.8,
+                    "y": 56.5,
+                    "width": 9.3,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_e9/content/images/image-Kh3561Ai.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 188,
+                                "height": 54
+                            },
+                            "alt": "E=Edad actual"
+                        },
+                        "subContentId": "f4e67036-bb77-4846-b5a9-7c9f4d58edf1",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 70.8,
+                    "y": 68.1,
+                    "width": 10.5,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_e9/content/images/image-KCAKlNLB.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 222,
+                                "height": 64
+                            },
+                            "alt": "E=Año actual - Año nacimiento"
+                        },
+                        "subContentId": "88496836-e5ce-472e-9c55-edc1c7aee3ea",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 71.8,
+                    "y": 79.5,
+                    "width": 9.3,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_e9/content/images/image-Ep98fe7w.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 188,
+                                "height": 54
+                            },
+                            "alt": "E=Año actual - Año nacimiento"
+                        },
+                        "subContentId": "c5285cd0-f2e1-425c-b47d-bfb5edb6b31f",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 22.3,
+                    "y": 26.63652933633184,
+                    "width": 11.2,
+                    "height": 3.2,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 1</div>"
+                },
+                {
+                    "x": 2,
+                    "y": 53.27305867266368,
+                    "width": 11.2,
+                    "height": 3.2,
+                    "correctElements": [
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 2</div>"
+                },
+                {
+                    "x": 22.3,
+                    "y": 74.20176029406727,
+                    "width": 11.2,
+                    "height": 3.2,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 3</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 0,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

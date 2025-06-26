@@ -463,9 +463,12 @@ li.h5p-sc-alternative .h5p-sc-status {
 
 /* Introduction */
 .h5p-sc-question {
+  font-family: "Poppins-regular"; /*nuevo*/
+  color: #062971; /*nuevo*/
   margin: 0.888888889em;
   padding-right: 1.777777778em;
-  font-size: 1.125em;
+  /*font-size: 1.125em;*/
+  font-size: 1em; /*nuevo*/
   /*display: none; /*nuevo*/
 }
 
