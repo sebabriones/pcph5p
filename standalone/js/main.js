@@ -253,7 +253,7 @@ jQuery(document).ready(()=>{
     /*Función que permite posicionar los botones prev y next en el mismo div que el progressbar dentro de un cuestionario(quiz)*/
     const quizFunction = function(){
         //if($('iframe').contents().find('.h5p-question-next')){
-        if($('iframe').contents().find('.questionset') || id==='m1l1r2' || id==='m1l4e1'){
+        if(id==='m1l1r2' || id==='m1l4e1' || id==='m1l5r1'){
             const qContainer = $('iframe').contents().find('.question-container'),
                   qsProgress = $('iframe').contents().find('.qs-progress')[0],
                   qCheck = $('iframe').contents().find('.h5p-question-check-answer');
@@ -313,8 +313,8 @@ jQuery(document).ready(()=>{
     //Función que posiciona las flechas del footer de navegación a los costados de la navegación (puntos)
     //y cuando se hayan respondido todas las slides envía de forma automática al slide de resumen
     const coursePreFunction = function(){
-        //if(id=='m1l4r3' || id=='m1l4r4'){ //se deben revisar estas condicionales*
-        if($('iframe').contents().find('.h5p-course-presentation')){ //se deben revisar estas condicionales*
+        if(id=='m1l4r2' || id=='m1l4r3' || id=='m1l4r4'){ //se deben revisar estas condicionales*
+        //if($('iframe').contents().find('.h5p-course-presentation')){ //se deben revisar estas condicionales*
             $('iframe').contents().find('.h5p-footer').css({'display':'none'});
             $('iframe').contents().find('.h5p-tooltip').css({'display':'none'});
 
@@ -414,7 +414,7 @@ jQuery(document).ready(()=>{
             setTimeout(() => {
                 h5pFunction();
                 selectFunction();
-                //quizFunction(); //Esta funcion arroja un error de que no encuentra un elemento, si ocurre el resto de funciones no se llaman, se debe corregir*
+                quizFunction(); //Esta funcion arroja un error de que no encuentra un elemento, si ocurre el resto de funciones no se llaman, se debe corregir*
                 //draggableFunction();
                 coursePreFunction();
                 //pruebaFunction();
