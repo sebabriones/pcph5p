@@ -190,7 +190,7 @@
                     "exitFullscreen": "Salir de pantalla completa"
                 }
             },
-            "library": "H5P.DragQuestion 1.14",
+            "library": "H5P.DragShuffle 1.0",
             "metadata": {
                 "contentType": "Arrastrar y soltar (Drag and Drop)",
                 "license": "U",
@@ -407,7 +407,7 @@
                     "exitFullscreen": "Salir de pantalla completa"
                 }
             },
-            "library": "H5P.DragQuestion 1.14",
+            "library": "H5P.DragShuffle 1.0",
             "metadata": {
                 "contentType": "Arrastrar y soltar (Drag and Drop)",
                 "license": "U",
@@ -728,7 +728,7 @@
                     "exitFullscreen": "Salir de pantalla completa"
                 }
             },
-            "library": "H5P.DragQuestion 1.14",
+            "library": "H5P.DragShuffle 1.0",
             "metadata": {
                 "contentType": "Arrastrar y soltar (Drag and Drop)",
                 "license": "U",
