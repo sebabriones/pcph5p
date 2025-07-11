@@ -121,7 +121,6 @@ jQuery(document).ready(()=>{
                 marginTop:'0',
             }, 1000);*/
         }, 500);
-
     }
 
     //Función que oculta y crea nuevos selects (personalizables) en los ejercicios advanced blank
@@ -412,7 +411,7 @@ jQuery(document).ready(()=>{
     new H5PStandalone.H5P( element, options ).then(
         function(){
             setTimeout(() => {
-                h5pFunction();
+                //h5pFunction();
                 selectFunction();
                 quizFunction(); //Esta funcion arroja un error de que no encuentra un elemento, si ocurre el resto de funciones no se llaman, se debe corregir*
                 //draggableFunction();
