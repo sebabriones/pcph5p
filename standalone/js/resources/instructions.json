@@ -37,7 +37,7 @@
     "m1l5e2": "Ordene los pasos para obtener el promedio de un conjunto de N números arrastrandolos en el orden correcto.",
     "m1l5e3": "Arrastra los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo, asegurandose de que el algoritmo adquiera el sentido más lógico posible para poder completar esta lección de aprendizaje.",
     "m1l5e5": "Considere el siguiente algoritmo para lavarse las manos. Arrastre las palabras faltantes en los espacios en blanco.",
-    "m1l5e6": "Asocie cada paso del algoritmo en lenguaje natural con la ejecución del algoritmo.<br/><strong>NOTA:</strong> El factorial de un número natural N es el producto de N con todos los números naturales menores que él, hasta 1.<br/>(Ej: 3! = 3*2*1)",
+    "m1l5e6": "Asocie cada paso del algoritmo en lenguaje natural con la ejecución del algoritmo.<br/><strong>NOTA:</strong> El factorial de un número natural N es el producto de N con todos los números naturales menores que él, hasta 1.<br/>(Ej: 3! = 3•2•1)",
     "m1l5e7": "Marque el o los pasos del algoritmo que se pueden omitir de manera que el algoritmo funcionaría de todas formas.",
     "m1l5e8": "Observe el siguiente algoritmo y responda las preguntas.",
     "m1l5e9": "Arrastre los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo. Asegúrese de que el algoritmo para <strong>Determinar la edad actual de una persona</strong> adquiera el sentido más lógico posible.",

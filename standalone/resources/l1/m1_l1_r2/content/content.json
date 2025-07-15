@@ -325,10 +325,7 @@
                     "applyPenalties": false,
                     "enableScoreExplanation": true,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": {
-                        "x":10,
-                        "y":0
-                    },
+                    "autoAlignSpacing": 180,
                     "enableFullScreen": false,
                     "showScorePoints": true,
                     "showTitle": false
@@ -680,7 +677,7 @@
                     "applyPenalties": false,
                     "enableScoreExplanation": true,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": 2,
+                    "autoAlignSpacing": 180,
                     "enableFullScreen": false,
                     "showScorePoints": true,
                     "showTitle": false
@@ -951,7 +948,7 @@
                     "applyPenalties": false,
                     "enableScoreExplanation": true,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": 2,
+                    "autoAlignSpacing": 180,
                     "enableFullScreen": false,
                     "showScorePoints": true,
                     "showTitle": false

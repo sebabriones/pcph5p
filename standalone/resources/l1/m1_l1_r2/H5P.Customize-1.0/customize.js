@@ -48,4 +48,46 @@ jQuery(document).ready(()=>{
     });
 
     actionBtn();
+
+
+    /*const draggables = $('.h5p-draggable');
+    const classToDetect = 'h5p-dropped';
+
+    draggables.each((i, draggable) => {
+        const draggableObserver = new MutationObserver(function(mutationList, observer) {
+            for(const mutation of mutationList){
+                if(mutation.type === 'attributes' && mutation.attributeName === 'class'){
+                    const currentClasses = draggable.classList;
+
+                    if(currentClasses.contains(classToDetect)){
+                        console.log(`La clase ${classToDetect} ha sido añadida`);
+                    }else{
+                        console.log(`La clase ${classToDetect} ya no está`);
+                    }
+                }
+            }
+        });
+
+        draggableObserver.observe(draggable, { attributes: true });
+    });*/
+
+    const draggables = $('.h5p-draggable');
+
+    draggables.each((i, draggable) => {
+        const draggableObserver = new MutationObserver((mutationsList, draggableObserver) => {
+            for(const mutation of mutationsList){
+                if(mutation.type === 'attributes' && mutation.attributeName === 'style'){
+                    const newStyle = draggable.getAttribute('style');
+                    console.log('Detectado cambio en el atributo style:', mutation.oldValue, '->', newStyle);
+                }
+            }
+        });
+
+        draggableObserver.observe(draggable, {
+            attributes: true,
+            attributeFilter: ['style'],
+            attributeOldValue:true
+        });
+    });
+
 });

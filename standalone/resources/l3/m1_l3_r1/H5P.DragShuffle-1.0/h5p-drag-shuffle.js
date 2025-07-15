@@ -2766,12 +2766,12 @@ function C(options, contentId, contentData) {
 
     // @pmasquiaran
     //console.log('Y original antes', task.elements[i].y, 'Y shuffle antes', shuffleElem[i].y);
-    console.log('[' + i + '] antes', element);
+    //console.log('[' + i + '] antes', element);
     element.x = shuffleElem[i].ejex;
     element.y = shuffleElem[i].ejey;
     //console.log('Y original ac', task.elements[i].y, 'Y shuffle ac', shuffleElem[i].y);
-    console.log('[' + i + '] despues', element);
-    console.log('---');
+    //console.log('[' + i + '] despues', element);
+    //console.log('---');
     // @pmasquiaran
 
     if (!isDraggable(element)) {

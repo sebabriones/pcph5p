@@ -2708,14 +2708,26 @@ function C(options, contentId, contentData) {
 
   // @pmasquiaran
 
-  var shufflePos = [];
-  for (var posicion = 0; posicion < task.elements.length; posicion++) {
-    shufflePos.push(posicion);
+  let shufflePos = [];
+  let shufflePos1 = [];
+  let shufflePos2 = [];
+
+  for (var posicion = 0; posicion < 3; posicion++) {
+    shufflePos1.push(posicion);
   }
-  shufflePos.sort(function (a, b) {
+  for (var posicion = 3; posicion < 6; posicion++) {
+    shufflePos2.push(posicion);
+  }
+
+  shufflePos1.sort(function (a, b) {
     return Math.random() >= 0.5 ? -1 : 1;
   });
-  shufflePos = fisherYatesShuffle(shufflePos);
+  shufflePos2.sort(function (a, b) {
+    return Math.random() >= 0.5 ? -1 : 1;
+  });
+
+  shufflePos1 = fisherYatesShuffle(shufflePos1);
+  shufflePos2 = fisherYatesShuffle(shufflePos2);
   function fisherYatesShuffle(array) {
     for (var _i = array.length - 1; _i > 0; _i--) {
       var _j = Math.floor(Math.random() * (_i + 1)); // random index from 0 to i
@@ -2726,6 +2738,9 @@ function C(options, contentId, contentData) {
     }
     return array;
   }
+
+  shufflePos = [...shufflePos1,...shufflePos2];
+
   var shuffleElem = [];
   for (var indice = 0; indice < task.elements.length; indice++) {
     shuffleElem.push({
@@ -2766,12 +2781,12 @@ function C(options, contentId, contentData) {
 
     // @pmasquiaran
     //console.log('Y original antes', task.elements[i].y, 'Y shuffle antes', shuffleElem[i].y);
-    console.log('[' + i + '] antes', element);
+    //console.log('[' + i + '] antes', element);
     element.x = shuffleElem[i].ejex;
     element.y = shuffleElem[i].ejey;
     //console.log('Y original ac', task.elements[i].y, 'Y shuffle ac', shuffleElem[i].y);
-    console.log('[' + i + '] despues', element);
-    console.log('---');
+    //console.log('[' + i + '] despues', element);
+    //console.log('---');
     // @pmasquiaran
 
     if (!isDraggable(element)) {
