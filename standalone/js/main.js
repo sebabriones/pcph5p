@@ -1,14 +1,14 @@
 let d = document,
     instructions = {};
 
-(async()=>{
+/*(async()=>{
     try{
         let response = await fetch('./js/resources/instructions.json');
         instructions = await response.json();
     }catch(error){
         console.log(error);
     }
-})();
+})();*/
 
 jQuery(document).ready(()=>{
     //console.log(window);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
         copyright: false,
         export: false,
         icon: false,
-        customCss: [ 'css/demo.scss' ],
+        customCss: [ 'css/demo.css' ],
         customJs: [ 'js/resources/demo.js' ],
     }
 
@@ -380,42 +380,14 @@ jQuery(document).ready(()=>{
         }
     );*/
 
-    //OBSERVER PRUEBA
-    /*let h5pContainer = d.getElementById('h5p-container');
-    console.log(h5pContainer);
-
-    const h5pObserver = new MutationObserver((mutationList, observer) => {
-        console.log('cargo el iframe');
-        
-    });
-
-    h5pObserver.observe(h5pContainer, {childList: true, subtree: true});*/
-
-    /*function a(opt){
-        new H5PStandalone.H5P( element, opt ).then(
-            function(){
-                setTimeout(() => {
-                    h5pFunction();
-                    selectFunction();
-                    quizFunction();
-                    draggableFunction();
-                    pruebaFunction();
-                    coursePreFunction();
-                }, 350);
-            }
-        );
-    }
-
-    a(options);*/
-
     new H5PStandalone.H5P( element, options ).then(
         function(){
             setTimeout(() => {
                 //h5pFunction();
-                selectFunction();
-                quizFunction(); //Esta funcion arroja un error de que no encuentra un elemento, si ocurre el resto de funciones no se llaman, se debe corregir*
+                //selectFunction();
+                //quizFunction(); //Esta funcion arroja un error de que no encuentra un elemento, si ocurre el resto de funciones no se llaman, se debe corregir*
                 //draggableFunction();
-                coursePreFunction();
+                //coursePreFunction();
                 //pruebaFunction();
             }, 300);
         }

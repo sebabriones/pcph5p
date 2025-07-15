@@ -1,16 +1,14 @@
 /*Estilos Nuevos Selects*/
-/* CSS */
-.h5p-advanced-blanks {
-  .h5p-input-wrapper {
+.h5p-input-wrapper {
     vertical-align: bottom;
-  }
+}
 
-  .original-select {
+.original-select {
     display: none; /* Oculta el select nativo */
-  }
+}
 
-  /* Estilos de la caja visible del select personalizado */
-  .custom-select-display {
+/* Estilos de la caja visible del select personalizado */
+.custom-select-display {
     padding: 0.1875em 0.5em 0.1875em 0.5em;
     border-radius: 1em;
     background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
@@ -21,52 +19,52 @@
     margin: 0 !important;
     font-size: 14px;
     display: flex;
-  }
+}
 
-  .custom-select-display.option-selected {
+.custom-select-display.option-selected {
     background: linear-gradient(to bottom, #5166ad, #062971);
     color: #fff;
-  }
+}
 
-  .custom-select-icon {
-  }
+.custom-select-icon {
+}
 
-  .correct .custom-select-display .custom-select-icon,
-  .error .custom-select-display .custom-select-icon {
+.correct .custom-select-display .custom-select-icon,
+.error .custom-select-display .custom-select-icon {
     /*display: none;*/
     visibility: hidden;
-  }
+}
 
-  .correct .custom-select-display {
+.correct .custom-select-display {
     background: linear-gradient(180deg, #8bae54 0%, #456f06 90%);
     color: #fff;
-  }
+}
 
-  .error .custom-select-display {
+.error .custom-select-display {
     background: linear-gradient(180deg, #870202 0%, #3c0505 90%);
     color: #fff;
-  }
+}
 
-  .correct .h5p-input-wrapper:after,
-  .error .h5p-input-wrapper:after {
+.correct .h5p-input-wrapper:after,
+.error .h5p-input-wrapper:after {
     color: #fff !important;
-  }
+}
 
-  .custom-select-text {
+.custom-select-text {
     width: 100%;
     height: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
+}
 
-  .custom-select-text,
-  .custom-select-icon {
+.custom-select-text,
+.custom-select-icon {
     line-height: 1.3em !important;
-  }
+}
 
-  /* Estilos del menú desplegable personalizado (el UL) */
-  .custom-options {
+/* Estilos del menú desplegable personalizado (el UL) */
+.custom-options {
     list-style: none;
     padding: 0;
     margin: 5px 0 0 0;
@@ -77,37 +75,38 @@
     width: 100%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 1000;
-  }
+}
 
-  .custom-options.hidden {
+.custom-options.hidden {
     display: none;
-  }
+}
 
-  /* Estilos para cada opción (el LI) */
-  .custom-options li {
-    padding: 2px 15px;
+/* Estilos para cada opción (el LI) */
+.custom-options li {
+    padding: 2px 10px;
     cursor: pointer;
     transition: background-color 0.2s ease;
     background-color: #fff; /* Color de fondo de la opción */
     color: #062971; /* Color de texto de la opción */
-  }
+    line-height: 1.3em;
+    font-size: 0.9em;
+}
 
-  .custom-options > li:first-child {
-      border-radius: 10px 10px 0 0;
-      padding: 14px 0;
-  }
+.custom-options > li:first-child {
+    border-radius: 10px 10px 0 0;
+    padding: 14px 0;
+}
 
-  .custom-options li:last-child {
-      border-radius: 0 0 10px 10px;
-  }
+.custom-options li:last-child {
+    border-radius: 0 0 10px 10px;
+}
 
-  .custom-options li:hover {
+.custom-options li:hover {
     background-color: #c1fbfd; /* Color al pasar el ratón por la opción */
     color: #062971;
-  }
+}
 
-  .custom-options li.selected {
+.custom-options li.selected {
     background-color: #062971;
     color: #fff;
-  }
 }

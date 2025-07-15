@@ -21,7 +21,7 @@
     "m1l3e2": "De acuerdo a lo estudiado en la lección, identifica las áreas donde la legislación chilena regula y promueve el uso IA.",
     "m1l3r1": "Arrastre cada una de las características de un sistema computacional inteligente hacia la definición que corresponda.",
     "m1l3r2": "Selecciona los sistemas que utilizan IA.",
-    "m1l3r3": " ¿Cuál de los siguientes enunciados corresponde a principios transversales de la Política Nacional de Inteligencia Artificial?",
+    "m1l3r3": "¿Cuál de los siguientes enunciados corresponde a principios transversales de la Política Nacional de Inteligencia Artificial?",
 
     "m1l4e1": "Arrastra los pasos faltantes, ordenando de forma tal que el algoritmo permita resolver el problema dado.",
     "m1l4e2": "Resuelve el crucigrama de las características de un buen algoritmo escribiendo en cada casilla las letras que componen la palabra. Sigue las pistas para solucionarlo. Puedes escribir en el crucigrama o en las lineas punteadas. (No considerar tildes)",
@@ -31,6 +31,16 @@
     "m1l4e7": "Tome y arrastre uno de los términos al espacio faltante.",
     "m1l4r1": "Arrastra las definiciones dentro del concepto que corresponda.",
     "m1l4r2": "Considera el siguiente algoritmo y selecciona si cada característica presentada se cumple o no en su estructura.",
-    "m1l4r3": "",
-    "m1l4r4": ""
+    "m1l4r3": "Seleccione la palabra Sí en aquellas sentencias que corresponden a algoritmos y la palabra NO para aquellas que no lo son.",
+    "m1l4r4": "De cada algoritmo dado, determine el problema que logra resolver.",
+
+    "m1l5e2": "Ordene los pasos para obtener el promedio de un conjunto de N números arrastrandolos en el orden correcto.",
+    "m1l5e3": "Arrastra los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo, asegurandose de que el algoritmo adquiera el sentido más lógico posible para poder completar esta lección de aprendizaje.",
+    "m1l5e5": "Considere el siguiente algoritmo para lavarse las manos. Arrastre las palabras faltantes en los espacios en blanco.",
+    "m1l5e6": "Asocie cada paso del algoritmo en lenguaje natural con la ejecución del algoritmo.<br/><strong>NOTA:</strong> El factorial de un número natural N es el producto de N con todos los números naturales menores que él, hasta 1.<br/>(Ej: 3! = 3*2*1)",
+    "m1l5e7": "Marque el o los pasos del algoritmo que se pueden omitir de manera que el algoritmo funcionaría de todas formas.",
+    "m1l5e8": "Observe el siguiente algoritmo y responda las preguntas.",
+    "m1l5e9": "Arrastre los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo. Asegúrese de que el algoritmo para <strong>Determinar la edad actual de una persona</strong> adquiera el sentido más lógico posible.",
+    "m1l5r1": "Clasifique los siguientes algoritmos según su nombre (con base en el problema que resuelve) y forma de representación. Arrastre los conceptos correspondientes a cada columna según corresponda.",
+    "m1l5r2": "Analice el siguiente algoritmo detectando errores e identificando opciones de modificaciones. De acuerdo a lo anterior, responda las preguntas seleccionando la alternativa correcta."
 }
