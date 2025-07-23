@@ -2404,9 +2404,11 @@ var DropZone = /*#__PURE__*/function () {
       var containerSize = self.$dropZone.parent()[0].getBoundingClientRect();
 
       // Calcuate borders and spacing values in percetage
+      //sbriones: Aquí se cambia el porcentaje de espaciado de las zonas drop, toman el valor de la configuración inicial o del archivo content.json
+      //IMPORTANTE: Estos valores dependen de cada ejercicio
       var spacing = {
         x: self.autoAlignable.spacing / self.autoAlignable.size.width * 100,
-        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 100
+        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 6
       };
 
       // Determine coordinates for first 'spot'

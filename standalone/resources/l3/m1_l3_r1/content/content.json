@@ -231,7 +231,7 @@
         "applyPenalties": false,
         "enableScoreExplanation": true,
         "dropZoneHighlighting": "dragging",
-        "autoAlignSpacing": 2,
+        "autoAlignSpacing": 160,
         "enableFullScreen": false,
         "showScorePoints": true,
         "showTitle": false

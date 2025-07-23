@@ -855,6 +855,7 @@ H5P.MultiChoice = function (options, contentId, contentData) {
         score += weight;
       }
       else {
+        //sbriones: Aquí es donde se descuentan las malas en los Multi Choice
         score -= weight;
       }
     }

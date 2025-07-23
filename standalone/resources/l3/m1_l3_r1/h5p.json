@@ -15,9 +15,19 @@
             "minorVersion": 0
         },
         {
+            "machineName": "H5P.Customize",
+            "majorVersion": 1,
+            "minorVersion": 0
+        },
+        {
             "machineName": "FontAwesome",
             "majorVersion": 4,
             "minorVersion": 5
+        },
+        {
+            "machineName": "H5P.DragShuffle",
+            "minorVersion": 0,
+            "majorVersion": 1
         },
         {
             "machineName": "H5P.Transition",
@@ -78,11 +88,6 @@
             "machineName": "H5PEditor.TableList",
             "majorVersion": 1,
             "minorVersion": 0
-        },
-        {
-            "machineName": "H5P.DragShuffle",
-            "minorVersion": 0,
-            "majorVersion": 1
         }
     ]
 }
