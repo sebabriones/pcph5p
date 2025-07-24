@@ -15,13 +15,32 @@ jQuery(document).ready(()=>{
         customJs: [ 'js/resources/demo.js' ],
     }
 
+    let children = [];
+
     const xAPIHandler = function(event){
         const xAPI = event.data.statement,
               checkBtn = $('iframe').contents().find('.h5p-question-check-answer');
 
         if(xAPI.verb.display["en-US"] === 'answered'){
-            console.log(xAPI);
+            if(xAPI.context.contextActivities.parent){
+                if(xAPI.context.contextActivities.parent.lenght > 1){
+                    children.push({"object":xAPI.object, "result":xAPI.result});
+                    //console.log(xAPI);
+                }else{
+                    console.log(xAPI); //se envia la json al LRS
+                    return;
+                }
+                //console.log(xAPI);
+            }
         }
+
+        if(xAPI.verb.display["en-US"] === 'completed'){
+            xAPI.children = children;
+            console.log(xAPI); //Se envia la json al LRS
+            children = [];
+        }
+
+        //console.log(xAPI);
     }
 
     new H5PStandalone.H5P( element, options ).then(
