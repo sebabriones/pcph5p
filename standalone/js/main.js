@@ -23,20 +23,20 @@ jQuery(document).ready(()=>{
 
         if(xAPI.verb.display["en-US"] === 'answered'){
             if(xAPI.context.contextActivities.parent){
-                if(xAPI.context.contextActivities.parent.lenght > 1){
-                    children.push({"object":xAPI.object, "result":xAPI.result});
-                    //console.log(xAPI);
+                if(typeof xAPI.context.extensions !== 'undefined'){
+                    if(xAPI.result.response) children.push({"object":xAPI.object, "result":xAPI.result});
                 }else{
-                    console.log(xAPI); //se envia la json al LRS
+                    console.log(xAPI); //se envia el json al LRS
                     return;
                 }
-                //console.log(xAPI);
+            }else{
+                console.log(xAPI); //se envia el json al LRS
+                return;
             }
-        }
-
-        if(xAPI.verb.display["en-US"] === 'completed'){
+            //console.log(xAPI);
+        }else if(xAPI.verb.display["en-US"] === 'completed'){
             xAPI.children = children;
-            console.log(xAPI); //Se envia la json al LRS
+            console.log(xAPI); //Se envia el json al LRS
             children = [];
         }
 
