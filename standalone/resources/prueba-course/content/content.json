@@ -1,0 +1,193 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 17.429193899782135,
+                        "y": 21.517685385618442,
+                        "width": 65.05315904139434,
+                        "height": 59.237542336046005,
+                        "action": {
+                            "library": "H5P.AdvancedBlanks 1.0",
+                            "params": {
+                                "media": {
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen"
+                                    },
+                                    "library": "H5P.Image 1.1",
+                                    "subContentId": "0220fa78-7b02-41f1-87e2-4af7309834e5",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "content": {
+                                    "task": "Fill in the missing words.",
+                                    "blanksList": [
+                                        {
+                                            "correctAnswerText": "hola",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "chao",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "chao",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "hola",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "blanksText": "<p>Esta es la oracion ____ hola ____ chao</p>"
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "showSolutions": "Show solution",
+                                "tryAgain": "Retry",
+                                "checkAnswer": "Check",
+                                "notFilledOut": "Please fill in all blanks to view solution",
+                                "tipLabel": "Tip",
+                                "spellingMistakeWarning": "Check your spelling: @mistake",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "confirmCheck": {
+                                    "header": "Finish?",
+                                    "body": "Are you sure you wish to finish?",
+                                    "cancelLabel": "Cancel",
+                                    "confirmLabel": "Finish"
+                                },
+                                "behaviour": {
+                                    "mode": "selection",
+                                    "selectAlternatives": "alternatives",
+                                    "selectAlternativeRestriction": 5,
+                                    "spellingErrorBehaviour": "mistake",
+                                    "caseSensitive": false,
+                                    "autoCheck": false,
+                                    "enableSolutionsButton": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "enableRetry": true,
+                                    "enableCheckButton": true,
+                                    "disableImageZooming": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false
+                                },
+                                "confirmRetry": {
+                                    "header": "Retry?",
+                                    "body": "Are you sure you wish to retry?",
+                                    "cancelLabel": "Cancel",
+                                    "confirmLabel": "Confirm"
+                                }
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {},
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        }
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

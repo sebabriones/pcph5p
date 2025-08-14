@@ -1,0 +1,469 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 5.446623093681917,
+                        "y": 17.214148308494753,
+                        "width": 38.20845213805099,
+                        "height": 73.1601303111027,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "images/image-4AKvaULD.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1762,
+                                    "height": 1708
+                                }
+                            },
+                            "subContentId": "8efe0e34-78ea-4ed1-8449-bc703e85e210",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 47.930283224400874,
+                        "y": 21.517685385618442,
+                        "width": 46.84095860566449,
+                        "height": 64.55305615685532,
+                        "action": {
+                            "library": "H5P.AdvancedBlanks 1.0",
+                            "params": {
+                                "media": {
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen"
+                                    },
+                                    "library": "H5P.Image 1.1",
+                                    "subContentId": "106240d9-4240-43ec-8ebc-945eb39115d5",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "content": {
+                                    "task": "<p>Lee atentamente cada caso. Luego selecciona la opción correcta para responder la pregunta: ¿A qué proceso de ejecución de código se asemeja, compilación o interpretación?</p>",
+                                    "blanksList": [
+                                        {
+                                            "correctAnswerText": "Compilación",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "Interpretación",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "todo el programa antes de correrlo",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "línea por línea al ejecutar",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "rápida en ejecución final",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "lenta, pero flexible",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "antes de correr el programa",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "a medida que se ejecuta",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "Java o C++",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "Python o JavaScript",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "blanksText": "<p><span style=\"color:#000000;font-family:Arial,sans-serif\">____, porque construir una casa es como es traducir ____, puesto que hay que diseñar los planos, reunir los materiales y contratar al equipo de construcción antes de comenzar.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">En consecuencia, su velocidad es ____; es decir, no tienes que detenerte porque no sabes qué hacer luego de poner las paredes o porque no compraron los ladrillos.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">Además, se puede detectar errores ____; por eso mismo revisaste cuidadosamente los planos.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">Así es como funciona, por ejemplo: ____.</span></p>"
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "mode": "selection",
+                                    "selectAlternatives": "alternatives",
+                                    "selectAlternativeRestriction": 5,
+                                    "spellingErrorBehaviour": "mistake",
+                                    "caseSensitive": false,
+                                    "autoCheck": false,
+                                    "enableSolutionsButton": false,
+                                    "showSolutionsRequiresInput": true,
+                                    "enableRetry": true,
+                                    "enableCheckButton": true,
+                                    "disableImageZooming": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false
+                                },
+                                "showSolutions": "Show solution",
+                                "tryAgain": "Retry",
+                                "checkAnswer": "Check",
+                                "notFilledOut": "Please fill in all blanks to view solution",
+                                "tipLabel": "Tip",
+                                "spellingMistakeWarning": "Check your spelling: @mistake",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "confirmCheck": {
+                                    "header": "Finish?",
+                                    "body": "Are you sure you wish to finish?",
+                                    "cancelLabel": "Cancel",
+                                    "confirmLabel": "Finish"
+                                },
+                                "confirmRetry": {
+                                    "header": "Retry?",
+                                    "body": "Are you sure you wish to retry?",
+                                    "cancelLabel": "Cancel",
+                                    "confirmLabel": "Confirm"
+                                }
+                            },
+                            "subContentId": "c483c8e9-af05-4c55-82a0-9e672a9902cb",
+                            "metadata": {
+                                "contentType": "Complete los espacios en blanco (Advanced Blanks)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 1 - Ejercicio 8 - 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 1 - Ejercicio 8 - 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 5.446623093681917,
+                        "y": 17.214148308494753,
+                        "width": 38.20845213805099,
+                        "height": 73.1601303111027,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "images/image-UDno0PP7.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1762,
+                                    "height": 1708
+                                }
+                            },
+                            "subContentId": "af57b23d-5232-437b-a05b-c6a7b6f1f946",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 47.930283224400874,
+                        "y": 21.517685385618442,
+                        "width": 46.84095860566449,
+                        "height": 64.55305615685532,
+                        "action": {
+                            "library": "H5P.AdvancedBlanks 1.0",
+                            "params": {
+                                "media": {
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen"
+                                    },
+                                    "library": "H5P.Image 1.1",
+                                    "subContentId": "106240d9-4240-43ec-8ebc-945eb39115d5",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "content": {
+                                    "task": "<p>Lee atentamente cada caso. Luego selecciona la opción correcta para responder la pregunta: ¿A qué proceso de ejecución de código se asemeja, compilación o interpretación?</p>",
+                                    "blanksList": [
+                                        {
+                                            "correctAnswerText": "Interpretación",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "Compilación",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "línea por línea al ejecutar",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "todo el programa antes de correrlo",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "lenta, pero flexible",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "rápida en ejecución final",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "a medida que se ejecuta",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "antes de correr el programa",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "correctAnswerText": "Python o JavaScript",
+                                            "incorrectAnswersList": [
+                                                {
+                                                    "showHighlight": false,
+                                                    "highlight": -1,
+                                                    "incorrectAnswerText": "Java o C++",
+                                                    "incorrectAnswerFeedback": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "blanksText": "<p><span style=\"color:#000000;font-family:Arial,sans-serif\">___, pues es traducir en tiempo real ___.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\"> Por lo mismo, su velocidad es ___.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">La detección de errores se realiza ___.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">¡Igual como lo hace la persona que te ayuda a entender la conferencia!</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">Así es como funciona, por ejemplo: ___.</span></p>",
+                                    "blanksText2": "<p><span style=\"color:#000000;font-family:Arial,sans-serif\">____, porque construir una casa es como es traducir ____, puesto que hay que diseñar los planos, reunir los materiales y contratar al equipo de construcción antes de comenzar.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">En consecuencia, su velocidad es ____; es decir, no tienes que detenerte porque no sabes qué hacer luego de poner las paredes o porque no compraron los ladrillos.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">Además, se puede detectar errores ____; por eso mismo revisaste cuidadosamente los planos.</span></p><p><span style=\"color:#000000;font-family:Arial,sans-serif\">Así es como funciona, por ejemplo: ____.</span></p>"
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "mode": "selection",
+                                    "selectAlternatives": "alternatives",
+                                    "selectAlternativeRestriction": 5,
+                                    "spellingErrorBehaviour": "mistake",
+                                    "caseSensitive": false,
+                                    "autoCheck": false,
+                                    "enableSolutionsButton": false,
+                                    "showSolutionsRequiresInput": true,
+                                    "enableRetry": true,
+                                    "enableCheckButton": true,
+                                    "disableImageZooming": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false
+                                },
+                                "showSolutions": "Show solution",
+                                "tryAgain": "Retry",
+                                "checkAnswer": "Check",
+                                "notFilledOut": "Please fill in all blanks to view solution",
+                                "tipLabel": "Tip",
+                                "spellingMistakeWarning": "Check your spelling: @mistake",
+                                "scoreBarLabel": "You got :num out of :total points",
+                                "confirmCheck": {
+                                    "header": "Finish?",
+                                    "body": "Are you sure you wish to finish?",
+                                    "cancelLabel": "Cancel",
+                                    "confirmLabel": "Finish"
+                                },
+                                "confirmRetry": {
+                                    "header": "Retry?",
+                                    "body": "Are you sure you wish to retry?",
+                                    "cancelLabel": "Cancel",
+                                    "confirmLabel": "Confirm"
+                                }
+                            },
+                            "subContentId": "9fadf2bf-8862-476c-926b-7a9c9d494c15",
+                            "metadata": {
+                                "contentType": "Complete los espacios en blanco (Avanced Blanks)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 1 - Ejercicio 8 - 2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 1 - Ejercicio 8 - 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": false,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "off"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

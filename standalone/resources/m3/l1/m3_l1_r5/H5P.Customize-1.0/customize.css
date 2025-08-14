@@ -1,0 +1,9 @@
+/*Le da un margen superior a la/las diapos del cuourse presentation ya que al
+definir una imágen de fondo para las diapos, esta se deforma y queda mal.*/
+.h5p-container {
+    background-color: #f8feef;
+}
+
+.h5p-wrapper {
+    margin: 2em 0 1em 0 !important;
+}
