@@ -3,25 +3,44 @@ jQuery(document).ready(()=>{
 
     //****Customize Course presentation****
 
-    //$('.h5p-footer').css({'display':'none'});
-    //$('.h5p-cp-navigation').css({'display':'none'});
+    $('.h5p-footer').css({'display':'none'});
+    $('.h5p-cp-navigation').css({'display':'none'});
 
-    const checkBtn = d.createElement('div');
+    const checkBtnContainer = d.createElement('div'),
+          checkBtn = d.createElement('div'),
+          summarySlide = $('.progressbar-part-summary-slide'),
+          slide = $('#slide-0');
 
-    $(checkBtn).html('hola').addClass('hola-btn').attr('style','display:inline-block;cursor:pointer;z-index:100;background:red;top:19em;right:-36em;position:relative;');
+    $(checkBtnContainer).addClass('check-btn-container');
+    $(checkBtn).html('Comprobar').addClass('check-btn');
 
-    d.querySelector('#slide-0 div').appendChild(checkBtn);
+    checkBtnContainer.appendChild(checkBtn);
+    d.querySelector('.h5p-container').appendChild(checkBtnContainer);
 
     $(checkBtn).click(()=>{
-        //console.log($('.h5p-dragquestion .h5p-question-buttons .h5p-question-check-answer'));
-        //console.log($('.h5p-mark-the-words .h5p-question-buttons .h5p-question-check-answer'));
         $('.h5p-dragquestion .h5p-question-buttons .h5p-question-check-answer').click();
         $('.h5p-mark-the-words .h5p-question-buttons .h5p-question-check-answer').click();
         setTimeout(() => {
-            $('.progressbar-part-summary-slide a').click();
-            console.log('hola');
-        }, 1000);
+            summarySlide[0].children[0].click();
+        }, 500);
     });
+
+    const slideObserver = new MutationObserver(function(mutationList, observer) {
+        for(const mutation of mutationList){
+            if(mutation.type === 'attributes' && mutation.attributeName === 'class'){
+                const currentClasses = slide[0].classList;
+                if(currentClasses.contains('h5p-current')){
+                    console.log('esta en diapo 1');
+                    $(checkBtn).css('visibility','visible');
+                }else{
+                    console.log('esta en diapo resume');
+                    $(checkBtn).css('visibility','hidden');
+                }
+            }
+        }
+    });
+
+    slideObserver.observe(slide[0], { attributes: true });    
 
     //****Customize Drag And Drop****
 
@@ -70,72 +89,17 @@ jQuery(document).ready(()=>{
 
     //****Customize Mark the words****
 
+    //Funcionalidad que al momento de seleccionar (marcar) una palabra deselecciona las demás o las especificadas
+    const selWords = $('.h5p-word-selectable-words [role=option]');
 
-    ///////////////////////////////////////////////////////////////////////////////
-    /*Posiciona las flechas del footer de navegación a los costados de la navegación (puntos)
-    y cuando se hayan respondido todas las slides envía de forma automática al slide de resumen*/
-
-    /*COMIENZO$('.h5p-footer').css({'display':'none'});
-    $('.h5p-tooltip').css({'display':'none'});
-
-    const h5pNavigation = $('.h5p-cp-navigation')[0],
-          btnPrev = $('.h5p-footer-previous-slide')[0],
-          btnNext = $('.h5p-footer-next-slide')[0],
-          taskAnswered = $('.h5p-progressbar-part-has-task'),
-          slides = $('.h5p-slides-wrapper')[0].children,
-          summarySlide = $('.progressbar-part-summary-slide');
-
-    summarySlide.css({'display':'none'});
-
-    h5pNavigation.children[0].parentNode.insertBefore(btnPrev, h5pNavigation.children[0]);
-    h5pNavigation.appendChild(btnNext);FIN*/
-
-    //Si la diapo que se esta observando es la ultima antes del summary, bloquea el boton de avanzar
-    /*COMIENZOconst observerSlides = new MutationObserver((mutationList, observerInstance)=>{
-        if($('.h5p-current')[0].id == slides[slides.length-2].id){
-            $('.h5p-footer-next-slide').css({'pointer-events':'none'});
-        }else{
-            $('.h5p-footer-next-slide').css({'pointer-events':'auto'});
-        }FIN*/
-
-        /*if($('.h5p-current')[0].id == 'slide-undefined'){
-            $('.h5p-footer-button').css({'visibility':'hidden'});
-            $('.h5p-progressbar').css({'visibility':'hidden'});
-        }*/
-    /*COMIENZO})
-
-    $(slides).each((i,el)=>{
-        observerSlides.observe(el, {
-            attributes: true,
-            attributeFilter: ['class'],
-            attributeOldValue: true
+    selWords.each((i,word) => {
+        $(word).click(()=>{
+            if(i%2 == 0){
+                selWords[i+1].attributes['aria-selected'].value = "false";
+            }
+            if(!(i%2 == 0)){
+                selWords[i-1].attributes['aria-selected'].value = "false";
+            }
         })
-    });FIN*/
-    
-    //Si se responden todas las diapos aparece el boton de "terminar"
-    //para ir al slide de resumen
-    /*const observerAnswered = new MutationObserver((mutationList, observerInstance)=>{
-        if($('.h5p-answered').length == taskAnswered.length){
-            //Simula click a botón de summary
-            summarySlide[0].children[0].click();
-
-            //Oculta el menú de navegación
-            $('.h5p-footer-button').css({'visibility':'hidden'});
-            $('.h5p-progressbar').css({'visibility':'hidden'});
-
-            //Si se hace clic en botón de "Intentar de nuevo" vuelve a mostrar el menú de navegación
-            $('.h5p-cp-retry-button').on('click', ()=>{
-                $('.h5p-footer-button').css({'visibility':'visible'});
-                $('.h5p-progressbar').css({'visibility':'visible'});
-            });
-        }
-    })
-
-    $(taskAnswered).each((i,el)=>{
-        observerAnswered.observe(el, {
-            attributes: true,
-            attributeFilter: ['class'],
-            attributeOldValue: true
-        })
-    });*/
+    });
 });

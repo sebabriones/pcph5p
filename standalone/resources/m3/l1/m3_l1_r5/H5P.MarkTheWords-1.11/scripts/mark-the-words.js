@@ -472,10 +472,10 @@ H5P.MarkTheWords = (function ($, Question, Word, KeyboardNav, XapiGenerator) {
         result.correct++;
       }
       else if (word.isWrong()) {
-        result.wrong++;
+        //result.wrong++;
       }
       else if (word.isMissed()) {
-        result.missed++;
+        //result.missed++;
       }
 
       return result;

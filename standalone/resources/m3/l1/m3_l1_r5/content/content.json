@@ -9,7 +9,7 @@
                         "width": 80.61002178649238,
                         "height": 99.99677234719216,
                         "action": {
-                            "library": "H5P.DragQuestion 1.14",
+                            "library": "H5P.DragShuffle 1.0",
                             "params": {
                                 "scoreShow": "Comprobar",
                                 "submit": "Enviar",
@@ -287,7 +287,7 @@
                                     "applyPenalties": false,
                                     "enableScoreExplanation": false,
                                     "dropZoneHighlighting": "dragging",
-                                    "autoAlignSpacing": 2,
+                                    "autoAlignSpacing": 20,
                                     "enableFullScreen": false,
                                     "showScorePoints": false,
                                     "showTitle": false

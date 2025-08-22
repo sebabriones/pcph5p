@@ -1,0 +1,238 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m3/l2/m3_l2_r3/content/images/image-3x98weI9.png",
+                "path2": "images/image-3x98weI9.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 17.3,
+                    "y": 67,
+                    "width": 11.2,
+                    "height": 3.35,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Se utiliza Google Colab</p>"
+                        },
+                        "subContentId": "8f97735f-7848-4596-b8dd-d5a7c1d41d7e",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 39.55,
+                    "y": 67,
+                    "width": 11.2,
+                    "height": 3.35,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\"><span style=\"font-size:0.875em\">Requiere un Entorno de desarrollo integrado</span></p>"
+                        },
+                        "subContentId": "49be6ed4-a642-4923-a057-3afbe4810c98",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 61.75,
+                    "y": 67,
+                    "width": 11.2,
+                    "height": 3.35,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\"><span style=\"font-size:0.875em\">Requiere descargar el Lenguaje de Programación</span></p>"
+                        },
+                        "subContentId": "060f2c49-3977-4677-8541-f035393f4141",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 28.4,
+                    "y": 80.85,
+                    "width": 11.2,
+                    "height": 3.35,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Requiere de una cuenta de Google</p>"
+                        },
+                        "subContentId": "fc14bf27-27c9-400c-917d-bd8128cdfaea",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 50.65,
+                    "y": 80.85,
+                    "width": 11.2,
+                    "height": 3.35,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\"><span style=\"font-size:0.875em\">Guardado automático de trabajos en Google Drive</span></p>"
+                        },
+                        "subContentId": "0a57663d-f478-48c5-9313-9ada64d31865",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 4.4,
+                    "y": 13,
+                    "width": 25,
+                    "height": 16.3,
+                    "correctElements": [
+                        "1",
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Mediante instalación</div>"
+                },
+                {
+                    "x": 51.1,
+                    "y": 13,
+                    "width": 25,
+                    "height": 16.3,
+                    "correctElements": [
+                        "0",
+                        "3",
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Sin instalar</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 5,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

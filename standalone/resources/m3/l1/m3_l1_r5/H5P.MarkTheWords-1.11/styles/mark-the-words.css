@@ -127,7 +127,7 @@ button.h5p-retry-button.h5p-retry-button {
 .h5p-mark-the-words .h5p-question-feedback,
 .h5p-mark-the-words .h5p-question-scorebar,
 .h5p-mark-the-words .h5p-question-buttons {
-  /*display: none;*/
+  display: none;
 }
 
 .h5p-mark-the-words .h5p-word-selectable-words {
