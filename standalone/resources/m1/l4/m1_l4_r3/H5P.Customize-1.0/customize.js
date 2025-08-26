@@ -12,12 +12,26 @@ jQuery(document).ready(()=>{
           btnNext = $('.h5p-footer-next-slide')[0],
           taskAnswered = $('.h5p-progressbar-part-has-task'),
           slides = $('.h5p-slides-wrapper')[0].children,
-          summarySlide = $('.progressbar-part-summary-slide');
+          summarySlide = $('.progressbar-part-summary-slide'),
+          divContainer = d.createElement('div'),
+          finishBtnContainer = d.createElement('div'),
+          finishBtn = d.createElement('div');
 
     summarySlide.css({'display':'none'});
 
     h5pNavigation.children[0].parentNode.insertBefore(btnPrev, h5pNavigation.children[0]);
     h5pNavigation.appendChild(btnNext);
+
+    //Genera el botón de Terminar
+    $(divContainer).addClass('div-container');
+    $(finishBtnContainer).addClass('finish-btn-container');
+    $(finishBtn).html('Terminar').addClass('finish-btn');
+
+    finishBtnContainer.appendChild(finishBtn);
+    h5pNavigation.insertBefore(divContainer, h5pNavigation.children[0]);
+    h5pNavigation.appendChild(finishBtnContainer);
+
+    $(finishBtn).css('visibility','hidden');
 
     //Si la diapo que se esta observando es la ultima antes del summary, bloquea el boton de avanzar
     const observerSlides = new MutationObserver((mutationList, observerInstance)=>{
@@ -26,11 +40,6 @@ jQuery(document).ready(()=>{
         }else{
             $('.h5p-footer-next-slide').css({'pointer-events':'auto'});
         }
-
-        /*if($('.h5p-current')[0].id == 'slide-undefined'){
-            $('.h5p-footer-button').css({'visibility':'hidden'});
-            $('.h5p-progressbar').css({'visibility':'hidden'});
-        }*/
     })
 
     $(slides).each((i,el)=>{
@@ -45,6 +54,22 @@ jQuery(document).ready(()=>{
     //para ir al slide de resumen
     const observerAnswered = new MutationObserver((mutationList, observerInstance)=>{
         if($('.h5p-answered').length == taskAnswered.length){
+            //Muestra botón Terminar
+            $(finishBtn).css('visibility','visible');
+        }
+    })
+
+    $(taskAnswered).each((i,el)=>{
+        observerAnswered.observe(el, {
+            attributes: true,
+            attributeFilter: ['class'],
+            attributeOldValue: true
+        })
+    });
+
+    //Si se clickea botón "Terminar" envia a la slide de Resumen
+    $(finishBtn).click(()=>{
+        setTimeout(() => {
             //Simula click a botón de summary
             summarySlide[0].children[0].click();
 
@@ -57,14 +82,9 @@ jQuery(document).ready(()=>{
                 $('.h5p-footer-button').css({'visibility':'visible'});
                 $('.h5p-progressbar').css({'visibility':'visible'});
             });
-        }
-    })
 
-    $(taskAnswered).each((i,el)=>{
-        observerAnswered.observe(el, {
-            attributes: true,
-            attributeFilter: ['class'],
-            attributeOldValue: true
-        })
+            //Oculta botón Terminar
+            $(finishBtn).css('visibility','hidden');
+        }, 500);
     });
 });

@@ -1495,7 +1495,7 @@
 
 .h5p-course-presentation .h5p-progressbar {
     /*width: 100%;*/
-    width: 15%; /*nuevo*/
+    width: 25%; /*nuevo*/
     height: 100%;
     overflow: visible;
     /*background: #666;*/ /*nuevo cambio*/

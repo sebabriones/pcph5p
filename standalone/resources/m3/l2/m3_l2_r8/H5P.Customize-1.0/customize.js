@@ -33,11 +33,20 @@ jQuery(document).ready(()=>{
                         leftCurrent = draggable.getBoundingClientRect().left;
                         topCurrent = draggable.getBoundingClientRect().top;
 
+                        //////////////////////////////////////////////////////////
                         console.log(draggable.getBoundingClientRect());
 
                         $(dropZones).each((i,dropZone)=>{
                             console.log(dropZone.getBoundingClientRect());
+                            if((draggable.getBoundingClientRect().top > dropZone.getBoundingClientRect().top) && (draggable.getBoundingClientRect().bottom < dropZone.getBoundingClientRect().bottom)){
+                                console.log(dropZone);
+                                $(dropZone).css({'box-shadow':'10px 10px lightblue'});
+                            }else if((draggable.getBoundingClientRect().left > dropZone.getBoundingClientRect().left) && (draggable.getBoundingClientRect().right > dropZone.getBoundingClientRect().right)){
+                                $(dropZone).css({'box-shadow':'none'});
+                            }
                         });
+
+                        ////////////////////////////////////////////////////////////
                         
                         $(inits).each((i,init)=>{
                             if(leftCurrent >= init.left-5 && leftCurrent <= init.right && topCurrent >= init.top-5 && topCurrent <= init.bottom){

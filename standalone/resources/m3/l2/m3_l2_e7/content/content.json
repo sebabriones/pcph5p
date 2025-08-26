@@ -1,0 +1,47 @@
+{
+    "choices": [
+        {
+            "subContentId": "034f3ca4-acf5-411a-8f25-7684afbf3eb9",
+            "question": "<p>¿Qué son las palabras reservadas?</p>",
+            "answers": [
+                "<p>Términos con funciones especiales y definidas en programación, por lo que no deben usarse para otros fines.</p>",
+                "<p>Grupo de advertencias para no cometer errores.</p>",
+                "<p>Conjunto de variables globales.</p>",
+                "<p>Conjunto de funciones para arrancar el programa.</p>"
+            ]
+        }
+    ],
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100,
+            "feedback": "<span style='font-size:1.3em;'>Una palabra reservada es un identificador que tiene un significado especial y predefinido en un lenguaje de programación. No se puede usar como nombres para variables. Por ejemplo: <span style='font-weight:bold;'>else</span>, <span style='font-weight:bold;'>if</span>, <span style='font-weight:bold;'>for</span>, <span style='font-weight:bold;'>import</span>.</span>"
+        }
+    ],
+    "behaviour": {
+        "autoContinue": true,
+        "timeoutCorrect": 500,
+        "timeoutWrong": 500,
+        "soundEffectsEnabled": false,
+        "enableRetry": true,
+        "enableSolutionsButton": false,
+        "passPercentage": 100
+    },
+    "l10n": {
+        "nextButtonLabel": "Siguiente pregunta",
+        "showSolutionButtonLabel": "Mostrar solución",
+        "retryButtonLabel": "Intentar de nuevo",
+        "solutionViewTitle": "Lista Solución",
+        "correctText": "¡Correcto!",
+        "incorrectText": "¡Incorrecto!",
+        "shouldSelect": "Debería haber sido seleccionada",
+        "shouldNotSelect": "NO debería haber sido seleccionada",
+        "muteButtonLabel": "Silenciar sonido de retroalimentación",
+        "closeButtonLabel": "Cerrar",
+        "slideOfTotal": "Diapositiva :num de :total",
+        "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+        "solutionListQuestionNumber": "Pregunta :num",
+        "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+        "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+    }
+}
