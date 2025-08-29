@@ -1,0 +1,45 @@
+{
+    "choices": [
+        {
+            "subContentId": "034f3ca4-acf5-411a-8f25-7684afbf3eb9",
+            "question": "<p>¿Cuál de las siguientes opciones representa una sentencia de asignación?</p>",
+            "answers": [
+                "<p><img src='resources/m3/l3/m3_l3_r1/content/images/m3l3r1-2.png' alt='m3_l3_r1-2' width='90%'></p>",
+                "<p><img src='resources/m3/l3/m3_l3_r1/content/images/m3l3r1-1.png' alt='m3_l3_r1-1' width='90%'></p>",
+                "<p><img src='resources/m3/l3/m3_l3_r1/content/images/m3l3r1-3.png' alt='m3_l3_r1-3'width='90%'></p>"
+            ]
+        }
+    ],
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "autoContinue": true,
+        "timeoutCorrect": 500,
+        "timeoutWrong": 500,
+        "soundEffectsEnabled": false,
+        "enableRetry": true,
+        "enableSolutionsButton": false,
+        "passPercentage": 100
+    },
+    "l10n": {
+        "nextButtonLabel": "Siguiente pregunta",
+        "showSolutionButtonLabel": "Mostrar solución",
+        "retryButtonLabel": "Intentar de nuevo",
+        "solutionViewTitle": "Lista Solución",
+        "correctText": "¡Correcto!",
+        "incorrectText": "¡Incorrecto!",
+        "shouldSelect": "Debería haber sido seleccionada",
+        "shouldNotSelect": "NO debería haber sido seleccionada",
+        "muteButtonLabel": "Silenciar sonido de retroalimentación",
+        "closeButtonLabel": "Cerrar",
+        "slideOfTotal": "Diapositiva :num de :total",
+        "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+        "solutionListQuestionNumber": "Pregunta :num",
+        "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+        "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+    }
+}

@@ -1,0 +1,874 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 6.5359477124183005,
+                        "y": 32.27652807842766,
+                        "width": 41.394335511982575,
+                        "height": 28.033455697237564,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l3/m3_l3_e3/content/images/image-R3YBlvHl.png",
+                                    "path2": "images/image-R3YBlvHl.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 700,
+                                    "height": 240
+                                }
+                            },
+                            "subContentId": "ddfe77ee-0d11-4ca4-a46d-292c61d4684f",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 14.161220043572984,
+                        "y": 37.65594942483227,
+                        "width": 33.765686274509804,
+                        "height": 40.73183369411319,
+                        "action": {
+                            "library": "H5P.Blanks 1.14",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "text": "<p>Ejecuta la consola usando print()</p>",
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "showSolutions": "Mostrar solución",
+                                "tryAgain": "Intentar de nuevo",
+                                "checkAnswer": "Comprobar",
+                                "submitAnswer": "Enviar",
+                                "notFilledOut": "Por favor, completa todos los huecos para poder ver la solución",
+                                "answerIsCorrect": "':ans' es correcta",
+                                "answerIsWrong": "':ans' es incorrecta",
+                                "answeredCorrectly": "Contestado correctamente",
+                                "answeredIncorrectly": "Contestado incorrectamente",
+                                "solutionLabel": "Respuesta correcta:",
+                                "inputLabel": "Hueco @num de @total",
+                                "inputHasTipLabel": "Pista disponible",
+                                "tipLabel": "Pista",
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "autoCheck": false,
+                                    "caseSensitive": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "separateLines": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "acceptSpellingErrors": false
+                                },
+                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrectas o sin contestar.",
+                                "a11yShowSolution": "Mostrar la solución. La tarea se marcará con su solución correcta.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "a11yCheckingModeHeader": "Modo de Comprobación",
+                                "confirmCheck": {
+                                    "header": "¿ Terminar ?",
+                                    "body": "¿Está seguro que desea terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "questions": [
+                                    "<p>*print(x)/print( x )*</p>"
+                                ]
+                            },
+                            "subContentId": "c1d9678c-6814-4aca-8fcb-c47b6ef2268c",
+                            "metadata": {
+                                "contentType": "Complete los espacios en blanco (Fill in the Blanks)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 1-1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 1-1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 54.46623093681917,
+                        "y": 35.972991001303974,
+                        "width": 38.12636165577342,
+                        "height": 38.73183369411319,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "4a7017e4-edf2-4f89-b2fe-f4ef033c94a1",
+                                        "question": "<p>Selecciona la alternativa correcta.</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>12</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>-12</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "c1701706-b2cf-4190-b6eb-7648241814fc",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 1-2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 1-2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 54.46623093681917,
+                        "y": 35.972991001303974,
+                        "width": 38.12636165577342,
+                        "height": 38.73183369411319,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "4a7017e4-edf2-4f89-b2fe-f4ef033c94a1",
+                                        "question": "<p>Selecciona la alternativa correcta.</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>19</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>30</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "21041282-d9be-4f96-bf37-520fc6d0c193",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 2-2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 2-2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 6.535947712418301,
+                        "y": 32.27652807842766,
+                        "width": 41.3041394335512,
+                        "height": 27.972991001303974,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l3/m3_l3_e3/content/images/image-0vggmk2D.png",
+                                    "path2": "images/image-0vggmk2D.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 700,
+                                    "height": 240
+                                }
+                            },
+                            "subContentId": "04b870db-c26e-49bc-ae56-498e9a59001c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 14.161220043572984,
+                        "y": 37.65594942483227,
+                        "width": 33.765686274509804,
+                        "height": 40.73183369411319,
+                        "action": {
+                            "library": "H5P.Blanks 1.14",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "text": "<p>Ejecuta la consola usando print()</p>",
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "showSolutions": "Mostrar solución",
+                                "tryAgain": "Intentar de nuevo",
+                                "checkAnswer": "Comprobar",
+                                "submitAnswer": "Enviar",
+                                "notFilledOut": "Por favor, completa todos los huecos para poder ver la solución",
+                                "answerIsCorrect": "':ans' es correcta",
+                                "answerIsWrong": "':ans' es incorrecta",
+                                "answeredCorrectly": "Contestado correctamente",
+                                "answeredIncorrectly": "Contestado incorrectamente",
+                                "solutionLabel": "Respuesta correcta:",
+                                "inputLabel": "Hueco @num de @total",
+                                "inputHasTipLabel": "Pista disponible",
+                                "tipLabel": "Pista",
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "autoCheck": false,
+                                    "caseSensitive": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "separateLines": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "acceptSpellingErrors": false
+                                },
+                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrectas o sin contestar.",
+                                "a11yShowSolution": "Mostrar la solución. La tarea se marcará con su solución correcta.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "a11yCheckingModeHeader": "Modo de Comprobación",
+                                "confirmCheck": {
+                                    "header": "¿ Terminar ?",
+                                    "body": "¿Está seguro que desea terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "questions": [
+                                    "<p>*print(y)/print( y )*</p>"
+                                ]
+                            },
+                            "subContentId": "6cdd0b66-6020-46a5-83d7-63cdf45f381b",
+                            "metadata": {
+                                "contentType": "Complete los espacios en blanco (Fill in the Blanks)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 2-1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 2-1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 56.64488017429194,
+                        "y": 35.972991001303974,
+                        "width": 38.12636165577342,
+                        "height": 38.73183369411319,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "4a7017e4-edf2-4f89-b2fe-f4ef033c94a1",
+                                        "question": "<p>Selecciona la alternativa correcta.</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>True</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>False</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "239243cb-611a-4a2d-8937-f4ede7e6561a",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 3-2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 3-2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091507,
+                        "y": 32.27652807842766,
+                        "width": 50.3285403050109,
+                        "height": 23.669453924180285,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l3/m3_l3_e3/content/images/image-ipE0jgM4.png",
+                                    "path2": "images/image-ipE0jgM4.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1008,
+                                    "height": 240
+                                }
+                            },
+                            "subContentId": "22bbabf7-fcd2-4f2b-aec1-fc98e469c25b",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 9.803921568627452,
+                        "y": 35.504180886270426,
+                        "width": 43.57298474945534,
+                        "height": 40.428296616989506,
+                        "action": {
+                            "library": "H5P.Blanks 1.14",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "text": "<p>Ejecuta la consola usando print()</p>",
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "showSolutions": "Mostrar solución",
+                                "tryAgain": "Intentar de nuevo",
+                                "checkAnswer": "Comprobar",
+                                "submitAnswer": "Enviar",
+                                "notFilledOut": "Por favor, completa todos los huecos para poder ver la solución",
+                                "answerIsCorrect": "':ans' es correcta",
+                                "answerIsWrong": "':ans' es incorrecta",
+                                "answeredCorrectly": "Contestado correctamente",
+                                "answeredIncorrectly": "Contestado incorrectamente",
+                                "solutionLabel": "Respuesta correcta:",
+                                "inputLabel": "Hueco @num de @total",
+                                "inputHasTipLabel": "Pista disponible",
+                                "tipLabel": "Pista",
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "autoCheck": false,
+                                    "caseSensitive": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "separateLines": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "acceptSpellingErrors": false
+                                },
+                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrectas o sin contestar.",
+                                "a11yShowSolution": "Mostrar la solución. La tarea se marcará con su solución correcta.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "a11yCheckingModeHeader": "Modo de Comprobación",
+                                "confirmCheck": {
+                                    "header": "¿ Terminar ?",
+                                    "body": "¿Está seguro que desea terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "questions": [
+                                    "<p>*print(resultado1)/print( resultado1 )*</p>"
+                                ]
+                            },
+                            "subContentId": "227b7194-2f13-499e-a147-299849a5c63c",
+                            "metadata": {
+                                "contentType": "Complete los espacios en blanco (Fill in the Blanks)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 3-1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 3-1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 32.27652807842766,
+                        "width": 50.3285403050109,
+                        "height": 23.669453924180285,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l3/m3_l3_e3/content/images/image-7PfJ3MBg.png",
+                                    "path2": "images/image-7PfJ3MBg.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1008,
+                                    "height": 240
+                                }
+                            },
+                            "subContentId": "be856def-3f53-4e79-8c53-3e7298ece065",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 9.803921568627452,
+                        "y": 34.428296616989506,
+                        "width": 43.57298474945534,
+                        "height": 40.428296616989506,
+                        "action": {
+                            "library": "H5P.Blanks 1.14",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "text": "<p>Ejecuta la consola usando print()</p>",
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "showSolutions": "Mostrar solución",
+                                "tryAgain": "Intentar de nuevo",
+                                "checkAnswer": "Comprobar",
+                                "submitAnswer": "Enviar",
+                                "notFilledOut": "Por favor, completa todos los huecos para poder ver la solución",
+                                "answerIsCorrect": "':ans' es correcta",
+                                "answerIsWrong": "':ans' es incorrecta",
+                                "answeredCorrectly": "Contestado correctamente",
+                                "answeredIncorrectly": "Contestado incorrectamente",
+                                "solutionLabel": "Respuesta correcta:",
+                                "inputLabel": "Hueco @num de @total",
+                                "inputHasTipLabel": "Pista disponible",
+                                "tipLabel": "Pista",
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "autoCheck": false,
+                                    "caseSensitive": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "separateLines": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "acceptSpellingErrors": false
+                                },
+                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrectas o sin contestar.",
+                                "a11yShowSolution": "Mostrar la solución. La tarea se marcará con su solución correcta.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "a11yCheckingModeHeader": "Modo de Comprobación",
+                                "confirmCheck": {
+                                    "header": "¿ Terminar ?",
+                                    "body": "¿Está seguro que desea terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "questions": [
+                                    "<p>*print(resultado2)/print( resultado2 )*</p>"
+                                ]
+                            },
+                            "subContentId": "6dc9d30d-5108-4746-aa85-bb5c23206097",
+                            "metadata": {
+                                "contentType": "Complete los espacios en blanco (Fill in the Blanks)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 4-1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 4-1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 56.64488017429194,
+                        "y": 35.972991001303974,
+                        "width": 38.12636165577342,
+                        "height": 38.73183369411319,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "4a7017e4-edf2-4f89-b2fe-f4ef033c94a1",
+                                        "question": "<p>Selecciona la alternativa correcta.</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>False</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>True</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "35a5fc17-a809-4a5a-a22b-333875b039f7",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 3 - Ejercicio 3 - 4-2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 3 - 4-2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        }
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

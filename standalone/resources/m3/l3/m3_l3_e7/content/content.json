@@ -1,0 +1,210 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m3/l3/m3_l3_e7/content/images/image-2JORc9sd.png",
+                "path2": "images/image-2JORc9sd.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 66.8,
+                    "y": 37.1,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Error de sintaxis</p>"
+                        },
+                        "subContentId": "c557e8e9-bad6-4d18-81f3-20c2bc7feeac",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 66.8,
+                    "y": 52,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Error de tiempo</p><p style=\"text-align:center\">de ejecución</p>"
+                        },
+                        "subContentId": "0b5cd99c-1473-420f-af1a-6825450c29c4",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 66.8,
+                    "y": 66.8,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Error semántico</p>"
+                        },
+                        "subContentId": "cae10415-a248-4902-aba0-24f6d5bc0ded",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 11.1,
+                    "y": 32.4,
+                    "width": 25.7,
+                    "height": 4.4,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 1</div>"
+                },
+                {
+                    "x": 11.1,
+                    "y": 50.1,
+                    "width": 25.7,
+                    "height": 4.4,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 2</div>"
+                },
+                {
+                    "x": 11.1,
+                    "y": 67.7,
+                    "width": 25.7,
+                    "height": 4.4,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 3</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100,
+            "feedback": "<ul><li><span style='font-weight:bold;'>Error de sintaxis</span>: el código no sigue las reglas del lenguaje. En este caso, Python no puede ejecutar la condición, porque le faltan los dos puntos al  final de la línea del if.</li><li><span style='font-weight:bold;'>Error de tiempo de ejecución</span>: el código se escribe correctamente, pero falla al ejecutarse. En este caso, el error aparece por intentar acceder al índice 5 de la lista, pero solo contiene 3 elementos (índices del 0 al 2).</li><li><span style='font-weight:bold;'>Error semántico</span>: el código se ejecuta sin problemas, pero no es el resultado esperado. En este caso, se quiere hacer una suma, sin embargo, se ha ejecutado una multiplicación.</li></ul>"
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 70,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}
