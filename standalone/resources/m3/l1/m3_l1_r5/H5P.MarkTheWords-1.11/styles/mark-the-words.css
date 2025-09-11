@@ -65,20 +65,24 @@
 
 /* Correctly answered marking */
 .h5p-mark-the-words [aria-describedby="h5p-description-correct"] {
-  background: #9dd8bb;
-  color: #255c41;
+  /*background: #9dd8bb;
+  color: #255c41;*/
   display: inline-block;
-  line-height: 1;
-  border: 1px solid #9dd8bb;
+  /*line-height: 1;
+  border: 1px solid #9dd8bb;*/
+  background: linear-gradient(#8bae54 0%, #456f06 90%); /*nuevo*/
+  color: #fff; /*nuevo*/
 }
 /* Wrongly answered marking */
 .h5p-mark-the-words [aria-describedby="h5p-description-incorrect"] {
-  background-color: #f7d0d0;
-  color: #b71c1c;
+  /*background-color: #f7d0d0;
+  color: #b71c1c;*/
   text-decoration: line-through;
   display: inline-block;
-  line-height: 1;
-  border: 1px solid #f7d0d0;
+  /*line-height: 1;
+  border: 1px solid #f7d0d0;*/
+  background: linear-gradient(#870202 0%, #3c0505 90%); /*nuevo*/
+  color: #fff; /*nuevo*/
 }
 /* Feedback icons */
 .h5p-mark-the-words [aria-describedby="h5p-description-correct"]:after {
@@ -87,7 +91,8 @@
   text-decoration: none;
   content: "\f00c";
   font-family: 'H5PFontAwesome4';
-  color: #255c41;
+  /*color: #255c41;*/
+  color: #fff; /*nuevo*/
   padding-left: 0.75em;
 }
 .h5p-mark-the-words [aria-describedby="h5p-description-incorrect"]:after {
@@ -97,7 +102,8 @@
   font-family: 'H5PFontAwesome4';
   text-decoration: none;
   content: "\f00d";
-  color: #b71c1c;
+  /*color: #b71c1c;*/
+  color: #fff; /*nuevo*/
   padding-left: 0.75em;
 }
 /* SPECIFIC CSS CLASSES FOR MARK THE WORDS MODULE: */

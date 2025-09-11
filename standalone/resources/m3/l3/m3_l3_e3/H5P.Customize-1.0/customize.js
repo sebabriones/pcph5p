@@ -118,7 +118,7 @@ jQuery(document).ready(()=>{
 
         if(divText.firstChild){
             const newOffset = Math.min(cursorOffset, divText.firstChild.length);
-            newRange.setStart(divText.firstChild, newOffset);
+            newRange.setStart(divText.lastChild, newOffset);
             newRange.collapse(true);
             sel.removeAllRanges();
             sel.addRange(newRange);

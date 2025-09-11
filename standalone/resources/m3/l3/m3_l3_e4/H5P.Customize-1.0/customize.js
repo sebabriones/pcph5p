@@ -94,20 +94,27 @@ jQuery(document).ready(()=>{
     let h5pScSet = $('.h5p-current .h5p-sc-set'),
         h5pNxtBtn = $('.h5p-current .h5p-ssc-next-button');
 
-    if(h5pScSet[0].children[h5pScSet[0].children.length-2].classList.contains('h5p-sc-current-slide')){
-        $(h5pNxtBtn).css({'display':'none'});
-    }
+    const hiddenH5pNxtBtn = () => {
+        if(h5pScSet !== null && h5pScSet[0].children[h5pScSet[0].children.length-2].classList.contains('h5p-sc-current-slide')){
+            console.log('oculto');
+            $(h5pNxtBtn).css({'display':'none'});
+        }
+    };
 
-    $(h5pNavigation).click(()=>{
+    $(h5pNxtBtn).click(() => hiddenH5pNxtBtn());
+
+    $(h5pNavigation).click(() => {
         setTimeout(() => {
-            h5pScSet = $('.h5p-current .h5p-sc-set');
+            h5pScSet = $('.h5p-current .h5p-sc-set') || null;
             h5pNxtBtn = $('.h5p-current .h5p-ssc-next-button');
 
-            $(h5pNxtBtn).click(()=>{
-                if(h5pScSet[0].children[h5pScSet[0].children.length-2].classList.contains('h5p-sc-current-slide')){
-                    $(h5pNxtBtn).css({'display':'none'});
-                }
+            hiddenH5pNxtBtn();
+
+            $(h5pNxtBtn).click(() => {
+                hiddenH5pNxtBtn();
             });
         }, 500);
     });
+
+    hiddenH5pNxtBtn();
 });

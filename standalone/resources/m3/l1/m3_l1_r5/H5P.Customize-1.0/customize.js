@@ -22,7 +22,7 @@ jQuery(document).ready(()=>{
         $('.h5p-mark-the-words .h5p-question-buttons .h5p-question-check-answer').click();
         setTimeout(() => {
             summarySlide[0].children[0].click();
-        }, 500);
+        }, 2000);
     });
 
     const slideObserver = new MutationObserver(function(mutationList, observer) {

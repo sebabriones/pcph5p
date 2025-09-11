@@ -18,10 +18,11 @@ jQuery(document).ready(()=>{
     let children = [];
 
     const xAPIHandler = function(event){
-        const xAPI = event.data.statement,
-              checkBtn = $('iframe').contents().find('.h5p-question-check-answer');
+        const xAPI = event.data.statement;
 
+        //Si el verbo con xAPI es answered
         if(xAPI.verb.display["en-US"] === 'answered'){
+            //Si el elemento JSON tiene un "parent" quiere decir que la actividad esta dentro de un Cuestionario o Presentación de curso
             if(xAPI.context.contextActivities.parent){
                 if(typeof xAPI.context.extensions !== 'undefined'){
                     if(xAPI.result.response) children.push({"object":xAPI.object, "result":xAPI.result});
@@ -29,11 +30,13 @@ jQuery(document).ready(()=>{
                     console.log(xAPI); //se envia el json al LRS
                     return;
                 }
+            //En caso contrario quiere decir que solo es una actividad nativa
             }else{
                 console.log(xAPI); //se envia el json al LRS
                 return;
             }
             //console.log(xAPI);
+        //En caso contrario si el verbo es completed quiere decir que el Cuestionario o Presentación de curso ha sido completada
         }else if(xAPI.verb.display["en-US"] === 'completed'){
             xAPI.children = children;
             console.log(xAPI); //Se envia el json al LRS
