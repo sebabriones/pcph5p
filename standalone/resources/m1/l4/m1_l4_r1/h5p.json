@@ -5,14 +5,19 @@
     "language": "en",
     "defaultLanguage": "es",
     "license": "U",
-    "extraTitle": "Leccion 4 - Refuerzo 1",
-    "title": "Leccion 4 - Refuerzo 1",
-    "mainLibrary": "H5P.DragText",
+    "extraTitle": "Modulo 1 - Leccion 4 - Refuerzo 1",
+    "title": "Modulo 1 - Leccion 4 - Refuerzo 1",
+    "mainLibrary": "H5P.DragShuffle",
     "preloadedDependencies": [
         {
-            "machineName": "H5P.Instructions",
+            "machineName": "H5P.Customize",
             "majorVersion": 1,
             "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.AdvancedText",
+            "majorVersion": 1,
+            "minorVersion": 1
         },
         {
             "machineName": "FontAwesome",
@@ -45,9 +50,9 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.DragText",
+            "machineName": "H5P.DragShuffle",
             "majorVersion": 1,
-            "minorVersion": 10
+            "minorVersion": 0
         }
     ]
 }

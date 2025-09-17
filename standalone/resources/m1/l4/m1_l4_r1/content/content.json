@@ -1,41 +1,472 @@
 {
-    "media": {
-        "disableImageZooming": false
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r1/content/images/image-vkpGgaIs.png",
+                "path2": "images/image-vkpGgaIs.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 72.3,
+                    "y": 13.05,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Precisión</p>"
+                        },
+                        "subContentId": "516060e1-601f-4348-a6aa-5ac368ec1fb1",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 72.3,
+                    "y": 24.15,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Finitud</p>"
+                        },
+                        "subContentId": "391f5415-3b4d-48db-96d8-9e2ade3cea30",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 72.3,
+                    "y": 35.2,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Efectividad</p>"
+                        },
+                        "subContentId": "71cb17cb-1554-409c-844f-97fd1555eb80",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 72.3,
+                    "y": 46.3,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Entrada bien definida</p>"
+                        },
+                        "subContentId": "adec206a-edac-4376-bc6a-977e8a4ddc8b",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 72.3,
+                    "y": 57.5,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Generalidad</p>"
+                        },
+                        "subContentId": "e4f08dca-7823-47e6-b67f-1f23ee2d2dfd",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 72.3,
+                    "y": 68.6,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Salida bien definida</p>"
+                        },
+                        "subContentId": "3863943d-1c22-4bf9-b031-ae0c2235f791",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 72.3,
+                    "y": 79.75,
+                    "width": 11.8,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Algoritmo</p>"
+                        },
+                        "subContentId": "1cb783ed-a8b9-4925-8be8-1ebffde5f7ce",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 5.65,
+                    "y": 15.3,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [
+                        "6"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Conjunto de instrucciones bien definidas para resolver un problema.</div>"
+                },
+                {
+                    "x": 37.95,
+                    "y": 22.7,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Resuelve el problema para el que fue diseñado.</div>"
+                },
+                {
+                    "x": 5.65,
+                    "y": 30.2,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Último paso bien redactado.</div>"
+                },
+                {
+                    "x": 37.95,
+                    "y": 37.6,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>El algoritmo termina en algún momento.</div>"
+                },
+                {
+                    "x": 5.65,
+                    "y": 45,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Secuencia ordenada de pasos para resolver un problema.</div>"
+                },
+                {
+                    "x": 37.95,
+                    "y": 52.4,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Tener claridad de lo que necesito para llevar a cabo el algoritmo.</div>"
+                },
+                {
+                    "x": 5.65,
+                    "y": 59.8,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Pasos bien definidos y específicos, sin ambigüedades.</div>"
+                },
+                {
+                    "x": 37.95,
+                    "y": 67.2,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Tener claridad del resultado que se obtiene del algoritmo.</div>"
+                },
+                {
+                    "x": 5.65,
+                    "y": 75.3,
+                    "width": 16.7,
+                    "height": 3.5,
+                    "correctElements": [
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Puede aplicarse en diversas variantes del mismo problema.</div>"
+                }
+            ]
+        }
     },
-    "taskDescription": "<p>Arrastra las definiciones dentro del concepto que corresponda.</p>",
     "overallFeedback": [
         {
             "from": 0,
             "to": 100
         }
     ],
-    "checkAnswer": "Comprobar",
-    "submitAnswer": "Enviar",
-    "tryAgain": "Reintentar",
-    "showSolution": "Mostrar solución",
-    "dropZoneIndex": "Zona de colocación @index.",
-    "empty": "La zona de Colocación @index está vacía.",
-    "contains": "la zona de Colocación @index contiene elemento @draggable.",
-    "ariaDraggableIndex": "@index de @count elementos que se pueden colocar.",
-    "tipLabel": "Mostrar pista",
-    "correctText": "¡Correcto!",
-    "incorrectText": "¡Incorrecto!",
-    "resetDropTitle": "Restablecer colocación",
-    "resetDropDescription": "¿Seguro que quieres restablecer esta zona de colocación?",
-    "grabbed": "Has cogido el elemento a arrastrar.",
-    "cancelledDragging": "Arrastre cancelado.",
-    "correctAnswer": "Respuesta correcta:",
-    "feedbackHeader": "Retroalimentación",
     "behaviour": {
         "enableRetry": true,
-        "enableSolutionsButton": false,
         "enableCheckButton": true,
-        "instantFeedback": false
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 35,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
     },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
     "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
-    "a11yCheck": "Comprueba las respuestas. Las respuestas se marcarán como correctas, incorrectas o sin respuesta.",
-    "a11yShowSolution": "Mostrar la solución. El trabajo será calificado con su solución correcta.",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
-    "textField": "*Pasos bien definidos y específicos, sin ambigüedades.*\n*El algoritmo termina en algún momento.*\n*Resuelve el problema para el que fue diseñado.*\n*Tener claridad de lo que se necesita para llevar a cabo el algoritmo.*\n*Puede aplicarse en diversas variantes del mismo problema.*\n*Tener claridad del resultado que se obtiene del algoritmo.*\n*Conjunto de instrucciones bien definidas para resolver un problema.*",
-    "distractors": "*Secuencia ordenada de pasos para resolver un problema.* *Último paso bien redactado.*"
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
 }

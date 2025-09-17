@@ -1,0 +1,41 @@
+{
+    "media": {
+        "disableImageZooming": false
+    },
+    "taskDescription": "<p>Arrastra las definiciones dentro del concepto que corresponda.</p>",
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "checkAnswer": "Comprobar",
+    "submitAnswer": "Enviar",
+    "tryAgain": "Reintentar",
+    "showSolution": "Mostrar solución",
+    "dropZoneIndex": "Zona de colocación @index.",
+    "empty": "La zona de Colocación @index está vacía.",
+    "contains": "la zona de Colocación @index contiene elemento @draggable.",
+    "ariaDraggableIndex": "@index de @count elementos que se pueden colocar.",
+    "tipLabel": "Mostrar pista",
+    "correctText": "¡Correcto!",
+    "incorrectText": "¡Incorrecto!",
+    "resetDropTitle": "Restablecer colocación",
+    "resetDropDescription": "¿Seguro que quieres restablecer esta zona de colocación?",
+    "grabbed": "Has cogido el elemento a arrastrar.",
+    "cancelledDragging": "Arrastre cancelado.",
+    "correctAnswer": "Respuesta correcta:",
+    "feedbackHeader": "Retroalimentación",
+    "behaviour": {
+        "enableRetry": true,
+        "enableSolutionsButton": false,
+        "enableCheckButton": true,
+        "instantFeedback": false
+    },
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "a11yCheck": "Comprueba las respuestas. Las respuestas se marcarán como correctas, incorrectas o sin respuesta.",
+    "a11yShowSolution": "Mostrar la solución. El trabajo será calificado con su solución correcta.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "textField": "*Pasos bien definidos y específicos, sin ambigüedades.*\n*El algoritmo termina en algún momento.*\n*Resuelve el problema para el que fue diseñado.*\n*Tener claridad de lo que se necesita para llevar a cabo el algoritmo.*\n*Puede aplicarse en diversas variantes del mismo problema.*\n*Tener claridad del resultado que se obtiene del algoritmo.*\n*Conjunto de instrucciones bien definidas para resolver un problema.*",
+    "distractors": "*Secuencia ordenada de pasos para resolver un problema.* *Último paso bien redactado.*"
+}
