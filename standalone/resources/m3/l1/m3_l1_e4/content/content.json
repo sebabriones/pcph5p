@@ -23,10 +23,10 @@
         "task": {
             "elements": [
                 {
-                    "x": 57.4,
+                    "x": 57.3,
                     "y": 32.9,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -50,10 +50,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 77.9,
+                    "x": 77.85,
                     "y": 32.9,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -77,10 +77,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 57.4,
+                    "x": 57.3,
                     "y": 41.2,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -104,10 +104,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 77.9,
+                    "x": 77.85,
                     "y": 41.2,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -131,10 +131,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 57.4,
+                    "x": 57.3,
                     "y": 49.6,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -158,10 +158,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 77.9,
+                    "x": 77.85,
                     "y": 49.6,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -185,10 +185,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 57.4,
+                    "x": 57.3,
                     "y": 57.9,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -212,10 +212,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 77.9,
+                    "x": 77.85,
                     "y": 57.9,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -239,10 +239,10 @@
                     "multiple": false
                 },
                 {
-                    "x": 57.4,
+                    "x": 57.3,
                     "y": 66.3,
-                    "width": 8.6,
-                    "height": 1,
+                    "width": 8.7,
+                    "height": 1.05,
                     "dropZones": [
                         "0",
                         "1",
@@ -268,10 +268,10 @@
             ],
             "dropZones": [
                 {
-                    "x": 30.9,
-                    "y": 38,
-                    "width": 9.6,
-                    "height": 2,
+                    "x": 31,
+                    "y": 38.1,
+                    "width": 9.5,
+                    "height": 1.9,
                     "correctElements": [
                         "0"
                     ],
@@ -289,8 +289,8 @@
                 },
                 {
                     "x": 31.1,
-                    "y": 45.6,
-                    "width": 9.8,
+                    "y": 45.5,
+                    "width": 9.45,
                     "height": 1.9,
                     "correctElements": [
                         "3"
@@ -310,7 +310,7 @@
                 {
                     "x": 32,
                     "y": 52.8,
-                    "width": 9.8,
+                    "width": 9.45,
                     "height": 1.9,
                     "correctElements": [
                         "8"
@@ -343,7 +343,7 @@
         "applyPenalties": false,
         "enableScoreExplanation": true,
         "dropZoneHighlighting": "dragging",
-        "autoAlignSpacing": 4,
+        "autoAlignSpacing": 2,
         "enableFullScreen": false,
         "showScorePoints": true,
         "showTitle": false

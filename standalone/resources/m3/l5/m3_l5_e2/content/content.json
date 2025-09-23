@@ -1,0 +1,287 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 500
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m3/l5/m3_l5_e2/content/images/image-eVdEEl1W.png",
+                "path2": "images/image-eVdEEl1W.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 17.3,
+                    "y": 70.7,
+                    "width": 11.15,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Dígito</p>"
+                        },
+                        "subContentId": "927a13c6-9adb-4643-94d6-4d71e39fe00a",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 39.55,
+                    "y": 70.7,
+                    "width": 11.15,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Argumento de</p><p style=\"text-align:center\">la función</p>"
+                        },
+                        "subContentId": "7a78eea4-cb02-4d99-8cc6-08cf9df9d37c",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 61.8,
+                    "y": 70.7,
+                    "width": 11.15,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Valor de retorno</p>"
+                        },
+                        "subContentId": "18863e03-b07e-4418-82fe-3840cc791037",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 17.3,
+                    "y": 82.7,
+                    "width": 11.15,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Reacción</p>"
+                        },
+                        "subContentId": "14426dbd-108c-43e1-854c-8bda67bd9939",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 39.55,
+                    "y": 82.7,
+                    "width": 11.15,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Función</p>"
+                        },
+                        "subContentId": "420253dd-6819-4719-abe6-7f38d020e301",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 61.8,
+                    "y": 82.7,
+                    "width": 11.15,
+                    "height": 2.45,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Variable</p>"
+                        },
+                        "subContentId": "a5f6bd7d-8470-4d69-b47b-c4f41cd7a6c4",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 17.1,
+                    "y": 14.7,
+                    "width": 12,
+                    "height": 3.3,
+                    "correctElements": [
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Función</div>"
+                },
+                {
+                    "x": 61.55,
+                    "y": 14.7,
+                    "width": 12,
+                    "height": 3.3,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Argumento de la función</div>"
+                },
+                {
+                    "x": 32.8,
+                    "y": 54.8,
+                    "width": 12,
+                    "height": 3.3,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Valor de retorno</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 1,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

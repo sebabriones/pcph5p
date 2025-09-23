@@ -112,10 +112,10 @@
                         ],
                         "dropZones": [
                             {
-                                "x": 14.2,
-                                "y": 46.6,
-                                "width": 19.6,
-                                "height": 3.2,
+                                "x": 14.4,
+                                "y": 46.8,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "1"
                                 ],
@@ -132,10 +132,10 @@
                                 "label": "<div>zona 1</div>"
                             },
                             {
-                                "x": 14.2,
-                                "y": 76.6,
-                                "width": 19.6,
-                                "height": 3.2,
+                                "x": 14.4,
+                                "y": 76.8,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "2"
                                 ],
@@ -309,10 +309,10 @@
                         ],
                         "dropZones": [
                             {
-                                "x": 14.5,
-                                "y": 37.3,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 37.7,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "2"
                                 ],
@@ -329,10 +329,10 @@
                                 "label": "<div>zona 1</div>"
                             },
                             {
-                                "x": 14.5,
-                                "y": 73.4,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 73.9,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "1"
                                 ],
@@ -349,10 +349,10 @@
                                 "label": "<div>zona 2</div>"
                             },
                             {
-                                "x": 14.5,
-                                "y": 85.4,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 85.9,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "0"
                                 ],
@@ -590,10 +590,10 @@
                         ],
                         "dropZones": [
                             {
-                                "x": 14.5,
-                                "y": 36.4,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 36.8,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "2"
                                 ],
@@ -610,10 +610,10 @@
                                 "label": "<div>zona 1</div>"
                             },
                             {
-                                "x": 14.5,
-                                "y": 46.6,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 47,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "0"
                                 ],
@@ -630,10 +630,10 @@
                                 "label": "<div>zona 2</div>"
                             },
                             {
-                                "x": 14.5,
-                                "y": 67,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 67.4,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "3"
                                 ],
@@ -650,10 +650,10 @@
                                 "label": "<div>zona 3</div>"
                             },
                             {
-                                "x": 14.5,
-                                "y": 77.2,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 77.6,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "1"
                                 ],
@@ -670,10 +670,10 @@
                                 "label": "<div>zona 4</div>"
                             },
                             {
-                                "x": 14.5,
-                                "y": 87.4,
-                                "width": 19.7,
-                                "height": 3.2,
+                                "x": 14.7,
+                                "y": 87.8,
+                                "width": 19.5,
+                                "height": 3,
                                 "correctElements": [
                                     "4"
                                 ],

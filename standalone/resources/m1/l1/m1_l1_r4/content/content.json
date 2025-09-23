@@ -308,7 +308,7 @@
                     "label": "<div>Zona 3</div>\n"
                 },
                 {
-                    "x": 76.498,
+                    "x": 76.6,
                     "y": 35.8,
                     "width": 9.4,
                     "height": 3.5,
@@ -343,7 +343,7 @@
         "applyPenalties": false,
         "enableScoreExplanation": true,
         "dropZoneHighlighting": "dragging",
-        "autoAlignSpacing": 2,
+        "autoAlignSpacing": 1,
         "enableFullScreen": false,
         "showScorePoints": true,
         "showTitle": false

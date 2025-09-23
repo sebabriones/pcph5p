@@ -24,7 +24,7 @@
             "elements": [
                 {
                     "x": 68.4,
-                    "y": 78.9,
+                    "y": 78.85,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -48,8 +48,8 @@
                     "multiple": false
                 },
                 {
-                    "x": 15.1,
-                    "y": 67.1,
+                    "x": 15,
+                    "y": 67,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -73,8 +73,8 @@
                     "multiple": false
                 },
                 {
-                    "x": 50.6,
-                    "y": 67.1,
+                    "x": 50.65,
+                    "y": 67,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -99,7 +99,7 @@
                 },
                 {
                     "x": 32.85,
-                    "y": 78.9,
+                    "y": 78.85,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -124,7 +124,7 @@
                 },
                 {
                     "x": 68.4,
-                    "y": 67.1,
+                    "y": 67,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -148,8 +148,8 @@
                     "multiple": false
                 },
                 {
-                    "x": 15.1,
-                    "y": 78.9,
+                    "x": 15,
+                    "y": 78.85,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -174,7 +174,7 @@
                 },
                 {
                     "x": 32.85,
-                    "y": 67.1,
+                    "y": 67,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -198,8 +198,8 @@
                     "multiple": false
                 },
                 {
-                    "x": 50.6,
-                    "y": 78.9,
+                    "x": 50.65,
+                    "y": 78.85,
                     "width": 8.7,
                     "height": 2.7,
                     "dropZones": [
@@ -208,7 +208,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<span style='display:flex;align-items:center;justify-content:center;'><p style=\"text-align:center\">Raspberry Pi&nbsp;</p><img src='http://localhost/pcph5p/standalone/resources/m3/l1/m3_l1_e7/content/images/raspberrypi.svg' width='15%' height='auto'></span>"
+                            "text": "<span style='display:flex;align-items:center;justify-content:center;'><p style=\"text-align:center\">Raspberry Pi&nbsp;</p><img class='img-icon' src='http://localhost/pcph5p/standalone/resources/m3/l1/m3_l1_e7/content/images/raspberrypi.svg' width='15%' height='auto'></span>"
                         },
                         "subContentId": "06c8a6e7-8aec-4145-85ce-75f2e164f626",
                         "metadata": {

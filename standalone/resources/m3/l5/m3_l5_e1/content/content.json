@@ -1,0 +1,46 @@
+{
+    "choices": [
+        {
+            "subContentId": "034f3ca4-acf5-411a-8f25-7684afbf3eb9",
+            "question": "<p>En programación, una función se puede entender como:</p>",
+            "answers": [
+                "<p>Una máquina que recibe materia prima (datos), luego procesa todo y, finalmente, produce un producto (resultado).</p>",
+                "<p>Un espejo que refleja exactamente lo mismo que entra (información), sin modificar ni procesarlo.</p>",
+                "<p>Una bodega que solo guarda cosas (datos), cumpliendo el rol de almacenamiento seguro.</p>",
+                "<p>Una caja fuerte que guarda elementos importantes (información), pero nunca devuelve nada.</p>"
+            ]
+        }
+    ],
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "autoContinue": true,
+        "timeoutCorrect": 500,
+        "timeoutWrong": 500,
+        "soundEffectsEnabled": false,
+        "enableRetry": true,
+        "enableSolutionsButton": false,
+        "passPercentage": 100
+    },
+    "l10n": {
+        "nextButtonLabel": "Siguiente pregunta",
+        "showSolutionButtonLabel": "Mostrar solución",
+        "retryButtonLabel": "Intentar de nuevo",
+        "solutionViewTitle": "Lista Solución",
+        "correctText": "¡Correcto!",
+        "incorrectText": "¡Incorrecto!",
+        "shouldSelect": "Debería haber sido seleccionada",
+        "shouldNotSelect": "NO debería haber sido seleccionada",
+        "muteButtonLabel": "Silenciar sonido de retroalimentación",
+        "closeButtonLabel": "Cerrar",
+        "slideOfTotal": "Diapositiva :num de :total",
+        "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+        "solutionListQuestionNumber": "Pregunta :num",
+        "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+        "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+    }
+}

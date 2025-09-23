@@ -1,0 +1,340 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 500
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m3/l5/m3_l5_r1/content/images/image-S4dIPLS9.png",
+                "path2": "images/image-S4dIPLS9.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 56.8,
+                    "y": 22.6,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Tiene un nombre</p><p style=\"text-align:center\">que la identifica.</p>"
+                        },
+                        "subContentId": "b251cb57-d4d6-4963-aaf5-9091ac1d521a",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 76.75,
+                    "y": 22.6,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Devuelve un </p><p style=\"text-align:center\">valor de retorno.</p>"
+                        },
+                        "subContentId": "010eebec-6836-4249-a681-2b571eb67845",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 56.8,
+                    "y": 35.7,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Solo funciona con números.</p>"
+                        },
+                        "subContentId": "8a9846b4-d20f-4b9d-b35c-c060643c4b5e",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 76.75,
+                    "y": 35.7,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Recibe argumentos o parámetros.</p>"
+                        },
+                        "subContentId": "59504f7a-a20e-4dc9-8c06-f8c00ce7e1f6",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 56.8,
+                    "y": 48.7,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Realiza tareas específicas.</p>"
+                        },
+                        "subContentId": "8ebea76a-e756-4aee-a2e8-838e77e97988",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 76.75,
+                    "y": 48.7,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Organiza y reutiliza el código.</p>"
+                        },
+                        "subContentId": "fc86367f-30a6-4c01-87c8-8f20c705c5be",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 56.8,
+                    "y": 61.7,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Solo pueden reutilizarse una vez.</p>"
+                        },
+                        "subContentId": "95a7ff67-e6e7-491d-be2d-b0b01d3cd514",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 76.75,
+                    "y": 61.7,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Simplifica tareas repetitivas.</p>"
+                        },
+                        "subContentId": "3b54bf24-0bd5-4ca3-93a6-bcc693539936",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 56.8,
+                    "y": 74.6,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\"><span style=\"font-size:0.8em\">Divide un problema en partes más pequeñas.</span></p>"
+                        },
+                        "subContentId": "6bb4a9d4-9fc5-4f59-9c93-08ea87675063",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 76.75,
+                    "y": 74.6,
+                    "width": 9.9,
+                    "height": 2.75,
+                    "dropZones": [
+                        "0"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\"><span style=\"font-size:0.8em\">Tiene el mismo nombre que el archivo.</span></p>"
+                        },
+                        "subContentId": "3e57d2ca-6447-451d-9696-96deb439f6e6",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 6,
+                    "y": 26.7,
+                    "width": 22.05,
+                    "height": 19.8,
+                    "correctElements": [
+                        "0",
+                        "3",
+                        "4",
+                        "5",
+                        "7",
+                        "8"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 1</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

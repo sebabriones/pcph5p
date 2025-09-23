@@ -85,10 +85,6 @@ html.h5p-iframe .h5p-container.h5p-dragquestion.h5p-semi-fullscreen {
    border: 0.1em solid rgb(212, 190, 216);
    background: #edd6e9;
 }*/
-/*nuevo*/
-.h5p-dragquestion .h5p-draggable.h5p-dropped img{
-  background-color: #fff !important;
-}
 .h5p-dragquestion .h5p-draggable.h5p-dropped {
   /*color: #1a4473;*/
   border: 0.1em solid #a9c3d0;

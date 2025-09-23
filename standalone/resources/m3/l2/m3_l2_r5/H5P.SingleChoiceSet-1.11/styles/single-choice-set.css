@@ -572,10 +572,15 @@ li.h5p-sc-alternative .h5p-sc-status {
 }
 
 /*Código nuevo*/
+.h5p-sc-feedback-container {
+  margin-top: 25%;
+}
+
 .h5p-sc-slide:first-child {
   background-color: #fff;
   border: 2px solid #fcf446;
   border-radius: 1em;
+  margin-top: 30%;
 }
 
 .h5p-sc-alternatives {
@@ -590,5 +595,4 @@ li.h5p-sc-alternative .h5p-sc-status {
   border-radius: 0.6em !important;
   color: #fff !important;
   width: 45% !important;
-
 }

@@ -124,10 +124,10 @@
             ],
             "dropZones": [
                 {
-                    "x": 45.1,
+                    "x": 45,
                     "y": 37.3,
                     "width": 16.3,
-                    "height": 1.9,
+                    "height": 2,
                     "correctElements": [
                         "3"
                     ],

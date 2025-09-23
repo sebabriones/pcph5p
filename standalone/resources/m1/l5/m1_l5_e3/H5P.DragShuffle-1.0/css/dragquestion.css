@@ -217,7 +217,7 @@ html.h5p-iframe .h5p-container.h5p-dragquestion.h5p-semi-fullscreen {
 .h5p-dragquestion .h5p-dropzone > .h5p-inner.h5p-over {
   /*background: #edd6e9;*/
   background: #fff; /*nuevo*/
-  box-shadow: 0 0 10px 5px #f0f0f0 inset; /*nuevo*/
+  box-shadow: 0 0 15px 10px #f0f0f0 inset; /*nuevo*/
 }
 
 .h5p-dragquestion .h5p-label {

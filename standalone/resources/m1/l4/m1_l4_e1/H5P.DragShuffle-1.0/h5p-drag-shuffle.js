@@ -2405,7 +2405,7 @@ var DropZone = /*#__PURE__*/function () {
 
       // Calcuate borders and spacing values in percetage
       var spacing = {
-        x: self.autoAlignable.spacing / self.autoAlignable.size.width * 100,
+        x: self.autoAlignable.spacing / self.autoAlignable.size.width * 0,
         y: self.autoAlignable.spacing / self.autoAlignable.size.height * 100
       };
 
