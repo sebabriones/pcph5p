@@ -1,0 +1,51 @@
+[
+    {
+      "name": "gameSettings",
+      "type": "group",
+      "label": "Configuración del juego",
+      "fields": [
+      ]
+    },
+    {
+      "name": "pairs",
+      "type": "list",
+      "label": "Terminos",
+      "entity": "definicion",
+      "field": {
+        "name": "definition",
+        "type": "group",
+        "label": "Configuración del termino",
+        "fields": [
+          {
+            "name": "definition",
+            "type": "text",
+            "label": "Definición/Pregunta",
+            "widget": "textarea",
+            "description": "La pregunta o definición que aparecerá"
+          },
+          {
+            "name": "answer",
+            "type": "text",
+            "label": "Respuesta correcta",
+            "description": "La respuesta correcta para esta definición"
+          }
+        ]
+      },
+      "default": [
+        {"definition": "Aquí va la definición", "answer": "Aquí va la respuesta"}
+      ]
+    },
+    {
+      "name": "behavioralSettings",
+      "type": "group",
+      "label": "Configuración de comportamiento",
+      "fields": [
+        {
+          "name": "showScore",
+          "type": "boolean",
+          "label": "Mostrar puntuación",
+          "default": true
+        }
+      ]
+    }
+  ]

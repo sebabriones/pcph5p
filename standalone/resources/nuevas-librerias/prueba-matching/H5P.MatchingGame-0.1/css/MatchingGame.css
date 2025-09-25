@@ -1,0 +1,50 @@
+.h5p-matching-game {
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Contenedor para posicionar el SVG */
+}
+
+.column {
+    width: 45%;
+}
+
+.item {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: all 0.2s;
+}
+
+/* Estilos de interacción */
+.item:hover {
+    background-color: #eef;
+}
+
+.item.selected {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.item.matched {
+    background-color: #d4edda;
+    border-color: #155724;
+    cursor: default;
+}
+
+/* Estilo del SVG para las líneas */
+#lines-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite hacer clic a través de la línea */
+}
+
+.connection-line {
+    stroke: #007bff; /* Color de la línea */
+    stroke-width: 2; /* Grosor de la línea */
+    transition: stroke-width 0.3s;
+}

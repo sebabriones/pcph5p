@@ -1,0 +1,38 @@
+{
+    "title": "Matching Game",
+    "description": "Términos pareados unidos por una línea.",
+    "majorVersion": 0,
+    "minorVersion": 1,
+    "patchVersion": 0,
+    "runnable": 1,
+    "author": "sbriones",
+    "license": "MIT",
+    "machineName": "H5P.MatchingGame",
+    "coreApi": {
+      "majorVersion": 0,
+      "minorVersion": 1
+    },
+    "preloadedJs": [
+      { "path": "js/MatchingGame.js" }
+    ],
+    "preloadedCss": [
+      { "path": "css/MatchingGame.css" }
+    ],
+    "preloadedDependencies": [
+      {
+        "machineName": "FontAwesome",
+        "majorVersion": 4,
+        "minorVersion": 5
+      },
+      {
+        "machineName": "H5P.Question",
+        "majorVersion": 1,
+        "minorVersion": 5
+      },
+      {
+        "machineName": "H5P.JoubelUI",
+        "majorVersion": 1,
+        "minorVersion": 3
+      }
+    ]
+  }

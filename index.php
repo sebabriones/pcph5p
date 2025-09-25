@@ -12,8 +12,8 @@
         <ul>
             <li>Lección 1</li>
             <ul>
-                <li><a href="./standalone/h5p.php?path=/resources/m1/l1/m1_l1_e1&id=m1l1e1">Ejercicio 1</a></li>
-                <li><a href="./standalone/h5p.php?path=/resources/m1/l1/m1_l1_e2&id=m1l1e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m1/l1/m1_l1_e1&id=m1l1e1">Ejercicio 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m1/l1/m1_l1_e2&id=m1l1e2">Ejercicio 2</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l1/m1_l1_e3&id=m1l1e3">Ejercicio 3</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l1/m1_l1_e4&id=m1l1e4">Ejercicio 4</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l1/m1_l1_e5&id=m1l1e5">Ejercicio 5</a></li>
@@ -143,6 +143,10 @@
                 <li><a href="./standalone/h5p.php?path=resources/m3/l5/m3_l5_r5&id=m3l5r5">Refuerzo 5</a></li>
             </ul>
         </ul>
+        <li>Nuevas Librerías</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/prueba-matching&id=prueba-matching">Matching Game</a></li>
+            </ul>
         <li>Otros</li>
             <ul>
                 <li><a href="./standalone/h5p.php?path=resources/otro/ordenar&id=ordenar">Ordenar</a></li>
