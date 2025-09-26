@@ -3,13 +3,19 @@ var H5P = H5P || {};
 H5P.MatchingGame = (function ($) {
     /**
     * Constructor principal
+    * @extends H5P.Question
     * @param {Object} options - Configuraciones del juego
     * @param {number} id - ID único de la instancia
     */
 
+    MatchingGame.prototype = Object.create(H5P.Question.prototype);
+    MatchingGame.prototype.constructor = MatchingGame;
+
     //Constructor
-    function Matchinggame(options, id){
+    function MatchingGame(options, id){
         var self = this;
+
+        H5P.Question.call(self, 'matching-game');
 
         self.options = $.extend(true, {}, {
             pairs: [],
@@ -20,23 +26,35 @@ H5P.MatchingGame = (function ($) {
         self.matches = [];
 
         self.definitions = [...self.options.pairs].sort(() => Math.random() - 0.5);
+        self.isComplete = false;
     }
 
-    Matchinggame.prototype.attach = function($container){
+    MatchingGame.prototype.attach = function($container){
         var self = this;
 
-        self.$container = $container;
+        H5P.Question.prototype.attach.call(self, $container);
+
+        /*self.$container = $container;
         $container.empty();
         $container.addClass('h5p-matching-game');
 
-        self.renderGame();
+        self.renderGame();*/
+
+        var $content = self.getContent();
+        
+        if($content && $content.length > 0){
+            $content.addClass('h5p-matching-game');
+            self.renderGame($content);
+        }else{
+            console.error("Error: H5P.Question content container not found.")
+        }
     };
 
     // Genera el HTML para los términos y definiciones
-    Matchinggame.prototype.renderGame = function(){
+    MatchingGame.prototype.renderGame = function($content){
         var self = this;
 
-        self.$container.append(`
+        self.$content.append(`
             <div class="column" id="left-column"></div>
             <svg id="lines-svg"></svg>
             <div class="column" id="right-column"></div>
@@ -62,7 +80,7 @@ H5P.MatchingGame = (function ($) {
         });
     }
 
-    Matchinggame.prototype.handleSelection = function(event) {
+    MatchingGame.prototype.handleSelection = function(event) {
         var self = this;
 
         const clickedItem = event.target.closest('.item');
@@ -102,6 +120,8 @@ H5P.MatchingGame = (function ($) {
 
             // Guarda el par para evitar clics futuros
             self.matches.push([selectedName, itemName]);
+
+            self.triggerXAPI('interacted');
             
         } else {
             // Coincidencia incorrecta - Simplemente deselecciona
@@ -112,11 +132,13 @@ H5P.MatchingGame = (function ($) {
 
         // Verificar fin del juego
         if (self.matches.length === self.options.pairs.length) {
-            alert("¡Juego completado!");
+            self.isComplete = true;
+
+            self.reportCompletion();
         }
     };
 
-    Matchinggame.prototype.drawConnection = function(el1, el2) {
+    MatchingGame.prototype.drawConnection = function(el1, el2) {
         var svg = document.getElementById('lines-svg');
 
         // Calcula la posición en relación al SVG (para simplificar)
@@ -144,5 +166,35 @@ H5P.MatchingGame = (function ($) {
         svg.appendChild(line);
     };
 
-    return Matchinggame;
+    MatchingGame.prototype.getScore = function(){
+        var self = this;
+
+        return self.matches.length;
+    };
+    
+    MatchingGame.prototype.getMaxScore = function(){
+        var self = this;
+
+        return self.options.pairs.length;
+    };
+
+    MatchingGame.prototype.get_response_data = function(){
+
+    };
+
+    MatchingGame.prototype.reportCompletion = function(){
+        var self = this;
+
+        self.triggerXAPICompleted(self.getScore(), self.getMaxScore(), 'completed');
+
+        self.set = true;
+        //self.showScore(self.getScore(), self.getMaxScore());
+        //self.hideButton('check-answer');
+        //self.showButton('show-solution');
+        //self.showButton('retry');
+
+        alert("¡Juego completado!"); 
+    }
+
+    return MatchingGame;
 })(H5P.jQuery);

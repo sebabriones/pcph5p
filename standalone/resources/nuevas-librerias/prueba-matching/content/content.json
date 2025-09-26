@@ -1,1 +1,8 @@
-{"pairs":[{"definition":"Uno","answer":"Uno"},{"definition":"Dos","answer":"Dos"},{"definition":"Tres","answer":"Tres"}],"behavioralSettings":false}
+{
+  "pairs": [
+    {"definition": "Uno", "answer": "1"},
+    {"definition": "Dos", "answer": "2"},
+    {"definition": "Tres", "answer": "3"}
+  ],
+  "behavioralSettings": false
+}
