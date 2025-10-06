@@ -1,4 +1,4 @@
-.h5p-matching-game {
+.matching-game-wrapper {
     display: flex;
     justify-content: space-between;
     position: relative; /* Contenedor para posicionar el SVG */
@@ -23,13 +23,17 @@
 }
 
 .item.selected {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #007bff;
 }
 
-.item.matched {
+.item.correct {
     background-color: #d4edda;
     border-color: #155724;
+    cursor: default;
+}
+.item.incorrect {
+    background-color: #edd4d4;
+    border-color: #721C24;
     cursor: default;
 }
 

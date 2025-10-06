@@ -1,8 +1,1 @@
-{
-  "pairs": [
-    {"definition": "Uno", "answer": "1"},
-    {"definition": "Dos", "answer": "2"},
-    {"definition": "Tres", "answer": "3"}
-  ],
-  "behavioralSettings": false
-}
+{"pairs":[{"definition":"Uno","answer":"1"},{"answer":"2","definition":"Dos"},{"answer":"3","definition":"Tres"},{"answer":"4","definition":"Cuatro"}],"behaviour":{"enableRetry":true,"enableSolutionButton":true,"enableScoreText":true},"l10n":{"checkAnswerButtonLabel":"Comprobar","showSolutionButtonLabel":"Mostrar solución","retryButtonLabel":"Intentar de nuevo"}}

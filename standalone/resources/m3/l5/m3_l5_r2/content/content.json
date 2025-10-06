@@ -1,0 +1,37 @@
+{
+    "pairs": [
+        {
+            "answer": "print()",
+            "definition": "Imprime un mensaje o valor en pantalla."
+        },
+        {
+            "answer": "pow(,)",
+            "definition": "Calcula la potencia de un número: x elevado a y."
+        },
+        {
+            "answer": "round()",
+            "definition": "Redondea un número al entero más cercano."
+        },
+        {
+            "answer": "sqrt()",
+            "definition": "Calcula la raíz cuadrada de un número."
+        },
+        {
+            "answer": "abs()",
+            "definition": "Devuelve el valor absoluto de un número (sin signo)."
+        },
+        {
+            "definition": "Devuelve la cantidad de elementos que hay en una secuencia (como una lista)."
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableSolutionButton": false,
+        "enableScoreText": false
+    },
+    "l10n": {
+        "checkAnswerButtonLabel": "Comprobar",
+        "showSolutionButtonLabel": "Mostrar solución",
+        "retryButtonLabel": "Intentar de nuevo"
+    }
+}

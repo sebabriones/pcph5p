@@ -21,7 +21,7 @@ jQuery(document).ready(()=>{
         const xAPI = event.data.statement;
 
         //Si el verbo con xAPI es answered
-        /*if(xAPI.verb.display["en-US"] === 'answered'){
+        if(xAPI.verb.display["en-US"] === 'answered'){
             //Si el elemento JSON tiene un "parent" quiere decir que la actividad esta dentro de un Cuestionario o Presentación de curso
             if(xAPI.context.contextActivities.parent){
                 if(typeof xAPI.context.extensions !== 'undefined'){
@@ -36,14 +36,14 @@ jQuery(document).ready(()=>{
                 return;
             }
             //console.log(xAPI);
-        //En caso contrario si el verbo es completed quiere decir que el Cuestionario o Presentación de curso ha sido completada
+        //En caso contrario si el verbo es completed quiere decir que el Cuestionario o Presentación de curso ha sido completado
         }else if(xAPI.verb.display["en-US"] === 'completed'){
             xAPI.children = children;
             console.log(xAPI); //Se envia el json al LRS
             children = [];
-        }*/
+        }
 
-        console.log(xAPI);
+        //console.log(xAPI);
     }
 
     new H5PStandalone.H5P( element, options ).then(
