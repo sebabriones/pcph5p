@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
     font-family: "H5PDroidSans";
     src: url(500391a5880cb0fbf3b6.ttf) format("truetype");
     font-weight: normal
@@ -16,7 +16,7 @@
     src: url(02d95842a0c03186d030.eot?bupsqs#iefix) format("embedded-opentype"), url(6382a85b843d1e96f72c.ttf?bupsqs) format("truetype"), url(61a1a8420fdf703c7ba1.woff?bupsqs) format("woff"), url(8f9e23fa0b1424e71ae6.svg?bupsqs#H5P) format("svg");
     font-weight: normal;
     font-style: normal
-}*/
+}
 
 .h5p-container.h5p-course-presentation {
     margin-bottom: 0em
@@ -34,8 +34,7 @@
 }
 
 .h5p-course-presentation {
-    /*font-family: H5PDroidSans, sans-serif;*/
-    font-family: "Poppins-regular"; /*nuevo*/
+    font-family: H5PDroidSans, sans-serif;
     color: #323232;
     line-height: 1.25
 }
@@ -128,8 +127,8 @@
     width: 100%;
     height: 90%;
     overflow: hidden;
-    background: #666;
-    box-shadow: 0 0 .5em 0 rgba(105, 105, 105, .4)
+    /*background: #666;
+    box-shadow: 0 0 .5em 0 rgba(105, 105, 105, .4);*/
 }
 
 .h5p-course-presentation.h5p-fullscreen video .controlBar>.fullscreenButton,
@@ -1078,7 +1077,8 @@
 }
 
 .h5p-course-presentation .h5p-summary-slide {
-    background: #fff;
+    /*background: #fff;*/
+    background: #f8feef; /*nuevo*/
     text-align: center;
     color: #333
 }
@@ -1168,8 +1168,10 @@
 }
 
 .h5p-course-presentation .h5p-summary-table-holder {
-    height: calc(100% - 4.5em);
-    margin: 1em
+    /*height: calc(100% - 4.5em);
+    margin: 1em;*/
+    height: calc(100% - 6.5em); /*nuevo*/
+    margin: 4em 1em 0 1em; /*nuevo*/
 }
 
 .h5p-course-presentation .h5p-summary-table-pages {
@@ -1197,7 +1199,7 @@
 
 .h5p-course-presentation .h5p-summary-total-score {
     float: right;
-    font-size: .6em
+    font-size: .8em
 }
 
 .h5p-course-presentation .h5p-summary-social {
@@ -1483,14 +1485,19 @@
 
 .h5p-course-presentation .h5p-cp-navigation {
     width: 100%;
-    height: 3.5%
+    /*height: 3.5%*/
+    height: 100%; /*nuevo*/
+    background-color: #f8feef; /*nuevo*/
+    display: flex; /*nuevo*/
+    justify-content: center; /*nuevo*/
 }
 
 .h5p-course-presentation .h5p-progressbar {
-    width: 100%;
+    /*width: 100%;*/
+    width: 30%; /*nuevo*/
     height: 100%;
     overflow: visible;
-    background: #666;
+    /*background: #666;*/ /*nuevo cambio*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1498,7 +1505,9 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    box-shadow: 0 0 .5em 0 rgba(105, 105, 105, .4)
+    /*box-shadow: 0 0 .5em 0 rgba(105, 105, 105, .4);*/
+    padding-top: 0.5em; /*nuevo*/
+    justify-content: center; /*nuevo*/
 }
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part.progressbar-part-summary-slide {
@@ -1523,12 +1532,13 @@
 }
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part {
-    flex: 1;
+    /*flex: 1;*/
     position: relative
 }
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, .3)
+    width: 20%;
+    border-right: 1px solid rgba(255, 255, 255, .3);
 }
 
 .h5p-course-presentation .h5p-progressbar a {
@@ -1546,7 +1556,7 @@
 }
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part-show {
-    background: #0085ff;
+    /*background: #0085ff;
     background-image: -webkit-linear-gradient(top, #0085FF, #1a73d9);
     background-image: -moz-linear-gradient(top, #0085FF, #1a73d9);
     background-image: linear-gradient(to bottom, #0085FF, #1a73d9);
@@ -1554,7 +1564,7 @@
     -webkit-transition: width .25s ease-in-out;
     -moz-transition: width .25s ease-in-out;
     -ms-transition: width .25s ease-in-out;
-    transition: width .25s ease-in-out
+    transition: width .25s ease-in-out*/ /*nuevo cambio*/
 }
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part .h5p-progressbar-part-has-task:after {
@@ -1585,24 +1595,39 @@
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part .h5p-progressbar-part-has-task {
     display: block;
-    width: .45em;
-    height: .45em;
+    /*width: .45em;
+    height: .45em;*/
+    width: .35em; /*nuevo*/
+    height: .35em; /*nuevo*/
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 2px solid #f5f5f5;
+    /*border: 2px solid #f5f5f5;*/
+    border: 2px solid transparent; /*nuevo*/
     cursor: pointer;
-    background: rgba(0, 0, 0, 0);
+    /*background: rgba(0, 0, 0, 0);*/
+    background-color: #026ec3; /*nuevo*/
     margin-right: auto;
     margin-left: auto
 }
 
+/*nuevo*/
+.h5p-course-presentation .h5p-progressbar .h5p-progressbar-part.h5p-progressbar-part-selected .h5p-progressbar-part-has-task {
+    border: 2px solid #026ec3; /*nuevo*/
+    background-color: #c9621b; /*nuevo*/
+}
+
+/*nuevo*/
+.h5p-course-presentation .h5p-progressbar .h5p-progressbar-part .h5p-progressbar-part-has-task:hover {
+    transform: scale(1.25); /*nuevo*/
+}
+
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part .h5p-progressbar-part-has-task.h5p-answered {
-    background: #f5f5f5
+    /*background: #f5f5f5*/ /*nuevo cambio*/
 }
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part.h5p-progressbar-part-show .h5p-progressbar-part-has-task.h5p-answered {
-    background: #f5f5f5
+    /*background: #f5f5f5*/ /*nuevo cambio*/
 }
 
 .h5p-course-presentation .h5p-footer [role=button]:hover {
@@ -1777,7 +1802,45 @@
     content: ""
 }
 
-/*nuevo css*/
-.h5p-element-inner.h5p-advanced-text {
-    height: 100%;
+/*nuevo*/
+.h5p-advanced-text {
+    color: #062971;
+}
+
+.h5p-footer-previous-slide {
+    margin-right: 0.5em;
+}
+.h5p-footer-next-slide {
+    margin-left: 0.5em;
+}
+
+.h5p-footer-previous-slide,
+.h5p-footer-next-slide {
+    cursor: pointer;
+    padding-top: 0.2em;
+    position: relative;
+}
+
+.h5p-footer-previous-slide::before {
+    font-family: "H5PFontAwesome4";
+    content: "\f053";
+    color: #026ec3;
+    background: #fcf446;
+    padding: 0.3em 0.5em 0.3em 0.4em;
+    border-radius: 1em;
+    font-size: 0.8em;
+}
+.h5p-footer-next-slide::after {
+    font-family: "H5PFontAwesome4";
+    content: "\f054";
+    color: #026ec3;
+    background: #fcf446;
+    padding: 0.3em 0.4em 0.3em 0.5em;
+    border-radius: 1em;
+    font-size: 0.8em;
+}
+
+/*nuevo*/
+.h5p-summary-footer .h5p-cp-retry-button {
+    font-size: 1em;
 }

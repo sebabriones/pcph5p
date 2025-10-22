@@ -5,7 +5,7 @@
 .h5peditor .h5p-joubelui-button,
 .h5p-joubelui-button {
   /*font-size: 1em;*/
-  font-size: 0.7em; /*nuevo*/
+  font-size: 0.8em; /*nuevo*/
   line-height: 1.2;
   margin: 0 0.5em 1em;
   padding: 0.5em 1.25em;
@@ -33,7 +33,8 @@
 }
 
 .h5p-joubelui-button:last-child {
-  margin: 0 0 1em 0.5em;
+  /*margin: 0 0 1em 0.5em;*/
+  margin: 0 0 1em;
 }
 
 .h5p-joubelui-button:first-child:last-child {
@@ -103,4 +104,3 @@
 .h5p-content [tabIndex="-1"] {
   outline: none;
 }
-

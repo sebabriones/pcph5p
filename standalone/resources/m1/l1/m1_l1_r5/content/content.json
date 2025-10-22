@@ -332,7 +332,7 @@
                                 "inputHasTipLabel": "Pista disponible",
                                 "tipLabel": "Pista",
                                 "behaviour": {
-                                    "enableRetry": true,
+                                    "enableRetry": false,
                                     "enableSolutionsButton": false,
                                     "enableCheckButton": true,
                                     "autoCheck": false,
@@ -585,9 +585,9 @@
         "keywordListOpacity": 90
     },
     "override": {
-        "activeSurface": true,
-        "hideSummarySlide": true,
-        "summarySlideSolutionButton": true,
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
         "summarySlideRetryButton": true,
         "enablePrintButton": false,
         "social": {

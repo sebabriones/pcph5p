@@ -18,6 +18,12 @@
     font-style: normal
 }*/
 
+/*nuevo*/
+.h5p-container {
+    padding-top: 1.4em;
+    background-color: #f8feef;
+}
+
 .h5p-container.h5p-course-presentation {
     margin-bottom: 0em
 }
@@ -129,7 +135,7 @@
     height: 90%;
     overflow: hidden;
     background: #666;
-    box-shadow: 0 0 .5em 0 rgba(105, 105, 105, .4)
+    /*box-shadow: 0 0 .5em 0 rgba(105, 105, 105, .4)*/
 }
 
 .h5p-course-presentation.h5p-fullscreen video .controlBar>.fullscreenButton,
@@ -1084,7 +1090,8 @@
 }
 
 .h5p-course-presentation .h5p-summary-slide {
-    background: #fff;
+    /*background: #fff;*/
+    background: #f8feef; /*nuevo*/
     text-align: center;
     color: #333
 }
@@ -1174,8 +1181,10 @@
 }
 
 .h5p-course-presentation .h5p-summary-table-holder {
-    height: calc(100% - 4.5em);
-    margin: 1em
+    /*height: calc(100% - 4.5em);
+    margin: 1em*/
+    height: calc(100% - 6.5em); /*nuevo*/
+    margin: 4em 1em 0 1em; /*nuevo*/
 }
 
 .h5p-course-presentation .h5p-summary-table-pages {
@@ -1786,4 +1795,8 @@
 /*nuevo css*/
 .h5p-element-inner.h5p-advanced-text {
     height: 100%;
+}
+
+.h5p-summary-footer .h5p-cp-retry-button {
+    font-size: 1em;
 }

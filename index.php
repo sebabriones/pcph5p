@@ -146,6 +146,7 @@
         <li>Nuevas Librerías</li>
             <ul>
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/prueba-matching&id=prueba-matching">Matching Game</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/python-prueba&id=python-prueba">Python Console</a></li>
             </ul>
         <li>Otros</li>
             <ul>
