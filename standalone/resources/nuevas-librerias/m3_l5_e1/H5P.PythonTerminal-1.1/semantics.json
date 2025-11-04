@@ -1,0 +1,277 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Título de la Terminal",
+    "importance": "high",
+    "default": "Terminal Python Interactiva",
+    "description": "Título que se mostrará en la parte superior"
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "widget": "html",
+    "label": "Instrucciones",
+    "importance": "medium",
+    "optional": true,
+    "enterMode": "p",
+    "tags": ["strong", "em", "u", "a", "code"],
+    "description": "Instrucciones o descripción de la actividad"
+  },
+  {
+    "name": "preloadedCode",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Código Pre-cargado",
+    "importance": "medium",
+    "optional": true,
+    "description": "Código Python que se ejecutará automáticamente al iniciar"
+  },
+  {
+    "name": "initialCode",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Código Inicial en Editor",
+    "importance": "medium",
+    "optional": true,
+    "default": "# Escribe tu código Python aquí\nprint('¡Hola, Python!')",
+    "description": "Código que aparecerá en el editor (no se ejecuta automáticamente)"
+  },
+  {
+    "name": "examples",
+    "type": "list",
+    "label": "Ejemplos de Código",
+    "importance": "low",
+    "optional": true,
+    "entity": "ejemplo",
+    "min": 0,
+    "field": {
+      "name": "example",
+      "type": "group",
+      "label": "Ejemplo",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Nombre del ejemplo",
+          "description": "Ej: 'Hola Mundo', 'Bucle For', etc."
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "widget": "textarea",
+          "label": "Código del ejemplo"
+        }
+      ]
+    }
+  },
+  {
+    "name": "showLineNumbers",
+    "type": "boolean",
+    "label": "Mostrar números de línea",
+    "importance": "low",
+    "default": true,
+    "optional": true
+  },
+  {
+    "name": "theme",
+    "type": "select",
+    "label": "Tema de color",
+    "importance": "low",
+    "optional": true,
+    "options": [
+      {
+        "value": "dark",
+        "label": "Oscuro"
+      },
+      {
+        "value": "light",
+        "label": "Claro"
+      },
+      {
+        "value": "monokai",
+        "label": "Monokai"
+      },
+      {
+        "value": "github",
+        "label": "GitHub"
+      }
+    ],
+    "default": "dark"
+  },
+  {
+    "name": "allowInput",
+    "type": "boolean",
+    "label": "Permitir entrada de usuario (input)",
+    "importance": "medium",
+    "default": true,
+    "optional": true,
+    "description": "Permite que el código use input() para solicitar datos al usuario"
+  },
+  {
+    "name": "maxOutputLines",
+    "type": "number",
+    "label": "Máximo de líneas en salida",
+    "importance": "low",
+    "optional": true,
+    "default": 1000,
+    "min": 100,
+    "max": 10000,
+    "description": "Número máximo de líneas a mostrar en la consola"
+  },
+  {
+    "name": "enableScoring",
+    "type": "boolean",
+    "label": "Habilitar Calificación",
+    "importance": "high",
+    "default": false,
+    "optional": true,
+    "description": "Permite calificar el desempeño del estudiante basado en ejercicios completados"
+  },
+  {
+    "name": "requiredExercises",
+    "type": "list",
+    "label": "Ejercicios Requeridos (para calificación)",
+    "importance": "high",
+    "optional": true,
+    "entity": "ejercicio",
+    "min": 0,
+    "field": {
+      "name": "exercise",
+      "type": "group",
+      "label": "Ejercicio",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Nombre del ejercicio",
+          "description": "Ej: 'Crear función de suma'"
+        },
+        {
+          "name": "description",
+          "type": "text",
+          "widget": "html",
+          "label": "Descripción",
+          "enterMode": "p",
+          "tags": ["strong", "em", "code"],
+          "description": "Instrucciones para el estudiante"
+        },
+        {
+          "name": "validation",
+          "type": "group",
+          "label": "Validación",
+          "fields": [
+            {
+              "name": "type",
+              "type": "select",
+              "label": "Tipo de validación",
+              "options": [
+                {
+                  "value": "contains",
+                  "label": "Código contiene palabras clave"
+                },
+                {
+                  "value": "output",
+                  "label": "Salida contiene texto específico"
+                }
+              ],
+              "default": "contains"
+            },
+            {
+              "name": "strictValidation",
+              "type": "boolean",
+              "label": "Validación estricta de funciones",
+              "optional": true,
+              "default": true,
+              "description": "Si está activado, detecta que las funciones se usen correctamente (input() no como string 'input()'). Esto evita aceptar código incorrecto como nombre = 'input('nombre')'"
+            },
+            {
+              "name": "keywords",
+              "type": "list",
+              "label": "Palabras clave requeridas",
+              "entity": "keyword",
+              "min": 1,
+              "field": {
+                "name": "keyword",
+                "type": "text",
+                "label": "Palabra clave"
+              }
+            },
+            {
+              "name": "inputType",
+              "type": "select",
+              "label": "Tipo de dato de entrada",
+              "optional": true,
+              "description": "Tipo de dato que se espera recibir con input()",
+              "options": [
+                {
+                  "value": "",
+                  "label": "No especificar (string por defecto)"
+                },
+                {
+                  "value": "str",
+                  "label": "String (texto) - por defecto de input()"
+                },
+                {
+                  "value": "int",
+                  "label": "Entero (int) - requiere int(input())"
+                },
+                {
+                  "value": "float",
+                  "label": "Decimal (float) - requiere float(input())"
+                },
+                {
+                  "value": "bool",
+                  "label": "Booleano (bool) - requiere conversión"
+                }
+              ],
+              "default": ""
+            },
+            {
+              "name": "outputType",
+              "type": "select",
+              "label": "Tipo de dato de salida",
+              "optional": true,
+              "description": "Tipo de dato que se espera mostrar con print()",
+              "options": [
+                {
+                  "value": "",
+                  "label": "No especificar"
+                },
+                {
+                  "value": "str",
+                  "label": "String (texto)"
+                },
+                {
+                  "value": "int",
+                  "label": "Entero (int)"
+                },
+                {
+                  "value": "float",
+                  "label": "Decimal (float)"
+                },
+                {
+                  "value": "bool",
+                  "label": "Booleano (bool)"
+                }
+              ],
+              "default": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "passingScore",
+    "type": "number",
+    "label": "Porcentaje para aprobar",
+    "importance": "medium",
+    "optional": true,
+    "default": 70,
+    "min": 0,
+    "max": 100,
+    "description": "Porcentaje mínimo para considerar aprobado (0-100)"
+  }
+]
+

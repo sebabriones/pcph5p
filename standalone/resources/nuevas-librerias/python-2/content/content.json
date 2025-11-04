@@ -1,0 +1,1 @@
+{"title":"Terminal Python Interactiva","initialCode":"#Ingresa tu nombre desde consola","showLineNumbers":true,"theme":"dark","allowInput":true,"maxOutputLines":1000,"enableScoring":true,"passingScore":70,"requiredExercises":[{"validation":{"type":"contains","strictValidation":true,"inputType":"str","keywords":["input","="]},"name":"ingresar nombre"}],"description":""}

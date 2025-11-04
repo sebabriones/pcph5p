@@ -1,0 +1,56 @@
+{
+  "title": "Ejercicio Completo: Fundamentos de Python",
+  "description": "<p><strong>Objetivo:</strong> Demostrar conocimientos básicos de Python.</p><p>Completa los siguientes ejercicios:</p><ol><li>Crear una función</li><li>Usar un bucle for</li><li>Usar condicionales if/else</li></ol>",
+  "initialCode": "# Ejercicio Completo: Fundamentos de Python\n#\n# Completa los siguientes ejercicios:\n#\n# 1. Crea una función llamada 'suma' que reciba dos números y retorne su suma\n# 2. Usa un bucle 'for' para imprimir los números del 0 al 4\n# 3. Usa un 'if' para verificar si un número es mayor que 10\n\n# Escribe tu código aquí:\n",
+  "preloadedCode": "",
+  "examples": [],
+  "showLineNumbers": true,
+  "theme": "dark",
+  "allowInput": true,
+  "maxOutputLines": 1000,
+  "enableScoring": true,
+  "requiredExercises": [
+    {
+      "name": "Crear función suma",
+      "description": "<p><strong>Ejercicio 1:</strong> Crear una función que sume dos números.</p><p><strong>Requisitos:</strong></p><ul><li>Función llamada <code>suma</code></li><li>Recibe dos parámetros</li><li>Retorna el resultado</li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "def",
+          "suma",
+          "return",
+          "+"
+        ]
+      }
+    },
+    {
+      "name": "Usar bucle for",
+      "description": "<p><strong>Ejercicio 2:</strong> Usar un bucle for para iterar.</p><p><strong>Requisitos:</strong></p><ul><li>Usar <code>for</code></li><li>Usar <code>in</code></li><li>Usar <code>range</code></li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "for",
+          "in",
+          "range"
+        ]
+      }
+    },
+    {
+      "name": "Usar condicional if",
+      "description": "<p><strong>Ejercicio 3:</strong> Usar condicionales para tomar decisiones.</p><p><strong>Requisitos:</strong></p><ul><li>Usar <code>if</code></li><li>Usar <code>else</code></li><li>Usar operador de comparación <code>==</code></li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "if",
+          "else",
+          "=="
+        ]
+      }
+    }
+  ],
+  "passingScore": 70
+}
+
+
+
+

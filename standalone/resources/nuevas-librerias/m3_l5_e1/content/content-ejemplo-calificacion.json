@@ -1,0 +1,32 @@
+{
+  "title": "Ejercicio: Funciones en Python - Área de Rectángulo",
+  "description": "<p><strong>Objetivo del ejercicio:</strong></p><p>Crear una función en Python que calcule el área de un rectángulo.</p><p><strong>Instrucciones:</strong></p><ol><li>Crea una función llamada <code>area_rectangulo</code></li><li>La función debe recibir dos parámetros: <code>base</code> y <code>altura</code></li><li>Debe retornar el resultado de multiplicar base por altura</li><li>Prueba la función con base=5 y altura=3</li></ol>",
+  "initialCode": "# Ejercicio: Crear una función para calcular el área de un rectángulo\n# \n# INSTRUCCIONES:\n# 1. Crea una función llamada \"area_rectangulo\" que reciba dos parámetros: base y altura\n# 2. La función debe retornar el área (base * altura)\n# 3. Prueba la función llamándola con base=5 y altura=3\n# 4. Debe mostrar el resultado: 15\n\n# Escribe tu código aquí:\n",
+  "preloadedCode": "",
+  "examples": [],
+  "showLineNumbers": true,
+  "theme": "dark",
+  "allowInput": true,
+  "maxOutputLines": 1000,
+  "enableScoring": true,
+  "requiredExercises": [
+    {
+      "name": "Crear función area_rectangulo",
+      "description": "<p><strong>Objetivo:</strong> Crear una función que calcule el área de un rectángulo.</p><p><strong>Requisitos:</strong></p><ul><li>La función debe llamarse <code>area_rectangulo</code></li><li>Debe recibir dos parámetros: <code>base</code> y <code>altura</code></li><li>Debe retornar el resultado de la multiplicación</li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "def",
+          "area_rectangulo",
+          "return",
+          "*"
+        ]
+      }
+    }
+  ],
+  "passingScore": 70
+}
+
+
+
+

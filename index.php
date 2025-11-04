@@ -147,6 +147,8 @@
             <ul>
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/prueba-matching&id=prueba-matching">Matching Game</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/python-prueba&id=python-prueba">Python Console</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/prueba_blockly&id=prueba_blockly">Blockly</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/m3_l5_e1&id=m3l5e1">Python Terminal</a></li>
             </ul>
         <li>Otros</li>
             <ul>

@@ -1,0 +1,70 @@
+{
+  "title": "Ejercicio: Formatear Nombre de Usuario",
+  "description": "<p><strong>Objetivo:</strong> Escribir un programa que solicite el nombre completo del usuario y muestre diferentes formatos del nombre.</p><p><strong>Requisitos:</strong></p><ol><li>Pedir el nombre completo usando <code>input()</code> (tipo: <strong>string</strong>)</li><li>Mostrar el nombre en minúsculas usando <code>.lower()</code> (tipo de salida: <strong>string</strong>)</li><li>Mostrar el nombre en mayúsculas usando <code>.upper()</code> (tipo de salida: <strong>string</strong>)</li><li>Mostrar el nombre con formato título usando <code>.title()</code> (tipo de salida: <strong>string</strong>)</li></ol><p><em>Nota: El usuario puede escribir el nombre en cualquier combinación de mayúsculas y minúsculas.</em></p>",
+  "initialCode": "# Ejercicio: Formatear Nombre de Usuario\n#\n# Escribe un programa que:\n# 1. Pregunte el nombre completo del usuario usando input()\n#    → Tipo de entrada: string (texto)\n# 2. Muestre el nombre en minúsculas usando .lower()\n#    → Tipo de salida: string\n# 3. Muestre el nombre en mayúsculas usando .upper()\n#    → Tipo de salida: string\n# 4. Muestre el nombre con formato título usando .title()\n#    → Tipo de salida: string\n#\n# Ejemplo de ejecución:\n# Ingresa tu nombre completo: jUaN pÉrEz GaRcÍa\n# minúsculas: juan pérez garcía\n# MAYÚSCULAS: JUAN PÉREZ GARCÍA\n# Título: Juan Pérez García\n\n# Escribe tu código aquí:\n",
+  "preloadedCode": "",
+  "examples": [],
+  "showLineNumbers": true,
+  "theme": "dark",
+  "allowInput": true,
+  "maxOutputLines": 1000,
+  "enableScoring": true,
+  "requiredExercises": [
+    {
+      "name": "Solicitar nombre con input()",
+      "description": "<p><strong>Ejercicio 1:</strong> El programa debe solicitar el nombre completo del usuario.</p><p><strong>Requisitos:</strong></p><ul><li>Usar la función <code>input()</code> para pedir datos</li><li>Asignar el resultado a una variable usando <code>=</code></li><li><strong>Tipo de dato de entrada:</strong> <code>string</code> (texto) - por defecto de input()</li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "input",
+          "="
+        ],
+        "inputType": "str",
+        "outputType": ""
+      }
+    },
+    {
+      "name": "Mostrar nombre en minúsculas",
+      "description": "<p><strong>Ejercicio 2:</strong> Mostrar el nombre en minúsculas.</p><p><strong>Requisitos:</strong></p><ul><li>Usar el método <code>.lower()</code></li><li>Mostrar el resultado con <code>print()</code></li><li><strong>Tipo de dato de salida:</strong> <code>string</code> (texto)</li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "lower",
+          "print"
+        ],
+        "inputType": "",
+        "outputType": "str"
+      }
+    },
+    {
+      "name": "Mostrar nombre en mayúsculas",
+      "description": "<p><strong>Ejercicio 3:</strong> Mostrar el nombre en mayúsculas.</p><p><strong>Requisitos:</strong></p><ul><li>Usar el método <code>.upper()</code></li><li>Mostrar el resultado con <code>print()</code></li><li><strong>Tipo de dato de salida:</strong> <code>string</code> (texto)</li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "upper",
+          "print"
+        ],
+        "inputType": "",
+        "outputType": "str"
+      }
+    },
+    {
+      "name": "Mostrar nombre con formato título",
+      "description": "<p><strong>Ejercicio 4:</strong> Mostrar el nombre con formato título (primera letra de cada palabra en mayúscula).</p><p><strong>Requisitos:</strong></p><ul><li>Usar el método <code>.title()</code></li><li>Mostrar el resultado con <code>print()</code></li><li><strong>Tipo de dato de salida:</strong> <code>string</code> (texto)</li></ul>",
+      "validation": {
+        "type": "contains",
+        "keywords": [
+          "title",
+          "print"
+        ],
+        "inputType": "",
+        "outputType": "str"
+      }
+    }
+  ],
+  "passingScore": 75
+}
+
+
+

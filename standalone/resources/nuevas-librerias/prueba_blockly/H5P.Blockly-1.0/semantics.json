@@ -1,0 +1,118 @@
+[
+  {
+    "name": "taskDescription",
+    "type": "text",
+    "label": "Descripción de la tarea",
+    "default": "Ayuda al personaje a llegar al punto B utilizando los bloques de la columna gris. Arrástralos hacia la zona blanca punteada para apilarlos de arriba abajo, siguiendo la lógica de pasos necesarios. Al finalizar, presiona 'INICIAR' para ver el resultado.",
+    "widget": "textarea"
+  },
+  {
+    "name": "levelName",
+    "type": "text",
+    "label": "Nombre del nivel",
+    "default": "Nivel 1 - Básico"
+  },
+  {
+    "name": "maxBlocks",
+    "type": "number",
+    "label": "Máximo de bloques permitidos",
+    "default": 11,
+    "min": 1,
+    "max": 50
+  },
+  {
+    "name": "optimalSteps",
+    "type": "number",
+    "label": "Número óptimo de pasos (para puntuación)",
+    "description": "Cantidad de bloques en la solución óptima. Se usa para calcular la puntuación: usar menos o igual bloques = puntuación perfecta.",
+    "default": 7,
+    "min": 1,
+    "max": 50
+  },
+  {
+    "name": "mazeMap",
+    "type": "text",
+    "label": "Mapa del laberinto (JSON)",
+    "description": "Array 10x10 donde: 0=muro, 1=camino, 2=inicio, 3=meta. Ejemplo: [[0,0,0,...],[0,2,1,...],...]",
+    "widget": "textarea",
+    "default": "[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,3,0,0,0],[0,0,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,1,0,0,0],[0,0,0,2,1,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]"
+  },
+  {
+    "name": "initialDirection",
+    "type": "select",
+    "label": "Dirección inicial del personaje",
+    "options": [
+      {
+        "value": "0",
+        "label": "Norte (↑)"
+      },
+      {
+        "value": "1",
+        "label": "Este (→)"
+      },
+      {
+        "value": "2",
+        "label": "Sur (↓)"
+      },
+      {
+        "value": "3",
+        "label": "Oeste (←)"
+      }
+    ],
+    "default": "1"
+  },
+  {
+    "name": "availableBlocks",
+    "type": "group",
+    "label": "Bloques disponibles",
+    "fields": [
+      {
+        "name": "forward",
+        "type": "boolean",
+        "label": "Bloque 'Avanzar'",
+        "default": true
+      },
+      {
+        "name": "turnRight",
+        "type": "boolean",
+        "label": "Bloque 'Girar a la derecha'",
+        "default": true
+      },
+      {
+        "name": "turnLeft",
+        "type": "boolean",
+        "label": "Bloque 'Girar a la izquierda'",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "successMessage",
+    "type": "text",
+    "label": "Mensaje de éxito",
+    "default": "¡Excelente! Has completado el laberinto."
+  },
+  {
+    "name": "failureMessage",
+    "type": "text",
+    "label": "Mensaje de fallo",
+    "default": "El personaje no llegó al destino. Revisa tu secuencia de bloques."
+  },
+  {
+    "name": "crashMessage",
+    "type": "text",
+    "label": "Mensaje de choque",
+    "default": "El personaje chocó con un muro. Revisa tu secuencia de bloques."
+  },
+  {
+    "name": "animationSpeed",
+    "type": "number",
+    "label": "Velocidad de animación (ms)",
+    "description": "Tiempo en milisegundos entre cada paso",
+    "default": 300,
+    "min": 100,
+    "max": 2000
+  }
+]
+
+
