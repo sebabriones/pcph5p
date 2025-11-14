@@ -1,0 +1,70 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "=",
+                    "contraseña"
+                ]
+            },
+            "name": "1.Almacenar \"contrasena\" en una variable",
+            "description": "<p>Almacenar \"contraseña\" en una variable</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "inputType": "str",
+                "inputStringFormat": "",
+                "keywords": [
+                    "input",
+                    "="
+                ]
+            },
+            "name": "2.Solicitar contraseña con input()",
+            "description": "<p>Solicitar contraseña con input()</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "==",
+                            "!="
+                        ],
+                        "description": "Operadores de comparación"
+                    }
+                ]
+            },
+            "name": "3.Comparar las contraseñas",
+            "description": "<p>Comparar las contraseñas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "outputType": "str",
+                "outputStringFormat": "letters_numbers_and_special",
+                "keywords": [
+                    "print"
+                ]
+            },
+            "name": "4.Mostrar resultado con print()",
+            "description": "<p>Mostrar resultado con print()</p>"
+        }
+    ],
+    "description": "<p>Ejercicio Completo: Escribe un programa que almacene la cadena de caracteres de la palabra \"contraseña\" en una variable. Que luego pregunte al usuario por la contraseña e imprima por pantalla si la contraseña que introdujo coincide con la guardada en la variable. </p><p>Ejemplos de ejecución:</p><p>1. Introduce la contraseña: contraseña; La contraseña coincide</p><p>2. Introduce la contraseña: password; La contraseña no coincide</p><p> </p>"
+}

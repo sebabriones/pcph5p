@@ -1,0 +1,49 @@
+{
+  "semantics": [
+    {
+      "label": "Terminal Title",
+      "description": "Title to display at the top"
+    },
+    {
+      "label": "Instructions"
+    },
+    {
+      "label": "Preloaded Code",
+      "description": "Python code that will run automatically on start"
+    },
+    {
+      "label": "Initial Code in Editor",
+      "description": "Code that will appear in the editor (not auto-executed)"
+    },
+    {
+      "label": "Code Examples",
+      "entity": "example",
+      "field": {
+        "fields": [
+          {
+            "label": "Example name"
+          },
+          {
+            "label": "Example code"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Show line numbers"
+    },
+    {
+      "label": "Color theme"
+    },
+    {
+      "label": "Allow user input",
+      "description": "Allows code to use input() to request user data"
+    },
+    {
+      "label": "Maximum output lines",
+      "description": "Maximum number of lines to show in console"
+    }
+  ]
+}
+
+

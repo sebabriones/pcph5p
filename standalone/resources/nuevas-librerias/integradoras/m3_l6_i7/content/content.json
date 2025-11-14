@@ -1,0 +1,133 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "[",
+                            "list(",
+                            "list"
+                        ],
+                        "description": "Creación de lista"
+                    }
+                ],
+                "listValidation": [
+                    {
+                        "elementType": "str",
+                        "variableName": "titulos"
+                    }
+                ]
+            },
+            "name": "1.Crear lista de títulos",
+            "description": "<p>Crear lista de títulos</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "[",
+                            "list(",
+                            "list"
+                        ],
+                        "description": "Creación de lista"
+                    }
+                ],
+                "listValidation": [
+                    {
+                        "elementType": "str",
+                        "variableName": "generos"
+                    }
+                ]
+            },
+            "name": "2.Crear lista de géneros",
+            "description": "<p>Crear lista de géneros</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": false,
+                "listValidation": [
+                    {
+                        "elementType": "str",
+                        "variableName": "titulos",
+                        "mustMatchSize": "generos"
+                    },
+                    {
+                        "elementType": "str",
+                        "variableName": "generos",
+                        "mustMatchSize": "titulos"
+                    }
+                ]
+            },
+            "name": "3.Validar tamaño y tipos de ambas listas",
+            "description": "<p>Validar tamaño y tipos de ambas listas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "for",
+                            "while",
+                            "reduce(",
+                            "reduce",
+                            "map(",
+                            "map"
+                        ],
+                        "description": "Bucle de iteración"
+                    },
+                    {
+                        "keywords": [
+                            "zip(",
+                            "zip",
+                            "enumerate(",
+                            "enumerate",
+                            "range(",
+                            "range",
+                            "len(",
+                            "len",
+                            "map(",
+                            "map",
+                            "while"
+                        ],
+                        "description": "Método para iterar sobre ambas listas"
+                    }
+                ]
+            },
+            "name": "4.Iterar sobre ambas listas",
+            "description": "<p>Iterar sobre ambas listas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": false,
+                "keywords": [],
+                "outputType": "str",
+                "outputStringFormat": ""
+            },
+            "name": "5.Mostrar lista paralela",
+            "description": "<p>Mostrar lista paralela</p>"
+        }
+    ],
+    "description": ""
+}

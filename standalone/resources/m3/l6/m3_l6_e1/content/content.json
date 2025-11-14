@@ -1,0 +1,69 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "# Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "inputType": "str",
+                "inputStringFormat": "letters_only",
+                "keywords": [
+                    "input",
+                    "="
+                ]
+            },
+            "name": "1. Solicitar nombre con input()",
+            "description": "<p>Solicitar nombre con input()</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "outputType": "str",
+                "outputStringFormat": "letters_only",
+                "keywords": [
+                    "lower",
+                    "print"
+                ]
+            },
+            "name": "2. Mostrar nombre en minúsculas",
+            "description": "<p>Mostrar nombre en minúsculas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "outputType": "str",
+                "outputStringFormat": "letters_only",
+                "keywords": [
+                    "upper",
+                    "print"
+                ]
+            },
+            "name": "3. Mostrar nombre en mayúsculas",
+            "description": "<p>Mostrar nombre en mayúsculas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "outputType": "str",
+                "outputStringFormat": "letters_only",
+                "keywords": [
+                    "title",
+                    "print"
+                ]
+            },
+            "name": "4. Mostrar nombre con formato título",
+            "description": "<p>Mostrar nombre con formato título</p>"
+        }
+    ],
+    "description": "<p>sasasas</p>"
+}

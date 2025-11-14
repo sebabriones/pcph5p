@@ -1,0 +1,59 @@
+{
+  "title": "Terminal Python Interactiva",
+  "description": "Una terminal Python completamente funcional que ejecuta código Python real en el navegador usando Pyodide. Incluye soporte xAPI para tracking y calificación.",
+  "majorVersion": 1,
+  "minorVersion": 1,
+  "patchVersion": 55,
+  "runnable": 1,
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "author": "H5P Builder",
+  "license": "MIT",
+  "machineName": "H5P.PythonTerminal",
+  "embedTypes": ["iframe"],
+  "preloadedJs": [
+    {
+      "path": "ace/ace.js"
+    },
+    {
+      "path": "ace/mode-python.js"
+    },
+    {
+      "path": "ace/theme-xcode.js"
+    },
+    {
+      "path": "ace/theme-monokai.js"
+    },
+    {
+      "path": "ace/ext-language_tools.js"
+    },
+    {
+      "path": "python-terminal.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "python-terminal.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}
+

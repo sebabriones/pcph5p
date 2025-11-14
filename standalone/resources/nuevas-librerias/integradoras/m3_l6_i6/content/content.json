@@ -1,0 +1,161 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "description": "<p>Ejercicio: Cada estudiante ha entregado una cantidad de tareas esta semana. Su tarea es mostrar cuántas tareas entregó cada uno y mostrar si ha entregado varias o pocas tareas. Para ello, declare dos listas: una con el nombre de los estudiantes y otra con la cantidad de tareas entregadas por cada estudiante conservando el orden con respecto a los estudiantes. Luego, debe clasificar si son varias o pocas tareas. La cantidad de tareas entregadas y cuánto se considera que son varias o pocas tareas, queda a criterio suyo.</p><p>Los mensajes esperados son: \"Ha entregado varias tareas\" o \"Ha entregado pocas tareas\"</p>",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "="
+                ],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "[",
+                            "list(",
+                            "list"
+                        ],
+                        "description": "Creación de lista"
+                    }
+                ],
+                "listValidation": [
+                    {
+                        "variableName": "estudiantes",
+                        "elementType": "str"
+                    }
+                ]
+            },
+            "name": "1.Crear lista de estudiantes",
+            "description": "<p>Crear lista de estudiantes</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "="
+                ],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "[",
+                            "list(",
+                            "list"
+                        ],
+                        "description": "Creación de lista"
+                    }
+                ],
+                "listValidation": [
+                    {
+                        "variableName": "tareas",
+                        "elementType": "int"
+                    }
+                ]
+            },
+            "name": "2.Crear lista de tareas",
+            "description": "<p>Crear lista de tareas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "listValidation": [
+                    {
+                        "variableName": "estudiantes",
+                        "elementType": "str",
+                        "mustMatchSize": "tareas"
+                    },
+                    {
+                        "variableName": "tareas",
+                        "elementType": "int",
+                        "mustMatchSize": "estudiantes"
+                    }
+                ]
+            },
+            "name": "3.Validar tamaño y tipos de ambas listas",
+            "description": "<p>Validar tamaño y tipos de ambas listas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "for",
+                            "while",
+                            "reduce(",
+                            "reduce",
+                            "map(",
+                            "map"
+                        ],
+                        "description": "Bucle de iteración"
+
+                    },
+                    {
+                        "keywords": [
+                            "zip(",
+                            "zip",
+                            "enumerate(",
+                            "enumerate",
+                            "range(",
+                            "range",
+                            "len(",
+                            "len",
+                            "while"
+                        ],
+                        "description": "Método para iterar sobre ambas listas"
+                    }
+                ]
+            },
+            "name": "4.Iterar sobre ambas listas",
+            "description": "<p>Iterar sobre ambas listas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "&gt;=",
+                            "&gt;",
+                            "&lt;=",
+                            "&lt;",
+                            "=="
+                        ],
+                        "description": "Operador de comparación"
+                    }
+                ]
+            },
+            "name": "5.Clasificar con comparación",
+            "description": "<p>Clasificar con comparación</p>"
+        },
+        {
+            "validation": {
+                "type": "output",
+                "strictValidation": true,
+                "outputType": "str",
+                "outputStringFormat": "letters_numbers_and_special",
+                "expectedOutputs": [
+                    "Ha entregado varias tareas",
+                    "Ha entregado pocas tareas"
+                ]
+            },
+            "name": "6.Mostrar mensajes correctos",
+            "description": "<p>Mostrar mensajes correctos</p>"
+        }
+    ]
+}

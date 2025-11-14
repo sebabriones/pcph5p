@@ -1,0 +1,118 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "inputType": "int",
+                "keywords": [
+                    "input",
+                    "="
+                ],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "int(",
+                            "int",
+                            "int()"
+                        ],
+                        "description": "Conversión a entero"
+                    }
+                ]
+            },
+            "name": "1.Solicitar edad con input()",
+            "description": "<p>Solicitar edad con input()</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "input",
+                    "="
+                ],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "int(",
+                            "int",
+                            "int()",
+                            "float(",
+                            "float",
+                            "float()"
+                        ],
+                        "description": "Conversión a número"
+                    }
+                ]
+            },
+            "name": "2.Solicitar ingresos con input()",
+            "description": "<p>Solicitar ingresos con input()</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "&gt;",
+                            "&gt;=",
+                            "&gt; 18",
+                            "&gt;18",
+                            "&gt;= 18",
+                            "&gt;=18"
+                        ],
+                        "description": "Comparación de edad"
+                    }
+                ]
+            },
+            "name": "3.Validar condición de edad",
+            "description": "<p>Validar condición de edad</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "&gt;",
+                            "&gt;=",
+                            "&gt; 10000000",
+                            "&gt;10000000",
+                            "&gt;= 10000000",
+                            "&gt;=10000000"
+                        ],
+                        "description": "Comparación de ingresos"
+                    }
+                ]
+            },
+            "name": "4.Validar condición de ingresos",
+            "description": "<p>Validar condición de ingresos</p>"
+        },
+        {
+            "validation": {
+                "type": "output",
+                "strictValidation": true,
+                "outputType": "str",
+                "outputStringFormat": "letters_and_special",
+                "expectedOutputs": [
+                    "Debes tributar",
+                    "No debes tributar"
+                ]
+            },
+            "name": "5.Mostrar mensaje de resultado",
+            "description": "<p>Mostrar mensaje de resultado</p>"
+        }
+    ],
+    "description": "<p>Ejercicio: En Chile, las personas que tienen ingresos anuales superiores a cierto monto deben declarar renta. Para este ejercicio, asumiremos que si tienes más de 18 años y tus ingresos anuales son mayores a $10.000.000 CLP, debes tributar. Escribe un programa que pida al usuario su edad y sus ingresos anuales, y que luego muestre \"Debes tributar\" si debe tributar o \"No debes tributar\" en caso contrario. </p><p>Ejemplo de ejecución:</p><p>-Ingresa tu edad: 25; Ingresa tus ingresos anuales: 12000000; Debes tributar</p><p>-Ingresa tu edad: 17; Ingresa tus ingresos anuales: 5000000; No debes tributar</p><p> </p>"
+}

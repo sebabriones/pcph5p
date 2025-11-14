@@ -142,6 +142,19 @@
                 <li><a href="./standalone/h5p.php?path=resources/m3/l5/m3_l5_r4&id=m3l5r4">Refuerzo 4</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m3/l5/m3_l5_r5&id=m3l5r5">Refuerzo 5</a></li>
             </ul>
+            <li>Lección 6</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i1&id=m3l6i1">Integradora 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i2&id=m3l6i2">Integradora 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i3&id=m3l6i3">Integradora 3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i4&id=m3l6i4">Integradora 4</a></li> 
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i5&id=m3l6i5">Integradora 5</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i6&id=m3l6i6">Integradora 6</a></li> 
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i7&id=m3l6i7">Integradora 7</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i8&id=m3l6i8">Integradora 8</a></li> 
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i9&id=m3l6i9">Integradora 9</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i10&id=m3l6i10">Integradora 10</a></li>            
+            </ul>
         </ul>
         <li>Nuevas Librerías</li>
             <ul>

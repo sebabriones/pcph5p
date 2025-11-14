@@ -1,0 +1,119 @@
+{
+  "title": "Formateo de Nombres en Python",
+  "description": "<p><strong>Ejercicio Completo:</strong> Escribe un programa que pregunte el nombre completo del usuario en la consola y que después muestre por pantalla su nombre completo tres veces:</p><ol><li>Una con todas las letras <strong>minúsculas</strong></li><li>Otra con todas las letras <strong>mayúsculas</strong></li><li>Otra solo con la <strong>primera letra del nombre y de los apellidos en mayúscula</strong></li></ol><p><strong>Ejemplo de ejecución:</strong></p><pre>Introduce tu nombre completo: jUaN pÉrEz GaRcÍa\njuan pérez garcía\nJUAN PÉREZ GARCÍA\nJuan Pérez García</pre><p>El usuario puede introducir su nombre combinando mayúsculas y minúsculas como quiera. Tu programa debe funcionar correctamente independientemente de cómo el usuario escriba su nombre.</p>",
+  "initialCode": "# Ejercicio: Formateo de Nombres en Python\n#\n# Escribe un programa que:\n# 1. Pregunte el nombre completo del usuario usando input()\n# 2. Muestre el nombre en minúsculas\n# 3. Muestre el nombre en mayúsculas\n# 4. Muestre el nombre con formato título (primera letra de cada palabra en mayúscula)\n#\n# Ejemplo de ejecución:\n# Introduce tu nombre completo: jUaN pÉrEz GaRcÍa\n# juan pérez garcía\n# JUAN PÉREZ GARCÍA\n# Juan Pérez García\n\n# Escribe tu código aquí:\n",
+  "preloadedCode": "",
+  "examples": [],
+  "showLineNumbers": true,
+  "theme": "dark",
+  "allowInput": true,
+  "maxOutputLines": 1000,
+  "enableScoring": true,
+  "requiredExercises": [
+    {
+      "name": "Solicitar nombre completo con input()",
+      "description": "<p><strong>Ejercicio 1: Solicitar el nombre del usuario</strong></p><p>El programa debe solicitar al usuario que introduzca su nombre completo usando la función <code>input()</code>.</p><p><strong>Requisitos obligatorios:</strong></p><ul><li>Usar la función <code>input()</code> para solicitar datos al usuario</li><li>Asignar el resultado a una variable usando el operador de asignación <code>=</code></li><li>El tipo de dato de entrada debe ser <code>string</code> (texto) - que es el tipo por defecto de <code>input()</code></li><li>El string de entrada debe contener solo letras (a-z, A-Z), espacios y acentos</li></ul>",
+      "validation": {
+        "type": "contains",
+        "strictValidation": true,
+        "keywords": [
+          "input",
+          "="
+        ],
+        "inputType": "str",
+        "inputStringFormat": "letters_only",
+        "outputType": ""
+      }
+    },
+    {
+      "name": "Mostrar nombre en minúsculas",
+      "description": "<p><strong>Ejercicio 2: Convertir y mostrar el nombre en minúsculas</strong></p><p>El programa debe mostrar el nombre completo del usuario con todas las letras en minúsculas.</p><p><strong>Requisitos obligatorios:</strong></p><ul><li>Usar un método para convertir el string a minúsculas</li><li>Mostrar el resultado usando la función <code>print()</code></li><li>El tipo de dato de salida debe ser <code>string</code> (texto)</li></ul>",
+      "validation": {
+        "type": "contains",
+        "strictValidation": true,
+        "keywords": [
+          "print"
+        ],
+        "keywordGroups": [
+          {
+            "keywords": [
+              ".lower()",
+              ".lower",
+              "lower()",
+              "lower"
+            ],
+            "description": "Métodos para convertir a minúsculas - OBLIGATORIO"
+          }
+        ],
+        "inputType": "",
+        "outputType": "str"
+      }
+    },
+    {
+      "name": "Mostrar nombre en mayúsculas",
+      "description": "<p><strong>Ejercicio 3: Convertir y mostrar el nombre en mayúsculas</strong></p><p>El programa debe mostrar el nombre completo del usuario con todas las letras en mayúsculas.</p><p><strong>Requisitos obligatorios:</strong></p><ul><li>Usar un método para convertir el string a mayúsculas</li><li>Mostrar el resultado usando la función <code>print()</code></li><li>El tipo de dato de salida debe ser <code>string</code> (texto)</li></ul>",
+      "validation": {
+        "type": "contains",
+        "strictValidation": true,
+        "keywords": [
+          "print"
+        ],
+        "keywordGroups": [
+          {
+            "keywords": [
+              ".upper()",
+              ".upper",
+              "upper()",
+              "upper"
+            ],
+            "description": "Métodos para convertir a mayúsculas - OBLIGATORIO"
+          }
+        ],
+        "inputType": "",
+        "outputType": "str"
+      }
+    },
+    {
+      "name": "Mostrar nombre con formato título",
+      "description": "<p><strong>Ejercicio 4: Convertir y mostrar el nombre con formato título</strong></p><p>El programa debe mostrar el nombre completo del usuario con la primera letra de cada palabra en mayúscula y el resto en minúscula (formato título).</p><p><strong>Requisitos obligatorios:</strong></p><ul><li>Usar un método para capitalizar la primera letra de cada palabra</li><li>Mostrar el resultado usando la función <code>print()</code></li><li>El tipo de dato de salida debe ser <code>string</code> (texto)</li></ul>",
+      "validation": {
+        "type": "contains",
+        "strictValidation": true,
+        "keywords": [
+          "print"
+        ],
+        "keywordGroups": [
+          {
+            "keywords": [
+              ".title()",
+              ".title",
+              "title()",
+              "title",
+              ".capitalize()",
+              ".capitalize",
+              "capitalize()",
+              "capitalize",
+              "capwords",
+              "split",
+              "join",
+              "import string",
+              "string.",
+              "from string import",
+              "def ",
+              "return",
+              "lambda ",
+              "map(",
+              "list("
+            ],
+            "description": "Métodos para formato título - OBLIGATORIO (al menos uno)"
+          }
+        ],
+        "inputType": "",
+        "outputType": "str"
+      }
+    }
+  ],
+  "passingScore": 70,
+  "feedbackLevel": "detailed"
+}
+

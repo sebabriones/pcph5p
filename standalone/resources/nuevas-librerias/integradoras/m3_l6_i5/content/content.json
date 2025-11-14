@@ -1,0 +1,116 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "description": "<p>Ejercicio: Imagina que preparas tu mochila para ir a clases. Algunos objetos están repetidos por error. Para ello primero debes crear la lista con los objetos en la mochila y el diccionario con los pesos de cada objeto. Luego, debes eliminar los artículos duplicados de la lista y calcular el peso total que llevarás en tu mochila. Finalmente, debes mostrar por pantalla los objetos en la mochila y el peso total de esta.</p><p>Los objetos en la mochila son: cuaderno, lápiz, libro, botella, cuaderno, lápiz</p><p>El peso en gramos de los objetos es: cuaderno: 500; lápiz: 50; libro: 800; botella: 600</p><p>Salida esperada:</p><p>Objetos en la mochila: objetos_final</p><p>Peso total: peso_final</p>",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "="
+                ],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "[",
+                            "list(",
+                            "list"
+                        ],
+                        "description": "Creación de lista"
+                    }
+                ]
+            },
+            "name": "1.Crear lista con objetos",
+            "description": "<p>Crear lista con objetos</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "="
+                ],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "{",
+                            "dict(",
+                            "dict"
+                        ],
+                        "description": "Creación de diccionario"
+                    }
+                ]
+            },
+            "name": "2.Crear diccionario con pesos",
+            "description": "<p>Crear diccionario con pesos</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "set(",
+                            "set",
+                            "dict.fromkeys(",
+                            "fromkeys",
+                            "append",
+                            "not in",
+                            "in"
+                        ],
+                        "description": "Método para eliminar duplicados"
+                    }
+                ]
+            },
+            "name": "3.Eliminar objetos duplicados",
+            "description": "<p>Eliminar objetos duplicados</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "sum(",
+                            "sum",
+                            "for",
+                            "reduce(",
+                            "reduce",
+                            "map(",
+                            "map",
+                            "+=",
+                            "+"
+                        ],
+                        "description": "Método para calcular peso total"
+                    }
+                ]
+            },
+            "name": "4.Calcular peso total",
+            "description": "<p>Calcular peso total</p>"
+        },
+        {
+            "validation": {
+                "type": "output",
+                "strictValidation": false,
+                "outputType": "str",
+                "outputStringFormat": "",
+                "expectedOutputs": [
+                    "Objetos en la mochila:",
+                    "Peso total:"
+                ]
+            },
+            "name": "5.Mostrar objetos y peso total",
+            "description": "<p>Mostrar objetos y peso total</p>"
+        }
+    ]
+}

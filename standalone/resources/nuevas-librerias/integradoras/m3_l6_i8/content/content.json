@@ -1,0 +1,108 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "input",
+                    "="
+                ],
+                "inputType": "str",
+                "inputStringFormat": "",
+                "inputStringCase": "lower"
+            },
+            "name": "1.Solicitar frase con input()",
+            "description": "<p>Solicitar frase con input()</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "inputType": "str",
+                "inputStringFormat": "letters_only",
+                "inputStringCase": "lower",
+                "keywords": [
+                    "input",
+                    "="
+                ]
+            },
+            "name": "2.Solicitar vocal con input()",
+            "description": "<p>Solicitar vocal con input()</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            ".replace(",
+                            ".replace",
+                            "replace(",
+                            "replace",
+                            "for",
+                            "while",
+                            "map(",
+                            "map",
+                            "reduce(",
+                            "reduce",
+                            "re.sub(",
+                            "re.sub",
+                            ".translate(",
+                            "translate"
+                        ],
+                        "description": "Método replace para reemplazar vocal"
+                    }
+                ]
+            },
+            "name": "3.Reemplazar vocal en la frase",
+            "description": "<p>Reemplazar vocal en la frase</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            ".upper(",
+                            ".upper",
+                            "upper(",
+                            "upper"
+                        ],
+                        "description": "Método para convertir a mayúscula"
+                    }
+                ]
+            },
+            "name": "4.Transformar vocal a mayúscula",
+            "description": "<p>Transformar vocal a mayúscula</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "print"
+                ],
+                "outputType": "str",
+                "outputStringFormat": "",
+                "outputStringCase": ""
+            },
+            "name": "5.Mostrar frase modificada",
+            "description": "<p>Mostrar frase modificada</p>"
+        }
+    ],
+    "description": ""
+}

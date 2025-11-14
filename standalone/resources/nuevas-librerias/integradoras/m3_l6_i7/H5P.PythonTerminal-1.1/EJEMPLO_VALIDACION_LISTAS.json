@@ -1,0 +1,43 @@
+{
+  "title": "Ejemplo: Validación de Listas",
+  "description": "<p>Este es un ejemplo de cómo usar la nueva funcionalidad de validación de listas.</p>",
+  "initialCode": "# Ejemplo de validación de listas\n# Las listas deben tener el mismo tamaño y tipos específicos\n\nestudiantes = [\"Ana\", \"Luis\", \"María\"]\ntareas = [5, 2, 8]\n\n# Escribe tu código aquí:\n",
+  "preloadedCode": "",
+  "examples": [],
+  "showLineNumbers": true,
+  "theme": "dark",
+  "allowInput": false,
+  "maxOutputLines": 1000,
+  "enableScoring": true,
+  "requiredExercises": [
+    {
+      "name": "Crear listas con tamaño y tipos correctos",
+      "description": "<p><strong>Ejercicio: Crear listas válidas</strong></p><p>Debes crear dos listas:</p><ul><li><code>estudiantes</code>: lista de strings con nombres</li><li><code>tareas</code>: lista de enteros con cantidad de tareas</li></ul><p>Ambas listas deben tener el mismo tamaño.</p>",
+      "validation": {
+        "type": "contains",
+        "strictValidation": true,
+        "keywords": [
+          "=",
+          "["
+        ],
+        "listValidation": [
+          {
+            "variableName": "estudiantes",
+            "elementType": "str",
+            "mustMatchSize": "tareas"
+          },
+          {
+            "variableName": "tareas",
+            "elementType": "int",
+            "mustMatchSize": "estudiantes"
+          }
+        ],
+        "inputType": "",
+        "outputType": ""
+      }
+    }
+  ],
+  "passingScore": 70,
+  "feedbackLevel": "detailed"
+}
+

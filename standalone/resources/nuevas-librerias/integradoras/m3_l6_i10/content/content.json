@@ -1,0 +1,142 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "[",
+                            "list(",
+                            "list"
+                        ],
+                        "description": "Creación de lista"
+                    }
+                ],
+                "listValidation": [
+                    {
+                        "elementType": "str",
+                        "variableName": "respuestas",
+                        "allowedValues": [
+                            "Animación",
+                            "Drama",
+                            "Acción",
+                            "Comedia"
+                        ]
+                    }
+                ]
+            },
+            "name": "1.Crear lista de respuestas",
+            "description": "<p>Crear lista de respuestas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "{",
+                            "dict(",
+                            "dict",
+                            "Counter(",
+                            "Counter",
+                            "defaultdict(",
+                            "defaultdict"
+                        ],
+                        "description": "Estructura para almacenar conteo (diccionario, Counter o defaultdict)"
+                    }
+                ]
+            },
+            "name": "2.Crear estructura para conteo",
+            "description": "<p>Crear estructura para conteo</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "for",
+                            "while",
+                            "map(",
+                            "map",
+                            "reduce(",
+                            "reduce",
+                            "Counter(",
+                            "Counter",
+                            "pandas",
+                            "pd.Series",
+                            "value_counts("
+                        ],
+                        "description": "Bucle de iteración o procesamiento de lista (pandas, Counter, bucles)"
+                    }
+                ]
+            },
+            "name": "3.Iterar sobre la lista de respuestas",
+            "description": "<p>Iterar sobre la lista de respuestas</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            ".get(",
+                            ".get",
+                            ".count(",
+                            ".count",
+                            "Counter(",
+                            "Counter",
+                            "+=",
+                            "value_counts("
+                        ],
+                        "description": "Método para contar elementos"
+                    },
+                    {
+                        "keywords": [
+                            "=",
+                            ".get(",
+                            ".get",
+                            ".count(",
+                            ".count",
+                            "value_counts("
+                        ],
+                        "description": "Asignación con método de conteo (debe usar = junto con .get(), .count() o value_counts())"
+                    }
+                ]
+            },
+            "name": "4.Contar géneros",
+            "description": "<p>Contar géneros</p>"
+        },
+        {
+            "validation": {
+                "type": "output",
+                "strictValidation": true,
+                "keywords": [],
+                "outputType": "str",
+                "outputStringFormat": "",
+                "outputPattern": ".*(Animación|Drama|Acción|Comedia).*\\\\d+.*"
+            },
+            "name": "5.Mostrar resultados del conteo",
+            "description": "<p>Mostrar resultados del conteo</p>"
+        }
+    ],
+    "description": ""
+}

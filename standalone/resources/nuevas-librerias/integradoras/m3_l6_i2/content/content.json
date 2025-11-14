@@ -1,0 +1,98 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "allowInput": true,
+    "maxOutputLines": 1000,
+    "enableScoring": true,
+    "passingScore": 70,
+    "feedbackLevel": "detailed",
+    "description": "<p>Ejercicio Completo: Escribe un programa que pida al usuario su peso (en kg) y estatura (en metros). Que use estos datos para calcular el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase \"<strong>Tu índice de masa corporal es: &lt;imc&gt;</strong>\", donde <strong>&lt;imc&gt;</strong> es el índice de masa corporal calculado redondeado con dos decimales.</p><p>Fórmula del IMC: IMC = peso / (estatura²)</p><p>Ejemplo de ejecución: Peso (kg): 70; Estatura (m): 1.75; Tu índice de masa corporal es: 22.86</p><p> </p>",
+    "requiredExercises": [
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "inputType": "float",
+                "keywords": [
+                    "input",
+                    "float",
+                    "="
+                ]
+            },
+            "name": "1.Solicitar peso con input() y convertir a float",
+            "description": "<p>Solicitar peso con input() y convertir a float</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "inputType": "float",
+                "keywords": [
+                    "input",
+                    "float",
+                    "="
+                ]
+            },
+            "name": "2.Solicitar estatura con input() y convertir a float",
+            "description": "<p>Solicitar estatura con input() y convertir a float</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [
+                    "/",
+                    "="
+                ],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "**",
+                            "pow(",
+                            "math.pow(",
+                            "*"
+                        ],
+                        "description": "Métodos para elevar al cuadrado"
+                    }
+                ]
+            },
+            "name": "3.Calcular IMC y almacenar en variable",
+            "description": "<p>Calcular IMC y almacenar en variable</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "keywords": [],
+                "keywordGroups": [
+                    {
+                        "keywords": [
+                            "round(",
+                            "round",
+                            ":.2f",
+                            ".2f"
+                        ],
+                        "description": "Métodos para redondear a 2 decimales"
+                    }
+                ]
+            },
+            "name": "4.Redondear IMC a 2 decimales",
+            "description": "<p>Redondear IMC a 2 decimales</p>"
+        },
+        {
+            "validation": {
+                "type": "contains",
+                "strictValidation": true,
+                "outputType": "str",
+                "outputStringFormat": "",
+                "keywords": [
+                    "print"
+                ]
+            },
+            "name": "5.Mostrar resultado con print()",
+            "description": "<p>Mostrar resultado con print()</p>"
+        }
+    ]
+}
