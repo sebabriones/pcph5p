@@ -1,0 +1,291 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m1/l1/m1_l1_e1/content/images/m1l1e1.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 14.3,
+                    "y": 66.97,
+                    "width": 8.69,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Computadores</p>\n\n<p style=\"text-align:center\">de escritorio</p>\n"
+                        },
+                        "subContentId": "25765744-9098-44a2-8d25-a646d5050b22",
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 32.63,
+                    "y": 66.97,
+                    "width": 8.69,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Servidores</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "913c99e3-7cc7-456c-84d8-9f14816ead48"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 50.97,
+                    "y": 66.97,
+                    "width": 8.69,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Servidores</p>\n\n<p style=\"text-align:center\">de red</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "8602a3e0-ed19-4bc3-93d7-62a0f058710f"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 69.33,
+                    "y": 66.97,
+                    "width": 8.69,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Teléfonos</p>\n\n<p style=\"text-align:center\">Inteligentes</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "df7c9ed7-9db1-4266-b546-18caa2bc7085"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 23.64,
+                    "y": 78.84,
+                    "width": 8.69,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Notebook</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "ae6c3edc-8c82-4134-99b7-153b3e8d3e03"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 41.74,
+                    "y": 78.84,
+                    "width": 8.69,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\"><span style=\"font-size:1em\">Super-</span></p>\n\n<p style=\"text-align:center\"><span style=\"font-size:1em\">computadores</span></p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "45f8aada-82ea-4cdb-8d8e-695c80e8c6fc"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 59.84,
+                    "y": 78.84,
+                    "width": 8.69,
+                    "height": 2.7,
+                    "dropZones": [
+                        "0",
+                        "1"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p style=\"text-align:center\">Tableta</p>\n"
+                        },
+                        "metadata": {
+                            "contentType": "Texto",
+                            "license": "U",
+                            "title": "Sin título Texto",
+                            "authors": [],
+                            "changes": []
+                        },
+                        "subContentId": "f172defa-c301-4477-b947-2a89694c1c55"
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 11.8,
+                    "y": 14,
+                    "width": 19.2,
+                    "height": 15.4,
+                    "correctElements": [
+                        "1",
+                        "5",
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 1</div>\n"
+                },
+                {
+                    "x": 54,
+                    "y": 14,
+                    "width": 19.2,
+                    "height": 15.4,
+                    "correctElements": [
+                        "0",
+                        "4",
+                        "3",
+                        "6"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 2</div>\n"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

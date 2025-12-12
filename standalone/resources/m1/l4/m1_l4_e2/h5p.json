@@ -5,9 +5,9 @@
     "language": "en",
     "defaultLanguage": "es",
     "license": "U",
-    "extraTitle": "Leccion 4 - Ejercicio 2",
-    "title": "Leccion 4 - Ejercicio 2",
-    "mainLibrary": "H5P.Crossword",
+    "extraTitle": "Modulo 1 - Leccion 5 - Ejercicio 2",
+    "title": "Modulo 1 - Leccion 5 - Ejercicio 2",
+    "mainLibrary": "H5P.SortParagraphs",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
@@ -15,13 +15,13 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Question",
-            "majorVersion": 1,
+            "machineName": "FontAwesome",
+            "majorVersion": 4,
             "minorVersion": 5
         },
         {
-            "machineName": "FontAwesome",
-            "majorVersion": 4,
+            "machineName": "H5P.Question",
+            "majorVersion": 1,
             "minorVersion": 5
         },
         {
@@ -40,19 +40,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Image",
-            "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.MaterialDesignIcons",
-            "majorVersion": 1,
-            "minorVersion": 0
-        },
-        {
-            "machineName": "H5P.Crossword",
+            "machineName": "H5P.SortParagraphs",
             "majorVersion": 0,
-            "minorVersion": 5
+            "minorVersion": 11
         }
     ]
 }

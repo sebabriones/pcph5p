@@ -34,7 +34,7 @@
     "label": "Código Inicial en Editor",
     "importance": "medium",
     "optional": true,
-    "default": "# Escribe tu código Python aquí\nprint('¡Hola, Python!')",
+    "default": "#Escribe tu código Python aquí",
     "description": "Código que aparecerá en el editor (no se ejecuta automáticamente)"
   },
   {
@@ -120,238 +120,24 @@
     "description": "Número máximo de líneas a mostrar en la consola"
   },
   {
-    "name": "enableScoring",
-    "type": "boolean",
-    "label": "Habilitar Calificación",
-    "importance": "high",
-    "default": false,
-    "optional": true,
-    "description": "Permite calificar el desempeño del estudiante basado en ejercicios completados"
-  },
-  {
-    "name": "requiredExercises",
-    "type": "list",
-    "label": "Ejercicios Requeridos (para calificación)",
-    "importance": "high",
-    "optional": true,
-    "entity": "ejercicio",
-    "min": 0,
-    "field": {
-      "name": "exercise",
-      "type": "group",
-      "label": "Ejercicio",
-      "fields": [
-        {
-          "name": "name",
-          "type": "text",
-          "label": "Nombre del ejercicio",
-          "description": "Ej: 'Crear función de suma'"
-        },
-        {
-          "name": "description",
-          "type": "text",
-          "widget": "html",
-          "label": "Descripción",
-          "enterMode": "p",
-          "tags": ["strong", "em", "code"],
-          "description": "Instrucciones para el estudiante"
-        },
-        {
-          "name": "validation",
-          "type": "group",
-          "label": "Validación",
-          "fields": [
-            {
-              "name": "type",
-              "type": "select",
-              "label": "Tipo de validación",
-              "options": [
-                {
-                  "value": "contains",
-                  "label": "Código contiene palabras clave"
-                },
-                {
-                  "value": "output",
-                  "label": "Salida contiene texto específico"
-                }
-              ],
-              "default": "contains"
-            },
-            {
-              "name": "strictValidation",
-              "type": "boolean",
-              "label": "Validación estricta de funciones",
-              "optional": true,
-              "default": true,
-              "description": "Si está activado, detecta que las funciones se usen correctamente (input() no como string 'input()'). Esto evita aceptar código incorrecto como nombre = 'input('nombre')'"
-            },
-            {
-              "name": "keywords",
-              "type": "list",
-              "label": "Palabras clave requeridas",
-              "entity": "keyword",
-              "min": 1,
-              "field": {
-                "name": "keyword",
-                "type": "text",
-                "label": "Palabra clave"
-              }
-            },
-            {
-              "name": "inputType",
-              "type": "select",
-              "label": "Tipo de dato de entrada",
-              "optional": true,
-              "description": "Tipo de dato que se espera recibir con input()",
-              "options": [
-                {
-                  "value": "",
-                  "label": "No especificar (string por defecto)"
-                },
-                {
-                  "value": "str",
-                  "label": "String (texto) - por defecto de input()"
-                },
-                {
-                  "value": "int",
-                  "label": "Entero (int) - requiere int(input())"
-                },
-                {
-                  "value": "float",
-                  "label": "Decimal (float) - requiere float(input())"
-                },
-                {
-                  "value": "bool",
-                  "label": "Booleano (bool) - requiere conversión"
-                }
-              ],
-              "default": ""
-            },
-            {
-              "name": "inputStringFormat",
-              "type": "select",
-              "label": "Formato del string de entrada (solo si tipo es 'str')",
-              "optional": true,
-              "description": "Especifica qué tipo de contenido debe tener el string de entrada",
-              "options": [
-                {
-                  "value": "",
-                  "label": "No especificar (cualquier string)"
-                },
-                {
-                  "value": "letters_only",
-                  "label": "Solo letras (a-z, A-Z, espacios, acentos)"
-                },
-                {
-                  "value": "numbers_only",
-                  "label": "Solo números (0-9)"
-                },
-                {
-                  "value": "letters_and_numbers",
-                  "label": "Letras y números (a-z, A-Z, 0-9, espacios, acentos)"
-                }
-              ],
-              "default": ""
-            },
-            {
-              "name": "outputType",
-              "type": "select",
-              "label": "Tipo de dato de salida",
-              "optional": true,
-              "description": "Tipo de dato que se espera mostrar con print()",
-              "options": [
-                {
-                  "value": "",
-                  "label": "No especificar"
-                },
-                {
-                  "value": "str",
-                  "label": "String (texto)"
-                },
-                {
-                  "value": "int",
-                  "label": "Entero (int)"
-                },
-                {
-                  "value": "float",
-                  "label": "Decimal (float)"
-                },
-                {
-                  "value": "bool",
-                  "label": "Booleano (bool)"
-                }
-              ],
-              "default": ""
-            },
-            {
-              "name": "outputStringFormat",
-              "type": "select",
-              "label": "Formato del string de salida (solo si tipo es 'str')",
-              "optional": true,
-              "description": "Especifica qué tipo de contenido debe tener el string de salida",
-              "options": [
-                {
-                  "value": "",
-                  "label": "No especificar (cualquier string)"
-                },
-                {
-                  "value": "letters_only",
-                  "label": "Solo letras (a-z, A-Z, espacios, acentos)"
-                },
-                {
-                  "value": "numbers_only",
-                  "label": "Solo números (0-9)"
-                },
-                {
-                  "value": "letters_and_numbers",
-                  "label": "Letras y números (a-z, A-Z, 0-9, espacios, acentos)"
-                }
-              ],
-              "default": ""
-            },
-            {
-              "name": "expectedOutput",
-              "type": "text",
-              "label": "Salida esperada (para validación tipo 'output')",
-              "optional": true,
-              "description": "Texto que debe aparecer en la salida del programa. Solo se usa si el tipo de validación es 'output'."
-            },
-            {
-              "name": "expectedOutputs",
-              "type": "list",
-              "label": "Múltiples salidas esperadas",
-              "optional": true,
-              "entity": "output",
-              "min": 0,
-              "description": "Lista de textos que deben aparecer en la salida. Solo se usa si el tipo de validación es 'output'.",
-              "field": {
-                "name": "output",
-                "type": "text",
-                "label": "Texto esperado en salida"
-              }
-            },
-            {
-              "name": "outputPattern",
-              "type": "text",
-              "label": "Patrón regex para validar salida",
-              "optional": true,
-              "description": "Expresión regular para validar la salida. Ejemplo: 'Tu índice.*es:.*' para validar formato. Solo se usa si el tipo de validación es 'output'."
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "name": "passingScore",
+    "name": "passingPercentage",
     "type": "number",
     "label": "Porcentaje para aprobar",
-    "importance": "medium",
+    "importance": "high",
     "optional": true,
     "default": 70,
     "min": 0,
     "max": 100,
-    "description": "Porcentaje mínimo para considerar aprobado (0-100)"
+    "description": "Porcentaje mínimo requerido para aprobar (0-100)"
+  },
+  {
+    "name": "passingScore",
+    "type": "number",
+    "label": "Puntaje",
+    "importance": "high",
+    "optional": true,
+    "min": 0,
+    "max": 10000,
+    "description": "Puntaje máximo (se usa como maxScore en xAPI). El puntaje obtenido (raw) se maneja de forma independiente."
   }
 ]
-

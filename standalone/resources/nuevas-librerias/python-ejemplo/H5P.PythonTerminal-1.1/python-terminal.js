@@ -403,15 +403,6 @@ H5P.PythonTerminal = (function ($, Question) {
       self.$statusIndicator.removeClass('loading').addClass('ready').text('✅ Listo');
       self.addOutput('✅ Python está listo. ¡Puedes ejecutar tu código!', 'success');
       
-      // Mostrar información de calificación si está habilitada
-      if (self.params.enableScoring && self.params.requiredExercises && self.params.requiredExercises.length > 0) {
-        self.addOutput('', 'info');
-        self.addOutput('📝 Modo de evaluación activado', 'info');
-        self.addOutput('   Total de ejercicios: ' + self.params.requiredExercises.length, 'info');
-        self.addOutput('   Porcentaje para aprobar: ' + self.params.passingScore + '%', 'info');
-        self.addOutput('   Ejecuta tu código para ver tu progreso', 'info');
-      }
-      
       // Ejecutar código pre-cargado si existe
       if (self.params.preloadedCode) {
         self.addOutput('⚙️ Ejecutando código de inicialización...', 'info');
@@ -477,22 +468,6 @@ H5P.PythonTerminal = (function ($, Question) {
     
     self.isSending = true;
     
-    // Calcular porcentaje de puntuación
-    var scorePercentage = 0;
-    if (self.params.enableScoring && self.maxScore > 0) {
-      scorePercentage = Math.round((self.score / self.maxScore) * 100);
-    }
-    
-    // Mostrar resumen antes de enviar
-    if (self.params.enableScoring && self.params.requiredExercises && self.params.requiredExercises.length > 0) {
-      self.addOutput('', 'info');
-      self.addOutput('📊 Resumen de calificación:', 'info');
-      self.addOutput('   Ejercicios completados: ' + self.completedExercises.length + '/' + self.maxScore, 'info');
-      self.addOutput('   Puntuación: ' + self.score + '/' + self.maxScore + ' (' + scorePercentage + '%)', 'info');
-      var passed = scorePercentage >= self.params.passingScore;
-      self.addOutput('   Estado: ' + (passed ? '✅ Aprobado' : '❌ No aprobado (requiere ' + self.params.passingScore + '%)'), passed ? 'success' : 'warning');
-    }
-    
     // Crear evento xAPI con verbo "answered" usando H5P.Question
     if (typeof self.createXAPIEventTemplate === 'function') {
       var xAPIEvent = self.createXAPIEventTemplate('answered');
@@ -501,7 +476,7 @@ H5P.PythonTerminal = (function ($, Question) {
         // Configurar el resultado con puntuación
         if (typeof xAPIEvent.setScoredResult === 'function') {
           var success = self.params.enableScoring 
-            ? (scorePercentage >= self.params.passingScore) 
+            ? (self.score >= self.params.passingScore) 
             : lastExecution.success;
           xAPIEvent.setScoredResult(self.getScore(), self.getMaxScore(), self, true, success);
         }
@@ -571,15 +546,14 @@ H5P.PythonTerminal = (function ($, Question) {
     
     self.executionHistory.push(execution);
     
-    // Verificar ejercicios SIEMPRE cuando enableScoring está habilitado y la ejecución fue exitosa
-    // Esto permite que el estudiante vea feedback inmediato al ejecutar código
-    if (self.params.enableScoring && executionSuccess && self.params.requiredExercises && self.params.requiredExercises.length > 0) {
-      self.checkExerciseCompletion(code, executionSuccess);
-    }
-    
     // Solo emitir evento xAPI si se solicita explícitamente
     if (sendXAPI) {
       self.triggerXAPIAttempt(code, executionSuccess, executionError, executionResult);
+      
+      // Verificar si completó algún ejercicio requerido
+      if (self.params.enableScoring && self.params.requiredExercises.length > 0) {
+        self.checkExerciseCompletion(code, executionSuccess);
+      }
     }
     
     // Guardar estado local (sin enviar xAPI)
@@ -705,10 +679,7 @@ H5P.PythonTerminal = (function ($, Question) {
   PythonTerminal.prototype.checkExerciseCompletion = function(code, success) {
     const self = this;
     
-    if (!success) {
-      // Si hay error, mostrar feedback pero no validar
-      return;
-    }
+    if (!success) return;
     
     // Verificar que requiredExercises existe y es un array
     if (!self.params.requiredExercises || !Array.isArray(self.params.requiredExercises)) {
@@ -719,9 +690,6 @@ H5P.PythonTerminal = (function ($, Question) {
     if (self.params.requiredExercises.length === 0) {
       return;
     }
-    
-    var exerciseCompleted = false;
-    var previousScore = self.score;
     
     self.params.requiredExercises.forEach(function(exercise, index) {
       // Si ya está completado, saltar
@@ -736,21 +704,16 @@ H5P.PythonTerminal = (function ($, Question) {
         }
         
         var matches = true;
-        var missingKeywords = [];
-        
         exercise.validation.keywords.forEach(function(keyword) {
           if (keyword && code.indexOf(keyword) === -1) {
             matches = false;
-            missingKeywords.push(keyword);
           }
         });
         
         if (matches) {
           self.completedExercises.push(index);
           self.score++;
-          exerciseCompleted = true;
           var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-          self.addOutput('', 'info');
           self.addOutput('✅ ¡Ejercicio completado: ' + exerciseName + '! +1 punto', 'success');
           
           // Actualizar maxScore si es necesario
@@ -758,13 +721,14 @@ H5P.PythonTerminal = (function ($, Question) {
             self.maxScore = self.params.requiredExercises.length;
           }
           
-          // Mostrar puntuación actual
-          var currentPercentage = Math.round((self.score / self.maxScore) * 100);
-          self.addOutput('📊 Puntuación actual: ' + self.score + '/' + self.maxScore + ' (' + currentPercentage + '%)', 'info');
-        } else if (missingKeywords.length > 0) {
-          // Mostrar feedback de qué falta (solo la primera vez que se intenta)
-          var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-          self.addOutput('⚠️ ' + exerciseName + ': Faltan elementos requeridos', 'warning');
+          // Emitir evento de progreso
+          if (typeof self.triggerXAPIEvent === 'function') {
+            self.triggerXAPIEvent('progressed', {
+              exercise: exerciseName,
+              score: self.score,
+              maxScore: self.maxScore
+            });
+          }
         }
       }
     });
@@ -780,16 +744,9 @@ H5P.PythonTerminal = (function ($, Question) {
       self.addOutput('', 'info');
       self.addOutput('🎉 ¡Has completado todos los ejercicios!', 'success');
       var scorePercentage = Math.round((self.score / self.maxScore) * 100);
-      self.addOutput('📊 Puntuación final: ' + self.score + '/' + self.maxScore + ' (' + scorePercentage + '%)', 'success');
+      self.addOutput('📊 Puntuación: ' + self.score + '/' + self.maxScore + ' (' + scorePercentage + '%)', 'success');
       var passed = scorePercentage >= self.params.passingScore;
-      self.addOutput(passed ? '✅ ¡Aprobado! (Mínimo requerido: ' + self.params.passingScore + '%)' : '❌ Necesitas practicar más (Mínimo requerido: ' + self.params.passingScore + '%)', passed ? 'success' : 'warning');
-    }
-    
-    // Si no se completó ningún ejercicio en esta ejecución, mostrar feedback de progreso
-    if (!exerciseCompleted && previousScore === self.score && self.score < self.maxScore) {
-      var remaining = self.maxScore - self.score;
-      var completed = self.completedExercises.length;
-      self.addOutput('📝 Progreso: ' + completed + ' de ' + self.maxScore + ' ejercicios completados (' + remaining + ' restantes)', 'info');
+      self.addOutput(passed ? '✅ ¡Aprobado!' : '❌ Necesitas practicar más', passed ? 'success' : 'warning');
     }
   };
 

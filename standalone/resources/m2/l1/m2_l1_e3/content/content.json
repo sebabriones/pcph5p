@@ -1,0 +1,245 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 0,
+                        "y": 15.062379769932909,
+                        "width": 42.48366013071895,
+                        "height": 81.35707738190018,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l1/m2_l1_e3/content/images/image-h0mHoG21.png",
+                                    "path1": "images/image-h0mHoG21.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1762,
+                                    "height": 1708
+                                }
+                            },
+                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
+                            "metadata": {
+                                "contentType": "Image",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 44.66230936819172,
+                        "y": 32.27652807842766,
+                        "width": 51.19825708061002,
+                        "height": 55.94598200260795,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p><strong>Fase 1: Identificar el problema potencial:</strong> ¿Cuál es el problema principal?</p>",
+                                        "answers": [
+                                            "<p>La alumna tiene dificultades para organizarse.</p>",
+                                            "<p>La estudiante no tiene habilidades sociales.</p>",
+                                            "<p>La universitaria no entiende los contenidos.</p>",
+                                            "<p>La alumna no tiene computador.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "b8e63b90-7de6-46a9-b495-c70a3e74ee0f",
+                                        "question": "<p><strong>Fase 2: Definir el problema apropiadamente:</strong> ¿Cuál sería una definición más precisa del problema?</p>",
+                                        "answers": [
+                                            "<p>No gestiona bien su tiempo ni prioridades.</p>",
+                                            "<p>La estudiante tiene mala actitud.</p>",
+                                            "<p>A ella no le gusta estudiar.</p>",
+                                            "<p>La alumna no tiene interés en la carrera.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "b4feba4f-2895-4835-9909-3103aac97623",
+                                        "question": "<p><strong>Fase 3: Explorar posibles acercamientos: </strong>¿Cuál sería una solución viable?</p>",
+                                        "answers": [
+                                            "<p>Usar una agenda (física o app) y dividir tareas por días.</p>",
+                                            "<p>Cambiarse de carrera.</p>",
+                                            "<p>Ignorar los trabajos y divertirse.</p>",
+                                            "<p>Pedir que le den menos tareas.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "cce38d85-78fc-44d9-a786-65716d4befeb",
+                                        "question": "<p><strong>Fase 4: Actuar la idea: </strong>¿Qué acción concreta puede tomar hoy la estudiante?</p>",
+                                        "answers": [
+                                            "<p>Crear una lista de tareas con fechas límite.</p>",
+                                            "<p>Ver una serie para relajarse.</p>",
+                                            "<p>Dormir más horas.</p>",
+                                            "<p>Hablar con sus amigos.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "45a30625-62ad-4246-b248-2d4bf8daac89",
+                                        "question": "<p><strong>Fase 5: Verificar resultados: </strong>¿Cómo sabrá si la solución funcionó?</p>",
+                                        "answers": [
+                                            "<p>Si entrega los trabajos a tiempo durante el mes.</p>",
+                                            "<p>Si se siente más feliz.</p>",
+                                            "<p>Si ahora tiene tiempo libre.</p>",
+                                            "<p>Si duerme mejor.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
+                            "metadata": {
+                                "contentType": "Single Choice Set",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "off"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Considera el siguiente algoritmo y selecciona si cada característica presentada se cumple o no en su estructura.</div>
+                                <div class="intro-text">Analice el siguiente algoritmo detectando errores e identificando opciones de modificaciones. De acuerdo a lo anterior, responda las preguntas seleccionando la alternativa correcta.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Considera el siguiente algoritmo y selecciona si cada característica presentada se cumple o no en su estructura.</div>
+                                                <div class="instructions-text">Analice el siguiente algoritmo detectando errores e identificando opciones de modificaciones. De acuerdo a lo anterior, responda las preguntas seleccionando la alternativa correcta.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

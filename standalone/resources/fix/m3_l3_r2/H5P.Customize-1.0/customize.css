@@ -1,0 +1,30 @@
+/*Estilos boton Terminar*/
+.finish-btn-container {
+    width: 99%;
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+.finish-btn {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'H5PDroidSans';
+    background-color: #026ec3;
+    color: #fff;
+    position: relative;
+    padding: 0.5em 1.25em;
+    border-radius: 2em;
+    border: 3px solid #026ec3;
+    box-shadow: none;
+    font-size: 0.6em;
+}
+
+.finish-btn:hover {
+    background-color: #c9621b;
+}
+
+.finish-btn::before {
+    font-family: 'H5PFontAwesome4';
+    content: "\f058";
+    padding-right: 0.5em;
+}

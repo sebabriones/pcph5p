@@ -20,15 +20,14 @@ H5P.PythonTerminal = (function ($, Question) {
       title: 'Terminal Python Interactiva',
       description: '',
       preloadedCode: '',
-      initialCode: '# Escribe tu código Python aquí\nprint("¡Hola, Python!")',
+      initialCode: '#Escribe tu código Python aquí',
       examples: [],
       showLineNumbers: true,
       theme: 'dark',
       allowInput: true,
       maxOutputLines: 1000,
-      enableScoring: false,
-      requiredExercises: [],
-      passingScore: 70
+      passingPercentage: 70,
+      passingScore: undefined
     };
     
     // Mezclar parámetros
@@ -50,11 +49,7 @@ H5P.PythonTerminal = (function ($, Question) {
     this.executionHistory = [];
     this.startTime = new Date();
     this.score = 0;
-    // Calcular maxScore basado en los ejercicios requeridos
-    this.maxScore = (this.params.requiredExercises && Array.isArray(this.params.requiredExercises)) 
-      ? this.params.requiredExercises.length 
-      : 1;
-    this.completedExercises = [];
+    this.maxScore = 1; // Valor por defecto
     
     // Variable para capturar salida de stdout para validación
     this.lastOutput = '';
@@ -63,12 +58,26 @@ H5P.PythonTerminal = (function ($, Question) {
     // Variable para capturar valores de input() para validación en tiempo de ejecución
     this.capturedInputs = [];
     
-    // Debug: verificar que los parámetros se cargaron correctamente
-    if (this.params.enableScoring) {
-      console.log('Calificación habilitada');
-      console.log('Ejercicios requeridos:', this.params.requiredExercises);
-      console.log('Porcentaje para aprobar:', this.params.passingScore);
-      console.log('Puntuación máxima:', this.maxScore);
+    // Variable para rastrear DataFrames ya mostrados (evitar duplicados)
+    this.displayedDataFrames = new Set();
+    
+    // Normalizar passingScore si viene en formato antiguo (compatibilidad hacia atrás)
+    if (this.params.passingScore && typeof this.params.passingScore === 'object' && this.params.passingScore.type) {
+      // Formato antiguo: { type: 'percentage', value: 70 } o { type: 'score', value: 100 }
+      if (this.params.passingScore.type === 'percentage') {
+        this.params.passingPercentage = this.params.passingScore.value || 70;
+        this.params.passingScore = undefined;
+      } else if (this.params.passingScore.type === 'score') {
+        this.params.passingScore = this.params.passingScore.value;
+        this.params.passingPercentage = undefined;
+      }
+    }
+    // NO convertir automáticamente números a porcentaje
+    // Si passingScore es un número, es el nuevo formato y debe mantenerse como está
+    
+    // Asegurar valores por defecto
+    if (this.params.passingPercentage === undefined && this.params.passingScore === undefined) {
+      this.params.passingPercentage = 70; // Por defecto usar porcentaje
     }
     
     // Restaurar estado previo si existe
@@ -76,7 +85,6 @@ H5P.PythonTerminal = (function ($, Question) {
       try {
         var previousState = JSON.parse(this.contentData.previousState);
         this.executionHistory = previousState.executionHistory || [];
-        this.completedExercises = previousState.completedExercises || [];
         this.score = previousState.score || 0;
       } catch (e) {
         console.warn('No se pudo restaurar estado previo:', e);
@@ -212,8 +220,9 @@ H5P.PythonTerminal = (function ($, Question) {
     
     var $saveBtn = $('<button>', {
       class: 'btn btn-save',
-      html: '💾 Guardar',
-      title: 'Guardar y enviar al LRS (Ctrl+S)'
+      html: '💾 Enviar',
+      //title: 'Guardar y enviar al LRS (Ctrl+S)'
+      title: 'Enviar código para evaluación (Ctrl+S)'
     }).on('click', function() {
       self.saveAndSubmit();
     });
@@ -238,8 +247,8 @@ H5P.PythonTerminal = (function ($, Question) {
     
     var $uploadBtn = $('<button>', {
       class: 'btn btn-upload',
-      html: '📁 Subir archivo',
-      title: 'Subir archivos para usar en Python'
+      html: '📁 Cargar archivo(s)',
+      title: 'Cargar archivos para usar en Python'
     }).on('click', function() {
       $fileInput.click();
     });
@@ -390,7 +399,7 @@ H5P.PythonTerminal = (function ($, Question) {
     
     loadPyodide({
       indexURL: indexURL
-    }).then(function(pyodide) {
+    }).then(async function(pyodide) {
       self.pyodide = pyodide;
       self.pyodideReady = true;
       
@@ -399,10 +408,8 @@ H5P.PythonTerminal = (function ($, Question) {
         batched: function(text) {
           self.addOutput(text, 'stdout');
           // Capturar salida para validación
-          console.log('[DEBUG] Capturando salida de stdout:', JSON.stringify(text));
           self.currentExecutionOutput += text;
           self.lastOutput += text;
-          console.log('[DEBUG] currentExecutionOutput acumulado:', JSON.stringify(self.currentExecutionOutput));
         }
       });
       
@@ -414,17 +421,22 @@ H5P.PythonTerminal = (function ($, Question) {
       
       // Configurar stdin para manejar input()
       if (self.params.allowInput) {
-        // Permitir input() con prompt interactivo
         pyodide.setStdin({
           prompt: function(message) {
-            // Mostrar el mensaje en la consola
-            if (message) {
-              self.addOutput(message, 'input-prompt');
+            // Limpiar y formatear el mensaje
+            var cleanMessage = '';
+            if (message !== null && message !== undefined && String(message).trim() !== '') {
+              cleanMessage = String(message).trim().replace(/\r\n/g, ' ').replace(/\n/g, ' ');
+            }
+            if (!cleanMessage || cleanMessage === '') {
+              cleanMessage = 'Ingrese un valor:';
             }
             
+            // Mostrar el mensaje en la consola
+            self.addOutput(cleanMessage, 'input-prompt');
+            
             // Usar prompt nativo de JavaScript (síncrono)
-            // Nota: prompt() bloquea el UI del navegador, pero es necesario para input() en Pyodide
-            var userInput = prompt(message || 'Ingrese un valor:');
+            var userInput = prompt(cleanMessage);
             
             // Si el usuario cancela el prompt, devolver cadena vacía
             if (userInput === null) {
@@ -436,7 +448,7 @@ H5P.PythonTerminal = (function ($, Question) {
               self.capturedInputs = [];
             }
             self.capturedInputs.push({
-              prompt: message || '',
+              prompt: cleanMessage,
               value: userInput,
               timestamp: new Date().toISOString()
             });
@@ -460,19 +472,17 @@ H5P.PythonTerminal = (function ($, Question) {
       self.$statusIndicator.removeClass('loading').addClass('ready').text('✅ Listo');
       self.addOutput('✅ Python está listo. ¡Puedes ejecutar tu código!', 'success');
       
-      // Mostrar información de calificación si está habilitada
-      if (self.params.enableScoring && self.params.requiredExercises && self.params.requiredExercises.length > 0) {
-        self.addOutput('', 'info');
-        self.addOutput('📝 Modo de evaluación activado', 'info');
-        self.addOutput('   Total de ejercicios: ' + self.params.requiredExercises.length, 'info');
-        self.addOutput('   Porcentaje para aprobar: ' + self.params.passingScore + '%', 'info');
-        self.addOutput('   Ejecuta tu código para ver tu progreso', 'info');
-      }
+      // Mostrar información de configuración de puntuación
+      /*if (self.params.passingScore !== undefined && self.params.passingScore !== null) {
+        self.addOutput('📊 Puntaje máximo: ' + self.params.passingScore, 'info');
+      } else if (self.params.passingPercentage !== undefined && self.params.passingPercentage !== null) {
+        self.addOutput('📊 Porcentaje para aprobar: ' + self.params.passingPercentage + '%', 'info');
+      }*/
       
       // Ejecutar código pre-cargado si existe
       if (self.params.preloadedCode) {
         self.addOutput('⚙️ Ejecutando código de inicialización...', 'info');
-        self.runPythonCode(self.params.preloadedCode, false); // No enviar xAPI en código de inicialización
+        await self.runPythonCode(self.params.preloadedCode, false); // No enviar xAPI en código de inicialización
       }
       
     }).catch(function(error) {
@@ -484,7 +494,7 @@ H5P.PythonTerminal = (function ($, Question) {
   /**
    * Ejecutar código Python (sin enviar xAPI)
    */
-  PythonTerminal.prototype.runCode = function() {
+  PythonTerminal.prototype.runCode = async function() {
     const self = this;
     
     if (!self.pyodideReady) {
@@ -500,7 +510,7 @@ H5P.PythonTerminal = (function ($, Question) {
     }
     
     self.addOutput('>>> Ejecutando...', 'command');
-    self.runPythonCode(code, false); // false = no enviar xAPI
+    await self.runPythonCode(code, false); // false = no enviar xAPI
   };
 
   /**
@@ -517,7 +527,8 @@ H5P.PythonTerminal = (function ($, Question) {
     const code = self.aceEditor ? self.aceEditor.getValue() : '';
     
     if (!code.trim()) {
-      self.addOutput('⚠️ No hay código para guardar', 'warning');
+      //self.addOutput('⚠️ No hay código para guardar', 'warning');
+      self.addOutput('⚠️ No hay código para enviar para evaluación', 'warning');
       return;
     }
     
@@ -528,26 +539,33 @@ H5P.PythonTerminal = (function ($, Question) {
     
     // Validar que exista al menos una ejecución
     if (!lastExecution) {
-      self.addOutput('⚠️ Debes ejecutar el código al menos una vez antes de guardar', 'warning');
+      self.addOutput('⚠️ Debes ejecutar el código al menos una vez antes de enviar', 'warning');
       return;
     }
     
     self.isSending = true;
     
-    // Calcular porcentaje de puntuación
-    var scorePercentage = 0;
-    if (self.params.enableScoring && self.maxScore > 0) {
-      scorePercentage = Math.round((self.score / self.maxScore) * 100);
-    }
+    // Calcular score según el tipo configurado
+    var finalScore = self.score;
+    var finalMaxScore = 1; // Por defecto 1 si no se define
+    var success = lastExecution.success;
     
-    // Mostrar resumen antes de enviar
-    if (self.params.enableScoring && self.params.requiredExercises && self.params.requiredExercises.length > 0) {
-      self.addOutput('', 'info');
-      self.addOutput('📊 Resumen de calificación:', 'info');
-      self.addOutput('   Ejercicios completados: ' + self.completedExercises.length + '/' + self.maxScore, 'info');
-      self.addOutput('   Puntuación: ' + self.score + '/' + self.maxScore + ' (' + scorePercentage + '%)', 'info');
-      var passed = scorePercentage >= self.params.passingScore;
-      self.addOutput('   Estado: ' + (passed ? '✅ Aprobado' : '❌ No aprobado (requiere ' + self.params.passingScore + '%)'), passed ? 'success' : 'warning');
+    if (self.params.passingScore !== undefined && self.params.passingScore !== null) {
+      // Modo puntaje: usar el valor configurado como maxScore
+      // NO calcular success basado en passingScore, solo definir maxScore
+      // El success se mantiene basado en lastExecution.success o passingPercentage
+      finalMaxScore = self.params.passingScore;
+    } else if (self.params.passingPercentage !== undefined && self.params.passingPercentage !== null) {
+      // Modo porcentaje: calcular porcentaje
+      finalMaxScore = self.getMaxScore(); // Obtener maxScore (por defecto 1)
+      var scorePercentage = 0;
+      if (finalMaxScore > 0) {
+        scorePercentage = Math.round((finalScore / finalMaxScore) * 100);
+      }
+      success = scorePercentage >= (self.params.passingPercentage || 70);
+    } else {
+      // Si no hay configuración, usar maxScore por defecto (1)
+      finalMaxScore = 1;
     }
     
     // Crear evento xAPI con verbo "answered" usando H5P.Question
@@ -557,10 +575,7 @@ H5P.PythonTerminal = (function ($, Question) {
       if (xAPIEvent && xAPIEvent.data && xAPIEvent.data.statement) {
         // Configurar el resultado con puntuación
         if (typeof xAPIEvent.setScoredResult === 'function') {
-          var success = self.params.enableScoring 
-            ? (scorePercentage >= self.params.passingScore) 
-            : lastExecution.success;
-          xAPIEvent.setScoredResult(self.getScore(), self.getMaxScore(), self, true, success);
+          xAPIEvent.setScoredResult(finalScore, finalMaxScore, self, true, success);
         }
         
         // Agregar el response con el código guardado
@@ -571,14 +586,10 @@ H5P.PythonTerminal = (function ($, Question) {
         // Disparar el evento
         self.trigger(xAPIEvent);
       }
-    } else {
-      // Fallback: usar triggerXAPICompleted si no está disponible createXAPIEventTemplate
-      if (typeof self.triggerXAPICompleted === 'function') {
-        self.triggerXAPICompleted(self.getScore(), self.getMaxScore());
-      }
     }
     
-    self.addOutput('💾 Código guardado y enviado al LRS', 'success');
+    //self.addOutput('💾 Código guardado y enviado al LRS', 'success');
+    self.addOutput('💾 Código enviado para evaluación', 'success');
     
     // Resetear flag después de 1 segundo
     setTimeout(function() {
@@ -587,9 +598,427 @@ H5P.PythonTerminal = (function ($, Question) {
   };
 
   /**
+   * Analizar archivo Python subido para detectar imports de paquetes
+   */
+  PythonTerminal.prototype.analyzePythonFile = function(filename) {
+    const self = this;
+    
+    if (!self.pyodide || !self.pyodideReady) {
+      return null;
+    }
+    
+    try {
+      // Leer el contenido del archivo desde el sistema de archivos de Pyodide
+      const fileContent = self.pyodide.FS.readFile(filename, { encoding: 'utf8' });
+      const code = String(fileContent);
+      return code;
+    } catch (error) {
+      // Archivo no encontrado o error al leer
+      return null;
+    }
+  };
+
+  /**
+   * Verificar si un nombre de módulo es un módulo estándar de Python
+   */
+  PythonTerminal.prototype.isStandardPythonModule = function(moduleName) {
+    // Lista de módulos estándar de Python (no exhaustiva, pero cubre los más comunes)
+    const standardModules = [
+      'sys', 'os', 'json', 'math', 'random', 'datetime', 'time', 're', 'string',
+      'collections', 'itertools', 'functools', 'operator', 'copy', 'pickle',
+      'csv', 'urllib', 'http', 'email', 'html', 'xml', 'sqlite3', 'threading',
+      'multiprocessing', 'subprocess', 'logging', 'unittest', 'doctest', 'pdb',
+      'traceback', 'warnings', 'abc', 'typing', 'dataclasses', 'enum', 'pathlib',
+      'shutil', 'tempfile', 'glob', 'fnmatch', 'linecache', 'codecs', 'locale',
+      'gettext', 'argparse', 'configparser', 'fileinput', 'stat', 'filecmp',
+      'mmap', 'readline', 'rlcompleter', 'cmd', 'shlex', 'textwrap', 'unicodedata',
+      'stringprep', 'struct', 'codecs', 'encodings', 'io', 'base64', 'binascii',
+      'hashlib', 'hmac', 'secrets', 'zlib', 'gzip', 'bz2', 'lzma', 'zipfile',
+      'tarfile', 'csv', 'configparser', 'netrc', 'xdrlib', 'plistlib', 'shelve',
+      'marshal', 'dbm', 'sqlite3', 'zlib', 'gzip', 'bz2', 'lzma', 'zipfile',
+      'tarfile', 'csv', 'netrc', 'xdrlib', 'plistlib', 'shelve', 'marshal',
+      'dbm', 'sqlite3', 'xml', 'html', 'email', 'http', 'urllib', 'socket',
+      'ssl', 'select', 'selectors', 'asyncio', 'concurrent', 'multiprocessing',
+      'threading', 'queue', 'contextvars', 'weakref', 'types', 'copy', 'pprint',
+      'reprlib', 'enum', 'numbers', 'math', 'cmath', 'decimal', 'fractions',
+      'statistics', 'random', 'secrets', 'array', 'collections', 'heapq', 'bisect',
+      'array', 'weakref', 'types', 'copy', 'pprint', 'reprlib', 'enum', 'numbers',
+      'io', 'codecs', 'unicodedata', 'stringprep', 'readline', 'rlcompleter',
+      'string', 're', 'difflib', 'textwrap', 'unicodedata', 'stringprep',
+      'readline', 'rlcompleter', 'string', 're', 'difflib', 'textwrap'
+    ];
+    
+    return standardModules.indexOf(moduleName) !== -1;
+  };
+
+  /**
+   * Mapear nombre de módulo a nombre de paquete de Pyodide
+   */
+  PythonTerminal.prototype.getPackageName = function(moduleName) {
+    const moduleToPackage = {
+      'pandas': 'pandas',
+      'numpy': 'numpy',
+      'np': 'numpy',
+      'matplotlib': 'matplotlib',
+      'scipy': 'scipy',
+      'sklearn': 'scikit-learn',
+      'sympy': 'sympy',
+      'PIL': 'Pillow',
+      'bs4': 'beautifulsoup4',
+      'requests': 'requests',
+      'lxml': 'lxml',
+      'networkx': 'networkx',
+      'statsmodels': 'statsmodels',
+      'pytz': 'pytz',
+      'dateutil': 'python-dateutil',
+      'plotly': 'plotly',
+      'bokeh': 'bokeh',
+      'regex': 'regex',
+      'pyparsing': 'pyparsing',
+      'jsonschema': 'jsonschema',
+      'yaml': 'PyYAML',
+      'toml': 'toml',
+      'mpmath': 'mpmath',
+      'seaborn': 'seaborn',
+      'skimage': 'scikit-image',
+      'pydantic': 'pydantic',
+      'jinja2': 'jinja2',
+      'markupsafe': 'markupsafe',
+      'pygments': 'pygments',
+      'micropip': 'micropip'
+    };
+    
+    return moduleToPackage[moduleName] || null;
+  };
+
+  /**
+   * Detectar y cargar paquetes necesarios automáticamente
+   */
+  PythonTerminal.prototype.loadRequiredPackages = async function(code) {
+    const self = this;
+    
+    if (!self.pyodide || !self.pyodideReady) {
+      return; // Pyodide no está listo
+    }
+    
+    // Detectar imports de módulos personalizados (archivos .py subidos)
+    const moduleImportPattern = /(?:^|\n)\s*(?:import\s+(\w+)|from\s+(\w+)\s+import)/g;
+    let match;
+    const importedModules = new Set();
+    
+    while ((match = moduleImportPattern.exec(code)) !== null) {
+      const moduleName = match[1] || match[2];
+      if (moduleName && !self.isStandardPythonModule(moduleName)) {
+        // Verificar si existe un archivo .py con ese nombre
+        // Buscar en el directorio raíz y en subdirectorios comunes
+        const possibleFilenames = [
+          moduleName + '.py',
+          moduleName.toLowerCase() + '.py',
+          './' + moduleName + '.py',
+          './' + moduleName.toLowerCase() + '.py'
+        ];
+        
+        // También buscar en archivos subidos que puedan tener rutas
+        for (let i = 0; i < self.uploadedFiles.length; i++) {
+          const uploadedFile = self.uploadedFiles[i];
+          if (uploadedFile.name.endsWith('.py')) {
+            // Extraer el nombre base del archivo (sin extensión y sin ruta)
+            const baseName = uploadedFile.name.replace(/^.*[\\\/]/, '').replace(/\.py$/, '');
+            if (baseName === moduleName || baseName.toLowerCase() === moduleName.toLowerCase()) {
+              possibleFilenames.push(uploadedFile.name);
+            }
+          }
+        }
+        
+        for (let i = 0; i < possibleFilenames.length; i++) {
+          const filename = possibleFilenames[i];
+          try {
+            // Verificar si el archivo existe en el sistema de archivos
+            self.pyodide.FS.stat(filename);
+            // Si existe, analizarlo
+            const moduleCode = self.analyzePythonFile(filename);
+            if (moduleCode) {
+              importedModules.add(filename);
+              // Analizar el módulo para detectar sus imports de paquetes
+              await self.loadRequiredPackages(moduleCode);
+            }
+            break; // Archivo encontrado, no buscar más variantes
+          } catch (e) {
+            // Archivo no encontrado, continuar con siguiente variante
+          }
+        }
+      }
+    }
+    
+    // Lista de paquetes comunes de Pyodide con sus patrones de importación
+    var packages = [
+      {
+        name: 'pandas',
+        packageName: 'pandas',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+pandas|from\s+pandas\s+import)/
+        ]
+      },
+      {
+        name: 'numpy',
+        packageName: 'numpy',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+numpy|from\s+numpy\s+import)/,
+          /(?:^|\n)\s*import\s+numpy\s+as\s+np/
+        ]
+      },
+      {
+        name: 'matplotlib',
+        packageName: 'matplotlib',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+matplotlib|from\s+matplotlib\s+import)/,
+          /(?:^|\n)\s*(?:import\s+matplotlib\.pyplot|from\s+matplotlib\.pyplot\s+import)/
+        ]
+      },
+      {
+        name: 'scipy',
+        packageName: 'scipy',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+scipy|from\s+scipy\s+import)/
+        ]
+      },
+      {
+        name: 'scikit-learn',
+        packageName: 'scikit-learn',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+sklearn|from\s+sklearn\s+import)/
+        ]
+      },
+      {
+        name: 'sympy',
+        packageName: 'sympy',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+sympy|from\s+sympy\s+import)/
+        ]
+      },
+      {
+        name: 'Pillow',
+        packageName: 'Pillow',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+PIL|from\s+PIL\s+import)/,
+          /(?:^|\n)\s*(?:from\s+Pillow\s+import)/
+        ]
+      },
+      {
+        name: 'beautifulsoup4',
+        packageName: 'beautifulsoup4',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+bs4|from\s+bs4\s+import)/,
+          /(?:^|\n)\s*(?:from\s+beautifulsoup4\s+import)/
+        ]
+      },
+      {
+        name: 'requests',
+        packageName: 'requests',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+requests|from\s+requests\s+import)/
+        ]
+      },
+      {
+        name: 'lxml',
+        packageName: 'lxml',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+lxml|from\s+lxml\s+import)/
+        ]
+      },
+      {
+        name: 'networkx',
+        packageName: 'networkx',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+networkx|from\s+networkx\s+import)/
+        ]
+      },
+      {
+        name: 'statsmodels',
+        packageName: 'statsmodels',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+statsmodels|from\s+statsmodels\s+import)/
+        ]
+      },
+      {
+        name: 'pytz',
+        packageName: 'pytz',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+pytz|from\s+pytz\s+import)/
+        ]
+      },
+      {
+        name: 'python-dateutil',
+        packageName: 'python-dateutil',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+dateutil|from\s+dateutil\s+import)/
+        ]
+      },
+      {
+        name: 'plotly',
+        packageName: 'plotly',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+plotly|from\s+plotly\s+import)/
+        ]
+      },
+      {
+        name: 'bokeh',
+        packageName: 'bokeh',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+bokeh|from\s+bokeh\s+import)/
+        ]
+      },
+      {
+        name: 'regex',
+        packageName: 'regex',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+regex|from\s+regex\s+import)/
+        ]
+      },
+      {
+        name: 'pyparsing',
+        packageName: 'pyparsing',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+pyparsing|from\s+pyparsing\s+import)/
+        ]
+      },
+      {
+        name: 'jsonschema',
+        packageName: 'jsonschema',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+jsonschema|from\s+jsonschema\s+import)/
+        ]
+      },
+      {
+        name: 'PyYAML',
+        packageName: 'PyYAML',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+yaml|from\s+yaml\s+import)/
+        ]
+      },
+      {
+        name: 'toml',
+        packageName: 'toml',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+toml|from\s+toml\s+import)/
+        ]
+      },
+      {
+        name: 'mpmath',
+        packageName: 'mpmath',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+mpmath|from\s+mpmath\s+import)/
+        ]
+      },
+      {
+        name: 'seaborn',
+        packageName: 'seaborn',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+seaborn|from\s+seaborn\s+import)/
+        ]
+      },
+      {
+        name: 'scikit-image',
+        packageName: 'scikit-image',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+skimage|from\s+skimage\s+import)/
+        ]
+      },
+      {
+        name: 'pydantic',
+        packageName: 'pydantic',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+pydantic|from\s+pydantic\s+import)/
+        ]
+      },
+      {
+        name: 'jinja2',
+        packageName: 'jinja2',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+jinja2|from\s+jinja2\s+import)/
+        ]
+      },
+      {
+        name: 'markupsafe',
+        packageName: 'markupsafe',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+markupsafe|from\s+markupsafe\s+import)/
+        ]
+      },
+      {
+        name: 'pygments',
+        packageName: 'pygments',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+pygments|from\s+pygments\s+import)/
+        ]
+      },
+      {
+        name: 'micropip',
+        packageName: 'micropip',
+        patterns: [
+          /(?:^|\n)\s*(?:import\s+micropip|from\s+micropip\s+import)/
+        ]
+      }
+    ];
+    
+    // Procesar cada paquete
+    for (var i = 0; i < packages.length; i++) {
+      var pkg = packages[i];
+      var shouldLoad = false;
+      
+      // Verificar si alguno de los patrones coincide
+      for (var j = 0; j < pkg.patterns.length; j++) {
+        if (pkg.patterns[j].test(code)) {
+          shouldLoad = true;
+          break;
+        }
+      }
+      
+      if (shouldLoad) {
+        try {
+          // Verificar si el paquete ya está cargado
+          var moduleName = pkg.name;
+          // Ajustar nombres de módulo para verificación (nombre del paquete vs nombre de importación)
+          if (pkg.name === 'scikit-learn') {
+            moduleName = 'sklearn';
+          } else if (pkg.name === 'Pillow') {
+            moduleName = 'PIL';
+          } else if (pkg.name === 'beautifulsoup4') {
+            moduleName = 'bs4';
+          } else if (pkg.name === 'python-dateutil') {
+            moduleName = 'dateutil';
+          } else if (pkg.name === 'PyYAML') {
+            moduleName = 'yaml';
+          } else if (pkg.name === 'scikit-image') {
+            moduleName = 'skimage';
+          }
+          
+          try {
+            var module = self.pyodide.globals.get(moduleName);
+            if (module !== undefined && module !== null) {
+              // El paquete ya está cargado
+              continue;
+            }
+          } catch (e) {
+            // El módulo no está en el namespace, continuar para cargarlo
+          }
+          
+          // Cargar el paquete
+          self.addOutput('📦 Cargando ' + pkg.name + '...', 'info');
+          await self.pyodide.loadPackage(pkg.packageName);
+          self.addOutput('✅ ' + pkg.name + ' cargado correctamente', 'info');
+        } catch (error) {
+          self.addOutput('⚠️ No se pudo cargar ' + pkg.name + ': ' + error.message, 'warning');
+          // Continuar con otros paquetes aunque uno falle
+        }
+      }
+    }
+  };
+
+  /**
    * Ejecutar código Python usando Pyodide
    */
-  PythonTerminal.prototype.runPythonCode = function(code, sendXAPI) {
+  PythonTerminal.prototype.runPythonCode = async function(code, sendXAPI) {
     const self = this;
     
     // sendXAPI es opcional, por defecto false
@@ -600,35 +1029,217 @@ H5P.PythonTerminal = (function ($, Question) {
     var executionError = null;
     
     // Resetear salida capturada para esta ejecución
-    console.log('[DEBUG] runPythonCode - Reseteando salida. Anterior:', JSON.stringify(self.currentExecutionOutput));
     self.currentExecutionOutput = '';
     
-    // Resetear valores capturados de input() para esta ejecución
-    // (mantener solo los de ejecuciones anteriores si es necesario)
-    // Nota: Podríamos mantener un historial completo, pero para validación solo necesitamos la última ejecución
-    self.capturedInputs = [];
+    // NO resetear valores capturados de input() antes de ejecutar
+    // Los inputs se capturarán en el callback y se validarán después
+    // Solo inicializar si no existe
+    if (!self.capturedInputs) {
+      self.capturedInputs = [];
+    }
     
-    console.log('[DEBUG] runPythonCode - Ejecutando código:', code.substring(0, 100) + '...');
+    // Reconfigurar stdin antes de cada ejecución para asegurar que self sea correcto
+    if (self.params.allowInput && self.pyodide) {
+      self.pyodide.setStdin({
+        prompt: function(message) {
+          // Limpiar y formatear el mensaje
+          var cleanMessage = '';
+          if (message !== null && message !== undefined && String(message).trim() !== '') {
+            cleanMessage = String(message).trim().replace(/\r\n/g, ' ').replace(/\n/g, ' ');
+          }
+          if (!cleanMessage || cleanMessage === '') {
+            cleanMessage = 'Ingrese un valor:';
+          }
+          
+          // Mostrar el mensaje en la consola
+          self.addOutput(cleanMessage, 'input-prompt');
+          
+          // Usar prompt nativo de JavaScript (síncrono)
+          var userInput = prompt(cleanMessage);
+          
+          // Si el usuario cancela el prompt, devolver cadena vacía
+          if (userInput === null) {
+            userInput = '';
+          }
+          
+          // CAPTURAR el valor ingresado para validación en tiempo de ejecución
+          if (!self.capturedInputs) {
+            self.capturedInputs = [];
+          }
+          self.capturedInputs.push({
+            prompt: cleanMessage,
+            value: userInput,
+            timestamp: new Date().toISOString()
+          });
+          
+          // Mostrar la entrada del usuario en la consola
+          if (userInput !== null) {
+            self.addOutput('>>> ' + userInput, 'input-value');
+          }
+          
+          // Devolver la entrada del usuario (debe ser síncrono)
+          return userInput || '';
+        }
+      });
+    } else if (self.pyodide) {
+      // Si allowInput está desactivado, generar error cuando se intente usar input()
+      self.pyodide.setStdin({
+        error: true
+      });
+    }
+    
+    // Cargar paquetes necesarios antes de ejecutar
+    await self.loadRequiredPackages(code);
+    
+    // Inyectar wrapper para capturar inputs si el código contiene input()
+    if (code.includes('input(') && self.params.allowInput && self.pyodide) {
+      try {
+        // Guardar la función input() original y crear wrapper
+        self.pyodide.runPython(`
+import builtins
+if '_original_input' not in globals():
+    _original_input = builtins.input
+    _input_captures = []
+
+def _capturing_input(prompt=''):
+    result = _original_input(prompt)
+    _input_captures.append({
+        'prompt': str(prompt),
+        'value': result
+    })
+    return result
+
+builtins.input = _capturing_input
+        `);
+      } catch (error) {
+        // Error al inyectar wrapper, continuar sin captura de inputs
+      }
+    }
     
     try {
-      // Ejecutar el código
-      const result = self.pyodide.runPython(code);
+      // Ejecutar el código de forma asíncrona para manejar input() correctamente
+      const result = await self.pyodide.runPythonAsync(code);
       executionSuccess = true;
       executionResult = result;
       
       // Si hay un resultado (no None), mostrarlo
       if (result !== undefined && result !== null) {
-        var resultStr = String(result);
-        self.addOutput(resultStr, 'result');
-        // Agregar resultado a la salida capturada
-        self.currentExecutionOutput += resultStr;
+        // Verificar si el resultado es un DataFrame
+        if (self.isDataFrame(result)) {
+          // Mostrar como tabla HTML
+          const dfId = 'result_' + Date.now();
+          self.displayedDataFrames.add(dfId);
+          self.displayDataFrame(result, 'Resultado');
+        } else {
+          // Mostrar como texto normal
+          var resultStr = String(result);
+          self.addOutput(resultStr, 'result');
+          // Agregar resultado a la salida capturada
+          self.currentExecutionOutput += resultStr;
+        }
       }
       
     } catch (error) {
-      // Mostrar error de Python
-      executionSuccess = false;
-      executionError = error.message;
-      self.addOutput(error.message, 'error');
+      // Interceptar ModuleNotFoundError y cargar automáticamente el paquete
+      if (error.message && error.message.includes('ModuleNotFoundError')) {
+        // Extraer el nombre del módulo faltante
+        const moduleMatch = error.message.match(/No module named ['"]([^'"]+)['"]/);
+        if (moduleMatch) {
+          const missingModule = moduleMatch[1];
+          // Verificar si es un paquete conocido de Pyodide
+          const packageName = self.getPackageName(missingModule);
+          
+          if (packageName) {
+            // Cargar el paquete automáticamente
+            self.addOutput('📦 Detectado módulo faltante: ' + missingModule + '. Cargando automáticamente...', 'info');
+            try {
+              await self.pyodide.loadPackage(packageName);
+              self.addOutput('✅ ' + packageName + ' cargado. Reintentando ejecución...', 'success');
+              
+              // Reintentar la ejecución
+              try {
+                const result = await self.pyodide.runPythonAsync(code);
+                executionSuccess = true;
+                executionResult = result;
+                
+                // Si hay un resultado (no None), mostrarlo
+                if (result !== undefined && result !== null) {
+                  // Verificar si el resultado es un DataFrame
+                  if (self.isDataFrame(result)) {
+                    // Mostrar como tabla HTML
+                    const dfId = 'result_' + Date.now();
+                    self.displayedDataFrames.add(dfId);
+                    self.displayDataFrame(result, 'Resultado');
+                  } else {
+                    // Mostrar como texto normal
+                    var resultStr = String(result);
+                    self.addOutput(resultStr, 'result');
+                    // Agregar resultado a la salida capturada
+                    self.currentExecutionOutput += resultStr;
+                  }
+                }
+              } catch (retryError) {
+                // Si el reintento falla, mostrar el error original
+                executionSuccess = false;
+                executionError = retryError.message;
+                self.addOutput(retryError.message, 'error');
+              }
+            } catch (loadError) {
+              // Error al cargar el paquete, mostrar error original
+              executionSuccess = false;
+              executionError = error.message;
+              self.addOutput('⚠️ No se pudo cargar ' + packageName + ': ' + loadError.message, 'warning');
+              self.addOutput(error.message, 'error');
+            }
+          } else {
+            // No es un paquete conocido, mostrar error normal
+            executionSuccess = false;
+            executionError = error.message;
+            self.addOutput(error.message, 'error');
+          }
+        } else {
+          // No se pudo extraer el nombre del módulo, mostrar error normal
+          executionSuccess = false;
+          executionError = error.message;
+          self.addOutput(error.message, 'error');
+        }
+      } else {
+        // Otro tipo de error, mostrar normalmente
+        executionSuccess = false;
+        executionError = error.message;
+        self.addOutput(error.message, 'error');
+      }
+    }
+    
+    // Recuperar inputs capturados del wrapper de Python
+    if (code.includes('input(') && self.params.allowInput && self.pyodide) {
+      try {
+        // Verificar si _input_captures existe antes de acceder
+        var hasCaptures = self.pyodide.runPython('"_input_captures" in globals()');
+        if (hasCaptures) {
+          var pythonCaptures = self.pyodide.runPython('_input_captures');
+          if (pythonCaptures && pythonCaptures.length > 0) {
+          // Convertir PyProxy a array JavaScript
+          var capturesArray = pythonCaptures.toJs();
+          if (!self.capturedInputs) {
+            self.capturedInputs = [];
+          }
+          // Limpiar capturas anteriores de esta ejecución
+          self.capturedInputs = [];
+          for (var i = 0; i < capturesArray.length; i++) {
+            self.capturedInputs.push({
+              prompt: capturesArray[i].prompt || '',
+              value: capturesArray[i].value || '',
+              timestamp: new Date().toISOString()
+            });
+          }
+          // Limpiar capturas de Python para la próxima ejecución
+          self.pyodide.runPython('_input_captures = []');
+          }
+        }
+      } catch (error) {
+        // Error al recuperar capturas, continuar sin validación de inputs
+      }
     }
     
     // Registrar ejecución en historial (incluyendo salida capturada)
@@ -643,13 +1254,12 @@ H5P.PythonTerminal = (function ($, Question) {
     
     self.executionHistory.push(execution);
     
-    // Verificar ejercicios SIEMPRE cuando enableScoring está habilitado y la ejecución fue exitosa
-    // Esto permite que el estudiante vea feedback inmediato al ejecutar código
-    console.log('[DEBUG] runPythonCode - Ejecución completada. Success:', executionSuccess);
-    console.log('[DEBUG] runPythonCode - Salida final capturada:', JSON.stringify(self.currentExecutionOutput));
-    if (self.params.enableScoring && executionSuccess && self.params.requiredExercises && self.params.requiredExercises.length > 0) {
-      console.log('[DEBUG] runPythonCode - Llamando a checkExerciseCompletion');
-      self.checkExerciseCompletion(code, executionSuccess);
+    // Detectar y mostrar DataFrames de pandas si la ejecución fue exitosa
+    if (executionSuccess && self.pyodideReady) {
+      // Usar setTimeout para que se ejecute después de que se muestre la salida
+      setTimeout(function() {
+        self.detectAndDisplayDataFrames();
+      }, 100);
     }
     
     // Solo emitir evento xAPI si se solicita explícitamente
@@ -703,7 +1313,206 @@ H5P.PythonTerminal = (function ($, Question) {
     // No resetear lastOutput aquí, solo currentExecutionOutput
     // lastOutput se mantiene para historial completo
     self.currentExecutionOutput = '';
+    // Limpiar el registro de DataFrames mostrados
+    self.displayedDataFrames.clear();
     self.addOutput('🗑️ Consola limpiada', 'info');
+  };
+
+  /**
+   * Escapar HTML para prevenir XSS
+   */
+  PythonTerminal.prototype.escapeHTML = function(text) {
+    if (text === null || text === undefined) {
+      return '';
+    }
+    const div = document.createElement('div');
+    div.textContent = String(text);
+    return div.innerHTML;
+  };
+
+  /**
+   * Verificar si un objeto es un DataFrame de pandas
+   */
+  PythonTerminal.prototype.isDataFrame = function(obj) {
+    const self = this;
+    
+    if (!obj || typeof obj !== 'object') {
+      return false;
+    }
+    
+    try {
+      // Verificar si tiene los métodos característicos de DataFrame
+      if (obj.shape && obj.columns && obj.head && obj.to_dict) {
+        // Verificar que shape y columns sean arrays válidos
+        const shape = obj.shape.toJs();
+        const columns = obj.columns.toJs();
+        
+        // Si tiene shape y columns válidos, es un DataFrame
+        if (Array.isArray(shape) && shape.length === 2 && Array.isArray(columns)) {
+          return true;
+        }
+      }
+    } catch (e) {
+      // Error al verificar, no es un DataFrame válido
+      return false;
+    }
+    
+    return false;
+  };
+
+  /**
+   * Mostrar DataFrame de pandas como tabla HTML
+   */
+  PythonTerminal.prototype.displayDataFrame = function(df, name) {
+    const self = this;
+    
+    try {
+      // Obtener información del DataFrame
+      const shape = df.shape.toJs();
+      const numRows = shape[0];
+      const numCols = shape[1];
+      
+      // Limitar a 100 filas para vista previa
+      const maxPreviewRows = 100;
+      const previewRows = Math.min(numRows, maxPreviewRows);
+      
+      // Obtener columnas
+      const columns = df.columns.toJs();
+      
+      // Obtener datos usando values (más confiable que to_dict)
+      const headDf = df.head(previewRows);
+      const values = headDf.values.toJs({depth: 2});
+      
+      // Convertir a formato de filas
+      const rows = [];
+      for (let i = 0; i < previewRows && i < values.length; i++) {
+        const row = {};
+        const rowData = values[i];
+        columns.forEach((col, colIndex) => {
+          row[col] = rowData && rowData[colIndex] !== undefined ? rowData[colIndex] : '';
+        });
+        rows.push(row);
+      }
+      
+      // Crear tabla HTML
+      let tableHTML = '<div class="dataframe-preview-container">';
+      tableHTML += '<div class="dataframe-preview-header">';
+      tableHTML += '<strong>📊 DataFrame: ' + self.escapeHTML(name || 'sin nombre') + '</strong>';
+      tableHTML += '<span class="dataframe-info"> (' + numRows + ' filas × ' + numCols + ' columnas)';
+      if (numRows > maxPreviewRows) {
+        tableHTML += ' - mostrando ' + maxPreviewRows + ' filas';
+      }
+      tableHTML += '</span>';
+      tableHTML += '</div>';
+      tableHTML += '<div class="dataframe-table-wrapper">';
+      tableHTML += '<table class="dataframe-table">';
+      
+      // Headers
+      if (columns.length > 0) {
+        tableHTML += '<thead><tr>';
+        columns.forEach(col => {
+          tableHTML += '<th>' + self.escapeHTML(String(col)) + '</th>';
+        });
+        tableHTML += '</tr></thead>';
+      }
+      
+      // Rows
+      tableHTML += '<tbody>';
+      rows.forEach(row => {
+        tableHTML += '<tr>';
+        columns.forEach(col => {
+          const value = row[col] !== undefined && row[col] !== null ? row[col] : '';
+          // Formatear valores numéricos
+          let displayValue = String(value);
+          if (typeof value === 'number') {
+            // Redondear números muy largos
+            if (Math.abs(value) > 1000000 || (Math.abs(value) < 0.01 && value !== 0)) {
+              displayValue = value.toExponential(2);
+            } else {
+              displayValue = Number(value.toFixed(6)).toString();
+            }
+          }
+          tableHTML += '<td>' + self.escapeHTML(displayValue) + '</td>';
+        });
+        tableHTML += '</tr>';
+      });
+      tableHTML += '</tbody></table></div></div>';
+      
+      // Agregar a la consola como HTML
+      const $tableElement = $(tableHTML);
+      self.$output.append($tableElement);
+      self.outputLines.push($tableElement);
+      
+      // Scroll al final
+      self.$output.scrollTop(self.$output[0].scrollHeight);
+      
+    } catch (error) {
+      self.addOutput('⚠️ Error al mostrar DataFrame: ' + error.message, 'warning');
+      console.error('Error displaying DataFrame:', error);
+    }
+  };
+
+  /**
+   * Detectar y mostrar DataFrames de pandas en el namespace
+   */
+  PythonTerminal.prototype.detectAndDisplayDataFrames = function() {
+    const self = this;
+    
+    if (!self.pyodide || !self.pyodideReady) {
+      return;
+    }
+    
+    try {
+      // Obtener el namespace global de Python
+      const globals = self.pyodide.globals;
+      
+      // Intentar obtener pandas para verificar si está disponible
+      let pandas = null;
+      try {
+        pandas = globals.get('pandas');
+      } catch (e) {
+        // pandas no está disponible
+        return;
+      }
+      
+      if (!pandas || pandas === undefined) {
+        return;
+      }
+      
+      // Obtener todas las variables del namespace
+      const keys = globals.keys();
+      const keyArray = keys.toJs();
+      
+      // Buscar DataFrames
+      keyArray.forEach(varName => {
+        try {
+          const value = globals.get(varName);
+          
+          // Verificar si es un DataFrame de pandas usando la función helper
+          if (self.isDataFrame(value)) {
+            try {
+              const shape = value.shape.toJs();
+              // Crear un identificador único para el DataFrame (nombre + shape)
+              const dfId = varName + '_' + shape[0] + 'x' + shape[1];
+              
+              // Solo mostrar si no se ha mostrado antes
+              if (!self.displayedDataFrames.has(dfId)) {
+                self.displayedDataFrames.add(dfId);
+                self.displayDataFrame(value, varName);
+              }
+            } catch (e) {
+              // Error al obtener shape, continuar
+            }
+          }
+        } catch (e) {
+          // Error al acceder a la variable, continuar
+        }
+      });
+      
+    } catch (error) {
+      // Error general, no mostrar nada
+      console.warn('Error detecting DataFrames:', error);
+    }
   };
 
   /**
@@ -778,6 +1587,103 @@ H5P.PythonTerminal = (function ($, Question) {
   };
 
   /**
+   * Extraer contenido de f-strings para validación
+   * @param {string} code - Código Python a analizar
+   * @return {string} Contenido extraído de f-strings concatenado
+   */
+  PythonTerminal.prototype.extractFStringContent = function(code) {
+    var fStringContent = [];
+    
+    // Patrón para f-strings: f"..." o f'...'
+    // Extraer contenido dentro de {} en f-strings
+    // Manejar f-strings con comillas simples y dobles
+    // Usar un patrón más robusto que maneje saltos de línea y caracteres especiales
+    // Mejorar el patrón para manejar comillas anidadas correctamente
+    var fStringPattern = /f(["'])/g;
+    var match;
+    
+    while ((match = fStringPattern.exec(code)) !== null) {
+      var quoteChar = match[1]; // ' o "
+      var startPos = match.index + 2; // Posición después de f" o f'
+      var endPos = startPos;
+      var escaped = false;
+      
+      // Buscar la comilla de cierre correspondiente, manejando escapes
+      while (endPos < code.length) {
+        var char = code[endPos];
+        if (escaped) {
+          escaped = false;
+        } else if (char === '\\') {
+          escaped = true;
+        } else if (char === quoteChar) {
+          // Encontramos la comilla de cierre
+          break;
+        }
+        endPos++;
+      }
+      
+      var fStringBody = '';
+      if (endPos < code.length) {
+        fStringBody = code.substring(startPos, endPos);
+      }
+      
+      // Extraer contenido dentro de {} (expresiones de f-string)
+      // Mejorar el patrón para manejar llaves anidadas y strings con comillas
+      // Buscar { seguido de contenido hasta encontrar } que no esté dentro de un string
+      var pos = 0;
+      while (pos < fStringBody.length) {
+        var openBrace = fStringBody.indexOf('{', pos);
+        if (openBrace === -1) break;
+        
+        // Buscar la llave de cierre correspondiente
+        var depth = 1;
+        var i = openBrace + 1;
+        var inSingleQuote = false;
+        var inDoubleQuote = false;
+        
+        while (i < fStringBody.length && depth > 0) {
+          var char = fStringBody[i];
+          var prevChar = i > 0 ? fStringBody[i - 1] : '';
+          
+          // Manejar escapes
+          if (prevChar === '\\') {
+            i++;
+            continue;
+          }
+          
+          // Manejar comillas
+          if (char === "'" && !inDoubleQuote) {
+            inSingleQuote = !inSingleQuote;
+          } else if (char === '"' && !inSingleQuote) {
+            inDoubleQuote = !inDoubleQuote;
+          }
+          
+          // Solo contar llaves si no estamos dentro de un string
+          if (!inSingleQuote && !inDoubleQuote) {
+            if (char === '{') depth++;
+            if (char === '}') depth--;
+          }
+          
+          i++;
+        }
+        
+        if (depth === 0) {
+          // Encontramos una expresión completa
+          var expression = fStringBody.substring(openBrace + 1, i - 1).trim();
+          if (expression.length > 0) {
+            fStringContent.push(expression);
+          }
+        }
+        
+        pos = i;
+      }
+    }
+    
+    var result = fStringContent.join(' ');
+    return result;
+  };
+
+  /**
    * Detectar si una palabra clave se usa como función (no como string)
    * @param {string} code - Código Python a analizar
    * @param {string} keyword - Palabra clave a buscar
@@ -795,6 +1701,28 @@ H5P.PythonTerminal = (function ($, Question) {
     var keywordLower = keyword.toLowerCase();
     var isStringMethod = stringMethods.indexOf(keywordLower) !== -1;
     
+    // Si es un método de string y la keyword es solo el nombre (sin punto), 
+    // buscar directamente en f-strings ANTES de procesar (búsqueda más directa)
+    if (isStringMethod && !keyword.includes('.')) {
+      var escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      
+      // Buscar directamente f-strings que contengan el método
+      // Patrón: f"{...variable.metodo()...}" o f'{...variable.metodo()...}'
+      // Busca: f"...{...variable.metodo()...}..."
+      var directFStringPattern = new RegExp('f["\'].*\\{[^}]*\\w+\\.' + escapedKeyword + '\\s*\\([^}]*\\}.*["\']', 'g');
+      var test1 = directFStringPattern.test(code);
+      if (test1) {
+        return true;
+      }
+      
+      // También buscar el método sin punto explícito (por si hay espacios o variaciones)
+      var directFStringPattern2 = new RegExp('f["\'].*\\{[^}]*' + escapedKeyword + '\\s*\\([^}]*\\}.*["\']', 'g');
+      var test2 = directFStringPattern2.test(code);
+      if (test2) {
+        return true;
+      }
+    }
+    
     // Si no es una función común, no aplicar validación estricta
     if (commonFunctions.indexOf(keywordLower) === -1) {
       return code.indexOf(keyword) !== -1;
@@ -802,6 +1730,9 @@ H5P.PythonTerminal = (function ($, Question) {
     
     // Remover comentarios de línea
     var codeWithoutComments = code.replace(/#.*$/gm, '');
+    
+    // Extraer contenido de f-strings antes de remover strings
+    var fStringContent = this.extractFStringContent(codeWithoutComments);
     
     // Remover strings (simples y dobles) para evitar falsos positivos
     var strings = [];
@@ -814,7 +1745,17 @@ H5P.PythonTerminal = (function ($, Question) {
       return marker + stringIndex++ + marker;
     });
     
-    // Reemplazar strings dobles
+    // Reemplazar strings dobles (pero NO f-strings todavía)
+    // Primero reemplazar f-strings con un marcador especial
+    var fStringMarker = '___FSTRING_MARKER___';
+    var fStringIndex = 0;
+    var fStrings = [];
+    codeWithoutComments = codeWithoutComments.replace(/f["']([^"']*)["']/g, function(match) {
+      fStrings[fStringIndex] = match;
+      return fStringMarker + fStringIndex++ + fStringMarker;
+    });
+    
+    // Ahora reemplazar strings dobles normales
     codeWithoutComments = codeWithoutComments.replace(/"([^"\\]|\\.)*"/g, function(match) {
       strings[stringIndex] = match;
       return marker + stringIndex++ + marker;
@@ -828,8 +1769,57 @@ H5P.PythonTerminal = (function ($, Question) {
       // Patrón para métodos de string: .metodo(
       // Ejemplos: nombre.title(), variable.lower(), texto.upper()
       var stringMethodPattern = new RegExp('\\.' + escapedKeyword + '\\s*\\(', 'g');
-      if (stringMethodPattern.test(codeWithoutComments)) {
+      
+      // Buscar en código sin strings
+      var testCodeWithoutStrings = stringMethodPattern.test(codeWithoutComments);
+      if (testCodeWithoutStrings) {
         return true; // Método usado correctamente con paréntesis
+      }
+      
+      // Buscar también en contenido de f-strings
+      // El patrón .metodo( debería encontrar .lower( en nombre.lower()
+      if (fStringContent && fStringContent.trim().length > 0) {
+        // Primero intentar con el patrón estándar
+        var testFStringStandard = stringMethodPattern.test(fStringContent);
+        if (testFStringStandard) {
+          return true; // Método encontrado dentro de f-string
+        }
+        
+        // Si la keyword es solo el nombre del método (sin punto), buscar de forma más flexible
+        if (!keyword.includes('.')) {
+          // Buscar directamente el método seguido de paréntesis en f-strings
+          // Esto detecta "lower(" en "nombre.lower()" - búsqueda más simple y directa
+          var simpleMethodPattern = new RegExp(escapedKeyword + '\\s*\\(', 'g');
+          var testSimple = simpleMethodPattern.test(fStringContent);
+          if (testSimple) {
+            return true;
+          }
+          
+          // Buscar el método con punto dentro de f-strings (nombre.lower() o .lower())
+          var methodInFString = new RegExp('(\\w+\\.|\\.)' + escapedKeyword + '\\s*\\(', 'g');
+          var testMethodInFString = methodInFString.test(fStringContent);
+          if (testMethodInFString) {
+            return true;
+          }
+          
+          // También buscar solo el nombre del método si está seguido de paréntesis (como palabra completa)
+          var methodNameOnly = new RegExp('\\b' + escapedKeyword + '\\s*\\(', 'g');
+          var testMethodNameOnly = methodNameOnly.test(fStringContent);
+          if (testMethodNameOnly) {
+            return true;
+          }
+        }
+      }
+      
+      // Como último recurso, buscar directamente en el código original (antes de procesar)
+      // Esto captura métodos dentro de f-strings que pueden no haberse extraído correctamente
+      if (!keyword.includes('.')) {
+        // Buscar f-strings que contengan el método
+        var fStringWithMethod = new RegExp('f["\']([^"\']*\\{[^}]*' + escapedKeyword + '\\s*\\([^}]*\\}[^"\']*)["\']', 'g');
+        var testLastResort = fStringWithMethod.test(code);
+        if (testLastResort) {
+          return true;
+        }
       }
       
       // Verificar si se usa sin paréntesis (incorrecto): .metodo sin (
@@ -837,7 +1827,6 @@ H5P.PythonTerminal = (function ($, Question) {
       if (stringMethodWithoutParens.test(codeWithoutComments)) {
         return false; // Método usado sin paréntesis (incorrecto)
       }
-      
       return false; // No se encontró el método
     }
     
@@ -878,10 +1867,102 @@ H5P.PythonTerminal = (function ($, Question) {
     // Remover comentarios
     var codeWithoutComments = code.replace(/#.*$/gm, '');
     
+    // Extraer contenido de f-strings antes de remover strings
+    var fStringContent = this.extractFStringContent(codeWithoutComments);
+    
+    // Extraer strings normales para buscar patrones de formato dentro de ellos
+    // (necesario para detectar :.2f, .2f, etc. dentro de strings de formato)
+    var extractedStrings = this.extractStrings(codeWithoutComments);
+    
     // Remover strings para evitar falsos positivos
+    // Primero reemplazar f-strings con un marcador especial
+    var fStringMarker = '___FSTRING_MARKER___';
+    var fStringIndex = 0;
+    var fStrings = [];
+    codeWithoutComments = codeWithoutComments.replace(/f["']([^"']*)["']/g, function(match) {
+      fStrings[fStringIndex] = match;
+      return fStringMarker + fStringIndex++ + fStringMarker;
+    });
+    
+    // Ahora remover strings normales
     var codeWithoutStrings = codeWithoutComments
       .replace(/'([^'\\]|\\.)*'/g, '')
       .replace(/"([^"\\]|\\.)*"/g, '');
+    
+    // CASOS ESPECIALES: Detectar patrones específicos antes de validación general
+    
+    // 0. Patrones de formato dentro de strings (:.2f, .2f, etc.)
+    // Estos aparecen dentro de strings de formato como "{:.2f}" o "%.2f"
+    if ((keyword.includes(':') || keyword.includes('.')) && /[:.][0-9]/.test(keyword)) {
+      var escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      var formatPattern = new RegExp(escapedKeyword.replace(/\\\./g, '\\.'), 'g');
+      
+      // Buscar en strings extraídos
+      for (var i = 0; i < extractedStrings.length; i++) {
+        if (formatPattern.test(extractedStrings[i])) {
+          return true;
+        }
+      }
+      
+      // También buscar en f-strings
+      if (fStringContent && formatPattern.test(fStringContent)) {
+        return true;
+      }
+    }
+    
+    // 1. Palabras clave con espacio al final (def , lambda )
+    if (keyword.trim().endsWith(' ') && /^(def|lambda|if|else|elif|for|while|with|try|except|finally|class|async|await)\s+$/.test(keyword.trim())) {
+      var keywordBase = keyword.trim();
+      var pattern = new RegExp('\\b' + keywordBase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+', 'g');
+      if (pattern.test(codeWithoutStrings) || (fStringContent && pattern.test(fStringContent))) {
+        return true;
+      }
+    }
+    
+    // 2. Frases completas (import string, from string import)
+    if (keyword.includes(' ') && !keyword.trim().endsWith('(') && !keyword.trim().endsWith('.')) {
+      var phrasePattern = new RegExp(keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+      if (phrasePattern.test(codeWithoutStrings) || (fStringContent && phrasePattern.test(fStringContent))) {
+        return true;
+      }
+    }
+    
+    // 3. Métodos con punto (string., nombre.)
+    if (keyword.endsWith('.') && keyword.length > 1) {
+      var dotPattern = new RegExp(keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+      if (dotPattern.test(codeWithoutStrings) || (fStringContent && dotPattern.test(fStringContent))) {
+        return true;
+      }
+    }
+    
+    // 4. Funciones con paréntesis (map(, list(, etc.)
+    if (keyword.endsWith('(') && keyword.length > 1) {
+      var funcPattern = new RegExp('\\b' + keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+      if (funcPattern.test(codeWithoutStrings) || (fStringContent && funcPattern.test(fStringContent))) {
+        return true;
+      }
+    }
+    
+    // Si la keyword es un carácter especial (corchetes, llaves, operadores, etc.)
+    // usar búsqueda simple con indexOf
+    // EXCEPCIÓN: Los operadores de comparación (==, !=, >=, <=) se manejan más abajo
+    if (/^[\[\]{}()+\-*/=<>!@#$%^&|\\,.;:?~`]+$/.test(keyword) && 
+        keyword !== '==' && keyword !== '!=' && keyword !== '>=' && keyword !== '<=') {
+      // Para patrones de formato que pueden estar en strings, también buscar en strings extraídos
+      if ((keyword.includes(':') || keyword.includes('.')) && /[:.][0-9]/.test(keyword)) {
+        var escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        var formatPattern = new RegExp(escapedKeyword.replace(/\\\./g, '\\.'), 'g');
+        for (var i = 0; i < extractedStrings.length; i++) {
+          if (formatPattern.test(extractedStrings[i])) {
+            return true;
+          }
+        }
+        if (fStringContent && formatPattern.test(fStringContent)) {
+          return true;
+        }
+      }
+      return codeWithoutStrings.indexOf(keyword) !== -1;
+    }
     
     // Escapar caracteres especiales de regex
     var escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -894,19 +1975,117 @@ H5P.PythonTerminal = (function ($, Question) {
       return numberPattern.test(codeWithoutStrings);
     }
     
+    // Verificar si es una palabra simple que puede contener caracteres acentuados (ej: "contraseña", "nombre")
+    if (/^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ_][a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9_]*$/.test(keyword) && !/[a-zA-Z].*\d|\d.*[a-zA-Z]/.test(keyword)) {
+      // Es un identificador válido (variable, función, etc.) que puede contener caracteres acentuados
+      // Buscar como palabra completa con límites de palabra
+      var wordPattern = new RegExp('\\b' + escapedKeyword + '\\b', 'g');
+      
+      // Buscar en código sin strings
+      if (wordPattern.test(codeWithoutStrings)) {
+        return true;
+      }
+      
+      // Buscar también en contenido de f-strings
+      if (fStringContent && wordPattern.test(fStringContent)) {
+        return true;
+      }
+      
+      // Buscar también en strings literales (necesario para casos como contraseña = "contraseña")
+      for (var i = 0; i < extractedStrings.length; i++) {
+        var str = extractedStrings[i];
+        // Primero intentar con el patrón de límites de palabra
+        if (wordPattern.test(str)) {
+          return true;
+        }
+        // Si no funciona (por caracteres acentuados), buscar como substring exacto
+        // o con límites de palabra más flexibles (espacios, inicio/fin de string, puntuación)
+        var flexiblePattern = new RegExp('(^|[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9_])' + escapedKeyword + '([^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9_]|$)', 'g');
+        if (flexiblePattern.test(str)) {
+          return true;
+        }
+        // También verificar si el string es exactamente igual a la keyword
+        if (str === keyword) {
+          return true;
+        }
+      }
+      
+      return false;
+    }
+    
     // Verificar si es una palabra con números (ej: "m3_l5_e1", "area_rectangulo", "num1")
     if (/^[a-zA-Z_][a-zA-Z0-9_]*$/.test(keyword)) {
       // Es un identificador válido de Python (variable, función, etc.)
       // Buscar como palabra completa con límites de palabra
       var wordPattern = new RegExp('\\b' + escapedKeyword + '\\b', 'g');
-      return wordPattern.test(codeWithoutStrings);
+      
+      // Buscar en código sin strings
+      if (wordPattern.test(codeWithoutStrings)) {
+        return true;
+      }
+      
+      // Buscar también en contenido de f-strings
+      if (fStringContent && wordPattern.test(fStringContent)) {
+        return true;
+      }
+      
+      // Buscar también en strings literales (necesario para casos como contraseña = "contraseña")
+      for (var i = 0; i < extractedStrings.length; i++) {
+        var str = extractedStrings[i];
+        // Primero intentar con el patrón de límites de palabra
+        if (wordPattern.test(str)) {
+          return true;
+        }
+        // Si no funciona (por caracteres acentuados), buscar como substring exacto
+        // o con límites de palabra más flexibles (espacios, inicio/fin de string, puntuación)
+        var flexiblePattern = new RegExp('(^|[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9_])' + escapedKeyword + '([^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9_]|$)', 'g');
+        if (flexiblePattern.test(str)) {
+          return true;
+        }
+        // También verificar si el string es exactamente igual a la keyword
+        if (str === keyword) {
+          return true;
+        }
+      }
+      
+      return false;
     }
     
     // Verificar si contiene números y letras (ej: "m3", "l5", "e1")
     if (/[a-zA-Z].*\d|\d.*[a-zA-Z]/.test(keyword)) {
       // Palabra con números: buscar como palabra completa
       var mixedPattern = new RegExp('\\b' + escapedKeyword + '\\b', 'g');
-      return mixedPattern.test(codeWithoutStrings);
+      
+      // Buscar en código sin strings
+      if (mixedPattern.test(codeWithoutStrings)) {
+        return true;
+      }
+      
+      // Buscar también en contenido de f-strings
+      if (fStringContent && mixedPattern.test(fStringContent)) {
+        return true;
+      }
+      
+      // Buscar también en strings literales
+      for (var i = 0; i < extractedStrings.length; i++) {
+        var str = extractedStrings[i];
+        // Primero intentar con el patrón de límites de palabra
+        if (mixedPattern.test(str)) {
+          return true;
+        }
+        // Si no funciona (por caracteres acentuados), buscar como substring exacto
+        // o con límites de palabra más flexibles (espacios, inicio/fin de string, puntuación)
+        var flexiblePattern = new RegExp('(^|[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9_])' + escapedKeyword + '([^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9_]|$)', 'g');
+        if (flexiblePattern.test(str)) {
+          return true;
+        }
+        // También verificar si el string es exactamente igual a la keyword
+        if (str === keyword) {
+          return true;
+        }
+      }
+      
+      return false;
     }
     
     // Para operadores y símbolos especiales (ej: "=", "+", "**", "==")
@@ -920,7 +2099,13 @@ H5P.PythonTerminal = (function ($, Question) {
         operatorPattern = new RegExp('(^|[^=!<>])' + escapedKeyword + '([^=]|$)', 'g');
       } else if (keyword === '==') {
         // Para "==", buscar exactamente "=="
-        operatorPattern = new RegExp('[^=]' + escapedKeyword + '[^=]|^' + escapedKeyword + '[^=]|[^=]' + escapedKeyword + '$|^' + escapedKeyword + '$', 'g');
+        // Buscar == que no sea parte de === (evitar falsos positivos)
+        operatorPattern = new RegExp(escapedKeyword + '(?![=])', 'g');
+      } else if (keyword === '!=' || keyword === '>=' || keyword === '<=') {
+        // Para operadores de comparación compuestos (!=, >=, <=), buscar exactamente el operador
+        // Evitar que sea parte de otro operador (ej: != no debe coincidir con !==)
+        // Buscar el operador que no esté seguido de otro = (evitar !==, >=, <=)
+        operatorPattern = new RegExp(escapedKeyword + '(?![=])', 'g');
       } else if (keyword.length > 1 && keyword[0] === keyword[1]) {
         // Operadores dobles como "**", "//", "&&", "||"
         operatorPattern = new RegExp(escapedKeyword, 'g');
@@ -930,7 +2115,8 @@ H5P.PythonTerminal = (function ($, Question) {
         operatorPattern = new RegExp('(^|[^' + escapedOp + '])' + escapedKeyword + '([^' + escapedOp + ']|$)', 'g');
       }
       
-      return operatorPattern.test(codeWithoutStrings);
+      // Buscar el operador tanto en el código principal como en expresiones de f-strings
+      return operatorPattern.test(codeWithoutStrings) || (fStringContent && operatorPattern.test(fStringContent));
     }
     
     // Para otros casos, usar validación por límite de palabra
@@ -988,7 +2174,6 @@ H5P.PythonTerminal = (function ($, Question) {
       // Permitir: a-z, A-Z, áéíóú, ñ, ü, etc.
       var lettersPattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]+$/;
       var result = lettersPattern.test(strWithoutSpaces) || strWithoutSpaces === '';
-      console.log('[DEBUG] validateStringFormat - str:', JSON.stringify(str), 'strWithoutSpaces:', JSON.stringify(strWithoutSpaces), 'format:', format, 'result:', result);
       return result;
     }
     
@@ -1004,7 +2189,303 @@ H5P.PythonTerminal = (function ($, Question) {
       return mixedPattern.test(strWithoutSpaces) || strWithoutSpaces === '';
     }
     
+    if (format === 'letters_and_special') {
+      // Letras y caracteres especiales comunes (a-z, A-Z, acentos, :, ., ,, ;, !, ?, -, _, etc.)
+      // Permitir letras, acentos y caracteres especiales comunes de puntuación y símbolos (SIN números)
+      var lettersSpecialPattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s:.,;!?\-_()\[\]{}'"\/\\+=*&%$#@~`|<>]+$/;
+      return lettersSpecialPattern.test(str) || str === '';
+    }
+    
     return true; // Formato desconocido, no restringir
+  };
+
+  /**
+   * Validar formato de mayúsculas/minúsculas de un string
+   * @param {string} str - String a validar
+   * @param {string} caseFormat - Formato esperado: 'upper', 'lower', 'title', 'capitalize'
+   * @return {boolean} true si el string cumple con el formato
+   */
+  PythonTerminal.prototype.validateStringCase = function(str, caseFormat) {
+    if (!caseFormat || caseFormat === '') {
+      return true; // Sin restricción de formato
+    }
+    
+    if (!str || str === '') {
+      return true; // String vacío siempre válido
+    }
+    
+    // Obtener solo las letras (sin espacios, números, caracteres especiales)
+    var lettersOnly = str.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]/g, '');
+    
+    if (lettersOnly === '') {
+      return true; // Si no hay letras, no se puede validar formato
+    }
+    
+    if (caseFormat === 'upper') {
+      // Todas las letras deben estar en mayúscula
+      return lettersOnly === lettersOnly.toUpperCase();
+    }
+    
+    if (caseFormat === 'lower') {
+      // Todas las letras deben estar en minúscula
+      return lettersOnly === lettersOnly.toLowerCase();
+    }
+    
+    if (caseFormat === 'title') {
+      // Primera letra de cada palabra en mayúscula
+      // Dividir por espacios y validar cada palabra
+      var words = str.split(/\s+/);
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        if (word.length > 0) {
+          var firstLetter = word.match(/[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]/);
+          if (firstLetter) {
+            var firstChar = firstLetter[0];
+            var restOfWord = word.substring(firstLetter.index + 1);
+            // La primera letra debe ser mayúscula
+            if (!/[A-ZÁÉÍÓÚÑÜ]/.test(firstChar)) {
+              return false;
+            }
+            // El resto de las letras deben ser minúsculas
+            var restLetters = restOfWord.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]/g, '');
+            if (restLetters !== '' && restLetters !== restLetters.toLowerCase()) {
+              return false;
+            }
+          }
+        }
+      }
+      return true;
+    }
+    
+    if (caseFormat === 'capitalize') {
+      // Solo la primera letra del string en mayúscula, el resto en minúscula
+      var firstLetter = str.match(/[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]/);
+      if (firstLetter) {
+        var firstChar = firstLetter[0];
+        var restOfString = str.substring(firstLetter.index + 1);
+        // La primera letra debe ser mayúscula
+        if (!/[A-ZÁÉÍÓÚÑÜ]/.test(firstChar)) {
+          return false;
+        }
+        // El resto de las letras deben ser minúsculas
+        var restLetters = restOfString.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]/g, '');
+        if (restLetters !== '' && restLetters !== restLetters.toLowerCase()) {
+          return false;
+        }
+        return true;
+      }
+      return true; // Si no hay letras, es válido
+    }
+    
+    return true; // Formato desconocido, no restringir
+  };
+
+  /**
+   * Normalizar patrón regex para corregir doble escape
+   * @param {string} pattern - Patrón regex que puede tener doble escape
+   * @return {string} Patrón normalizado
+   */
+  PythonTerminal.prototype.normalizeRegexPattern = function(pattern) {
+    if (!pattern) return pattern;
+    
+    // Si el patrón tiene doble escape (\\\\), reducirlo a escape simple (\\)
+    // Esto corrige el problema cuando H5P guarda el JSON con doble escape
+    // Ejemplo: "\\\\d" se convierte en "\\d" (correcto para RegExp)
+    // Nota: En JavaScript, cuando se lee del JSON parseado, \\\\ ya se convierte a \\,
+    // pero si hay un escape adicional en el almacenamiento, esto lo corrige
+    var normalized = pattern.replace(/\\\\/g, '\\');
+    
+    return normalized;
+  };
+
+  /**
+   * Validar listas según configuración
+   * @param {string} code - Código Python ejecutado
+   * @param {Object} exercise - Ejercicio con validación
+   * @return {Object} {valid: boolean, errors: Array}
+   */
+  PythonTerminal.prototype.validateLists = function(code, exercise) {
+    const self = this;
+    var errors = [];
+    var valid = true;
+    
+    if (!exercise.validation || !exercise.validation.listValidation || !Array.isArray(exercise.validation.listValidation)) {
+      return {valid: true, errors: []};
+    }
+    
+    var listValidation = exercise.validation.listValidation;
+    
+    // Si no hay listas para validar, retornar válido
+    if (listValidation.length === 0) {
+      return {valid: true, errors: []};
+    }
+    
+    try {
+      // Acceder al namespace global de Pyodide
+      var pyodide = self.pyodide;
+      if (!pyodide || !pyodide.globals) {
+        return {valid: false, errors: ['Pyodide no está inicializado. Ejecuta el código primero.']};
+      }
+      
+      // Validar cada lista configurada
+      for (var i = 0; i < listValidation.length; i++) {
+        var listConfig = listValidation[i];
+        var varName = listConfig.variableName;
+        
+        if (!varName || varName.trim() === '') continue;
+        
+        // Obtener la variable del namespace de Python
+        try {
+          var pythonList = pyodide.globals.get(varName);
+          
+          if (pythonList === undefined || pythonList === null) {
+            errors.push('La variable \'' + varName + '\' no está definida');
+            valid = false;
+            continue;
+          }
+          
+          // Verificar que sea una lista o tupla
+          // Intentar convertir a JavaScript
+          var jsList = null;
+          try {
+            if (pythonList.toJs && typeof pythonList.toJs === 'function') {
+              jsList = pythonList.toJs({depth: 1});
+            } else {
+              // Intentar acceder directamente si es un proxy de Pyodide
+              jsList = pythonList;
+            }
+          } catch (e) {
+            errors.push('Error al convertir \'' + varName + '\' a JavaScript: ' + e.message);
+            valid = false;
+            continue;
+          }
+          
+          if (!Array.isArray(jsList)) {
+            errors.push('\'' + varName + '\' no es una lista (tipo: ' + typeof jsList + ')');
+            valid = false;
+            continue;
+          }
+          
+          // Validar tamaño
+          var listSize = jsList.length;
+          
+          // Validar tamaño mínimo
+          if (listConfig.minSize !== undefined && listConfig.minSize !== null && listSize < listConfig.minSize) {
+            errors.push('\'' + varName + '\' debe tener al menos ' + listConfig.minSize + ' elementos (tiene ' + listSize + ')');
+            valid = false;
+          }
+          
+          // Validar tamaño máximo
+          if (listConfig.maxSize !== undefined && listConfig.maxSize !== null && listSize > listConfig.maxSize) {
+            errors.push('\'' + varName + '\' debe tener como máximo ' + listConfig.maxSize + ' elementos (tiene ' + listSize + ')');
+            valid = false;
+          }
+          
+          // Validar que tenga el mismo tamaño que otra lista
+          if (listConfig.mustMatchSize && listConfig.mustMatchSize.trim() !== '') {
+            try {
+              var otherList = pyodide.globals.get(listConfig.mustMatchSize);
+              if (otherList === undefined || otherList === null) {
+                errors.push('La variable \'' + listConfig.mustMatchSize + '\' no está definida');
+                valid = false;
+              } else {
+                var otherJsList = null;
+                try {
+                  if (otherList.toJs && typeof otherList.toJs === 'function') {
+                    otherJsList = otherList.toJs({depth: 1});
+                  } else {
+                    otherJsList = otherList;
+                  }
+                } catch (e) {
+                  errors.push('Error al convertir \'' + listConfig.mustMatchSize + '\' a JavaScript: ' + e.message);
+                  valid = false;
+                  continue;
+                }
+                
+                if (!Array.isArray(otherJsList)) {
+                  errors.push('\'' + listConfig.mustMatchSize + '\' no es una lista');
+                  valid = false;
+                } else if (listSize !== otherJsList.length) {
+                  errors.push('\'' + varName + '\' debe tener el mismo tamaño que \'' + listConfig.mustMatchSize + '\' (' + listSize + ' vs ' + otherJsList.length + ')');
+                  valid = false;
+                }
+              }
+            } catch (e) {
+              errors.push('Error al validar tamaño con \'' + listConfig.mustMatchSize + '\': ' + e.message);
+              valid = false;
+            }
+          }
+          
+          // Validar tipo de elementos
+          if (listConfig.elementType && listConfig.elementType.trim() !== '') {
+            var expectedType = listConfig.elementType;
+            for (var j = 0; j < jsList.length; j++) {
+              var element = jsList[j];
+              var elementType = typeof element;
+              var typeMatches = false;
+              
+              // Mapear tipos de JavaScript a Python
+              if (expectedType === 'str') {
+                // String puede ser string de JS o String object
+                typeMatches = (elementType === 'string' || element instanceof String);
+              } else if (expectedType === 'int') {
+                // Entero debe ser número y entero
+                typeMatches = (elementType === 'number' && Number.isInteger(element));
+              } else if (expectedType === 'float') {
+                // Float es cualquier número
+                typeMatches = (elementType === 'number');
+              } else if (expectedType === 'bool') {
+                // Booleano
+                typeMatches = (elementType === 'boolean');
+              }
+              
+              if (!typeMatches) {
+                var elementStr = String(element);
+                if (elementStr.length > 20) {
+                  elementStr = elementStr.substring(0, 20) + '...';
+                }
+                errors.push('El elemento en índice ' + j + ' de \'' + varName + '\' debe ser de tipo ' + expectedType + ' (es ' + elementType + ': ' + elementStr + ')');
+                valid = false;
+              }
+            }
+          }
+          
+          // Validar valores permitidos
+          if (listConfig.allowedValues && Array.isArray(listConfig.allowedValues) && listConfig.allowedValues.length > 0) {
+            for (var j = 0; j < jsList.length; j++) {
+              var element = String(jsList[j]);
+              var isValidValue = false;
+              
+              for (var k = 0; k < listConfig.allowedValues.length; k++) {
+                if (element === String(listConfig.allowedValues[k])) {
+                  isValidValue = true;
+                  break;
+                }
+              }
+              
+              if (!isValidValue) {
+                var elementStr = element;
+                if (elementStr.length > 20) {
+                  elementStr = elementStr.substring(0, 20) + '...';
+                }
+                errors.push('El elemento en índice ' + j + ' de \'' + varName + '\' tiene un valor no permitido: ' + elementStr + '. Valores permitidos: ' + listConfig.allowedValues.join(', '));
+                valid = false;
+              }
+            }
+          }
+          
+        } catch (e) {
+          errors.push('Error al validar \'' + varName + '\': ' + e.message);
+          valid = false;
+        }
+      }
+      
+    } catch (e) {
+      errors.push('Error general en validación de listas: ' + e.message);
+      valid = false;
+    }
+    
+    return {valid: valid, errors: errors};
   };
 
   /**
@@ -1014,28 +2495,76 @@ H5P.PythonTerminal = (function ($, Question) {
    * @param {string} context - 'input' o 'output' para contexto
    * @param {Array} capturedInputs - Valores capturados de input() (opcional, para validación en tiempo de ejecución)
    * @param {string} executionOutput - Salida capturada de la ejecución (opcional, para validación en tiempo de ejecución)
+   * @param {string} caseFormat - Formato de mayúsculas/minúsculas esperado (opcional)
+   * @param {number} inputIndex - Índice del input a validar (opcional, por defecto el último)
    * @return {boolean} true si hay al menos un string que cumple el formato
    */
-  PythonTerminal.prototype.validateStringsInCode = function(code, format, context, capturedInputs, executionOutput) {
-    if (!format || format === '') {
-      return true; // Sin restricción de formato
+  PythonTerminal.prototype.validateStringsInCode = function(code, format, context, capturedInputs, executionOutput, caseFormat, inputIndex) {
+    // Determinar qué input validar
+    var inputToValidate = null;
+    if (context === 'input' && capturedInputs && capturedInputs.length > 0) {
+      if (inputIndex !== undefined && inputIndex !== null && inputIndex >= 0 && inputIndex < capturedInputs.length) {
+        // Usar el índice especificado
+        inputToValidate = capturedInputs[inputIndex];
+      } else {
+        // Por defecto, usar el último input (comportamiento anterior)
+        inputToValidate = capturedInputs[capturedInputs.length - 1];
+      }
     }
     
-    // Validación en tiempo de ejecución: usar valores capturados
-    if (context === 'input' && capturedInputs && capturedInputs.length > 0) {
-      // Validar el último valor ingresado (o todos si es necesario)
-      var lastInput = capturedInputs[capturedInputs.length - 1];
-      if (lastInput && lastInput.value !== null && lastInput.value !== undefined) {
-        return this.validateStringFormat(lastInput.value, format);
+    // Validar formato de contenido si está especificado
+    var formatValid = true;
+    if (format && format !== '') {
+      // Validación en tiempo de ejecución: usar valores capturados
+      if (inputToValidate && inputToValidate.value !== null && inputToValidate.value !== undefined) {
+        formatValid = this.validateStringFormat(inputToValidate.value, format);
+      }
+    }
+    
+    // Validar formato de mayúsculas/minúsculas si está especificado
+    var caseValid = true;
+    if (caseFormat && caseFormat !== '') {
+      if (inputToValidate && inputToValidate.value !== null && inputToValidate.value !== undefined) {
+        caseValid = this.validateStringCase(inputToValidate.value, caseFormat);
+      } else if (context === 'input') {
+        // Si no hay input en el índice específico, usar el último como fallback
+        if (capturedInputs && capturedInputs.length > 0) {
+          // Usar el último input como fallback
+          var lastInput = capturedInputs[capturedInputs.length - 1];
+          if (lastInput && lastInput.value !== null && lastInput.value !== undefined) {
+            caseValid = this.validateStringCase(lastInput.value, caseFormat);
+          } else {
+            caseValid = false;
+          }
+        } else {
+          caseValid = false;
+        }
+      }
+    }
+    
+    // Si hay validación de formato de contenido, debe cumplirse
+    if (format && format !== '') {
+      if (!formatValid) {
+        return false;
+      }
+    }
+    
+    // Si hay validación de case, debe cumplirse
+    if (caseFormat && caseFormat !== '') {
+      if (!caseValid) {
+        return false;
+      }
+    }
+    
+    // Si solo se valida case y no hay formato de contenido, continuar con validación de output
+    if ((!format || format === '') && caseFormat && caseFormat !== '') {
+      // Para input, ya validamos arriba
+      if (context === 'input') {
+        return caseValid;
       }
     }
     
     if (context === 'output' && executionOutput && executionOutput !== '') {
-      // Debug: mostrar qué se está validando
-      console.log('[DEBUG] Validando salida de output:');
-      console.log('[DEBUG] - Salida completa original:', JSON.stringify(executionOutput));
-      console.log('[DEBUG] - Formato esperado:', format);
-      
       // Remover el prompt de input() de la salida capturada
       // Los prompts suelen tener el formato: "texto: " al inicio
       var cleanedOutput = executionOutput;
@@ -1045,7 +2574,6 @@ H5P.PythonTerminal = (function ($, Question) {
       var promptPattern = /^[^:]*:\s*/;
       if (promptPattern.test(cleanedOutput)) {
         cleanedOutput = cleanedOutput.replace(promptPattern, '');
-        console.log('[DEBUG] - Salida después de remover prompt:', JSON.stringify(cleanedOutput));
       }
       
       // También remover si empieza con "Ingresa" o "Ingrese" (sin dos puntos)
@@ -1054,7 +2582,6 @@ H5P.PythonTerminal = (function ($, Question) {
         var colonIndex = cleanedOutput.indexOf(':');
         if (colonIndex !== -1) {
           cleanedOutput = cleanedOutput.substring(colonIndex + 1).trim();
-          console.log('[DEBUG] - Salida después de remover prompt (alternativo):', JSON.stringify(cleanedOutput));
         }
       }
       
@@ -1112,7 +2639,6 @@ H5P.PythonTerminal = (function ($, Question) {
         
         // Si detectamos múltiples líneas, usarlas; si no, usar la original
         if (detectedLines.length > 1) {
-          console.log('[DEBUG] - Detectadas', detectedLines.length, 'líneas por transición de caso:', detectedLines);
           lines = detectedLines;
         }
       }
@@ -1120,48 +2646,48 @@ H5P.PythonTerminal = (function ($, Question) {
       var validLinesFound = 0;
       var totalValidLines = 0; // Contar líneas que deben ser validadas (no vacías, no filtradas)
       
-      console.log('[DEBUG] - Líneas encontradas:', lines.length);
-      
       for (var i = 0; i < lines.length; i++) {
         var line = lines[i].trim(); // Remover espacios al inicio/final
         
-        console.log('[DEBUG] - Línea ' + i + ':', JSON.stringify(line));
-        
         // Filtrar líneas que parecen ser prompts o valores ingresados
         // (líneas que empiezan con ">>> " o contienen prompts comunes)
+        // También filtrar líneas que terminan con ":" (prompts de input como "Edad:", "Sueldo:", etc.)
         if (line.indexOf('>>> ') === 0 || 
             line.indexOf('Ingresa') === 0 || 
             line.indexOf('Ingrese') === 0 ||
             line.indexOf('Nombre:') === 0 ||
-            line.indexOf('nombre:') === 0) {
-          console.log('[DEBUG] - Línea ' + i + ' filtrada (es prompt)');
+            line.indexOf('nombre:') === 0 ||
+            (line.length > 0 && line[line.length - 1] === ':')) {
           continue; // Saltar estas líneas
         }
         
         if (line !== '') { // Ignorar líneas vacías
           totalValidLines++; // Esta línea debe ser validada
-          var isValid = this.validateStringFormat(line, format);
-          console.log('[DEBUG] - Línea ' + i + ' válida?', isValid);
+          var isValid = true;
+          
+          // Validar formato de contenido si está especificado
+          if (format && format !== '') {
+            isValid = this.validateStringFormat(line, format);
+          }
+          
+          // Validar formato de mayúsculas/minúsculas si está especificado
+          if (isValid && caseFormat && caseFormat !== '') {
+            isValid = this.validateStringCase(line, caseFormat);
+          }
+          
           if (isValid) {
             validLinesFound++;
           }
-        } else {
-          console.log('[DEBUG] - Línea ' + i + ' vacía, ignorada');
         }
       }
-      
-      console.log('[DEBUG] - Total líneas a validar:', totalValidLines);
-      console.log('[DEBUG] - Líneas válidas encontradas:', validLinesFound);
       
       // Validación estricta: TODAS las líneas deben cumplir el formato
       if (totalValidLines > 0) {
         var allLinesValid = validLinesFound === totalValidLines;
-        console.log('[DEBUG] - Resultado final (todas válidas?):', allLinesValid);
         return allLinesValid; // Todas las líneas deben cumplir el formato
-      } else {
-        console.log('[DEBUG] - Resultado final: false (no hay líneas a validar)');
-        return false; // No hay líneas válidas para validar
       }
+      // Si no hay líneas válidas para validar, continuar con el fallback
+      // (no retornar false aquí, permitir que el código continúe con el fallback)
     }
     
     // Fallback: validación desde código fuente (solo para strings literales)
@@ -1179,9 +2705,11 @@ H5P.PythonTerminal = (function ($, Question) {
     // No podemos validar el formato desde el código fuente, así que aceptamos
     if (context === 'output') {
       // Verificar que haya métodos de string o variables en print()
+      // Incluir también string.capwords y otras funciones del módulo string
       var hasStringMethods = /\.(lower|upper|title|capitalize|swapcase|strip|lstrip|rstrip)\s*\(/.test(code);
+      var hasStringModule = /(import\s+string|from\s+string\s+import|string\.(capwords|lower|upper|title|capitalize))/.test(code);
       var hasPrintWithVariable = /print\s*\([^)]*[a-zA-Z_][a-zA-Z0-9_]*/.test(code);
-      if (hasStringMethods || hasPrintWithVariable) {
+      if (hasStringMethods || hasStringModule || hasPrintWithVariable) {
         return true; // Aceptar automáticamente si hay métodos de string o variables
       }
     }
@@ -1234,404 +2762,33 @@ H5P.PythonTerminal = (function ($, Question) {
   };
 
   /**
-   * Verificar si se completó un ejercicio requerido
+   * Decodificar entidades HTML comunes
+   * @param {string} str - String con entidades HTML
+   * @return {string} String decodificado
    */
-  PythonTerminal.prototype.checkExerciseCompletion = function(code, success) {
-    const self = this;
+  PythonTerminal.prototype.decodeHTMLEntities = function(str) {
+    if (!str) return str;
     
-    if (!success) {
-      // Si hay error, mostrar feedback pero no validar
-      return;
-    }
-    
-    // Verificar que requiredExercises existe y es un array
-    if (!self.params.requiredExercises || !Array.isArray(self.params.requiredExercises)) {
-      console.warn('requiredExercises no está definido o no es un array');
-      return;
-    }
-    
-    if (self.params.requiredExercises.length === 0) {
-      return;
-    }
-    
-    var exerciseCompleted = false;
-    var previousScore = self.score;
-    
-    self.params.requiredExercises.forEach(function(exercise, index) {
-      // SIEMPRE revalidar, incluso si ya está completado
-      // Esto permite detectar cuando un ejercicio que estaba correcto ahora falla
-      var wasCompleted = self.completedExercises.indexOf(index) !== -1;
+    // Intentar usar el método del DOM si está disponible
+    if (typeof document !== 'undefined') {
+      var textarea = document.createElement('textarea');
+      textarea.innerHTML = str;
+      var decoded = textarea.value;
       
-      // Verificar si el código contiene la solución esperada
-      if (exercise && exercise.validation) {
-        // Validación tipo "contains" (palabras clave en código)
-        if (exercise.validation.type === 'contains') {
-        // Verificar que keywords existe y es un array
-        if (!exercise.validation.keywords || !Array.isArray(exercise.validation.keywords)) {
-          console.warn('keywords no está definido para el ejercicio:', exercise.name || index);
-          return;
-        }
-        
-        var matches = true;
-        var missingKeywords = [];
-        var foundKeywords = [];
-        
-        // Verificar si la validación estricta está habilitada (por defecto true)
-        var strictValidation = exercise.validation.strictValidation !== false;
-        
-        // Lista de funciones comunes que requieren llamada con paréntesis
-        var functionsRequiringCall = [
-          // Funciones básicas de entrada/salida
-          'input', 'print',
-          // Funciones de conversión de tipo
-          'int', 'float', 'str', 'bool',
-          // Funciones de utilidad
-          'len', 'range', 'abs', 'round', 'min', 'max', 'sum',
-          // Métodos de string
-          'lower', 'upper', 'title', 'split', 'join', 'strip', 'replace', 'count',
-          // Métodos de lista
-          'append', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort',
-          // Funciones de conversión y estructura
-          'set', 'list', 'dict', 'tuple',
-          // Funciones de iteración
-          'zip', 'enumerate', 'map', 'filter'
-        ];
-        
-        // Validar palabras clave
-        exercise.validation.keywords.forEach(function(keyword) {
-          if (!keyword) return;
-          
-          var keywordLower = keyword.toLowerCase();
-          var keywordFound = false;
-          
-          // Si la validación estricta está desactivada, usar validación simple
-          if (!strictValidation) {
-            if (code.indexOf(keyword) !== -1) {
-              keywordFound = true;
-              foundKeywords.push(keyword);
-            } else {
-              matches = false;
-              missingKeywords.push(keyword);
-            }
-            return;
-          }
-          
-          // Validación estricta activada
-          // Si es el operador '=', validar que haya una asignación correcta
-          if (keyword === '=') {
-            if (self.hasValidAssignment(code)) {
-              keywordFound = true;
-              foundKeywords.push('asignación con =');
-            } else {
-              matches = false;
-              missingKeywords.push('asignación con = (ej: variable = valor)');
-            }
-          } 
-          // Si es una función que requiere llamada, validar uso correcto
-          else if (functionsRequiringCall.indexOf(keywordLower) !== -1) {
-            if (self.isKeywordUsedAsFunction(code, keyword)) {
-              keywordFound = true;
-              foundKeywords.push(keyword + '()');
-            } else {
-              matches = false;
-              missingKeywords.push(keyword + '() (debe ser una función, no un string)');
-            }
-          }
-          // Para otras palabras clave (métodos, variables, etc.), validar existencia
-          else {
-            // Usar validación mejorada que verifica palabras completas, números y combinaciones
-            if (self.isValidWordOrNumber(code, keyword)) {
-              keywordFound = true;
-              foundKeywords.push(keyword);
-            } else {
-              matches = false;
-              missingKeywords.push(keyword);
-            }
-          }
-        });
-        
-        // Validar tipo de dato de entrada si está especificado
-        if (matches && exercise.validation.inputType && exercise.validation.inputType !== '') {
-          // Verificar que input() esté siendo usado correctamente
-          var hasInput = self.isKeywordUsedAsFunction(code, 'input');
-          
-          if (hasInput) {
-            if (exercise.validation.inputType !== 'str') {
-              // Verificar que la conversión de tipo esté presente
-              // Buscar patrones como: int(input( o float(input(
-              var conversionPattern = new RegExp(exercise.validation.inputType.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*\\([^)]*input\\s*\\(', 'g');
-              
-              // Remover strings para evitar falsos positivos
-              var codeWithoutStrings = code.replace(/'([^'\\]|\\.)*'/g, '').replace(/"([^"\\]|\\.)*"/g, '');
-              
-              if (!conversionPattern.test(codeWithoutStrings)) {
-                // Verificar si están en líneas separadas
-                var lines = code.split('\n');
-                var hasInputType = false;
-                for (var i = 0; i < lines.length; i++) {
-                  var lineWithoutStrings = lines[i].replace(/'([^'\\]|\\.)*'/g, '').replace(/"([^"\\]|\\.)*"/g, '');
-                  if (lineWithoutStrings.indexOf('input') !== -1 && 
-                      lineWithoutStrings.indexOf(exercise.validation.inputType) !== -1) {
-                    hasInputType = true;
-                    break;
-                  }
-                }
-                if (!hasInputType) {
-                  matches = false;
-                  missingKeywords.push('conversión a ' + exercise.validation.inputType + ' (ej: ' + exercise.validation.inputType + '(input(...)))');
-                }
-              }
-            } else if (exercise.validation.inputType === 'str' && exercise.validation.inputStringFormat && exercise.validation.inputStringFormat !== '') {
-              // Validar formato del string de entrada (usar valores capturados en tiempo de ejecución)
-              if (!self.validateStringsInCode(code, exercise.validation.inputStringFormat, 'input', self.capturedInputs)) {
-                matches = false;
-                var formatDescription = '';
-                if (exercise.validation.inputStringFormat === 'letters_only') {
-                  formatDescription = 'solo letras';
-                } else if (exercise.validation.inputStringFormat === 'numbers_only') {
-                  formatDescription = 'solo números';
-                } else if (exercise.validation.inputStringFormat === 'letters_and_numbers') {
-                  formatDescription = 'letras y números';
-                }
-                missingKeywords.push('string de entrada debe contener ' + formatDescription);
-              }
-            }
-          }
-        }
-        
-        // Validar tipo de dato de salida si está especificado
-        if (matches && exercise.validation.outputType && exercise.validation.outputType !== '') {
-          if (exercise.validation.outputType === 'str') {
-            // Si es string, validar formato si está especificado (usar salida capturada en tiempo de ejecución)
-            if (exercise.validation.outputStringFormat && exercise.validation.outputStringFormat !== '') {
-              // Debug: mostrar qué se está validando
-              console.log('[DEBUG] Ejercicio:', exercise.name || 'Sin nombre');
-              console.log('[DEBUG] - Salida capturada completa:', JSON.stringify(self.currentExecutionOutput));
-              console.log('[DEBUG] - Formato esperado:', exercise.validation.outputStringFormat);
-              console.log('[DEBUG] - Código:', code.substring(0, 100) + '...');
-              
-              if (!self.validateStringsInCode(code, exercise.validation.outputStringFormat, 'output', null, self.currentExecutionOutput)) {
-                matches = false;
-                var formatDescription = '';
-                if (exercise.validation.outputStringFormat === 'letters_only') {
-                  formatDescription = 'solo letras';
-                } else if (exercise.validation.outputStringFormat === 'numbers_only') {
-                  formatDescription = 'solo números';
-                } else if (exercise.validation.outputStringFormat === 'letters_and_numbers') {
-                  formatDescription = 'letras y números';
-                }
-                missingKeywords.push('string de salida debe contener ' + formatDescription);
-              }
-            }
-          } else {
-            // Verificar que el tipo de dato esté en el código (puede estar en variables o directamente en print)
-            var hasOutputType = code.indexOf(exercise.validation.outputType) !== -1;
-            if (!hasOutputType) {
-              // Si no es string, debe haber conversión explícita
-              matches = false;
-              missingKeywords.push('tipo de salida ' + exercise.validation.outputType);
-            }
-          }
-        }
-        
-        if (matches) {
-          // Si no estaba completado, agregarlo
-          if (!wasCompleted) {
-            self.completedExercises.push(index);
-            self.score++;
-            exerciseCompleted = true;
-            var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-            self.addOutput('', 'info');
-            self.addOutput('✅ ¡Ejercicio completado: ' + exerciseName + '! +1 punto', 'success');
-            
-            // Actualizar maxScore si es necesario
-            if (self.maxScore !== self.params.requiredExercises.length) {
-              self.maxScore = self.params.requiredExercises.length;
-            }
-            
-            // Mostrar puntuación actual
-            var currentPercentage = Math.round((self.score / self.maxScore) * 100);
-            self.addOutput('📊 Puntuación actual: ' + self.score + '/' + self.maxScore + ' (' + currentPercentage + '%)', 'info');
-          }
-          // Si ya estaba completado, no hacer nada (ya está en la lista)
-        } else {
-          // Si no cumple y estaba completado, removerlo
-          if (wasCompleted) {
-            var exerciseIndex = self.completedExercises.indexOf(index);
-            if (exerciseIndex !== -1) {
-              self.completedExercises.splice(exerciseIndex, 1);
-              self.score = Math.max(0, self.score - 1); // No permitir score negativo
-              exerciseCompleted = true; // Marcar que hubo cambio
-              var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-              self.addOutput('', 'info');
-              self.addOutput('⚠️ ' + exerciseName + ': Ya no cumple los requisitos. -1 punto', 'warning');
-              
-              // Actualizar maxScore si es necesario
-              if (self.maxScore !== self.params.requiredExercises.length) {
-                self.maxScore = self.params.requiredExercises.length;
-              }
-              
-              // Mostrar puntuación actual
-              var currentPercentage = Math.round((self.score / self.maxScore) * 100);
-              self.addOutput('📊 Puntuación actual: ' + self.score + '/' + self.maxScore + ' (' + currentPercentage + '%)', 'info');
-            }
-          }
-          
-          // Mostrar feedback detallado de qué falta y qué se encontró
-          if (missingKeywords.length > 0) {
-            var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-            self.addOutput('', 'info');
-            self.addOutput('⚠️ ' + exerciseName + ': Faltan elementos requeridos', 'warning');
-            
-            // Mostrar qué se encontró
-            if (foundKeywords.length > 0) {
-              self.addOutput('   ✅ Encontrados: ' + foundKeywords.join(', '), 'info');
-            }
-            
-            // Mostrar qué falta específicamente
-            self.addOutput('   ❌ Faltan: ' + missingKeywords.join(', '), 'warning');
-          }
-        }
-        }
-        // Validación tipo "output" (salida contiene texto específico)
-        else if (exercise.validation.type === 'output') {
-          var matches = true;
-          var missingOutputs = [];
-          
-          // Obtener la salida de la última ejecución
-          var lastExecution = self.executionHistory.length > 0 
-            ? self.executionHistory[self.executionHistory.length - 1] 
-            : null;
-          
-          if (!lastExecution || !lastExecution.success) {
-            // Si no hay ejecución exitosa, no validar salida
-            return;
-          }
-          
-          // Obtener salida capturada (stdout + result)
-          var output = lastExecution.output || '';
-          if (lastExecution.result !== undefined && lastExecution.result !== null) {
-            output += String(lastExecution.result);
-          }
-          
-          // Normalizar salida (minúsculas, sin espacios extra)
-          var normalizedOutput = output.toLowerCase().trim();
-          
-          // Validar salida esperada si está especificada
-          if (exercise.validation.expectedOutput) {
-            var expectedOutput = exercise.validation.expectedOutput;
-            var normalizedExpected = expectedOutput.toLowerCase().trim();
-            
-            // Verificar si la salida contiene el texto esperado
-            if (normalizedOutput.indexOf(normalizedExpected) === -1) {
-              matches = false;
-              missingOutputs.push('salida esperada: "' + expectedOutput + '"');
-            }
-          }
-          
-          // Validar múltiples salidas esperadas si están especificadas
-          if (exercise.validation.expectedOutputs && Array.isArray(exercise.validation.expectedOutputs)) {
-            exercise.validation.expectedOutputs.forEach(function(expected) {
-              if (expected && normalizedOutput.indexOf(expected.toLowerCase().trim()) === -1) {
-                matches = false;
-                missingOutputs.push('salida esperada: "' + expected + '"');
-              }
-            });
-          }
-          
-          // Validar patrón regex si está especificado
-          if (exercise.validation.outputPattern) {
-            try {
-              var pattern = new RegExp(exercise.validation.outputPattern, 'i'); // case insensitive
-              if (!pattern.test(output)) {
-                matches = false;
-                missingOutputs.push('patrón de salida: ' + exercise.validation.outputPattern);
-              }
-            } catch (e) {
-              console.warn('Patrón regex inválido:', exercise.validation.outputPattern);
-            }
-          }
-          
-          if (matches) {
-            // Si no estaba completado, agregarlo
-            if (!wasCompleted) {
-              self.completedExercises.push(index);
-              self.score++;
-              exerciseCompleted = true;
-              var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-              self.addOutput('', 'info');
-              self.addOutput('✅ ¡Ejercicio completado: ' + exerciseName + '! +1 punto', 'success');
-              
-              // Actualizar maxScore si es necesario
-              if (self.maxScore !== self.params.requiredExercises.length) {
-                self.maxScore = self.params.requiredExercises.length;
-              }
-              
-              // Mostrar puntuación actual
-              var currentPercentage = Math.round((self.score / self.maxScore) * 100);
-              self.addOutput('📊 Puntuación actual: ' + self.score + '/' + self.maxScore + ' (' + currentPercentage + '%)', 'info');
-            }
-            // Si ya estaba completado, no hacer nada (ya está en la lista)
-          } else {
-            // Si no cumple y estaba completado, removerlo
-            if (wasCompleted) {
-              var exerciseIndex = self.completedExercises.indexOf(index);
-              if (exerciseIndex !== -1) {
-                self.completedExercises.splice(exerciseIndex, 1);
-                self.score = Math.max(0, self.score - 1); // No permitir score negativo
-                exerciseCompleted = true; // Marcar que hubo cambio
-                var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-                self.addOutput('', 'info');
-                self.addOutput('⚠️ ' + exerciseName + ': Ya no cumple los requisitos. -1 punto', 'warning');
-                
-                // Actualizar maxScore si es necesario
-                if (self.maxScore !== self.params.requiredExercises.length) {
-                  self.maxScore = self.params.requiredExercises.length;
-                }
-                
-                // Mostrar puntuación actual
-                var currentPercentage = Math.round((self.score / self.maxScore) * 100);
-                self.addOutput('📊 Puntuación actual: ' + self.score + '/' + self.maxScore + ' (' + currentPercentage + '%)', 'info');
-              }
-            }
-            
-            // Mostrar feedback sobre salida faltante
-            if (missingOutputs.length > 0) {
-              var exerciseName = exercise.name || 'Ejercicio ' + (index + 1);
-              self.addOutput('', 'info');
-              self.addOutput('⚠️ ' + exerciseName + ': La salida no coincide con lo esperado', 'warning');
-              self.addOutput('   ❌ Faltan en la salida: ' + missingOutputs.join(', '), 'warning');
-              self.addOutput('   💡 Salida actual: ' + (output.substring(0, 100) + (output.length > 100 ? '...' : '')), 'info');
-            }
-          }
-        }
+      // Si el método del textarea funcionó, retornar
+      if (decoded !== str) {
+        return decoded;
       }
-    });
-    
-    // Verificar si completó todos los ejercicios
-    if (self.completedExercises.length === self.params.requiredExercises.length && self.params.requiredExercises.length > 0) {
-      // Usar triggerXAPICompleted de H5P.Question
-      if (typeof self.triggerXAPICompleted === 'function') {
-        self.triggerXAPICompleted(self.getScore(), self.getMaxScore());
-      }
-      
-      // Mostrar mensaje de finalización
-      self.addOutput('', 'info');
-      self.addOutput('🎉 ¡Has completado todos los ejercicios!', 'success');
-      var scorePercentage = Math.round((self.score / self.maxScore) * 100);
-      self.addOutput('📊 Puntuación final: ' + self.score + '/' + self.maxScore + ' (' + scorePercentage + '%)', 'success');
-      var passed = scorePercentage >= self.params.passingScore;
-      self.addOutput(passed ? '✅ ¡Aprobado! (Mínimo requerido: ' + self.params.passingScore + '%)' : '❌ Necesitas practicar más (Mínimo requerido: ' + self.params.passingScore + '%)', passed ? 'success' : 'warning');
-    } else if (self.params.requiredExercises.length > 0) {
-      // Mostrar resumen del estado actual siempre (incluso si no hubo cambios)
-      var currentPercentage = Math.round((self.score / self.maxScore) * 100);
-      self.addOutput('', 'info');
-      self.addOutput('📊 Puntuación actual: ' + self.score + '/' + self.maxScore + ' (' + currentPercentage + '%)', 'info');
-      
-      var remaining = self.maxScore - self.score;
-      var completed = self.completedExercises.length;
-      self.addOutput('📝 Progreso: ' + completed + ' de ' + self.maxScore + ' ejercicios completados (' + remaining + ' restantes)', 'info');
     }
+    
+    // Fallback: reemplazos manuales de entidades HTML comunes
+    return str
+      .replace(/&quot;/g, '"')
+      .replace(/&#039;/g, "'")
+      .replace(/&#39;/g, "'")
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>');
   };
 
   /**
@@ -1666,7 +2823,10 @@ H5P.PythonTerminal = (function ($, Question) {
    * Método requerido por H5P.Question
    */
   PythonTerminal.prototype.getMaxScore = function() {
-    return this.maxScore;
+    if (this.params.passingScore !== undefined && this.params.passingScore !== null) {
+      return this.params.passingScore;
+    }
+    return 1; // Si no está definido, retornar 1 por defecto
   };
 
   /**
@@ -1701,9 +2861,8 @@ H5P.PythonTerminal = (function ($, Question) {
     // Limpiar consola
     self.clearOutput();
     
-    // Resetear puntuación y ejercicios
+    // Resetear puntuación
     self.score = 0;
-    self.completedExercises = [];
     self.executionHistory = [];
     self.startTime = new Date();
     
@@ -1735,7 +2894,6 @@ H5P.PythonTerminal = (function ($, Question) {
     
     return JSON.stringify({
       executionHistory: self.executionHistory,
-      completedExercises: self.completedExercises,
       score: self.score,
       codeInEditor: self.aceEditor ? self.aceEditor.getValue() : ''
     });
@@ -1757,4 +2915,3 @@ H5P.PythonTerminal = (function ($, Question) {
 
   return PythonTerminal;
 })(H5P.jQuery, H5P.Question);
-

@@ -1,0 +1,18 @@
+{
+  "taskDescription": "Ayuda al personaje a llegar al punto B utilizando los bloques de la columna gris. Arrástralos hacia la zona blanca punteada para apilarlos de arriba abajo, siguiendo la lógica de pasos necesarios. Al finalizar, presiona 'INICIAR' para ver el resultado.",
+  "levelName": "Nivel 1 - Básico",
+  "maxBlocks": 11,
+  "mazeMap": "[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,3,0,0,0],[0,0,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,1,0,0,0],[0,0,0,2,1,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]",
+  "initialDirection": "1",
+  "availableBlocks": {
+    "forward": true,
+    "turnRight": true,
+    "turnLeft": true
+  },
+  "successMessage": "¡Excelente! Has completado el laberinto.",
+  "failureMessage": "El personaje no llegó al destino. Revisa tu secuencia de bloques.",
+  "crashMessage": "El personaje chocó con un muro. Revisa tu secuencia de bloques.",
+  "animationSpeed": 300
+}
+
+

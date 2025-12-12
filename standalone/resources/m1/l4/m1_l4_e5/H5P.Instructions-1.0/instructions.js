@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Ordene los pasos del algoritmo para crear un grupo de WhatsApp y agregar participantes. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.</div>
+                                <div class="intro-text">Considere el siguiente algoritmo para lavarse las manos. Arrastre las palabras faltantes en los espacios en blanco.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Ordene los pasos del algoritmo para crear un grupo de WhatsApp y agregar participantes. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.</div>
+                                                <div class="instructions-text">Considere el siguiente algoritmo para lavarse las manos. Arrastre las palabras faltantes en los espacios en blanco.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

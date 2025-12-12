@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">¿Cuál de los siguientes enunciados corresponde a principios transversales de la Política Nacional de Inteligencia Artificial?</div>
+                                <div class="intro-text">Seleccione la palabra Sí en aquellas sentencias que corresponden a algoritmos y la palabra NO para aquellas que no lo son.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">¿Cuál de los siguientes enunciados corresponde a principios transversales de la Política Nacional de Inteligencia Artificial?</div>
+                                                <div class="instructions-text">Seleccione la palabra Sí en aquellas sentencias que corresponden a algoritmos y la palabra NO para aquellas que no lo son.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

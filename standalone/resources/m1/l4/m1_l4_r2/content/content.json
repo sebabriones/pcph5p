@@ -4,10 +4,10 @@
             {
                 "elements": [
                     {
-                        "x": 10.893246187363834,
-                        "y": 16.13826403921383,
-                        "width": 43.819825708061,
-                        "height": 83.91897300391192,
+                        "x": 2.178649237472767,
+                        "y": 19.365770999757927,
+                        "width": 46.07167755991286,
+                        "height": 79.3996610990075,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -16,7 +16,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r2/content/images/image-281OeHgp.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/l5/m1_l5_r2/content/images/image-YrosK6GF.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -25,7 +25,7 @@
                                     "height": 1708
                                 }
                             },
-                            "subContentId": "067b4f55-18de-4da2-bdbb-7a746ded50d1",
+                            "subContentId": "c78bc077-0795-430a-9f65-a5db4be1e191",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -43,61 +43,59 @@
                         "solution": ""
                     },
                     {
-                        "x": 14.161220043572985,
-                        "y": 10.758842692809221,
-                        "width": 58.82352941176471,
-                        "height": 5.164244492548426,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p><span style=\"font-size:1.125em\">Algoritmo para conectar un computador a una red wifi disponible.</span></p>"
-                            },
-                            "subContentId": "cc6eb767-662a-4102-af70-b1827d716d16",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 55.55555555555556,
-                        "y": 34.428296616989506,
-                        "width": 26.143790849673202,
-                        "height": 60.249519079731634,
+                        "x": 50.10893246187364,
+                        "y": 18.59114015976761,
+                        "width": 45.751633986928105,
+                        "height": 81.3362381989833,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
-                                        "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
-                                        "question": "<p style=\"text-align:center\">Precisión</p>",
+                                        "subContentId": "6247a870-3262-4959-9a08-393218a46326",
+                                        "question": "<p>1. ¿Cuál de los siguientes pasos se puede omitir y el algoritmo cumpliría si propósito de igual forma?</p>",
                                         "answers": [
-                                            "<p style=\"text-align:center;\">No</p>",
-                                            "<p style=\"text-align:center;\">Si</p>"
+                                            "<p>Paso 10</p>",
+                                            "<p>Paso 1</p>",
+                                            "<p>Paso 5</p>",
+                                            "<p>Paso 6</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "90ee02a3-5192-4598-8f6e-acf98fe58d57",
+                                        "question": "<p>2. Uno de los siguientes pasos está incompleto, ¿cuál es?</p>",
+                                        "answers": [
+                                            "<p>Paso 4</p>",
+                                            "<p>Paso 1</p>",
+                                            "<p>Paso 5</p>",
+                                            "<p>Paso 7</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "7eb9b800-1e77-41f0-b897-550bf9a315c6",
+                                        "question": "<p>3. Respecto a la pregunta anterior, ¿cuál es el problema con el paso incompleto?</p>",
+                                        "answers": [
+                                            "<p>No indica qué debe realizar una persona que no quiere crear una nueva carpeta.</p>",
+                                            "<p>No indica cómo crear una nueva carpeta.</p>",
+                                            "<p>No considera qué hacer si se quiere subir una carpeta a OneDrive.</p>",
+                                            "<p>Obliga a crear una carpeta.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "86e79f58-c99b-4808-a65e-3b51f3334a19",
+                                        "question": "<p>4. ¿Cómo debe modificarse el paso 4 para que quede de forma correcta?</p>",
+                                        "answers": [
+                                            "<p>Paso 4: Si deseas subir el archivo a una carpeta nueva ingresa a la opción «+Agregar nuevo» y crea una nueva carpeta, escribe el nombre de la nueva carpeta y presiona «Crear», de lo contrario avanza al paso 6.</p>",
+                                            "<p>Paso 4: Si deseas subir el archivo a una carpeta nueva ingresa a la opción «+Agregar nuevo», crea una nueva carpeta y colócale nombre.</p>",
+                                            "<p>Paso 4: Si deseas subir el archivo a una nueva carpeta, crea la carpeta en tu computador y cárgala en OneDrive.</p>",
+                                            "<p>Paso 4: Si deseas subir el archivo a una carpeta nueva, ingresa a la opción «+Agregar nuevo» y crea una nueva carpeta; si no quieres, no lo hagas.</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> No existe precisión, porque en el paso 1, una vez que la persona busca el símbolo, no se específica que debe hacer clic sobre él, entonces no se desplegará el menú para seguir con el paso 2. Esto se corrige agregando al final del paso 1 la frase: «y haga clic sobre él»."
-
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Muy bien!</span> Efectivamente, no existe precisión, porque en el paso 1, una vez que la persona busca el símbolo, no se específica que debe hacer clic sobre él, entonces no se desplegará el menú para seguir con el paso 2. Esto se corrige agregando al final del paso 1 la frase: «y haga clic sobre él»."
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
@@ -105,7 +103,7 @@
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
-                                    "enableRetry": false,
+                                    "enableRetry": true,
                                     "enableSolutionsButton": false,
                                     "passPercentage": 100
                                 },
@@ -127,59 +125,14 @@
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "a538ecf3-f0f6-4086-833a-0beae4069fcd",
+                            "subContentId": "0069ad52-8eb1-4aaf-a18f-010607f95a40",
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Pregunta 1",
+                                "title": "Refuerzo 2 - 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Pregunta 1"
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    }
-                ],
-                "keywords": [],
-                "slideBackgroundSelector": {}
-            },
-            {
-                "elements": [
-                    {
-                        "x": 10.893246187363834,
-                        "y": 16.13826403921383,
-                        "width": 43.790849673202615,
-                        "height": 83.86173596078616,
-                        "action": {
-                            "library": "H5P.Image 1.1",
-                            "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r2/content/images/image-281OeHgp.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
-                                    },
-                                    "width": 1762,
-                                    "height": 1708
-                                }
-                            },
-                            "subContentId": "acaf9d71-0a6d-45d2-b720-0b411ec238d5",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
+                                "extraTitle": "Refuerzo 2 - 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -191,538 +144,22 @@
                         "solution": ""
                     },
                     {
-                        "x": 14.161220043572985,
-                        "y": 10.758842692809221,
-                        "width": 58.82352941176471,
-                        "height": 5.164244492548426,
+                        "x": 6.5359477124183005,
+                        "y": 11.619462599854756,
+                        "width": 87.14596949891067,
+                        "height": 7.746308399903171,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p><span style=\"font-size:1.125em\">Algoritmo para conectar un computador a una red wifi disponible.</span></p>"
+                                "text": "<p><span style=\"font-size:1em\"><span style=\"font-weight:bold;\">Algoritmo:</span> Guardar un documento en OneDrive desde el computador</span></p>"
                             },
-                            "subContentId": "4c570879-5a05-45de-8821-bacdfd937924",
+                            "subContentId": "b982e4cc-13e3-4982-b066-515de1d4f9be",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
                                 "title": "Sin título es",
                                 "authors": [],
                                 "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 55.55555555555556,
-                        "y": 34.428296616989506,
-                        "width": 26.143790849673202,
-                        "height": 60.249519079731634,
-                        "action": {
-                            "library": "H5P.SingleChoiceSet 1.11",
-                            "params": {
-                                "choices": [
-                                    {
-                                        "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
-                                        "question": "<p style=\"text-align:center\">Finitud</p>",
-                                        "answers": [
-                                            "<p style=\"text-align:center;\">Si</p>",
-                                            "<p style=\"text-align:center;\">No</p>"
-                                        ]
-                                    }
-                                ],
-                                "overallFeedback": [
-                                    {
-                                        "from": 0,
-                                        "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Este algoritmo sí es finito, pues tiene 5 pasos exactos."
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> Este algoritmo es finito, pues tiene 5 pasos exactos."
-                                    }
-                                ],
-                                "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
-                                    "soundEffectsEnabled": false,
-                                    "enableRetry": false,
-                                    "enableSolutionsButton": false,
-                                    "passPercentage": 100
-                                },
-                                "l10n": {
-                                    "nextButtonLabel": "Siguiente pregunta",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo",
-                                    "solutionViewTitle": "Lista Solución",
-                                    "correctText": "¡Correcto!",
-                                    "incorrectText": "¡Incorrecto!",
-                                    "shouldSelect": "Debería haber sido seleccionada",
-                                    "shouldNotSelect": "NO debería haber sido seleccionada",
-                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
-                                    "closeButtonLabel": "Cerrar",
-                                    "slideOfTotal": "Diapositiva :num de :total",
-                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                    "solutionListQuestionNumber": "Pregunta :num",
-                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
-                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
-                                }
-                            },
-                            "subContentId": "b472dbc1-3ab7-4653-86b9-ae2f195039e4",
-                            "metadata": {
-                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
-                                "license": "U",
-                                "title": "Pregunta 2",
-                                "authors": [],
-                                "changes": [],
-                                "extraTitle": "Pregunta 2"
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    }
-                ],
-                "keywords": [],
-                "slideBackgroundSelector": {}
-            },
-            {
-                "elements": [
-                    {
-                        "x": 10.893246187363834,
-                        "y": 16.13826403921383,
-                        "width": 43.790849673202615,
-                        "height": 83.86173596078616,
-                        "action": {
-                            "library": "H5P.Image 1.1",
-                            "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r2/content/images/image-281OeHgp.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
-                                    },
-                                    "width": 1762,
-                                    "height": 1708
-                                }
-                            },
-                            "subContentId": "14488387-09f0-43ed-bf4b-83624ea2765c",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 14.161220043572985,
-                        "y": 10.758842692809221,
-                        "width": 58.82352941176471,
-                        "height": 5.164244492548426,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p><span style=\"font-size:1.125em\">Algoritmo para conectar un computador a una red wifi disponible.</span></p>"
-                            },
-                            "subContentId": "10b86f9a-e2ad-43b1-8267-cd511fb14afd",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 55.55555555555556,
-                        "y": 34.428296616989506,
-                        "width": 26.143790849673202,
-                        "height": 60.249519079731634,
-                        "action": {
-                            "library": "H5P.SingleChoiceSet 1.11",
-                            "params": {
-                                "choices": [
-                                    {
-                                        "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
-                                        "question": "<p style=\"text-align:center\">Efectividad</p>",
-                                        "answers": [
-                                            "<p style=\"text-align:center;\">Si</p>",
-                                            "<p style=\"text-align:center;\">No</p>"
-                                        ]
-                                    }
-                                ],
-                                "overallFeedback": [
-                                    {
-                                        "from": 0,
-                                        "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Este algoritmo sí es efectivo, pues se logra conectar el computador a una red wifi."
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> Sí se logra conectar el computador a una red wifi."
-                                    }
-                                ],
-                                "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
-                                    "soundEffectsEnabled": false,
-                                    "enableRetry": false,
-                                    "enableSolutionsButton": false,
-                                    "passPercentage": 100
-                                },
-                                "l10n": {
-                                    "nextButtonLabel": "Siguiente pregunta",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo",
-                                    "solutionViewTitle": "Lista Solución",
-                                    "correctText": "¡Correcto!",
-                                    "incorrectText": "¡Incorrecto!",
-                                    "shouldSelect": "Debería haber sido seleccionada",
-                                    "shouldNotSelect": "NO debería haber sido seleccionada",
-                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
-                                    "closeButtonLabel": "Cerrar",
-                                    "slideOfTotal": "Diapositiva :num de :total",
-                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                    "solutionListQuestionNumber": "Pregunta :num",
-                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
-                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
-                                }
-                            },
-                            "subContentId": "c874d50a-d224-46f6-aebc-3356bed44534",
-                            "metadata": {
-                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
-                                "license": "U",
-                                "title": "Pregunta 3",
-                                "authors": [],
-                                "changes": [],
-                                "extraTitle": "Pregunta 3"
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    }
-                ],
-                "keywords": [],
-                "slideBackgroundSelector": {}
-            },
-            {
-                "elements": [
-                    {
-                        "x": 10.893246187363834,
-                        "y": 16.13826403921383,
-                        "width": 43.790849673202615,
-                        "height": 83.86173596078616,
-                        "action": {
-                            "library": "H5P.Image 1.1",
-                            "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r2/content/images/image-281OeHgp.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
-                                    },
-                                    "width": 1762,
-                                    "height": 1708
-                                }
-                            },
-                            "subContentId": "e80ed99b-6072-4a87-8d83-c90c97e69e93",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 14.161220043572985,
-                        "y": 10.758842692809221,
-                        "width": 58.82352941176471,
-                        "height": 5.164244492548426,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p><span style=\"font-size:1.125em\">Algoritmo para conectar un computador a una red wifi disponible.</span></p>"
-                            },
-                            "subContentId": "d35a03a9-8098-47f6-ab73-8e60440b9d69",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 55.55555555555556,
-                        "y": 34.428296616989506,
-                        "width": 26.143790849673202,
-                        "height": 60.249519079731634,
-                        "action": {
-                            "library": "H5P.SingleChoiceSet 1.11",
-                            "params": {
-                                "choices": [
-                                    {
-                                        "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
-                                        "question": "<p style=\"text-align:center\">Entrada y salida bien definida</p>",
-                                        "answers": [
-                                            "<p style=\"text-align:center;\">Si</p>",
-                                            "<p style=\"text-align:center;\">No</p>"
-                                        ]
-                                    }
-                                ],
-                                "overallFeedback": [
-                                    {
-                                        "from": 0,
-                                        "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Sí se establece la entrada y la salida. Entrada es un computador y una red wifi disponible, y salida es un computador conectado a esta red."
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> La entrada es un computador y una red wifi disponible; la salida es el computador conectado a esta red."
-                                    }
-                                ],
-                                "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
-                                    "soundEffectsEnabled": false,
-                                    "enableRetry": false,
-                                    "enableSolutionsButton": false,
-                                    "passPercentage": 100
-                                },
-                                "l10n": {
-                                    "nextButtonLabel": "Siguiente pregunta",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo",
-                                    "solutionViewTitle": "Lista Solución",
-                                    "correctText": "¡Correcto!",
-                                    "incorrectText": "¡Incorrecto!",
-                                    "shouldSelect": "Debería haber sido seleccionada",
-                                    "shouldNotSelect": "NO debería haber sido seleccionada",
-                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
-                                    "closeButtonLabel": "Cerrar",
-                                    "slideOfTotal": "Diapositiva :num de :total",
-                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                    "solutionListQuestionNumber": "Pregunta :num",
-                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
-                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
-                                }
-                            },
-                            "subContentId": "9753c9d3-5bb0-41df-b2a3-d35dd0d7f11f",
-                            "metadata": {
-                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
-                                "license": "U",
-                                "title": "Pregunta 4",
-                                "authors": [],
-                                "changes": [],
-                                "extraTitle": "Pregunta 4"
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    }
-                ],
-                "keywords": [],
-                "slideBackgroundSelector": {}
-            },
-            {
-                "elements": [
-                    {
-                        "x": 10.893246187363834,
-                        "y": 16.13826403921383,
-                        "width": 43.790849673202615,
-                        "height": 83.86173596078616,
-                        "action": {
-                            "library": "H5P.Image 1.1",
-                            "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r2/content/images/image-281OeHgp.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
-                                    },
-                                    "width": 1762,
-                                    "height": 1708
-                                }
-                            },
-                            "subContentId": "35cb0931-52a7-49f6-a579-4648829b00a3",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 14.161220043572985,
-                        "y": 10.758842692809221,
-                        "width": 58.82352941176471,
-                        "height": 5.164244492548426,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p><span style=\"font-size:1.125em\">Algoritmo para conectar un computador a una red wifi disponible.</span></p>"
-                            },
-                            "subContentId": "697cd725-e53e-41c5-8619-064dc54120e6",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 55.55555555555556,
-                        "y": 34.428296616989506,
-                        "width": 26.143790849673202,
-                        "height": 60.249519079731634,
-                        "action": {
-                            "library": "H5P.SingleChoiceSet 1.11",
-                            "params": {
-                                "choices": [
-                                    {
-                                        "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
-                                        "question": "<p style=\"text-align:center\">Generalidad</p>",
-                                        "answers": [
-                                            "<p style=\"text-align:center;\">Si</p>",
-                                            "<p style=\"text-align:center;\">No</p>"
-                                        ]
-                                    }
-                                ],
-                                "overallFeedback": [
-                                    {
-                                        "from": 0,
-                                        "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Se cumple la generalidad al utilizar el término «computador», no registrando a notebook, teléfono inteligente u otro dispositivo electrónico. El símbolo de Acceso a Internet es común en todos los dispositivos. También se consideran las variantes de mensajes para avanzar en la conexión en los pasos 3 y 4."
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> Al utilizar el término «computador» no se registra a notebook, teléfono inteligente u otro dispositivo electrónico. El símbolo de Acceso a Internet es común en todos los dispositivos. También se consideran las variantes de mensajes para avanzar en la conexión en los pasos 3 y 4."
-                                    }
-                                ],
-                                "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
-                                    "soundEffectsEnabled": false,
-                                    "enableRetry": false,
-                                    "enableSolutionsButton": false,
-                                    "passPercentage": 100
-                                },
-                                "l10n": {
-                                    "nextButtonLabel": "Siguiente pregunta",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo",
-                                    "solutionViewTitle": "Lista Solución",
-                                    "correctText": "¡Correcto!",
-                                    "incorrectText": "¡Incorrecto!",
-                                    "shouldSelect": "Debería haber sido seleccionada",
-                                    "shouldNotSelect": "NO debería haber sido seleccionada",
-                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
-                                    "closeButtonLabel": "Cerrar",
-                                    "slideOfTotal": "Diapositiva :num de :total",
-                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                    "solutionListQuestionNumber": "Pregunta :num",
-                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
-                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
-                                }
-                            },
-                            "subContentId": "bdf5e331-9efc-4f2d-99ac-42948ea416b7",
-                            "metadata": {
-                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
-                                "license": "U",
-                                "title": "Pregunta 5",
-                                "authors": [],
-                                "changes": [],
-                                "extraTitle": "Pregunta 5"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -747,9 +184,9 @@
         "keywordListOpacity": 90
     },
     "override": {
-        "activeSurface": false,
-        "hideSummarySlide": false,
-        "summarySlideSolutionButton": false,
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
         "summarySlideRetryButton": true,
         "enablePrintButton": false,
         "social": {
@@ -766,9 +203,7 @@
             },
             "showGoogleShare": false,
             "googleShareUrl": "@currentpageurl"
-        },
-        "showSolutionButton": "off",
-        "retryButton": "off"
+        }
     },
     "l10n": {
         "slide": "Diapositiva",

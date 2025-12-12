@@ -3,7 +3,7 @@
   "description": "Una terminal Python completamente funcional que ejecuta código Python real en el navegador usando Pyodide. Incluye soporte xAPI para tracking y calificación.",
   "majorVersion": 1,
   "minorVersion": 1,
-  "patchVersion": 39,
+  "patchVersion": 57,
   "runnable": 1,
   "coreApi": {
     "majorVersion": 1,

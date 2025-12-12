@@ -1,23 +1,23 @@
 {
-    "title": "Leccion 3 - Ejercicio 1",
-    "extraTitle": "Leccion 3 - Ejercicio 1",
-    "language": "es",
-    "mainLibrary": "H5P.DragShuffle",
-    "license": "U",
-    "defaultLanguage": "es",
     "embedTypes": [
-        "div"
+        "iframe"
     ],
+    "language": "en",
+    "defaultLanguage": "es",
+    "license": "U",
+    "extraTitle": "Modulo 1 - Leccion 4 - Refuerzo 1",
+    "title": "Modulo 1 - Leccion 4 - Refuerzo 1",
+    "mainLibrary": "H5P.DragShuffle",
     "preloadedDependencies": [
-        {
-            "machineName": "H5P.Instructions",
-            "majorVersion": 1,
-            "minorVersion": 0
-        },
         {
             "machineName": "H5P.Customize",
             "majorVersion": 1,
             "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.AdvancedText",
+            "majorVersion": 1,
+            "minorVersion": 1
         },
         {
             "machineName": "FontAwesome",
@@ -25,9 +25,14 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.DragShuffle",
-            "minorVersion": 0,
-            "majorVersion": 1
+            "machineName": "jQuery.ui",
+            "majorVersion": 1,
+            "minorVersion": 10
+        },
+        {
+            "machineName": "H5P.JoubelUI",
+            "majorVersion": 1,
+            "minorVersion": 3
         },
         {
             "machineName": "H5P.Transition",
@@ -40,52 +45,12 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.JoubelUI",
-            "majorVersion": 1,
-            "minorVersion": 3
-        },
-        {
-            "machineName": "jQuery.ui",
-            "majorVersion": 1,
-            "minorVersion": 10
-        },
-        {
             "machineName": "H5P.Question",
             "majorVersion": 1,
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.DragNDrop",
-            "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.DragNResize",
-            "majorVersion": 1,
-            "minorVersion": 2
-        },
-        {
-            "machineName": "H5PEditor.Wizard",
-            "majorVersion": 1,
-            "minorVersion": 2
-        },
-        {
-            "machineName": "H5P.DragNBar",
-            "majorVersion": 1,
-            "minorVersion": 5
-        },
-        {
-            "machineName": "H5P.AdvancedText",
-            "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.Image",
-            "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5PEditor.TableList",
+            "machineName": "H5P.DragShuffle",
             "majorVersion": 1,
             "minorVersion": 0
         }

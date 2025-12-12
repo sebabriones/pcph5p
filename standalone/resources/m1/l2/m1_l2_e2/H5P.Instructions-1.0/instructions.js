@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Pensando en tu proceso formativo y futuro quehacer profesional, selecciona aquellas aseveraciones que dan cuenta de la importancia de la computación.</div>
+                                <div class="intro-text">De acuerdo a lo estudiado en la lección, identifica las áreas donde la legislación chilena regula y promueve el uso IA.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Pensando en tu proceso formativo y futuro quehacer profesional, selecciona aquellas aseveraciones que dan cuenta de la importancia de la computación.</div>
+                                                <div class="instructions-text">De acuerdo a lo estudiado en la lección, identifica las áreas donde la legislación chilena regula y promueve el uso IA.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

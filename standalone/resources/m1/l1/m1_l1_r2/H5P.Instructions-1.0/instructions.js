@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Lee atentamente los conceptos y relaciona cada elemento con su correspondiente par, verifica tus respuestas para asegurar que todas las asociaciones sean correctas.</div>
+                                <div class="intro-text">Clasifica los elementos dentro de la categoría Hardware o Software, arrastrando cada concepto hacia el recuadro que corresponda.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Lee atentamente los conceptos y relaciona cada elemento con su correspondiente par, verifica tus respuestas para asegurar que todas las asociaciones sean correctas.</div>
+                                                <div class="instructions-text">Clasifica los elementos dentro de la categoría Hardware o Software, arrastrando cada concepto hacia el recuadro que corresponda.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

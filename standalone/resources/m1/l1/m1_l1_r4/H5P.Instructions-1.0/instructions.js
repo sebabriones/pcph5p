@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Arrastra los conceptos hacia los recuadros para mostrar correctamente el ciclo del procesamiento de las instrucciones dentro de un computador.</div>
+                                <div class="intro-text">Para cada uno de los siguientes bytes determina el número en el sistema decimal y el carácter ASCII que le corresponde.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Arrastra los conceptos hacia los recuadros para mostrar correctamente el ciclo del procesamiento de las instrucciones dentro de un computador.</div>
+                                                <div class="instructions-text">Para cada uno de los siguientes bytes determina el número en el sistema decimal y el carácter ASCII que le corresponde.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

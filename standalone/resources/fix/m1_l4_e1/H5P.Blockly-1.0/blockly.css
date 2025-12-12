@@ -1,0 +1,406 @@
+.h5p-blockly * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h5p-blockly-container {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h5p-blockly-header {
+  background-color: #003da5;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.h5p-blockly-header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.h5p-blockly-header p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.h5p-blockly-level-badge {
+  background-color: #75D14A;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.h5p-blockly-game-area {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important; /* Dos columnas iguales */
+  gap: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-height: 500px !important;
+}
+
+.h5p-blockly-canvas {
+  border: 2px solid #003da5;
+  border-radius: 4px;
+  width: 100% !important;
+  height: 0 !important;
+  padding-bottom: 100% !important; /* Mantiene aspecto cuadrado */
+  position: relative !important;
+  box-sizing: border-box;
+  min-height: 500px !important;
+}
+
+/* Contenedor interno del canvas */
+.h5p-blockly-canvas > * {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.h5p-blockly-workspace {
+  width: 100% !important;
+  height: 0 !important;
+  padding-bottom: 100% !important; /* Mismo aspecto cuadrado que el canvas */
+  position: relative !important;
+  box-sizing: border-box !important;
+  min-height: 500px !important;
+  overflow: hidden !important;
+}
+
+.h5p-blockly-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.h5p-blockly button,
+.h5p-blockly-btn-start,
+.h5p-blockly-btn-help {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.h5p-blockly-btn-start {
+  background-color: #003da5;
+  color: white;
+}
+
+.h5p-blockly-btn-start:hover:not(:disabled) {
+  background-color: #002d7a;
+  transform: translateY(-2px);
+}
+
+.h5p-blockly-btn-start:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.h5p-blockly-btn-help {
+  background-color: #75D14A;
+  color: white;
+  min-width: 50px;
+}
+
+.h5p-blockly-btn-help:hover {
+  background-color: #5cb835;
+}
+
+.h5p-blockly-progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  display: none;
+  margin-bottom: 20px;
+}
+
+.h5p-blockly-progress-bar.active {
+  display: block;
+}
+
+.h5p-blockly-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #F3D00C, #EC6043);
+  animation: h5p-blockly-progress 3s linear infinite;
+}
+
+@keyframes h5p-blockly-progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Modal */
+.h5p-blockly-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.h5p-blockly-modal.active {
+  display: flex;
+}
+
+.h5p-blockly-modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  animation: h5p-blockly-modal-appear 0.3s ease;
+}
+
+@keyframes h5p-blockly-modal-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.h5p-blockly-result-emoji {
+  font-size: 120px;
+  margin-bottom: 20px;
+}
+
+.h5p-blockly-modal-content h3 {
+  margin-bottom: 15px;
+  color: #003da5;
+  font-size: 24px;
+}
+
+.h5p-blockly-modal-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.h5p-blockly-modal-content ul {
+  text-align: left;
+  margin: 15px 0 15px 20px;
+}
+
+.h5p-blockly-modal-content li {
+  margin-bottom: 8px;
+}
+
+/* ============================================
+   RESPONSIVIDAD PROPORCIONAL PARA CANVAS Y WORKSPACE
+   (Mínima interferencia con la funcionalidad de Blockly)
+   ============================================ */
+
+/* Workspace de Blockly - mismo tamaño que el canvas */
+.h5p-blockly .h5p-blockly-workspace,
+.h5p-blockly-game-area .h5p-blockly-workspace,
+div.h5p-blockly-workspace {
+  width: 100% !important;
+  height: 0 !important;
+  padding-bottom: 100% !important; /* Mismo aspecto cuadrado que el canvas */
+  position: relative !important;
+  box-sizing: border-box !important;
+  min-height: 500px !important;
+}
+
+/* Contenedor interno del workspace */
+.h5p-blockly-workspace > *,
+.h5p-blockly-workspace .injectionDiv {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* InjectionDiv - se ajusta a la altura del workspace */
+.h5p-blockly-workspace .injectionDiv,
+.h5p-blockly-workspace > .injectionDiv,
+.injectionDiv.geras-renderer.classic-theme,
+div.injectionDiv.geras-renderer.classic-theme {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 500px !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Responsive - Escalado proporcional para tablets */
+@media (max-width: 768px) {
+  .h5p-blockly-game-area {
+    grid-template-columns: 1fr !important; /* Una sola columna */
+    gap: 20px !important;
+    min-height: auto !important;
+  }
+  
+  /* Canvas vuelve a 100% en columna */
+  .h5p-blockly-canvas {
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+    padding-bottom: 100% !important; /* Mantiene aspecto cuadrado */
+    min-height: auto !important;
+  }
+  
+  /* Workspace vuelve a 100% en columna */
+  .h5p-blockly .h5p-blockly-workspace,
+  .h5p-blockly-game-area .h5p-blockly-workspace,
+  div.h5p-blockly-workspace {
+    width: 100% !important;
+    padding-bottom: 100% !important; /* Mantiene aspecto cuadrado */
+    min-height: 400px !important;
+    max-height: 400px !important;
+  }
+  
+  .h5p-blockly-workspace .injectionDiv,
+  .h5p-blockly-workspace > .injectionDiv,
+  .injectionDiv.geras-renderer.classic-theme {
+    min-height: 400px !important;
+  }
+}
+
+/* Responsive - Escalado proporcional para móviles */
+@media (max-width: 480px) {
+  .h5p-blockly-canvas {
+    max-width: 100% !important;
+    max-height: 350px !important;
+  }
+  
+  .h5p-blockly .h5p-blockly-workspace,
+  .h5p-blockly-game-area .h5p-blockly-workspace,
+  div.h5p-blockly-workspace {
+    min-height: 350px !important;
+    max-height: 350px !important;
+    height: 350px !important;
+    width: 100% !important;
+  }
+  
+  .h5p-blockly-workspace .injectionDiv,
+  .h5p-blockly-workspace > .injectionDiv,
+  .injectionDiv.geras-renderer.classic-theme {
+    min-height: 350px !important;
+    height: 100% !important;
+  }
+  
+  /* Reducir padding del contenedor */
+  .h5p-blockly-container {
+    padding: 10px !important;
+  }
+  
+  .h5p-blockly-game-area {
+    padding: 10px !important;
+    gap: 10px !important;
+  }
+}
+
+/* Responsive - Escalado proporcional para pantallas muy pequeñas */
+@media (max-width: 320px) {
+  .h5p-blockly-canvas {
+    max-height: 300px !important;
+  }
+  
+  .h5p-blockly .h5p-blockly-workspace,
+  .h5p-blockly-game-area .h5p-blockly-workspace,
+  div.h5p-blockly-workspace {
+    min-height: 300px !important;
+    max-height: 300px !important;
+    height: 300px !important;
+  }
+  
+  .h5p-blockly-workspace .injectionDiv,
+  .h5p-blockly-workspace > .injectionDiv,
+  .injectionDiv.geras-renderer.classic-theme {
+    min-height: 300px !important;
+    height: 100% !important;
+  }
+}
+
+/* ============================================
+   ESCALADO DEL FLYOUT Y SUS ELEMENTOS SVG
+   ============================================ */
+
+/* Asegurar que el SVG del flyout se escale correctamente */
+.h5p-blockly-workspace svg,
+.injectionDiv svg {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+/* El path del flyout debe escalarse con el SVG */
+.h5p-blockly-workspace .blocklyFlyoutBackground,
+.injectionDiv .blocklyFlyoutBackground {
+  vector-effect: non-scaling-stroke !important;
+  transform-origin: 0 0 !important;
+}
+
+/* Asegurar que el flyout completo sea visible y escalable */
+.h5p-blockly-workspace .blocklyFlyout,
+.injectionDiv .blocklyFlyout {
+  position: absolute !important;
+  overflow: visible !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Responsive - Ajustar el flyout en pantallas pequeñas */
+@media (max-width: 768px) {
+  .h5p-blockly-workspace svg,
+  .injectionDiv svg {
+    transform: scale(0.8) !important;
+    transform-origin: 0 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .h5p-blockly-workspace svg,
+  .injectionDiv svg {
+    transform: scale(0.7) !important;
+    transform-origin: 0 0 !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .h5p-blockly-workspace svg,
+  .injectionDiv svg {
+    transform: scale(0.6) !important;
+    transform-origin: 0 0 !important;
+  }
+}
+
+
+

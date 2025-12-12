@@ -10,7 +10,7 @@
                 "height": 540
             },
             "background": {
-                "path": "http://localhost/pcph5p/standalone/resources/m1/l1/m1_l1_r3/content/images/m1l1r3.png",
+                "path": "http://localhost/pcph5p/standalone/resources/m1/l1/m1_l1_r4/content/images/m1l1r4.png",
                 "mime": "image/png",
                 "copyright": {
                     "license": "U"
@@ -22,20 +22,22 @@
         "task": {
             "elements": [
                 {
-                    "x": 14.34,
-                    "y": 66.9,
+                    "x": 14.2,
+                    "y": 55.6,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Teclado</p>\n"
+                            "text": "<p style=\"text-align:center\">Decodificación</p>\n"
                         },
-                        "subContentId": "6e7dc819-47d8-4604-838b-138971e68654",
+                        "subContentId": "96e9e248-a198-42da-a4db-ff5e411669b8",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -48,20 +50,22 @@
                     "multiple": false
                 },
                 {
-                    "x": 32.7,
-                    "y": 66.9,
+                    "x": 32.6,
+                    "y": 55.6,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Mouse</p>\n"
+                            "text": "<p style=\"text-align:center\">Visualización</p>\n\n<p style=\"text-align:center\">de datos</p>\n"
                         },
-                        "subContentId": "0321eb7b-8d54-43f7-a84f-7cdaa66f8fb0",
+                        "subContentId": "ccf70a13-9c64-4d83-b113-d76244c601a7",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -74,20 +78,22 @@
                     "multiple": false
                 },
                 {
-                    "x": 51,
-                    "y": 66.9,
+                    "x": 50.9,
+                    "y": 55.6,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Word</p>\n"
+                            "text": "<p style=\"text-align:center\">Acceso a</p>\n\n<p style=\"text-align:center\">la memoria</p>\n"
                         },
-                        "subContentId": "9dc841eb-9cce-4c5e-97a6-d39030bababe",
+                        "subContentId": "07de14a8-69d5-47ce-9764-89ba205ecc2c",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -100,20 +106,22 @@
                     "multiple": false
                 },
                 {
-                    "x": 69.4,
-                    "y": 66.9,
+                    "x": 69.24,
+                    "y": 55.6,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Tik Tok</p>\n"
+                            "text": "<p style=\"text-align:center\">Entrega</p>\n\n<p style=\"text-align:center\">de datos</p>\n"
                         },
-                        "subContentId": "3204a5e4-997a-410a-9c59-bb0ddcc71dfb",
+                        "subContentId": "efb3de5c-cab2-47fe-875b-ea4aedec67b2",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -126,20 +134,22 @@
                     "multiple": false
                 },
                 {
-                    "x": 14.34,
-                    "y": 78.8,
+                    "x": 14.2,
+                    "y": 67.5,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Monitor</p>\n"
+                            "text": "<p style=\"text-align:center\">Lectura</p>\n"
                         },
-                        "subContentId": "3a08c834-face-4c0a-9d3b-bd19e26c778f",
+                        "subContentId": "b0d0efb6-cd43-4d0e-9788-a314a4a72c0d",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -152,20 +162,22 @@
                     "multiple": false
                 },
                 {
-                    "x": 32.7,
-                    "y": 78.8,
+                    "x": 32.6,
+                    "y": 67.5,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Instagram</p>\n"
+                            "text": "<p style=\"text-align:center\">Ejecución</p>\n"
                         },
-                        "subContentId": "301c94f5-8a1a-46a0-944d-a0179ef57508",
+                        "subContentId": "303e641b-0d80-4693-ad86-2dd938d74434",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -178,20 +190,22 @@
                     "multiple": false
                 },
                 {
-                    "x": 51,
-                    "y": 78.8,
+                    "x": 50.9,
+                    "y": 67.5,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Photomath</p>\n"
+                            "text": "<p style=\"text-align:center\">Entrada</p>\n"
                         },
-                        "subContentId": "f9ec3f94-9228-4411-9fc0-3d17e5a5391e",
+                        "subContentId": "ea58e273-c706-4580-a6bb-d6c529aa9b05",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -204,20 +218,22 @@
                     "multiple": false
                 },
                 {
-                    "x": 69.4,
-                    "y": 78.8,
+                    "x": 69.24,
+                    "y": 67.5,
                     "width": 8.68,
                     "height": 2.74,
                     "dropZones": [
                         "0",
-                        "1"
+                        "1",
+                        "2",
+                        "3"
                     ],
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p style=\"text-align:center\">Placa madre</p>\n"
+                            "text": "<p style=\"text-align:center\">Limpieza de</p>\n\n<p style=\"text-align:center\">información</p>\n"
                         },
-                        "subContentId": "7405b723-cce5-4840-8e7c-62da7efc3716",
+                        "subContentId": "e9c28adf-2e5f-4fe4-9c87-3cf1cc12ad17",
                         "metadata": {
                             "contentType": "Texto",
                             "license": "U",
@@ -232,37 +248,11 @@
             ],
             "dropZones": [
                 {
-                    "x": 11.7,
-                    "y": 14,
-                    "width": 19.4,
-                    "height": 15.6,
+                    "x": 6.5,
+                    "y": 35.8,
+                    "width": 9.4,
+                    "height": 3.5,
                     "correctElements": [
-                        "0",
-                        "1",
-                        "4",
-                        "7"
-                    ],
-                    "showLabel": false,
-                    "backgroundOpacity": 100,
-                    "tipsAndFeedback": {
-                        "tip": ""
-                    },
-                    "single": false,
-                    "autoAlign": true,
-                    "type": {
-                        "library": "H5P.DragQuestionDropzone 0.1"
-                    },
-                    "label": "<div>zona 1</div>\n"
-                },
-                {
-                    "x": 53.9,
-                    "y": 14,
-                    "width": 19.4,
-                    "height": 15.6,
-                    "correctElements": [
-                        "2",
-                        "3",
-                        "5",
                         "6"
                     ],
                     "showLabel": false,
@@ -270,12 +260,72 @@
                     "tipsAndFeedback": {
                         "tip": ""
                     },
-                    "single": false,
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>zona 1</div>\n"
+                },
+                {
+                    "x": 29.84,
+                    "y": 35.8,
+                    "width": 9.4,
+                    "height": 3.5,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
                     "autoAlign": true,
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
                     "label": "<div>zona 2</div>\n"
+                },
+                {
+                    "x": 53.2,
+                    "y": 35.8,
+                    "width": 9.4,
+                    "height": 3.5,
+                    "correctElements": [
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Zona 3</div>\n"
+                },
+                {
+                    "x": 76.6,
+                    "y": 35.8,
+                    "width": 9.4,
+                    "height": 3.5,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Zona 4</div>\n"
                 }
             ]
         }
@@ -293,7 +343,7 @@
         "applyPenalties": false,
         "enableScoreExplanation": true,
         "dropZoneHighlighting": "dragging",
-        "autoAlignSpacing": 2,
+        "autoAlignSpacing": 1,
         "enableFullScreen": false,
         "showScorePoints": true,
         "showTitle": false

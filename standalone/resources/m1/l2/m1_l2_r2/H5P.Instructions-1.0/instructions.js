@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Selecciona las opciones que incorporan medidas que permitan disminuir los efectos negativos de la computación en el desarrollo sostenible.</div>
+                                <div class="intro-text">Selecciona los sistemas que utilizan IA.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Selecciona las opciones que incorporan medidas que permitan disminuir los efectos negativos de la computación en el desarrollo sostenible.</div>
+                                                <div class="instructions-text">Selecciona los sistemas que utilizan IA.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

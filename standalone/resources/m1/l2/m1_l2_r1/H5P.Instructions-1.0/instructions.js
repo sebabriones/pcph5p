@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Identifica a qué área de la sociedad actual corresponde el uso de la computación que se describe en cada una de las siguientes sentencias y arrastra el área al recuadro correspondiente.</div>
+                                <div class="intro-text">Arrastre cada una de las características de un sistema computacional inteligente hacia la definición que corresponda.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Identifica a qué área de la sociedad actual corresponde el uso de la computación que se describe en cada una de las siguientes sentencias y arrastra el área al recuadro correspondiente.</div>
+                                                <div class="instructions-text">Arrastre cada una de las características de un sistema computacional inteligente hacia la definición que corresponda.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Ordene los pasos del algoritmo para que encuentre el número mayor de entre una lista de números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.  La entrada es una lista de números enteros, la salida esperada es le número mayor de la lista.</div>
+                                <div class="intro-text">Arrastra los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo, asegurandose de que el algoritmo adquiera el sentido más lógico posible para poder completar esta lección de aprendizaje.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Ordene los pasos del algoritmo para que encuentre el número mayor de entre una lista de números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.  La entrada es una lista de números enteros, la salida esperada es le número mayor de la lista.</div>
+                                                <div class="instructions-text">Arrastra los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo, asegurandose de que el algoritmo adquiera el sentido más lógico posible para poder completar esta lección de aprendizaje.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

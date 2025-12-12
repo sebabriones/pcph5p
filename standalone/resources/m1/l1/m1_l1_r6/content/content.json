@@ -1,0 +1,86 @@
+{
+    "media": {
+        "params": {
+            "decorative": false,
+            "contentName": "Imagen",
+            "expandImage": "Expandir Imagen",
+            "minimizeImage": "Minimizar Imagen"
+        },
+        "library": "H5P.Image 1.1",
+        "subContentId": "30e03aeb-0880-405f-8a51-ec7365fb5c1e",
+        "metadata": {
+            "contentType": "es",
+            "license": "U",
+            "title": "Sin título es",
+            "authors": [],
+            "changes": []
+        }
+    },
+    "content": {
+        "task": "<p>Identifica a qué área de la sociedad actual corresponde el uso de la computación que se describe en cada una de las siguientes sentencias y selecciona de acuerdo a cada opción disponible.</p>",
+        "blanksList": [
+            {
+                "correctAnswerText": "Hogar"
+            },
+            {
+                "correctAnswerText": "Educación"
+            },
+            {
+                "correctAnswerText": "Industria"
+            },
+            {
+                "correctAnswerText": "Gobierno"
+            },
+            {
+                "correctAnswerText": "Sistemas de salud"
+            },
+            {
+                "correctAnswerText": "Medio ambiente"
+            },
+            {
+                "correctAnswerText": "Gestión de recursos humanos"
+            }
+        ],
+        "blanksText": "<p><span>Facilita que las personas puedan realizar su trabajo desde el hogar: ____</span></p><p><span>Permite el uso de estrategias de aprendizaje innovadoras y llamativas para los y las estudiantes: ____</span></p><p><span>Facilita actividades relacionadas con diseño, aquellas referentes a envío y las que tienen relación con el control de procesos: ____</span></p><p><span>Facilita procesos como el conteo de la población: ____</span></p><p><span>Facilita la toma y análisis de muestras, exámenes, imagenología, entre otros exámenes: ____</span></p><p><span>Tecnologías sostenibles: ____</span></p>"
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "mode": "selection",
+        "selectAlternatives": "all",
+        "selectAlternativeRestriction": 7,
+        "spellingErrorBehaviour": "mistake",
+        "caseSensitive": false,
+        "autoCheck": false,
+        "enableSolutionsButton": false,
+        "showSolutionsRequiresInput": true,
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "disableImageZooming": false,
+        "confirmCheckDialog": false,
+        "confirmRetryDialog": false
+    },
+    "showSolutions": "Show solution",
+    "tryAgain": "Intentar de nuevo",
+    "checkAnswer": "Comprobar",
+    "notFilledOut": "Please fill in all blanks to view solution",
+    "tipLabel": "Tip",
+    "spellingMistakeWarning": "Check your spelling: @mistake",
+    "scoreBarLabel": "You got :num out of :total points",
+    "confirmCheck": {
+        "header": "Finish?",
+        "body": "Are you sure you wish to finish?",
+        "cancelLabel": "Cancel",
+        "confirmLabel": "Finish"
+    },
+    "confirmRetry": {
+        "header": "Retry?",
+        "body": "Are you sure you wish to retry?",
+        "cancelLabel": "Cancel",
+        "confirmLabel": "Confirm"
+    }
+}

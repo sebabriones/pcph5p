@@ -10,13 +10,11 @@
   padding: 0.5em 1.25em;
   border-radius: 2em;
 
-  /*background: #1a73d9;*/
-  background: #026ec3; /*nuevo*/
-  border: 3px solid #026ec3; /*nuevo*/
+  background: #1a73d9;
   color: #ffffff;
 
   cursor: pointer;
-  /*border: none;*/
+  border: none;
   box-shadow: none;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -52,19 +50,7 @@
   padding: 0;
 }
 
-/*nuevo*/
-.h5p-joubelui-button:hover {
-  /*background: #1356a3;*/
-  background: #c9621b; /*nuevo*/
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: initial;
-  -moz-transition: initial;
-  -o-transition: initial;
-  transition: initial;
-}
-
-/*.h5p-joubelui-button:hover,
+.h5p-joubelui-button:hover,
 .h5p-joubelui-button:focus {
   background: #1356a3;
   color: #fff;
@@ -73,7 +59,7 @@
   -moz-transition: initial;
   -o-transition: initial;
   transition: initial;
-}*/
+}
 .h5p-joubelui-button:active {
   position: relative;
   background: #104888;

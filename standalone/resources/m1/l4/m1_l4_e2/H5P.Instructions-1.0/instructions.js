@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Resuelve el crucigrama de las características de un buen algoritmo escribiendo en cada casilla las letras que componen la palabra. Sigue las pistas para solucionarlo. Puedes escribir en el crucigrama o en las lineas punteadas. (No considerar tildes)</div>
+                                <div class="intro-text">Ordene los pasos para obtener el promedio de un conjunto de N números arrastrandolos en el orden correcto.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Resuelve el crucigrama de las características de un buen algoritmo escribiendo en cada casilla las letras que componen la palabra. Sigue las pistas para solucionarlo. Puedes escribir en el crucigrama o en las lineas punteadas. (No considerar tildes)</div>
+                                                <div class="instructions-text">Ordene los pasos para obtener el promedio de un conjunto de N números arrastrandolos en el orden correcto.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

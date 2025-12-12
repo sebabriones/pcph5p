@@ -1,0 +1,143 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Título de la Terminal",
+    "importance": "high",
+    "default": "Terminal Python Interactiva",
+    "description": "Título que se mostrará en la parte superior"
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "widget": "html",
+    "label": "Instrucciones",
+    "importance": "medium",
+    "optional": true,
+    "enterMode": "p",
+    "tags": ["strong", "em", "u", "a", "code"],
+    "description": "Instrucciones o descripción de la actividad"
+  },
+  {
+    "name": "preloadedCode",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Código Pre-cargado",
+    "importance": "medium",
+    "optional": true,
+    "description": "Código Python que se ejecutará automáticamente al iniciar"
+  },
+  {
+    "name": "initialCode",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Código Inicial en Editor",
+    "importance": "medium",
+    "optional": true,
+    "default": "#Escribe tu código Python aquí",
+    "description": "Código que aparecerá en el editor (no se ejecuta automáticamente)"
+  },
+  {
+    "name": "examples",
+    "type": "list",
+    "label": "Ejemplos de Código",
+    "importance": "low",
+    "optional": true,
+    "entity": "ejemplo",
+    "min": 0,
+    "field": {
+      "name": "example",
+      "type": "group",
+      "label": "Ejemplo",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Nombre del ejemplo",
+          "description": "Ej: 'Hola Mundo', 'Bucle For', etc."
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "widget": "textarea",
+          "label": "Código del ejemplo"
+        }
+      ]
+    }
+  },
+  {
+    "name": "showLineNumbers",
+    "type": "boolean",
+    "label": "Mostrar números de línea",
+    "importance": "low",
+    "default": true,
+    "optional": true
+  },
+  {
+    "name": "theme",
+    "type": "select",
+    "label": "Tema de color",
+    "importance": "low",
+    "optional": true,
+    "options": [
+      {
+        "value": "dark",
+        "label": "Oscuro"
+      },
+      {
+        "value": "light",
+        "label": "Claro"
+      },
+      {
+        "value": "monokai",
+        "label": "Monokai"
+      },
+      {
+        "value": "github",
+        "label": "GitHub"
+      }
+    ],
+    "default": "dark"
+  },
+  {
+    "name": "allowInput",
+    "type": "boolean",
+    "label": "Permitir entrada de usuario (input)",
+    "importance": "medium",
+    "default": true,
+    "optional": true,
+    "description": "Permite que el código use input() para solicitar datos al usuario"
+  },
+  {
+    "name": "maxOutputLines",
+    "type": "number",
+    "label": "Máximo de líneas en salida",
+    "importance": "low",
+    "optional": true,
+    "default": 1000,
+    "min": 100,
+    "max": 10000,
+    "description": "Número máximo de líneas a mostrar en la consola"
+  },
+  {
+    "name": "passingPercentage",
+    "type": "number",
+    "label": "Porcentaje para aprobar",
+    "importance": "high",
+    "optional": true,
+    "default": 70,
+    "min": 0,
+    "max": 100,
+    "description": "Porcentaje mínimo requerido para aprobar (0-100)"
+  },
+  {
+    "name": "passingScore",
+    "type": "number",
+    "label": "Puntaje para aprobar",
+    "importance": "high",
+    "optional": true,
+    "min": 0,
+    "max": 10000,
+    "description": "Puntaje mínimo requerido para aprobar (se usa como maxScore en xAPI)"
+  }
+]

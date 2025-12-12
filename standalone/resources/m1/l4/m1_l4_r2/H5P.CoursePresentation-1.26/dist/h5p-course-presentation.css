@@ -34,7 +34,8 @@
 }
 
 .h5p-course-presentation {
-    font-family: H5PDroidSans, sans-serif;
+    /*font-family: H5PDroidSans, sans-serif;*/
+    font-family: "Poppins-regular"; /*nuevo*/
     color: #323232;
     line-height: 1.25
 }
@@ -259,8 +260,7 @@
     position: absolute;
     overflow: hidden;
     overflow-y: auto;
-    /*font-size: .75em;*/
-    font-size: 1.5vw; /*nuevo*/
+    font-size: .75em;
     z-index: 1
 }
 
@@ -1495,7 +1495,7 @@
 
 .h5p-course-presentation .h5p-progressbar {
     /*width: 100%;*/
-    width: 25%; /*nuevo*/
+    width: 15%; /*nuevo*/
     height: 100%;
     overflow: visible;
     /*background: #666;*/ /*nuevo cambio*/
@@ -1508,6 +1508,7 @@
     -ms-user-select: none;
     /*box-shadow: 0 0 .5em 0 rgba(105, 105, 105, .4);*/
     padding-top: 0.5em; /*nuevo*/
+    justify-content: center; /*nuevo*/
 }
 
 .h5p-course-presentation .h5p-progressbar .h5p-progressbar-part.progressbar-part-summary-slide {
@@ -1808,19 +1809,20 @@
 }
 
 .h5p-footer-previous-slide {
-    margin-right: 0.5em;
+    margin-right: -1em;
 }
 .h5p-footer-next-slide {
-    margin-left: 0.5em;
+    margin-left: -1em;
 }
 
 .h5p-footer-previous-slide,
 .h5p-footer-next-slide {
     cursor: pointer;
     padding-top: 0.2em;
+    position: relative;
 }
 
-.h5p-footer-previous-slide:before {
+.h5p-footer-previous-slide::before {
     font-family: "H5PFontAwesome4";
     content: "\f053";
     color: #026ec3;
@@ -1829,7 +1831,7 @@
     border-radius: 1em;
     font-size: 0.8em;
 }
-.h5p-footer-next-slide:after {
+.h5p-footer-next-slide::after {
     font-family: "H5PFontAwesome4";
     content: "\f054";
     color: #026ec3;

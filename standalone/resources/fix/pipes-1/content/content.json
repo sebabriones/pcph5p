@@ -1,0 +1,17 @@
+{
+    "instructions": "Activa y desactiva las válvulas para controlar el flujo de agua desde la fuente hasta el destino.",
+    "gameConfig": "[[1, 14, 14, 13, 0, 0, 0, 0, 0, 0], [0, 0, 0,22,14, 3, 14, 14, 2, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+    "messages": {
+        "successMessage": "¡Felicidades! El agua llegó al destino 🎉",
+        "failureMessage": "El agua no puede llegar al destino. Abre más válvulas.",
+        "leakMessage": "El agua se escapa del circuito. Hay tuberías conectadas que no llevan al destino.",
+        "noPathMessage": "No hay camino desde la fuente al destino. Abre más válvulas.",
+        "deadEndMessage": "El agua llegó a un callejón sin salida. Hay tuberías que no llevan al destino."
+    },
+    "settings": {
+        "animationSpeed": 100,
+        "showPathInfo": true,
+        "canvasSize": 600
+    },
+    "behaviour": false
+}

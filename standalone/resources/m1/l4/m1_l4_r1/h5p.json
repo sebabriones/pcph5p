@@ -5,10 +5,15 @@
     "language": "en",
     "defaultLanguage": "es",
     "license": "U",
-    "extraTitle": "Modulo 1 - Leccion 4 - Refuerzo 1",
-    "title": "Modulo 1 - Leccion 4 - Refuerzo 1",
-    "mainLibrary": "H5P.DragShuffle",
+    "extraTitle": "Modulo 1 - Leccion 5 - Refuerzo 1",
+    "title": "Modulo 1 - Leccion 5 - Refuerzo 1",
+    "mainLibrary": "H5P.QuestionSet",
     "preloadedDependencies": [
+        {
+            "machineName": "H5P.Instructions",
+            "majorVersion": 1,
+            "minorVersion": 0
+        },
         {
             "machineName": "H5P.Customize",
             "majorVersion": 1,
@@ -18,6 +23,11 @@
             "machineName": "H5P.AdvancedText",
             "majorVersion": 1,
             "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.DragShuffle",
+            "majorVersion": 1,
+            "minorVersion": 0
         },
         {
             "machineName": "FontAwesome",
@@ -50,9 +60,14 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.DragShuffle",
+            "machineName": "H5P.Video",
             "majorVersion": 1,
-            "minorVersion": 0
+            "minorVersion": 6
+        },
+        {
+            "machineName": "H5P.QuestionSet",
+            "majorVersion": 1,
+            "minorVersion": 20
         }
     ]
 }

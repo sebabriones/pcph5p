@@ -4,17 +4,20 @@
 .h5peditor .ui-dialog .h5p-joubelui-button,
 .h5peditor .h5p-joubelui-button,
 .h5p-joubelui-button {
-  font-size: 1em;
+  /*font-size: 1em;*/
+  font-size: 0.8em; /*nuevo*/
   line-height: 1.2;
   margin: 0 0.5em 1em;
   padding: 0.5em 1.25em;
   border-radius: 2em;
 
-  background: #026ec3;
+  /*background: #1a73d9;*/
+  background: #026ec3; /*nuevo*/
+  border: 3px solid #026ec3; /*nuevo*/
   color: #ffffff;
 
   cursor: pointer;
-  border: 3px solid #026ec3;
+  /*border: none;*/
   box-shadow: none;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -24,15 +27,14 @@
   text-shadow: none;
   text-decoration: none;
   vertical-align: baseline;
-
-  float: right; /*nuevo*/
 }
 .h5p-joubelui-button:first-child {
   margin: 0 0.5em 1em 0;
 }
 
 .h5p-joubelui-button:last-child {
-  margin: 0 0 1em 0.5em;
+  /*margin: 0 0 1em 0.5em;*/
+  margin: 0 0 1em;
 }
 
 .h5p-joubelui-button:first-child:last-child {
@@ -52,8 +54,10 @@
   padding: 0;
 }
 
-.h5p-joubelui-button:hover {
-  background: #c9621b;
+.h5p-joubelui-button:hover,
+.h5p-joubelui-button:focus {
+  /*background: #1356a3;*/
+  background: #c9621b; /*nuevo*/
   color: #fff;
   text-decoration: none;
   -webkit-transition: initial;
@@ -83,9 +87,14 @@
   content: "\F01E";
 }
 
-.h5p-question-show-solution:before {
-  content: "\F06E";
+/*nuevo*/
+.h5p-question-show-solution {
+  display: none; /*nuevo*/
 }
+
+/*.h5p-question-show-solution:before {
+  content: "\F06E";
+}*/
 
 .h5p-question-check-answer:before {
   content: "\F058";

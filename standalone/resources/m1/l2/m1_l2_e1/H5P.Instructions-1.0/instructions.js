@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">¿Qué acciones podrías realizar para disminuir el impacto medioambiental de tu uso de la computación y/o sistemas computacionales?</div>
+                                <div class="intro-text">Selecciona las aplicaciones que son consideradas  inteligencia artificial.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">¿Qué acciones podrías realizar para disminuir el impacto medioambiental de tu uso de la computación y/o sistemas computacionales?</div>
+                                                <div class="instructions-text">Selecciona las aplicaciones que son consideradas  inteligencia artificial.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

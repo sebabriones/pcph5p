@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Selecciona las aplicaciones que son consideradas  inteligencia artificial.</div>
+                                <div class="intro-text">Arrastra los pasos faltantes, ordenando de forma tal que el algoritmo permita resolver el problema dado.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Selecciona las aplicaciones que son consideradas  inteligencia artificial.</div>
+                                                <div class="instructions-text">Arrastra los pasos faltantes, ordenando de forma tal que el algoritmo permita resolver el problema dado.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

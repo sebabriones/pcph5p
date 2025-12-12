@@ -2408,7 +2408,7 @@ var DropZone = /*#__PURE__*/function () {
       //IMPORTANTE: Estos valores dependen de cada ejercicio
       var spacing = {
         x: self.autoAlignable.spacing / self.autoAlignable.size.width * 100,
-        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 6
+        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 10
       };
 
       // Determine coordinates for first 'spot'

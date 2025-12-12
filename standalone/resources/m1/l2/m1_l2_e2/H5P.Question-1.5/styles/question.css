@@ -1,4 +1,5 @@
 .h5p-question {
+  /*background: rgba(255, 255, 255, 0.9);*/
   background: #f8feef;
   position: relative;
 }
@@ -161,7 +162,7 @@
   /*margin: 0 0 1em 1em;*/
   /*padding-right: 0.5em;*/
   display: inline-block;
-  padding: 1em 0 2em 2em; /*nuevo*/
+  padding: 6em 0 2em 2em; /*nuevo*/
 }
 
 .h5p-question-scorebar.full-width {
@@ -214,7 +215,7 @@
   /*margin-left: 1em;
   margin-right: 0.5em;
   margin-bottom: 1em;*/
-  padding: 1em 2em 2em 0;
+  padding: 6em 2em 2em 0; /*nuevo*/
 }
 .h5p-question-buttons .h5p-joubelui-button,
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {

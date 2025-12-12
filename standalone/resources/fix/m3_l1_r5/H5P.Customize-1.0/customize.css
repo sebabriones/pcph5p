@@ -1,0 +1,43 @@
+/*Le da un margen superior a la/las diapos del cuourse presentation ya que al
+definir una imágen de fondo para las diapos, esta se deforma y queda mal.*/
+.h5p-content {
+    background-color: #f8feef;
+}
+
+.h5p-container {
+    background-color: #f8feef;
+}
+
+.h5p-wrapper {
+    margin: 2em 0 0 0 !important;
+}
+
+.check-btn-container {
+    width: 99%;
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+.check-btn {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'H5PDroidSans';
+    background-color: #026ec3;
+    color: #fff;
+    position: relative;
+    padding: 0.5em 1.25em;
+    border-radius: 2em;
+    border: 3px solid #026ec3;
+    box-shadow: none;
+    font-size: 1em;
+}
+
+.check-btn:hover {
+    background-color: #c9621b;
+}
+
+.check-btn::before {
+    font-family: 'H5PFontAwesome4';
+    content: "\f058";
+    padding-right: 0.5em;
+}

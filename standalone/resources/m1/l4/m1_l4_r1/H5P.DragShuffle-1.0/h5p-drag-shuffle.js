@@ -2404,11 +2404,9 @@ var DropZone = /*#__PURE__*/function () {
       var containerSize = self.$dropZone.parent()[0].getBoundingClientRect();
 
       // Calcuate borders and spacing values in percetage
-      //sbriones: Aquí se cambia el porcentaje de espaciado de las zonas drop, toman el valor de la configuración inicial o del archivo content.json
-      //IMPORTANTE: Estos valores dependen de cada ejercicio
       var spacing = {
         x: self.autoAlignable.spacing / self.autoAlignable.size.width * 100,
-        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 10
+        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 100
       };
 
       // Determine coordinates for first 'spot'
@@ -2710,14 +2708,26 @@ function C(options, contentId, contentData) {
 
   // @pmasquiaran
 
-  var shufflePos = [];
-  for (var posicion = 0; posicion < task.elements.length; posicion++) {
-    shufflePos.push(posicion);
+  let shufflePos = [];
+  let shufflePos1 = [];
+  let shufflePos2 = [];
+
+  for (var posicion = 0; posicion < 3; posicion++) {
+    shufflePos1.push(posicion);
   }
-  shufflePos.sort(function (a, b) {
+  for (var posicion = 3; posicion < 6; posicion++) {
+    shufflePos2.push(posicion);
+  }
+
+  shufflePos1.sort(function (a, b) {
     return Math.random() >= 0.5 ? -1 : 1;
   });
-  shufflePos = fisherYatesShuffle(shufflePos);
+  shufflePos2.sort(function (a, b) {
+    return Math.random() >= 0.5 ? -1 : 1;
+  });
+
+  shufflePos1 = fisherYatesShuffle(shufflePos1);
+  shufflePos2 = fisherYatesShuffle(shufflePos2);
   function fisherYatesShuffle(array) {
     for (var _i = array.length - 1; _i > 0; _i--) {
       var _j = Math.floor(Math.random() * (_i + 1)); // random index from 0 to i
@@ -2728,6 +2738,9 @@ function C(options, contentId, contentData) {
     }
     return array;
   }
+
+  shufflePos = [...shufflePos1,...shufflePos2];
+
   var shuffleElem = [];
   for (var indice = 0; indice < task.elements.length; indice++) {
     shuffleElem.push({

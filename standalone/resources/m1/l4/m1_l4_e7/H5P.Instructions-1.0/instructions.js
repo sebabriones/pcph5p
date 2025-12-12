@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Tome y arrastre uno de los términos al espacio faltante.</div>
+                                <div class="intro-text">Marque el o los pasos del algoritmo que se pueden omitir de manera que el algoritmo funcionaría de todas formas.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Tome y arrastre uno de los términos al espacio faltante.</div>
+                                                <div class="instructions-text">Marque el o los pasos del algoritmo que se pueden omitir de manera que el algoritmo funcionaría de todas formas.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

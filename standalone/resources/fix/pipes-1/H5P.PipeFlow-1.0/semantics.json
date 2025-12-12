@@ -1,0 +1,121 @@
+[
+  {
+    "name": "instructions",
+    "type": "text",
+    "label": "Instrucciones",
+    "description": "Texto de instrucciones que se mostrará al usuario",
+    "default": "Activa y desactiva las válvulas para controlar el flujo de agua desde la fuente hasta el destino.",
+    "widget": "textarea"
+  },
+  {
+    "name": "gameConfig",
+    "type": "text",
+    "label": "Configuración del juego (JSON)",
+    "description": "Array bidimensional que representa el grid del juego. Valores: 0=vacío, 1=fuente, 2=destino, 3-13=válvulas, 14-24=tuberías simples",
+    "widget": "textarea",
+    "default": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+    "important": {
+      "description": "<h4 style='margin-top: 0; color: #333; border-bottom: 2px solid #667eea; padding-bottom: 5px;'>Valores básicos:</h4><table style='width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 0.9em;'><tr style='background: #f0f0f0;'><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 80px;'>Valor</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 120px;'>Tipo</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd;'>Descripción</th></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>0</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Vacío</td><td style='padding: 8px; border: 1px solid #ddd;'>Celda vacía sin tubería</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>1</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Fuente</td><td style='padding: 8px; border: 1px solid #ddd;'>Punto de inicio del agua 🚰</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>2</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Destino</td><td style='padding: 8px; border: 1px solid #ddd;'>Punto de llegada del agua 🏁</td></tr></table><h4 style='color: #333; border-bottom: 2px solid #e57373; padding-bottom: 5px;'>Válvulas (3-13) - Se pueden abrir/cerrar:</h4><table style='width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 0.9em;'><tr style='background: #f0f0f0;'><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 80px;'>Valor</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 150px;'>Tipo</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd;'>Conexiones</th></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>3</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_H</td><td style='padding: 8px; border: 1px solid #ddd;'>Horizontal (← →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>4</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_V</td><td style='padding: 8px; border: 1px solid #ddd;'>Vertical (↑ ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>5</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_CROSS</td><td style='padding: 8px; border: 1px solid #ddd;'>Cruz (todas direcciones)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>6</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_SOUTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia sur (→ ↓ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>7</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_EAST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia este (↑ → ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>8</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_NORTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia norte (↑ → ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>9</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_WEST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia oeste (↑ ← ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>10</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_SE</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-este (↓ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>11</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_NE</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-este (↑ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>12</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_NW</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-oeste (↑ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>13</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_SW</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-oeste (↓ ←)</td></tr></table><h4 style='color: #333; border-bottom: 2px solid #2196F3; padding-bottom: 5px;'>Tuberías simples (14-24) - Sin válvula:</h4><table style='width: 100%; border-collapse: collapse; font-size: 0.9em;'><tr style='background: #f0f0f0;'><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 80px;'>Valor</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 150px;'>Tipo</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd;'>Conexiones</th></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>14</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_H</td><td style='padding: 8px; border: 1px solid #ddd;'>Horizontal (← →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>15</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_V</td><td style='padding: 8px; border: 1px solid #ddd;'>Vertical (↑ ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>16</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_CROSS</td><td style='padding: 8px; border: 1px solid #ddd;'>Cruz (todas direcciones)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>17</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_SOUTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia sur (→ ↓ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>18</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_EAST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia este (↑ → ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>19</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_NORTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia norte (↑ → ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>20</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_WEST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia oeste (↑ ← ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>21</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_SE</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-este (↓ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>22</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_NE</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-este (↑ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>23</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_NW</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-oeste (↑ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>24</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_SW</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-oeste (↓ ←)</td></tr></table>",
+      "example": "Ejemplo de grid 3x3: [[1, 3, 2], [0, 5, 0], [0, 0, 0]]<br>Donde: 1=fuente 🚰, 3=válvula horizontal, 2=destino 🏁, 5=válvula cruz, 0=vacío"
+    }
+  },
+  {
+    "name": "messages",
+    "type": "group",
+    "label": "Mensajes",
+    "fields": [
+      {
+        "name": "successMessage",
+        "type": "text",
+        "label": "Mensaje de éxito",
+        "default": "¡Felicidades! El agua llegó al destino 🎉"
+      },
+      {
+        "name": "failureMessage",
+        "type": "text",
+        "label": "Mensaje de fallo",
+        "default": "El agua no puede llegar al destino. Abre más válvulas."
+      },
+      {
+        "name": "leakMessage",
+        "type": "text",
+        "label": "Mensaje de fuga",
+        "default": "El agua se escapa del circuito. Hay tuberías conectadas que no llevan al destino."
+      },
+      {
+        "name": "noPathMessage",
+        "type": "text",
+        "label": "Mensaje sin camino",
+        "default": "No hay camino desde la fuente al destino. Abre más válvulas."
+      },
+      {
+        "name": "deadEndMessage",
+        "type": "text",
+        "label": "Mensaje de callejón sin salida",
+        "default": "El agua llegó a un callejón sin salida. Hay tuberías que no llevan al destino."
+      }
+    ]
+  },
+  {
+    "name": "settings",
+    "type": "group",
+    "label": "Configuración",
+    "fields": [
+      {
+        "name": "animationSpeed",
+        "type": "number",
+        "label": "Velocidad de animación (ms)",
+        "description": "Tiempo en milisegundos entre cada celda animada",
+        "default": 100,
+        "min": 50,
+        "max": 500
+      },
+      {
+        "name": "showPathInfo",
+        "type": "boolean",
+        "label": "Mostrar información de caminos",
+        "description": "Mostrar el camino actual y el camino más corto",
+        "default": true
+      },
+      {
+        "name": "canvasSize",
+        "type": "number",
+        "label": "Tamaño del canvas (px)",
+        "description": "Tamaño del canvas del juego en píxeles",
+        "default": 600,
+        "min": 300,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Comportamiento",
+    "importance": "low",
+    "optional": true,
+    "fields": [
+      {
+        "name": "enableRetry",
+        "type": "boolean",
+        "label": "Habilitar botón \"Reintentar\"",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "scoring",
+    "type": "group",
+    "label": "Sistema de Puntuación",
+    "fields": [
+      {
+        "name": "enablePenalty",
+        "type": "boolean",
+        "label": "Aplicar penalización por válvulas innecesarias",
+        "description": "Si está habilitado, se restará 1 punto por cada válvula abierta que aumente el camino en comparación al camino más corto",
+        "default": false
+      }
+    ]
+  }
+]
+

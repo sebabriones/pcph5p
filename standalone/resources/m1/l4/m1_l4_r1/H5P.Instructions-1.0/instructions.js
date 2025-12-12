@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Arrastra las definiciones dentro del concepto que corresponda.</div>
+                                <div class="intro-text">Clasifique los siguientes algoritmos según su nombre (con base en el problema que resuelve) y forma de representación. Arrastre los conceptos correspondientes a cada columna según corresponda.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Arrastra las definiciones dentro del concepto que corresponda.</div>
+                                                <div class="instructions-text">Clasifique los siguientes algoritmos según su nombre (con base en el problema que resuelve) y forma de representación. Arrastre los conceptos correspondientes a cada columna según corresponda.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

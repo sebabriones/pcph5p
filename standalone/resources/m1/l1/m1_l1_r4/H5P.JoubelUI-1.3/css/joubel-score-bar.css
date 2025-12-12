@@ -3,7 +3,8 @@
   display: -webkit-inline-flexbox;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
-  width: 15em;
+  /*width: 15em;*/
+  width: 13em !important; /*nuevo*/
   max-width: 100%;
   background: #fff;
   border-radius: 1.5em;
@@ -11,6 +12,7 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
   position: relative;
+  font-size: 0.75em; /*nuevo*/
 }
 .h5p-joubelui-score-bar-visuals {
   flex: 1;
