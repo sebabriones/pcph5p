@@ -218,6 +218,37 @@
                 <li><a href="./standalone/h5p.php?path=resources/fix/m3_l1_e8&id=m3l1e8">Custom 2</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/fix/m3_l3_r2&id=m3l3r2">Custom 1</a></li>
             </ul>
+        <li>H5P Nuevos</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l1_e3&id=m1l1e3">M1L1E3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l1_e8&id=m1l1e8">M1L1E8</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l1_e9&id=m1l1e9">M1L1E9</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l1_e10&id=m1l1e10">M1L1E10</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l1_e11&id=m1l1e11">M1L1E11</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l1_r7&id=m1l1r7">M1L1R7</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l2_e1&id=m1l2e1">M1L2E1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l2_e2&id=m1l2e2">M1L2E2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l2_r2&id=m1l2r2">M1L2R2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l2_r3&id=m1l2r3">M1L2R3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l4_e7&id=m1l4e7">M1L4E7</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l2_r2&id=m3l2r2">M3L2R2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l2_r4&id=m3l2r4">M3L2R4</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l2_r7&id=m3l2r7">M3L2R7</a></li>
+                -------------
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l1_e4&id=m1l1e4">M1L1E4</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l3_e3&id=m1l3e3">M1L3E3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l3_e4&id=m1l3e4">M1L3E4</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l3_e5&id=m1l3e5">M1L3E5</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m1_l4_e2&id=m1l4e2">M1L4E2</a></li>
+                -------------
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l1_e3&id=m3l1e3">M3L1E3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l1_r4&id=m3l1r4">M3L1R4</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l2_e6&id=m3l2e6">M3L2E6</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l3_r1&id=m3l3r1">M3L3R1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l4_e1&id=m3l4e1">M3L4E1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l4_r1&id=m3l4r1">M3L4R1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/h5p_nuevos/m3_l5_e1&id=m3l5e1">M3L5E1</a></li>
+            </ul>
     </ul>
 </body>
 </html>
