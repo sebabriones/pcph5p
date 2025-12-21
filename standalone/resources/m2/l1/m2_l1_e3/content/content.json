@@ -5,8 +5,8 @@
                 "elements": [
                     {
                         "x": 0,
-                        "y": 15.062379769932909,
-                        "width": 42.48366013071895,
+                        "y": 11.062379769932909,
+                        "width": 45.48366013071895,
                         "height": 81.35707738190018,
                         "action": {
                             "library": "H5P.Image 1.1",
@@ -44,10 +44,10 @@
                         "solution": ""
                     },
                     {
-                        "x": 44.66230936819172,
-                        "y": 32.27652807842766,
+                        "x": 45.66230936819172,
+                        "y": 35.27652807842766,
                         "width": 51.19825708061002,
-                        "height": 55.94598200260795,
+                        "height": 47.94598200260795,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -189,7 +189,7 @@
             "googleShareUrl": "@currentpageurl"
         },
         "showSolutionButton": "off",
-        "retryButton": "off"
+        "retryButton": "on"
     },
     "l10n": {
         "slide": "Diapositiva",

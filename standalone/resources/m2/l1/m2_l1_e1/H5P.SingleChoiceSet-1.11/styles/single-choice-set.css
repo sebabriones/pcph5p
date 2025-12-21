@@ -59,7 +59,7 @@
 }
 
 .h5p-ssc-next-button {
-  display: none;
+  display: none !important;
   position: absolute;
   right: 0.5em;
   bottom: 0;

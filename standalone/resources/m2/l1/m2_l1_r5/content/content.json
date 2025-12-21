@@ -198,7 +198,7 @@
         "activeSurface": true,
         "hideSummarySlide": true,
         "summarySlideSolutionButton": false,
-        "summarySlideRetryButton": true,
+        "summarySlideRetryButton": false,
         "enablePrintButton": false,
         "social": {
             "showFacebookShare": false,
@@ -216,7 +216,7 @@
             "googleShareUrl": "@currentpageurl"
         },
         "showSolutionButton": "off",
-        "retryButton": "off"
+        "retryButton": "on"
     },
     "l10n": {
         "slide": "Diapositiva",

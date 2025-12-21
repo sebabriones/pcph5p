@@ -56,7 +56,8 @@
 }
 
 .h5p-course-presentation p {
-    font-size: 1em;
+    /*font-size: 1em;*/
+    font-size: 1.2em; /*nuevo*/
     font-weight: normal;
     line-height: 1.25em;
     padding: 0;

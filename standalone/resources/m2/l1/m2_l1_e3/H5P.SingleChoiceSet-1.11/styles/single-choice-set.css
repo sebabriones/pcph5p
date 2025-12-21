@@ -63,14 +63,14 @@
   padding-bottom: .5em;
 }
 .initialized .h5p-sc-slide {
-  /*display: none;*/
+  display: none;
 }
 .initialized .h5p-sc-slide.h5p-sc-current-slide {
   display: block;
 }
 
 .h5p-ssc-next-button {
-  display: none;
+  display: none !important;
   position: absolute;
   right: 0.5em;
   bottom: 0;
@@ -91,8 +91,7 @@
   position: absolute;
 }
 .navigatable .h5p-ssc-next-button {
-  /*display: inline-block;*/
-  display: none; /*nuevo*/
+  display: inline-block;
 }
 .h5p-ssc-next-button[aria-disabled="true"] {
   transform: scale(0.01);
@@ -475,7 +474,8 @@ li.h5p-sc-alternative .h5p-sc-status {
 }
 
 .h5p-single-choice-set .h5p-sc-question p {
-  font-size: 1em;
+  /*font-size: 1em;*/
+  font-size: 1.2em; /*nuevo*/
   margin: 0.75em 0;
 }
 .h5p-single-choice-set .h5p-sc-question p:first-child {

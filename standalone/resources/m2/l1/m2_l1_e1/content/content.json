@@ -5,9 +5,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 38.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 50.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -28,7 +28,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -74,7 +74,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 38.58006515555135,
                         "width": 52.06971677559913,
                         "height": 19.365916847056596,
                         "action": {
@@ -120,9 +120,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 38.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 50.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -143,7 +143,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -189,7 +189,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 34.58006515555135,
                         "width": 51.05359477124183,
                         "height": 30.124759539865817,
                         "action": {
@@ -235,9 +235,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 38.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 50.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -259,7 +259,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -305,7 +305,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 38.58006515555135,
                         "width": 52.062824057222485,
                         "height": 19.365916847056596,
                         "action": {
@@ -351,9 +351,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 38.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 50.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -374,7 +374,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -420,7 +420,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 38.58006515555135,
                         "width": 49.337908496732034,
                         "height": 21.517685385618442,
                         "action": {
@@ -466,9 +466,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 38.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 50.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -490,7 +490,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -536,7 +536,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 38.58006515555135,
                         "width": 52.062824057222485,
                         "height": 19.365916847056596,
                         "action": {
@@ -582,9 +582,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 38.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 50.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -606,7 +606,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -652,7 +652,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 38.58006515555135,
                         "width": 52.062824057222485,
                         "height": 19.365916847056596,
                         "action": {

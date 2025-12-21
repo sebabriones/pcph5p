@@ -138,11 +138,6 @@
   transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s ease-in;
 }
 
-/*nuevo*/
-.h5p-question-scorebar {
-  display: none !important;
-}
-
 .h5p-question-scorebar.h5p-question-visible {
   width: 13em;
   max-width: calc(100% - 2em);
