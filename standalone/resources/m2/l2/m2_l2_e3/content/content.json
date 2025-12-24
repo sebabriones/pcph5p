@@ -1,0 +1,34 @@
+{
+    "pairs": [
+        {
+            "answer": "Identificar rutas para resolver el problema",
+            "definition": "Implementar tutorías entre pares, diseñar cápsulas de refuerzo en matemáticas y realizar desafíos colaborativos y gamificados."
+        },
+        {
+            "answer": "Evaluar incertidumbre",
+            "definition": "Baja participación estudiantil, falta de coordinación y apoyo docente, recursos económicos limitados y sobrecarga de los tutores."
+        },
+        {
+            "answer": "Definir la meta a alcanzar",
+            "definition": "Reducir la tasa de deserción de estudiantes de primer año en un 25 % al finalizar el primer semestre."
+        },
+        {
+            "answer": "Definir indicadores",
+            "definition": "Evaluar el porcentaje de estudiantes que acceden a tutorías y cápsulas de refuerzo, junto con los resultados en pruebas diagnósticas y de seguimiento en matemáticas."
+        },
+        {
+            "answer": "Identificar recursos de apoyo",
+            "definition": "Estudiantes voluntarios para tutorías, plataforma para alojar cápsulas y actividades interactivas, y horas docentes para diseño de materiales."
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableSolutionButton": true,
+        "enableScoreText": false
+    },
+    "l10n": {
+        "checkAnswerButtonLabel": "Comprobar",
+        "showSolutionButtonLabel": "Mostrar solución",
+        "retryButtonLabel": "Intentar de nuevo"
+    }
+}

@@ -79,6 +79,15 @@
                 <li><a href="./standalone/h5p.php?path=resources/m2/l1/m2_l1_r5&id=m2l1r5">Refuerzo 5</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l1/m2_l1_r6&id=m2l1r6">Refuerzo 6</a></li>
             </ul>
+            <li>Leccion 2</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_e1&id=m2l2e1">Ejercicio 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_e2&id=m2l2e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_e3&id=m2l2e3">Ejercicio 3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_r1&id=m2l2r1">Refuerzo 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_r2&id=m2l2r2">Refuerzo 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_r3&id=m2l2r3">Refuerzo 3</a></li>
+            </ul>
         </ul>
         <li>Módulo 3</li>
         <ul>
