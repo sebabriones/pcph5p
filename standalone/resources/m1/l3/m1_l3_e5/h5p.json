@@ -5,14 +5,19 @@
     "language": "en",
     "defaultLanguage": "es",
     "license": "U",
-    "extraTitle": "Leccion 4 - Ejercicio 5",
-    "title": "Leccion 4 - Ejercicio 5",
-    "mainLibrary": "H5P.SortParagraphs",
+    "extraTitle": "Modulo 1 - Leccion 3 - Ejercicio 5",
+    "title": "Modulo 1 - Leccion 3 - Ejercicio 5",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
             "majorVersion": 1,
             "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.SortParagraphs",
+            "majorVersion": 0,
+            "minorVersion": 11
         },
         {
             "machineName": "FontAwesome",
@@ -40,9 +45,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.SortParagraphs",
-            "majorVersion": 0,
-            "minorVersion": 11
+            "machineName": "H5P.CoursePresentation",
+            "majorVersion": 1,
+            "minorVersion": 26
         }
     ]
 }

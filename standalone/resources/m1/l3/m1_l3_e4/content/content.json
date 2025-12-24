@@ -1,59 +1,175 @@
 {
-    "media": {
-        "disableImageZooming": false
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091507,
+                        "y": 20.746308399903172,
+                        "width": 93.68191721132898,
+                        "height": 79.3996610990075,
+                        "action": {
+                            "library": "H5P.SortParagraphs 0.11",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "scoringMode": "positions",
+                                    "applyPenalties": false,
+                                    "duplicatesInterchangeable": false,
+                                    "addButtonsForMovement": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false
+                                },
+                                "l10n": {
+                                    "checkAnswer": "Comprobar",
+                                    "submitAnswer": "Enviar",
+                                    "tryAgain": "Intentar de nuevo",
+                                    "showSolution": "Mostrar solución",
+                                    "up": "Arriba",
+                                    "down": "Abajo",
+                                    "disabled": "Deshabilitado"
+                                },
+                                "a11y": {
+                                    "check": "Comprobar las respuestas. Las respuestas se marcarán como correcta o incorrecta.",
+                                    "showSolution": "Mostrar la solución. Se mostrará la solución correcta.",
+                                    "retry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                    "yourResult": "Has obtenido @score de un total de @total puntos",
+                                    "listDescription": "Lista ordenable de párrafos.",
+                                    "listDescriptionCheckAnswer": "Lista de párrafos con resultados.",
+                                    "listDescriptionShowSolution": "Lista de párrafos con soluciones.",
+                                    "paragraph": "Párrafo",
+                                    "correct": "correcto",
+                                    "wrong": "incorrecto",
+                                    "point": "@score punto",
+                                    "sevenOfNine": "@current de @total",
+                                    "currentPosition": "Posición actual en lista",
+                                    "instructionsSelected": "Presiona la barra espaciadora para reordenar",
+                                    "instructionsGrabbed": "Presiona las teclas de dirección arriba y abajo para cambiar la posición, barra espaciadora para soltar, escape para cancelar",
+                                    "grabbed": "Cogido",
+                                    "moved": "Movido",
+                                    "dropped": "Soltado",
+                                    "reorderCancelled": "Reordenación cancelada",
+                                    "finalPosition": "Posición final",
+                                    "nextParagraph": "Párrafo siguiente",
+                                    "correctParagraph": "Párrafo correcto en la posición"
+                                },
+                                "taskDescription": "<p>Ordene los pasos del algoritmo para que calcule el promedio de 3 números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.</p>",
+                                "paragraphs": [
+                                    "<p>Colocar en una lista los tres números a promediar.</p>",
+                                    "<p>Sumar los tres números y asignar el resultado como <strong>SUMA</strong>.</p>",
+                                    "<p>Dividir el valor <strong>SUMA</strong> por tres y asignar al resultado como <strong>PROMEDIO</strong>.</p>",
+                                    "<p>El promedio de los tres números es <strong>PROMEDIO</strong>.</p>"
+                                ]
+                            },
+                            "subContentId": "ec76a2f8-3d67-493d-a79e-f751d9874a83",
+                            "metadata": {
+                                "contentType": "Ordenar los párrafos (Sort the Paragraphs)",
+                                "license": "U",
+                                "title": "Algoritmo para determinar el promedio de tres números",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Algoritmo para determinar el promedio de tres números"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {},
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
     },
-    "overallFeedback": [
-        {
-            "from": 0,
-            "to": 100
-        }
-    ],
-    "behaviour": {
-        "scoringMode": "positions",
-        "applyPenalties": false,
-        "duplicatesInterchangeable": false,
-        "addButtonsForMovement": false,
-        "enableRetry": true,
-        "enableSolutionsButton": false
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "I scored @score out of @maxScore on a task at @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "I scored @score out of @maxScore on a task at @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, course"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off"
     },
     "l10n": {
-        "checkAnswer": "Comprobar",
-        "submitAnswer": "Enviar",
-        "tryAgain": "Intentar de nuevo",
-        "showSolution": "Mostrar solución",
-        "up": "Arriba",
-        "down": "Abajo",
-        "disabled": "Deshabilitado"
-    },
-    "a11y": {
-        "check": "Comprobar las respuestas. Las respuestas se marcarán como correcta o incorrecta.",
-        "showSolution": "Mostrar la solución. Se mostrará la solución correcta.",
-        "retry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
-        "yourResult": "Has obtenido @score de un total de @total puntos",
-        "listDescription": "Lista ordenable de párrafos.",
-        "listDescriptionCheckAnswer": "Lista de párrafos con resultados.",
-        "listDescriptionShowSolution": "Lista de párrafos con soluciones.",
-        "paragraph": "Párrafo",
-        "correct": "correcto",
-        "wrong": "incorrecto",
-        "point": "@score punto",
-        "sevenOfNine": "@current de @total",
-        "currentPosition": "Posición actual en lista",
-        "instructionsSelected": "Presiona la barra espaciadora para reordenar",
-        "instructionsGrabbed": "Presiona las teclas de dirección arriba y abajo para cambiar la posición, barra espaciadora para soltar, escape para cancelar",
-        "grabbed": "Cogido",
-        "moved": "Movido",
-        "dropped": "Soltado",
-        "reorderCancelled": "Reordenación cancelada",
-        "finalPosition": "Posición final",
-        "nextParagraph": "Párrafo siguiente",
-        "correctParagraph": "Párrafo correcto en la posición"
-    },
-    "taskDescription": "<p>Ordene los pasos del algoritmo para que calcule el promedio de 3 números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.</p>",
-    "paragraphs": [
-        "<p>Colocar en una lista los tres números a promediar.</p>",
-        "<p>Sumar los tres números y asignar el resultado como SUMA.</p>",
-        "<p>Dividir el valor SUMA por tres y asignar al resultado como PROMEDIO.</p>",
-        "<p>El promedio de los tres números es PROMEDIO.</p>"
-    ]
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
 }

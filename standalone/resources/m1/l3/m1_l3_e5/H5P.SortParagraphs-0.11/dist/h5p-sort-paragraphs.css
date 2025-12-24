@@ -64,7 +64,7 @@
 .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-paragraph-corrections {
     font-size: 1.5em;
     /*padding-top: .5em*/
-    padding-top: .3em /*nuevo*/
+    padding-top: .1em /*nuevo*/
 }
 
 /*nuevo*/
@@ -249,7 +249,7 @@ div .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-but
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-separator {
     border-radius: .3em;
-    height: .4em;
+    /*height: .4em;*/
     margin: .4em 0;
     text-align: center;
     width: calc(100% - .5em);
