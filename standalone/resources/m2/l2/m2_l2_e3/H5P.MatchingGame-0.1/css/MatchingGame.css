@@ -1,3 +1,7 @@
+.h5p-matching-game {
+    padding: 1em;
+}
+
 .matching-game-wrapper {
     display: flex;
     justify-content: space-between;
