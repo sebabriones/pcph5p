@@ -9,7 +9,7 @@
                         "width": 95.86056644880175,
                         "height": 81.6393894141595,
                         "action": {
-                            "library": "H5P.MatchingGame 0.1",
+                            "library": "H5P.MatchingGameCP 0.1",
                             "params": {
                                 "pairs": [
                                     {
@@ -101,7 +101,7 @@
                         "width": 95.86056644880175,
                         "height": 81.6393894141595,
                         "action": {
-                            "library": "H5P.MatchingGame 0.1",
+                            "library": "H5P.MatchingGameCP 0.1",
                             "params": {
                                 "pairs": [
                                     {
@@ -193,7 +193,7 @@
                         "width": 95.86056644880175,
                         "height": 81.6393894141595,
                         "action": {
-                            "library": "H5P.MatchingGame 0.1",
+                            "library": "H5P.MatchingGameCP 0.1",
                             "params": {
                                 "pairs": [
                                     {

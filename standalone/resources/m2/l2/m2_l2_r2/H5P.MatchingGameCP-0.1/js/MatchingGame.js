@@ -1,6 +1,6 @@
 var H5P = H5P || {};
 
-H5P.MatchingGame = (function ($, Question) {
+H5P.MatchingGameCP = (function ($, Question) {
 
     //Constructor principal. Hereda de H5P.Question.
     function MatchingGame(options, id) {

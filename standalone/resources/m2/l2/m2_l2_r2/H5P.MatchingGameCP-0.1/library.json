@@ -1,13 +1,13 @@
 {
-    "title": "Matching Game",
-    "description": "Términos pareados unidos por una línea.",
+    "title": "Matching Game (CoursePresentation)",
+    "description": "Términos pareados unidos por una línea. Versión optimizada para CoursePresentation.",
     "majorVersion": 0,
     "minorVersion": 1,
     "patchVersion": 0,
     "runnable": 1,
     "author": "sbriones",
     "license": "MIT",
-    "machineName": "H5P.MatchingGame",
+    "machineName": "H5P.MatchingGameCP",
     "coreApi": {
       "majorVersion": 1,
       "minorVersion": 24
