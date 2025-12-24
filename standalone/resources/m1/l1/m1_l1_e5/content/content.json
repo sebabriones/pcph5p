@@ -53,7 +53,7 @@
                                 "media": {
                                     "disableImageZooming": false
                                 },
-                                "text": "<p>Escribe en el recuadro todos los números que conforman la palabra que aparece a continuación:</p><p><strong>HOLA</strong></p>",
+                                "text": "<p>Escribe en el recuadro todos los números binarios que conforman la palabra que aparece a continuación:</p><p><strong>HOLA MUNDO</strong></p>",
                                 "overallFeedback": [
                                     {
                                         "from": 0,
@@ -103,7 +103,7 @@
                                     "confirmLabel": "Confirmar"
                                 },
                                 "questions": [
-                                    "<p style=\"text-align:right;\">*0100 1000 0100 1111 0100 1100 0100 0001*</p>"
+                                    "<p style=\"text-align:right;\">*0100 1000 0100 1111 0100 1100 0100 0001 0100 1101 0101 0101 0100 1110 0100 0100 0100 1111*</p>"
                                 ]
                             },
                             "subContentId": "d329b28f-7076-4d86-b840-3beec3772590",
@@ -132,7 +132,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p>Escribe en el recuadro todos los números que conforman la palabra que aparece a continuación:</p><p><strong>HOLA</strong></p>"
+                                "text": "<p>Escribe en el recuadro todos los números binarios que conforman la palabra que aparece a continuación:</p><p><strong>HOLA MUNDO</strong></p>"
                             },
                             "subContentId": "fd3fbf50-6ea1-4ebc-abe0-a0e437169fe9",
                             "metadata": {

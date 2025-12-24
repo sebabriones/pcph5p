@@ -33,7 +33,7 @@
 
 .h5p-multichoice .h5p-answer.h5p-wrong .h5p-alternative-container,
 .h5p-multichoice .h5p-answer.h5p-correct .h5p-alternative-container {
-  padding-right: 3em;
+  padding-right: 2em;
 }
 
 .h5p-multichoice .h5p-alternative-container {
