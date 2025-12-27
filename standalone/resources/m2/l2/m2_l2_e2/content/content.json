@@ -1,1 +1,397 @@
-{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images/image-gMkoiZuU.png","mime":"image/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":68.4931506849315,"y":11.415655429856503,"width":12.113077910958904,"height":1.8400684931506848,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Definir meta</p>"},"subContentId":"eaa0449c-ceac-48b1-8a1c-be17e9f40d04","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":22.831310859713007,"width":12.755201198630136,"height":1.8350679580479452,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Concretar acuerdos</p>"},"subContentId":"fa404fb6-9c4e-482f-a54d-4d037b252f71","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":32.338411397390374,"width":12.755201198630136,"height":1.8400684931506848,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Identificar recursos</p>"},"subContentId":"cb770c27-7c92-4cdb-b178-ec487ba98d76","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":43.75406682724688,"width":12.755201198630136,"height":1.8400684931506848,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Identificar rutas</p>"},"subContentId":"6e3789fd-ece0-45e3-b8d6-d84286fe0695","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":53.267113018793964,"width":12.756164383561643,"height":1.8390796232876712,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Evaluar incertidumbre</p>"},"subContentId":"2f873683-d5c8-4811-95d2-1e64c9b4a945","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":64.68276844865046,"width":12.756164383561643,"height":1.8390796232876712,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Hacer compromisos</p>"},"subContentId":"775a93bf-36c7-405b-be37-4c13247c9406","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":74.19581464019755,"width":12.755201198630136,"height":1.8400684931506848,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Definir indicadores</p>"},"subContentId":"e49a66ce-e794-449a-bace-6553e627368f","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":85.61444289698892,"width":12.756164383561643,"height":1.5310659246575342,"dropZones":["0","1","2","3","4"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Investigar fuentes</p>"},"subContentId":"eee5908b-eec4-436c-8e4c-eaf4ec28d018","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false}],"dropZones":[{"x":30.82191780821918,"y":79.90661518206066,"width":14.768835616438356,"height":2.504280821917808,"correctElements":["0"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Etapa 1</div>"},{"x":31.963470319634705,"y":62.78313203727591,"width":14.768835616438356,"height":2.504280821917808,"correctElements":["3"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Etapa 2</div>"},{"x":34.24657534246575,"y":45.659648892491155,"width":13.484589041095889,"height":2.504280821917808,"correctElements":["6"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Etapa 3</div>"},{"x":35.38634417808219,"y":28.536165747706402,"width":13.484589041095889,"height":2.504280821917808,"correctElements":["2"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Etapa 4</div>"},{"x":36.529680365296805,"y":11.412682602921645,"width":13.484589041095889,"height":2.504280821917808,"correctElements":["4"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Etapa 5</div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":true,"enableCheckButton":true,"singlePoint":false,"applyPenalties":false,"enableScoreExplanation":true,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":true,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocación {num}.","dropzonePrefix":"Zona de colocación {num} de {total}.","noDropzone":"No es zona de colocación.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentación","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicación de la puntuación","a11yCheck":"Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}}
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l2/m2_l2_e2/content/images/image-gMkoiZuU.png",
+                "path2": "images/image-gMkoiZuU.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 67.5,
+                    "y": 12.5,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Definir meta</p>"
+                        },
+                        "subContentId": "eaa0449c-ceac-48b1-8a1c-be17e9f40d04",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 67.5,
+                    "y": 22.9,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Concretar acuerdos</p>"
+                        },
+                        "subContentId": "fa404fb6-9c4e-482f-a54d-4d037b252f71",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 67.5,
+                    "y": 33.2,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Identificar recursos</p>"
+                        },
+                        "subContentId": "cb770c27-7c92-4cdb-b178-ec487ba98d76",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 67.5,
+                    "y": 43.6,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Identificar rutas</p>"
+                        },
+                        "subContentId": "6e3789fd-ece0-45e3-b8d6-d84286fe0695",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 67.5,
+                    "y": 53.9,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Evaluar incertidumbre</p>"
+                        },
+                        "subContentId": "2f873683-d5c8-4811-95d2-1e64c9b4a945",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 67.5,
+                    "y": 64.3,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Hacer compromisos</p>"
+                        },
+                        "subContentId": "775a93bf-36c7-405b-be37-4c13247c9406",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 67.5,
+                    "y": 74.7,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Definir indicadores</p>"
+                        },
+                        "subContentId": "e49a66ce-e794-449a-bace-6553e627368f",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 67.5,
+                    "y": 85,
+                    "width": 13,
+                    "height": 1.85,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Investigar fuentes</p>"
+                        },
+                        "subContentId": "eee5908b-eec4-436c-8e4c-eaf4ec28d018",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 31.4,
+                    "y": 79.5,
+                    "width": 13.7,
+                    "height": 2.6,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 1</div>"
+                },
+                {
+                    "x": 32.6,
+                    "y": 62.3,
+                    "width": 13.7,
+                    "height": 2.6,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 2</div>"
+                },
+                {
+                    "x": 34.25,
+                    "y": 44.8,
+                    "width": 13.7,
+                    "height": 2.6,
+                    "correctElements": [
+                        "6"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 3</div>"
+                },
+                {
+                    "x": 35.15,
+                    "y": 27.7,
+                    "width": 13.7,
+                    "height": 2.6,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 4</div>"
+                },
+                {
+                    "x": 36.3,
+                    "y": 10.5,
+                    "width": 13.7,
+                    "height": 2.6,
+                    "correctElements": [
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 5</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": true,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 0,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

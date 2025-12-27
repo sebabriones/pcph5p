@@ -23,7 +23,7 @@
     ],
     "behaviour": {
         "enableRetry": true,
-        "enableSolutionButton": true,
+        "enableSolutionButton": false,
         "enableScoreText": false
     },
     "l10n": {

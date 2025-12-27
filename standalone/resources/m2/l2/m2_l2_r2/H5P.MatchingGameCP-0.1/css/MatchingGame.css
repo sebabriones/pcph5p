@@ -1,3 +1,7 @@
+.h5p-matching-game {
+    padding: 1em;
+}
+
 .matching-game-wrapper {
     display: flex;
     justify-content: space-between;
@@ -52,4 +56,74 @@
     stroke: #007bff; /* Color de la línea */
     stroke-width: 2; /* Grosor de la línea */
     transition: stroke-width 0.3s;
+}
+
+/*nuevo*/
+.h5p-container {
+    background-color: #f8feef !important;
+    font-size: 1em;
+}
+
+.left-column {
+    width: 30%;
+}
+
+.right-column {
+    width: 55%;
+}
+
+.item {
+    border-radius: 1em;
+    background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
+    color: #062971;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.connection-line {
+    stroke: #062971;
+    stroke-linecap: round;
+    stroke-width: 3;
+}
+
+.connection-line:hover {
+    stroke-width: 6;
+}
+
+.item:hover,
+.item.selected {
+    background: linear-gradient(180deg, #5166ad 0%, #062971 90%);
+    color: #fff;
+}
+
+.item.correct {
+    background: linear-gradient(180deg, #8bae54 0%, #456f06 90%);
+    color: #fff;
+}
+.item.incorrect {
+    background: linear-gradient(180deg, #870202 0%, #3c0505 90%);
+    color: #fff;
+}
+
+.item.correct .item-content:after {
+    font-family: 'H5PFontAwesome4';
+    content: "\f00c";
+    color: #fff;
+    font-size: 1.5em;
+}
+.item.incorrect .item-content:after {
+    font-family: 'H5PFontAwesome4';
+    content: "\f00d";
+    color: #fff;
+    font-size: 1.5em;
+}
+
+/*nuevo*/
+.term,
+.definition {
+    font-size: 0.75em !important;
 }

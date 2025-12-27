@@ -5,9 +5,9 @@
                 "elements": [
                     {
                         "x": 2.178649237472767,
-                        "y": 12.910611231371064,
+                        "y": 18.910611231371064,
                         "width": 95.86056644880175,
-                        "height": 81.6393894141595,
+                        "height": 80.6393894141595,
                         "action": {
                             "library": "H5P.MatchingGameCP 0.1",
                             "params": {
@@ -34,7 +34,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "enableRetry": true,
+                                    "enableRetry": false,
                                     "enableSolutionButton": false,
                                     "enableScoreText": false
                                 },
@@ -64,7 +64,7 @@
                     },
                     {
                         "x": 6.5359477124183005,
-                        "y": 5.379421346404611,
+                        "y": 10.379421346404611,
                         "width": 86.64389978213508,
                         "height": 8.607074154247377,
                         "action": {
@@ -97,9 +97,9 @@
                 "elements": [
                     {
                         "x": 2.178649237472767,
-                        "y": 12.910611231371064,
+                        "y": 18.910611231371064,
                         "width": 95.86056644880175,
-                        "height": 81.6393894141595,
+                        "height": 80.6393894141595,
                         "action": {
                             "library": "H5P.MatchingGameCP 0.1",
                             "params": {
@@ -126,7 +126,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "enableRetry": true,
+                                    "enableRetry": false,
                                     "enableSolutionButton": false,
                                     "enableScoreText": false
                                 },
@@ -156,7 +156,7 @@
                     },
                     {
                         "x": 6.5359477124183005,
-                        "y": 5.379421346404611,
+                        "y": 10.379421346404611,
                         "width": 86.64389978213508,
                         "height": 8.607074154247377,
                         "action": {
@@ -189,9 +189,9 @@
                 "elements": [
                     {
                         "x": 2.178649237472767,
-                        "y": 12.910611231371064,
+                        "y": 18.910611231371064,
                         "width": 95.86056644880175,
-                        "height": 81.6393894141595,
+                        "height": 80.6393894141595,
                         "action": {
                             "library": "H5P.MatchingGameCP 0.1",
                             "params": {
@@ -218,7 +218,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "enableRetry": true,
+                                    "enableRetry": false,
                                     "enableSolutionButton": false,
                                     "enableScoreText": false
                                 },
@@ -248,7 +248,7 @@
                     },
                     {
                         "x": 6.5359477124183005,
-                        "y": 5.379421346404611,
+                        "y": 10.379421346404611,
                         "width": 86.64389978213508,
                         "height": 8.607074154247377,
                         "action": {
@@ -279,7 +279,9 @@
             }
         ],
         "keywordListEnabled": true,
-        "globalBackgroundSelector": {},
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
         "keywordListAlwaysShow": false,
         "keywordListAutoHide": false,
         "keywordListOpacity": 90
@@ -287,7 +289,7 @@
     "override": {
         "activeSurface": false,
         "hideSummarySlide": false,
-        "summarySlideSolutionButton": true,
+        "summarySlideSolutionButton": false,
         "summarySlideRetryButton": true,
         "enablePrintButton": false,
         "social": {

@@ -652,6 +652,37 @@ H5P.MatchingGameCP = (function ($, Question) {
         return maxScore;
     };
 
+    /**
+     * Check if user has given an answer.
+     * Required by CoursePresentation to detect if task has been answered.
+     * @param {boolean} [ignoreCheck] Ignore returning true from pressing "check-answer" button.
+     * @return {boolean} True if answer is given
+     */
+    MatchingGame.prototype.getAnswerGiven = function (ignoreCheck) {
+        let self = this;
+        // Retorna true si hay al menos un emparejamiento realizado
+        // o si ya se verificó la respuesta (status = true)
+        if (ignoreCheck) {
+            return false;
+        }
+        return (self.matchesId && self.matchesId.length > 0) || self.status === true;
+    };
+
+    /**
+     * Pack the current state of the interactivity into an object that can be serialized.
+     * Required by CoursePresentation to detect if task has been answered.
+     * @return {Object} Current state
+     */
+    MatchingGame.prototype.getCurrentState = function () {
+        let self = this;
+        return {
+            matchesId: self.matchesId || [],
+            matchesName: self.matchesName || [],
+            status: self.status || false,
+            showingSolution: self.showingSolution || false
+        };
+    };
+
     //Métodos para incluir data adicional en el statement xApi
     MatchingGame.prototype.getCorrectResponsesPattern = function() {
         let self = this;
