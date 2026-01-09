@@ -1,0 +1,216 @@
+{
+    "instructions": "Observa la distribución de colores en los tres primeros loros; todo siguen el patrón de cuatro colores: rojo, azul, verde y amarillo.\nPara el cuarto loro, asegúrate de que ningún color se repita en la misma parte del cuerpo que en los anteriores.",
+    "referenceElements": [
+        {
+            "useImage": true,
+            "image": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-0hKgBatk.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        },
+        {
+            "useImage": true,
+            "image": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-k7F1gsHV.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        },
+        {
+            "useImage": true,
+            "image": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-u9LW2ZvE.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        }
+    ],
+    "interactiveElements": [
+        [
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-WELFI8ME.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 199,
+                        "height": 164
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-Sw853PuT.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 199,
+                        "height": 164
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-5w78OPun.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 199,
+                        "height": 164
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-L9bHGrMo.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 199,
+                    "height": 164
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-9hHtbCwo.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 385,
+                        "height": 449
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-PtovB6yB.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 385,
+                        "height": 449
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-gMWIvRNw.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 385,
+                        "height": 449
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-xEY41r91.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 385,
+                    "height": 449
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-vmcpeo7w.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 300,
+                        "height": 257
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-fXiZXZKV.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 300,
+                        "height": 257
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-2bnACTAr.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 300,
+                        "height": 257
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-FIdCDiap.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 300,
+                    "height": 257
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-FrlK3j1O.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 129,
+                        "height": 113
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-9fkVZkMU.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 129,
+                        "height": 113
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-P6N0grUl.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 129,
+                        "height": 113
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-lyyRrBoe.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 129,
+                    "height": 113
+                }
+            }
+        ]
+    ],
+    "messages": {
+        "successMessage": "¡Excelente! Has encontrado el patrón correcto.<img src=\"http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-success.png\">",
+        "failureMessage": "El patrón no coincide completamente. Sigue intentando.<img src=\"http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e10/content/images/image-failure.png\">"
+    },
+    "behaviour": {
+        "enableRetry": true
+    },
+    "l10n": {
+        "checkAnswerButtonLabel": "Comprobar",
+        "retryButtonLabel": "Reintentar"
+    }
+}

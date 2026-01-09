@@ -1,0 +1,160 @@
+[
+  {
+    "name": "instructions",
+    "type": "text",
+    "label": "Instrucciones",
+    "description": "Texto de instrucciones que se mostrará al usuario",
+    "default": "Observa la distribución de colores en los elementos de ejemplo; cada elemento está formado por 4 partes y cada parte tiene un color distinto. Los colores disponibles son: rojo, azul, verde y amarillo. Cada elemento debe tener los 4 colores pero en posiciones diferentes. Para los elementos interactuables, asegúrate de que ningún color se repita en la misma parte que en los elementos de ejemplo.",
+    "widget": "textarea",
+    "importance": "high"
+  },
+  {
+    "name": "referenceElements",
+    "type": "list",
+    "label": "Elementos de Referencia",
+    "entity": "elemento",
+    "importance": "high",
+    "field": {
+      "name": "element",
+      "type": "group",
+      "label": "Elemento de Referencia",
+      "fields": [
+        {
+          "name": "image",
+          "type": "image",
+          "label": "Imagen del elemento",
+          "description": "Imagen del elemento de referencia. IMPORTANTE: Asegúrate de seleccionar una imagen antes de guardar.",
+          "importance": "high"
+        },
+        {
+          "name": "useImage",
+          "type": "boolean",
+          "label": "Usar imagen",
+          "description": "Los elementos de referencia deben usar imágenes. Este campo debe estar activado.",
+          "default": true,
+          "importance": "low"
+        }
+      ]
+    },
+    "default": [
+      {
+        "useImage": true
+      }
+    ]
+  },
+  {
+    "name": "interactiveElements",
+    "type": "list",
+    "label": "Elementos Interactuables",
+    "entity": "elementoInteractivo",
+    "importance": "high",
+    "field": {
+      "name": "interactiveElement",
+      "type": "group",
+      "label": "Elemento Interactuable",
+      "fields": [
+        {
+          "name": "rows",
+          "type": "list",
+          "label": "Filas del Elemento",
+          "entity": "fila",
+          "importance": "high",
+          "field": {
+            "name": "row",
+            "type": "group",
+            "label": "Fila del Elemento",
+            "fields": [
+              {
+                "name": "images",
+                "type": "list",
+                "label": "Imágenes de la Fila",
+                "description": "Agrega las imágenes opcionales que el usuario puede seleccionar para esta fila. IMPORTANTE: Cada fila debe tener sus propias imágenes únicas.",
+                "entity": "imagen",
+                "importance": "high",
+                "min": 1,
+                "field": {
+                  "name": "image",
+                  "type": "image",
+                  "label": "Imagen",
+                  "importance": "high"
+                }
+              },
+              {
+                "name": "correctImage",
+                "type": "image",
+                "label": "Imagen Correcta",
+                "description": "La imagen correcta para esta fila",
+                "importance": "high"
+              }
+            ]
+          },
+          "defaultNum": 4
+        }
+      ]
+    },
+    "defaultNum": 1
+  },
+  {
+    "name": "messages",
+    "type": "group",
+    "label": "Mensajes",
+    "importance": "medium",
+    "optional": true,
+    "fields": [
+      {
+        "name": "successMessage",
+        "type": "text",
+        "label": "Mensaje de éxito",
+        "default": "¡Excelente! Has encontrado el patrón correcto.",
+        "importance": "low"
+      },
+      {
+        "name": "failureMessage",
+        "type": "text",
+        "label": "Mensaje de fallo",
+        "default": "El patrón no coincide completamente. Sigue intentando.",
+        "importance": "low"
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "Localización",
+    "importance": "low",
+    "common": true,
+    "optional": true,
+    "fields": [
+      {
+        "name": "checkAnswerButtonLabel",
+        "type": "text",
+        "label": "Etiqueta del botón \"Comprobar\"",
+        "importance": "low",
+        "default": "Comprobar"
+      },
+      {
+        "name": "retryButtonLabel",
+        "type": "text",
+        "label": "Etiqueta del botón \"Reintentar\"",
+        "importance": "low",
+        "default": "Reintentar"
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Comportamiento",
+    "importance": "low",
+    "optional": true,
+    "fields": [
+      {
+        "name": "enableRetry",
+        "type": "boolean",
+        "label": "Habilitar botón \"Reintentar\"",
+        "default": true,
+        "importance": "low"
+      }
+    ]
+  }
+]

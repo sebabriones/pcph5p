@@ -1,0 +1,39 @@
+{
+  "title": "Pattern Game",
+  "description": "Juego de reconocimiento de patrones donde el jugador debe ajustar el cuarto elemento para que coincida con el patrón correcto basado en los tres elementos de referencia.",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 1,
+  "runnable": 1,
+  "author": "sbriones",
+  "license": "MIT",
+  "machineName": "H5P.PatternGame",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "embedTypes": ["div"],
+  "preloadedJs": [
+    {
+      "path": "js/PatternGame.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "css/PatternGame.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}
+

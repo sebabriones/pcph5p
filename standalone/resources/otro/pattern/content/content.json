@@ -1,0 +1,218 @@
+{
+    "instructions": "Observa la distribución de colores en los elementos de ejemplo; cada elemento está formado por 4 partes y cada parte tiene un color distinto. Los colores disponibles son: rojo, azul, verde y amarillo. Cada elemento debe tener los 4 colores pero en posiciones diferentes. Para los elementos interactuables, asegúrate de que ningún color se repita en la misma parte que en los elementos de ejemplo.",
+    "referenceElements": [
+        {
+            "useImage": true,
+            "image": {
+                "path": "images/image-mFKlZ7DN.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        },
+        {
+            "useImage": true,
+            "image": {
+                "path": "images/image-MLJOmVMu.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        },
+        {
+            "useImage": true,
+            "image": {
+                "path": "images/image-0SSNptev.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        }
+    ],
+    "interactiveElements": [
+        {
+            "rows": [
+                {
+                    "images": [
+                        {
+                            "path": "images/image-9iu3nRIi.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-PHnToAT5.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-BXkfuoBy.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        }
+                    ],
+                    "correctImage": {
+                        "path": "images/image-PGuwmfn2.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 199,
+                        "height": 164
+                    }
+                },
+                {
+                    "images": [
+                        {
+                            "path": "images/image-9iu3nRIi.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-PHnToAT5.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-BXkfuoBy.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        }
+                    ],
+                    "correctImage": {
+                        "path": "images/image-YXxbb0RE.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 385,
+                        "height": 449
+                    }
+                },
+                {
+                    "images": [
+                        {
+                            "path": "images/image-9iu3nRIi.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-PHnToAT5.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-BXkfuoBy.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        }
+                    ],
+                    "correctImage": {
+                        "path": "images/image-Gy1ch4Yu.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 300,
+                        "height": 257
+                    }
+                },
+                {
+                    "images": [
+                        {
+                            "path": "images/image-9iu3nRIi.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-PHnToAT5.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        },
+                        {
+                            "path": "images/image-BXkfuoBy.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 129,
+                            "height": 113
+                        }
+                    ],
+                    "correctImage": {
+                        "path": "images/image-X0tu63A1.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 129,
+                        "height": 113
+                    }
+                }
+            ]
+        }
+    ],
+    "messages": {
+        "successMessage": "¡Excelente! Has encontrado el patrón correcto.",
+        "failureMessage": "El patrón no coincide completamente. Sigue intentando."
+    },
+    "behaviour": {
+        "enableRetry": true
+    },
+    "l10n": {
+        "checkAnswerButtonLabel": "Comprobar",
+        "retryButtonLabel": "Reintentar"
+    }
+}

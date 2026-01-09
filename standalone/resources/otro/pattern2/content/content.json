@@ -1,0 +1,216 @@
+{
+    "instructions": "Observa la distribución de colores en los elementos de ejemplo; cada elemento está formado por 4 partes y cada parte tiene un color distinto. Los colores disponibles son: rojo, azul, verde y amarillo. Cada elemento debe tener los 4 colores pero en posiciones diferentes. Para los elementos interactuables, asegúrate de que ningún color se repita en la misma parte que en los elementos de ejemplo.",
+    "referenceElements": [
+        {
+            "useImage": true,
+            "image": {
+                "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-XFUFatOf.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        },
+        {
+            "useImage": true,
+            "image": {
+                "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-ETfjbhps.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        },
+        {
+            "useImage": true,
+            "image": {
+                "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-cpxVgZwe.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 193,
+                "height": 260
+            }
+        }
+    ],
+    "interactiveElements": [
+        [
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-BfDjCUTI.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 199,
+                        "height": 164
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-kBeIICLa.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 199,
+                        "height": 164
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-bLBxowc4.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 199,
+                        "height": 164
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-KRODVycR.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 199,
+                    "height": 164
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-GTURIYyL.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 385,
+                        "height": 449
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-76uVgOfo.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 385,
+                        "height": 449
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-utdmCTAF.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 385,
+                        "height": 449
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-uSos3L6r.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 385,
+                    "height": 449
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-m7A7PTDs.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 300,
+                        "height": 257
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-lSfH7IxM.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 300,
+                        "height": 257
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-lPmSSmPi.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 300,
+                        "height": 257
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-s5eB3LLv.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 300,
+                    "height": 257
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-S62JJuW8.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 129,
+                        "height": 113
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-mOiKNvD2.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 129,
+                        "height": 113
+                    },
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-GZeW4iKZ.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 129,
+                        "height": 113
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-N4XegZVa.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 129,
+                    "height": 113
+                }
+            }
+        ]
+    ],
+    "messages": {
+        "successMessage": "¡Excelente! Has encontrado el patrón correcto.<img src=\"http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-success.png\">",
+        "failureMessage": "El patrón no coincide completamente. Sigue intentando.<img src=\"http://localhost/pcph5p/standalone/resources/otro/pattern2/content/images/image-failure.png\">"
+    },
+    "behaviour": {
+        "enableRetry": true
+    },
+    "l10n": {
+        "checkAnswerButtonLabel": "Comprobar",
+        "retryButtonLabel": "Reintentar"
+    }
+}

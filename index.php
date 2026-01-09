@@ -88,6 +88,35 @@
                 <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_r2&id=m2l2r2">Refuerzo 2</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l2/m2_l2_r3&id=m2l2r3">Refuerzo 3</a></li>
             </ul>
+            <li>Leccion 3</li>
+            <ul>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e1&id=m2l3e1">Ejercicio 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e2&id=m2l3e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e3&id=m2l3e3">Ejercicio 3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e4&id=m2l3e4">Ejercicio 4</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e5&id=m2l3e5">Ejercicio 5</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e6&id=m2l3e6">Ejercicio 6</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e7&id=m2l3e7">Ejercicio 7</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e8&id=m2l3e8">Ejercicio 8</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e9&id=m2l3e9">Ejercicio 9</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e10&id=m2l3e10">Ejercicio 10</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e11&id=m2l3e11">Ejercicio 11</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e12&id=m2l3e12">Ejercicio 12</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e13&id=m2l3e13">Ejercicio 13</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e14&id=m2l3e14">Ejercicio 14</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e15&id=m2l3e15">Ejercicio 15</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e16&id=m2l3e16">Ejercicio 16</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e17&id=m2l3e17">Ejercicio 17</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e18&id=m2l3e18">Ejercicio 18</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e19&id=m2l3e19">Ejercicio 19</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e20&id=m2l3e20">Ejercicio 20</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e21&id=m2l3e21">Ejercicio 21</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e22&id=m2l3e22">Ejercicio 22</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e23&id=m2l3e23">Ejercicio 23</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e24&id=m2l3e24">Ejercicio 24</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e25&id=m2l3e25">Ejercicio 25</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e26&id=m2l3e26">Ejercicio 26</a></li>
+            </ul>
         </ul>
         <li>Módulo 3</li>
         <ul>
@@ -199,6 +228,7 @@
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/python-prueba&id=python-prueba">Python Console</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/prueba_blockly&id=prueba_blockly">Blockly</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/m3_l5_e1&id=m3l5e1">Python Terminal</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/pattern&id=pattern">Pattern Game</a></li>
             </ul>
         <li>Otros</li>
             <ul>
@@ -207,6 +237,8 @@
                 <li><a href="./standalone/h5p.php?path=resources/otro/prueba&id=prueba">Prueba</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/otro/coursepresentation&id=coursepresentation">Course presentation</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/otro/m1_leccion4_9&id=m1_leccion4_9">M1L49</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/otro/pattern&id=pattern">Pattern Game</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/otro/pattern2&id=pattern2">Pattern Game 2</a></li>
             </ul>
         <li>Fix</li>
             <ul>
