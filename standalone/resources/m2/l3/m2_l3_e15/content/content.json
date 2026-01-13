@@ -1,0 +1,458 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-XS1KAXTk.png",
+                "path2": "images/image-XS1KAXTk.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 75.34246575342466,
+                    "y": 11.415655429856503,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-4cUitksV.png",
+                                "path2": "images/image-4cUitksV.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 160,
+                                "height": 160
+                            },
+                            "alt": "Circulo/Liso"
+                        },
+                        "subContentId": "831a57b9-fdb7-4404-9fc9-84cc96d754ad",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 87.89954337899543,
+                    "y": 11.415655429856503,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-Bueb2An0.png",
+                                "path2": "images/image-Bueb2An0.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 160,
+                                "height": 160
+                            },
+                            "alt": "Circulo/Rugoso"
+                        },
+                        "subContentId": "7305c869-7f5a-425f-90d6-b49314e66232",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 75.34246575342466,
+                    "y": 30.441747812950677,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-GG51IZcl.png",
+                                "path2": "images/image-GG51IZcl.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 160,
+                                "height": 160
+                            },
+                            "alt": "Circulo/Punteado"
+                        },
+                        "subContentId": "b979f835-58f1-4ed7-9d51-a664010d790d",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 87.89954337899543,
+                    "y": 30.441747812950677,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-iu0fTPDE.png",
+                                "path2": "images/image-iu0fTPDE.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 160,
+                                "height": 160
+                            },
+                            "alt": "Estrella/Liso"
+                        },
+                        "subContentId": "7711939b-ae0f-4241-bc56-6210ecca8eb7",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 75.34246575342466,
+                    "y": 49.46784019604485,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-nCm1yHjV.png",
+                                "path2": "images/image-nCm1yHjV.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 156,
+                                "height": 156
+                            },
+                            "alt": "Triangulo/Liso"
+                        },
+                        "subContentId": "89c16955-807a-41a2-8529-2ea67715cee6",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 87.89954337899543,
+                    "y": 49.46784019604485,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-Hsf62R3G.png",
+                                "path2": "images/image-Hsf62R3G.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 160,
+                                "height": 160
+                            },
+                            "alt": "Cuadrado/Rugoso"
+                        },
+                        "subContentId": "27e1092a-cc4a-42e8-9d20-120ee309404d",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 75.34246575342466,
+                    "y": 72.29915105575786,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-lSjneChJ.png",
+                                "path2": "images/image-lSjneChJ.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 160,
+                                "height": 160
+                            },
+                            "alt": "Cuadrado/Punteado"
+                        },
+                        "subContentId": "09cfe09a-fc7d-434d-add5-32c79c723fcb",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 87.89954337899543,
+                    "y": 72.29915105575786,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-ue2lJxeN.png",
+                                "path2": "images/image-ue2lJxeN.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 160,
+                                "height": 160
+                            },
+                            "alt": "Triangulo/Punteado"
+                        },
+                        "subContentId": "bd4771e7-1200-4575-b19e-adb1f522bdda",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 5.6,
+                    "y": 16.7,
+                    "width": 11.25,
+                    "height": 22.5,
+                    "correctElements": [
+                        "0",
+                        "3",
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Lisos</div>"
+                },
+                {
+                    "x": 28.9,
+                    "y": 16.7,
+                    "width": 11.25,
+                    "height": 22.5,
+                    "correctElements": [
+                        "1",
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Rugosos</div>"
+                },
+                {
+                    "x": 52.25,
+                    "y": 16.7,
+                    "width": 11.25,
+                    "height": 22.5,
+                    "correctElements": [
+                        "2",
+                        "6",
+                        "7"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Punteados</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": true,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 0,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}
