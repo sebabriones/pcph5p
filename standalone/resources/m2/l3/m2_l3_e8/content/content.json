@@ -1,0 +1,216 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 42.48366013071895,
+                        "y": 32.175502299685306,
+                        "width": 54.46623093681917,
+                        "height": 67.41442749939482,
+                        "action": {
+                            "library": "H5P.Blanks 1.14",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "text": "<p>Completa el siguiente párrafo seleccionando las palabras ubicadas en la lista desplegable.</p>",
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "showSolutions": "Mostrar solución",
+                                "tryAgain": "Intentar de nuevo",
+                                "checkAnswer": "Comprobar",
+                                "submitAnswer": "Enviar",
+                                "notFilledOut": "Por favor, completa todos los huecos para poder ver la solución",
+                                "answerIsCorrect": "':ans' es correcta",
+                                "answerIsWrong": "':ans' es incorrecta",
+                                "answeredCorrectly": "Contestado correctamente",
+                                "answeredIncorrectly": "Contestado incorrectamente",
+                                "solutionLabel": "Respuesta correcta:",
+                                "inputLabel": "Hueco @num de @total",
+                                "inputHasTipLabel": "Pista disponible",
+                                "tipLabel": "Pista",
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "autoCheck": false,
+                                    "caseSensitive": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "separateLines": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "acceptSpellingErrors": false
+                                },
+                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrectas o sin contestar.",
+                                "a11yShowSolution": "Mostrar la solución. La tarea se marcará con su solución correcta.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "a11yCheckingModeHeader": "Modo de Comprobación",
+                                "confirmCheck": {
+                                    "header": "¿ Terminar ?",
+                                    "body": "¿Está seguro que desea terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "questions": [
+                                    "<p>Para poder analizar por qué las ventas son bajas, falta información sobre *el comportamiento de los usuarios(as) en el sitio web* , ya que sin ese dato no es posible *evaluar en qué parte del proceso se pierde a los(as) clientes* .</p>"
+                                ]
+                            },
+                            "subContentId": "df25f5f4-5e39-4493-8dd1-345024466cbb",
+                            "metadata": {
+                                "contentType": "Complete los espacios en blanco (Fill in the Blanks)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 28.985233599612684,
+                        "width": 38.35098039215686,
+                        "height": 30.985233599612684,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e8/content/images/image-53HDlLlF.png",
+                                    "path2": "images/image-53HDlLlF.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1540,
+                                    "height": 700
+                                }
+                            },
+                            "subContentId": "6c44e5db-30c0-4609-bba9-1f27d1a31d5e",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": false,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

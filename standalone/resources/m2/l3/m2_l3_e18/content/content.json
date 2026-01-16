@@ -195,9 +195,9 @@
                     "enableCheckButton": true,
                     "singlePoint": false,
                     "applyPenalties": true,
-                    "enableScoreExplanation": true,
+                    "enableScoreExplanation": false,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": 40,
+                    "autoAlignSpacing": 10,
                     "enableFullScreen": false,
                     "showScorePoints": true,
                     "showTitle": false
@@ -220,7 +220,7 @@
                     "exitFullscreen": "Salir de pantalla completa"
                 }
             },
-            "library": "H5P.DragQuestion 1.14",
+            "library": "H5P.DragShuffle 1.0",
             "metadata": {
                 "contentType": "Arrastrar y soltar (Drag and Drop)",
                 "license": "U",
@@ -525,9 +525,9 @@
                     "enableCheckButton": true,
                     "singlePoint": false,
                     "applyPenalties": true,
-                    "enableScoreExplanation": true,
+                    "enableScoreExplanation": false,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": 2,
+                    "autoAlignSpacing": 3,
                     "enableFullScreen": false,
                     "showScorePoints": true,
                     "showTitle": false
@@ -550,7 +550,7 @@
                     "exitFullscreen": "Salir de pantalla completa"
                 }
             },
-            "library": "H5P.DragQuestion 1.14",
+            "library": "H5P.DragShuffle 1.0",
             "metadata": {
                 "contentType": "Arrastrar y soltar (Drag and Drop)",
                 "license": "U",
@@ -566,7 +566,7 @@
     "randomQuestions": false,
     "endGame": {
         "showResultPage": true,
-        "showSolutionButton": true,
+        "showSolutionButton": false,
         "showRetryButton": true,
         "noResultMessage": "Terminado",
         "message": "Tu resultado:",

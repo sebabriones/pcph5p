@@ -20,9 +20,9 @@
             "minorVersion": 1
         },
         {
-            "machineName": "H5P.DragQuestion",
+            "machineName": "H5P.DragShuffle",
             "majorVersion": 1,
-            "minorVersion": 14
+            "minorVersion": 0
         },
         {
             "machineName": "FontAwesome",
