@@ -1,1 +1,205 @@
-{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images/image-LtZKSPvY.png","mime":"image/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":5.707762557077626,"y":72.29915105575786,"width":14.681571061643835,"height":3.0701535744863,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Menor nivel de abstracción</p>"},"subContentId":"34c259f5-b8ad-47eb-a841-fb0d8c6af6d0","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":36.529680365296805,"y":72.29915105575786,"width":14.681571061643835,"height":3.0711568921232866,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Abstracción nivel intermedio</p>"},"subContentId":"b939e32c-bea0-4532-81ea-4a81449fd875","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false},{"x":67.35159817351598,"y":72.29915105575786,"width":14.0394477739726,"height":3.0711568921232866,"dropZones":["0","1","2"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Mayor nivel de abstracción</p>"},"subContentId":"d60a7c51-651b-4d7a-9168-2ec6bdf52e67","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":false}],"dropZones":[{"x":4.566210045662101,"y":49.46784019604485,"width":15.410958904109588,"height":3.779497538527397,"correctElements":["2"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Mayor nivel de abstracción</div>"},{"x":35.38812785388128,"y":49.46784019604485,"width":16.05308219178082,"height":3.7805024614726026,"correctElements":["0"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Menor nivel de abstracción</div>"},{"x":67.35159817351598,"y":49.46784019604485,"width":15.409931506849315,"height":3.210616438356164,"correctElements":["1"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Abstracción nivel intermedio</div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":true,"enableCheckButton":true,"singlePoint":false,"applyPenalties":false,"enableScoreExplanation":false,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":true,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocación {num}.","dropzonePrefix":"Zona de colocación {num} de {total}.","noDropzone":"No es zona de colocación.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentación","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicación de la puntuación","a11yCheck":"Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}}
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r1/content/images/image-LtZKSPvY.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 5.3,
+                    "y": 73.2,
+                    "width": 15.25,
+                    "height": 3.05,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Menor nivel de abstracción</p>"
+                        },
+                        "subContentId": "34c259f5-b8ad-47eb-a841-fb0d8c6af6d0",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 35.85,
+                    "y": 73.2,
+                    "width": 15.25,
+                    "height": 3.05,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Abstracción nivel intermedio</p>"
+                        },
+                        "subContentId": "b939e32c-bea0-4532-81ea-4a81449fd875",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 66.4,
+                    "y": 73.2,
+                    "width": 15.25,
+                    "height": 3.05,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Mayor nivel de abstracción</p>"
+                        },
+                        "subContentId": "d60a7c51-651b-4d7a-9168-2ec6bdf52e67",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 3.4,
+                    "y": 48.8,
+                    "width": 16.8,
+                    "height": 4.2,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Mayor nivel de abstracción</div>"
+                },
+                {
+                    "x": 35.05,
+                    "y": 48.8,
+                    "width": 16.8,
+                    "height": 4.2,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Menor nivel de abstracción</div>"
+                },
+                {
+                    "x": 66.7,
+                    "y": 48.8,
+                    "width": 16.8,
+                    "height": 4.2,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Abstracción nivel intermedio</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": false,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 7,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

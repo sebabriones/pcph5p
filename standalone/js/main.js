@@ -13,6 +13,7 @@ jQuery(document).ready(()=>{
         icon: false,
         customCss: [ 'css/demo.css' ],
         customJs: [ 'js/resources/demo.js' ],
+        fullScreen: true
     }
 
     let children = [];

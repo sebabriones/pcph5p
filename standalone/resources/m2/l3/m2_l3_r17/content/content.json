@@ -1,1 +1,496 @@
-{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images/image-GTB9F4mo.png","mime":"image/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":9.130636415525114,"y":74.19581464019755,"width":9.54554794520548,"height":1.7879152397260274,"dropZones":["1","3","5","7","9"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Motivado</p>"},"subContentId":"c7b1a8d6-8fef-4aad-92b8-b7516ab5bde2","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true},{"x":29.680365296803654,"y":74.20176029406727,"width":10.186708047945205,"height":1.786910316780821,"dropZones":["1","3","5","7","9"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Proactivo</p>"},"subContentId":"af7b99e7-6f1f-41ad-a1f1-f47ca3b10b47","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true},{"x":51.369863013698634,"y":74.20176029406727,"width":9.544584760273972,"height":1.786910316780821,"dropZones":["1","3","5","7","9"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Pasivo</p>"},"subContentId":"6dda46c3-54a4-4b42-b7fe-c51da053e318","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true},{"x":71.91780821917808,"y":74.20176029406727,"width":10.186708047945205,"height":1.786910316780821,"dropZones":["1","3","5","7","9"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Crítico</p>"},"subContentId":"2699cea3-b6fe-4307-b44c-d6c234476fb7","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true},{"x":2.2813213470319633,"y":85.61741572392378,"width":12.113077910958904,"height":1.786910316780821,"dropZones":["0","2","4","6","8"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Reprobado en ambas</p>"},"subContentId":"722431ed-0cc4-4691-97be-b86ca6bc32ec","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true},{"x":26.25570776255708,"y":85.61741572392378,"width":12.113077910958904,"height":1.786911922089041,"dropZones":["0","2","4","6","8"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Aprobado sólo en cálculo</p>"},"subContentId":"d2f6013b-07d6-4a62-b5e6-ac754bda791d","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true},{"x":51.369863013698634,"y":85.61741572392378,"width":11.47095462328767,"height":1.786910316780821,"dropZones":["0","2","4","6","8"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Aprobado sólo en Física</p>"},"subContentId":"9d5cba21-ca6b-4f17-badf-db2d2586b131","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true},{"x":75.34246575342466,"y":85.61741572392378,"width":11.47095462328767,"height":1.786910316780821,"dropZones":["0","2","4","6","8"],"type":{"library":"H5P.AdvancedText 1.1","params":{"text":"<p>Aprobado en ambas</p>"},"subContentId":"b6729942-6fc6-4f9d-bc9c-64e219ce8155","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":100,"multiple":true}],"dropZones":[{"x":30.82191780821918,"y":22.82833803277815,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["5"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Ana/Rendimiento académico</div>"},{"x":62.785388127853885,"y":22.82833803277815,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["2"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Ana/Enfoque de estudio</div>"},{"x":30.82191780821918,"y":32.34138422432523,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["5"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Luis/Rendimiento académico</div>"},{"x":62.785388127853885,"y":32.34138422432523,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["2"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Luis/Enfoque de estudio</div>"},{"x":30.82191780821918,"y":41.85443041587232,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["7"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Marta/Rendimiento académico</div>"},{"x":62.785388127853885,"y":41.85443041587232,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["1"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Marta/Enfoque de estudio</div>"},{"x":30.82191780821918,"y":51.367476607419405,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["4"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Pedro/Rendimiento académico</div>"},{"x":62.785388127853885,"y":51.367476607419405,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["3"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Pedro/Enfoque de estudio</div>"},{"x":30.82191780821918,"y":60.880522798966496,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["6"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Carla/Rendimiento académico</div>"},{"x":62.785388127853885,"y":60.880522798966496,"width":17.337328767123285,"height":2.504280821917808,"correctElements":["2"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Carla/Enfoque de estudio</div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":true,"enableCheckButton":true,"singlePoint":false,"applyPenalties":true,"enableScoreExplanation":false,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":false,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocación {num}.","dropzonePrefix":"Zona de colocación {num} de {total}.","noDropzone":"No es zona de colocación.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentación","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicación de la puntuación","a11yCheck":"Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}}
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r17/content/images/image-GTB9F4mo.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 8.4,
+                    "y": 73.8,
+                    "width": 10.55,
+                    "height": 2.15,
+                    "dropZones": [
+                        "1",
+                        "3",
+                        "5",
+                        "7",
+                        "9"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Motivado</p>"
+                        },
+                        "subContentId": "c7b1a8d6-8fef-4aad-92b8-b7516ab5bde2",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                },
+                {
+                    "x": 29.6,
+                    "y": 73.8,
+                    "width": 10.55,
+                    "height": 2.15,
+                    "dropZones": [
+                        "1",
+                        "3",
+                        "5",
+                        "7",
+                        "9"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Proactivo</p>"
+                        },
+                        "subContentId": "af7b99e7-6f1f-41ad-a1f1-f47ca3b10b47",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                },
+                {
+                    "x": 50.6,
+                    "y": 73.8,
+                    "width": 10.55,
+                    "height": 2.15,
+                    "dropZones": [
+                        "1",
+                        "3",
+                        "5",
+                        "7",
+                        "9"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Pasivo</p>"
+                        },
+                        "subContentId": "6dda46c3-54a4-4b42-b7fe-c51da053e318",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                },
+                {
+                    "x": 71.75,
+                    "y": 73.8,
+                    "width": 10.55,
+                    "height": 2.15,
+                    "dropZones": [
+                        "1",
+                        "3",
+                        "5",
+                        "7",
+                        "9"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Crítico</p>"
+                        },
+                        "subContentId": "2699cea3-b6fe-4307-b44c-d6c234476fb7",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                },
+                {
+                    "x": 2,
+                    "y": 84.9,
+                    "width": 12.5,
+                    "height": 2.15,
+                    "dropZones": [
+                        "0",
+                        "2",
+                        "4",
+                        "6",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Reprobado en ambas</p>"
+                        },
+                        "subContentId": "722431ed-0cc4-4691-97be-b86ca6bc32ec",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                },
+                {
+                    "x": 26.25,
+                    "y": 84.9,
+                    "width": 12.5,
+                    "height": 2.15,
+                    "dropZones": [
+                        "0",
+                        "2",
+                        "4",
+                        "6",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Aprobado sólo en cálculo</p>"
+                        },
+                        "subContentId": "d2f6013b-07d6-4a62-b5e6-ac754bda791d",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                },
+                {
+                    "x": 50.5,
+                    "y": 84.9,
+                    "width": 12.45,
+                    "height": 2.15,
+                    "dropZones": [
+                        "0",
+                        "2",
+                        "4",
+                        "6",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Aprobado sólo en Física</p>"
+                        },
+                        "subContentId": "9d5cba21-ca6b-4f17-badf-db2d2586b131",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                },
+                {
+                    "x": 74.7,
+                    "y": 84.9,
+                    "width": 12.5,
+                    "height": 2.15,
+                    "dropZones": [
+                        "0",
+                        "2",
+                        "4",
+                        "6",
+                        "8"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Aprobado en ambas</p>"
+                        },
+                        "subContentId": "b6729942-6fc6-4f9d-bc9c-64e219ce8155",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": true
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 30.6,
+                    "y": 22,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Ana/Rendimiento académico</div>"
+                },
+                {
+                    "x": 62.785388127853885,
+                    "y": 22.82833803277815,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Ana/Enfoque de estudio</div>"
+                },
+                {
+                    "x": 30.6,
+                    "y": 31.7,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Luis/Rendimiento académico</div>"
+                },
+                {
+                    "x": 62.785388127853885,
+                    "y": 32.34138422432523,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Luis/Enfoque de estudio</div>"
+                },
+                {
+                    "x": 30.6,
+                    "y": 41.85443041587232,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "7"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Marta/Rendimiento académico</div>"
+                },
+                {
+                    "x": 62.785388127853885,
+                    "y": 41.85443041587232,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Marta/Enfoque de estudio</div>"
+                },
+                {
+                    "x": 30.6,
+                    "y": 51.367476607419405,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Pedro/Rendimiento académico</div>"
+                },
+                {
+                    "x": 62.785388127853885,
+                    "y": 51.367476607419405,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Pedro/Enfoque de estudio</div>"
+                },
+                {
+                    "x": 30.6,
+                    "y": 60.880522798966496,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "6"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Carla/Rendimiento académico</div>"
+                },
+                {
+                    "x": 62.785388127853885,
+                    "y": 60.880522798966496,
+                    "width": 17.7,
+                    "height": 3,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Carla/Enfoque de estudio</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": true,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": false,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

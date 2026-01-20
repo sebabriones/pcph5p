@@ -1,1 +1,449 @@
-{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images/image-nClUIFD2.png","mime":"image/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":74.20091324200914,"y":15.220873906475338,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-W3cDJoSh.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Reloj (Redondo)"},"subContentId":"a7f80ba8-0212-457c-8139-f79b2876caf6","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":85.61643835616438,"y":15.220873906475338,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-n6vb6d0e.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Ventana (Cuadrado)"},"subContentId":"62e1c8be-6082-472f-b184-78f5ea993869","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":74.20091324200914,"y":34.246966289569514,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-IGHmeKgw.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Rueda (Redondo)"},"subContentId":"096405e7-f463-4393-a433-449b01a2d2f9","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":85.61643835616438,"y":34.246966289569514,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-AbJAvrgm.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Pelota (Redondo)"},"subContentId":"4f3ba00a-fde8-4cc2-8614-e19fd049eed4","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":74.20091324200914,"y":53.27305867266368,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-y1peWh5E.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Regalo (Cuadrado)"},"subContentId":"53f8da77-0ffa-44b8-b598-e032b6cb04ad","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":85.61643835616438,"y":53.27305867266368,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-pruuc1Ll.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Pizza (Triangulo)"},"subContentId":"5bb75907-4420-49ad-805d-4be191e4411b","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":74.20091324200914,"y":72.29915105575786,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-JSC4GL98.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Letrero (Triangulo)"},"subContentId":"36861cfa-76df-4d1a-bbf9-d5c9fd434134","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":85.61643835616438,"y":72.29915105575786,"width":5,"height":5,"dropZones":["0","1","2"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-ufod9oLM.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Pirámide (Triangulo)"},"subContentId":"3fad6735-c0fa-4a8a-9395-9e1ab0a6950d","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false}],"dropZones":[{"x":5.707762557077626,"y":17.1205103178499,"width":10.916095890410958,"height":22.474315068493148,"correctElements":["1","4"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":false,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Cuadrados</div>"},{"x":29.680365296803654,"y":17.1205103178499,"width":10.916095890410958,"height":22.474315068493148,"correctElements":["0","2","3"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":false,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Redondos</div>"},{"x":52.51141552511416,"y":17.1205103178499,"width":10.916095890410958,"height":22.474315068493148,"correctElements":["7","6","5"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":false,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Triangulares</div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":true,"enableCheckButton":true,"singlePoint":false,"applyPenalties":true,"enableScoreExplanation":false,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":false,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocación {num}.","dropzonePrefix":"Zona de colocación {num} de {total}.","noDropzone":"No es zona de colocación.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentación","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicación de la puntuación","a11yCheck":"Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}}
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-nClUIFD2.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 74.20091324200914,
+                    "y": 15.220873906475338,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-W3cDJoSh.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Reloj (Redondo)"
+                        },
+                        "subContentId": "a7f80ba8-0212-457c-8139-f79b2876caf6",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 85.61643835616438,
+                    "y": 15.220873906475338,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-n6vb6d0e.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Ventana (Cuadrado)"
+                        },
+                        "subContentId": "62e1c8be-6082-472f-b184-78f5ea993869",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 74.20091324200914,
+                    "y": 34.246966289569514,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-IGHmeKgw.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Rueda (Redondo)"
+                        },
+                        "subContentId": "096405e7-f463-4393-a433-449b01a2d2f9",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 85.61643835616438,
+                    "y": 34.246966289569514,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-AbJAvrgm.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Pelota (Redondo)"
+                        },
+                        "subContentId": "4f3ba00a-fde8-4cc2-8614-e19fd049eed4",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 74.20091324200914,
+                    "y": 53.27305867266368,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-y1peWh5E.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Regalo (Cuadrado)"
+                        },
+                        "subContentId": "53f8da77-0ffa-44b8-b598-e032b6cb04ad",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 85.61643835616438,
+                    "y": 53.27305867266368,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-pruuc1Ll.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Pizza (Triangulo)"
+                        },
+                        "subContentId": "5bb75907-4420-49ad-805d-4be191e4411b",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 74.20091324200914,
+                    "y": 72.29915105575786,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-JSC4GL98.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Letrero (Triangulo)"
+                        },
+                        "subContentId": "36861cfa-76df-4d1a-bbf9-d5c9fd434134",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 85.61643835616438,
+                    "y": 72.29915105575786,
+                    "width": 4.8,
+                    "height": 4.8,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r15/content/images/image-ufod9oLM.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 214,
+                                "height": 214
+                            },
+                            "alt": "Pirámide (Triangulo)"
+                        },
+                        "subContentId": "3fad6735-c0fa-4a8a-9395-9e1ab0a6950d",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 5.7,
+                    "y": 16.8,
+                    "width": 11.1,
+                    "height": 22.4,
+                    "correctElements": [
+                        "1",
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Cuadrados</div>"
+                },
+                {
+                    "x": 29,
+                    "y": 16.8,
+                    "width": 11.1,
+                    "height": 22.4,
+                    "correctElements": [
+                        "0",
+                        "2",
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Redondos</div>"
+                },
+                {
+                    "x": 52.3,
+                    "y": 16.8,
+                    "width": 11.1,
+                    "height": 22.4,
+                    "correctElements": [
+                        "7",
+                        "6",
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": false,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Triangulares</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": true,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 0,
+        "enableFullScreen": false,
+        "showScorePoints": false,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}
