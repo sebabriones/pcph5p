@@ -10,11 +10,13 @@
   padding: 0.5em 1.25em;
   border-radius: 2em;
 
-  background: #1a73d9;
+  /*background: #1a73d9;*/
+  background: #026ec3; /*nuevo*/
   color: #ffffff;
 
   cursor: pointer;
-  border: none;
+  /*border: none;*/
+  border: 3px solid #026ec3; /*nuevo*/
   box-shadow: none;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -49,10 +51,9 @@
 .h5p-joubelui-button.truncated:before {
   padding: 0;
 }
-
-.h5p-joubelui-button:hover,
-.h5p-joubelui-button:focus {
-  background: #1356a3;
+ /*nuevo*/
+.h5p-joubelui-button:hover {
+  background: #c9621b;
   color: #fff;
   text-decoration: none;
   -webkit-transition: initial;
@@ -60,6 +61,16 @@
   -o-transition: initial;
   transition: initial;
 }
+
+/*.h5p-joubelui-button:hover {
+  background: #c9621b;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: initial;
+  -moz-transition: initial;
+  -o-transition: initial;
+  transition: initial;
+}*/
 .h5p-joubelui-button:active {
   position: relative;
   background: #104888;

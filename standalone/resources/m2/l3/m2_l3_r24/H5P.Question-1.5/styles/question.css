@@ -1,5 +1,6 @@
 .h5p-question {
-  background: rgba(255, 255, 255, 0.9);
+  /*background: rgba(255, 255, 255, 0.9);*/
+  background: #f8feef;
   position: relative;
 }
 .h5p-question-audio {
@@ -104,10 +105,20 @@
 }
 
 .h5p-question-introduction {
-  margin: 1em;
+  /*margin: 1em;
   font-size: 1.125em;
-  line-height: 1;
+  line-height: 1;*/
+  line-height: 1.3em; /*nuevo*/
+  font-family: "Poppins-Light"; /*nuevo*/
+  /*padding: 6em 4em 0.5em 4em; /*nuevo*/
+  color: #062971; /*nuevo*/
+  font-size: 1.4em; /*nuevo*/
 }
+
+/*nuevo en caso que la intro tenga un background-color*/
+/*.h5p-question-introduction > div{
+  padding: 1em 3em; /*nuevo*/
+/*}*/
 
 .h5p-question-introduction > p {
   font-size: inherit;
@@ -117,6 +128,13 @@
 
 .h5p-question-content {
   margin: 1em;
+  padding: 0 0 0 3em; /*nuevo*/
+}
+
+/*nuevo*/
+.h5p-question-check-answer,
+.h5p-question-try-again {
+  float: right; /*nuevo*/
 }
 
 .h5p-question-content.h5p-has-question-popup {
@@ -141,9 +159,10 @@
 .h5p-question-scorebar.h5p-question-visible {
   width: 13em;
   max-width: calc(100% - 2em);
-  margin: 0 0 1em 1em;
-  padding-right: 0.5em;
+  /*margin: 0 0 1em 1em;*/
+  /*padding-right: 0.5em;*/
   display: inline-block;
+  /*padding: 6em 0 2em 2em; /*nuevo*/
 }
 
 .h5p-question-scorebar.full-width {
@@ -155,18 +174,22 @@
   width: 100%;
 }
 
+
 .h5p-question-feedback {
-  font-weight: bold;
-  color: #1a73d9;
-  margin: 0 1em;
+  /*font-weight: bold;
+  color: #1a73d9;*/
+  font-family: "Poppins-Light"; /*nuevo*/
+  color: #062971; /*nuevo*/
+  font-size: 1.2em; /*nuevo*/
+  /*padding: 1em 5em; /*nuevo*/
   max-height: 0;
   opacity: 0;
   transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+  /*display: none; En caso que el ejercicio no tenga feedback se descomenta y se comenta lo demás*/
 }
 
 .h5p-question-feedback.h5p-question-visible {
-  margin: 1em;
-
+  /*margin: 1em;*/
 }
 .h5p-question-feedback-content {
   font-size: 1em;
@@ -182,21 +205,28 @@
 
 .h5p-question-feedback-content-text {
   display: inline-block;
+  line-height: 1.3em; /*nuevo*/
+  /*padding: 1em; /*nuevo En caso que feedback tenga background-color*/ 
+  /*background: red; /*nuevo En caso que feedback tenga background-color*/
 }
 .h5p-question-buttons.h5p-question-visible {
   display: inline-block;
-  width: calc(100% - 1.5em);
-  margin-left: 1em;
+  /*width: calc(100% - 1.5em);*/
+  width: calc(100% - 0em); /*Nuevo*/
+  /*margin-left: 1em;
   margin-right: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1em;*/
+  /*padding: 6em 2em 2em 0; /*nuevo*/
 }
 .h5p-question-buttons .h5p-joubelui-button,
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {
-  margin: 0 0.5em 0 0;
+  /*margin: 0 0.5em 0 0;*/
+  margin: 0; /*nuevo*/
   white-space: nowrap;
 }
 .h5p-question-buttons.has-scorebar {
-  width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
+  /*width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
+  width: calc(100% - 13em - 0px); /* Need the 1px because of rounding */
   margin-left: 0;
 }
 

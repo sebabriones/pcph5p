@@ -1,5 +1,6 @@
 .h5p-question {
-  background: rgba(255, 255, 255, 0.9);
+  /*background: rgba(255, 255, 255, 0.9);*/
+  background: #f8feef; /*nuevo*/
   position: relative;
 }
 .h5p-question-audio {
@@ -104,9 +105,10 @@
 }
 
 .h5p-question-introduction {
-  margin: 1em;
+  /*margin: 1em;
   font-size: 1.125em;
-  line-height: 1;
+  line-height: 1;*/
+  display: none; /*nuevo*/
 }
 
 .h5p-question-introduction > p {
@@ -115,8 +117,14 @@
   margin: 0;
 }
 
-.h5p-question-content {
+/*.h5p-question-content {
   margin: 1em;
+}*/
+
+/*nuevo*/
+.h5p-question-check-answer,
+.h5p-question-try-again {
+  float: right;
 }
 
 .h5p-question-content.h5p-has-question-popup {
@@ -157,15 +165,17 @@
 
 .h5p-question-feedback {
   font-weight: bold;
-  color: #1a73d9;
+  /*color: #1a73d9;*/
+  color: #062971; /*nuevo*/
   margin: 0 1em;
   max-height: 0;
   opacity: 0;
   transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+  text-align: center;
 }
 
 .h5p-question-feedback.h5p-question-visible {
-  margin: 1em;
+  margin: 0 0 1em 0;
 
 }
 .h5p-question-feedback-content {
@@ -177,7 +187,7 @@
 
 .h5p-question-visible .h5p-question-feedback-content.has-content {
   display: block;
-  margin-bottom: 0.8em;
+  /*margin-bottom: 0.8em;*/
 }
 
 .h5p-question-feedback-content-text {
@@ -185,18 +195,20 @@
 }
 .h5p-question-buttons.h5p-question-visible {
   display: inline-block;
-  width: calc(100% - 1.5em);
+  /*width: calc(100% - 1.5em);*/
+  width: calc(100% - 2em); /*nuevo*/
   margin-left: 1em;
   margin-right: 0.5em;
   margin-bottom: 1em;
 }
 .h5p-question-buttons .h5p-joubelui-button,
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {
-  margin: 0 0.5em 0 0;
+  /*margin: 0 0.5em 0 0;*/
+  margin: 0; /*nuevo*/
   white-space: nowrap;
 }
 .h5p-question-buttons.has-scorebar {
-  width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
+  width: calc(100% - 18em - 1px); /* Need the 1px because of rounding */
   margin-left: 0;
 }
 
@@ -214,7 +226,8 @@
 /* Remove margins when no frame or transparent */
 .h5p-no-frame > .h5p-question > *,
 .h5p-transparent > div > .h5p-question > * {
-  margin-left: 0 !important;
+  margin-left: 1em !important;
+  margin-right: 1em !important; /*nuevo*/
   margin-right: 0;
 }
 

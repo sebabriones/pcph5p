@@ -276,8 +276,8 @@
                     "label": "<div>Ana/Rendimiento académico</div>"
                 },
                 {
-                    "x": 62.785388127853885,
-                    "y": 22.82833803277815,
+                    "x": 62.6,
+                    "y": 22,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -316,8 +316,8 @@
                     "label": "<div>Luis/Rendimiento académico</div>"
                 },
                 {
-                    "x": 62.785388127853885,
-                    "y": 32.34138422432523,
+                    "x": 62.6,
+                    "y": 31.7,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -337,7 +337,7 @@
                 },
                 {
                     "x": 30.6,
-                    "y": 41.85443041587232,
+                    "y": 41.4,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -356,8 +356,8 @@
                     "label": "<div>Marta/Rendimiento académico</div>"
                 },
                 {
-                    "x": 62.785388127853885,
-                    "y": 41.85443041587232,
+                    "x": 62.6,
+                    "y": 41.4,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -377,7 +377,7 @@
                 },
                 {
                     "x": 30.6,
-                    "y": 51.367476607419405,
+                    "y": 51,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -396,8 +396,8 @@
                     "label": "<div>Pedro/Rendimiento académico</div>"
                 },
                 {
-                    "x": 62.785388127853885,
-                    "y": 51.367476607419405,
+                    "x": 62.6,
+                    "y": 51,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -417,7 +417,7 @@
                 },
                 {
                     "x": 30.6,
-                    "y": 60.880522798966496,
+                    "y": 60.6,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -436,8 +436,8 @@
                     "label": "<div>Carla/Rendimiento académico</div>"
                 },
                 {
-                    "x": 62.785388127853885,
-                    "y": 60.880522798966496,
+                    "x": 62.6,
+                    "y": 60.6,
                     "width": 17.7,
                     "height": 3,
                     "correctElements": [
@@ -471,7 +471,7 @@
         "applyPenalties": true,
         "enableScoreExplanation": false,
         "dropZoneHighlighting": "dragging",
-        "autoAlignSpacing": 2,
+        "autoAlignSpacing": 40,
         "enableFullScreen": false,
         "showScorePoints": false,
         "showTitle": false

@@ -1,1 +1,48 @@
-{"embedTypes":["iframe"],"language":"en","defaultLanguage":"es","license":"U","extraTitle":"Modulo 2 - Leccion 3 - Refuerzo 10","title":"Modulo 2 - Leccion 3 - Refuerzo 10","mainLibrary":"H5P.PatternGame","preloadedDependencies":[{"machineName":"H5P.Question","majorVersion":1,"minorVersion":5},{"machineName":"FontAwesome","majorVersion":4,"minorVersion":5},{"machineName":"H5P.JoubelUI","majorVersion":1,"minorVersion":3},{"machineName":"H5P.Transition","majorVersion":1,"minorVersion":0},{"machineName":"H5P.FontIcons","majorVersion":1,"minorVersion":0},{"machineName":"H5P.PatternGame","majorVersion":1,"minorVersion":0}]}
+{
+    "embedTypes": [
+        "iframe"
+    ],
+    "language": "en",
+    "defaultLanguage": "es",
+    "license": "U",
+    "extraTitle": "Modulo 2 - Leccion 3 - Refuerzo 10",
+    "title": "Modulo 2 - Leccion 3 - Refuerzo 10",
+    "mainLibrary": "H5P.PatternGame",
+    "preloadedDependencies": [
+        {
+            "machineName": "H5P.Instructions",
+            "majorVersion": 1,
+            "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.Question",
+            "majorVersion": 1,
+            "minorVersion": 5
+        },
+        {
+            "machineName": "FontAwesome",
+            "majorVersion": 4,
+            "minorVersion": 5
+        },
+        {
+            "machineName": "H5P.JoubelUI",
+            "majorVersion": 1,
+            "minorVersion": 3
+        },
+        {
+            "machineName": "H5P.Transition",
+            "majorVersion": 1,
+            "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.FontIcons",
+            "majorVersion": 1,
+            "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.PatternGame",
+            "majorVersion": 1,
+            "minorVersion": 0
+        }
+    ]
+}

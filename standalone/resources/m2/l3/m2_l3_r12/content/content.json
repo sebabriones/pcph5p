@@ -1,1 +1,853 @@
-{"introPage":{"showIntroPage":false,"startButtonText":"Iniciar prueba","introduction":""},"progressType":"dots","passPercentage":50,"questions":[{"params":{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images/image-VTkKOsN5.png","mime":"image/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":64.62035541195476,"y":18.84806039995584,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-P1p2Fshc.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 1"},"subContentId":"e1f1b70d-7378-46dd-b78d-34b67c856970","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":75.92891760904685,"y":18.84806039995584,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-fVRGgnog.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 2"},"subContentId":"bba610ec-2a49-4bca-9aa5-8ca5b78416a2","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":64.62035541195476,"y":37.69612079991168,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-8LnsVJVR.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 3"},"subContentId":"1e10fdc6-63e2-4595-8b06-fcffd694fb90","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":75.92891760904685,"y":37.69612079991168,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-V39odK2G.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 4"},"subContentId":"266a47c5-201f-47aa-9e48-cf720a69f4e7","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":64.62035541195476,"y":56.54418119986752,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-jKymCts6.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 5"},"subContentId":"ccf27fb3-19f9-4211-b8b2-c72c2b037aa2","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":75.92891760904685,"y":56.54418119986752,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-EjhjiTZ9.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 6"},"subContentId":"59e246b4-59bc-4d3e-b97f-18c11c7662c3","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":64.62035541195476,"y":75.39224159982336,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-Yv0T7MmL.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 7"},"subContentId":"0609c1de-13a7-44b2-8995-7f057d98e8d1","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":75.92891760904685,"y":75.39224159982336,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-jmNo4hSr.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Tetris 8"},"subContentId":"97783834-8a83-42e5-bbfe-cee5683000a1","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false}],"dropZones":[{"x":38.77221324717286,"y":67.31450142841372,"width":6.361066235864297,"height":6.361066235864297,"correctElements":["0"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Respuesta</div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":false,"enableCheckButton":true,"singlePoint":false,"applyPenalties":true,"enableScoreExplanation":true,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":true,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocación {num}.","dropzonePrefix":"Zona de colocación {num} de {total}.","noDropzone":"No es zona de colocación.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentación","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicación de la puntuación","a11yCheck":"Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}},"library":"H5P.DragQuestion 1.14","metadata":{"contentType":"Arrastrar y soltar (Drag and Drop)","license":"U","title":"Slide 1","authors":[],"changes":[],"extraTitle":"Slide 1"},"subContentId":"2b923189-2845-4e6a-a964-6a5633305366"},{"params":{"scoreShow":"Comprobar","submit":"Enviar","tryAgain":"Intentar de nuevo","scoreExplanation":"Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.","question":{"settings":{"size":{"width":900,"height":540},"background":{"path":"images/image-mmSfDNh7.png","mime":"image/png","copyright":{"license":"U"},"width":1800,"height":1080}},"task":{"elements":[{"x":63.00484652665589,"y":18.84806039995584,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-Wxm72YSj.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha N"},"subContentId":"aee5b143-3926-4d41-b795-f4d731faa888","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":74.31340872374797,"y":18.84806039995584,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-sLA3NfmV.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha NE"},"subContentId":"430102f6-52d8-427f-8672-d6cabcc5c8c9","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":63.00484652665589,"y":37.69612079991168,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-dEcPuDtu.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha E"},"subContentId":"2590fd5d-0c39-4a9a-8865-858c930db9a4","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":74.31340872374797,"y":37.69612079991168,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-felyl8xb.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha SE"},"subContentId":"b5610b44-d936-46e7-86ce-cdb22ae618b3","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":63.00484652665589,"y":56.54418119986752,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-JuSbnkt2.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha S"},"subContentId":"92889cdc-a4c4-4e64-8644-6e59b60fd0eb","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":74.31340872374797,"y":56.54418119986752,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-Lw6cMsvY.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha SO"},"subContentId":"4cb45464-2b9f-4e87-a504-4e58a002ff7d","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":63.00484652665589,"y":75.39224159982336,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-7bvRA61x.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha O"},"subContentId":"c1ed733a-0ff5-437f-85b6-ba4d992ceb20","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false},{"x":74.31340872374797,"y":75.39224159982336,"width":5,"height":5,"dropZones":["0"],"type":{"library":"H5P.Image 1.1","params":{"decorative":false,"contentName":"Imagen","expandImage":"Expandir Imagen","minimizeImage":"Minimizar Imagen","file":{"path":"images/image-IZumPi9I.png","mime":"image/png","copyright":{"license":"U"},"width":214,"height":214},"alt":"Flecha NO"},"subContentId":"797958bc-915e-4e1b-8de4-03bb66f4dbc1","metadata":{"contentType":"es","license":"U","title":"Sin título es","authors":[],"changes":[]}},"backgroundOpacity":0,"multiple":false}],"dropZones":[{"x":38.77221324717286,"y":67.31029427207444,"width":6.361066235864297,"height":6.361066235864297,"correctElements":["5"],"showLabel":false,"backgroundOpacity":100,"tipsAndFeedback":{"tip":""},"single":true,"autoAlign":true,"type":{"library":"H5P.DragQuestionDropzone 0.1"},"label":"<div>Respuesta</div>"}]}},"overallFeedback":[{"from":0,"to":100}],"behaviour":{"enableRetry":false,"enableCheckButton":true,"singlePoint":false,"applyPenalties":true,"enableScoreExplanation":true,"dropZoneHighlighting":"dragging","autoAlignSpacing":2,"enableFullScreen":false,"showScorePoints":true,"showTitle":false},"grabbablePrefix":"Elemento a colocar {num} de {total}.","grabbableSuffix":"Colocado en zona de colocación {num}.","dropzonePrefix":"Zona de colocación {num} de {total}.","noDropzone":"No es zona de colocación.","tipLabel":"Mostrar pista.","tipAvailable":"Pista disponible","correctAnswer":"Respuesta correcta","wrongAnswer":"Respuesta incorrecta","feedbackHeader":"Retroalimentación","scoreBarLabel":"Has obtenido :num de un total de :total puntos","scoreExplanationButtonLabel":"Mostrar explicación de la puntuación","a11yCheck":"Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.","localize":{"fullscreen":"Pantalla completa","exitFullscreen":"Salir de pantalla completa"}},"library":"H5P.DragQuestion 1.14","metadata":{"contentType":"Arrastrar y soltar (Drag and Drop)","license":"U","title":"Slide 2","authors":[],"changes":[],"extraTitle":"Slide 2"},"subContentId":"963b3fcd-3076-4676-8921-a8c7ca517482"}],"disableBackwardsNavigation":false,"randomQuestions":false,"endGame":{"showResultPage":true,"showSolutionButton":false,"showRetryButton":true,"noResultMessage":"Terminado","message":"Tu resultado:","scoreBarLabel":"Has conseguido @finals de @totals puntos","overallFeedback":[{"from":0,"to":100}],"solutionButtonText":"Mostrar solución","retryButtonText":"Intentar de nuevo","finishButtonText":"Terminar","submitButtonText":"Enviar","showAnimations":false,"skippable":false,"skipButtonText":"Saltar vídeo"},"override":{"checkButton":true,"showSolutionButton":"off","retryButton":"off"},"texts":{"prevButton":"Pregunta anterior","nextButton":"Pregunta siguiente","finishButton":"Terminar","submitButton":"Enviar","textualProgress":"Pregunta: @current de @total preguntas","jumpToQuestion":"Pregunta %d de %total","questionLabel":"Pregunta","readSpeakerProgress":"Pregunta @current de @total","unansweredText":"No contestada","answeredText":"Contestada","currentQuestionText":"Pregunta actual","navigationLabel":"Preguntas"}}
+{
+    "introPage": {
+        "showIntroPage": false,
+        "startButtonText": "Iniciar prueba",
+        "introduction": ""
+    },
+    "progressType": "dots",
+    "passPercentage": 50,
+    "questions": [
+        {
+            "params": {
+                "scoreShow": "Comprobar",
+                "submit": "Enviar",
+                "tryAgain": "Intentar de nuevo",
+                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                "question": {
+                    "settings": {
+                        "size": {
+                            "width": 900,
+                            "height": 540
+                        },
+                        "background": {
+                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-VTkKOsN5.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 1800,
+                            "height": 1080
+                        }
+                    },
+                    "task": {
+                        "elements": [
+                            {
+                                "x": 64.62035541195476,
+                                "y": 18.84806039995584,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-P1p2Fshc.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 1"
+                                    },
+                                    "subContentId": "e1f1b70d-7378-46dd-b78d-34b67c856970",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 75.92891760904685,
+                                "y": 18.84806039995584,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-fVRGgnog.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 2"
+                                    },
+                                    "subContentId": "bba610ec-2a49-4bca-9aa5-8ca5b78416a2",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 64.62035541195476,
+                                "y": 37.69612079991168,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-8LnsVJVR.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 3"
+                                    },
+                                    "subContentId": "1e10fdc6-63e2-4595-8b06-fcffd694fb90",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 75.92891760904685,
+                                "y": 37.69612079991168,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-V39odK2G.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 4"
+                                    },
+                                    "subContentId": "266a47c5-201f-47aa-9e48-cf720a69f4e7",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 64.62035541195476,
+                                "y": 56.54418119986752,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-jKymCts6.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 5"
+                                    },
+                                    "subContentId": "ccf27fb3-19f9-4211-b8b2-c72c2b037aa2",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 75.92891760904685,
+                                "y": 56.54418119986752,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-EjhjiTZ9.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 6"
+                                    },
+                                    "subContentId": "59e246b4-59bc-4d3e-b97f-18c11c7662c3",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 64.62035541195476,
+                                "y": 75.39224159982336,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-Yv0T7MmL.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 7"
+                                    },
+                                    "subContentId": "0609c1de-13a7-44b2-8995-7f057d98e8d1",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 75.92891760904685,
+                                "y": 75.39224159982336,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-jmNo4hSr.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Tetris 8"
+                                    },
+                                    "subContentId": "97783834-8a83-42e5-bbfe-cee5683000a1",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            }
+                        ],
+                        "dropZones": [
+                            {
+                                "x": 38.4,
+                                "y": 67.8,
+                                "width": 6.75,
+                                "height": 6.75,
+                                "correctElements": [
+                                    "0"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>Respuesta</div>"
+                            }
+                        ]
+                    }
+                },
+                "overallFeedback": [
+                    {
+                        "from": 0,
+                        "to": 100
+                    }
+                ],
+                "behaviour": {
+                    "enableRetry": false,
+                    "enableCheckButton": true,
+                    "singlePoint": false,
+                    "applyPenalties": true,
+                    "enableScoreExplanation": true,
+                    "dropZoneHighlighting": "dragging",
+                    "autoAlignSpacing": 1,
+                    "enableFullScreen": false,
+                    "showScorePoints": true,
+                    "showTitle": false
+                },
+                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                "noDropzone": "No es zona de colocación.",
+                "tipLabel": "Mostrar pista.",
+                "tipAvailable": "Pista disponible",
+                "correctAnswer": "Respuesta correcta",
+                "wrongAnswer": "Respuesta incorrecta",
+                "feedbackHeader": "Retroalimentación",
+                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                "localize": {
+                    "fullscreen": "Pantalla completa",
+                    "exitFullscreen": "Salir de pantalla completa"
+                }
+            },
+            "library": "H5P.DragShuffle 1.0",
+            "metadata": {
+                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                "license": "U",
+                "title": "Slide 1",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Slide 1"
+            },
+            "subContentId": "2b923189-2845-4e6a-a964-6a5633305366"
+        },
+        {
+            "params": {
+                "scoreShow": "Comprobar",
+                "submit": "Enviar",
+                "tryAgain": "Intentar de nuevo",
+                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                "question": {
+                    "settings": {
+                        "size": {
+                            "width": 900,
+                            "height": 540
+                        },
+                        "background": {
+                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-mmSfDNh7.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 1800,
+                            "height": 1080
+                        }
+                    },
+                    "task": {
+                        "elements": [
+                            {
+                                "x": 63.00484652665589,
+                                "y": 18.84806039995584,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-Wxm72YSj.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha N"
+                                    },
+                                    "subContentId": "aee5b143-3926-4d41-b795-f4d731faa888",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 74.31340872374797,
+                                "y": 18.84806039995584,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-sLA3NfmV.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha NE"
+                                    },
+                                    "subContentId": "430102f6-52d8-427f-8672-d6cabcc5c8c9",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 63.00484652665589,
+                                "y": 37.69612079991168,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-dEcPuDtu.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha E"
+                                    },
+                                    "subContentId": "2590fd5d-0c39-4a9a-8865-858c930db9a4",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 74.31340872374797,
+                                "y": 37.69612079991168,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-felyl8xb.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha SE"
+                                    },
+                                    "subContentId": "b5610b44-d936-46e7-86ce-cdb22ae618b3",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 63.00484652665589,
+                                "y": 56.54418119986752,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-JuSbnkt2.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha S"
+                                    },
+                                    "subContentId": "92889cdc-a4c4-4e64-8644-6e59b60fd0eb",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 74.31340872374797,
+                                "y": 56.54418119986752,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-Lw6cMsvY.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha SO"
+                                    },
+                                    "subContentId": "4cb45464-2b9f-4e87-a504-4e58a002ff7d",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 63.00484652665589,
+                                "y": 75.39224159982336,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-7bvRA61x.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha O"
+                                    },
+                                    "subContentId": "c1ed733a-0ff5-437f-85b6-ba4d992ceb20",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            },
+                            {
+                                "x": 74.31340872374797,
+                                "y": 75.39224159982336,
+                                "width": 6,
+                                "height": 6,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.Image 1.1",
+                                    "params": {
+                                        "decorative": false,
+                                        "contentName": "Imagen",
+                                        "expandImage": "Expandir Imagen",
+                                        "minimizeImage": "Minimizar Imagen",
+                                        "file": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r12/content/images/image-IZumPi9I.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 214,
+                                            "height": 214
+                                        },
+                                        "alt": "Flecha NO"
+                                    },
+                                    "subContentId": "797958bc-915e-4e1b-8de4-03bb66f4dbc1",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 0,
+                                "multiple": false
+                            }
+                        ],
+                        "dropZones": [
+                            {
+                                "x": 38.4,
+                                "y": 67.8,
+                                "width": 6.75,
+                                "height": 6.75,
+                                "correctElements": [
+                                    "5"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": true,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>Respuesta</div>"
+                            }
+                        ]
+                    }
+                },
+                "overallFeedback": [
+                    {
+                        "from": 0,
+                        "to": 100
+                    }
+                ],
+                "behaviour": {
+                    "enableRetry": false,
+                    "enableCheckButton": true,
+                    "singlePoint": false,
+                    "applyPenalties": true,
+                    "enableScoreExplanation": true,
+                    "dropZoneHighlighting": "dragging",
+                    "autoAlignSpacing": 1,
+                    "enableFullScreen": false,
+                    "showScorePoints": true,
+                    "showTitle": false
+                },
+                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                "noDropzone": "No es zona de colocación.",
+                "tipLabel": "Mostrar pista.",
+                "tipAvailable": "Pista disponible",
+                "correctAnswer": "Respuesta correcta",
+                "wrongAnswer": "Respuesta incorrecta",
+                "feedbackHeader": "Retroalimentación",
+                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                "localize": {
+                    "fullscreen": "Pantalla completa",
+                    "exitFullscreen": "Salir de pantalla completa"
+                }
+            },
+            "library": "H5P.DragShuffle 1.0",
+            "metadata": {
+                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                "license": "U",
+                "title": "Slide 2",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Slide 2"
+            },
+            "subContentId": "963b3fcd-3076-4676-8921-a8c7ca517482"
+        }
+    ],
+    "disableBackwardsNavigation": false,
+    "randomQuestions": false,
+    "endGame": {
+        "showResultPage": true,
+        "showSolutionButton": false,
+        "showRetryButton": true,
+        "noResultMessage": "Terminado",
+        "message": "Tu resultado:",
+        "scoreBarLabel": "Has conseguido @finals de @totals puntos",
+        "overallFeedback": [
+            {
+                "from": 0,
+                "to": 100
+            }
+        ],
+        "solutionButtonText": "Mostrar solución",
+        "retryButtonText": "Intentar de nuevo",
+        "finishButtonText": "Terminar",
+        "submitButtonText": "Enviar",
+        "showAnimations": false,
+        "skippable": false,
+        "skipButtonText": "Saltar vídeo"
+    },
+    "override": {
+        "checkButton": true,
+        "showSolutionButton": "off",
+        "retryButton": "off"
+    },
+    "texts": {
+        "prevButton": "Pregunta anterior",
+        "nextButton": "Pregunta siguiente",
+        "finishButton": "Terminar",
+        "submitButton": "Enviar",
+        "textualProgress": "Pregunta: @current de @total preguntas",
+        "jumpToQuestion": "Pregunta %d de %total",
+        "questionLabel": "Pregunta",
+        "readSpeakerProgress": "Pregunta @current de @total",
+        "unansweredText": "No contestada",
+        "answeredText": "Contestada",
+        "currentQuestionText": "Pregunta actual",
+        "navigationLabel": "Preguntas"
+    }
+}

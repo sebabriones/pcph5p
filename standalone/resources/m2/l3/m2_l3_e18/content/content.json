@@ -199,7 +199,7 @@
                     "dropZoneHighlighting": "dragging",
                     "autoAlignSpacing": 10,
                     "enableFullScreen": false,
-                    "showScorePoints": true,
+                    "showScorePoints": false,
                     "showTitle": false
                 },
                 "grabbablePrefix": "Elemento a colocar {num} de {total}.",
@@ -529,7 +529,7 @@
                     "dropZoneHighlighting": "dragging",
                     "autoAlignSpacing": 3,
                     "enableFullScreen": false,
-                    "showScorePoints": true,
+                    "showScorePoints": false,
                     "showTitle": false
                 },
                 "grabbablePrefix": "Elemento a colocar {num} de {total}.",

@@ -185,7 +185,6 @@ html.h5p-iframe .h5p-container.h5p-dragquestion.h5p-semi-fullscreen {
 .h5p-dragquestion .h5p-dropzone {
   z-index: 2;
   position: absolute;
-  background-color: rgba(255,0,0,0.5);
 }
 
 .h5p-dragquestion .h5p-dropzone > .h5p-inner {
@@ -194,7 +193,7 @@ html.h5p-iframe .h5p-container.h5p-dragquestion.h5p-semi-fullscreen {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   /*background: rgb(245, 245, 245);*/
-  border-radius: 0.3em; /*nuevo*/
+  border-radius: 0em; /*nuevo*/
   background: rgba(0,0,0,0) !important; /*nuevo*/
 }
 

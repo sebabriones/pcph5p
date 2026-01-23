@@ -2408,7 +2408,7 @@ var DropZone = /*#__PURE__*/function () {
       //IMPORTANTE: Estos valores dependen de cada ejercicio
       var spacing = {
         x: self.autoAlignable.spacing / self.autoAlignable.size.width * 100,
-        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 50
+        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 0
       };
 
       // Determine coordinates for first 'spot'
@@ -2714,10 +2714,10 @@ function C(options, contentId, contentData) {
   let shufflePos1 = [];
   let shufflePos2 = [];
 
-  for (var posicion = 0; posicion < 3; posicion++) {
+  for (var posicion = 0; posicion < 4; posicion++) {
     shufflePos1.push(posicion);
   }
-  for (var posicion = 3; posicion < 6; posicion++) {
+  for (var posicion = 4; posicion < 8; posicion++) {
     shufflePos2.push(posicion);
   }
 

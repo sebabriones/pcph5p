@@ -1,3 +1,16 @@
+/* IcoMoon font licensed under the GNU General Public License: http://www.gnu.org/licenses/gpl.html */
+/*nuevo*/
+@font-face {
+  font-family: 'icomoon-multichoice';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .h5p-container.h5p-single-choice-set {
   overflow: hidden;
 }
@@ -24,10 +37,11 @@
 }
 
 .h5p-single-choice-set .h5p-joubelui-progressbar {
-  height: 5px; /* Setting height in px is intentional. We don't want it to ever get bigger */
-  background-color: rgb(102, 102, 102);
+  /*height: 5px; /* Setting height in px is intentional. We don't want it to ever get bigger */
+  /*background-color: rgb(102, 102, 102);
   box-shadow: none;
-  z-index: 1;
+  z-index: 1;*/
+  display: none; /*nuevo*/
 }
 
 .h5p-single-choice-set .h5p-joubelui-progressbar-background {
@@ -56,7 +70,7 @@
 }
 
 .h5p-ssc-next-button {
-  display: none;
+  display: none !important;
   position: absolute;
   right: 0.5em;
   bottom: 0;
@@ -95,22 +109,40 @@ ul.h5p-sc-alternatives li.h5p-sc-alternative {
   list-style: none;
   margin: .5em 0;
   padding: .4em 1.2em;
-  background: #ddd;
+  /*background: #ddd;*/
+  background: linear-gradient(180deg, #fff841 0%, #fbd347 90%); /*nuevo*/
+  color: #062971; /*nuevo*/
   overflow: hidden;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  /*border-radius: 0.25em;*/
+  border-radius: 0.6em; /*nuevo*/
   box-shadow: 0 0.1em 0 rgba(0,0,0, 0.3);
+  font-size: 0.85em; /*nuevo*/
 
   transition: -webkit-transform 0.5s ease-in-out, width 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 
 ul.h5p-sc-alternatives li.h5p-sc-alternative:hover {
-  background: #ececec;
+  /*background: #ececec;*/
+  color: #fff; /*nuevo*/
+  background: linear-gradient(180deg, #5166ad 0%, #062971 90%); /*nuevo*/
 }
 
-ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative,
+/*nuevo*/
+.h5p-sc-is-wrong.h5p-sc-selected,
+.h5p-sc-is-correct.h5p-sc-selected {
+  color: #fff !important; /*nuevo*/
+}
+.h5p-sc-is-wrong.h5p-sc-selected .h5p-sc-progressbar {
+  background: linear-gradient(180deg, #870202 0%, #3c0505 90%); /*nuevo*/
+}
+.h5p-sc-is-correct.h5p-sc-selected .h5p-sc-progressbar {
+  background: linear-gradient(180deg, #8bae54 0%, #456f06 90%); /*nuevo*/
+}
+
+/*ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative:hover,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative:active,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative:focus,
@@ -121,34 +153,34 @@ ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-wrong
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-}
+}*/
 
-ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-correct,
+/*ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-correct,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-correct:hover,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-correct:active,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-correct:focus {
   background: #9dd8bb;
   color: #255c41;
-}
+}*/
 
-ul.h5p-sc-alternatives li.h5p-sc-alternative.h5p-sc-is-correct.h5p-sc-selected.h5p-sc-reveal-correct .h5p-sc-progressbar {
+/*ul.h5p-sc-alternatives li.h5p-sc-alternative.h5p-sc-is-correct.h5p-sc-selected.h5p-sc-reveal-correct .h5p-sc-progressbar {
   background: #9dd8bb;
   color: #255c41;
-}
+}*/
 
-ul.h5p-sc-alternatives li.h5p-sc-alternative.h5p-sc-reveal-wrong {
+/*ul.h5p-sc-alternatives li.h5p-sc-alternative.h5p-sc-reveal-wrong {
   -webkit-transform: scale(.95);
   transform: scale(.95);
-}
+}*/
 
-ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-wrong.h5p-sc-selected,
+/*ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-wrong.h5p-sc-selected,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-wrong.h5p-sc-selected:hover,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-wrong.h5p-sc-selected:active,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-reveal-wrong.h5p-sc-selected:focus,
 ul.h5p-sc-alternatives.h5p-sc-selected li.h5p-sc-alternative.h5p-sc-is-wrong.h5p-sc-selected.h5p-sc-reveal-wrong .h5p-sc-progressbar {
   background: #f7d0d0;
   color: #b71c1c;
-}
+}*/
 
 li.h5p-sc-alternative .h5p-sc-progressbar {
   position: absolute;
@@ -156,7 +188,7 @@ li.h5p-sc-alternative .h5p-sc-progressbar {
   left: 0;
   height: 100%;
   width: 0%;
-  background: #cee0f4;
+  /*background: #cee0f4;*/
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -164,6 +196,7 @@ li.h5p-sc-alternative .h5p-sc-progressbar {
 .h5p-sc-drummed .h5p-sc-progressbar {
   background: transparent;
   transition: background 1s;
+  color: #fff !important; /*nuevo*/
 }
 /* Using animation instead of transition on width made this much
    smoother on iPad */
@@ -209,17 +242,20 @@ li.h5p-sc-alternative .h5p-sc-status {
   height: 1.5em;
   line-height: 1.5;
   position: absolute;
-  top: 0;
+  /*top: 0;*/
+  top: -0.1em;
   right: 0;
   text-align: center;
 }
 .h5p-sc-alternative.h5p-sc-is-correct.h5p-sc-drummed .h5p-sc-status:after{
   content: "\f00c";
-  color: #255c41;
+  /*color: #255c41;*/
+  color: #fff; /*nuevo*/
 }
 .h5p-sc-alternative.h5p-sc-is-wrong.h5p-sc-drummed .h5p-sc-status:after{
   content: "\f00d";
-  color: #b71c1c;
+  /*color: #b71c1c;*/
+  color: #fff; /*nuevo*/
 }
 
 .h5p-sc-alternative .h5p-sc-a11y{
@@ -414,7 +450,8 @@ li.h5p-sc-alternative .h5p-sc-status {
 }
 
 .h5p-single-choice-set .h5p-sc-result-container {
-  top: 50%;
+  /*top: 50%;*/
+  top: 40%; /*nuevo*/
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
@@ -427,13 +464,18 @@ li.h5p-sc-alternative .h5p-sc-status {
 
 /* Introduction */
 .h5p-sc-question {
+  font-family: "Poppins-regular"; /*nuevo*/
+  color: #062971; /*nuevo*/
   margin: 0.888888889em;
   padding-right: 1.777777778em;
-  font-size: 1.125em;
+  /*font-size: 1.125em;*/
+  font-size: 0.8em; /*nuevo*/
+  /*display: none; /*nuevo*/
 }
 
 .h5p-single-choice-set .h5p-sc-question p {
-  font-size: 1em;
+  /*font-size: 1em;*/
+  font-size: 1.2em; /*nuevo*/
   margin: 0.75em 0;
 }
 .h5p-single-choice-set .h5p-sc-question p:first-child {
