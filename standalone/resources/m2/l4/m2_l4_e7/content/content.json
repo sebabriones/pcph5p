@@ -1,0 +1,186 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 2.178649237472767,
+                        "y": 13.556039699830551,
+                        "width": 95.86056644880175,
+                        "height": 81.58992979908012,
+                        "action": {
+                            "library": "H5P.SortParagraphs 0.11",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "Inténtalo de nuevo"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "Cuando descomponemos un problema considerando <strong>desde lo general a lo específico</strong>, debemos pensar que es como ir haciendo <strong>zoom en una imagen</strong>, de modo que cada vez <strong>nos acercarnos más y más a los detalles pequeños</strong>.<br><br>En este caso, es necesario primero definir el propósito del canal, sin esto no podremos saber en qué enfocarnos. Luego de definir el propósito general del canal, no podemos, por ejemplo, asignar las responsabilidades de cada integrante, sino que debemos primero ver las áreas en las cuales se desarrollará el proyecto: en un canal algunos deben preocuparse del contenido que se publicará, otros de la parte técnica de implementar el canal y otros de la difusión de este canal.<br><br>Definidas las áreas, se puede decidir el contenido que se publicará, y de acuerdo a este mismo es que se puede decidir las plataformas en las que es más pertinente publicar este contenido, por eso es relevante primero definir el contenido antes de las plataformas.<br><br>Definidos todos los elementos anteriores, se definen las tareas de cada una de las áreas y se pueden asignar los responsables para cada tarea. Este proceso asegura que cada decisión esté alineada con el objetivo inicial y evita que el problema se vuelva más complejo, transformándolo en una solución clara y organizada."
+                                    }
+                                ],
+                                "behaviour": {
+                                    "scoringMode": "positions",
+                                    "applyPenalties": true,
+                                    "duplicatesInterchangeable": false,
+                                    "addButtonsForMovement": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false
+                                },
+                                "l10n": {
+                                    "checkAnswer": "Comprobar",
+                                    "submitAnswer": "Enviar",
+                                    "tryAgain": "Intentar de nuevo",
+                                    "showSolution": "Mostrar solución",
+                                    "up": "Arriba",
+                                    "down": "Abajo",
+                                    "disabled": "Deshabilitado"
+                                },
+                                "a11y": {
+                                    "check": "Comprobar las respuestas. Las respuestas se marcarán como correcta o incorrecta.",
+                                    "showSolution": "Mostrar la solución. Se mostrará la solución correcta.",
+                                    "retry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                    "yourResult": "Has obtenido @score de un total de @total puntos",
+                                    "listDescription": "Lista ordenable de párrafos.",
+                                    "listDescriptionCheckAnswer": "Lista de párrafos con resultados.",
+                                    "listDescriptionShowSolution": "Lista de párrafos con soluciones.",
+                                    "paragraph": "Párrafo",
+                                    "correct": "correcto",
+                                    "wrong": "incorrecto",
+                                    "point": "@score punto",
+                                    "sevenOfNine": "@current de @total",
+                                    "currentPosition": "Posición actual en lista",
+                                    "instructionsSelected": "Presiona la barra espaciadora para reordenar",
+                                    "instructionsGrabbed": "Presiona las teclas de dirección arriba y abajo para cambiar la posición, barra espaciadora para soltar, escape para cancelar",
+                                    "grabbed": "Cogido",
+                                    "moved": "Movido",
+                                    "dropped": "Soltado",
+                                    "reorderCancelled": "Reordenación cancelada",
+                                    "finalPosition": "Posición final",
+                                    "nextParagraph": "Párrafo siguiente",
+                                    "correctParagraph": "Párrafo correcto en la posición"
+                                },
+                                "taskDescription": "<p>Un grupo de estudiantes decide crear un canal de contenido digital (videos o streaming) relacionado con temas de su interés. Al analizar el proyecto, se dan cuenta de que es un problema complejo y que no puede abordarse todo al mismo tiempo. Para avanzar de manera organizada, deciden descomponer el problema en subproblemas y tareas, siguiendo un proceso lógico desde lo más general a lo más específico. Desplaza los siguientes elementos hacia arriba o hacia abajo para ordenarlos desde el nivel más general hasta el nivel más específico, de modo que se refleje un proceso correcto de descomposición del problema.</p>",
+                                "paragraphs": [
+                                    "<p>Definir el propósito general del canal.</p>",
+                                    "<p>Identificar las áreas principales del proyecto (contenido, técnica, difusión).</p>",
+                                    "<p>Decidir el tipo de contenido que se publicará.</p>",
+                                    "<p>Elegir las plataformas donde se publicará el contenido.</p>",
+                                    "<p>Definir tareas específicas dentro de cada área.</p>",
+                                    "<p>Asignar responsabilidades a cada integrante del grupo.</p>"
+                                ]
+                            },
+                            "subContentId": "94b36387-7c30-4ac4-863a-35a8dbb150b3",
+                            "metadata": {
+                                "contentType": "Ordenar los párrafos (Sort the Paragraphs)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

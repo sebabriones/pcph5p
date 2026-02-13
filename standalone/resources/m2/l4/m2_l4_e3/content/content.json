@@ -1,0 +1,312 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e3/content/images/m2l4e3.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 63.5,
+                    "y": 18.7,
+                    "width": 8.57,
+                    "height": 10.55,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e3/content/images/image-CCrNm57B.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 280,
+                                "height": 340
+                            },
+                            "title": "<ul><li>Buscar alternativas de plantas comestibles</li><li>Evaluar qué especies crecen bien en poco espacio</li><li>Elegir 2–3 variedades ideales</li></ul>",
+                            "alt": "Definir el tipo de plantas"
+                        },
+                        "subContentId": "c8f90f3a-19a7-4b42-8d55-f330298a3128",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 80.75,
+                    "y": 18.7,
+                    "width": 8.57,
+                    "height": 10.55,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e3/content/images/image-fmfFb03U.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 280,
+                                "height": 340
+                            },
+                            "title": "Texto 1-2",
+                            "alt": "Diseño del huerto"
+                        },
+                        "subContentId": "f9feb23d-7652-4017-9b12-d427f8a628b9",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 63.5,
+                    "y": 53,
+                    "width": 8.57,
+                    "height": 10.55,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e3/content/images/image-KBHRAVdl.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 280,
+                                "height": 340
+                            },
+                            "title": "Texto 3-1",
+                            "alt": "Construcción del huerto"
+                        },
+                        "subContentId": "d70cc14b-de85-43a8-95fc-1fa2b3f48be8",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                },
+                {
+                    "x": 80.75,
+                    "y": 53,
+                    "width": 8.57,
+                    "height": 10.55,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e3/content/images/image-WBgfr5On.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 280,
+                                "height": 340
+                            },
+                            "title": "Texto 4-1",
+                            "alt": "Evaluación del crecimiento"
+                        },
+                        "subContentId": "6ee93bba-c606-45c2-bcee-5fea17f943df",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 3.55,
+                    "y": 15.1,
+                    "width": 8.9,
+                    "height": 10.85,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 1</div>"
+                },
+                {
+                    "x": 16.85,
+                    "y": 60.3,
+                    "width": 8.9,
+                    "height": 10.85,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 2</div>"
+                },
+                {
+                    "x": 29.25,
+                    "y": 15.1,
+                    "width": 8.9,
+                    "height": 10.85,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 3</div>"
+                },
+                {
+                    "x": 42.5,
+                    "y": 60.3,
+                    "width": 8.9,
+                    "height": 10.85,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Etapa 4</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": true,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": -3,
+        "enableFullScreen": false,
+        "showScorePoints": false,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

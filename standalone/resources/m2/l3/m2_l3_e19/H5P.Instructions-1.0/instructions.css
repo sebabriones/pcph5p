@@ -97,6 +97,10 @@ a {
     word-break: break-word;
     padding: 15px 0;
     font-size: 1.5vw;
+    /* Agregar scroll vertical para instrucciones largas */
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .tab-content {

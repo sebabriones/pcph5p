@@ -1,0 +1,634 @@
+{
+    "introPage": {
+        "showIntroPage": false,
+        "startButtonText": "Iniciar prueba",
+        "introduction": ""
+    },
+    "progressType": "dots",
+    "passPercentage": 50,
+    "questions": [
+        {
+            "params": {
+                "scoreShow": "Comprobar",
+                "submit": "Enviar",
+                "tryAgain": "Intentar de nuevo",
+                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                "question": {
+                    "settings": {
+                        "size": {
+                            "width": 900,
+                            "height": 540
+                        },
+                        "background": {
+                            "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e5/content/images/image-ulO8isZI.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 1800,
+                            "height": 1080
+                        }
+                    },
+                    "task": {
+                        "elements": [
+                            {
+                                "x": 55.7,
+                                "y": 17.8,
+                                "width": 21.75,
+                                "height": 3,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Resultado final de la fiesta</p>"
+                                    },
+                                    "subContentId": "d291d87e-2037-4014-90dd-3b8fb58a7266",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 55.7,
+                                "y": 32.6,
+                                "width": 21.75,
+                                "height": 3,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Organización logística</p>"
+                                    },
+                                    "subContentId": "5e0b024b-3b51-438f-be93-06b0e05d48d7",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 55.7,
+                                "y": 47.4,
+                                "width": 21.75,
+                                "height": 3,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Gestión económica</p>"
+                                    },
+                                    "subContentId": "53982217-3752-4694-bef0-6179eea72001",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 55.7,
+                                "y": 62.2,
+                                "width": 21.75,
+                                "height": 3,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Opiniones personales de los invitados</p>"
+                                    },
+                                    "subContentId": "4cb17123-6a0c-4db8-ae0e-66315bbb3790",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 55.7,
+                                "y": 77.1,
+                                "width": 21.75,
+                                "height": 3,
+                                "dropZones": [
+                                    "0"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Difusión y convocatoria</p>"
+                                    },
+                                    "subContentId": "8def499c-9d3d-47d2-bcfd-031f09f9ec2f",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            }
+                        ],
+                        "dropZones": [
+                            {
+                                "x": 4.6,
+                                "y": 12.2,
+                                "width": 27.35,
+                                "height": 27.4,
+                                "correctElements": [
+                                    "1",
+                                    "4",
+                                    "2"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": false,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>Subproblemas</div>"
+                            }
+                        ]
+                    }
+                },
+                "overallFeedback": [
+                    {
+                        "from": 0,
+                        "to": 100
+                    }
+                ],
+                "behaviour": {
+                    "enableRetry": false,
+                    "enableCheckButton": true,
+                    "singlePoint": false,
+                    "applyPenalties": true,
+                    "enableScoreExplanation": false,
+                    "dropZoneHighlighting": "dragging",
+                    "autoAlignSpacing": 10,
+                    "enableFullScreen": false,
+                    "showScorePoints": false,
+                    "showTitle": false
+                },
+                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                "noDropzone": "No es zona de colocación.",
+                "tipLabel": "Mostrar pista.",
+                "tipAvailable": "Pista disponible",
+                "correctAnswer": "Respuesta correcta",
+                "wrongAnswer": "Respuesta incorrecta",
+                "feedbackHeader": "Retroalimentación",
+                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                "localize": {
+                    "fullscreen": "Pantalla completa",
+                    "exitFullscreen": "Salir de pantalla completa"
+                }
+            },
+            "library": "H5P.DragShuffle 1.0",
+            "metadata": {
+                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                "license": "U",
+                "title": "Slide 1",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Slide 1"
+            },
+            "subContentId": "2b923189-2845-4e6a-a964-6a5633305366"
+        },
+        {
+            "params": {
+                "scoreShow": "Comprobar",
+                "submit": "Enviar",
+                "tryAgain": "Intentar de nuevo",
+                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                "question": {
+                    "settings": {
+                        "size": {
+                            "width": 900,
+                            "height": 540
+                        },
+                        "background": {
+                            "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e5/content/images/image-3Iyv5BP0.png",
+                            "mime": "image/png",
+                            "copyright": {
+                                "license": "U"
+                            },
+                            "width": 1800,
+                            "height": 1080
+                        }
+                    },
+                    "task": {
+                        "elements": [
+                            {
+                                "x": 3.7,
+                                "y": 91.7,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Llevar registro de gastos</p>"
+                                    },
+                                    "subContentId": "f296a703-f01c-44e9-a048-3a2915ed08c2",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 3.7,
+                                "y": 76.1,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p><span style=\"font-size:1em\">Definir fecha y hora</span></p>"
+                                    },
+                                    "subContentId": "270c0931-a6b6-41ef-b5b3-9bbb68f69f0c",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 35.15,
+                                "y": 76.1,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Elegir lugar de la fiesta</p>"
+                                    },
+                                    "subContentId": "54f8cdbf-c604-45d2-8420-3918c28ae24d",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 66.6,
+                                "y": 76.1,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Calcular aporte por persona</p>"
+                                    },
+                                    "subContentId": "51d3fc6d-f2be-49b4-bda9-b72770459964",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 18.7,
+                                "y": 83.9,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Diseñar una invitación digital</p>"
+                                    },
+                                    "subContentId": "bfb54c17-880c-4db9-a6ea-bb732c5a5542",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 51.6,
+                                "y": 83.9,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Difundir el evento</p>"
+                                    },
+                                    "subContentId": "8d9052c9-9033-440a-b2e6-4b2b13f457f3",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 35.15,
+                                "y": 91.7,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Confirmar asistencia invitados</p>"
+                                    },
+                                    "subContentId": "d80d32b6-9ed6-4a63-85ed-60358250cb9b",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            },
+                            {
+                                "x": 66.6,
+                                "y": 91.7,
+                                "width": 16.1,
+                                "height": 1.45,
+                                "dropZones": [
+                                    "0",
+                                    "1",
+                                    "2"
+                                ],
+                                "type": {
+                                    "library": "H5P.AdvancedText 1.1",
+                                    "params": {
+                                        "text": "<p>Comprar comida y bebidas</p>"
+                                    },
+                                    "subContentId": "8ecd700b-68da-4134-a592-09b57aa29cf0",
+                                    "metadata": {
+                                        "contentType": "es",
+                                        "license": "U",
+                                        "title": "Sin título es",
+                                        "authors": [],
+                                        "changes": []
+                                    }
+                                },
+                                "backgroundOpacity": 100,
+                                "multiple": false
+                            }
+                        ],
+                        "dropZones": [
+                            {
+                                "x": 3.9,
+                                "y": 21.1,
+                                "width": 17.15,
+                                "height": 17.55,
+                                "correctElements": [
+                                    "1",
+                                    "2",
+                                    "3",
+                                    "7"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": false,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>Organización logística</div>"
+                            },
+                            {
+                                "x": 34.75,
+                                "y": 21.1,
+                                "width": 17.15,
+                                "height": 17.55,
+                                "correctElements": [
+                                    "3",
+                                    "0"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": false,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>Gestión económica</div>"
+                            },
+                            {
+                                "x": 65.6,
+                                "y": 21.1,
+                                "width": 17.15,
+                                "height": 17.55,
+                                "correctElements": [
+                                    "4",
+                                    "5",
+                                    "6"
+                                ],
+                                "showLabel": false,
+                                "backgroundOpacity": 100,
+                                "tipsAndFeedback": {
+                                    "tip": ""
+                                },
+                                "single": false,
+                                "autoAlign": true,
+                                "type": {
+                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                },
+                                "label": "<div>Difusión y convocatoria</div>"
+                            }
+                        ]
+                    }
+                },
+                "overallFeedback": [
+                    {
+                        "from": 0,
+                        "to": 100
+                    }
+                ],
+                "behaviour": {
+                    "enableRetry": false,
+                    "enableCheckButton": true,
+                    "singlePoint": false,
+                    "applyPenalties": true,
+                    "enableScoreExplanation": false,
+                    "dropZoneHighlighting": "dragging",
+                    "autoAlignSpacing": 1,
+                    "enableFullScreen": false,
+                    "showScorePoints": false,
+                    "showTitle": false
+                },
+                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                "noDropzone": "No es zona de colocación.",
+                "tipLabel": "Mostrar pista.",
+                "tipAvailable": "Pista disponible",
+                "correctAnswer": "Respuesta correcta",
+                "wrongAnswer": "Respuesta incorrecta",
+                "feedbackHeader": "Retroalimentación",
+                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                "localize": {
+                    "fullscreen": "Pantalla completa",
+                    "exitFullscreen": "Salir de pantalla completa"
+                }
+            },
+            "library": "H5P.DragShuffle 1.0",
+            "metadata": {
+                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                "license": "U",
+                "title": "Slide 2",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Slide 2"
+            },
+            "subContentId": "963b3fcd-3076-4676-8921-a8c7ca517482"
+        }
+    ],
+    "disableBackwardsNavigation": false,
+    "randomQuestions": false,
+    "endGame": {
+        "showResultPage": true,
+        "showSolutionButton": true,
+        "showRetryButton": true,
+        "noResultMessage": "Terminado",
+        "message": "Tu resultado:",
+        "scoreBarLabel": "Has conseguido @finals de @totals puntos",
+        "overallFeedback": [
+            {
+                "from": 0,
+                "to": 100
+            }
+        ],
+        "solutionButtonText": "Mostrar solución",
+        "retryButtonText": "Intentar de nuevo",
+        "finishButtonText": "Terminar",
+        "submitButtonText": "Enviar",
+        "showAnimations": false,
+        "skippable": false,
+        "skipButtonText": "Saltar vídeo"
+    },
+    "override": {
+        "checkButton": true,
+        "showSolutionButton": "off",
+        "retryButton": "off"
+    },
+    "texts": {
+        "prevButton": "Pregunta anterior",
+        "nextButton": "Pregunta siguiente",
+        "finishButton": "Terminar",
+        "submitButton": "Enviar",
+        "textualProgress": "Pregunta: @current de @total preguntas",
+        "jumpToQuestion": "Pregunta %d de %total",
+        "questionLabel": "Pregunta",
+        "readSpeakerProgress": "Pregunta @current de @total",
+        "unansweredText": "No contestada",
+        "answeredText": "Contestada",
+        "currentQuestionText": "Pregunta actual",
+        "navigationLabel": "Preguntas"
+    }
+}

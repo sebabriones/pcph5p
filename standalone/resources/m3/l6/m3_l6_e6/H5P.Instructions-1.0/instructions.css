@@ -17,7 +17,7 @@
   font-size: 1.5vw;
   margin-bottom: 5%;
   padding: 0 15%;
-  word-break: breal-word;
+  word-break: break-word;
   /* Agregar scroll vertical para instrucciones largas */
   max-height: 60vh;
   overflow-y: auto;
