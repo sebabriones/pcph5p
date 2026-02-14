@@ -1,0 +1,844 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e3/content/images/image-P6jD1icf.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 81.05022831050229,
+                    "y": 26.63652933633184,
+                    "width": 3.1243311215753424,
+                    "height": 3.124329516267123,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e3/content/images/image-nxj2w2HE.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 114,
+                                "height": 114
+                            },
+                            "alt": "↑"
+                        },
+                        "subContentId": "90edbdf6-3530-49a2-b196-b871e15b9032",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": true
+                },
+                {
+                    "x": 81.05022831050229,
+                    "y": 41.85740324280718,
+                    "width": 3.1243311215753424,
+                    "height": 3.1243327268835617,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e3/content/images/image-GZweKFM5.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 114,
+                                "height": 114
+                            },
+                            "alt": "→"
+                        },
+                        "subContentId": "5eb0d01d-e160-43a8-81c9-8e96acc8be41",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": true
+                },
+                {
+                    "x": 81.05022831050229,
+                    "y": 57.07827714928252,
+                    "width": 3.1243311215753424,
+                    "height": 3.1243311215753424,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e3/content/images/image-DP1L0Ba5.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 114,
+                                "height": 114
+                            },
+                            "alt": "↓"
+                        },
+                        "subContentId": "793d7f2b-11a5-4137-a0d0-c23d49e20e5d",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": true
+                },
+                {
+                    "x": 81.05022831050229,
+                    "y": 72.29915105575786,
+                    "width": 3.1243311215753424,
+                    "height": 3.1243311215753424,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27"
+                    ],
+                    "type": {
+                        "library": "H5P.Image 1.1",
+                        "params": {
+                            "decorative": false,
+                            "contentName": "Imagen",
+                            "expandImage": "Expandir Imagen",
+                            "minimizeImage": "Minimizar Imagen",
+                            "file": {
+                                "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e3/content/images/image-FD2drTIs.png",
+                                "mime": "image/png",
+                                "copyright": {
+                                    "license": "U"
+                                },
+                                "width": 114,
+                                "height": 114
+                            },
+                            "alt": "←"
+                        },
+                        "subContentId": "6313bbe1-0b6d-44a5-bf29-f4eeafd711db",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 0,
+                    "multiple": true
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 29.794520547945208,
+                    "y": 17.50400499244664,
+                    "width": 4.999533390410958,
+                    "height": 3.8527413313356162,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>C1</div>"
+                },
+                {
+                    "x": 39.15525114155251,
+                    "y": 17.50400499244664,
+                    "width": 4.999533390410958,
+                    "height": 3.8527413313356162,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>D1</div>"
+                },
+                {
+                    "x": 10.844748858447488,
+                    "y": 30.06122596528879,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>A2</div>"
+                },
+                {
+                    "x": 20.319634703196346,
+                    "y": 30.06122596528879,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>B2</div>"
+                },
+                {
+                    "x": 29.794520547945208,
+                    "y": 30.06122596528879,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>C2</div>"
+                },
+                {
+                    "x": 39.15525114155251,
+                    "y": 30.06122596528879,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>D2</div>"
+                },
+                {
+                    "x": 48.63013698630137,
+                    "y": 30.06122596528879,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>E2</div>"
+                },
+                {
+                    "x": 58.10502283105023,
+                    "y": 30.06122596528879,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>E2</div>"
+                },
+                {
+                    "x": 10.844748858447488,
+                    "y": 42.4281860143,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>A3</div>"
+                },
+                {
+                    "x": 20.319634703196346,
+                    "y": 42.4281860143,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>B3</div>"
+                },
+                {
+                    "x": 29.794520547945208,
+                    "y": 42.4281860143,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>C3</div>"
+                },
+                {
+                    "x": 48.63013698630137,
+                    "y": 42.4281860143,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>E3</div>"
+                },
+                {
+                    "x": 10.844748858447488,
+                    "y": 54.795146063311215,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>A4</div>"
+                },
+                {
+                    "x": 20.319634703196346,
+                    "y": 54.795146063311215,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>B4</div>"
+                },
+                {
+                    "x": 29.794520547945208,
+                    "y": 54.795146063311215,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>C4</div>"
+                },
+                {
+                    "x": 39.15525114155251,
+                    "y": 54.795146063311215,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>D4</div>"
+                },
+                {
+                    "x": 48.74429223744292,
+                    "y": 54.985406987142156,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>E4</div>"
+                },
+                {
+                    "x": 58.10502283105023,
+                    "y": 54.985406987142156,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>F4</div>"
+                },
+                {
+                    "x": 10.844748858447488,
+                    "y": 67.16210611232243,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>A5</div>"
+                },
+                {
+                    "x": 20.319634703196346,
+                    "y": 67.16210611232243,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>B5</div>"
+                },
+                {
+                    "x": 29.794520547945208,
+                    "y": 67.16210611232243,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>C5</div>"
+                },
+                {
+                    "x": 39.15525114155251,
+                    "y": 67.16210611232243,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>D5</div>"
+                },
+                {
+                    "x": 48.74429223744292,
+                    "y": 67.16210611232243,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>E5</div>"
+                },
+                {
+                    "x": 58.10502283105023,
+                    "y": 67.16210611232243,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>F5</div>"
+                },
+                {
+                    "x": 20.319634703196346,
+                    "y": 79.71932708516458,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>B6</div>"
+                },
+                {
+                    "x": 29.680365296803654,
+                    "y": 79.71932708516458,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>C6</div>"
+                },
+                {
+                    "x": 48.74429223744292,
+                    "y": 79.71932708516458,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>E6</div>"
+                },
+                {
+                    "x": 58.10502283105023,
+                    "y": 79.71932708516458,
+                    "width": 4.999533390410958,
+                    "height": 3.852739726027397,
+                    "correctElements": [],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>F6</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": true,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 2,
+        "enableFullScreen": false,
+        "showScorePoints": false,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}

@@ -1,0 +1,421 @@
+{
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_r2/content/images/image-GRJ27fuF.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
+            }
+        },
+        "task": {
+            "elements": [
+                {
+                    "x": 75.7,
+                    "y": 23.6,
+                    "width": 8.6,
+                    "height": 1.2,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p><span style=\"font-size:0.875em\">contenidos</span></p>"
+                        },
+                        "subContentId": "cd04c2a7-1101-4740-ba55-30982f03e106",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 75.7,
+                    "y": 32.9,
+                    "width": 8.6,
+                    "height": 1.2,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p><span style=\"font-size:0.875em\">evaluar</span></p>"
+                        },
+                        "subContentId": "fb250625-f961-450e-8103-d26ac55a3884",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 75.7,
+                    "y": 42.2,
+                    "width": 8.6,
+                    "height": 1.2,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p><span style=\"font-size:0.875em\">recursos</span></p>"
+                        },
+                        "subContentId": "9efa8853-eed1-48dd-8295-32359d359b78",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 75.7,
+                    "y": 51.4,
+                    "width": 8.6,
+                    "height": 1.2,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p><span style=\"font-size:0.875em\">tiempo</span></p>"
+                        },
+                        "subContentId": "cf811982-f32d-4398-8457-db769e465520",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 75.7,
+                    "y": 60.6,
+                    "width": 8.6,
+                    "height": 1.2,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p><span style=\"font-size:0.875em\">plan</span></p>"
+                        },
+                        "subContentId": "6fa82441-5056-4cab-b1a2-2d095ae1de18",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 75.7,
+                    "y": 69.9,
+                    "width": 8.6,
+                    "height": 1.2,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p><span style=\"font-size:0.875em\">sesiones</span></p>"
+                        },
+                        "subContentId": "6c9b9bde-47ba-4233-a9e7-d3b049fc6f28",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 75.7,
+                    "y": 79.15,
+                    "width": 8.6,
+                    "height": 1.2,
+                    "dropZones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p><span style=\"font-size:0.875em\">objetivo</span></p>"
+                        },
+                        "subContentId": "b3fd8866-91c7-4b87-a218-37981e138909",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 23.1,
+                    "y": 10.6,
+                    "width": 9.5,
+                    "height": 1.9,
+                    "correctElements": [
+                        "6"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Paso 1</div>"
+                },
+                {
+                    "x": 24.3,
+                    "y": 22.3,
+                    "width": 9.5,
+                    "height": 1.9,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Paso 2</div>"
+                },
+                {
+                    "x": 27.32,
+                    "y": 34.4,
+                    "width": 9.5,
+                    "height": 1.9,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Paso 3</div>"
+                },
+                {
+                    "x": 27.12,
+                    "y": 46.6,
+                    "width": 9.5,
+                    "height": 1.9,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Paso 4</div>"
+                },
+                {
+                    "x": 26.75,
+                    "y": 58.9,
+                    "width": 9.5,
+                    "height": 1.9,
+                    "correctElements": [
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Paso 5</div>"
+                },
+                {
+                    "x": 24.8,
+                    "y": 71.2,
+                    "width": 9.5,
+                    "height": 1.9,
+                    "correctElements": [
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Paso 6</div>"
+                },
+                {
+                    "x": 15.35,
+                    "y": 82.9,
+                    "width": 9.5,
+                    "height": 1.9,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Paso 7</div>"
+                }
+            ]
+        }
+    },
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": true,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 1,
+        "enableFullScreen": false,
+        "showScorePoints": false,
+        "showTitle": false
+    },
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
+    }
+}
