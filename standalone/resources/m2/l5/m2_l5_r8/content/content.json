@@ -1,0 +1,717 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 15,
+                        "y": 0,
+                        "width": 70,
+                        "height": 99.99677234719216,
+                        "action": {
+                            "library": "H5P.DragShuffle 1.0",
+                            "params": {
+                                "scoreShow": "Comprobar",
+                                "submit": "Enviar",
+                                "tryAgain": "Intentar de nuevo",
+                                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                                "question": {
+                                    "settings": {
+                                        "size": {
+                                            "width": 900,
+                                            "height": 540
+                                        },
+                                        "background": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_r8/content/images/image-EMhcyd4k.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 1800,
+                                            "height": 1080
+                                        }
+                                    },
+                                    "task": {
+                                        "elements": [
+                                            {
+                                                "x": 55.7,
+                                                "y": 9.1,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Asignar recursos disponibles según prioridad y tipo de emergencia.</p>"
+                                                    },
+                                                    "subContentId": "75bcaeb4-e5db-4f47-81c7-6185bc5f1c86",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 55.7,
+                                                "y": 20.4,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Solicitar información adicional solo si faltan datos relevantes.</p>"
+                                                    },
+                                                    "subContentId": "247dac9c-df15-4d5a-bf84-f707ca3a7040",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 55.7,
+                                                "y": 31.8,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Registrar ubicación exacta, tipo de emergencia reportado.</p>"
+                                                    },
+                                                    "subContentId": "ce03a39c-e983-4e7a-9fae-0845721b04af",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 55.7,
+                                                "y": 43,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Enviar equipos sin verificar disponibilidad de recursos.</p>"
+                                                    },
+                                                    "subContentId": "1791f62d-a971-47a3-85c0-67be2751e470",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 55.7,
+                                                "y": 54.3,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Verificar si la emergencia ya fue reportada previamente.</p>"
+                                                    },
+                                                    "subContentId": "57727c21-758b-4dfc-b01e-634b65fddac3",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 55.7,
+                                                "y": 65.7,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Registrar la resolución del incidente.</p>"
+                                                    },
+                                                    "subContentId": "c68aea5f-1c2c-467a-99c3-3c9c36cd45f2",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 55.7,
+                                                "y": 76.9,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Ignorar emergencias de bajo riesgo para ahorrar recursos.</p>"
+                                                    },
+                                                    "subContentId": "f2efd346-fbae-4cf1-a8b0-5a891dca7253",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 55.7,
+                                                "y": 88.2,
+                                                "width": 20.5,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3",
+                                                    "4",
+                                                    "5"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Clasificar el reporte según tipo de emergencia y nivel de riesgo.</p>"
+                                                    },
+                                                    "subContentId": "8c690c36-255f-4883-a458-af5bc8577dbf",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            }
+                                        ],
+                                        "dropZones": [
+                                            {
+                                                "x": 10.4,
+                                                "y": 26.1,
+                                                "width": 21.3,
+                                                "height": 3.5,
+                                                "correctElements": [
+                                                    "2"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Paso 1</div>"
+                                            },
+                                            {
+                                                "x": 10.4,
+                                                "y": 38,
+                                                "width": 21.3,
+                                                "height": 3.5,
+                                                "correctElements": [
+                                                    "4"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Paso 2</div>"
+                                            },
+                                            {
+                                                "x": 10.4,
+                                                "y": 50.2,
+                                                "width": 21.3,
+                                                "height": 3.5,
+                                                "correctElements": [
+                                                    "7"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Paso 3</div>"
+                                            },
+                                            {
+                                                "x": 10.4,
+                                                "y": 62.2,
+                                                "width": 21.3,
+                                                "height": 3.5,
+                                                "correctElements": [
+                                                    "1"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Paso 4</div>"
+                                            },
+                                            {
+                                                "x": 10.4,
+                                                "y": 74.2,
+                                                "width": 21.3,
+                                                "height": 3.5,
+                                                "correctElements": [
+                                                    "0"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Paso 5</div>"
+                                            },
+                                            {
+                                                "x": 10.4,
+                                                "y": 86.3,
+                                                "width": 21.3,
+                                                "height": 3.5,
+                                                "correctElements": [
+                                                    "5"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Paso 6</div>"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableCheckButton": true,
+                                    "singlePoint": false,
+                                    "applyPenalties": true,
+                                    "enableScoreExplanation": false,
+                                    "dropZoneHighlighting": "dragging",
+                                    "autoAlignSpacing": 2,
+                                    "enableFullScreen": false,
+                                    "showScorePoints": false,
+                                    "showTitle": false
+                                },
+                                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                                "noDropzone": "No es zona de colocación.",
+                                "tipLabel": "Mostrar pista.",
+                                "tipAvailable": "Pista disponible",
+                                "correctAnswer": "Respuesta correcta",
+                                "wrongAnswer": "Respuesta incorrecta",
+                                "feedbackHeader": "Retroalimentación",
+                                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "localize": {
+                                    "fullscreen": "Pantalla completa",
+                                    "exitFullscreen": "Salir de pantalla completa"
+                                }
+                            },
+                            "subContentId": "fba30616-23f6-49ec-9d34-8b66a1475d93",
+                            "metadata": {
+                                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 2.178649237472767,
+                        "y": 38.73183369411319,
+                        "width": 44.406526401748586,
+                        "height": 19.365916847056596,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_r8/content/images/image-nRpbavY6.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1540,
+                                    "height": 340
+                                }
+                            },
+                            "subContentId": "aefe1f1f-009f-4780-87b0-7e07eb0bd72a",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 47.930283224400874,
+                        "y": 7.607074154247377,
+                        "width": 49.01960784313726,
+                        "height": 96.22251008103561,
+                        "action": {
+                            "library": "H5P.MultiChoice 1.16",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div><span style='font-size:0.8em;'>Facilita comprobar que cada paso del procedimiento se realizó de manera adecuada.</span></div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div><span style='font-size:0.8em;'>Disminuye la posibilidad de interpretaciones confusas durante la ejecución.</span></div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div><span style='font-size:0.8em;'>Garantiza que siempre se pueda ahorrar recursos sin importar la emergencia.</span></div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div><span style='font-size:0.8em;'>Asegura que nunca se presenten retrasos o colapsos en la atención.</span></div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div><span style='font-size:0.8em;'>Se considera efectivo si logra atender las emergencias en menor tiempo y con  eficiencia.</span></div>"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": false
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Comprobar",
+                                    "submitAnswerButton": "Enviar",
+                                    "showSolutionButton": "Mostrar solución",
+                                    "tryAgainButton": "Intentar de nuevo",
+                                    "tipsLabel": "Mostrar pista",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "tipAvailable": "Pista disponible",
+                                    "feedbackAvailable": "Retroalimentación disponible",
+                                    "readFeedback": "Leer retroalimentación",
+                                    "wrongAnswer": "Respuesta incorrecta",
+                                    "correctAnswer": "Respuesta correcta",
+                                    "shouldCheck": "Debería haber sido marcada",
+                                    "shouldNotCheck": "No debería haber sido marcada",
+                                    "noInput": "Por favor responde antes de ver la solución",
+                                    "a11yCheck": "Revisa tus respuestas. Las respuestas se marcarán como correcta, incorrecta o sin contestar.",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                },
+                                "confirmCheck": {
+                                    "header": "¿Terminar?",
+                                    "body": "¿Seguro que quieres terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "question": "<p>Selecciona todas las afirmaciones correctas respecto del algoritmo que construiste.</p>"
+                            },
+                            "subContentId": "fab6b249-9fd4-440e-bcfe-e08d85a23796",
+                            "metadata": {
+                                "contentType": "Opción múltiple (Multiple Choice)",
+                                "license": "U",
+                                "title": "Slide 2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "off"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

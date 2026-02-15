@@ -1,0 +1,571 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 8.714596949891067,
+                        "y": 8.607074154247377,
+                        "width": 25.52930283224401,
+                        "height": 89.7758717890234,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e1/content/images/image-9rgAKIcH.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1200,
+                                    "height": 2136
+                                }
+                            },
+                            "subContentId": "ef97e932-f0a0-4870-88c2-c732d39c5553",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 35.947712418300654,
+                        "y": 8.607074154247377,
+                        "width": 11.376454266369437,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e1/content/images/image-YJ45bBxF.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1200,
+                                    "height": 2136
+                                }
+                            },
+                            "subContentId": "cd348114-4d41-4dad-8427-efc5a69aedc5",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 44.66230936819172,
+                        "y": 10.758842692809221,
+                        "width": 50.10893246187364,
+                        "height": 88.22251008103561,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "0726aee7-1c3d-41ad-a456-a2511c59bda2",
+                                        "question": "<p>1. ¿Cómo se aplica el <strong>principio de precisión</strong> en el algoritmo de planificación de un viaje mostrado en el diagrama de flujo?</p>",
+                                        "answers": [
+                                            "<p>Cada paso del algoritmo indica acciones claras y específicas, como definir destino, estimar presupuesto y evaluar transporte.</p>",
+                                            "<p>El algoritmo permite que cada persona decida libremente qué pasos seguir según su experiencia.</p>",
+                                            "<p>El algoritmo incluye muchas opciones para que el usuario improvise durante el viaje.</p>",
+                                            "<p>El algoritmo se centra únicamente en el resultado final y no en el proceso.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "Inténtalo de nuevo"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "La <strong>precisión</strong> se cumple porque cada paso está claramente definido y no deja ambigüedades sobre qué hacer en cada etapa."
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "e3a55268-9dc4-4e4c-a8f0-78e9284a20e5",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 8.714596949891067,
+                        "y": 8.607074154247377,
+                        "width": 25.52930283224401,
+                        "height": 89.7758717890234,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e1/content/images/image-9rgAKIcH.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1200,
+                                    "height": 2136
+                                }
+                            },
+                            "subContentId": "9e500b47-e3da-48bb-af71-ff187f36591c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 35.947712418300654,
+                        "y": 8.607074154247377,
+                        "width": 11.376454266369437,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e1/content/images/image-YJ45bBxF.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1200,
+                                    "height": 2136
+                                }
+                            },
+                            "subContentId": "d3a50607-1d28-4e25-ac2e-2b7c3fd7a084",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 44.66230936819172,
+                        "y": 10.758842692809221,
+                        "width": 50.10893246187364,
+                        "height": 88.22251008103561,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "0726aee7-1c3d-41ad-a456-a2511c59bda2",
+                                        "question": "<p>2. ¿Cómo se evidencia el <strong>principio de efectividad</strong> en el algoritmo de planificación de un viaje?</p>",
+                                        "answers": [
+                                            "<p>El algoritmo conduce a un resultado concreto, ya sea realizar el viaje o ajustar el plan hasta cumplir el presupuesto.</p>",
+                                            "<p>El algoritmo puede continuar indefinidamente ajustando el plan sin llegar a una decisión final.</p>",
+                                            "<p>El algoritmo sólo funciona si el presupuesto es muy alto.</p>",
+                                            "<p>El algoritmo requiere conocimientos avanzados de turismo para poder aplicarse.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "Inténtalo de nuevo"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "La <strong>efectividad</strong> se observa porque el algoritmo siempre conduce a una acción concreta (eficacia) y alcanzable, utilizando pasos realizables que llevan a un resultado (eficiencia)."
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "80b624ac-b32b-4a01-985c-0e9a66209fe8",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 8.714596949891067,
+                        "y": 8.607074154247377,
+                        "width": 25.52930283224401,
+                        "height": 89.7758717890234,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e1/content/images/image-9rgAKIcH.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1200,
+                                    "height": 2136
+                                }
+                            },
+                            "subContentId": "779b84d8-6d66-45fe-910f-88cf1db4663f",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 35.947712418300654,
+                        "y": 8.607074154247377,
+                        "width": 11.376454266369437,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l5/m2_l5_e1/content/images/image-YJ45bBxF.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1200,
+                                    "height": 2136
+                                }
+                            },
+                            "subContentId": "9d7dfc6a-c690-4410-99f8-400c1d2f755b",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 44.66230936819172,
+                        "y": 10.758842692809221,
+                        "width": 50.10893246187364,
+                        "height": 88.22251008103561,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "0726aee7-1c3d-41ad-a456-a2511c59bda2",
+                                        "question": "<p>3. ¿De qué manera se aplica el <strong>principio de generalidad</strong> en el algoritmo de planificación de viaje?</p>",
+                                        "answers": [
+                                            "<p>El algoritmo puede aplicarse a distintos tipos de viajes, presupuestos y cantidades de personas.</p>",
+                                            "<p>El algoritmo depende de precios exactos y condiciones fijas para funcionar.</p>",
+                                            "<p>El algoritmo sólo sirve para planificar viajes de fin de semana en una ciudad específica.</p>",
+                                            "<p>El algoritmo está diseñado únicamente para viajes personales.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "Inténtalo de nuevo"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "La <strong>generalidad</strong> se cumple porque el mismo algoritmo puede utilizarse en múltiples contextos de planificación de viajes sin modificar su estructura básica."
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "c42db671-fb4d-4579-b389-cff61c56fb91",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 3",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 3"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "off"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}
