@@ -1,113 +1,230 @@
 {
-    "media": {
-        "disableImageZooming": false
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 5.446623093681917,
+                        "y": 12,
+                        "width": 90.41394335511983,
+                        "height": 84,
+                        "action": {
+                            "library": "H5P.MultiChoice 1.16",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Preferir el uso de ipad en lugar de notebook.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Desconectar el notebook si es que la batería ya está cargada.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Utilizar el modo de ahorro de energía cuando sea necesario.</div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Dejar el notebook suspendido en lugar de apagarlo cuando no lo estoy utilizando.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Monitorear que los equipos estén funcionando de manera óptima.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Desconectar el cargador del teléfono si es que no lo estoy cargando.</div>"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Comprobar",
+                                    "submitAnswerButton": "Enviar",
+                                    "showSolutionButton": "Mostrar solución",
+                                    "tryAgainButton": "Intentar de nuevo",
+                                    "tipsLabel": "Mostrar pista",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "tipAvailable": "Pista disponible",
+                                    "feedbackAvailable": "Retroalimentación disponible",
+                                    "readFeedback": "Leer retroalimentación",
+                                    "wrongAnswer": "Respuesta incorrecta",
+                                    "correctAnswer": "Respuesta correcta",
+                                    "shouldCheck": "Debería haber sido marcada",
+                                    "shouldNotCheck": "No debería haber sido marcada",
+                                    "noInput": "Por favor responde antes de ver la solución",
+                                    "a11yCheck": "Revisa tus respuestas. Las respuestas se marcarán como correcta, incorrecta o sin contestar.",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                },
+                                "confirmCheck": {
+                                    "header": "¿Terminar?",
+                                    "body": "¿Seguro que quieres terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "question": "<p>¿Qué acciones podrías realizar para disminuir el impacto medioambiental de tu uso de la computación y sistemas computacionales?</p>"
+                            },
+                            "subContentId": "aa3e8766-e64b-4b1e-b5c5-5e160377ac11",
+                            "metadata": {
+                                "contentType": "Opción múltiple (Multiple Choice)",
+                                "license": "U",
+                                "title": "Modulo 1 - Leccion 1 - Ejercicio 8",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 1 - Leccion 1 - Ejercicio 8"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
     },
-    "answers": [
-        {
-            "correct": true,
-            "tipsAndFeedback": {
-                "tip": "",
-                "chosenFeedback": "",
-                "notChosenFeedback": ""
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
             },
-            "text": "<div>Utilizar el modo de ahorro de energía cuando sea necesario.</div>"
-        },
-        {
-            "correct": true,
-            "tipsAndFeedback": {
-                "tip": "",
-                "chosenFeedback": "",
-                "notChosenFeedback": ""
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
             },
-            "text": "<div>Desconectar el cargador del teléfono si es que no lo estoy cargando.</div>"
-        },
-        {
-            "correct": true,
-            "tipsAndFeedback": {
-                "tip": "",
-                "chosenFeedback": "",
-                "notChosenFeedback": ""
-            },
-            "text": "<div>Desconectar el notebook si es que la batería ya está cargada.</div>"
-        },
-        {
-            "correct": false,
-            "tipsAndFeedback": {
-                "tip": "",
-                "chosenFeedback": "",
-                "notChosenFeedback": ""
-            },
-            "text": "<div>Preferir el uso de ipad en lugar de notebook.</div>"
-        },
-        {
-            "correct": false,
-            "tipsAndFeedback": {
-                "tip": "",
-                "chosenFeedback": "",
-                "notChosenFeedback": ""
-            },
-            "text": "<div>Dejar el notebook suspendido en lugar de apagarlo cuando no lo estoy utilizando.</div>"
-        },
-        {
-            "correct": true,
-            "tipsAndFeedback": {
-                "tip": "",
-                "chosenFeedback": "",
-                "notChosenFeedback": ""
-            },
-            "text": "<div>Monitorear que los equipos estén funcionando de manera óptima.</div>"
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
         }
-    ],
-    "overallFeedback": [
-        {
-            "from": 0,
-            "to": 100
-        }
-    ],
-    "behaviour": {
-        "enableRetry": true,
-        "enableSolutionsButton": false,
-        "enableCheckButton": true,
-        "type": "auto",
-        "singlePoint": false,
-        "randomAnswers": true,
-        "showSolutionsRequiresInput": false,
-        "confirmCheckDialog": false,
-        "confirmRetryDialog": false,
-        "autoCheck": false,
-        "passPercentage": 100,
-        "showScorePoints": true
     },
-    "UI": {
-        "checkAnswerButton": "Comprobar",
-        "submitAnswerButton": "Enviar",
-        "showSolutionButton": "Mostrar solución",
-        "tryAgainButton": "Intentar de nuevo",
-        "tipsLabel": "Mostrar pista",
-        "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-        "tipAvailable": "Pista disponible",
-        "feedbackAvailable": "Retroalimentación disponible",
-        "readFeedback": "Leer retroalimentación",
-        "wrongAnswer": "Respuesta incorrecta",
-        "correctAnswer": "Respuesta correcta",
-        "shouldCheck": "Debería haber sido marcada",
-        "shouldNotCheck": "No debería haber sido marcada",
-        "noInput": "Por favor responde antes de ver la solución",
-        "a11yCheck": "Revisa tus respuestas. Las respuestas se marcarán como correcta, incorrecta o sin contestar.",
-        "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
-        "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
-    },
-    "confirmCheck": {
-        "header": "¿Terminar?",
-        "body": "¿Seguro que quieres terminar ?",
-        "cancelLabel": "Cancelar",
-        "confirmLabel": "Terminar"
-    },
-    "confirmRetry": {
-        "header": "¿Intentar de nuevo?",
-        "body": "¿Seguro que quieres volver a intentarlo?",
-        "cancelLabel": "Cancelar",
-        "confirmLabel": "Confirmar"
-    },
-    "question": "<p>¿Qué acciones podrías realizar para disminuir el impacto medioambiental de tu uso de la computación y sistemas computacionales? </p>"
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
 }

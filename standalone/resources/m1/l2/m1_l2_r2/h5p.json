@@ -5,14 +5,19 @@
     "language": "en",
     "defaultLanguage": "es",
     "license": "U",
-    "extraTitle": "Leccion 2 - Refuerzo 2",
-    "title": "Leccion 2 - Refuerzo 2",
-    "mainLibrary": "H5P.MultiChoice",
+    "extraTitle": "Modulo 1 - Leccion 2 - Refuerzo 2",
+    "title": "Modulo 1 - Leccion 2 - Refuerzo 2",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
             "majorVersion": 1,
             "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.MultiChoice",
+            "majorVersion": 1,
+            "minorVersion": 16
         },
         {
             "machineName": "FontAwesome",
@@ -40,9 +45,9 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.MultiChoice",
+            "machineName": "H5P.CoursePresentation",
             "majorVersion": 1,
-            "minorVersion": 16
+            "minorVersion": 26
         }
     ]
 }
