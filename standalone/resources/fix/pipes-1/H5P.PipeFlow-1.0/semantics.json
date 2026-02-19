@@ -82,7 +82,7 @@
         "type": "number",
         "label": "Tamaño del canvas (px)",
         "description": "Tamaño del canvas del juego en píxeles",
-        "default": 600,
+        "default": 450,
         "min": 300,
         "max": 1000
       }

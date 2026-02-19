@@ -1,0 +1,257 @@
+[
+  {
+    "name": "instructions",
+    "type": "text",
+    "label": "Instrucciones",
+    "description": "Texto de instrucciones que se mostrará al usuario",
+    "default": "Activa y desactiva las válvulas para controlar el flujo de agua desde las fuentes hasta los destinos correctos.",
+    "widget": "textarea"
+  },
+  {
+    "name": "gameConfig",
+    "type": "text",
+    "label": "Configuración del juego (JSON)",
+    "description": "Array bidimensional que representa el grid del juego. Valores: 0=vacío, 101-109=fuentes, 201-209=destinos, 3-13=válvulas, 14-24=tuberías.",
+    "widget": "textarea",
+    "default": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+    "important": {
+      "description": "<h4 style='margin-top: 0; color: #333; border-bottom: 2px solid #4fc3f7; padding-bottom: 5px;'>Fuentes (101-109) y Destinos (201-209):</h4><table style='width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 0.9em;'><tr style='background: #f0f0f0;'><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 80px;'>Valor</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 120px;'>Tipo</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd;'>Descripción</th></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>0</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Vacío</td><td style='padding: 8px; border: 1px solid #ddd;'>Celda vacía sin tubería</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>101</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Fuente 1</td><td style='padding: 8px; border: 1px solid #ddd;'>Primera fuente de agua (color configurable)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>102-109</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Fuente 2-9</td><td style='padding: 8px; border: 1px solid #ddd;'>Fuentes adicionales</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>201</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Destino 1</td><td style='padding: 8px; border: 1px solid #ddd;'>Primer destino (fuentes aceptadas configurables)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>202-209</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>Destino 2-9</td><td style='padding: 8px; border: 1px solid #ddd;'>Destinos adicionales</td></tr></table><h4 style='color: #333; border-bottom: 2px solid #e57373; padding-bottom: 5px;'>Válvulas (3-13) - Se pueden abrir/cerrar:</h4><table style='width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 0.9em;'><tr style='background: #f0f0f0;'><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 80px;'>Valor</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 150px;'>Tipo</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd;'>Conexiones</th></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>3</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_H</td><td style='padding: 8px; border: 1px solid #ddd;'>Horizontal (← →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>4</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_V</td><td style='padding: 8px; border: 1px solid #ddd;'>Vertical (↑ ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>5</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_CROSS</td><td style='padding: 8px; border: 1px solid #ddd;'>Cruz (todas direcciones)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>6</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_SOUTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia sur (→ ↓ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>7</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_EAST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia este (↑ → ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>8</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_NORTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia norte (↑ → ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>9</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_T_WEST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia oeste (↑ ← ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>10</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_SE</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-este (↓ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>11</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_NE</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-este (↑ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>12</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_NW</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-oeste (↑ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>13</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>VALVE_L_SW</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-oeste (↓ ←)</td></tr></table><h4 style='color: #333; border-bottom: 2px solid #2196F3; padding-bottom: 5px;'>Tuberías simples (14-24) - Sin válvula:</h4><table style='width: 100%; border-collapse: collapse; font-size: 0.9em;'><tr style='background: #f0f0f0;'><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 80px;'>Valor</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd; width: 150px;'>Tipo</th><th style='padding: 8px; text-align: left; border: 1px solid #ddd;'>Conexiones</th></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>14</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_H</td><td style='padding: 8px; border: 1px solid #ddd;'>Horizontal (← →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>15</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_V</td><td style='padding: 8px; border: 1px solid #ddd;'>Vertical (↑ ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>16</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_CROSS</td><td style='padding: 8px; border: 1px solid #ddd;'>Cruz (todas direcciones)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>17</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_SOUTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia sur (→ ↓ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>18</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_EAST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia este (↑ → ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>19</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_NORTH</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia norte (↑ → ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>20</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_T_WEST</td><td style='padding: 8px; border: 1px solid #ddd;'>T hacia oeste (↑ ← ↓)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>21</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_SE</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-este (↓ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>22</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_NE</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-este (↑ →)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>23</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_NW</td><td style='padding: 8px; border: 1px solid #ddd;'>L norte-oeste (↑ ←)</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>24</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>PIPE_L_SW</td><td style='padding: 8px; border: 1px solid #ddd;'>L sur-oeste (↓ ←)</td></tr></table>",
+      "example": "Ejemplo multi-fuente: [[101, 14, 3, 14, 201], [0, 0, 0, 0, 0], [102, 14, 3, 14, 202]]<br>Donde: 101=fuente 1, 102=fuente 2, 201=destino 1, 202=destino 2"
+    }
+  },
+  {
+    "name": "sources",
+    "type": "list",
+    "label": "Fuentes de agua",
+    "description": "Configura el color, etiqueta y emoji de cada fuente. La Fuente 1 corresponde al valor 101 en el grid, Fuente 2 al 102, etc.",
+    "entity": "fuente",
+    "importance": "high",
+    "min": 1,
+    "max": 9,
+    "field": {
+      "name": "source",
+      "type": "group",
+      "label": "Fuente",
+      "fields": [
+        {
+          "name": "color",
+          "type": "text",
+          "label": "Color del agua (hex)",
+          "description": "Color hexadecimal del agua de esta fuente. Ej: #2196F3 (azul), #F44336 (rojo), #4CAF50 (verde)",
+          "default": "#2196F3"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "label": "Etiqueta",
+          "description": "Nombre descriptivo de la fuente (se usa en mensajes de feedback)",
+          "default": "Fuente 1"
+        },
+        {
+          "name": "emoji",
+          "type": "text",
+          "label": "Emoji en el canvas",
+          "description": "Emoji que se muestra en la celda de la fuente",
+          "default": "🚰"
+        }
+      ]
+    },
+    "default": [
+      { "color": "#2196F3", "label": "Fuente 1", "emoji": "🚰" }
+    ]
+  },
+  {
+    "name": "destinations",
+    "type": "list",
+    "label": "Destinos",
+    "description": "Configura cada destino y qué fuentes de agua acepta. El Destino 1 corresponde al valor 201 en el grid, Destino 2 al 202, etc.",
+    "entity": "destino",
+    "importance": "high",
+    "min": 1,
+    "max": 9,
+    "field": {
+      "name": "destination",
+      "type": "group",
+      "label": "Destino",
+      "fields": [
+        {
+          "name": "acceptedSources",
+          "type": "text",
+          "label": "Fuentes aceptadas (IDs separados por coma)",
+          "description": "Código de las fuentes cuya agua debe llegar a este destino. Ej: '101' solo acepta Fuente 1. '101,102' acepta Fuente 1 y 2.",
+          "default": "101"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "label": "Etiqueta",
+          "description": "Nombre descriptivo del destino",
+          "default": "Destino 1"
+        },
+        {
+          "name": "emoji",
+          "type": "text",
+          "label": "Emoji en el canvas",
+          "description": "Emoji que se muestra en la celda del destino",
+          "default": "🏁"
+        }
+      ]
+    },
+    "default": [
+      { "acceptedSources": "101", "label": "Destino 1", "emoji": "🏁" }
+    ]
+  },
+  {
+    "name": "messages",
+    "type": "group",
+    "label": "Mensajes",
+    "fields": [
+      {
+        "name": "successMessage",
+        "type": "text",
+        "label": "Mensaje de éxito",
+        "default": "Has completado el circuito correctamente."
+      },
+      {
+        "name": "failureMessage",
+        "type": "text",
+        "label": "Mensaje de fallo (genérico)",
+        "default": "El agua no llegó correctamente. Revisa las válvulas."
+      },
+      {
+        "name": "leakMessage",
+        "type": "text",
+        "label": "Mensaje de fuga",
+        "default": "El agua se fuga por una tubería abierta."
+      },
+      {
+        "name": "noPathMessage",
+        "type": "text",
+        "label": "Mensaje sin camino",
+        "default": "No hay camino hacia el destino. Abre más válvulas."
+      },
+      {
+        "name": "noSolutionMessage",
+        "type": "text",
+        "label": "Mensaje sin solución posible",
+        "default": "No existe solución posible para este circuito."
+      },
+      {
+        "name": "suboptimalPathMessage",
+        "type": "text",
+        "label": "Mensaje camino subóptimo",
+        "description": "Usa @current para la longitud actual y @optimal para la óptima.",
+        "default": "Tu camino tiene @current pasos. El óptimo es @optimal."
+      },
+      {
+        "name": "missingSourceDestMessage",
+        "type": "text",
+        "label": "Mensaje falta fuente o destino",
+        "default": "Falta fuente o destino en el circuito."
+      },
+      {
+        "name": "destNoWaterMessage",
+        "type": "text",
+        "label": "Mensaje destino sin agua",
+        "description": "Usa @dest para el nombre del destino.",
+        "default": "@dest no recibió agua. Revisa las conexiones."
+      },
+      {
+        "name": "destWrongSourceMessage",
+        "type": "text",
+        "label": "Mensaje destino con fuente incorrecta",
+        "description": "Usa @dest para el nombre del destino y @sources para las fuentes incorrectas.",
+        "default": "@dest recibió agua no aceptada de @sources."
+      },
+      {
+        "name": "destMissingSourceMessage",
+        "type": "text",
+        "label": "Mensaje destino con fuente faltante",
+        "description": "Usa @dest para el nombre del destino.",
+        "default": "@dest no recibió agua de todas las fuentes requeridas."
+      }
+    ]
+  },
+  {
+    "name": "settings",
+    "type": "group",
+    "label": "Configuración",
+    "fields": [
+      {
+        "name": "animationSpeed",
+        "type": "number",
+        "label": "Velocidad de animación (ms)",
+        "description": "Tiempo en milisegundos entre cada celda animada",
+        "default": 100,
+        "min": 50,
+        "max": 500
+      },
+      {
+        "name": "showPathInfo",
+        "type": "boolean",
+        "label": "Mostrar información de caminos",
+        "description": "Mostrar el camino actual y el camino más corto",
+        "default": true
+      },
+      {
+        "name": "canvasSize",
+        "type": "number",
+        "label": "Tamaño del canvas (px)",
+        "description": "Tamaño del canvas del juego en píxeles",
+        "default": 450,
+        "min": 300,
+        "max": 1000
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "Localización",
+    "importance": "low",
+    "common": true,
+    "optional": true,
+    "fields": [
+      {
+        "name": "checkAnswerButtonLabel",
+        "type": "text",
+        "label": "Etiqueta del botón \"Comprobar\"",
+        "importance": "low",
+        "default": "Comprobar"
+      },
+      {
+        "name": "retryButtonLabel",
+        "type": "text",
+        "label": "Etiqueta del botón \"Intentar de nuevo\"",
+        "importance": "low",
+        "default": "Intentar de nuevo"
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Comportamiento",
+    "importance": "low",
+    "optional": true,
+    "fields": [
+      {
+        "name": "enableRetry",
+        "type": "boolean",
+        "label": "Habilitar botón \"Intentar de nuevo\"",
+        "default": true
+      },
+      {
+        "name": "scoringMode",
+        "type": "select",
+        "label": "Criterio de puntuación",
+        "description": "Distribución correcta: evalúa si el agua correcta llega a cada destino. Camino más corto: evalúa si el jugador encontró la ruta más eficiente entre la primera fuente y el primer destino.",
+        "options": [
+          { "value": "destinations", "label": "Distribución correcta (agua al destino correcto)" },
+          { "value": "shortestPath", "label": "Camino más corto (eficiencia de ruta)" }
+        ],
+        "default": "destinations"
+      }
+    ]
+  }
+]

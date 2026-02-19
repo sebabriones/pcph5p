@@ -1,0 +1,43 @@
+{
+    "instructions": "Activa y desactiva las válvulas para controlar el flujo de agua que va desde la llave hasta el balde. ¡Haz que el agua llegue al balde por el camino más corto posible!",
+    "gameConfig": "[[  0,  0,  0,  0,   0,  0,  0,  0,  0,  0], \n [101, 17, 14,  3,  14, 24,  0,  0,  0,  0], \n [  0, 22, 14, 14,  14,  5, 14,  3, 14, 24], \n [  0,  0,  0,  0,   0,  4,  0,  0,  0, 15], \n [  0,  0,  0,  0,   0, 22, 14, 14,  6, 23], \n [  0,  0,  0,  0,   0,  0,  0,  0,  7,  3], \n [  0,  0,  0,  0,   0,  0,  0,  0,  7,  3], \n [  0,  0,  0,  0,  21, 14, 14, 14, 23,  0], \n [  0,  0,  0,  0, 201,  0,  0,  0,  0,  0], \n [  0,  0,  0,  0,   0,  0,  0,  0,  0,  0]]",
+    "sources": [
+        {
+            "color": "#2196F3",
+            "label": "Fuente 1",
+            "emoji": "🚰"
+        }
+    ],
+    "destinations": [
+        {
+            "acceptedSources": "101",
+            "label": "Destino 1",
+            "emoji": "🏁"
+        }
+    ],
+    "messages": {
+        "successMessage": "Has completado el circuito correctamente.",
+        "failureMessage": "El agua no llegó correctamente. Revisa las válvulas.",
+        "leakMessage": "El agua se fuga por una tubería abierta.",
+        "noPathMessage": "No hay camino hacia el destino. Abre más válvulas.",
+        "noSolutionMessage": "No existe solución posible para este circuito.",
+        "suboptimalPathMessage": "Tu camino tiene @current pasos. El óptimo es @optimal.",
+        "missingSourceDestMessage": "Falta fuente o destino en el circuito.",
+        "destNoWaterMessage": "@dest no recibió agua. Revisa las conexiones.",
+        "destWrongSourceMessage": "@dest recibió agua no aceptada de @sources.",
+        "destMissingSourceMessage": "@dest no recibió agua de todas las fuentes requeridas."
+    },
+    "settings": {
+        "animationSpeed": 100,
+        "showPathInfo": false,
+        "canvasSize": 450
+    },
+    "behaviour": {
+        "enableRetry": true,
+        "scoringMode": "shortestPath"
+    },
+    "l10n": {
+        "checkAnswerButtonLabel": "Comprobar",
+        "retryButtonLabel": "Reintentar"
+    }
+}

@@ -55,7 +55,7 @@ H5P.PipeFlow = (function ($, Question) {
       settings: {
         animationSpeed: 100,
         showPathInfo: true,
-        canvasSize: 600
+        canvasSize: 450
       },
       behaviour: {
         enableRetry: true
@@ -1000,18 +1000,22 @@ H5P.PipeFlow = (function ($, Question) {
    * Obtener celda desde coordenadas del mouse
    */
   PipeFlow.prototype.getCellFromMouse = function (event) {
-    const self = this;
-    const CANVAS_SIZE = self.options.settings.canvasSize;
-    const CELL_SIZE = CANVAS_SIZE / self.gameState.gridSize;
-    const rect = self.canvas.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    
-    const col = Math.floor(x / CELL_SIZE);
-    const row = Math.floor(y / CELL_SIZE);
-    
+    var self = this;
+    var CANVAS_SIZE = self.options.settings.canvasSize;
+    var CELL_SIZE = CANVAS_SIZE / self.gameState.gridSize;
+    var rect = self.canvas.getBoundingClientRect();
+
+    // Escalar coordenadas del mouse al tamaño interno del canvas
+    var scaleX = CANVAS_SIZE / rect.width;
+    var scaleY = CANVAS_SIZE / rect.height;
+    var x = (event.clientX - rect.left) * scaleX;
+    var y = (event.clientY - rect.top) * scaleY;
+
+    var col = Math.floor(x / CELL_SIZE);
+    var row = Math.floor(y / CELL_SIZE);
+
     if (row >= 0 && row < self.gameState.gridSize && col >= 0 && col < self.gameState.gridSize) {
-      return { row, col };
+      return { row: row, col: col };
     }
     return null;
   };
@@ -1290,10 +1294,64 @@ H5P.PipeFlow = (function ($, Question) {
    * Redimensionar
    */
   PipeFlow.prototype.resize = function () {
+    var self = this;
+    if (!self.canvas) return;
+
+    var $container = $(self.canvas).closest('.pipe-flow-container');
+    if (!$container || !$container.length) return;
+
+    var containerWidth = $container.parent().width();
+    if (!containerWidth || containerWidth <= 0) return;
+
+    // Dimensiones base de referencia
+    var baseWidth = 700;
+    var baseFontSize = 16;
+
+    // Calcular ratio de escalado
+    var ratio = containerWidth / baseWidth;
+    ratio = Math.max(0.5, Math.min(ratio, 1.5));
+
+    // Aplicar font-size escalado al contenedor (todo en em se adapta)
+    $container.css('font-size', (baseFontSize * ratio) + 'px');
+
+    self.renderGame();
+  };
+
+  /**
+   * Enviar evento xAPI de completación exitosa
+   */
+  PipeFlow.prototype.triggerXAPICompleted = function (score, maxScore) {
     const self = this;
-    if (self.canvas) {
-      self.renderGame();
-    }
+    self.triggerXAPIAnswered(score, maxScore, true);
+  };
+
+  /**
+   * Get xAPI data.
+   * Contract used by report rendering engine.
+   *
+   * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-6}
+   */
+  PipeFlow.prototype.getXAPIData = function () {
+    const self = this;
+    var xAPIEvent = self.createXAPIEventTemplate('answered');
+    self.addQuestionToXAPI(xAPIEvent);
+
+    var isSuccess = (self.score === self.maxScore && self.gameState.gameWon);
+    xAPIEvent.data.statement.result = {
+      score: {
+        raw: self.score,
+        min: 0,
+        max: self.maxScore,
+        scaled: self.maxScore > 0 ? (self.score / self.maxScore) : 0
+      },
+      response: self.getxAPIResponse(),
+      success: isSuccess,
+      completion: self.gameState.gameWon
+    };
+
+    return {
+      statement: xAPIEvent.data.statement
+    };
   };
 
   return PipeFlow;

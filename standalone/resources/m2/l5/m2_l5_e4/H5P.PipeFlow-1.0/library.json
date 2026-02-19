@@ -1,0 +1,35 @@
+{
+  "title": "Pipe Flow",
+  "description": "Juego de tuberías con válvulas. Controla el flujo de agua desde la fuente hasta el destino abriendo y cerrando válvulas.",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "sbriones",
+  "license": "MIT",
+  "machineName": "H5P.PipeFlow",
+  "embedTypes": ["div"],
+  "preloadedJs": [
+    {
+      "path": "js/pipeflow.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "css/pipeflow.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}
+

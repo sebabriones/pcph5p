@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225">
+  <defs>
+    <linearGradient id="water" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#42a5f5"/>
+      <stop offset="100%" style="stop-color:#1e88e5"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f7fa"/>
+      <stop offset="100%" style="stop-color:#e8ecf1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect x="10" y="10" width="380" height="205" rx="12" fill="url(#bg)" stroke="#ccd5e0" stroke-width="2"/>
+
+  <!-- Grid sutil -->
+  <line x1="10" y1="70" x2="390" y2="70" stroke="#dde3ea" stroke-width="0.5"/>
+  <line x1="10" y1="130" x2="390" y2="130" stroke="#dde3ea" stroke-width="0.5"/>
+  <line x1="135" y1="10" x2="135" y2="215" stroke="#dde3ea" stroke-width="0.5"/>
+  <line x1="265" y1="10" x2="265" y2="215" stroke="#dde3ea" stroke-width="0.5"/>
+
+  <!-- Fuente (izquierda) -->
+  <circle cx="70" cy="70" r="24" fill="#4fc3f7" stroke="#039be5" stroke-width="2.5"/>
+  <text x="70" y="78" text-anchor="middle" font-size="22" font-family="Arial">🚰</text>
+
+  <!-- Tubería horizontal desde fuente -->
+  <rect x="94" y="62" width="41" height="16" rx="3" fill="#78909c"/>
+  <!-- Agua fluyendo -->
+  <rect x="94" y="64" width="41" height="12" rx="2" fill="url(#water)" opacity="0.85"/>
+
+  <!-- Válvula 1 (abierta - verde) -->
+  <rect x="135" y="62" width="30" height="16" rx="3" fill="#78909c"/>
+  <rect x="135" y="64" width="30" height="12" rx="2" fill="url(#water)" opacity="0.85"/>
+  <circle cx="150" cy="70" r="11" fill="#66bb6a" stroke="#43a047" stroke-width="2"/>
+  <line x1="143" y1="70" x2="157" y2="70" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="150" cy="70" r="4" fill="white"/>
+
+  <!-- Tubería horizontal después de válvula 1 -->
+  <rect x="165" y="62" width="35" height="16" rx="3" fill="#78909c"/>
+  <rect x="165" y="64" width="35" height="12" rx="2" fill="url(#water)" opacity="0.85"/>
+
+  <!-- Unión T hacia abajo -->
+  <rect x="200" y="62" width="30" height="16" rx="3" fill="#78909c"/>
+  <rect x="200" y="64" width="30" height="12" rx="2" fill="url(#water)" opacity="0.85"/>
+  <!-- Tubería vertical hacia abajo desde T -->
+  <rect x="207" y="78" width="16" height="44" rx="3" fill="#78909c"/>
+  <rect x="209" y="78" width="12" height="44" rx="2" fill="url(#water)" opacity="0.85"/>
+
+  <!-- Tubería horizontal continúa derecha desde T -->
+  <rect x="230" y="62" width="35" height="16" rx="3" fill="#78909c"/>
+  <rect x="230" y="64" width="35" height="12" rx="2" fill="url(#water)" opacity="0.85"/>
+
+  <!-- Válvula 2 (cerrada - roja) en el camino derecho -->
+  <rect x="265" y="62" width="30" height="16" rx="3" fill="#78909c"/>
+  <circle cx="280" cy="70" r="11" fill="#ef5350" stroke="#c62828" stroke-width="2"/>
+  <line x1="280" y1="63" x2="280" y2="77" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="280" cy="70" r="4" fill="white"/>
+
+  <!-- Tubería gris (sin agua) después de válvula cerrada -->
+  <rect x="295" y="62" width="35" height="16" rx="3" fill="#b0bec5"/>
+
+  <!-- Válvula 3 (abierta - verde) en camino vertical -->
+  <rect x="207" y="122" width="16" height="26" rx="3" fill="#78909c"/>
+  <rect x="209" y="122" width="12" height="26" rx="2" fill="url(#water)" opacity="0.85"/>
+  <circle cx="215" cy="135" r="11" fill="#66bb6a" stroke="#43a047" stroke-width="2"/>
+  <line x1="208" y1="135" x2="222" y2="135" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="215" cy="135" r="4" fill="white"/>
+
+  <!-- Codo abajo-derecha -->
+  <rect x="207" y="148" width="16" height="16" rx="3" fill="#78909c"/>
+  <rect x="209" y="148" width="12" height="14" rx="2" fill="url(#water)" opacity="0.85"/>
+
+  <!-- Tubería horizontal desde codo hacia destino -->
+  <rect x="223" y="150" width="57" height="16" rx="3" fill="#78909c"/>
+  <rect x="223" y="152" width="57" height="12" rx="2" fill="url(#water)" opacity="0.85"/>
+
+  <!-- Destino (derecha abajo) -->
+  <circle cx="305" cy="158" r="24" fill="#66bb6a" stroke="#388e3c" stroke-width="2.5"/>
+  <text x="305" y="166" text-anchor="middle" font-size="22" font-family="Arial">🏁</text>
+
+  <!-- Partículas de agua animadas (decorativas) -->
+  <circle cx="108" cy="70" r="3" fill="#90caf9" opacity="0.7"/>
+  <circle cx="122" cy="70" r="2.5" fill="#90caf9" opacity="0.6"/>
+  <circle cx="175" cy="70" r="3" fill="#90caf9" opacity="0.7"/>
+  <circle cx="190" cy="70" r="2.5" fill="#90caf9" opacity="0.6"/>
+  <circle cx="245" cy="70" r="3" fill="#90caf9" opacity="0.7"/>
+  <circle cx="215" cy="95" r="2.5" fill="#90caf9" opacity="0.6"/>
+  <circle cx="215" cy="110" r="3" fill="#90caf9" opacity="0.7"/>
+  <circle cx="250" cy="158" r="3" fill="#90caf9" opacity="0.7"/>
+  <circle cx="265" cy="158" r="2.5" fill="#90caf9" opacity="0.6"/>
+
+  <!-- Etiqueta "X" en válvula cerrada (indicador visual) -->
+  <line x1="310" y1="63" x2="320" y2="73" stroke="#ef5350" stroke-width="2" stroke-linecap="round"/>
+  <line x1="320" y1="63" x2="310" y2="73" stroke="#ef5350" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+

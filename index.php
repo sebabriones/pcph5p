@@ -301,6 +301,7 @@
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/prueba_blockly&id=prueba_blockly">Blockly</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/m3_l5_e1&id=m3l5e1">Python Terminal</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/pattern&id=pattern">Pattern Game</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/nuevas-librerias/pipes-2&id=pipeflow">PipeFlow</a></li>
             </ul>
         <li>Otros</li>
             <ul>

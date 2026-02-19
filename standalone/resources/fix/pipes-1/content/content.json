@@ -11,7 +11,7 @@
     "settings": {
         "animationSpeed": 100,
         "showPathInfo": true,
-        "canvasSize": 600
+        "canvasSize": 400
     },
     "behaviour": false
 }
