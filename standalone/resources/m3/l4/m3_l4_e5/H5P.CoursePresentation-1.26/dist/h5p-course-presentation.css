@@ -707,7 +707,7 @@
 
 .h5p-course-presentation .h5p-element .h5p-element-inner:not(.h5p-interactive-video) {
     overflow: hidden;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     background: rgba(0, 0, 0, 0)
 }
 

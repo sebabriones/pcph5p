@@ -1,0 +1,276 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 2.178649237472767,
+                        "y": 9.55603969983055,
+                        "width": 46.84095860566449,
+                        "height": 54.92181069958848,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Una municipalidad quiere registrar las descripciones de los reclamos ingresados por cada vecino/a. El sistema debe:<ul><li>Pedir el nombre del vecino y su sector</li><li>Permitir ingresar varios reclamos, uno por uno</li><li>Finalizar el ingreso cuando se escriba \"fin\"</li><li>Mostrar un resumen con la cantidad de reclamos registrados</li></ul>El programa es el siguiente y presenta un error:</p>"
+                            },
+                            "subContentId": "73d4c556-2653-4b48-a497-ce497acaad1c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 1.0893246187363834,
+                        "y": 65.09731299927378,
+                        "width": 44.66230936819172,
+                        "height": 31.771871217622852,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_e9/content/images/image-WdETkwNt.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 2434,
+                                    "height": 974
+                                }
+                            },
+                            "subContentId": "b320a429-571b-48c3-8069-fb022d13803b",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 51.19825708061002,
+                        "y": 7.9305252965383684,
+                        "width": 47.930283224400874,
+                        "height": 87.89227789881384,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "9408143a-0b95-4ee9-a234-1188cd48b4d1",
+                                        "question": "<p>¿Cuál de estas alternativas muestra el error que has detectado en este programa?</p>",
+                                        "answers": [
+                                            "<p>El error es que dentro del ciclo <strong>while</strong> nunca se vuelve a solicitar el ingreso de la variable reclamo, lo que provoca que la condición nunca cambie y se genere un ciclo infinito.</p>",
+                                            "<p>El error está en la condición del ciclo, ya que debería escribirse <strong>while reclamo == \"fin\":</strong> para que el programa se detenga correctamente cuando el usuario escriba esa palabra.</p>",
+                                            "<p>El error está al pedir el primer reclamo antes del ciclo; en Python, la función <strong>input()</strong> para controlar un ciclo solo funciona si se pone exclusivamente dentro del bloque <strong>while</strong>.</p>",
+                                            "<p>El error está en usar <strong>reclamos.append(reclamo)</strong> dentro del ciclo, ya que los elementos se deben agregar a las listas una vez que el ciclo haya terminado por completo.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong><br>Cuando usamos un ciclo while (mientras), el código repetirá sus instrucciones una y otra vez mientras la condición sea verdadera. En este caso no hay ninguna instrucción que permita cambiar la condición para salir del ciclo."
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "9c532eda-b6d1-4752-9034-204f0b910389",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 46.84095860566449,
+                        "y": 65.09731299927378,
+                        "width": 56.22689938398357,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_e9/content/images/image-pukTtl0j.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 2434,
+                                    "height": 974
+                                }
+                            },
+                            "subContentId": "6be39985-3b84-403d-b341-3ca5f00bbda7",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

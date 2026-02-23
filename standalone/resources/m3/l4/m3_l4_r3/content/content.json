@@ -58,10 +58,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 4 - Refuerzo 3 - 1",
+                                "title": "Slide 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 4 - Refuerzo 3 - 1"
+                                "extraTitle": "Slide 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -96,6 +96,33 @@
                                 }
                             },
                             "subContentId": "c731fc30-c53c-4f4a-89d8-c2c999443eaf",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 5.2679738562091503,
+                        "y": 20.062379769932909,
+                        "width": 44.411764705882355,
+                        "height": 5.164244492548426,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p style='font-size:1.4em;'><strong>Objetivo: </strong>Verificar si un número es positivo.</p>"
+                            },
+                            "subContentId": "94a18f96-6d4c-40f1-b476-b5b51ee1ad89",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -173,10 +200,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 4 - Refuerzo 3 - 2",
+                                "title": "Slide 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 4 - Refuerzo 3 - 2"
+                                "extraTitle": "Slide 2"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -226,6 +253,33 @@
                         "goToSlideType": "specified",
                         "invisible": false,
                         "solution": ""
+                    },
+                    {
+                        "x": 5.2679738562091503,
+                        "y": 20.062379769932909,
+                        "width": 44.411764705882355,
+                        "height": 5.164244492548426,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p style='font-size:1.4em;'><strong>Objetivo: </strong>Comparar dos números.</p>"
+                            },
+                            "subContentId": "94a18f96-6d4c-40f1-b476-b5b51ee1ad89",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
                     }
                 ],
                 "keywords": [],
@@ -244,7 +298,7 @@
                                 "choices": [
                                     {
                                         "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
-                                        "question": "<p>3. Aprobación o reprobación.</p>",
+                                        "question": "<p>3. Asignar el concepto según la nota.</p>",
                                         "answers": [
                                             "<p style=\"text-align:center;\"><strong>B</strong></p>",
                                             "<p style=\"text-align:center;\"><strong>A</strong></p>"
@@ -288,10 +342,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 4 - Refuerzo 3 - 3",
+                                "title": "Slide 3",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 4 - Refuerzo 3 - 3"
+                                "extraTitle": "Slide 3"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -304,7 +358,7 @@
                     },
                     {
                         "x": 7.625272331154684,
-                        "y": 17.214148308494753,
+                        "y": 20.214148308494753,
                         "width": 39.21568627450981,
                         "height": 74.70682153662095,
                         "action": {
@@ -326,6 +380,33 @@
                                 }
                             },
                             "subContentId": "787aafe9-e0db-4fa7-90d1-069da7ff96e5",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 5.2679738562091503,
+                        "y": 13.062379769932909,
+                        "width": 44.411764705882355,
+                        "height": 5.164244492548426,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p style='font-size:1.4em;'><strong>Objetivo: </strong>Asignar el concepto según la nota.</p>"
+                            },
+                            "subContentId": "94a18f96-6d4c-40f1-b476-b5b51ee1ad89",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",

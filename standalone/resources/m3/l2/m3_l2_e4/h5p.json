@@ -7,7 +7,7 @@
     "license": "U",
     "extraTitle": "Modulo 3 - Leccion 2 - Ejercicio 4",
     "title": "Modulo 3 - Leccion 2 - Ejercicio 4",
-    "mainLibrary": "H5P.CoursePresentation",
+    "mainLibrary": "H5P.DragShuffle",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
@@ -20,19 +20,19 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Image",
+            "machineName": "H5P.AdvancedText",
             "majorVersion": 1,
             "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.SingleChoiceSet",
-            "majorVersion": 1,
-            "minorVersion": 11
         },
         {
             "machineName": "FontAwesome",
             "majorVersion": 4,
             "minorVersion": 5
+        },
+        {
+            "machineName": "jQuery.ui",
+            "majorVersion": 1,
+            "minorVersion": 10
         },
         {
             "machineName": "H5P.JoubelUI",
@@ -55,9 +55,9 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.CoursePresentation",
+            "machineName": "H5P.DragShuffle",
             "majorVersion": 1,
-            "minorVersion": 26
+            "minorVersion": 0
         }
     ]
 }

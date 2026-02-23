@@ -1,1 +1,193 @@
-{"choices":[{"subContentId":"034f3ca4-acf5-411a-8f25-7684afbf3eb9","question":"<p>¿Cuál de las siguientes habilidades es central en la programación?</p>","answers":["<p>Resolución de problemas.</p>","<p>Redacción.</p>","<p>Argumentación.</p>","<p>Visualización espacial.</p>"]},{"subContentId":"4ba4df32-21d2-4af4-ab99-be98e800ce4e","question":"<p>¿Cuál de las siguientes prácticas es necesaria a la hora de programar?</p>","answers":["<p>Pensar en el paso a paso.</p>","<p>Buscar la solución más breve posible.</p>","<p>Escribir en lenguaje matemático.</p>","<p>Buscar unir problemas pequeños que están relacionados, creando un gran problema en común.</p>"]},{"subContentId":"b8c8237b-fd51-4faf-b0da-c336072f6031","question":"<p>¿Para qué nos podría servir aprender a programar?</p>","answers":["<p>Para entender cómo funcionan las aplicaciones que utilizamos.</p>","<p>Para desarrollar fórmulas matemáticas.</p>","<p>Para poder subir una historia en redes sociales.</p>","<p>Para compartir información por redes sociales.</p>"]},{"subContentId":"6e1d0384-c906-4719-8ad4-4d1b548b0e05","question":"<p>¿Cuál de las siguientes opciones corresponde a una actividad que requiere el uso de la programación en el mundo laboral?</p>","answers":["<p>Diseño de aplicaciones para seguimiento de pacientes.</p>","<p>Compra de insumos médicos.</p>","<p>Elaboración de programas de estudios.</p>","<p>Uso de plataformas educativas.</p>"]}],"overallFeedback":[{"from":0,"to":100}],"behaviour":{"autoContinue":true,"timeoutCorrect":500,"timeoutWrong":500,"soundEffectsEnabled":false,"enableRetry":true,"enableSolutionsButton":false,"passPercentage":100},"l10n":{"nextButtonLabel":"Siguiente pregunta","showSolutionButtonLabel":"Mostrar solución","retryButtonLabel":"Intentar de nuevo","solutionViewTitle":"Lista Solución","correctText":"¡Correcto!","incorrectText":"¡Incorrecto!","shouldSelect":"Debería haber sido seleccionada","shouldNotSelect":"NO debería haber sido seleccionada","muteButtonLabel":"Silenciar sonido de retroalimentación","closeButtonLabel":"Cerrar","slideOfTotal":"Diapositiva :num de :total","scoreBarLabel":"Has conseguido :num de un total de :total puntos","solutionListQuestionNumber":"Pregunta :num","a11yShowSolution":"Mostrar la solución. La tarea se calificará con su solución correcta.","a11yRetry":"Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."}}
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 4.357298474945534,
+                        "y": 16.30234809973372,
+                        "width": 91.50326797385621,
+                        "height": 77.97046719922537,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "31595dde-5ae3-461a-9363-6696927d7817",
+                                        "question": "<p>1. ¿Cuál de las siguientes habilidades es central en la programación?</p>",
+                                        "answers": [
+                                            "<p>Resolución de problemas.</p>",
+                                            "<p>Redacción<strong>.</strong></p>",
+                                            "<p>Argumentación.</p>",
+                                            "<p>Visualización espacial.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "162fd833-ae74-4d38-a5cd-befd9ae03c23",
+                                        "question": "<p>2. ¿Cuál de las siguientes prácticas es necesaria a la hora de programar?</p>",
+                                        "answers": [
+                                            "<p>Pensar en el paso a paso.</p>",
+                                            "<p>Buscar la solución más breve posible.</p>",
+                                            "<p>Escribir en lenguaje matemático.</p>",
+                                            "<p>Buscar unir problemas pequeños que están relacionados, creando un gran problema en común.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "9cd38b9a-09f6-43db-8488-b4b199cba36a",
+                                        "question": "<p>3. ¿Para qué nos podría servir aprender a programar?</p>",
+                                        "answers": [
+                                            "<p>Para entender cómo funcionan las aplicaciones que utilizamos.</p>",
+                                            "<p>Para desarrollar fórmulas matemáticas.</p>",
+                                            "<p>Para poder subir una historia en redes sociales.</p>",
+                                            "<p>Para compartir información por redes sociales.</p>"
+                                        ]
+                                    },
+                                    {
+                                        "subContentId": "e48eb99e-8dab-42d5-a3b0-8ccaf7921392",
+                                        "question": "<p>4. ¿Cuál de las siguientes opciones corresponde a una actividad que requiere el uso de la programación en el mundo laboral?</p>",
+                                        "answers": [
+                                            "<p>Diseño de aplicaciones para seguimiento de pacientes.</p>",
+                                            "<p>Uso de plataformas educativas.</p>",
+                                            "<p>Elaboración de programas de estudios.</p>",
+                                            "<p>Compra de insumos médicos.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "23c2b471-f07d-4e32-9c17-985273bdfb77",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Modulo 3 - Leccion 1 - Ejercicio 3",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Modulo 3 - Leccion 1 - Ejercicio 3"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        }
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

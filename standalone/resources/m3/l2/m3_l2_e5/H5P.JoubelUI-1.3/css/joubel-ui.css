@@ -62,8 +62,9 @@
   transition: initial;
 }
 
-/*.h5p-joubelui-button:hover {
-  background: #c9621b;
+/*.h5p-joubelui-button:hover,
+.h5p-joubelui-button:focus {
+  background: #1356a3;
   color: #fff;
   text-decoration: none;
   -webkit-transition: initial;

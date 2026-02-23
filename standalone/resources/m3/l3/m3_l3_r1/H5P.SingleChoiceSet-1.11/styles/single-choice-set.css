@@ -11,11 +11,8 @@
   font-style: normal;
 }
 
-.h5p-container {
-  padding: 7em 4em 6em 4em;
-}
 .h5p-sc-question {
-  padding: 1em 0;
+  padding: 1em 1em;
   border-radius: 0.8em;
   background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
 }
@@ -46,11 +43,6 @@
   padding-right: 10px;
   z-index: 100;
 }
-.h5p-sc-alternative:nth-child(4)::before {
-  content: 'D.';
-  padding-right: 10px;
-  z-index: 100;
-}
 .h5p-container {
   background-color: #f8feef;
 }
@@ -68,7 +60,6 @@
   overflow-y: auto;
   -ms-scroll-limit: 0 0 0 0; /* IE11 bugfix for where this element can be out of line, when focusing on elements. */
   height: 100%;
-  padding: 3em 0;
 }
 
 .h5p-sc-set-wrapper.next-button-mode {

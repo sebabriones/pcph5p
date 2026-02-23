@@ -5,7 +5,7 @@
                 "elements": [
                     {
                         "x": 11.982570806100219,
-                        "y": 19.365916847056596,
+                        "y": 13.365916847056596,
                         "width": 23.965141612200437,
                         "height": 43.035370771236884,
                         "action": {
@@ -45,16 +45,16 @@
                     },
                     {
                         "x": 49.01960784313725,
-                        "y": 27.97299100130397,
+                        "y": 23.97299100130397,
                         "width": 46.84095860566449,
-                        "height": 55.94598200260795,
+                        "height": 65.94598200260795,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
                                         "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>1. ¿Qué tipo de control de flujo representa mejor esta situación?</p>",
+                                        "question": "<p>1. Si se escribe un programa que permita que el ratón llegue hasta el queso, ¿qué tipo de control de flujo es el más adecuado para utilizar en el programa?</p>",
                                         "answers": [
                                             "<p>Un blucle <strong>while</strong>.</p>",
                                             "<p>Un bucle <strong>for</strong>.</p>",
@@ -100,10 +100,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 4 - Ejercicio 5 - 1",
+                                "title": "Slide 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 4 - Ejercicio 5 - 1"
+                                "extraTitle": "Slide 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -116,13 +116,13 @@
                     },
                     {
                         "x": 6.357298474945534,
-                        "y": 66.70482469541717,
+                        "y": 60.70482469541717,
                         "width": 39.99869281045751,
-                        "height": 30.821222462742128,
+                        "height": 34.821222462742128,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p>Un ratón está corriendo un sistema de cañerías en busca de queso. No sabe cuántas cañerías hay, pero está seguro de que si sigue avanzando, eventualmente  lo encontrará. No se detendrá hasta encontrar el queso.</p>"
+                                "text": "<p>Un ratón está recorriendo un laberinto en busca de queso. No sabe el camino exacto que le lleve hasta donde está, pero está seguro de que si sigue avanzando, eventualmente lo encontrará; ¡no se detendrá hasta encontrar el queso!</p>"
                             },
                             "subContentId": "c89befd1-fe6c-4418-a40c-5ae129321db7",
                             "metadata": {
@@ -149,21 +149,21 @@
                 "elements": [
                     {
                         "x": 50.10893246187364,
-                        "y": 12.910611231371064,
+                        "y": 4.910611231371064,
                         "width": 45.751633986928105,
-                        "height": 86.07074154247377,
+                        "height": 98.07074154247377,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
                                         "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>2. Tienes una serie de cajas etiquetadas con distintos tipos de vestimenta. Imagina que estás programando un sistema para revisar cada caja una por una y mostrar su contenido en pantalla. Elige la estructura de control que mejor representa esta tarea.</p>",
+                                        "question": "<p>2. Se tiene una entrega de ropa en bolsas numeradas. Existe una lista del proveedor con el formato (número, nombre_prenda). El objetivo es automatizar la clasificación en cuatro contenedores (polera, chaqueta, pantalones, zapatos) leyendo cada elemento de la lista para evitar manipular la ropa más de lo necesario.<br>¿Cuál de las siguientes estructuras de control en Python cumple con la tarea de clasificar todos los elementos de la lista?</p>",
                                         "answers": [
-                                            "<p>Letra D</p>",
+                                            "<p>Letra C</p>",
                                             "<p>Letra A</p>",
                                             "<p>Letra B</p>",
-                                            "<p>Letra C</p>"
+                                            "<p>Letra D</p>"
                                         ]
                                     }
                                 ],
@@ -204,10 +204,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 4 - Ejercicio 5 - 2",
+                                "title": "Slide 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 4 - Ejercicio 5 - 2"
+                                "extraTitle": "Slide 2"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -220,9 +220,9 @@
                     },
                     {
                         "x": 3.2679738562091503,
-                        "y": 19.365916847056596,
+                        "y": 12.365916847056596,
                         "width": 44.611220043572985,
-                        "height": 73.99738344945712,
+                        "height": 82.99738344945712,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {

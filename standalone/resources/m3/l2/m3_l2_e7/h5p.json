@@ -7,12 +7,27 @@
     "license": "U",
     "extraTitle": "Modulo 3 - Leccion 2 - Ejercicio 7",
     "title": "Modulo 3 - Leccion 2 - Ejercicio 7",
-    "mainLibrary": "H5P.SingleChoiceSet",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
             "majorVersion": 1,
             "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.Customize",
+            "majorVersion": 1,
+            "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.Image",
+            "majorVersion": 1,
+            "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.SingleChoiceSet",
+            "majorVersion": 1,
+            "minorVersion": 11
         },
         {
             "machineName": "FontAwesome",
@@ -40,9 +55,14 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.SingleChoiceSet",
+            "machineName": "H5P.AdvancedText",
             "majorVersion": 1,
-            "minorVersion": 11
+            "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.CoursePresentation",
+            "majorVersion": 1,
+            "minorVersion": 26
         }
     ]
 }

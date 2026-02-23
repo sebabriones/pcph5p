@@ -7,12 +7,17 @@
     "license": "U",
     "extraTitle": "Modulo 3 - Leccion 4 - Ejercicio 1",
     "title": "Modulo 3 - Leccion 4 - Ejercicio 1",
-    "mainLibrary": "H5P.SingleChoiceSet",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
             "majorVersion": 1,
             "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.SingleChoiceSet",
+            "majorVersion": 1,
+            "minorVersion": 11
         },
         {
             "machineName": "FontAwesome",
@@ -40,9 +45,9 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.SingleChoiceSet",
+            "machineName": "H5P.CoursePresentation",
             "majorVersion": 1,
-            "minorVersion": 11
+            "minorVersion": 26
         }
     ]
 }

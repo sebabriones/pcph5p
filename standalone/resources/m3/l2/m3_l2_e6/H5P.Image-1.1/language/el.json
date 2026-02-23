@@ -20,12 +20,12 @@
       "default": "Εικόνα"
     },
     {
-      "label": "Μεγιστοποίηση εικόνας",
-      "default": "Μεγιστοποίηση εικόνας"
+      "label": "Expand Image",
+      "default": "Expand Image"
     },
     {
-      "label": "Ελαχιστοποίηση εικόνας",
-      "default": "Ελαχιστοποίηση εικόνας"
+      "label": "Minimize Image",
+      "default": "Minimize Image"
     }
   ]
 }

@@ -2,7 +2,7 @@ jQuery(document).ready(()=>{
     /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
     $('body').prepend(`<div class="intro">
                             <div class="text-content">
-                                <div class="intro-text">Arrastre cada nombre de biblioteca con su definición correspondiente.</div>
+                                <div class="intro-text">Identifique el error en el nombramiento de la variable presente en los siguientes códigos seleccionando la alternativa correcta.</div>
                                 <a class="intro-btn">Comenzar</a>
                             </div>
                         </div>`);
@@ -23,7 +23,7 @@ jQuery(document).ready(()=>{
                                     <div class="tab-container">
                                         <div id="tab" class="tab">
                                             <div class="tab-content">
-                                                <div class="instructions-text">Arrastre cada nombre de biblioteca con su definición correspondiente.</div>
+                                                <div class="instructions-text">Identifique el error en el nombramiento de la variable presente en los siguientes códigos seleccionando la alternativa correcta.</div>
                                             </div>
                                             <a class="instructions-btn" href="">Instrucciones</a>
                                         </div>

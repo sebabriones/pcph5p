@@ -11,6 +11,49 @@
   font-style: normal;
 }
 
+.h5p-sc-question {
+  padding: 1em 1em;
+  border-radius: 0.8em;
+  background: linear-gradient(180deg, #fff841 0%, #fbd347 90%);
+}
+.h5p-sc-question p {
+  text-align: center;
+  font-weight: bold;
+}
+.h5p-sc-alternatives {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+.h5p-sc-alternative {
+  display: flex;
+}
+.h5p-sc-alternative:nth-child(1)::before {
+  content: 'A.';
+  padding-right: 10px;
+  z-index: 100;
+}
+.h5p-sc-alternative:nth-child(2)::before {
+  content: 'B.';
+  padding-right: 10px;
+  z-index: 100;
+}
+.h5p-sc-alternative:nth-child(3)::before {
+  content: 'C.';
+  padding-right: 10px;
+  z-index: 100;
+}
+.h5p-sc-alternative:nth-child(4)::before {
+  content: 'D.';
+  padding-right: 10px;
+  z-index: 100;
+}
+.h5p-container {
+  background-color: #f8feef;
+}
+/*Fin nuevo*/
+
 .h5p-container.h5p-single-choice-set {
   overflow: hidden;
 }
@@ -118,8 +161,8 @@ ul.h5p-sc-alternatives li.h5p-sc-alternative {
   -moz-border-radius: 0.25em;
   /*border-radius: 0.25em;*/
   border-radius: 0.6em; /*nuevo*/
-  font-size: 1em; /*nuevo*/
   box-shadow: 0 0.1em 0 rgba(0,0,0, 0.3);
+  font-size: 110%; /*nuevo*/
 
   transition: -webkit-transform 0.5s ease-in-out, width 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
@@ -279,9 +322,7 @@ li.h5p-sc-alternative .h5p-sc-status {
   height: 100%;
   position: absolute;
   top: 0;
-  /*text-align: center;*/
-  text-align: left; /*nuevo*/
-  font-size: 1em !important; /*nuevo*/
+  text-align: center;
   box-sizing: border-box;
 }
 .h5p-sc-set-results > .h5p-sc-feedback {
@@ -453,8 +494,7 @@ li.h5p-sc-alternative .h5p-sc-status {
 }
 
 .h5p-single-choice-set .h5p-sc-result-container {
-  /*top: 50%;*/
-  top: 40%; /*nuevo*/
+  top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
@@ -472,7 +512,7 @@ li.h5p-sc-alternative .h5p-sc-status {
   margin: 0.888888889em;
   padding-right: 1.777777778em;
   /*font-size: 1.125em;*/
-  font-size: 1.2em !important; /*nuevo*/
+  font-size: 1.3em; /*nuevo*/
   /*display: none; /*nuevo*/
 }
 
