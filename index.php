@@ -295,12 +295,13 @@
             </ul>
             <li>Lección 7</li>
             <ul>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e1&id=m3l7e1">Ejercicio 1</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e2&id=m3l7e2">Ejercicio 2</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e3&id=m3l7e3">Ejercicio 3</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e4&id=m3l7e4">Ejercicio 4</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e5&id=m3l7e5">Ejercicio 5</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e6&id=m3l7e6">Ejercicio 6</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e1-1">Ejercicio 1-1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e1-2">Ejercicio 1-2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e3">Ejercicio 3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e4">Ejercicio 4</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e5">Ejercicio 5</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l7/m3_l7_e6">Ejercicio 6</a></li>
             </ul>
         </ul>
         <li>Nuevas Librerías</li>

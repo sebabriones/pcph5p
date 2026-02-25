@@ -6,20 +6,95 @@
 }
 
 .h5p-python-terminal {
+  --pt-min-height: 420px;
+  --pt-main-height: clamp(520px, 70vh, 860px);
+  --pt-editor-percent: 55%;
+  --pt-console-percent: 45%;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   background: #1e1e1e;
 }
 
+/* Ajustes cuando PythonTerminal se usa dentro de CoursePresentation */
+.h5p-course-presentation .h5p-python-terminal {
+  height: 100%;
+}
+
+.h5p-course-presentation .h5p-python-terminal .terminal-main {
+  height: 100%;
+  min-height: min(var(--pt-min-height), 100%);
+  max-height: 100%;
+}
+
+.h5p-course-presentation .h5p-python-terminal .editor-section,
+.h5p-course-presentation .h5p-python-terminal .output-section,
+.h5p-course-presentation .h5p-python-terminal .code-editor,
+.h5p-course-presentation .h5p-python-terminal .terminal-output {
+  min-height: 0;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* Quitar márgenes de H5P.Question dentro de CoursePresentation para evitar "achatado" */
+.h5p-course-presentation .h5p-question .h5p-question-introduction {
+  margin: 0 !important;
+}
+
+.h5p-course-presentation .h5p-question .h5p-question-content {
+  margin: 0 !important;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* Compact mode dentro de CoursePresentation: controles más pequeños y responsivos */
+.h5p-course-presentation .h5p-python-terminal .editor-header,
+.h5p-course-presentation .h5p-python-terminal .output-header {
+  padding: clamp(0.3em, 0.8vw, 0.6em) clamp(0.5em, 1vw, 0.9em);
+  font-size: clamp(0.72em, 1.2vw, 0.85em);
+  gap: clamp(0.25em, 0.6vw, 0.45em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .editor-header-controls {
+  gap: clamp(0.2em, 0.5vw, 0.4em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .theme-select,
+.h5p-course-presentation .h5p-python-terminal .layout-select,
+.h5p-course-presentation .h5p-python-terminal .examples-select {
+  font-size: clamp(0.68em, 1.1vw, 0.82em);
+  min-height: clamp(24px, 2.2vw, 32px);
+  padding: clamp(0.2em, 0.5vw, 0.4em) clamp(0.35em, 0.8vw, 0.65em);
+  margin-right: clamp(0.15em, 0.4vw, 0.35em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .terminal-controls {
+  padding: clamp(0.35em, 0.8vw, 0.6em) clamp(0.5em, 1vw, 0.9em);
+  gap: clamp(0.25em, 0.6vw, 0.45em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .terminal-controls .btn {
+  font-size: clamp(0.68em, 1.1vw, 0.82em);
+  padding: clamp(0.25em, 0.6vw, 0.45em) clamp(0.45em, 1vw, 0.8em);
+  border-radius: 4px;
+}
+
 /* Main content */
 .terminal-main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 0;
-  min-height: 300px;
-  max-height: 400px;
-  height: 600px;
+  min-height: var(--pt-min-height);
+  max-height: none;
+  height: var(--pt-main-height);
   overflow: hidden;
+}
+
+.terminal-main.layout-horizontal {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.terminal-main.layout-vertical {
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(0, var(--pt-editor-percent)) minmax(0, var(--pt-console-percent));
 }
 
 /* Editor section */
@@ -28,9 +103,15 @@
   flex-direction: column;
   background: #1e1e1e;
   border-right: 1px solid #333;
+  min-width: 0;
   height: 100%;
   max-height: 100%;
   overflow: hidden;
+}
+
+.terminal-main.layout-vertical .editor-section {
+  border-right: none;
+  border-bottom: 1px solid #333;
 }
 
 .editor-header,
@@ -39,11 +120,23 @@
   background: #252526;
   border-bottom: 1px solid #333;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 0.5em;
   font-size: 0.9em;
   color: #ccc;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.editor-header-title {
+  flex: 0 0 auto;
+}
+
+.editor-header-controls {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .examples-select {
@@ -83,12 +176,35 @@
   margin-right: 0.5em;
 }
 
+.layout-select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.5em 0.75em;
+  font-size: 0.9em;
+  cursor: pointer;
+  min-height: 36px;
+  transition: all 0.2s;
+  margin-right: 0.5em;
+}
+
 .theme-select:hover {
   background: #3a3a3a;
   border-color: #555;
 }
 
+.layout-select:hover {
+  background: #3a3a3a;
+  border-color: #555;
+}
+
 .theme-select:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.layout-select:focus {
   outline: 2px solid #667eea;
   outline-offset: 2px;
 }
@@ -158,6 +274,7 @@
   display: flex;
   flex-direction: column;
   background: #1e1e1e;
+  min-width: 0;
   height: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -331,18 +448,8 @@
 /* Responsive */
 @media (max-width: 700px) {
   .terminal-main {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-height: 800px;
-    height: 800px;
-  }
-  
-  .editor-section {
-    border-right: none;
-    border-bottom: 1px solid #333;
-    height: 100%;
-    max-height: 100%;
-    min-height: 0;
+    max-height: none;
+    height: clamp(460px, 75vh, 700px);
   }
   
   .output-section {
@@ -369,18 +476,24 @@
   }
   
   .terminal-controls {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
   
   .terminal-controls .btn {
-    flex: 1 1 45%;
+    flex: 0 0 auto;
   }
   
   .examples-select,
-  .theme-select {
+  .theme-select,
+  .layout-select {
     padding: 0.625em 0.875em;
     font-size: 1em;
     min-height: 42px;
+  }
+
+  .editor-header-controls {
+    gap: 0.35em;
   }
 }
 
@@ -569,7 +682,75 @@
   }
 }
 
-/***** Nuevo *****/
+/* Inline input en terminal */
+.inline-input-container {
+  display: flex;
+  align-items: center;
+  margin: 0.25em 0;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.inline-input-container .input-prefix {
+  color: #4fc3f7;
+  font-weight: 600;
+  margin-right: 0.25em;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.inline-input-container .inline-input-field {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #4fc3f7;
+  color: #81c784;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.2em 0;
+  outline: none;
+  caret-color: #4fc3f7;
+}
+
+.inline-input-container .inline-input-field:focus {
+  border-bottom-color: #81c784;
+}
+
+.inline-input-container .inline-input-field::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+.theme-light .inline-input-container .input-prefix {
+  color: #1565c0;
+}
+
+.theme-light .inline-input-container .inline-input-field {
+  color: #2e7d32;
+  border-bottom-color: #1565c0;
+}
+
+.theme-light .inline-input-container .inline-input-field:focus {
+  border-bottom-color: #2e7d32;
+}
+
+.theme-light .inline-input-container .inline-input-field::placeholder {
+  color: #999;
+}
+
+.theme-github .inline-input-container .input-prefix {
+  color: #005cc5;
+}
+
+.theme-github .inline-input-container .inline-input-field {
+  color: #22863a;
+  border-bottom-color: #005cc5;
+}
+
+.theme-github .inline-input-container .inline-input-field:focus {
+  border-bottom-color: #22863a;
+}
+
+/*Nuevo*/
 .h5p-question-introduction {
   display: none;
 }

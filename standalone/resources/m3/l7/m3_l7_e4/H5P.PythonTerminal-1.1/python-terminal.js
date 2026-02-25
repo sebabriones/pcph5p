@@ -24,7 +24,12 @@ H5P.PythonTerminal = (function ($, Question) {
       examples: [],
       showLineNumbers: true,
       theme: 'dark',
+      layoutMode: 'horizontal',
+      minTerminalHeight: 520,
+      consoleHeightPercent: 45,
       allowInput: true,
+      showSubmitButton: true,
+      showUploadButton: true,
       maxOutputLines: 1000,
       passingPercentage: 70,
       passingScore: undefined
@@ -44,6 +49,7 @@ H5P.PythonTerminal = (function ($, Question) {
     this.currentInput = null;
     this.uploadedFiles = [];
     this.isSending = false; // Flag para prevenir envíos duplicados
+    this.pendingInputResolve = null;
     
     // Variables para tracking xAPI
     this.executionHistory = [];
@@ -123,6 +129,23 @@ H5P.PythonTerminal = (function ($, Question) {
 
     // Cargar Pyodide
     self.loadPyodide();
+
+    // Recalcular/focalizar Ace cuando el contenido se hace visible
+    // (por ejemplo, al abrirse en modal dentro de CoursePresentation).
+    self.on('resize', function () {
+      if (self.aceEditor && self.$codeEditorElement && self.$codeEditorElement.offsetParent !== null) {
+        [0, 80, 180].forEach(function (delay) {
+          setTimeout(function () {
+            try {
+              self.aceEditor.resize();
+              self.aceEditor.focus();
+            } catch (e) {
+              // noop
+            }
+          }, delay);
+        });
+      }
+    });
   };
 
   /**
@@ -144,14 +167,53 @@ H5P.PythonTerminal = (function ($, Question) {
       class: 'h5p-python-terminal theme-' + self.params.theme
     });
 
+    var minTerminalHeight = parseInt(self.params.minTerminalHeight, 10);
+    if (isNaN(minTerminalHeight)) {
+      minTerminalHeight = 520;
+    }
+    minTerminalHeight = Math.max(280, Math.min(1400, minTerminalHeight));
+
+    var consoleHeightPercent = parseInt(self.params.consoleHeightPercent, 10);
+    if (isNaN(consoleHeightPercent)) {
+      consoleHeightPercent = 45;
+    }
+    consoleHeightPercent = Math.max(25, Math.min(75, consoleHeightPercent));
+    var editorHeightPercent = 100 - consoleHeightPercent;
+
+    // Variables CSS para controlar alto total y reparto editor/consola.
+    self.$wrapper[0].style.setProperty('--pt-min-height', minTerminalHeight + 'px');
+    self.$wrapper[0].style.setProperty('--pt-main-height', 'clamp(' + minTerminalHeight + 'px, 70vh, ' + (minTerminalHeight + 340) + 'px)');
+    self.$wrapper[0].style.setProperty('--pt-editor-percent', editorHeightPercent + '%');
+    self.$wrapper[0].style.setProperty('--pt-console-percent', consoleHeightPercent + '%');
+
     // Contenedor principal
-    var $main = $('<div>', { class: 'terminal-main' });
+    var normalizeLayoutMode = function(mode) {
+      // Compatibilidad con versiones anteriores: row/column
+      if (mode === 'vertical' || mode === 'column') {
+        return 'vertical';
+      }
+      return 'horizontal';
+    };
+    var initialLayoutMode = normalizeLayoutMode(self.params.layoutMode);
+    var $main = $('<div>', { class: 'terminal-main layout-' + initialLayoutMode });
+
+    var applyLayoutMode = function(mode) {
+      var normalized = normalizeLayoutMode(mode);
+      self.params.layoutMode = normalized;
+      $main.removeClass('layout-horizontal layout-vertical').addClass('layout-' + normalized);
+      if (self.aceEditor) {
+        setTimeout(function() {
+          self.aceEditor.resize();
+        }, 0);
+      }
+    };
 
     // Editor de código
     var $editorSection = $('<div>', { class: 'editor-section' });
     
     var $editorHeader = $('<div>', { class: 'editor-header' });
-    $editorHeader.append($('<span>', { text: '📝 Editor Python' }));
+    $editorHeader.append($('<span>', { class: 'editor-header-title', text: '📝 Editor Python' }));
+    var $headerControls = $('<div>', { class: 'editor-header-controls' });
     
     // Selector de tema para Ace Editor
     var $themeSelector = $('<select>', { class: 'theme-select' });
@@ -165,7 +227,26 @@ H5P.PythonTerminal = (function ($, Question) {
       }
     });
     
-    $editorHeader.append($themeSelector);
+    $headerControls.append($themeSelector);
+
+    // Selector de distribución (editor/consola)
+    var $layoutSelector = $('<select>', { class: 'layout-select' });
+    $layoutSelector.append($('<option>', {
+      value: 'horizontal',
+      text: '↔ Horizontal',
+      selected: initialLayoutMode === 'horizontal'
+    }));
+    $layoutSelector.append($('<option>', {
+      value: 'vertical',
+      text: '↕ Vertical',
+      selected: initialLayoutMode === 'vertical'
+    }));
+
+    $layoutSelector.on('change', function() {
+      applyLayoutMode($(this).val());
+    });
+
+    $headerControls.append($layoutSelector);
     
     // Botones de ejemplo
     if (self.params.examples && self.params.examples.length > 0) {
@@ -193,8 +274,10 @@ H5P.PythonTerminal = (function ($, Question) {
         }
       });
       
-      $editorHeader.append($examplesDropdown);
+      $headerControls.append($examplesDropdown);
     }
+
+    $editorHeader.append($headerControls);
     
     $editorSection.append($editorHeader);
 
@@ -218,15 +301,6 @@ H5P.PythonTerminal = (function ($, Question) {
       self.runCode();
     });
     
-    var $saveBtn = $('<button>', {
-      class: 'btn btn-save',
-      html: '💾 Enviar',
-      //title: 'Guardar y enviar al LRS (Ctrl+S)'
-      title: 'Enviar código para evaluación (Ctrl+S)'
-    }).on('click', function() {
-      self.saveAndSubmit();
-    });
-    
     var $clearBtn = $('<button>', {
       class: 'btn btn-clear',
       html: '🗑️ Limpiar',
@@ -234,26 +308,40 @@ H5P.PythonTerminal = (function ($, Question) {
     }).on('click', function() {
       self.clearOutput();
     });
-    
-    // Botón para subir archivos
-    var $fileInput = $('<input>', {
-      type: 'file',
-      id: 'file-upload-' + self.contentId,
-      style: 'display: none;',
-      multiple: true
-    }).on('change', function(e) {
-      self.handleFileUpload(e.target.files);
-    });
-    
-    var $uploadBtn = $('<button>', {
-      class: 'btn btn-upload',
-      html: '📁 Cargar archivo(s)',
-      title: 'Cargar archivos para usar en Python'
-    }).on('click', function() {
-      $fileInput.click();
-    });
 
-    $controls.append($runBtn, $saveBtn, $clearBtn, $uploadBtn, $fileInput);
+    $controls.append($runBtn);
+
+    if (self.params.showSubmitButton !== false) {
+      var $saveBtn = $('<button>', {
+        class: 'btn btn-save',
+        html: '💾 Enviar',
+        title: 'Enviar código para evaluación (Ctrl+S)'
+      }).on('click', function() {
+        self.saveAndSubmit();
+      });
+      $controls.append($saveBtn);
+    }
+
+    $controls.append($clearBtn);
+
+    if (self.params.showUploadButton !== false) {
+      var $fileInput = $('<input>', {
+        type: 'file',
+        id: 'file-upload-' + self.contentId,
+        style: 'display: none;',
+        multiple: true
+      }).on('change', function(e) {
+        self.handleFileUpload(e.target.files);
+      });
+      var $uploadBtn = $('<button>', {
+        class: 'btn btn-upload',
+        html: '📁 Cargar archivo(s)',
+        title: 'Cargar archivos para usar en Python'
+      }).on('click', function() {
+        $fileInput.click();
+      });
+      $controls.append($uploadBtn, $fileInput);
+    }
     $editorSection.append($controls);
 
     $main.append($editorSection);
@@ -323,15 +411,36 @@ H5P.PythonTerminal = (function ($, Question) {
           }
         });
         
-        self.aceEditor.commands.addCommand({
-          name: 'save',
-          bindKey: { win: 'Ctrl-S', mac: 'Cmd-S' },
-          exec: function() {
-            self.saveAndSubmit(); // Guardar y enviar al LRS
-          }
-        });
+        if (self.params.showSubmitButton !== false) {
+          self.aceEditor.commands.addCommand({
+            name: 'save',
+            bindKey: { win: 'Ctrl-S', mac: 'Cmd-S' },
+            exec: function() {
+              self.saveAndSubmit();
+            }
+          });
+        }
         
         self.aceEditor.focus();
+        setTimeout(function () {
+          try {
+            self.aceEditor.resize();
+            self.aceEditor.focus();
+          } catch (e) {
+            // noop
+          }
+        }, 120);
+
+        // Recuperar foco de Ace tras interacción en modal/popup.
+        $(self.$codeEditorElement).on('mousedown touchstart click', function () {
+          setTimeout(function () {
+            try {
+              self.aceEditor.focus();
+            } catch (e) {
+              // noop
+            }
+          }, 0);
+        });
       } catch (error) {
         console.error('Error al configurar Ace Editor:', error);
       }
@@ -419,51 +528,30 @@ H5P.PythonTerminal = (function ($, Question) {
         }
       });
       
-      // Configurar stdin para manejar input()
+      // Configurar stdin para manejar input() como fallback (Pyodide 0.28 usa 'stdin', no 'prompt')
+      // Python input("msg") envía "msg" a stdout primero, luego lee de stdin
       if (self.params.allowInput) {
         pyodide.setStdin({
-          prompt: function(message) {
-            // Limpiar y formatear el mensaje
-            var cleanMessage = '';
-            if (message !== null && message !== undefined && String(message).trim() !== '') {
-              cleanMessage = String(message).trim().replace(/\r\n/g, ' ').replace(/\n/g, ' ');
-            }
-            if (!cleanMessage || cleanMessage === '') {
-              cleanMessage = 'Ingrese un valor:';
-            }
-            
-            // Mostrar el mensaje en la consola
-            self.addOutput(cleanMessage, 'input-prompt');
-            
-            // Usar prompt nativo de JavaScript (síncrono)
-            var userInput = prompt(cleanMessage);
-            
-            // Si el usuario cancela el prompt, devolver cadena vacía
+          stdin: function() {
+            var userInput = prompt('Ingrese un valor:');
             if (userInput === null) {
               userInput = '';
             }
-            
-            // CAPTURAR el valor ingresado para validación en tiempo de ejecución
+
             if (!self.capturedInputs) {
               self.capturedInputs = [];
             }
             self.capturedInputs.push({
-              prompt: cleanMessage,
+              prompt: '',
               value: userInput,
               timestamp: new Date().toISOString()
             });
-            
-            // Mostrar la entrada del usuario en la consola
-            if (userInput !== null) {
-              self.addOutput('>>> ' + userInput, 'input-value');
-            }
-            
-            // Devolver la entrada del usuario (debe ser síncrono)
-            return userInput || '';
+
+            self.addOutput('>>> ' + userInput, 'input-value');
+            return userInput;
           }
         });
       } else {
-        // Si allowInput está desactivado, generar error cuando se intente usar input()
         pyodide.setStdin({
           error: true
         });
@@ -471,14 +559,102 @@ H5P.PythonTerminal = (function ($, Question) {
       
       self.$statusIndicator.removeClass('loading').addClass('ready').text('✅ Listo');
       self.addOutput('✅ Python está listo. ¡Puedes ejecutar tu código!', 'success');
-      
-      // Mostrar información de configuración de puntuación
-      /*if (self.params.passingScore !== undefined && self.params.passingScore !== null) {
-        self.addOutput('📊 Puntaje máximo: ' + self.params.passingScore, 'info');
-      } else if (self.params.passingPercentage !== undefined && self.params.passingPercentage !== null) {
-        self.addOutput('📊 Porcentaje para aprobar: ' + self.params.passingPercentage + '%', 'info');
-      }*/
-      
+
+      // Configurar input inline (AST transformer + async input function)
+      if (self.params.allowInput) {
+        try {
+          self.pyodide.globals.set('__js_create_inline_input', function(promptMsg) {
+            return self.createInlineInput(promptMsg);
+          });
+
+          await self.pyodide.runPythonAsync(
+            'import ast as _ast\n' +
+            '\n' +
+            'def _func_to_async(node):\n' +
+            '    """Convierte FunctionDef a AsyncFunctionDef copiando todos los campos dinámicamente."""\n' +
+            '    fields = {f: v for f, v in _ast.iter_fields(node)}\n' +
+            '    nn = _ast.AsyncFunctionDef(**fields)\n' +
+            '    return _ast.copy_location(nn, node)\n' +
+            '\n' +
+            'def _node_has_await(node):\n' +
+            '    if isinstance(node, _ast.Await):\n' +
+            '        return True\n' +
+            '    if isinstance(node, (_ast.FunctionDef, _ast.AsyncFunctionDef, _ast.ClassDef)):\n' +
+            '        return False\n' +
+            '    for c in _ast.iter_child_nodes(node):\n' +
+            '        if _node_has_await(c):\n' +
+            '            return True\n' +
+            '    return False\n' +
+            '\n' +
+            'class _AIT(_ast.NodeTransformer):\n' +
+            '    def __init__(self):\n' +
+            '        self.af = set()\n' +
+            '    def visit_Call(self, node):\n' +
+            '        self.generic_visit(node)\n' +
+            '        if isinstance(node.func, _ast.Name) and node.func.id == "input":\n' +
+            '            node.func.id = "__async_input__"\n' +
+            '            return _ast.Await(value=node)\n' +
+            '        return node\n' +
+            '    def visit_FunctionDef(self, node):\n' +
+            '        self.generic_visit(node)\n' +
+            '        if any(_node_has_await(s) for s in node.body):\n' +
+            '            self.af.add(node.name)\n' +
+            '            return _func_to_async(node)\n' +
+            '        return node\n' +
+            '\n' +
+            'def _transform_input(src):\n' +
+            '    try:\n' +
+            '        tree = _ast.parse(src)\n' +
+            '    except SyntaxError:\n' +
+            '        return None\n' +
+            '    t = _AIT()\n' +
+            '    tree = t.visit(tree)\n' +
+            '    for _ in range(10):\n' +
+            '        if not t.af:\n' +
+            '            break\n' +
+            '        class _C(_ast.NodeTransformer):\n' +
+            '            def __init__(s, names):\n' +
+            '                s.names = set(names)\n' +
+            '                s.nn = set()\n' +
+            '            def visit_Await(s, node):\n' +
+            '                return node\n' +
+            '            def visit_Call(s, node):\n' +
+            '                s.generic_visit(node)\n' +
+            '                if isinstance(node.func, _ast.Name) and node.func.id in s.names:\n' +
+            '                    return _ast.Await(value=node)\n' +
+            '                return node\n' +
+            '            def visit_FunctionDef(s, node):\n' +
+            '                s.generic_visit(node)\n' +
+            '                if any(_node_has_await(st) for st in node.body):\n' +
+            '                    if node.name not in s.names:\n' +
+            '                        s.nn.add(node.name)\n' +
+            '                    return _func_to_async(node)\n' +
+            '                return node\n' +
+            '        c = _C(t.af)\n' +
+            '        tree = c.visit(tree)\n' +
+            '        if not c.nn:\n' +
+            '            break\n' +
+            '        t.af.update(c.nn)\n' +
+            '    _ast.fix_missing_locations(tree)\n' +
+            '    try:\n' +
+            '        return _ast.unparse(tree)\n' +
+            '    except Exception as e:\n' +
+            '        return None\n' +
+            '\n' +
+            'async def __async_input__(prompt_msg=""):\n' +
+            '    if "_input_captures" not in globals():\n' +
+            '        globals()["_input_captures"] = []\n' +
+            '    result = await __js_create_inline_input(str(prompt_msg))\n' +
+            '    value = str(result) if result is not None else ""\n' +
+            '    _input_captures.append({"prompt": str(prompt_msg), "value": value})\n' +
+            '    return value\n'
+          );
+          console.log('[PythonTerminal] AST transformer e inline input configurados correctamente');
+        } catch (e) {
+          console.warn('No se pudo configurar input inline:', e);
+        }
+      }
+
       // Ejecutar código pre-cargado si existe
       if (self.params.preloadedCode) {
         self.addOutput('⚙️ Ejecutando código de inicialización...', 'info');
@@ -1031,117 +1207,80 @@ H5P.PythonTerminal = (function ($, Question) {
     // Resetear salida capturada para esta ejecución
     self.currentExecutionOutput = '';
     
-    // NO resetear valores capturados de input() antes de ejecutar
-    // Los inputs se capturarán en el callback y se validarán después
-    // Solo inicializar si no existe
     if (!self.capturedInputs) {
       self.capturedInputs = [];
-    }
-    
-    // Reconfigurar stdin antes de cada ejecución para asegurar que self sea correcto
-    if (self.params.allowInput && self.pyodide) {
-      self.pyodide.setStdin({
-        prompt: function(message) {
-          // Limpiar y formatear el mensaje
-          var cleanMessage = '';
-          if (message !== null && message !== undefined && String(message).trim() !== '') {
-            cleanMessage = String(message).trim().replace(/\r\n/g, ' ').replace(/\n/g, ' ');
-          }
-          if (!cleanMessage || cleanMessage === '') {
-            cleanMessage = 'Ingrese un valor:';
-          }
-          
-          // Mostrar el mensaje en la consola
-          self.addOutput(cleanMessage, 'input-prompt');
-          
-          // Usar prompt nativo de JavaScript (síncrono)
-          var userInput = prompt(cleanMessage);
-          
-          // Si el usuario cancela el prompt, devolver cadena vacía
-          if (userInput === null) {
-            userInput = '';
-          }
-          
-          // CAPTURAR el valor ingresado para validación en tiempo de ejecución
-          if (!self.capturedInputs) {
-            self.capturedInputs = [];
-          }
-          self.capturedInputs.push({
-            prompt: cleanMessage,
-            value: userInput,
-            timestamp: new Date().toISOString()
-          });
-          
-          // Mostrar la entrada del usuario en la consola
-          if (userInput !== null) {
-            self.addOutput('>>> ' + userInput, 'input-value');
-          }
-          
-          // Devolver la entrada del usuario (debe ser síncrono)
-          return userInput || '';
-        }
-      });
-    } else if (self.pyodide) {
-      // Si allowInput está desactivado, generar error cuando se intente usar input()
-      self.pyodide.setStdin({
-        error: true
-      });
     }
     
     // Cargar paquetes necesarios antes de ejecutar
     await self.loadRequiredPackages(code);
     
-    // Inyectar wrapper para capturar inputs si el código contiene input()
-    if (code.includes('input(') && self.params.allowInput && self.pyodide) {
+    // Transformar código para input inline si contiene input()
+    var codeToExecute = code;
+    var usingAsyncInput = false;
+    if (code.indexOf('input(') !== -1 && self.params.allowInput && self.pyodide) {
       try {
-        // Guardar la función input() original y crear wrapper
-        self.pyodide.runPython(`
-import builtins
-if '_original_input' not in globals():
-    _original_input = builtins.input
-    _input_captures = []
-
-def _capturing_input(prompt=''):
-    result = _original_input(prompt)
-    _input_captures.append({
-        'prompt': str(prompt),
-        'value': result
-    })
-    return result
-
-builtins.input = _capturing_input
-        `);
-      } catch (error) {
-        // Error al inyectar wrapper, continuar sin captura de inputs
+        self.pyodide.globals.set('__code_to_transform__', code);
+        var transformed = self.pyodide.runPython('_transform_input(__code_to_transform__)');
+        if (transformed !== undefined && transformed !== null) {
+          var transformedStr = typeof transformed === 'string' ? transformed : String(transformed);
+          if (transformedStr && transformedStr !== 'None' && transformedStr.length > 0) {
+            codeToExecute = transformedStr;
+            usingAsyncInput = true;
+            console.log('[PythonTerminal] Código transformado para inline input:', codeToExecute);
+          }
+        }
+      } catch (e) {
+        console.warn('[PythonTerminal] Transformación AST falló:', e.message || e);
       }
     }
     
     try {
-      // Ejecutar el código de forma asíncrona para manejar input() correctamente
-      const result = await self.pyodide.runPythonAsync(code);
+      const result = await self.pyodide.runPythonAsync(codeToExecute);
       executionSuccess = true;
       executionResult = result;
       
-      // Si hay un resultado (no None), mostrarlo
       if (result !== undefined && result !== null) {
-        // Verificar si el resultado es un DataFrame
         if (self.isDataFrame(result)) {
-          // Mostrar como tabla HTML
           const dfId = 'result_' + Date.now();
           self.displayedDataFrames.add(dfId);
           self.displayDataFrame(result, 'Resultado');
         } else {
-          // Mostrar como texto normal
           var resultStr = String(result);
           self.addOutput(resultStr, 'result');
-          // Agregar resultado a la salida capturada
           self.currentExecutionOutput += resultStr;
         }
       }
       
     } catch (error) {
-      // Interceptar ModuleNotFoundError y cargar automáticamente el paquete
-      if (error.message && error.message.includes('ModuleNotFoundError')) {
+      console.warn('[PythonTerminal] Error en ejecución:', error.message || error);
+      if (usingAsyncInput && error.message &&
+          (error.message.indexOf('SyntaxError') !== -1 || error.message.indexOf('await') !== -1 ||
+           error.message.indexOf('async') !== -1 || error.message.indexOf('EOFError') !== -1)) {
+        console.log('[PythonTerminal] Reintentando con código original (fallback stdin)...');
+        self.$output.find('.inline-input-container').remove();
+        self.capturedInputs = [];
+        try { self.pyodide.runPython('_input_captures = []'); } catch(e2) {}
+        try {
+          var fallbackResult = await self.pyodide.runPythonAsync(code);
+          executionSuccess = true;
+          executionResult = fallbackResult;
+          if (fallbackResult !== undefined && fallbackResult !== null) {
+            if (self.isDataFrame(fallbackResult)) {
+              var dfId = 'result_' + Date.now();
+              self.displayedDataFrames.add(dfId);
+              self.displayDataFrame(fallbackResult, 'Resultado');
+            } else {
+              var rStr = String(fallbackResult);
+              self.addOutput(rStr, 'result');
+              self.currentExecutionOutput += rStr;
+            }
+          }
+        } catch (fallbackError) {
+          executionSuccess = false;
+          executionError = fallbackError.message;
+          self.addOutput(fallbackError.message, 'error');
+        }
+      } else if (error.message && error.message.includes('ModuleNotFoundError')) {
         // Extraer el nombre del módulo faltante
         const moduleMatch = error.message.match(/No module named ['"]([^'"]+)['"]/);
         if (moduleMatch) {
@@ -1158,7 +1297,7 @@ builtins.input = _capturing_input
               
               // Reintentar la ejecución
               try {
-                const result = await self.pyodide.runPythonAsync(code);
+                const result = await self.pyodide.runPythonAsync(codeToExecute);
                 executionSuccess = true;
                 executionResult = result;
                 
@@ -1308,14 +1447,64 @@ builtins.input = _capturing_input
    */
   PythonTerminal.prototype.clearOutput = function() {
     const self = this;
+
+    if (self.pendingInputResolve) {
+      self.pendingInputResolve('');
+      self.pendingInputResolve = null;
+    }
+
     self.$output.empty();
     self.outputLines = [];
-    // No resetear lastOutput aquí, solo currentExecutionOutput
-    // lastOutput se mantiene para historial completo
     self.currentExecutionOutput = '';
-    // Limpiar el registro de DataFrames mostrados
     self.displayedDataFrames.clear();
     self.addOutput('🗑️ Consola limpiada', 'info');
+  };
+
+  PythonTerminal.prototype.createInlineInput = function(promptMsg) {
+    var self = this;
+    return new Promise(function(resolve) {
+      self.pendingInputResolve = resolve;
+
+      if (promptMsg && String(promptMsg).trim() !== '') {
+        self.addOutput(String(promptMsg), 'input-prompt');
+      }
+
+      var $container = $('<div>', { class: 'inline-input-container' });
+      var $prefix = $('<span>', { class: 'input-prefix', text: '>>> ' });
+      var $field = $('<input>', {
+        type: 'text',
+        class: 'inline-input-field',
+        attr: { autocomplete: 'off', spellcheck: 'false' }
+      });
+
+      $container.append($prefix).append($field);
+      self.$output.append($container);
+      self.$output.scrollTop(self.$output[0].scrollHeight);
+
+      setTimeout(function() { $field.focus(); }, 50);
+
+      $field.on('keydown', function(e) {
+        if (e.key === 'Enter' || e.keyCode === 13) {
+          e.preventDefault();
+          var value = $field.val();
+
+          $container.remove();
+          self.addOutput('>>> ' + value, 'input-value');
+          self.pendingInputResolve = null;
+
+          if (!self.capturedInputs) {
+            self.capturedInputs = [];
+          }
+          self.capturedInputs.push({
+            prompt: promptMsg || '',
+            value: value,
+            timestamp: new Date().toISOString()
+          });
+
+          resolve(value);
+        }
+      });
+    });
   };
 
   /**
