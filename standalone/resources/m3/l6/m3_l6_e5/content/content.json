@@ -1,1 +1,361 @@
-{"title":"Terminal Python Interactiva","initialCode":"hora = int(input(\"Hora (0-23): \"))\n\nif hora &gt; 6 and hora &lt; 8:\n    print(\"Estudiar\")\nelif hora &gt;= 8 and hora &lt;= 18:\n    print(\"Clases/Tareas\")\nelif hora &gt; 18 and hora &lt; 22:\n    print(\"Descanso\")\nelse:\n    print(\"Dormir\")","showLineNumbers":true,"theme":"dark","allowInput":true,"maxOutputLines":1000,"passingPercentage":70,"passingScore":7,"description":"<p>Gabriela quiere una alarma que sugiera las siguientes actividades según la hora, donde solo se ingresen valores enteros de hora, y en la que 08 en el primer intervalo considera que estará estudiando desde las 08:00 hasta las 08:59, y así en cada caso.<br />┌───────┬─────────────┐<br />│     Hora      │        Actividad           │<br />├───────┼─────────────┤<br />│     06-08     │     Estudiar                │<br />│     09-19     │     Clases y tareas    │<br />│     20-22     │     Descanso             │<br />│     23-05     │     Dormir                  │<br />└───────┴─────────────┘<br />1. Ejecuta el código: ingresa algunas horas que tú quieras, además te sugerimos que ingreses los siguientes valores: -5, 28, 24, ¿qué ocurre?, ¿está bien?<br />2. Responde las siguientes preguntas:<br />    a. ¿Se utilizan los &gt;= y &lt;= de forma consistente en el código?<br />    b. ¿Hay casos que se repiten o no se consideran en el código?<br />    c. Corrige el código para que funcione como debería, cubriendo el rango de 0 a 23 horas.</p>"}
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091507,
+                        "y": 6.746308399903171,
+                        "width": 45.5925925925926,
+                        "height": 27.55603969983055,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Imagina que preparas tu mochila para ir a clases. Algunos objetos están repetidos por error. Tu tarea es eliminar los artículos duplicados de la lista y calcular el peso total que llevarás en tu mochila; el siguiente programa cumple con esto:</p>"
+                            },
+                            "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 92.48366013071895,
+                        "y": 11.238925199709513,
+                        "width": 61.95812807881774,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e5/content/images/image-6vOXt9nl.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 2236,
+                                    "height": 812
+                                }
+                            },
+                            "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 4.2679738562091503,
+                        "y": 90.01912369886226,
+                        "width": 90,
+                        "height": 85,
+                        "action": {
+                            "library": "H5P.PythonTerminal 1.1",
+                            "params": {
+                                "title": "Terminal Python Interactiva",
+                                "initialCode": "",
+                                "showLineNumbers": true,
+                                "theme": "dark",
+                                "layoutMode": "horizontal",
+                                "minTerminalHeight": 520,
+                                "consoleHeightPercent": 45,
+                                "allowInput": true,
+                                "showSubmitButton": false,
+                                "showUploadButton": false,
+                                "maxOutputLines": 1000,
+                                "passingPercentage": 70,
+                                "description": "",
+                                "examples": [
+                                    {
+                                        "name": "A",
+                                        "code": "mochila = []\nobj = input(\"Ingresa un objeto o 'fin':\")\n\nwhile obj != \"fin\":\n    mochila.append(obj)\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(mochila_unica)\nprint(peso_total, \" gramos\")"
+                                    },
+                                    {
+                                        "name": "B",
+                                        "code": "mochila = []\nobj = input(\"Ingresa un objeto o 'fin':\")\n\nwhile obj != \"fin\":\n    mochila.append(obj)\n    obj = input(\"Ingresa un objeto o 'fin':\")\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nif peso_total &gt; 3000:\n    print(\"Advertencia: tu mochila pesa demasiado.\")\n\nprint(\"Objetos: \", mochila_unica)\nprint(\"Peso total: \", peso_total, \" gramos\")"
+                                    },
+                                    {
+                                        "name": "C",
+                                        "code": "mochila = []\nobj = \"\"\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\n\nfor o in pesos:\n    mochila.append(o)\n\nmochila_unica = mochila\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(\"Objetos únicos: \", mochila_unica)\nprint(\"Peso total: \", peso_total)"
+                                    },
+                                    {
+                                        "name": "D",
+                                        "code": "mochila = []\n\nwhile True:\n    mochila.append(input(\"Ingresa un objeto: \"))\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\n\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(mochila_unica)"
+                                    }
+                                ]
+                            },
+                            "subContentId": "450dd51c-490c-4a29-8704-4a8ee31010f6",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Terminal Python Interactiva",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Terminal Python Interactiva"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 52.28758169934641,
+                        "y": 42.985233599612684,
+                        "width": 42.48366013071895,
+                        "height": 53.033890099249575,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
+                                        "question": "<p style='font-size:1.2em;text-align:center;'>Selecciona la alternativa que corresponde a una versión mejorada correcta del programa.</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>A</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>C</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>D</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "236d54d1-0002-4eb4-8fdb-3485d3d28c66",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 51.5359477124183005,
+                        "y": 9.238925199709513,
+                        "width": 39.85838779956427,
+                        "height": 27.50070200919874,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e5/content/images/image-5Gy0kio4.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 2236,
+                                    "height": 812
+                                }
+                            },
+                            "subContentId": "23c2673c-8488-4871-941a-8207ea8800cf",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 34.41442749939482,
+                        "width": 45.751633986928105,
+                        "height": 53.66811909949165,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Ahora, se pide una versión mejorada que cumpla con los siguientes requisitos:</p><ul style='font-size:0.9em;'><li>Permitir que el usuario ingrese los objetos de su mochila uno por uno, usando un bucle, hasta que escriba \"fin\".</li><li>Usar una estructura condicional para mostrar un mensaje de advertencia si el peso total supera los 3000 gramos.</li><li>Mostrar finalmente: La lista de objetos sin duplicados y el peso total en gramos.</li></ul><p style='font-size:0.9em;'>Puede ver las alternativas de código en la Terminal Python en la sección: 💡 Cargar ejemplo</p>"
+                            },
+                            "subContentId": "92107a24-4534-409d-b104-5304a212a747",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

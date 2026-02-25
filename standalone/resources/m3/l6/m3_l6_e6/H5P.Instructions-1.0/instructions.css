@@ -24,25 +24,6 @@
   overflow-x: hidden;
 }
 
-/* Estilos para el scrollbar personalizado en la ventana intro */
-.intro-text::-webkit-scrollbar {
-  width: 8px;
-}
-
-.intro-text::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.intro-text::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-}
-
-.intro-text::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
-
 .intro-btn {
   font-size: 2vw;
   background: linear-gradient(180deg, #cf601a 10%, #e92f06 90%);
@@ -117,29 +98,34 @@ a {
     padding: 15px 0;
     font-size: 1.5vw;
     /* Agregar scroll vertical para instrucciones largas */
-    max-height: 50vh;
+    max-height: 60vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-/* Estilos para el scrollbar personalizado en la pestaña */
+/* Estilos para el scrollbar personalizado en la ventana intro */
+.intro-text::-webkit-scrollbar,
 .instructions-text::-webkit-scrollbar {
   width: 8px;
 }
 
+.intro-text::-webkit-scrollbar-track,
 .instructions-text::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
 
+.intro-text::-webkit-scrollbar-thumb,
 .instructions-text::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 
+.intro-text::-webkit-scrollbar-thumb:hover,
 .instructions-text::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
 }
+/***********************************************************/
 
 .tab-content {
     background-color: var(--tabs-lite-color); 
@@ -151,9 +137,6 @@ a {
     z-index: 100;
     /*display: grid;
     grid-template-columns: 11fr 1fr;*/
-    /* Asegurar que el contenedor también maneje el overflow */
-    max-height: 60vh;
-    overflow: hidden;
 }
 
 .tab:target>a, .tab:last-of-type>a {
@@ -171,16 +154,6 @@ a {
         height: 30px;
         left: 8px; /* posición de cada pestaña */
     }
-    
-    /* Ajustar altura máxima en pantallas pequeñas */
-    .intro-text,
-    .instructions-text {
-        max-height: 40vh;
-    }
-    
-    .tab-content {
-        max-height: 50vh;
-    }
 }
 
 @media (max-height: 450px) {
@@ -189,31 +162,11 @@ a {
         height: 25px;
         left: 5px; /* posición de cada pestaña */
     }
-    
-    /* Ajustar altura máxima en pantallas muy pequeñas */
-    .intro-text,
-    .instructions-text {
-        max-height: 30vh;
-    }
-    
-    .tab-content {
-        max-height: 40vh;
-    }
 }
 
 @media (max-height: 300px) {
     .tab > a {
         font-size: 1.2vw;
         height: 20px;
-    }
-    
-    /* Ajustar altura máxima en pantallas extremadamente pequeñas */
-    .intro-text,
-    .instructions-text {
-        max-height: 20vh;
-    }
-    
-    .tab-content {
-        max-height: 30vh;
     }
 }

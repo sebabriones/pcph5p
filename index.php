@@ -278,22 +278,20 @@
             </ul>
             <li>Lección 6</li>
             <ul>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i1&id=m3l6i1">Integradora 1</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i2&id=m3l6i2">Integradora 2</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i3&id=m3l6i3">Integradora 3</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i4&id=m3l6i4">Integradora 4</a></li> 
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i5&id=m3l6i5">Integradora 5</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i6&id=m3l6i6">Integradora 6</a></li> 
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i7&id=m3l6i7">Integradora 7</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i8&id=m3l6i8">Integradora 8</a></li> 
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i9&id=m3l6i9">Integradora 9</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_i10&id=m3l6i10">Integradora 10</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e1&id=m3l6e1">Ejercicio 1</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e2&id=m3l6e2">Ejercicio 2</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e3&id=m3l6e3">Ejercicio 3</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e4&id=m3l6e4">Ejercicio 4</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e5&id=m3l6e5">Ejercicio 5</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e6&id=m3l6e6">Ejercicio 6</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e1">Ejercicio 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e2">Ejercicio 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e3">Ejercicio 3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e4">Ejercicio 4</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e5">Ejercicio 5</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e6">Ejercicio 6</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e7">Ejercicio 7</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e8">Ejercicio 8</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e9">Ejercicio 9</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e10">Ejercicio 10</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e11">Ejercicio 11</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e12">Ejercicio 12</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e13">Ejercicio 13</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l6/m3_l6_e14">Ejercicio 14</a></li>
             </ul>
             <li>Lección 7</li>
             <ul>

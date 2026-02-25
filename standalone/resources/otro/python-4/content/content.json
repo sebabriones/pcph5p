@@ -1,0 +1,15 @@
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "#Escribe tu código Python aquí",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "layoutMode": "horizontal",
+    "minTerminalHeight": 600,
+    "consoleHeightPercent": 35,
+    "allowInput": true,
+    "showSubmitButton": true,
+    "showUploadButton": true,
+    "maxOutputLines": 1000,
+    "passingPercentage": 70,
+    "description": ""
+}

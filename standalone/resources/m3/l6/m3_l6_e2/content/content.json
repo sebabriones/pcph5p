@@ -1,1 +1,382 @@
-{"title":"Terminal Python Interactiva","initialCode":"nombres = [\"Camila\", \"Marcos\", \"Javiera\", \"Diego\"]\nasistencias = [2, 4, 1, 3]\n\nfor i in range(4):\n    if asistencias[i] &gt; 3:\n        print(f\"{nombres[i]} tiene asistencia baja\")\n    else:\n        print(f\"{nombres[i]} tiene buena asistencia\")","showLineNumbers":true,"theme":"dark","allowInput":true,"maxOutputLines":1000,"passingPercentage":70,"passingScore":7,"description":"<p>En un grupo de lectura se tiene el siguiente registro de asistencia:<br />┌─────────┬─────────────┐<br />│   Integrante   │   N° de veces que    │<br />│                         │   ha asistido             │<br />├─────────┼─────────────┤<br />│     Camila        │        2                         │<br />│     Marcos       │        4                         │<br />│     Javiera        │        1                         │<br />│     Diego         │         3                         │<br />└─────────┴─────────────┘<br />El siguiente código pretende categorizar con baja asistencia a quienes han asistido en menos de 3 ocasiones y con buena asistencia a quienes han asistido 3 o más veces al grupo de lectura.<br />1. Ejecuta este código.<br />2. Responde las siguientes preguntas:<br />    -¿Se consigue lo pedido? ¿Tiene errores?<br />    -¿Por qué código podríamos cambiar range(4) de forma que sirva si tenemos más de 4 elementos en la lista nombres?</p>"}
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 14.161220043572985,
+                        "y": 44.54127329944323,
+                        "width": 16.33986928104575,
+                        "height": 10.866017913338174,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e2/content/images/image-c1GetNVP.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 540,
+                                    "height": 202
+                                }
+                            },
+                            "subContentId": "3aa370e1-cf8f-454c-8689-f3b34e14c55f",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 8.55603969983055,
+                        "width": 46.84095860566449,
+                        "height": 36.04865649963689,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p><span>Considera el siguiente programa que calcula el índice de masa corporal, pidiendo al usuario su peso (en kg) y estatura (en metros); debiendo mostrar la frase: <strong>Tu índice de masa corporal es:</strong> &lt;imc&gt;, donde &lt;imc&gt; es el índice de masa corporal calculado redondeado con dos decimales. El valor del IMC debe calcularse usando la fórmula:</span></p>"
+                            },
+                            "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 45.751633986928105,
+                        "y": 65.84362139917695,
+                        "width": 128.671875,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e2/content/images/image-nP1W0pCt.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1830,
+                                    "height": 320
+                                }
+                            },
+                            "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 83.27281529895909,
+                        "width": 90,
+                        "height": 85,
+                        "action": {
+                            "library": "H5P.PythonTerminal 1.1",
+                            "params": {
+                                "title": "Terminal Python Interactiva",
+                                "initialCode": "peso = float(input(\"Ingrese su peso en kg: \"))\nestatura = float(input(\"Ingrese su estatura en metros: \"))\nimc = peso * pow(estatura, 2)\nprint(f\"Tu índice de masa corporal es: {round(imc,2)}\")",
+                                "showLineNumbers": true,
+                                "theme": "dark",
+                                "layoutMode": "horizontal",
+                                "minTerminalHeight": 520,
+                                "consoleHeightPercent": 35,
+                                "allowInput": true,
+                                "showSubmitButton": false,
+                                "showUploadButton": false,
+                                "maxOutputLines": 1000,
+                                "passingPercentage": 70,
+                                "description": ""
+                            },
+                            "subContentId": "450dd51c-490c-4a29-8704-4a8ee31010f6",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Terminal Python Interactiva",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Terminal Python Interactiva"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 51.19825708061002,
+                        "y": 19.365770999757927,
+                        "width": 45.751633986928105,
+                        "height": 75.52650689905592,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
+                                        "question": "<p style='font-size:1.2em;text-align:center;'>Este código tiene un error. Selecciona la solución para que el programa determine el IMC de forma correcta.</p>",
+                                        "answers": [
+                                            "<p>Cambiar la tercera línea por: imc = peso / pow(estatura, 2)</p>",
+                                            "<p>Cambiar la primera línea por: peso = int(input(\"Ingrese su peso en kg: \"))</p>",
+                                            "<p>Cambiar la última línea por print(\"Tu índice de masa corporal es:\", imc)</p>",
+                                            "<p>Cambiar la segunda línea por: estatura = float(input(\"Ingrese su estatura en centímetros: \"))</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "236d54d1-0002-4eb4-8fdb-3485d3d28c66",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 65.84362139917695,
+                        "width": 42.48366013071895,
+                        "height": 13.55603969983055,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e2/content/images/image-PfFp40vS.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1830,
+                                    "height": 320
+                                }
+                            },
+                            "subContentId": "23c2673c-8488-4871-941a-8207ea8800cf",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 58.033890099249575,
+                        "width": 22.78649237472767,
+                        "height": 6.647785039941902,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Código del programa:</p>"
+                            },
+                            "subContentId": "d4b45c32-4591-451b-883e-cc7bf41423d3",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

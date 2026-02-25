@@ -1,1 +1,334 @@
-{"title":"Terminal Python Interactiva","initialCode":"n1 = input(\"Nota 1: \")\nn2 = input(\"Nota 2: \")\nn3 = input(\"Nota 3: \")\n\nprom = (n1 + n2 + n3)/3\n\nif prom &gt;= 4:\n    estado = \"Aprobado\"\nelse:\n    estado = \"Reprobado\"\n\nprint(\"Nota final:\", prom, estado)","showLineNumbers":true,"theme":"dark","allowInput":true,"maxOutputLines":1000,"passingPercentage":70,"passingScore":7,"description":"<p>Una profesora planifica realizar tres evaluaciones en la asignatura de Programación, donde cada evaluación <br />corresponderá a un 25%, 35% y 40% de la nota final, respectivamente. El sistema debe calcular la nota final <br />e indicar que la o el estudiante aprueba, donde el criterio de aprobación es obtener un promedio ponderado mayor <br />o igual a 4.0. La docente, pide a un estudiante que escriba un programa que calcule la nota final, el estudiante <br />entrega el siguiente código:<br />    1. Ejecuta el código.<br />    2 .Responde a las siguientes preguntas:<br />        a. ¿Hay algún error? <br />        b. ¿Por qué se produce?<br />    3. Corrige el código anterior para que se consideren las ponderaciones dadas, verifique que las notas estén <br />       entre 0.0 y 7.0, y muestre la nota final con dos decimales e indique el estado (Aprobado/Reprobado).</p>"}
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 6.8731541999515855,
+                        "width": 93.68191721132898,
+                        "height": 34.04865649963689,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>En Chile, existen dos requisitos legales para tributar: el primero es haber alcanzado la mayoría de edad, que corresponde a los 18 años, y el segundo es que las personas con ingresos anuales superiores a cierto monto deben declarar renta. Para este ejercicio, asumimos que si tienes 18 años o más y tus ingresos anuales son mayores a $10.000.000 CLP, debes tributar.</p><p>Se te solicita escribir un programa que pida al usuario su edad y sus ingresos anuales, y que luego muestre si debe tributar o no.</p><p style='font-size:0.9em;'>Puede ver las alternativas de código en la Terminal Python en la sección: 💡 Cargar ejemplo</p>"
+                            },
+                            "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 36.21568627450981,
+                        "y": 43.85838779956427,
+                        "width": 22.713607594936715,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e4/content/images/image-G5aNrKle.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1914,
+                                    "height": 1896
+                                }
+                            },
+                            "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 90.01912369886226,
+                        "width": 90,
+                        "height": 85,
+                        "action": {
+                            "library": "H5P.PythonTerminal 1.1",
+                            "params": {
+                                "title": "Terminal Python Interactiva",
+                                "initialCode": "",
+                                "showLineNumbers": true,
+                                "theme": "dark",
+                                "layoutMode": "horizontal",
+                                "minTerminalHeight": 520,
+                                "consoleHeightPercent": 45,
+                                "allowInput": true,
+                                "showSubmitButton": false,
+                                "showUploadButton": false,
+                                "maxOutputLines": 1000,
+                                "passingPercentage": 70,
+                                "description": "",
+                                "examples": [
+                                    {
+                                        "name": "A",
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad &gt;= 18 and ingresos &lt; 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                    },
+                                    {
+                                        "name": "B",
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad &gt; 18 or ingresos &gt; 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                    },
+                                    {
+                                        "name": "C",
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad &gt;= 18 and ingresos &gt; 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                    },
+                                    {
+                                        "name": "D",
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif ingresos &gt;= 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                    }
+                                ]
+                            },
+                            "subContentId": "450dd51c-490c-4a29-8704-4a8ee31010f6",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Terminal Python Interactiva",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Terminal Python Interactiva"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 52.287581699346404,
+                        "y": 45.85838779956427,
+                        "width": 42.48366013071895,
+                        "height": 49.2241587993222,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
+                                        "question": "<p style='font-size:1.2em;text-align:center;'>Selecciona el único programa que cumple correctamente con esta especificación.</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>C</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>A</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>D</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "236d54d1-0002-4eb4-8fdb-3485d3d28c66",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 11.625272331154684,
+                        "y": 42.85838779956427,
+                        "width": 20.790656628333473,
+                        "height": 44.2241587993222,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e4/content/images/image-G5aNrKle.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1914,
+                                    "height": 1896
+                                }
+                            },
+                            "subContentId": "23c2673c-8488-4871-941a-8207ea8800cf",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

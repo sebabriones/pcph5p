@@ -1,1 +1,316 @@
-{"title":"Terminal Python Interactiva","initialCode":"productos = [\"pan\", \"leche\", \"pan\", \"queso\", \"jugo\", \"leche\"]\nprecios = [1000, 800, 1000, 1500, 1200, 800]\ntotal = 0\n\nfor i in range(len(productos)):\n    total = precios[i] + total\n    print(\"Producto:\", producto[i])\n\nprint(\"Total a pagar es:\", total)","showLineNumbers":true,"theme":"dark","allowInput":true,"maxOutputLines":1000,"passingPercentage":70,"passingScore":7,"description":"<p>Se necesita crear una lista semanal de compras que no tenga productos duplicados y que permita determinar el valor del gasto total para los siguientes productos: pan, leche, queso y jugo, sabiendo que el precio de ellos es $1000, $800, $1500 y $1200, respectivamente.<br />1. Ejecuta este código.<br />2. Responde las preguntas que vienen a continuación: <br />    a. ¿Obtienes una lista de compras? ¿Qué errores hay en el código respecto a lo pedido?<br />    b. ¿Cómo se puede escribir un código que ayude a solucionar estos errores? Imagina que son 1000 productos y eliminar valores repetidos uno a uno no es una opción viable.  ¿Qué podríamos hacer?<br />3. Escribe un código que permita eliminar los datos duplicados, que no se repitan precios para el cálculo del precio total y que nos muestre en pantalla la lista de productos y el precio total. <br />    a. ¿Cómo podrías adaptar tu código para que funcione con listas mucho más grandes sin perder claridad ni eficiencia? ¿Qué cambios harías si tuvieras que procesar datos de 10,000 productos?<br />    b. ¿Qué parte del código te pareció más desafiante de escribir o entender? ¿Cómo lo resolviste y qué aprendiste en el proceso?</p>"}
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 2.178649237472767,
+                        "y": 63.90704429920116,
+                        "width": 42.48366013071895,
+                        "height": 18.82717017671266,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e1/content/images/image-nhhXsJAH.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1532,
+                                    "height": 382
+                                }
+                            },
+                            "subContentId": "3aa370e1-cf8f-454c-8689-f3b34e14c55f",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 9.682885499878964,
+                        "width": 46.84095860566449,
+                        "height": 50.35100459937061,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p><span>Se necesita escribir un programa que pregunte el nombre completo del usuario en la consola y que después muestre por pantalla el nombre completo del usuario tres veces: una con todas las letras minúsculas, otra con todas las letras mayúsculas y otra solo con la primera letra del nombre y de los apellidos en mayúscula. </span></p><p><span>El usuario puede introducir su nombre combinando mayúsculas y minúsculas como quiera.</span></p><p><span>Se escribe el siguiente código:</span></p>"
+                            },
+                            "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 45.751633986928105,
+                        "y": 63.90704429920116,
+                        "width": 90.23560209424086,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e1/content/images/image-RUBx6Vi9.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1532,
+                                    "height": 382
+                                }
+                            },
+                            "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 87.20939239893488,
+                        "width": 90,
+                        "height": 85,
+                        "action": {
+                            "library": "H5P.PythonTerminal 1.1",
+                            "params": {
+                                "title": "Terminal Python Interactiva",
+                                "initialCode": "nombre = input(\"Ingrese su nombre y apellido: \")\n\nprint(f\"Cómo ingresó su nombre: {nombre}\")\nprint(nombre.lower())\nprint(nombre.upper())\nprint(nombre.capitalize())",
+                                "showLineNumbers": true,
+                                "theme": "dark",
+                                "layoutMode": "horizontal",
+                                "minTerminalHeight": 520,
+                                "consoleHeightPercent": 35,
+                                "allowInput": true,
+                                "showSubmitButton": false,
+                                "showUploadButton": false,
+                                "maxOutputLines": 1000,
+                                "passingPercentage": 70,
+                                "description": ""
+                            },
+                            "subContentId": "450dd51c-490c-4a29-8704-4a8ee31010f6",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Terminal Python Interactiva",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Terminal Python Interactiva"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 51.19825708061002,
+                        "y": 24.365770999757927,
+                        "width": 45.751633986928105,
+                        "height": 59.52650689905592,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
+                                        "question": "<p style='font-size:1.2em;text-align:center;'>¿Cuál es el problema en este código?</p>",
+                                        "answers": [
+                                            "<p>En la última entrega del nombre no se cumple que la primera letra de los apellidos esté en mayúscula.</p>",
+                                            "<p>No aparecen en el orden que se solicita en las instrucciones las variantes del nombre.</p>",
+                                            "<p>Entrega nombre y apellido sin espacio entre ellos.</p>",
+                                            "<p>No lee un nombre si se entrega separado por espacio del apellido.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "236d54d1-0002-4eb4-8fdb-3485d3d28c66",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}

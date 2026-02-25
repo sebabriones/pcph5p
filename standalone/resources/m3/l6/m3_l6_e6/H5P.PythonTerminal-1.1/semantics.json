@@ -100,6 +100,47 @@
     "default": "dark"
   },
   {
+    "name": "layoutMode",
+    "type": "select",
+    "label": "Distribución Editor/Consola",
+    "importance": "medium",
+    "optional": true,
+    "options": [
+      {
+        "value": "horizontal",
+        "label": "Horizontal (lado a lado)"
+      },
+      {
+        "value": "vertical",
+        "label": "Vertical (arriba/abajo)"
+      }
+    ],
+    "default": "horizontal",
+    "description": "Define cómo se muestran el editor y la consola. El modo responsivo no cambiará automáticamente esta orientación."
+  },
+  {
+    "name": "minTerminalHeight",
+    "type": "number",
+    "label": "Altura mínima de la terminal (px)",
+    "importance": "medium",
+    "optional": true,
+    "default": 520,
+    "min": 280,
+    "max": 1400,
+    "description": "Altura mínima visual de la terminal cuando se muestra fuera de CoursePresentation."
+  },
+  {
+    "name": "consoleHeightPercent",
+    "type": "number",
+    "label": "Altura de la consola en modo vertical (%)",
+    "importance": "medium",
+    "optional": true,
+    "default": 45,
+    "min": 25,
+    "max": 75,
+    "description": "Porcentaje de altura que ocupa la consola cuando la distribución es vertical."
+  },
+  {
     "name": "allowInput",
     "type": "boolean",
     "label": "Permitir entrada de usuario (input)",
@@ -107,6 +148,24 @@
     "default": true,
     "optional": true,
     "description": "Permite que el código use input() para solicitar datos al usuario"
+  },
+  {
+    "name": "showSubmitButton",
+    "type": "boolean",
+    "label": "Mostrar botón Enviar",
+    "importance": "medium",
+    "default": true,
+    "optional": true,
+    "description": "Muestra el botón 'Enviar' que envía el código al LRS para evaluación"
+  },
+  {
+    "name": "showUploadButton",
+    "type": "boolean",
+    "label": "Mostrar botón Cargar archivos",
+    "importance": "medium",
+    "default": true,
+    "optional": true,
+    "description": "Muestra el botón 'Cargar archivo(s)' para subir archivos al entorno Python"
   },
   {
     "name": "maxOutputLines",

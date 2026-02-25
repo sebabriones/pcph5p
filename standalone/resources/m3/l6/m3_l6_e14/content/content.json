@@ -1,0 +1,361 @@
+{
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091507,
+                        "y": 8.746308399903171,
+                        "width": 48.19825708061002,
+                        "height": 24.365770999757927,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Una empresa de transporte necesita registrar los viajes solicitados por los usuarios. Se te solicita escribir este programa, el que más adelante será una aplicación móvil. El programa inicial solo muestra una lista fija de destinos:</p>"
+                            },
+                            "subContentId": "0fa6538d-d070-4cf5-9a58-a6f6358c39de",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 52.446623093681917,
+                        "y": 13.1120793996611,
+                        "width": 41.394335511982575,
+                        "height": 19.078305495037522,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e14/content/images/image-0hJ5COns.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1944,
+                                    "height": 504
+                                }
+                            },
+                            "subContentId": "f9851643-0158-4bca-aab0-d14d1749d876",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 94.930283224400874,
+                        "y": 14.1120793996611,
+                        "width": 86.78571428571429,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e14/content/images/image-n9OZLPoA.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1944,
+                                    "height": 504
+                                }
+                            },
+                            "subContentId": "da449f8a-38d8-4396-953f-4419c36cd8dd",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091507,
+                        "y": 33.35100459937061,
+                        "width": 50.19825708061002,
+                        "height": 52.731541999515855,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Ahora se pide una versión mejorada del programa con los siguientes requisitos:</p><ul><li>Permitir que el usuario ingrese destinos uno por uno hasta escribir “fin”.</li><li>Usar una función que muestre la lista ordenada alfabéticamente.</li><li>Usar un condicional para mostrar un mensaje de “poca demanda” si es que hay 2 o menos destinos registrados.</li></ul><p style='font-size:0.9em;'>Puede ver las alternativas de código en la Terminal Python en la sección: 💡 Cargar ejemplo</p>"
+                            },
+                            "subContentId": "2315fca2-7ea7-40c4-8989-5bb360f28829",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 89.01912369886226,
+                        "width": 90,
+                        "height": 85,
+                        "action": {
+                            "library": "H5P.PythonTerminal 1.1",
+                            "params": {
+                                "title": "Terminal Python Interactiva",
+                                "initialCode": "",
+                                "showLineNumbers": true,
+                                "theme": "dark",
+                                "layoutMode": "horizontal",
+                                "minTerminalHeight": 520,
+                                "consoleHeightPercent": 45,
+                                "allowInput": true,
+                                "showSubmitButton": false,
+                                "showUploadButton": false,
+                                "maxOutputLines": 1000,
+                                "passingPercentage": 70,
+                                "examples": [
+                                    {
+                                        "name": "A",
+                                        "code": "def mostrar_destinos(destinos):\n    print(\"Destinos registrados en la aplicación:\")\n    for destino in destinos:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\"\n        break\n    destinos.append(destino)\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
+                                    },
+                                    {
+                                        "name": "B",
+                                        "code": "destinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\"\n        break\n    destinos.append(destino)\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    destinos.sort()\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos:\n        print(\"-\", destino)\n    print(\"Número total de destinos: \", len(destinos))"
+                                    },
+                                    {
+                                        "name": "C",
+                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = [\"Centro\", \"Hospital\", \"Universidad\"]\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
+                                    },
+                                    {
+                                        "name": "D",
+                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\"\n        break\n    destinos.append(destino)\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
+                                    }
+                                ],
+                                "description": ""
+                            },
+                            "subContentId": "0bc25596-194f-4ff3-b1f8-7795bf04abc1",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Terminal Python Interactiva",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Terminal Python Interactiva"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 56.64488017429194,
+                        "y": 39.238925199709513,
+                        "width": 39.99869281045751,
+                        "height": 55.033890099249575,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "086bfb33-6e1d-49ab-ba45-0ace0e7ea83e",
+                                        "question": "<p style='font-size:1.2em;text-align:center;'>Selecciona la alternativa que corresponde a una versión mejorada correcta del programa.</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>D</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>A</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>C</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "1bff6160-d0dd-4e4a-8ad6-ade56637e809",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
+    },
+    "override": {
+        "activeSurface": true,
+        "hideSummarySlide": true,
+        "summarySlideSolutionButton": true,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "on"
+    },
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
+    }
+}
