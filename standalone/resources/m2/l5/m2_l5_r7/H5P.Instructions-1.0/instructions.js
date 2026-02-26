@@ -1,57 +1,117 @@
-jQuery(document).ready(()=>{
-    const instructions = `Una nueva tienda online, que recientemente comenzó a operar, ha identificado que algunos pedidos se envían incompletos o con productos equivocados. Esto ocurre porque los trabajadores son nuevos y no tienen experiencia en procesos de embalaje y verificación. El <strong>objetivo</strong> es establecer un procedimiento claro y ordenado para <strong>preparar correctamente un pedido</strong>, de modo que cualquier empleado pueda aplicarlo sin ambigüedades.<br><br>
-                          A continuación, se presentan acciones posibles que forman parte del procedimiento, pero NO están en orden.<br><br>
-                          Ordena las acciones de manera lógica y precisa, de modo que el procedimiento pueda ejecutarse siempre de la misma forma y conduzca al mismo resultado, sin depender de quien lo implemente.
+jQuery(document).ready(() => {
+  const instructions = `Una nueva tienda online, que recientemente comenzó a operar, ha identificado que algunos pedidos se envían incompletos o con productos equivocados. Esto ocurre porque los trabajadores son nuevos y no tienen experiencia en procesos de embalaje y verificación. El <strong>objetivo</strong> es establecer un procedimiento claro y ordenado para <strong>preparar correctamente un pedido</strong>, de modo que cualquier empleado pueda aplicarlo sin ambigüedades.<br><br>
+                        A continuación, se presentan acciones posibles que forman parte del procedimiento, pero NO están en orden.<br><br>
+                        Ordena las acciones de manera lógica y precisa, de modo que el procedimiento pueda ejecutarse siempre de la misma forma y conduzca al mismo resultado, sin depender de quien lo implemente.
                         `;
 
-    /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
-    $('body').prepend(`<div class="intro">
-                            <div class="text-content">
-                                <div class="intro-text">${instructions}</div>
-                                <a class="intro-btn">Comenzar</a>
-                            </div>
-                        </div>`);
+  /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
+  $('body').prepend(`<div class="intro">
+                        <div class="text-content">
+                          <div class="intro-text">${instructions}</div>
+                          <a class="intro-btn">Comenzar</a>
+                        </div>
+                      </div>`);
 
-    $('.intro-btn').on('click',(e)=>{
-        $('.intro').animate({
-                marginTop:`-${$('.h5p-container').outerHeight()}px`,
-        }, 1000);
-
-        setTimeout(() => {
-            $('.intro').css({'display':'none'});
-        }, 1000);
-    });
-
-    /////////////////////////PESTAÑA CON INSTRUCCIONES PARA H5P/////////////////////////////
-
-    $('.h5p-content').prepend(`<div class="custom-instructions">
-                                    <div class="tab-container">
-                                        <div id="tab" class="tab">
-                                            <div class="tab-content">
-                                                <div class="instructions-text">${instructions}</div>
-                                            </div>
-                                            <a class="instructions-btn" href="">Instrucciones</a>
-                                        </div>
-                                    </div>
-                                </div>`);
-
-    $('.instructions-btn').on('click',(e)=>{
-        e.preventDefault();
-
-        if(parseInt($('.custom-instructions').css('margin-top').split("px")[0]) == 0){
-            $('.custom-instructions').animate({
-                marginTop:`-${$('.tab-content').outerHeight()}px`,
-            }, 1000);
-        }else if(parseInt($('.custom-instructions').css('margin-top').split("px")[0]) < 0){
-            $('.custom-instructions').animate({
-                marginTop:'0',
-            }, 1000);
-        }
-    });
+  $('.intro-btn').on('click', () => {
+    $('.intro').animate(
+      {
+        marginTop: `-${$('.h5p-container').outerHeight()}px`,
+      },
+      1000
+    );
 
     setTimeout(() => {
-        $('.custom-instructions').animate({
-            marginTop:`-${$('.tab-content').outerHeight()}px`,
-        }, 1000);
-    }, 500);
+      $('.intro').css({ display: 'none' });
+    }, 1000);
+  });
+
+  /////////////////////////PESTAÑA CON INSTRUCCIONES PARA H5P/////////////////////////////
+  $('.h5p-content').prepend(`<div class="custom-instructions">
+                                <div class="tab-container">
+                                  <div id="tab" class="tab">
+                                    <div class="tab-content">
+                                      <div class="instructions-text">${instructions}</div>
+                                    </div>
+                                    <a class="instructions-btn" href="">Instrucciones</a>
+                                  </div>
+                                </div>
+                              </div>`);
+
+  const $instructions = $('.custom-instructions').first();
+  if (!$instructions.length) {
+    return;
+  }
+  const BASE_WIDTH = 900;
+  const MIN_SCALE = 0.45;
+  const MAX_SCALE = 1;
+
+  const getClosedOffset = () => {
+    const $button = $instructions.find('.instructions-btn').first();
+    const buttonPosition = $button.position();
+    const top = (buttonPosition && buttonPosition.top) || 0;
+    return -top;
+  };
+
+  const isClosed = () => parseFloat($instructions.css('margin-top')) < 0;
+
+  const updateInstructionsScale = () => {
+    const $container = $instructions
+      .closest('.h5p-content')
+      .find('.h5p-container')
+      .first();
+    const containerWidth = $container.outerWidth() || BASE_WIDTH;
+    const scale = Math.max(
+      MIN_SCALE,
+      Math.min(MAX_SCALE, containerWidth / BASE_WIDTH)
+    );
+    $instructions.css('--ins-scale', scale.toFixed(4));
+
+    if (isClosed()) {
+      $instructions.css('margin-top', `${getClosedOffset()}px`);
+    }
+  };
+
+  $('.instructions-btn').on('click', (e) => {
+    e.preventDefault();
+
+    if (parseFloat($instructions.css('margin-top')) === 0) {
+      $instructions.animate(
+        {
+          marginTop: `${getClosedOffset()}px`,
+        },
+        1000
+      );
+    } else {
+      $instructions.animate(
+        {
+          marginTop: '0',
+        },
+        1000
+      );
+    }
+  });
+
+  setTimeout(() => {
+    updateInstructionsScale();
+    $instructions.animate(
+      {
+        marginTop: `${getClosedOffset()}px`,
+      },
+      1000
+    );
+  }, 500);
+
+  $(window).on('resize', updateInstructionsScale);
+
+  if (window.ResizeObserver) {
+    const observer = new ResizeObserver(updateInstructionsScale);
+    const containerNode = $instructions
+      .closest('.h5p-content')
+      .find('.h5p-container')
+      .get(0);
+
+    if (containerNode) {
+      observer.observe(containerNode);
+    }
+  }
 });

@@ -1,52 +1,114 @@
-jQuery(document).ready(()=>{
-    /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
-    $('body').prepend(`<div class="intro">
-                            <div class="text-content">
-                                <div class="intro-text">La empresa analiza el comportamiento de sus usuarios/as para entender cuándo se incrementa la cancelación de suscripciones. Tras revisar datos históricos, formula la siguiente regla general:<br><br>“Cuando se reduce la cantidad de contenido nuevo disponible, aumenta la tasa de cancelación de suscripciones.”<br><br>Ahora se quiere evaluar si esta regla se aplica correctamente a distintos escenarios.<br><br>Arrastra cada situación al recuadro que corresponda, según si cumple o no con la regla general planteada. Analiza cada caso considerando la relación entre cantidad de contenido nuevo y cancelaciones, no detalles superficiales.</div>
-                                <a class="intro-btn">Comenzar</a>
-                            </div>
-                        </div>`);
+jQuery(document).ready(() => {
+  const instructions = `La empresa analiza el comportamiento de sus usuarios/as para entender cuándo se incrementa la cancelación de suscripciones. Tras revisar datos históricos, formula la siguiente regla general:<br><br>“Cuando se reduce la cantidad de contenido nuevo disponible, aumenta la tasa de cancelación de suscripciones.”<br><br>Ahora se quiere evaluar si esta regla se aplica correctamente a distintos escenarios.<br><br>Arrastra cada situación al recuadro que corresponda, según si cumple o no con la regla general planteada. Analiza cada caso considerando la relación entre cantidad de contenido nuevo y cancelaciones, no detalles superficiales.`;
 
-    $('.intro-btn').on('click',(e)=>{
-        $('.intro').animate({
-                marginTop:`-${$('.h5p-container').outerHeight()}px`,
-        }, 1000);
+  /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
+  $('body').prepend(`<div class="intro">
+                        <div class="text-content">
+                          <div class="intro-text">${instructions}</div>
+                          <a class="intro-btn">Comenzar</a>
+                        </div>
+                      </div>`);
 
-        setTimeout(() => {
-            $('.intro').css({'display':'none'});
-        }, 1000);
-    });
-
-    /////////////////////////PESTAÑA CON INSTRUCCIONES PARA H5P/////////////////////////////
-
-    $('.h5p-content').prepend(`<div class="custom-instructions">
-                                    <div class="tab-container">
-                                        <div id="tab" class="tab">
-                                            <div class="tab-content">
-                                                <div class="instructions-text">La empresa analiza el comportamiento de sus usuarios/as para entender cuándo se incrementa la cancelación de suscripciones. Tras revisar datos históricos, formula la siguiente regla general:<br><br>“Cuando se reduce la cantidad de contenido nuevo disponible, aumenta la tasa de cancelación de suscripciones.”<br><br>Ahora se quiere evaluar si esta regla se aplica correctamente a distintos escenarios.<br><br>Arrastra cada situación al recuadro que corresponda, según si cumple o no con la regla general planteada. Analiza cada caso considerando la relación entre cantidad de contenido nuevo y cancelaciones, no detalles superficiales.</div>
-                                            </div>
-                                            <a class="instructions-btn" href="">Instrucciones</a>
-                                        </div>
-                                    </div>
-                                </div>`);
-
-    $('.instructions-btn').on('click',(e)=>{
-        e.preventDefault();
-
-        if(parseInt($('.custom-instructions').css('margin-top').split("px")[0]) == 0){
-            $('.custom-instructions').animate({
-                marginTop:`-${$('.tab-content').outerHeight()}px`,
-            }, 1000);
-        }else if(parseInt($('.custom-instructions').css('margin-top').split("px")[0]) < 0){
-            $('.custom-instructions').animate({
-                marginTop:'0',
-            }, 1000);
-        }
-    });
+  $('.intro-btn').on('click', () => {
+    $('.intro').animate(
+      {
+        marginTop: `-${$('.h5p-container').outerHeight()}px`,
+      },
+      1000
+    );
 
     setTimeout(() => {
-        $('.custom-instructions').animate({
-            marginTop:`-${$('.tab-content').outerHeight()}px`,
-        }, 1000);
-    }, 500);
+      $('.intro').css({ display: 'none' });
+    }, 1000);
+  });
+
+  /////////////////////////PESTAÑA CON INSTRUCCIONES PARA H5P/////////////////////////////
+  $('.h5p-content').prepend(`<div class="custom-instructions">
+                                <div class="tab-container">
+                                  <div id="tab" class="tab">
+                                    <div class="tab-content">
+                                      <div class="instructions-text">${instructions}</div>
+                                    </div>
+                                    <a class="instructions-btn" href="">Instrucciones</a>
+                                  </div>
+                                </div>
+                              </div>`);
+
+  const $instructions = $('.custom-instructions').first();
+  if (!$instructions.length) {
+    return;
+  }
+  const BASE_WIDTH = 900;
+  const MIN_SCALE = 0.45;
+  const MAX_SCALE = 1;
+
+  const getClosedOffset = () => {
+    const $button = $instructions.find('.instructions-btn').first();
+    const buttonPosition = $button.position();
+    const top = (buttonPosition && buttonPosition.top) || 0;
+    return -top;
+  };
+
+  const isClosed = () => parseFloat($instructions.css('margin-top')) < 0;
+
+  const updateInstructionsScale = () => {
+    const $container = $instructions
+      .closest('.h5p-content')
+      .find('.h5p-container')
+      .first();
+    const containerWidth = $container.outerWidth() || BASE_WIDTH;
+    const scale = Math.max(
+      MIN_SCALE,
+      Math.min(MAX_SCALE, containerWidth / BASE_WIDTH)
+    );
+    $instructions.css('--ins-scale', scale.toFixed(4));
+
+    if (isClosed()) {
+      $instructions.css('margin-top', `${getClosedOffset()}px`);
+    }
+  };
+
+  $('.instructions-btn').on('click', (e) => {
+    e.preventDefault();
+
+    if (parseFloat($instructions.css('margin-top')) === 0) {
+      $instructions.animate(
+        {
+          marginTop: `${getClosedOffset()}px`,
+        },
+        1000
+      );
+    } else {
+      $instructions.animate(
+        {
+          marginTop: '0',
+        },
+        1000
+      );
+    }
+  });
+
+  setTimeout(() => {
+    updateInstructionsScale();
+    $instructions.animate(
+      {
+        marginTop: `${getClosedOffset()}px`,
+      },
+      1000
+    );
+  }, 500);
+
+  $(window).on('resize', updateInstructionsScale);
+
+  if (window.ResizeObserver) {
+    const observer = new ResizeObserver(updateInstructionsScale);
+    const containerNode = $instructions
+      .closest('.h5p-content')
+      .find('.h5p-container')
+      .get(0);
+
+    if (containerNode) {
+      observer.observe(containerNode);
+    }
+  }
 });

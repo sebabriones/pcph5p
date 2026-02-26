@@ -59,30 +59,35 @@ a {
 }
 
 .custom-instructions {
+  --ins-scale: 1;
   position: absolute;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: calc(100% / var(--ins-scale));
+  transform: scale(var(--ins-scale));
+  transform-origin: top left;
+  z-index: 900;
 }
 
 .tab-container {
     position: relative;
 } 
 
+.tab {
+    position: relative;
+}
+
 .tab>a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*text-align: center;*/
     position: absolute;
-    /*width: calc(var(--tabs-width));*/
-    /*height: calc(var(--tabs-height) + var(--tabs-border-size));*/
-    left: 10px; /* posición de cada pestaña */
-    width: 12vw;
-    height: 40px;
-    font-size: 1.5vw;
-    /*background-color: var(--tabs-dark-color);*/
+    top: 100%;
+    left: 8px; /* posicion de cada pestana */
+    width: 132px;
+    height: 34px;
+    font-size: 13px;
     background: linear-gradient(180deg, #cf601a 10%, #e92f06 90%);
-    /*padding: 10px;*/
-    /*padding: 0.5em 0;*/
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 0 0 10px 10px;
     border-top: 0;
@@ -95,24 +100,46 @@ a {
 
 .instructions-text{
     word-break: break-word;
-    padding: 15px 0;
-    font-size: 1.5vw;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 1.25;
     /* Agregar scroll vertical para instrucciones largas */
     max-height: 60vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
+/* Estilos para el scrollbar personalizado en la ventana intro */
+.intro-text::-webkit-scrollbar,
+.instructions-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.intro-text::-webkit-scrollbar-track,
+.instructions-text::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.intro-text::-webkit-scrollbar-thumb,
+.instructions-text::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.intro-text::-webkit-scrollbar-thumb:hover,
+.instructions-text::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/***********************************************************/
+
 .tab-content {
     background-color: var(--tabs-lite-color); 
-    padding: 10px 20px;
+    padding: 8px 14px;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
-    /*border-radius: 0 0 10px 0;*/
     border-radius: 0;
     position: relative;
     z-index: 100;
-    /*display: grid;
-    grid-template-columns: 11fr 1fr;*/
 }
 
 .tab:target>a, .tab:last-of-type>a {
@@ -121,28 +148,6 @@ a {
 }
   
 .tab:target ~ .tab:last-of-type>a {
-    background-color: var(--tabs-dark-color); 
+    background-color: var(--tabs-lite-color); 
     z-index: 0; 
-}
-
-@media (max-height: 600px) {
-    .tab > a {
-        height: 30px;
-        left: 8px; /* posición de cada pestaña */
-    }
-}
-
-@media (max-height: 450px) {
-    .tab > a {
-        font-size: 1.2vw;
-        height: 25px;
-        left: 5px; /* posición de cada pestaña */
-    }
-}
-
-@media (max-height: 300px) {
-    .tab > a {
-        font-size: 1.2vw;
-        height: 20px;
-    }
 }
