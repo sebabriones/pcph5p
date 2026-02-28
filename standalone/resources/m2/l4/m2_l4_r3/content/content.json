@@ -48,7 +48,7 @@
                                 "width": 280,
                                 "height": 340
                             },
-                            "title": "Texto 1-1",
+                            "title": "<ul><li>Buscar posibles causas de lentitud del computador</li><li>Evaluar cuáles se pueden resolver sin gastar dinero</li><li>Seleccionar una o dos acciones principales (limpiar programas innecesarios y ordenar el escritorio)</li></ul>",
                             "alt": "Definir acciones de mejora"
                         },
                         "subContentId": "c8f90f3a-19a7-4b42-8d55-f330298a3128",
@@ -90,7 +90,7 @@
                                 "width": 280,
                                 "height": 340
                             },
-                            "title": "Texto 2-1",
+                            "title": "<ul><li>Analizar cómo se usa el computador normalmente</li><li>Identificar programas que no se utilizan</li><li>Definir qué programas se cerrarán o desinstalarán</li></ul>",
                             "alt": "Diseño del plan de optimización"
                         },
                         "subContentId": "f9feb23d-7652-4017-9b12-d427f8a628b9",
@@ -132,7 +132,7 @@
                                 "width": 280,
                                 "height": 340
                             },
-                            "title": "Texto 3-1",
+                            "title": "<ul><li>Desinstalar software que no se usa</li><li>Ordenar archivos y liberar espacio en el disco</li><li>Reiniciar el computador para aplicar los cambios</li></ul>",
                             "alt": "Implementar las mejoras"
                         },
                         "subContentId": "d70cc14b-de85-43a8-95fc-1fa2b3f48be8",
@@ -174,7 +174,7 @@
                                 "width": 280,
                                 "height": 340
                             },
-                            "title": "Texto 4-1",
+                            "title": "<ul><li>Observar si el computador enciende más rápido</li><li>Probar si los programas se abren con mayor fluidez</li><li>Evaluar si ahora es posible estudiar sin interrupciones</li><li>Decidir si es necesario repetir o ajustar alguna acción</li></ul>",
                             "alt": "Evaluar los resultados"
                         },
                         "subContentId": "6ee93bba-c606-45c2-bcee-5fea17f943df",
