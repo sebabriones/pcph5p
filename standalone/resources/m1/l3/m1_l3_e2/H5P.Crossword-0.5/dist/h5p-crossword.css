@@ -639,3 +639,24 @@
         margin-right: 1em
     }
 }
+
+/* Forzar layout horizontal en pantallas pequeñas */
+@media screen and (max-width: 46.25em) {
+    .h5p-crossword .h5p-crossword-content {
+        flex-direction: row !important
+    }
+
+    .h5p-crossword .h5p-crossword-table-wrapper {
+        width: 60% !important;
+        margin-right: 1em
+    }
+
+    .h5p-crossword .h5p-crossword-input-container {
+        width: 40% !important
+    }
+
+    .h5p-crossword .h5p-crossword-input-fields-group,
+    .h5p-crossword .h5p-crossword-input-container .h5p-crossword-input-fields-group:first-child {
+        margin-top: 0 !important
+    }
+}

@@ -1,0 +1,77 @@
+{
+  "semantics": [
+    {
+      "label": "Título de la Terminal",
+      "description": "Título que se mostrará en la parte superior"
+    },
+    {
+      "label": "Instrucciones"
+    },
+    {
+      "label": "Código Pre-cargado",
+      "description": "Código Python que se ejecutará automáticamente al iniciar"
+    },
+    {
+      "label": "Código Inicial en Editor",
+      "description": "Código que aparecerá en el editor (no se ejecuta automáticamente)"
+    },
+    {
+      "label": "Ejemplos de Código",
+      "entity": "ejemplo",
+      "field": {
+        "fields": [
+          {
+            "label": "Nombre del ejemplo"
+          },
+          {
+            "label": "Código del ejemplo"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Mostrar números de línea"
+    },
+    {
+      "label": "Tema de color"
+    },
+    {
+      "label": "Distribución Editor/Consola",
+      "description": "Define cómo se muestran el editor y la consola. El modo responsivo no cambiará automáticamente esta orientación."
+    },
+    {
+      "label": "Altura mínima de la terminal (px)",
+      "description": "Altura mínima visual de la terminal cuando se muestra fuera de CoursePresentation."
+    },
+    {
+      "label": "Altura de la consola en modo vertical (%)",
+      "description": "Porcentaje de altura que ocupa la consola cuando la distribución es vertical."
+    },
+    {
+      "label": "Permitir entrada de usuario",
+      "description": "Permite que el código use input() para solicitar datos al usuario"
+    },
+    {
+      "label": "Mostrar botón Enviar",
+      "description": "Muestra el botón 'Enviar' que envía el código al LRS para evaluación"
+    },
+    {
+      "label": "Mostrar botón Cargar archivos",
+      "description": "Muestra el botón 'Cargar archivo(s)' para subir archivos al entorno Python"
+    },
+    {
+      "label": "Máximo de líneas en salida",
+      "description": "Número máximo de líneas a mostrar en la consola"
+    },
+    {
+      "label": "Porcentaje para aprobar",
+      "description": "Porcentaje mínimo requerido para aprobar (0-100)"
+    },
+    {
+      "label": "Puntaje",
+      "description": "Puntaje máximo (se usa como maxScore en xAPI)"
+    }
+  ]
+}
+
+

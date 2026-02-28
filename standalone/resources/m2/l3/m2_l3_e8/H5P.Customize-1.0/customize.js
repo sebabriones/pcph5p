@@ -100,7 +100,7 @@ jQuery(document).ready(()=>{
         });
 
         $('iframe').contents().on('click', (e) => {
-            console.log('click');
+            //console.log('click');
             if (!inputsWrapper[i].contains(e.target)) {
                 optionsList[i].classList.add('hidden');
             }

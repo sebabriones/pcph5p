@@ -52,6 +52,9 @@ H5P.Blockly = (function ($, Question) {
     
     // Variables de juego
     this.workspace = null;
+    this._workspaceResizeObserver = null;
+    this._workspaceResizeHandler = null;
+    this._workspaceChangeListener = null;
     this.canvas = null;
     this.ctx = null;
     this.isRunning = false;
@@ -175,16 +178,17 @@ H5P.Blockly = (function ($, Question) {
     
     // Cargar Blockly desde CDN
     this.loadBlockly().then(function() {
-      self.loadImages().then(function() {
-        self.initMaze();
-        self.initBlockly();
-        self.attachEvents();
-        
-        // Mostrar ayuda al inicio
-        setTimeout(function() {
-          self.showHelp();
-        }, 500);
-      });
+      // Modo sin imágenes: usar renderizado nativo por canvas/CSS
+      self.images.loaded = false;
+
+      self.initMaze();
+      self.initBlockly();
+      self.attachEvents();
+      
+      // Mostrar ayuda al inicio
+      setTimeout(function() {
+        self.showHelp();
+      }, 500);
     });
   };
   
@@ -206,20 +210,28 @@ H5P.Blockly = (function ($, Question) {
         'https://unpkg.com/blockly@11.0.0/blockly.min.js',
         'https://unpkg.com/blockly@11.0.0/javascript_compressed.js'
       ];
-      
-      var loadedCount = 0;
-      scripts.forEach(function(src) {
+
+      var loadScriptAt = function(index) {
+        if (index >= scripts.length) {
+          self.javascriptGenerator = Blockly.JavaScript;
+          resolve();
+          return;
+        }
+
         var script = document.createElement('script');
-        script.src = src;
+        script.src = scripts[index];
+        script.async = false; // Mantener orden de evaluación entre scripts dependientes
         script.onload = function() {
-          loadedCount++;
-          if (loadedCount === scripts.length) {
-            self.javascriptGenerator = Blockly.JavaScript;
-            resolve();
-          }
+          loadScriptAt(index + 1);
+        };
+        script.onerror = function() {
+          console.error('No se pudo cargar script:', scripts[index]);
+          loadScriptAt(index + 1);
         };
         document.head.appendChild(script);
-      });
+      };
+
+      loadScriptAt(0);
     });
   };
   
@@ -229,18 +241,16 @@ H5P.Blockly = (function ($, Question) {
   C.prototype.loadImages = function() {
     var self = this;
     return new Promise(function(resolve) {
-      var basePath = H5P.getPath('images', self.contentId) || 'images/';
-      
       var imagesToLoad = [
-        { key: 'idle', src: basePath + 'idle.png' },
-        { key: 'frontJump', src: basePath + 'front_jump.png' },
-        { key: 'backJump', src: basePath + 'back_jump.png' },
-        { key: 'rightJump', src: basePath + 'right_jump.png' },
-        { key: 'leftJump', src: basePath + 'left_jump.png' },
-        { key: 'turn', src: basePath + 'turn.png' },
-        { key: 'bg', src: basePath + 'level1.png' },
-        { key: 'success', src: basePath + 'success.png' },
-        { key: 'fail', src: basePath + 'fail.png' }
+        { key: 'idle', src: H5P.getPath('images/idle.png', self.contentId) || 'images/idle.png' },
+        { key: 'frontJump', src: H5P.getPath('images/front_jump.png', self.contentId) || 'images/front_jump.png' },
+        { key: 'backJump', src: H5P.getPath('images/back_jump.png', self.contentId) || 'images/back_jump.png' },
+        { key: 'rightJump', src: H5P.getPath('images/right_jump.png', self.contentId) || 'images/right_jump.png' },
+        { key: 'leftJump', src: H5P.getPath('images/left_jump.png', self.contentId) || 'images/left_jump.png' },
+        { key: 'turn', src: H5P.getPath('images/turn.png', self.contentId) || 'images/turn.png' },
+        { key: 'bg', src: H5P.getPath('images/level1.png', self.contentId) || 'images/level1.png' },
+        { key: 'success', src: H5P.getPath('images/success.png', self.contentId) || 'images/success.png' },
+        { key: 'fail', src: H5P.getPath('images/fail.png', self.contentId) || 'images/fail.png' }
       ];
       
       var loadedCount = 0;
@@ -360,8 +370,113 @@ H5P.Blockly = (function ($, Question) {
       toolbox: {
         kind: 'flyoutToolbox',
         contents: toolboxContents
+      },
+      zoom: {
+        controls: false,
+        wheel: false,
+        pinch: false,
+        startScale: 1,
+        minScale: 0.6,
+        maxScale: 1,
+        scaleSpeed: 1.1
+      },
+      move: {
+        scrollbars: true,
+        drag: true,
+        wheel: false
       }
     });
+
+    this.setupWorkspaceResize();
+  };
+
+  /**
+   * Sincronizar tamaño del workspace cuando cambia el contenedor
+   */
+  C.prototype.setupWorkspaceResize = function() {
+    var self = this;
+    var workspaceElement = this.$container.find('.h5p-blockly-workspace')[0];
+
+    if (!workspaceElement || !this.workspace || typeof Blockly === 'undefined') {
+      return;
+    }
+
+    var resizeWorkspace = function() {
+      if (!self.workspace) {
+        return;
+      }
+
+      var baseWidth = 500;
+      var currentWidth = workspaceElement.clientWidth || baseWidth;
+      var targetScale = Math.max(0.6, Math.min(1, (currentWidth / baseWidth) * 0.9));
+
+      if (typeof self.workspace.setScale === 'function') {
+        self.workspace.setScale(targetScale);
+      }
+
+      var flyout = typeof self.workspace.getFlyout === 'function' ? self.workspace.getFlyout() : null;
+      if (flyout && flyout.workspace_ && typeof flyout.workspace_.setScale === 'function') {
+        flyout.workspace_.setScale(targetScale);
+        if (typeof flyout.reflow === 'function') {
+          flyout.reflow();
+        }
+      }
+
+      Blockly.svgResize(self.workspace);
+      self.updateWorkspaceScrollbarVisibility();
+    };
+
+    this._workspaceResizeHandler = resizeWorkspace;
+    this._workspaceChangeListener = function() {
+      self.updateWorkspaceScrollbarVisibility();
+    };
+
+    setTimeout(resizeWorkspace, 0);
+    window.addEventListener('resize', resizeWorkspace);
+    this.workspace.addChangeListener(this._workspaceChangeListener);
+
+    if (window.ResizeObserver) {
+      this._workspaceResizeObserver = new ResizeObserver(resizeWorkspace);
+      this._workspaceResizeObserver.observe(workspaceElement);
+    }
+  };
+
+  /**
+   * Mostrar barras de scroll solo cuando hay desborde real
+   */
+  C.prototype.updateWorkspaceScrollbarVisibility = function() {
+    if (!this.workspace || !this.$container) {
+      return;
+    }
+
+    var metrics = null;
+    if (typeof this.workspace.getMetrics === 'function') {
+      metrics = this.workspace.getMetrics();
+    }
+
+    if (!metrics && this.workspace.metricsManager_ && typeof this.workspace.metricsManager_.getMetrics === 'function') {
+      metrics = this.workspace.metricsManager_.getMetrics();
+    }
+
+    if (!metrics) {
+      return;
+    }
+
+    var viewWidth = metrics.viewWidth || (metrics.viewMetrics && metrics.viewMetrics.width) || 0;
+    var viewHeight = metrics.viewHeight || (metrics.viewMetrics && metrics.viewMetrics.height) || 0;
+    var contentWidth = metrics.contentWidth || (metrics.contentMetrics && metrics.contentMetrics.width) || 0;
+    var contentHeight = metrics.contentHeight || (metrics.contentMetrics && metrics.contentMetrics.height) || 0;
+
+    var hasHorizontalOverflow = (contentWidth - viewWidth) > 1;
+    var hasVerticalOverflow = (contentHeight - viewHeight) > 1;
+
+    this.$container
+      .find('.blocklyScrollbarHorizontal.blocklyMainWorkspaceScrollbar')
+      .css('display', hasHorizontalOverflow ? '' : 'none');
+
+    this.$container
+      .find('.blocklyScrollbarVertical.blocklyMainWorkspaceScrollbar')
+      .css('display', hasVerticalOverflow ? '' : 'none');
   };
   
   /**
@@ -590,6 +705,7 @@ H5P.Blockly = (function ($, Question) {
     this.playerPosition = { x: this.startPosition.x, y: this.startPosition.y };
     this.currentDirection = parseInt(this.options.initialDirection);
     this.result = this.MAZE_CONFIG.resultType.UNSET;
+    this.score = 0;
     this.drawScene();
     
     var code = this.javascriptGenerator.workspaceToCode(this.workspace);
@@ -607,6 +723,10 @@ H5P.Blockly = (function ($, Question) {
       var executeStep = function(index) {
         if (index >= lines.length || self.result !== self.MAZE_CONFIG.resultType.UNSET) {
           self.checkResult();
+          self.triggerXAPIAnswered(
+            self.getAttemptResponse(lines),
+            self.result === self.MAZE_CONFIG.resultType.SUCCESS
+          );
           self.showResult();
           self.$container.find('.h5p-blockly-progress-bar').removeClass('active');
           self.$container.find('.h5p-blockly-btn-start').first().prop('disabled', false);
@@ -643,13 +763,36 @@ H5P.Blockly = (function ($, Question) {
       if (this.MAZE_CONFIG.map[i][j] === this.MAZE_CONFIG.pathType.FINISH) {
         this.result = this.MAZE_CONFIG.resultType.SUCCESS;
         this.score = 1;
-        // Disparar evento xAPI de completado
-        this.triggerXAPICompleted(this.score, this.maxScore);
       } else {
         this.result = this.MAZE_CONFIG.resultType.FAILURE;
         this.score = 0;
       }
     }
+  };
+
+  /**
+   * Construir respuesta xAPI con los pasos/bloques del intento
+   * @param {string[]} lines
+   * @returns {string}
+   */
+  C.prototype.getAttemptResponse = function(lines) {
+    if (!Array.isArray(lines) || !lines.length) {
+      return '(sin bloques)';
+    }
+
+    return lines.join(' | ');
+  };
+
+  /**
+   * Disparar xAPI answered al finalizar cada intento
+   * @param {string} response
+   * @param {boolean} success
+   */
+  C.prototype.triggerXAPIAnswered = function(response, success) {
+    var xAPIEvent = this.createXAPIEventTemplate('answered');
+    xAPIEvent.setScoredResult(this.score, this.maxScore, this, true, success);
+    xAPIEvent.data.statement.result.response = response;
+    this.trigger(xAPIEvent);
   };
   
   /**
@@ -755,6 +898,33 @@ H5P.Blockly = (function ($, Question) {
     
     // Habilitar botón de inicio
     this.$container.find('.h5p-blockly-btn-start').first().prop('disabled', false);
+  };
+
+  /**
+   * Liberar listeners/observadores del workspace
+   */
+  C.prototype.cleanupWorkspaceResize = function() {
+    if (this._workspaceResizeObserver) {
+      this._workspaceResizeObserver.disconnect();
+      this._workspaceResizeObserver = null;
+    }
+
+    if (this._workspaceResizeHandler) {
+      window.removeEventListener('resize', this._workspaceResizeHandler);
+      this._workspaceResizeHandler = null;
+    }
+
+    if (this.workspace && this._workspaceChangeListener) {
+      this.workspace.removeChangeListener(this._workspaceChangeListener);
+      this._workspaceChangeListener = null;
+    }
+  };
+
+  /**
+   * Limpieza al destruir instancia H5P
+   */
+  C.prototype.remove = function() {
+    this.cleanupWorkspaceResize();
   };
 
   /**

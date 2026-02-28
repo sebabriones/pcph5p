@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Identifica a qué área de la sociedad actual corresponde el uso de la computación que se describe en cada una de las siguientes sentencias y arrastra el área al recuadro correspondiente.`;
+  const instructions = `Identifica a qué área de la sociedad actual corresponde el uso de la computación que se describe en cada una de las siguientes sentencias seleccionándolas en sus respectivos selectores.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

@@ -117,8 +117,8 @@
 }
 
 .h5p-question-content {
-  margin: 1em;
-  padding: 6em 1em 2em 2em; /*nuevo*/
+  padding-top: 4%; /*nuevo*/
+  padding-bottom: 1%; /*nuevo*/
 }
 
 /*nuevo*/

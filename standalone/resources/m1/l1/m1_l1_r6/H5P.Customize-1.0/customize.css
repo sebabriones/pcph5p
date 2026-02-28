@@ -1,6 +1,7 @@
 /*Estilos Nuevos Selects*/
 .h5p-input-wrapper {
     vertical-align: bottom;
+    position: relative;
 }
 
 .original-select {
@@ -17,7 +18,7 @@
     /*max-width: calc(100vw - 36px);*/
     height: 1.3em;
     margin: 0 !important;
-    font-size: 14px;
+    font-size: 0.9em;
     display: flex;
 }
 
@@ -27,26 +28,31 @@
 }
 
 .custom-select-icon {
+    color: #062971;
 }
 
-.correct .custom-select-display .custom-select-icon,
-.error .custom-select-display .custom-select-icon {
+.custom-select-display.option-selected .custom-select-icon {
+    color: #fff;
+}
+
+.h5p-correct .custom-select-display .custom-select-icon,
+.h5p-wrong .custom-select-display .custom-select-icon {
     /*display: none;*/
     visibility: hidden;
 }
 
-.correct .custom-select-display {
+.h5p-correct .custom-select-display {
     background: linear-gradient(180deg, #8bae54 0%, #456f06 90%);
     color: #fff;
 }
 
-.error .custom-select-display {
+.h5p-wrong .custom-select-display {
     background: linear-gradient(180deg, #870202 0%, #3c0505 90%);
     color: #fff;
 }
 
-.correct .h5p-input-wrapper:after,
-.error .h5p-input-wrapper:after {
+.h5p-correct:after,
+.h5p-wrong:after {
     color: #fff !important;
 }
 
@@ -75,6 +81,14 @@
     width: 100%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 1000;
+    max-height: 14em;
+    overflow-y: auto;
+}
+
+.custom-options.open-up {
+    top: auto;
+    bottom: calc(100% + 4px);
+    margin: 0 0 5px 0;
 }
 
 .custom-options.hidden {
@@ -109,4 +123,47 @@
 .custom-options li.selected {
     background-color: #062971;
     color: #fff;
+}
+
+/*Estilos boton Terminar*/
+.finish-btn-container {
+    width: 99%;
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+.finish-btn {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'H5PDroidSans';
+    background-color: #026ec3;
+    color: #fff;
+    position: relative;
+    padding: 0.5em 1.25em;
+    border-radius: 2em;
+    border: 3px solid #026ec3;
+    box-shadow: none;
+    font-size: 0.6em;
+}
+
+.finish-btn:hover {
+    background-color: #c9621b;
+}
+
+.finish-btn::before {
+    font-family: 'H5PFontAwesome4';
+    content: "\f058";
+    padding-right: 0.5em;
+}
+
+/*Otro*/
+.h5p-advancedtext-outer-element p {
+    /*padding: 0;*/
+    line-height: 150%;
+}
+
+.h5p-question-check-answer {
+    float: right;
+    margin: 0;
+    font-size: 0.7em;
 }
