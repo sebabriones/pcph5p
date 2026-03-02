@@ -1784,6 +1784,8 @@ var Draggable = /*#__PURE__*/function (_H5P$EventDispatcher) {
             self.addToDropZone(index, element, addToZone);
           } else {
             element.reset();
+            // Force visual sync after clearing dropZone.
+            self.updatePlacement(element);
           }
         }
       }).css('position', '');

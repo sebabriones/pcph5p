@@ -7,7 +7,7 @@
                         "x": 15,
                         "y": 0,
                         "width": 70,
-                        "height": 99.99677234719216,
+                        "height": 105.99677234719216,
                         "action": {
                             "library": "H5P.DragQuestion 1.14",
                             "params": {
@@ -187,7 +187,7 @@
                                     "applyPenalties": true,
                                     "enableScoreExplanation": false,
                                     "dropZoneHighlighting": "dragging",
-                                    "autoAlignSpacing": 2,
+                                    "autoAlignSpacing": 4,
                                     "enableFullScreen": false,
                                     "showScorePoints": false,
                                     "showTitle": false

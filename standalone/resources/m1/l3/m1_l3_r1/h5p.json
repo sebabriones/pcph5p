@@ -10,7 +10,7 @@
     "mainLibrary": "H5P.DragShuffle",
     "preloadedDependencies": [
         {
-            "machineName": "H5P.Customize",
+            "machineName": "H5P.Instructions",
             "majorVersion": 1,
             "minorVersion": 0
         },

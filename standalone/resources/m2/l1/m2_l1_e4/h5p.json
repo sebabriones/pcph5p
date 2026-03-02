@@ -53,11 +53,6 @@
             "machineName": "H5P.DragShuffle",
             "majorVersion": 1,
             "minorVersion": 0
-        },
-        {
-            "machineName": "H5P.Customize",
-            "majorVersion": 1,
-            "minorVersion": 0
         }
     ]
 }

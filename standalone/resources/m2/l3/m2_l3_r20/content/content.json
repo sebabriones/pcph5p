@@ -123,7 +123,7 @@
                         "x": 15,
                         "y": 0,
                         "width": 70,
-                        "height": 99.99677234719216,
+                        "height": 105.99677234719216,
                         "action": {
                             "library": "H5P.DragShuffle 1.0",
                             "params": {

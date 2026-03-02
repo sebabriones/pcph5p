@@ -589,7 +589,7 @@
     "randomQuestions": false,
     "endGame": {
         "showResultPage": true,
-        "showSolutionButton": true,
+        "showSolutionButton": false,
         "showRetryButton": true,
         "noResultMessage": "Terminado",
         "message": "Tu resultado:",

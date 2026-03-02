@@ -1,6 +1,6 @@
 {
-    "title": "Leccion 3 - Ejercicio 1",
-    "extraTitle": "Leccion 3 - Ejercicio 1",
+    "title": "Módulo 1 - Lección 2 - Refuerzo 1",
+    "extraTitle": "Módulo 1 - Lección 2 - Refuerzo 1",
     "language": "es",
     "mainLibrary": "H5P.DragShuffle",
     "license": "U",
@@ -11,11 +11,6 @@
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
-            "majorVersion": 1,
-            "minorVersion": 0
-        },
-        {
-            "machineName": "H5P.Customize",
             "majorVersion": 1,
             "minorVersion": 0
         },
@@ -65,11 +60,6 @@
             "minorVersion": 2
         },
         {
-            "machineName": "H5PEditor.Wizard",
-            "majorVersion": 1,
-            "minorVersion": 2
-        },
-        {
             "machineName": "H5P.DragNBar",
             "majorVersion": 1,
             "minorVersion": 5
@@ -83,11 +73,6 @@
             "machineName": "H5P.Image",
             "majorVersion": 1,
             "minorVersion": 1
-        },
-        {
-            "machineName": "H5PEditor.TableList",
-            "majorVersion": 1,
-            "minorVersion": 0
         }
     ]
 }

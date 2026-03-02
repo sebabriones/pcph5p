@@ -40,7 +40,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p><span style=\"color:#000000\">Identificación del problema</span></p>"
+                            "text": "<p>Identificación del problema</p>"
                         },
                         "subContentId": "31606c8b-da96-451c-bc81-6d008ee99aa6",
                         "metadata": {
@@ -104,7 +104,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p><span style=\"color:#000000\">Definición del problema</span></p>"
+                            "text": "<p>Definición del problema</p>"
                         },
                         "subContentId": "fabde663-f427-4394-90a1-68358632756e",
                         "metadata": {
@@ -136,7 +136,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p><span style=\"color:#000000\">Generación de ideas</span></p>"
+                            "text": "<p>Generación de ideas</p>"
                         },
                         "subContentId": "4081e9c5-620a-418b-b5ab-2d7e184c0817",
                         "metadata": {
@@ -168,7 +168,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p><span style=\"color:#000000\">Evaluación y selección</span></p>"
+                            "text": "<p>Evaluación y selección</p>"
                         },
                         "subContentId": "1dbfc755-40a3-4285-a605-b1ce73af993f",
                         "metadata": {
