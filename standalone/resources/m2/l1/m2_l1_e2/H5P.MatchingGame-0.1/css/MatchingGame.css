@@ -1,22 +1,25 @@
+.h5p-matching-game {
+    padding: 1em;
+}
+
 .matching-game-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;  /* Centra las columnas verticalmente */
     position: relative; /* Contenedor para posicionar el SVG */
-    padding-bottom: 1em;
 }
 
-/*.column {
+.column {
     width: 45%;
-}*/
+}
 
 .item {
-    padding: 1em;
-    margin: 0.2em 0;
+    padding: 15px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     cursor: pointer;
     background-color: #f9f9f9;
     transition: all 0.2s;
-    font-size: 1em;
 }
 
 /* Estilos de interacción */
@@ -24,13 +27,9 @@
     background-color: #eef;
 }
 
-.item .item-content {
-    line-height: 1.2em;
-}
-
-/*.item.selected {
+.item.selected {
     background-color: #007bff;
-}*/
+}
 
 .item.correct {
     background-color: #d4edda;
@@ -43,8 +42,8 @@
     cursor: default;
 }
 
-/* Estilo del SVG para las líneas */
-#lines-svg {
+/* Estilo del SVG para las líneas - Cambiado de #lines-svg a .lines-svg */
+.lines-svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,19 +61,7 @@
 /*nuevo*/
 .h5p-container {
     background-color: #f8feef !important;
-    padding: 2.5em 1em 0.5em 1em;
     font-size: 1em;
-}
-
-.h5p-content {
-    background-color: #f8feef !important;
-}
-
-.left-column,
-.right-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .left-column {

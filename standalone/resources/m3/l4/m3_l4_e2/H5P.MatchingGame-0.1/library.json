@@ -12,6 +12,9 @@
       "majorVersion": 1,
       "minorVersion": 24
     },
+    "embedTypes": [
+        "iframe"
+    ],
     "preloadedJs": [
       { "path": "js/MatchingGame.js" }
     ],

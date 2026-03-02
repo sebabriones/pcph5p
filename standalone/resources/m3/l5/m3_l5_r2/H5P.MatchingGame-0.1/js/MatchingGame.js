@@ -16,13 +16,36 @@ H5P.MatchingGame = (function ($, Question) {
                 enableRetry: true,
                 enableSolutionButton: false,
                 enableScoreText: false
+            },
+            l10n: {
+                checkAnswerButtonLabel: "Comprobar",
+                showSolutionButtonLabel: "Mostrar solución",
+                retryButtonLabel: "Intentar de nuevo"
             }
-        }, options);
-
-        self.options.pairs.forEach((pair, i)=>{
-            pair.idAns = `${i}-1`;
-            pair.idDef = `${i}-2`;
-        });
+        }, options || {});
+        
+        // Validar que pairs exista y sea un array
+        if (!Array.isArray(self.options.pairs)) {
+            self.options.pairs = [];
+        }
+        
+        // Si no hay pairs, agregar uno por defecto
+        if (self.options.pairs.length === 0) {
+            self.options.pairs = [
+                {answer: "Aquí va la respuesta", definition: "Aquí va la definición"}
+            ];
+        }
+        
+        // Validar pairs antes de procesarlos
+        if (Array.isArray(self.options.pairs) && self.options.pairs.length > 0) {
+            self.options.pairs.forEach((pair, i)=>{
+                pair.idAns = `${i}-1`;
+                pair.idDef = `${i}-2`;
+            });
+        }
+        
+        //Flag para indicar si estamos mostrando la solución
+        self.showingSolution = false;
         
         //Se inicializa la estructura de la actividad
         self.initGame();
@@ -50,12 +73,18 @@ H5P.MatchingGame = (function ($, Question) {
         
         // Registrar los botones de acción (Check, Retry, etc.)
         self.registerButtons();
-
-        //Disparamos un resize inicial al final, cuando todo el DOM está listo.
-        //Esto asegura que las líneas y el tamaño de la fuente se calculen correctamente al cargar.
-        setTimeout(function(){
+        
+        // Disparar resize inicial después de que el DOM esté completamente renderizado
+        // Usar requestAnimationFrame para asegurar que los botones estén en el DOM
+        requestAnimationFrame(function() {
+            // Primer resize para calcular líneas y tamaño de fuente
             self.trigger('resize');
-        }, 100);
+            
+            // Segundo resize después de un pequeño delay para asegurar que los botones estén completamente renderizados
+            setTimeout(function() {
+                self.trigger('resize');
+            }, 200);
+        });
     };
     
     //Esta función crea el DOM del juego, pero NO lo añade a la página.
@@ -99,6 +128,7 @@ H5P.MatchingGame = (function ($, Question) {
         self.matchesId = [];
         self.matchesName = [];
         self.status = false;
+        self.showingSolution = false;  // Resetear flag de solución
         self.definitions = [...self.options.pairs].sort(() => Math.random() - 0.5);
         
         // Reiniciar la UI si ya fue creada
@@ -161,6 +191,34 @@ H5P.MatchingGame = (function ($, Question) {
         }, false);
     };
 
+    /**
+     * Resetea la tarea cuando CoursePresentation llama desde la diapositiva de resumen
+     * Este método es requerido por H5P.Question para que el contenedor padre pueda resetear
+     * el contenido embebido cuando se hace clic en "intentar de nuevo" en el resumen
+     */
+    MatchingGame.prototype.resetTask = function () {
+        let self = this;
+        
+        // Resetear el juego usando el método existente
+        self.initGame();
+        
+        // Restaurar botones al estado inicial
+        self.showButton('check-answer');
+        self.hideButton('show-solution');
+        self.hideButton('try-again');
+        
+        // Limpiar feedback si existe
+        self.removeFeedback();
+        
+        // Resetear el estado de evaluación
+        self.status = false;
+        
+        // Limpiar clases de correcto/incorrecto de los elementos
+        if (self.$gameWrapper) {
+            self.$gameWrapper.find('.item').removeClass('correct incorrect matched');
+        }
+    };
+
     //Lógica del juego
     MatchingGame.prototype.handleSelection = function(clickedItem) {
         let self = this;
@@ -218,9 +276,8 @@ H5P.MatchingGame = (function ($, Question) {
         let svg = this.$gameWrapper.find('.lines-svg')[0];
         if (!svg) return;
         
-        // Calcula la posición en relación al SVG (para simplificar)
+        // Calcula la posición en relación al contenedor
         const containerRect = svg.parentElement.getBoundingClientRect();
-        const svgRect = svg.getBoundingClientRect();
 
         const r1 = el1.getBoundingClientRect();
         const r2 = el2.getBoundingClientRect();
@@ -229,20 +286,20 @@ H5P.MatchingGame = (function ($, Question) {
 
         //Dibuja la línea dependiendo de cual es el primer elemento clickeado
         if(el1.parentNode.classList.contains('left-column')){
-            // Coordenadas de inicio (Centro de la derecha del el1)
-            x1 = r1.left - containerRect.left;
+            // Coordenadas de inicio (Centro vertical del lado derecho del el1)
+            x1 = r1.right - containerRect.left;  // Borde derecho del elemento izquierdo
             y1 = r1.top + r1.height / 2 - containerRect.top;
 
-            // Coordenadas de fin (Centro de la izquierda del el2)
-            x2 = svgRect.width;
+            // Coordenadas de fin (Centro vertical del lado izquierdo del el2)
+            x2 = r2.left - containerRect.left;  // Borde izquierdo del elemento derecho
             y2 = r2.top + r2.height / 2 - containerRect.top;
         }else{
-            // Coordenadas de inicio (Centro de la izquierda del el1)
-            x1 = svgRect.width;
+            // Coordenadas de inicio (Centro vertical del lado izquierdo del el1 - columna derecha)
+            x1 = r1.left - containerRect.left;  // Borde izquierdo del elemento derecho
             y1 = r1.top + r1.height / 2 - containerRect.top;
 
-            // Coordenadas de fin (Centro de la derecha del el2)
-            x2 = r2.left - containerRect.left;
+            // Coordenadas de fin (Centro vertical del lado derecho del el2 - columna izquierda)
+            x2 = r2.right - containerRect.left;  // Borde derecho del elemento izquierdo
             y2 = r2.top + r2.height / 2 - containerRect.top;
         }
 
@@ -260,19 +317,39 @@ H5P.MatchingGame = (function ($, Question) {
     //Entrega la respuesta al clickear "Mostrar solución"
     MatchingGame.prototype.showSolutions = function () {
         var self = this;
+        
+        // Activar flag de modo solución
+        self.showingSolution = true;
+        
         // Limpiar líneas existentes y clases visuales
         self.$gameWrapper.find('.lines-svg').empty();
         self.$gameWrapper.find('.item').removeClass('selected matched');
 
-        // Dibujar todas las conexiones correctas
-        self.options.pairs.forEach(function(pair) {
-            var el1 = self.$gameWrapper.find('.term[data-name="' + pair.answer + '"]')[0];
-            var el2 = self.$gameWrapper.find('.definition[data-name="' + pair.answer + '"]')[0];
-            if (el1 && el2) {
-                self.drawConnection(el1, el2);
-                //$(el1).addClass('matched');
-                //$(el2).addClass('matched');
-            }
+        // Usar requestAnimationFrame para asegurar que el layout esté completo
+        requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+                // Asegurar que el SVG tenga el tamaño correcto
+                let svg = self.$gameWrapper.find('.lines-svg')[0];
+                if (svg && svg.parentElement) {
+                    const containerRect = svg.parentElement.getBoundingClientRect();
+                    svg.setAttribute('width', containerRect.width);
+                    svg.setAttribute('height', containerRect.height);
+                }
+                
+                // Dibujar todas las conexiones correctas
+                self.options.pairs.forEach(function(pair) {
+                    var el1 = self.$gameWrapper.find('.term[data-name="' + pair.answer + '"]')[0];
+                    var el2 = self.$gameWrapper.find('.definition[data-name="' + pair.answer + '"]')[0];
+                    if (el1 && el2) {
+                        // Verificar que los elementos tengan dimensiones válidas
+                        const r1 = el1.getBoundingClientRect();
+                        const r2 = el2.getBoundingClientRect();
+                        if (r1.width > 0 && r1.height > 0 && r2.width > 0 && r2.height > 0) {
+                            self.drawConnection(el1, el2);
+                        }
+                    }
+                });
+            });
         });
         
         // Deshabilitar más clics
@@ -287,13 +364,50 @@ H5P.MatchingGame = (function ($, Question) {
 
         // Limpiar el SVG
         svg.empty();
+        
+        // Asegurar que el SVG tenga el tamaño correcto antes de redibujar
+        let svgElement = svg[0];
+        if (svgElement && svgElement.parentElement) {
+            const containerRect = svgElement.parentElement.getBoundingClientRect();
+            if (containerRect.width > 0 && containerRect.height > 0) {
+                svgElement.setAttribute('width', containerRect.width);
+                svgElement.setAttribute('height', containerRect.height);
+            }
+        }
 
-        // Volver a dibujar cada línea guardada
+        // Si estamos en modo solución, dibujar las líneas correctas
+        if (self.showingSolution) {
+            requestAnimationFrame(function() {
+                self.options.pairs.forEach(function(pair) {
+                    var el1 = self.$gameWrapper.find('.term[data-name="' + pair.answer + '"]')[0];
+                    var el2 = self.$gameWrapper.find('.definition[data-name="' + pair.answer + '"]')[0];
+                    if (el1 && el2) {
+                        // Verificar que los elementos tengan dimensiones válidas
+                        const r1 = el1.getBoundingClientRect();
+                        const r2 = el2.getBoundingClientRect();
+                        if (r1.width > 0 && r1.height > 0 && r2.width > 0 && r2.height > 0) {
+                            self.drawConnection(el1, el2);
+                        }
+                    }
+                });
+            });
+            return;  // Salir temprano, no redibujar las líneas del usuario
+        }
+
+        // Volver a dibujar cada línea guardada del usuario
         if (self.matchesId && self.matchesId.length) {
-            self.matchesId.forEach(match => {
-                const el1 = self.$gameWrapper.find(`div[data-id="${match[0]}"]`)[0];
-                const el2 = self.$gameWrapper.find(`div[data-id="${match[1]}"]`)[0];
-                self.drawConnection(el1, el2);
+            requestAnimationFrame(function() {
+                self.matchesId.forEach(match => {
+                    const el1 = self.$gameWrapper.find(`div[data-id="${match[0]}"]`)[0];
+                    const el2 = self.$gameWrapper.find(`div[data-id="${match[1]}"]`)[0];
+                    if (el1 && el2) {
+                        const r1 = el1.getBoundingClientRect();
+                        const r2 = el2.getBoundingClientRect();
+                        if (r1.width > 0 && r1.height > 0 && r2.width > 0 && r2.height > 0) {
+                            self.drawConnection(el1, el2);
+                        }
+                    }
+                });
             });
         }
     };

@@ -93,7 +93,9 @@
             }
         ],
         "keywordListEnabled": true,
-        "globalBackgroundSelector": {},
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
+        },
         "keywordListAlwaysShow": false,
         "keywordListAutoHide": false,
         "keywordListOpacity": 90

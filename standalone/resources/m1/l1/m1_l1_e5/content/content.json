@@ -43,6 +43,45 @@
                         "solution": ""
                     },
                     {
+                        "x": 51.21568627450981,
+                        "y": 70.85838779956427,
+                        "width": 22.713607594936715,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m1/l1/m1_l1_e5/content/images/image-DuHF8ZJR.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1914,
+                                    "height": 1896
+                                }
+                            },
+                            "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
                         "x": 0,
                         "y": 40.66811909949165,
                         "width": 100,
@@ -74,7 +113,7 @@
                                 "inputHasTipLabel": "Pista disponible",
                                 "tipLabel": "Pista",
                                 "behaviour": {
-                                    "enableRetry": false,
+                                    "enableRetry": true,
                                     "enableSolutionsButton": false,
                                     "enableCheckButton": true,
                                     "autoCheck": false,
@@ -165,10 +204,10 @@
         "keywordListOpacity": 90
     },
     "override": {
-        "activeSurface": false,
-        "hideSummarySlide": false,
+        "activeSurface": true,
+        "hideSummarySlide": true,
         "summarySlideSolutionButton": false,
-        "summarySlideRetryButton": true,
+        "summarySlideRetryButton": false,
         "enablePrintButton": false,
         "social": {
             "showFacebookShare": false,
