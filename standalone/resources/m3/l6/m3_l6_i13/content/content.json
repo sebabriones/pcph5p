@@ -43,7 +43,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e13/content/images/image-CZWcLubj.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i13/content/images/image-CZWcLubj.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -78,7 +78,7 @@
                             "library": "H5P.PythonTerminal 1.1",
                             "params": {
                                 "title": "Terminal Python Interactiva",
-                                "initialCode": "semana = 1\nahorro = 1000\n\nwhile semana &lt; 4:\n    print(\"Semana \", semana,\" - Ahorro acumulado: \", ahorro * semana)\n    semana += 1",
+                                "initialCode": "semana = 1\nahorro = 1000\n\nwhile semana < 4:\n    print(\"Semana \", semana,\" - Ahorro acumulado: \", ahorro * semana)\n    semana += 1",
                                 "showLineNumbers": true,
                                 "theme": "dark",
                                 "layoutMode": "horizontal",
@@ -122,7 +122,7 @@
                                         "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
                                         "question": "<p style='font-size:1.2em;text-align:center;'>¿Cuál es la mejor alternativa para solucionar el problema?</p>",
                                         "answers": [
-                                            "<p>Cambiar la condición del bucle a <strong>while semana &lt;= 4</strong> para incluir la semana 4.</p>",
+                                            "<p>Cambiar la condición del bucle a <strong>while semana <= 4</strong> para incluir la semana 4.</p>",
                                             "<p>Cambiar la variable <strong>ahorro</strong> a <strong>0</strong> para que el cálculo sea correcto.</p>",
                                             "<p>Usar un <strong>bucle for</strong> en lugar de while, pero manteniendo la condición <strong>range(1,4)</strong>.</p>",
                                             "<p>Reemplazar el incremento <strong>semana += 1</strong> por <strong>semana =+ 1</strong>.</p>"
@@ -199,7 +199,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e13/content/images/image-LAAG1JJI.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i13/content/images/image-LAAG1JJI.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"

@@ -43,7 +43,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e12/content/images/image-SrVVZnDT.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i12/content/images/image-SrVVZnDT.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -83,7 +83,7 @@
                                 "theme": "dark",
                                 "layoutMode": "horizontal",
                                 "minTerminalHeight": 520,
-                                "consoleHeightPercent": 45,
+                                "consoleHeightPercent": 35,
                                 "allowInput": true,
                                 "showSubmitButton": false,
                                 "showUploadButton": false,
@@ -199,7 +199,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e12/content/images/image-VsLWmmJF.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i12/content/images/image-VsLWmmJF.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"

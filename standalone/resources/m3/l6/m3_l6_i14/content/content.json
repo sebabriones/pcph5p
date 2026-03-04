@@ -43,7 +43,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e14/content/images/image-0hJ5COns.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i14/content/images/image-0hJ5COns.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -82,7 +82,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e14/content/images/image-n9OZLPoA.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i14/content/images/image-n9OZLPoA.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -149,7 +149,7 @@
                                 "theme": "dark",
                                 "layoutMode": "horizontal",
                                 "minTerminalHeight": 520,
-                                "consoleHeightPercent": 45,
+                                "consoleHeightPercent": 35,
                                 "allowInput": true,
                                 "showSubmitButton": false,
                                 "showUploadButton": false,
@@ -158,19 +158,19 @@
                                 "examples": [
                                     {
                                         "name": "A",
-                                        "code": "def mostrar_destinos(destinos):\n    print(\"Destinos registrados en la aplicación:\")\n    for destino in destinos:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\"\n        break\n    destinos.append(destino)\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
+                                        "code": "def mostrar_destinos(destinos):\n    print(\"Destinos registrados en la aplicación:\")\n    for destino in destinos:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\":\n        break\n    destinos.append(destino)\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
                                     },
                                     {
                                         "name": "B",
-                                        "code": "destinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\"\n        break\n    destinos.append(destino)\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    destinos.sort()\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos:\n        print(\"-\", destino)\n    print(\"Número total de destinos: \", len(destinos))"
+                                        "code": "destinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\":\n        break\n    destinos.append(destino)\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    destinos.sort()\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos:\n        print(\"-\", destino)\n    print(\"Número total de destinos: \", len(destinos))"
                                     },
                                     {
                                         "name": "C",
-                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = [\"Centro\", \"Hospital\", \"Universidad\"]\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
+                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = [\"Centro\", \"Hospital\", \"Universidad\"]\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
                                     },
                                     {
                                         "name": "D",
-                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\"\n        break\n    destinos.append(destino)\n\nif len(destinos) &lt;= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
+                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\":\n        break\n    destinos.append(destino)\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
                                     }
                                 ],
                                 "description": ""

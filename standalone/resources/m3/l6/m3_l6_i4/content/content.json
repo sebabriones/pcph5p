@@ -43,7 +43,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e4/content/images/image-G5aNrKle.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i4/content/images/image-G5aNrKle.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -83,7 +83,7 @@
                                 "theme": "dark",
                                 "layoutMode": "horizontal",
                                 "minTerminalHeight": 520,
-                                "consoleHeightPercent": 45,
+                                "consoleHeightPercent": 35,
                                 "allowInput": true,
                                 "showSubmitButton": false,
                                 "showUploadButton": false,
@@ -93,19 +93,19 @@
                                 "examples": [
                                     {
                                         "name": "A",
-                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad &gt;= 18 and ingresos &lt; 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad >= 18 and ingresos < 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
                                     },
                                     {
                                         "name": "B",
-                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad &gt; 18 or ingresos &gt; 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad > 18 or ingresos > 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
                                     },
                                     {
                                         "name": "C",
-                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad &gt;= 18 and ingresos &gt; 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif edad >= 18 and ingresos > 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
                                     },
                                     {
                                         "name": "D",
-                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif ingresos &gt;= 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
+                                        "code": "edad = int(input(\"Ingrese su edad: \"))\ningresos = float(input(\"Ingrese sus ingresos anuales: \"))\n\nif ingresos >= 10000000:\n    print(\"Debe tributar\")\nelse:\n    print(\"No debe tributar\")"
                                     }
                                 ]
                             },
@@ -131,7 +131,7 @@
                         "x": 52.287581699346404,
                         "y": 45.85838779956427,
                         "width": 42.48366013071895,
-                        "height": 49.2241587993222,
+                        "height": 52.2241587993222,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -217,7 +217,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e4/content/images/image-G5aNrKle.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i4/content/images/image-G5aNrKle.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"

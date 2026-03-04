@@ -129,6 +129,23 @@ H5P.PythonTerminal = (function ($, Question) {
 
     // Cargar Pyodide
     self.loadPyodide();
+
+    // Recalcular/focalizar Ace cuando el contenido se hace visible
+    // (por ejemplo, al abrirse en modal dentro de CoursePresentation).
+    self.on('resize', function () {
+      if (self.aceEditor && self.$codeEditorElement && self.$codeEditorElement.offsetParent !== null) {
+        [0, 80, 180].forEach(function (delay) {
+          setTimeout(function () {
+            try {
+              self.aceEditor.resize();
+              self.aceEditor.focus();
+            } catch (e) {
+              // noop
+            }
+          }, delay);
+        });
+      }
+    });
   };
 
   /**
@@ -251,7 +268,7 @@ H5P.PythonTerminal = (function ($, Question) {
         if (idx !== '') {
           var example = self.params.examples[idx];
           if (self.aceEditor) {
-            self.aceEditor.setValue(example.code, -1);
+            self.aceEditor.setValue(self.decodeHTMLEntities(example.code || ''), -1);
           }
           $(this).val('');
         }
@@ -372,7 +389,7 @@ H5P.PythonTerminal = (function ($, Question) {
         self.aceEditor = ace.edit(self.$codeEditorElement);
         self.aceEditor.setTheme('ace/theme/xcode');
         self.aceEditor.session.setMode('ace/mode/python');
-        self.aceEditor.setValue(self.params.initialCode, -1);
+        self.aceEditor.setValue(self.decodeHTMLEntities(self.params.initialCode || ''), -1);
         
         // Configuraciones del editor
         self.aceEditor.setOptions({
@@ -405,6 +422,25 @@ H5P.PythonTerminal = (function ($, Question) {
         }
         
         self.aceEditor.focus();
+        setTimeout(function () {
+          try {
+            self.aceEditor.resize();
+            self.aceEditor.focus();
+          } catch (e) {
+            // noop
+          }
+        }, 120);
+
+        // Recuperar foco de Ace tras interacción en modal/popup.
+        $(self.$codeEditorElement).on('mousedown touchstart click', function () {
+          setTimeout(function () {
+            try {
+              self.aceEditor.focus();
+            } catch (e) {
+              // noop
+            }
+          }, 0);
+        });
       } catch (error) {
         console.error('Error al configurar Ace Editor:', error);
       }
@@ -613,7 +649,7 @@ H5P.PythonTerminal = (function ($, Question) {
             '    _input_captures.append({"prompt": str(prompt_msg), "value": value})\n' +
             '    return value\n'
           );
-          console.log('[PythonTerminal] AST transformer e inline input configurados correctamente');
+          //console.log('[PythonTerminal] AST transformer e inline input configurados correctamente');
         } catch (e) {
           console.warn('No se pudo configurar input inline:', e);
         }
@@ -622,7 +658,7 @@ H5P.PythonTerminal = (function ($, Question) {
       // Ejecutar código pre-cargado si existe
       if (self.params.preloadedCode) {
         self.addOutput('⚙️ Ejecutando código de inicialización...', 'info');
-        await self.runPythonCode(self.params.preloadedCode, false); // No enviar xAPI en código de inicialización
+        await self.runPythonCode(self.decodeHTMLEntities(self.params.preloadedCode), false); // No enviar xAPI en código de inicialización
       }
       
     }).catch(function(error) {
@@ -1156,6 +1192,31 @@ H5P.PythonTerminal = (function ($, Question) {
   };
 
   /**
+   * Limpiar el namespace de usuario para evitar arrastre
+   * de variables entre ejecuciones.
+   */
+  PythonTerminal.prototype.resetPythonNamespace = function() {
+    const self = this;
+
+    if (!self.pyodide || !self.pyodideReady) {
+      return;
+    }
+
+    try {
+      self.pyodide.runPython(
+        "for _name in list(globals().keys()):\n" +
+        "    if _name.startswith('__'):\n" +
+        "        continue\n" +
+        "    if _name in ('_ast', '_func_to_async', '_node_has_await', '_AIT', '_transform_input', '_input_captures'):\n" +
+        "        continue\n" +
+        "    del globals()[_name]\n"
+      );
+    } catch (e) {
+      console.warn('[PythonTerminal] No se pudo limpiar el namespace:', e.message || e);
+    }
+  };
+
+  /**
    * Ejecutar código Python usando Pyodide
    */
   PythonTerminal.prototype.runPythonCode = async function(code, sendXAPI) {
@@ -1174,6 +1235,9 @@ H5P.PythonTerminal = (function ($, Question) {
     if (!self.capturedInputs) {
       self.capturedInputs = [];
     }
+
+    // Evita que variables de ejecuciones anteriores afecten el resultado actual.
+    self.resetPythonNamespace();
     
     // Cargar paquetes necesarios antes de ejecutar
     await self.loadRequiredPackages(code);
@@ -1190,7 +1254,7 @@ H5P.PythonTerminal = (function ($, Question) {
           if (transformedStr && transformedStr !== 'None' && transformedStr.length > 0) {
             codeToExecute = transformedStr;
             usingAsyncInput = true;
-            console.log('[PythonTerminal] Código transformado para inline input:', codeToExecute);
+            //console.log('[PythonTerminal] Código transformado para inline input:', codeToExecute);
           }
         }
       } catch (e) {
@@ -1217,10 +1281,16 @@ H5P.PythonTerminal = (function ($, Question) {
       
     } catch (error) {
       console.warn('[PythonTerminal] Error en ejecución:', error.message || error);
-      if (usingAsyncInput && error.message &&
-          (error.message.indexOf('SyntaxError') !== -1 || error.message.indexOf('await') !== -1 ||
-           error.message.indexOf('async') !== -1 || error.message.indexOf('EOFError') !== -1)) {
-        console.log('[PythonTerminal] Reintentando con código original (fallback stdin)...');
+      var errorMessage = (error && error.message) ? error.message : '';
+      var shouldFallbackToStdin = usingAsyncInput && (
+        errorMessage.indexOf('SyntaxError') !== -1 ||
+        errorMessage.indexOf('EOFError') !== -1 ||
+        errorMessage.indexOf("'await' outside") !== -1 ||
+        errorMessage.indexOf('cannot use await') !== -1 ||
+        errorMessage.indexOf('await expression') !== -1
+      );
+      if (shouldFallbackToStdin) {
+        //console.log('[PythonTerminal] Reintentando con código original (fallback stdin)...');
         self.$output.find('.inline-input-container').remove();
         self.capturedInputs = [];
         try { self.pyodide.runPython('_input_captures = []'); } catch(e2) {}
@@ -3008,7 +3078,7 @@ H5P.PythonTerminal = (function ($, Question) {
     
     // Limpiar el editor
     if (self.aceEditor) {
-      self.aceEditor.setValue(self.params.initialCode, -1);
+      self.aceEditor.setValue(self.decodeHTMLEntities(self.params.initialCode || ''), -1);
     }
     
     // Limpiar consola

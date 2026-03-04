@@ -43,7 +43,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e3/content/images/image-ydKMTAWv.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i3/content/images/image-ydKMTAWv.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -93,19 +93,19 @@
                                 "examples": [
                                     {
                                         "name": "A",
-                                        "code": "contraseña_guardada = \"contraseña\"\ncontraseña_ingresada = input(\"Ingrese la contraseña: \")\n\nif contraseña_ingresada == contraseña_guardada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
+                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \")\n\nif contraseña_ingresada == contraseña_guardada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
                                     },
                                     {
                                         "name": "B",
-                                        "code": "contraseña_guardada = \"contraseña\"\ncontraseña_ingresada = input(\"Ingrese la contraseña: \").upper()\n\nif contraseña_ingresada.capitalize() == contraseña_guardada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
+                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \")\n\nif contrasena_ingresada.capitalize() == contrasena_guardada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
                                     },
                                     {
                                         "name": "C",
-                                        "code": "contraseña_guardada = \"contraseña\"\ncontraseña_ingresada = input(\"Ingrese la contraseña: \").upper()\n\nif contraseña_guardada == contraseña_ingresada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
+                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \").upper()\n\nif contrasena_guardada == contrasena_ingresada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
                                     },
                                     {
                                         "name": "D",
-                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \")\n\nif contraseña_ingresada.lower() == contraseña_guardada.lower():\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
+                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \")\n\nif contrasena_ingresada.lower() == contrasena_guardada.lower():\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
                                     }
                                 ]
                             },
@@ -217,7 +217,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_e3/content/images/image-PlSt8J9g.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i3/content/images/image-ydKMTAWv.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
