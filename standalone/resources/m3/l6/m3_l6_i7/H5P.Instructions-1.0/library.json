@@ -1,0 +1,24 @@
+{
+    "title": "Instructions",
+    "contentType": "Instruction",
+    "majorVersion": 1,
+    "minorVersion": 0,
+    "patchVersion": 0,
+    "runnable": 0,
+    "machineName": "H5P.Instructions",
+    "license": "MIT",
+    "author": "sbriones",
+    "preloadedJs": [
+        {
+            "path": "jquery-3.7.1.min.js"
+        },
+        {
+            "path": "instructions.js"
+        }
+    ],
+    "preloadedCss": [
+        {
+            "path": "instructions.css"
+        }
+    ]
+}

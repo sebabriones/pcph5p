@@ -1,0 +1,77 @@
+{
+  "semantics": [
+    {
+      "label": "Terminal Title",
+      "description": "Title to display at the top"
+    },
+    {
+      "label": "Instructions"
+    },
+    {
+      "label": "Preloaded Code",
+      "description": "Python code that will run automatically on start"
+    },
+    {
+      "label": "Initial Code in Editor",
+      "description": "Code that will appear in the editor (not auto-executed)"
+    },
+    {
+      "label": "Code Examples",
+      "entity": "example",
+      "field": {
+        "fields": [
+          {
+            "label": "Example name"
+          },
+          {
+            "label": "Example code"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Show line numbers"
+    },
+    {
+      "label": "Color theme"
+    },
+    {
+      "label": "Editor/Console Layout",
+      "description": "Defines how editor and console are displayed. Responsive mode will not automatically change this orientation."
+    },
+    {
+      "label": "Minimum terminal height (px)",
+      "description": "Minimum visual height of the terminal when shown outside CoursePresentation."
+    },
+    {
+      "label": "Console height in vertical mode (%)",
+      "description": "Percentage of height used by the console when layout is vertical."
+    },
+    {
+      "label": "Allow user input",
+      "description": "Allows code to use input() to request user data"
+    },
+    {
+      "label": "Show Submit button",
+      "description": "Shows the 'Submit' button that sends code to the LRS for evaluation"
+    },
+    {
+      "label": "Show Upload files button",
+      "description": "Shows the 'Upload file(s)' button to load files into the Python environment"
+    },
+    {
+      "label": "Maximum output lines",
+      "description": "Maximum number of lines to show in console"
+    },
+    {
+      "label": "Passing percentage",
+      "description": "Minimum percentage required to pass (0-100)"
+    },
+    {
+      "label": "Score",
+      "description": "Maximum score (used as maxScore in xAPI)"
+    }
+  ]
+}
+
+

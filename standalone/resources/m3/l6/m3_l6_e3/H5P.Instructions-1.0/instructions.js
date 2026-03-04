@@ -1,14 +1,26 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta.<br><br>
-                        <strong>Nota: </strong>Para mejor comprensión del ejercicio, tiene a disposición la Terminal Python.<br>
-                        Al hacer clic en el botón "Terminal Python" se mostrar una ventana con ella.<br><br>
+  const instructions = `Andrea está preparando sus exámenes finales y decidió estudiar tres asignaturas: Álgebra, Física y Química. Dispone de 12 horas de estudio para repartir en la semana, pero quiere hacerlo de acuerdo con la complejidad que le significa a ella cada asignatura:
+                        <ul style="text-align:left;margin-top:0.5em;">
+                          <li style="list-style-position: inside;">Álgebra: prioridad alta (50 % del tiempo)</li>
+                          <li style="list-style-position: inside;">Física: Prioridad media (30 % del tiempo)</li>
+                          <li style="list-style-position: inside;">Química: Prioridad baja (20 % del tiempo)</li>
+                        </ul>
+                        Andrea escribió un programa para determinar las horas que dedicará a cada asignatura, pero el programa no funciona correctamente:<br><br>
+                        <img src="resources/m3/l6/m3_l6_e3/content/images/m3l6e3.png" alt="image" width="60%"><br>
+                        <ul style="text-align:left;margin-top:0.5em;">
+                          <li style="list-style-position: inside;">Revisa el código que escribió Andrea. (Disponible en consola python en 💡 Cargar ejemplo)</li>
+                          <li style="list-style-position: inside;">Detecta los errores por los cuales el código no corre correctamente.</li>
+                          <li style="list-style-position: inside;">Corrige el código para que determine las horas correctamente según las prioridades, verifique el que el total de las horas repartidas sea exactamente 12.</li>
+                          <li style="list-style-position: inside;">Muestre los resultados con una cifra decimal.</li>
+                        </ol>
+                        <br>
                         <strong>Botones Terminal Python:</strong>
-                        <ul style=\"text-align:left;\">
-                          <li style=\"list-style-position: inside;\">▶️ Ejecutar: Ejecuta el código.</li>
-                          <li style=\"list-style-position: inside;\">💾 Enviar: Envía el código para ser revisado y calificado.</li>
-                          <li style=\"list-style-position: inside;\">🗑️ Limpiar: Limpia la consola.</li>
-                          <li style=\"list-style-position: inside;\">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
-                          <li style=\"list-style-position: inside;\">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
+                        <ul style="text-align:left;">
+                          <li style="list-style-position: inside;">▶️ Ejecutar: Ejecuta el código.</li>
+                          <li style="list-style-position: inside;">💾 Enviar: Envía el código para ser revisado y calificado.</li>
+                          <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
+                          <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
+                          <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
                         </ul>
                         `;
 

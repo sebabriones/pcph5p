@@ -1,0 +1,752 @@
+/* Contenedor principal */
+.h5p-python-terminal-container {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.h5p-python-terminal {
+  --pt-min-height: 420px;
+  --pt-main-height: clamp(520px, 70vh, 860px);
+  --pt-editor-percent: 55%;
+  --pt-console-percent: 45%;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: #1e1e1e;
+}
+
+/* Ajustes cuando PythonTerminal se usa dentro de CoursePresentation */
+.h5p-course-presentation .h5p-python-terminal {
+  height: 100%;
+}
+
+.h5p-course-presentation .h5p-python-terminal .terminal-main {
+  height: 100%;
+  min-height: min(var(--pt-min-height), 100%);
+  max-height: 100%;
+}
+
+.h5p-course-presentation .h5p-python-terminal .editor-section,
+.h5p-course-presentation .h5p-python-terminal .output-section,
+.h5p-course-presentation .h5p-python-terminal .code-editor,
+.h5p-course-presentation .h5p-python-terminal .terminal-output {
+  min-height: 0;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* Quitar márgenes de H5P.Question dentro de CoursePresentation para evitar "achatado" */
+.h5p-course-presentation .h5p-question .h5p-question-introduction {
+  margin: 0 !important;
+}
+
+.h5p-course-presentation .h5p-question .h5p-question-content {
+  margin: 0 !important;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* Compact mode dentro de CoursePresentation: controles más pequeños y responsivos */
+.h5p-course-presentation .h5p-python-terminal .editor-header,
+.h5p-course-presentation .h5p-python-terminal .output-header {
+  padding: clamp(0.3em, 0.8vw, 0.6em) clamp(0.5em, 1vw, 0.9em);
+  font-size: clamp(0.72em, 1.2vw, 0.85em);
+  gap: clamp(0.25em, 0.6vw, 0.45em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .editor-header-controls {
+  gap: clamp(0.2em, 0.5vw, 0.4em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .theme-select,
+.h5p-course-presentation .h5p-python-terminal .layout-select,
+.h5p-course-presentation .h5p-python-terminal .examples-select {
+  font-size: clamp(0.68em, 1.1vw, 0.82em);
+  min-height: clamp(24px, 2.2vw, 32px);
+  padding: clamp(0.2em, 0.5vw, 0.4em) clamp(0.35em, 0.8vw, 0.65em);
+  margin-right: clamp(0.15em, 0.4vw, 0.35em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .terminal-controls {
+  padding: clamp(0.35em, 0.8vw, 0.6em) clamp(0.5em, 1vw, 0.9em);
+  gap: clamp(0.25em, 0.6vw, 0.45em);
+}
+
+.h5p-course-presentation .h5p-python-terminal .terminal-controls .btn {
+  font-size: clamp(0.68em, 1.1vw, 0.82em);
+  padding: clamp(0.25em, 0.6vw, 0.45em) clamp(0.45em, 1vw, 0.8em);
+  border-radius: 4px;
+}
+
+/* Main content */
+.terminal-main {
+  display: grid;
+  gap: 0;
+  min-height: var(--pt-min-height);
+  max-height: none;
+  height: var(--pt-main-height);
+  overflow: hidden;
+}
+
+.terminal-main.layout-horizontal {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.terminal-main.layout-vertical {
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(0, var(--pt-editor-percent)) minmax(0, var(--pt-console-percent));
+}
+
+/* Editor section */
+.editor-section {
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  border-right: 1px solid #333;
+  min-width: 0;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.terminal-main.layout-vertical .editor-section {
+  border-right: none;
+  border-bottom: 1px solid #333;
+}
+
+.editor-header,
+.output-header {
+  padding: 0.75em 1em;
+  background: #252526;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.9em;
+  color: #ccc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.editor-header-title {
+  flex: 0 0 auto;
+}
+
+.editor-header-controls {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.examples-select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 0.25em 0.5em;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+.examples-select:hover {
+  background: #3a3a3a;
+}
+
+.code-editor {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Selector de tema */
+.theme-select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.5em 0.75em;
+  font-size: 0.9em;
+  cursor: pointer;
+  min-height: 36px;
+  transition: all 0.2s;
+  margin-right: 0.5em;
+}
+
+.layout-select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.5em 0.75em;
+  font-size: 0.9em;
+  cursor: pointer;
+  min-height: 36px;
+  transition: all 0.2s;
+  margin-right: 0.5em;
+}
+
+.theme-select:hover {
+  background: #3a3a3a;
+  border-color: #555;
+}
+
+.layout-select:hover {
+  background: #3a3a3a;
+  border-color: #555;
+}
+
+.theme-select:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.layout-select:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Controls */
+.terminal-controls {
+  padding: 0.75em 1em;
+  background: #252526;
+  border-top: 1px solid #333;
+  display: flex;
+  gap: 0.5em;
+}
+
+.terminal-controls .btn {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.btn-run {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  flex: 1;
+}
+
+.btn-run:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-save {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-save:hover {
+  background: #388e3c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.btn-clear {
+  background: #444;
+  color: #ddd;
+}
+
+.btn-clear:hover {
+  background: #555;
+}
+
+.btn-upload {
+  background: #2196f3;
+  color: white;
+}
+
+.btn-upload:hover {
+  background: #1976d2;
+}
+
+/* Output section */
+.output-section {
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  min-width: 0;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.status-indicator {
+  font-size: 0.85em;
+  padding: 0.25em 0.75em;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.status-indicator.loading {
+  background: #ff9800;
+  color: white;
+}
+
+.status-indicator.ready {
+  background: #4caf50;
+  color: white;
+}
+
+.status-indicator.error {
+  background: #f44336;
+  color: white;
+}
+
+.terminal-output {
+  flex: 1;
+  background: #0d0d0d;
+  color: #e0e0e0;
+  padding: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 0;
+  height: 100%;
+  max-height: 100%;
+}
+
+.output-line {
+  margin: 0.25em 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.output-line.command {
+  color: #4fc3f7;
+  font-weight: 600;
+}
+
+.output-line.stdout {
+  color: #e0e0e0;
+}
+
+.output-line.stderr,
+.output-line.error {
+  color: #f44336;
+  background: rgba(244, 67, 54, 0.1);
+  padding: 0.25em 0.5em;
+  border-left: 3px solid #f44336;
+  margin: 0.5em 0;
+}
+
+.output-line.result {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.output-line.success {
+  color: #4caf50;
+}
+
+.output-line.warning {
+  color: #ff9800;
+}
+
+.output-line.info {
+  color: #2196f3;
+}
+
+.output-line.input-prompt {
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.output-line.input-value {
+  color: #81c784;
+  font-style: italic;
+}
+
+/* Scrollbar personalizado */
+.terminal-output::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-output::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.terminal-output::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.terminal-output::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Tema claro */
+.theme-light .h5p-python-terminal {
+  background: #f5f5f5;
+}
+
+.theme-light .editor-section,
+.theme-light .output-section {
+  background: white;
+}
+
+.theme-light .code-editor {
+  background: white;
+  color: #333;
+}
+
+.theme-light .terminal-output {
+  background: #fafafa;
+  color: #333;
+}
+
+.theme-light .editor-header,
+.theme-light .output-header,
+.theme-light .terminal-controls {
+  background: #e0e0e0;
+  color: #333;
+}
+
+/* Tema Monokai */
+.theme-monokai .code-editor {
+  background: #272822;
+  color: #f8f8f2;
+}
+
+.theme-monokai .terminal-output {
+  background: #1e1f1c;
+  color: #f8f8f2;
+}
+
+/* Tema GitHub */
+.theme-github .h5p-python-terminal {
+  background: white;
+}
+
+.theme-github .code-editor {
+  background: #f6f8fa;
+  color: #24292e;
+}
+
+.theme-github .terminal-output {
+  background: #ffffff;
+  color: #24292e;
+}
+
+.theme-github .editor-header,
+.theme-github .output-header {
+  background: #f6f8fa;
+  color: #24292e;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .terminal-main {
+    max-height: none;
+    height: clamp(460px, 75vh, 700px);
+  }
+  
+  .output-section {
+    height: 100%;
+    max-height: 100%;
+    min-height: 0;
+  }
+  
+  .terminal-output {
+    max-height: 100%;
+    min-height: 0;
+  }
+  
+  .code-editor {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .code-editor,
+  .terminal-output {
+    font-size: 12px;
+    padding: 0.75em;
+  }
+  
+  .terminal-controls {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .terminal-controls .btn {
+    flex: 0 0 auto;
+  }
+  
+  .examples-select,
+  .theme-select,
+  .layout-select {
+    padding: 0.625em 0.875em;
+    font-size: 1em;
+    min-height: 42px;
+  }
+
+  .editor-header-controls {
+    gap: 0.35em;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.output-line {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.status-indicator.loading {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Estilos para visualización de DataFrames de pandas */
+.dataframe-preview-container {
+  margin: 15px 0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.dataframe-preview-header {
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dataframe-info {
+  font-size: 12px;
+  opacity: 0.9;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.dataframe-table-wrapper {
+  max-height: 500px;
+  overflow: auto;
+  background: #0d0d0d;
+}
+
+.dataframe-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.dataframe-table th {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 12px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-weight: 600;
+  border-right: 1px solid #3a4a5c;
+  white-space: nowrap;
+}
+
+.dataframe-table th:last-child {
+  border-right: none;
+}
+
+.dataframe-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #2a2a2a;
+  border-right: 1px solid #2a2a2a;
+  color: #e0e0e0;
+  white-space: nowrap;
+}
+
+.dataframe-table td:last-child {
+  border-right: none;
+}
+
+.dataframe-table tr:nth-child(even) {
+  background: #151515;
+}
+
+.dataframe-table tr:hover {
+  background: #1e3a5f;
+}
+
+.dataframe-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Scrollbar para tabla */
+.dataframe-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dataframe-table-wrapper::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.dataframe-table-wrapper::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.dataframe-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Estilos para tema claro */
+.theme-light .dataframe-preview-container {
+  background: #ffffff;
+  border-color: #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .dataframe-table-wrapper {
+  background: #fafafa;
+}
+
+.theme-light .dataframe-table th {
+  background: #2c3e50;
+  color: white;
+}
+
+.theme-light .dataframe-table td {
+  color: #333;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #e0e0e0;
+}
+
+.theme-light .dataframe-table tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.theme-light .dataframe-table tr:hover {
+  background: #e3f2fd;
+}
+
+/* Responsive para tablas */
+@media (max-width: 700px) {
+  .dataframe-table {
+    font-size: 11px;
+  }
+  
+  .dataframe-table th,
+  .dataframe-table td {
+    padding: 6px 8px;
+  }
+  
+  .dataframe-preview-header {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  
+  .dataframe-info {
+    font-size: 11px;
+  }
+}
+
+/* Inline input en terminal */
+.inline-input-container {
+  display: flex;
+  align-items: center;
+  margin: 0.25em 0;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.inline-input-container .input-prefix {
+  color: #4fc3f7;
+  font-weight: 600;
+  margin-right: 0.25em;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.inline-input-container .inline-input-field {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #4fc3f7;
+  color: #81c784;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.2em 0;
+  outline: none;
+  caret-color: #4fc3f7;
+}
+
+.inline-input-container .inline-input-field:focus {
+  border-bottom-color: #81c784;
+}
+
+.inline-input-container .inline-input-field::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+.theme-light .inline-input-container .input-prefix {
+  color: #1565c0;
+}
+
+.theme-light .inline-input-container .inline-input-field {
+  color: #2e7d32;
+  border-bottom-color: #1565c0;
+}
+
+.theme-light .inline-input-container .inline-input-field:focus {
+  border-bottom-color: #2e7d32;
+}
+
+.theme-light .inline-input-container .inline-input-field::placeholder {
+  color: #999;
+}
+
+.theme-github .inline-input-container .input-prefix {
+  color: #005cc5;
+}
+
+.theme-github .inline-input-container .inline-input-field {
+  color: #22863a;
+  border-bottom-color: #005cc5;
+}
+
+.theme-github .inline-input-container .inline-input-field:focus {
+  border-bottom-color: #22863a;
+}
+

@@ -1,14 +1,26 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta.<br><br>
-                        <strong>Nota: </strong>Para mejor comprensión del ejercicio, tiene a disposición la Terminal Python.<br>
-                        Al hacer clic en el botón "Terminal Python" se mostrar una ventana con ella.<br><br>
+  const instructions = `Gabriela quiere una alarma que sugiera las siguientes actividades según la hora, donde solo se ingresen valores enteros de hora, y en la que 08 en el primer intervalo considera que estará estudiando desde las 08:00 hasta las 08:59, y así en cada caso.<br><br>
+                        <img src="resources/m3/l6/m3_l6_e5/content/images/m3l6e5-1.png" alt="image" width="60%"><br>
+                        Para esto, Gabriela escribe el siguiente programa:<br><br>
+                        <img src="resources/m3/l6/m3_l6_e5/content/images/m3l6e5-2.png" alt="image" width="60%"><br>
+                        <ol style="text-align:left;margin-top:0.5em;">
+                          <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo).<br>ingresa algunas horas que tú quieras, además te sugerimos que ingreses los siguientes valores: -5, 28, 24, ¿qué ocurre?, ¿está bien?</li>
+                          <li style="list-style-position: inside;">Responde las preguntas que vienen a continuación:
+                            <ul style="text-align:left;margin-top:0.5em;">
+                              <li style="list-style-position: inside;">¿Se utilizan los >= y <= de forma consistente en el código?</li>
+                              <li style="list-style-position: inside;">¿Hay casos que se repiten o no se consideran en el código?</li>
+                              <li style="list-style-position: inside;"></li>
+                            </ul>
+                          </li>
+                          <li style="list-style-position: inside;">Corrige el código para que funcione como debería, cubriendo el rango de 0 a 23 horas.</li>
+                        </ol>
                         <strong>Botones Terminal Python:</strong>
-                        <ul style=\"text-align:left;\">
-                          <li style=\"list-style-position: inside;\">▶️ Ejecutar: Ejecuta el código.</li>
-                          <li style=\"list-style-position: inside;\">💾 Enviar: Envía el código para ser revisado y calificado.</li>
-                          <li style=\"list-style-position: inside;\">🗑️ Limpiar: Limpia la consola.</li>
-                          <li style=\"list-style-position: inside;\">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
-                          <li style=\"list-style-position: inside;\">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
+                        <ul style="text-align:left;">
+                          <li style="list-style-position: inside;">▶️ Ejecutar: Ejecuta el código.</li>
+                          <li style="list-style-position: inside;">💾 Enviar: Envía el código para ser revisado y calificado.</li>
+                          <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
+                          <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
+                          <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
                         </ul>
                         `;
 

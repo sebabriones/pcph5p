@@ -1,14 +1,29 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta.<br><br>
-                        <strong>Nota: </strong>Para mejor comprensión del ejercicio, tiene a disposición la Terminal Python.<br>
-                        Al hacer clic en el botón "Terminal Python" se mostrar una ventana con ella.<br><br>
+  const instructions = `Se necesita crear una lista semanal de compras que no tenga productos duplicados y que permita determinar el valor del gasto total para los siguientes productos: pan, leche, queso y jugo, sabiendo que el precio de ellos es $1000, $800, $1500 y $1200, respectivamente.<br><br>
+                        Observa el siguiente código:<br><br>
+                        <img src="resources/m3/l6/m3_l6_e1/content/images/m3l6e1.png" alt="image" width="60%"><br>
+                        <ol style="text-align:left;margin-top:0.5em;">
+                          <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo)</li>
+                          <li style="list-style-position: inside;">Responde las preguntas que vienen a continuación:
+                            <ol type="a" style="text-align:left;margin-top:0.5em;">
+                              <li style="list-style-position: inside;">¿Obtienes una lista de compras? ¿Qué errores hay en el código respecto a lo pedido?</li>
+                              <li style="list-style-position: inside;">¿Cómo se puede escribir un código que ayude a solucionar estos errores? Imagina que son 1000 productos y eliminar valores repetidos uno a uno no es una opción viable. ¿Qué podríamos hacer?</li>
+                            </ol>
+                          </li>
+                          <li style="list-style-position: inside;">Escribe un código que permita eliminar los datos duplicados, que no se repitan precios para el cálculo del precio total y que nos muestre en pantalla la lista de productos y el precio total.
+                            <ol type="a" style="text-align:left;margin-top:0.5em;">
+                              <li style="list-style-position: inside;">¿Cómo podrías adaptar tu código para que funcione con listas mucho más grandes sin perder claridad ni eficiencia? ¿Qué cambios harías si tuvieras que procesar datos de 10,000 productos?</li>
+                              <li style="list-style-position: inside;">¿Qué parte del código te pareció más desafiante de escribir o entender? ¿Cómo lo resolviste y qué aprendiste en el proceso?</li>
+                            </ol>
+                          </li>
+                        </ol>
                         <strong>Botones Terminal Python:</strong>
-                        <ul style=\"text-align:left;\">
-                          <li style=\"list-style-position: inside;\">▶️ Ejecutar: Ejecuta el código.</li>
-                          <li style=\"list-style-position: inside;\">💾 Enviar: Envía el código para ser revisado y calificado.</li>
-                          <li style=\"list-style-position: inside;\">🗑️ Limpiar: Limpia la consola.</li>
-                          <li style=\"list-style-position: inside;\">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
-                          <li style=\"list-style-position: inside;\">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
+                        <ul style="text-align:left;">
+                          <li style="list-style-position: inside;">▶️ Ejecutar: Ejecuta el código.</li>
+                          <li style="list-style-position: inside;">💾 Enviar: Envía el código para ser revisado y calificado.</li>
+                          <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
+                          <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
+                          <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
                         </ul>
                         `;
 

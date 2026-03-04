@@ -1,14 +1,24 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta.<br><br>
-                        <strong>Nota: </strong>Para mejor comprensión del ejercicio, tiene a disposición la Terminal Python.<br>
-                        Al hacer clic en el botón "Terminal Python" se mostrar una ventana con ella.<br><br>
+  const instructions = `En un grupo de lectura se tiene el siguiente registro de asistencia:<br><br>
+                        <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-1.png" alt="image" width="30%"><br>
+                        El siguiente código pretende categorizar con baja asistencia a quienes han asistido en menos de 3 ocasiones y con buena asistencia a quienes han asistido 3 o más veces al grupo de lectura:<br><br>
+                        <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-2.png" alt="image" width="60%"><br>
+                        <ol style="text-align:left;margin-top:0.5em;">
+                          <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo)</li>
+                          <li style="list-style-position: inside;">Responde las siguientes preguntas:
+                            <ol type="a" style="text-align:left;margin-top:0.5em;">
+                              <li style="list-style-position: inside;">¿Se consigue lo pedido? ¿Tiene errores?</li>
+                            </ol>
+                          </li>
+                          <li style="list-style-position: inside;">¿Por qué código podríamos cambiar range(4) de forma que sirva si tenemos más de 4 elementos en la lista nombres? Escribe un código que permita esto.</li>
+                        </ol>
                         <strong>Botones Terminal Python:</strong>
-                        <ul style=\"text-align:left;\">
-                          <li style=\"list-style-position: inside;\">▶️ Ejecutar: Ejecuta el código.</li>
-                          <li style=\"list-style-position: inside;\">💾 Enviar: Envía el código para ser revisado y calificado.</li>
-                          <li style=\"list-style-position: inside;\">🗑️ Limpiar: Limpia la consola.</li>
-                          <li style=\"list-style-position: inside;\">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
-                          <li style=\"list-style-position: inside;\">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
+                        <ul style="text-align:left;">
+                          <li style="list-style-position: inside;">▶️ Ejecutar: Ejecuta el código.</li>
+                          <li style="list-style-position: inside;">💾 Enviar: Envía el código para ser revisado y calificado.</li>
+                          <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
+                          <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
+                          <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
                         </ul>
                         `;
 
