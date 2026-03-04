@@ -36,10 +36,10 @@
                 <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_e1">Ejercicio 1</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_e2">Ejercicio 2</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_e3">Ejercicio 3 (Pregunta abierta en canvas)</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_e4">Ejercicio 4 (Pregunta abierta en canvas)</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_r1">Refuerzo 1</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_r2">Refuerzo 2</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_r3">Refuerzo 3</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m1/l2/m1_l2_r4">Refuerzo 4 (Pregunta abierta en canvas)</a></li>
             </ul>
             <li>Leccion 3</li>
             <ul>
