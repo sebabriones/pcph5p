@@ -284,7 +284,7 @@
                                     "enableRetry": false,
                                     "enableCheckButton": true,
                                     "singlePoint": false,
-                                    "applyPenalties": false,
+                                    "applyPenalties": true,
                                     "enableScoreExplanation": false,
                                     "dropZoneHighlighting": "dragging",
                                     "autoAlignSpacing": 20,

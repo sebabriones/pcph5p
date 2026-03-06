@@ -22,7 +22,7 @@
                                 ],
                                 "behaviour": {
                                     "scoringMode": "positions",
-                                    "applyPenalties": false,
+                                    "applyPenalties": true,
                                     "duplicatesInterchangeable": false,
                                     "addButtonsForMovement": false,
                                     "enableRetry": true,

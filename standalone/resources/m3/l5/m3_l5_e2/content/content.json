@@ -259,7 +259,7 @@
         "enableRetry": true,
         "enableCheckButton": true,
         "singlePoint": false,
-        "applyPenalties": false,
+        "applyPenalties": true,
         "enableScoreExplanation": true,
         "dropZoneHighlighting": "dragging",
         "autoAlignSpacing": 1,

@@ -62,7 +62,7 @@
     "behaviour": {
         "enableInstantFeedback": false,
         "scoreWords": true,
-        "applyPenalties": false,
+        "applyPenalties": true,
         "enableRetry": true,
         "enableSolutionsButton": false,
         "keepCorrectAnswers": false
