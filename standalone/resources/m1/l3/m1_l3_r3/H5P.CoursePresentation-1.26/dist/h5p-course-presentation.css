@@ -799,7 +799,7 @@
 }
 
 .h5p-course-presentation .h5p-content-controls {
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: absolute;
     top: 0
 }

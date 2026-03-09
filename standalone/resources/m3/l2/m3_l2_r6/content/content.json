@@ -30,11 +30,11 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": false,
+                                    "autoContinue": true,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
-                                    "enableRetry": false,
+                                    "enableRetry": true,
                                     "enableSolutionsButton": false,
                                     "passPercentage": 100
                                 },
@@ -128,10 +128,10 @@
         "keywordListOpacity": 90
     },
     "override": {
-        "activeSurface": false,
-        "hideSummarySlide": false,
+        "activeSurface": true,
+        "hideSummarySlide": true,
         "summarySlideSolutionButton": false,
-        "summarySlideRetryButton": true,
+        "summarySlideRetryButton": false,
         "enablePrintButton": false,
         "social": {
             "showFacebookShare": false,
