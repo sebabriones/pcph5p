@@ -47,6 +47,7 @@ H5P.MatchingGameCP = (function ($, Question) {
         //Flag para indicar si estamos mostrando la solución
         self.showingSolution = false;
         self.solutionDrawn = false; // Bandera para saber si las líneas de solución ya fueron dibujadas correctamente
+        self.scaleFactor = 1;
         
         //Se inicializa la estructura de la actividad
         self.initGame();
@@ -67,10 +68,12 @@ H5P.MatchingGameCP = (function ($, Question) {
         //self.setIntroduction(this.options.l10n.taskDescription);
 
         // Crear el contenido principal del juego
-        self.$gameWrapper = this.createGameContent();
+        self.$gameViewport = this.createGameContent();
+        self.$gameStage = self.$gameViewport.find('.matching-game-stage');
+        self.$gameWrapper = self.$gameViewport.find('.matching-game-wrapper');
         
         // Registrar el contenido principal en H5P.Question
-        self.setContent(self.$gameWrapper);
+        self.setContent(self.$gameViewport);
         
         // Registrar los botones de acción (Check, Retry, etc.)
         self.registerButtons();
@@ -93,14 +96,19 @@ H5P.MatchingGameCP = (function ($, Question) {
     MatchingGame.prototype.createGameContent = function () {
         let self = this;
         
-        let $wrapper = $(`
-            <div class="matching-game-wrapper">
-                <div class="column left-column"></div>
-                <svg class="lines-svg"></svg>
-                <div class="column right-column"></div>
+        let $viewport = $(`
+            <div class="matching-game-viewport">
+                <div class="matching-game-stage">
+                    <div class="matching-game-wrapper">
+                        <div class="column left-column"></div>
+                        <svg class="lines-svg"></svg>
+                        <div class="column right-column"></div>
+                    </div>
+                </div>
             </div>
         `);
 
+        let $wrapper = $viewport.find('.matching-game-wrapper');
         let $leftColumn = $wrapper.find('.left-column');
         let $rightColumn = $wrapper.find('.right-column');
         
@@ -117,7 +125,7 @@ H5P.MatchingGameCP = (function ($, Question) {
             self.handleSelection(this);
         });
 
-        return $wrapper;
+        return $viewport;
     };
 
     //Inicializa los valores iniciales de cada intento
@@ -157,6 +165,12 @@ H5P.MatchingGameCP = (function ($, Question) {
         }
         
         self.removeFeedback();
+
+        if (self.$gameWrapper) {
+            requestAnimationFrame(function () {
+                self.trigger('resize');
+            });
+        }
     };
 
     //Registrar botones de acción
@@ -183,6 +197,7 @@ H5P.MatchingGameCP = (function ($, Question) {
         self.addButton('show-solution', self.options.l10n.showSolutionButtonLabel, function() {
             self.showSolutions();
             self.hideButton('show-solution');
+            self.trigger('resize');
         }, false);
         
         self.addButton('try-again', self.options.l10n.retryButtonLabel, function() {
@@ -190,6 +205,7 @@ H5P.MatchingGameCP = (function ($, Question) {
             self.showButton('check-answer');
             self.hideButton('show-solution');
             self.hideButton('try-again');
+            self.trigger('resize');
         }, false);
     };
 
@@ -289,20 +305,20 @@ H5P.MatchingGameCP = (function ($, Question) {
         //Dibuja la línea dependiendo de cual es el primer elemento clickeado
         if(el1.parentNode.classList.contains('left-column')){
             // Coordenadas de inicio (Centro vertical del lado derecho del el1)
-            x1 = r1.right - containerRect.left;  // Borde derecho del elemento izquierdo
-            y1 = r1.top + r1.height / 2 - containerRect.top;
+            x1 = (r1.right - containerRect.left) / this.scaleFactor;  // Borde derecho del elemento izquierdo
+            y1 = (r1.top + r1.height / 2 - containerRect.top) / this.scaleFactor;
 
             // Coordenadas de fin (Centro vertical del lado izquierdo del el2)
-            x2 = r2.left - containerRect.left;  // Borde izquierdo del elemento derecho
-            y2 = r2.top + r2.height / 2 - containerRect.top;
+            x2 = (r2.left - containerRect.left) / this.scaleFactor;  // Borde izquierdo del elemento derecho
+            y2 = (r2.top + r2.height / 2 - containerRect.top) / this.scaleFactor;
         }else{
             // Coordenadas de inicio (Centro vertical del lado izquierdo del el1 - columna derecha)
-            x1 = r1.left - containerRect.left;  // Borde izquierdo del elemento derecho
-            y1 = r1.top + r1.height / 2 - containerRect.top;
+            x1 = (r1.left - containerRect.left) / this.scaleFactor;  // Borde izquierdo del elemento derecho
+            y1 = (r1.top + r1.height / 2 - containerRect.top) / this.scaleFactor;
 
             // Coordenadas de fin (Centro vertical del lado derecho del el2 - columna izquierda)
-            x2 = r2.right - containerRect.left;  // Borde derecho del elemento izquierdo
-            y2 = r2.top + r2.height / 2 - containerRect.top;
+            x2 = (r2.right - containerRect.left) / this.scaleFactor;  // Borde derecho del elemento izquierdo
+            y2 = (r2.top + r2.height / 2 - containerRect.top) / this.scaleFactor;
         }
 
         // Crea el elemento <line> SVG
@@ -377,9 +393,10 @@ H5P.MatchingGameCP = (function ($, Question) {
             let svg = self.$gameWrapper.find('.lines-svg')[0];
             if (!svg || !svg.parentElement) return;
             
-            const containerRect = svg.parentElement.getBoundingClientRect();
-            svg.setAttribute('width', containerRect.width);
-            svg.setAttribute('height', containerRect.height);
+            if (self.$gameWrapper && self.$gameWrapper[0]) {
+                svg.setAttribute('width', self.$gameWrapper[0].offsetWidth);
+                svg.setAttribute('height', self.$gameWrapper[0].offsetHeight);
+            }
             
             // Dibujar todas las conexiones correctas
             self.options.pairs.forEach(function(pair) {
@@ -428,13 +445,14 @@ H5P.MatchingGameCP = (function ($, Question) {
         
         // Asegurar que el SVG tenga el tamaño correcto antes de redibujar
         let svgElement = svg[0];
-        if (svgElement && svgElement.parentElement) {
-            const containerRect = svgElement.parentElement.getBoundingClientRect();
-            
+        if (svgElement && self.$gameWrapper && self.$gameWrapper[0]) {
+            const wrapperWidth = self.$gameWrapper[0].offsetWidth;
+            const wrapperHeight = self.$gameWrapper[0].offsetHeight;
+
             // Solo redibujar si el contenedor está visible
-            if (containerRect.width > 0 && containerRect.height > 0) {
-                svgElement.setAttribute('width', containerRect.width);
-                svgElement.setAttribute('height', containerRect.height);
+            if (wrapperWidth > 0 && wrapperHeight > 0) {
+                svgElement.setAttribute('width', wrapperWidth);
+                svgElement.setAttribute('height', wrapperHeight);
             } else {
                 // Si no está visible pero estamos en modo solución, programar un reintento
                 if (self.showingSolution && !self.solutionDrawn) {
@@ -515,19 +533,30 @@ H5P.MatchingGameCP = (function ($, Question) {
     //La función de 'resize' que se llamará en cada redimensionamiento.
     MatchingGame.prototype.resize = function () {
         let self = this;
-        if (!self.$gameWrapper) {
+        if (!self.$gameViewport || !self.$gameStage || !self.$gameWrapper) {
             return;
         }
 
-        //Escalar la fuente (Método del Ratio) ---
-        //Se define un ancho base para nuestro diseño (ej. 900px).
+        // Escalado en modo normal: solo por ancho del contenedor.
         const baseWidth = 900;
-        const currentWidth = self.$gameWrapper.width();
-        const scaleRatio = currentWidth / baseWidth;
+        const minBaseHeight = 280;
+        const leftColumn = self.$gameWrapper.find('.left-column')[0];
+        const rightColumn = self.$gameWrapper.find('.right-column')[0];
+        const contentHeight = Math.max(
+            leftColumn ? leftColumn.scrollHeight : 0,
+            rightColumn ? rightColumn.scrollHeight : 0
+        );
+        const baseHeight = Math.max(minBaseHeight, contentHeight + 40);
+        const viewportWidth = self.$gameViewport.width() || baseWidth;
+        const scaleRatio = Math.min(1, viewportWidth / baseWidth);
+        self.scaleFactor = scaleRatio;
 
-        //Se aplica el ratio al tamaño de fuente del contenedor.
-        //1em es un buen valor base. El CSS hará el resto.
-        self.$gameWrapper.css('font-size', scaleRatio + 'em');
+        self.$gameStage.css('height', baseHeight + 'px');
+        self.$gameStage.css({
+            transform: `scale(${scaleRatio})`,
+            transformOrigin: 'top left'
+        });
+        self.$gameViewport.css('height', (baseHeight * scaleRatio) + 'px');
         
         // Si estamos en modo solución y las líneas no se han dibujado correctamente,
         // intentar dibujarlas ahora (cuando la diapositiva se hace visible)
