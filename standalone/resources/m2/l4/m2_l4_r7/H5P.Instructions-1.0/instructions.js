@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Desplaza los siguientes elementos hacia arriba o hacia abajo para ordenarlos desde el <strong>nivel más general hasta el nivel más específico</strong>, de modo que se refleje un proceso correcto de descomposición del problema.`;
+  const instructions = `Se le pide a un grupo de estudiantes de ingeniería informática crear una aplicación móvil para el equipo de fútbol de la universidad. La aplicación debe permitir planificar entrenamientos personalizados, incluir un calendario de eventos deportivos y ofrecer una sección para el seguimiento de hábitos saludables (alimentación, hidratación, descanso). Al analizar el proyecto, se dan cuenta de que es un problema complejo y que no puede abordarse todo al mismo tiempo. Para avanzar de manera organizada, deciden descomponerlo en subproblemas y tareas.<br><br>
+                        Desplaza los siguientes elementos hacia arriba o hacia abajo para ordenarlos desde el <strong>nivel más general hasta el nivel más específico</strong>, de modo que se refleje un proceso correcto de descomposición del problema.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

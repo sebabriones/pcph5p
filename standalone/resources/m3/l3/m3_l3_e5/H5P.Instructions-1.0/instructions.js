@@ -1,5 +1,7 @@
 jQuery(document).ready(() => {
-  const instructions = `Múltiples ejercicios</strong><br><span>Slide 1: ¿Cuál es el orden correcto para resolver operaciones en Python? Tome cada elemento y desplácelo hacia arriba o abajo para reorganizarlos según corresponda.</span><br><span>Slide 2 en adelante: Seleccione la alternativa correcta.</span>`;
+  const instructions = `<strong>Múltiples ejercicios</strong><br><br>
+                        <strong>Slide 1:</strong> ¿Cuál es el orden correcto para resolver operaciones en Python?<br> Haga click en cada elemento en el orden que corresponda.<br>
+                        <strong>Slide 2 en adelante:</strong> Seleccione la alternativa correcta.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

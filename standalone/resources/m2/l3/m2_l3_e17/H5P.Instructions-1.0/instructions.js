@@ -1,5 +1,12 @@
 jQuery(document).ready(() => {
-  const instructions = `La empresa Energy está evaluando tres proyectos de generación de energía renovable.<br>Tienes los siguientes datos sobre estos proyectos:<ul class="unordered-list"><li><strong>Proyecto A</strong> – Energía Hidráulica – Costo: $9000 – Duración:  24 meses<br>Descripción: Requiere gran infraestructura, Se implementará cerca de ecosistemas acuáticos.</li><li><strong>Proyecto B</strong> –  Energía Solar – Costo: $5000 – Duración: 3 meses<br>Descripción: Paneles reciclables, instalación en techos urbanos.</li><li><strong>Proyecto C</strong> – Energía Eólica – Costo: $7000 – Duración: 12 meses<br>Descripción: Gran gasto operativo. Se implementará en una zona natural libre de intervención humana y animales.</li></ul>Clasifica los proyectos por su nivel de impacto ecológico. Toma y arrastra los datos hacia la tabla para completarla.`;
+  const instructions = `La empresa Energy está evaluando tres proyectos de generación de energía renovable.<br>
+                        Tienes los siguientes datos sobre estos proyectos:
+                        <ul class="unordered-list" style="text-align:left">
+                          <li style="list-style-position: inside;"><strong>Proyecto A</strong> – Energía Hidráulica – Costo: $9000 – Duración:  24 meses<br>Descripción: Requiere gran infraestructura, Se implementará cerca de ecosistemas acuáticos.</li>
+                          <li style="list-style-position: inside;"><strong>Proyecto B</strong> –  Energía Solar – Costo: $5000 – Duración: 3 meses<br>Descripción: Paneles reciclables, instalación en techos urbanos.</li>
+                          <li style="list-style-position: inside;"><strong>Proyecto C</strong> – Energía Eólica – Costo: $7000 – Duración: 12 meses<br>Descripción: Gran gasto operativo. Se implementará en una zona natural libre de intervención humana y animales.</li>
+                          </ul>
+                          Clasifica los proyectos por su nivel de impacto ecológico. Toma y arrastra los datos hacia la tabla para completarla.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

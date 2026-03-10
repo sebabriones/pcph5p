@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Desplaza los siguientes elementos hacia arriba o hacia abajo para ordenarlos desde el <strong>nivel más general hasta el nivel más específico</strong>, de modo que se refleje un proceso correcto de descomposición del problema.`;
+  const instructions = `Un grupo de estudiantes decide crear un canal de contenido digital (videos o streaming) relacionado con temas de su interés. Al analizar el proyecto, se dan cuenta de que es un problema complejo y que no puede abordarse todo al mismo tiempo. Para avanzar de manera organizada, deciden descomponer el problema en subproblemas y tareas, siguiendo un proceso lógico desde lo más general a lo más específico.<br><br>
+                        Desplaza los siguientes elementos hacia arriba o hacia abajo para ordenarlos desde el <strong>nivel más general hasta el nivel más específico</strong>, de modo que se refleje un proceso correcto de descomposición del problema.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">
