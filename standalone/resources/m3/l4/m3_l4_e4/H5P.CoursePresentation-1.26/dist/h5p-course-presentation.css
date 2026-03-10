@@ -1810,10 +1810,10 @@
 }
 
 .h5p-footer-previous-slide {
-    margin-right: -0.5em;
+    margin-right: -1em;
 }
 .h5p-footer-next-slide {
-    margin-left: -0.5em;
+    margin-left: -1em;
 }
 
 .h5p-footer-previous-slide,
