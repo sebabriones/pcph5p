@@ -21,11 +21,11 @@
     },
     {
       "label": "Expand Image",
-      "default": "イマを拡大する"
+      "default": "Expand Image"
     },
     {
       "label": "Minimize Image",
-      "default": "ミニマム イメージ"
+      "default": "Minimize Image"
     }
   ]
 }

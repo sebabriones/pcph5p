@@ -35,9 +35,9 @@
 
 .h5p-course-presentation {
     /*font-family: H5PDroidSans, sans-serif;*/
-    font-family: "Poppins-regular";
+    font-family: "Poppins-regular"; /*nuevo*/
     color: #323232;
-    line-height: 1.25;
+    line-height: 1.25
 }
 
 .h5p-course-presentation h2 {
@@ -61,7 +61,7 @@
     font-weight: normal;
     line-height: 1.25em;
     padding: 0;
-    margin: 0 0 1em
+    margin: 0 0 0.5em
 }
 
 .h5p-course-presentation p:last-child {
@@ -707,7 +707,7 @@
 
 .h5p-course-presentation .h5p-element .h5p-element-inner:not(.h5p-interactive-video) {
     overflow: hidden;
-    /*overflow-y: auto;*/
+    overflow-y: auto;
     background: rgba(0, 0, 0, 0)
 }
 
@@ -733,7 +733,7 @@
 
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-advanced-text,
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-link {
-    padding: 0
+    /*padding: 0*/
 }
 
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-ct>.ct {
@@ -800,7 +800,7 @@
 }
 
 .h5p-course-presentation .h5p-content-controls {
-    /*visibility: hidden;*/
+    visibility: hidden;
     position: absolute;
     top: 0
 }
@@ -1495,7 +1495,7 @@
 
 .h5p-course-presentation .h5p-progressbar {
     /*width: 100%;*/
-    width: 30%; /*nuevo*/
+    width: 15%; /*nuevo*/
     height: 100%;
     overflow: visible;
     /*background: #666;*/ /*nuevo cambio*/

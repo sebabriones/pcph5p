@@ -4,37 +4,10 @@
             {
                 "elements": [
                     {
-                        "x": 2.178649237472767,
-                        "y": 9.365770999757927,
-                        "width": 45.751633986928105,
-                        "height": 40.238925199709513,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p>La secuencia de Fibonacci es una serie infinita de números naturales donde cada término es la suma de los dos anteriores, comenzando por 0 y 1 (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, etc).<br>Observa el siguiente código en Python, cuyo objetivo es imprimir <strong>exactamente los primeros 10 números</strong> de la secuencia de Fibonacci.<br>Sin embargo, el programa contiene errores en la lógica de su ciclo while:</p>"
-                            },
-                            "subContentId": "73d4c556-2653-4b48-a497-ce497acaad1c",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 4.357298474945534,
-                        "y": 51.54127329944323,
-                        "width": 42.48366013071895,
-                        "height": 41.40634229000243,
+                        "x": 11.982570806100219,
+                        "y": 13.365916847056596,
+                        "width": 23.965141612200437,
+                        "height": 43.035370771236884,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -43,16 +16,17 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_e7/content/images/image-SKjKtDAa.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_e7/content/images/image-Yt1rRvlc.png",
+                                    "path2": "images/image-Yt1rRvlc.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 1098,
-                                    "height": 602
+                                    "width": 734,
+                                    "height": 742
                                 }
                             },
-                            "subContentId": "b320a429-571b-48c3-8069-fb022d13803b",
+                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -70,42 +44,37 @@
                         "solution": ""
                     },
                     {
-                        "x": 50.10893246187364,
-                        "y": 17.746308399903171,
-                        "width": 47.930283224400874,
-                        "height": 79.20939239893488,
+                        "x": 49.01960784313725,
+                        "y": 23.97299100130397,
+                        "width": 46.84095860566449,
+                        "height": 65.94598200260795,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
-                                        "subContentId": "9408143a-0b95-4ee9-a234-1188cd48b4d1",
-                                        "question": "<p>¿Cuál de las siguientes alternativas describe correctamente el o los errores principales del código anterior?</p>",
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>1. Si se escribe un programa que permita que el ratón llegue hasta el queso, ¿qué tipo de control de flujo es el más adecuado para utilizar en el programa?</p>",
                                         "answers": [
-                                            "<p>La condición contador &lt;= 10 hace que el ciclo intente ejecutarse 11 veces en lugar de 10. Además, la variable contador nunca cambia su valor dentro del ciclo, por lo que se producirá un bucle infinito imprimiendo el número 0.</p>",
-                                            "<p>El código arrojará un error de sintaxis porque las variables a y b no pueden actualizarse al mismo tiempo dentro de un ciclo while.</p>",
-                                            "<p>El programa no entrará al ciclo while porque la variable contador inicializa en 0, lo que hace que la condición sea falsa desde el principio.</p>"
+                                            "<p>Un blucle <strong>while</strong>.</p>",
+                                            "<p>Un bucle <strong>for</strong>.</p>",
+                                            "<p>Un condicional <strong>if</strong>.</p>",
+                                            "<p>Una estructura <strong>elif</strong>.</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 99,
-                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "<strong>¡Correcto!</strong><br><strong>1. Error de condición:</strong> Al inicializar contador = 0 y usar la condición <= 10, el ciclo iteraría para los valores 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 y 10 (un total de 11 veces, deteniéndose en la iteración 11 en lugar de la 10). Para que fuesen 10 iteraciones, debería ser contador < 10 o inicializar contador = 1.<br><strong>2. Ciclo Infinito:</strong> Dentro del bloque while, no hay ninguna instrucción que modifique el valor de contador (falta un contador += 1). Como contador siempre valdrá 0, la condición 0 <= 10 siempre será True, atrapando al programa en un ciclo que nunca terminará."
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
                                     "soundEffectsEnabled": false,
-                                    "enableRetry": true,
+                                    "enableRetry": false,
                                     "enableSolutionsButton": false,
                                     "passPercentage": 100
                                 },
@@ -127,7 +96,7 @@
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "9c532eda-b6d1-4752-9034-204f0b910389",
+                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
@@ -135,6 +104,150 @@
                                 "authors": [],
                                 "changes": [],
                                 "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 6.357298474945534,
+                        "y": 60.70482469541717,
+                        "width": 39.99869281045751,
+                        "height": 34.821222462742128,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Un ratón está recorriendo un laberinto en busca de queso. No sabe el camino exacto que le lleve hasta donde está, pero está seguro de que si sigue avanzando, eventualmente lo encontrará; ¡no se detendrá hasta encontrar el queso!</p>"
+                            },
+                            "subContentId": "c89befd1-fe6c-4418-a40c-5ae129321db7",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 50.10893246187364,
+                        "y": 4.910611231371064,
+                        "width": 45.751633986928105,
+                        "height": 98.07074154247377,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>2. Se tiene una entrega de ropa en bolsas numeradas. Existe una lista del proveedor con el formato (número, nombre_prenda). El objetivo es automatizar la clasificación en cuatro contenedores (polera, chaqueta, pantalones, zapatos) leyendo cada elemento de la lista para evitar manipular la ropa más de lo necesario.<br>¿Cuál de las siguientes estructuras de control en Python cumple con la tarea de clasificar todos los elementos de la lista?</p>",
+                                        "answers": [
+                                            "<p>Letra C</p>",
+                                            "<p>Letra A</p>",
+                                            "<p>Letra B</p>",
+                                            "<p>Letra D</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "ae28cd97-123c-4fa2-be24-7c8eb73e5710",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 12.365916847056596,
+                        "width": 44.611220043572985,
+                        "height": 82.99738344945712,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_e7/content/images/image-7a5uDPd9.png",
+                                    "path2": "images/image-7a5uDPd9.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1810,
+                                    "height": 1520
+                                }
+                            },
+                            "subContentId": "97264bbe-bc52-4185-83d9-f32e2db6db2b",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -159,9 +272,9 @@
         "keywordListOpacity": 90
     },
     "override": {
-        "activeSurface": true,
-        "hideSummarySlide": true,
-        "summarySlideSolutionButton": true,
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
         "summarySlideRetryButton": true,
         "enablePrintButton": false,
         "social": {
@@ -180,7 +293,7 @@
             "googleShareUrl": "@currentpageurl"
         },
         "showSolutionButton": "off",
-        "retryButton": "on"
+        "retryButton": "off"
     },
     "l10n": {
         "slide": "Diapositiva",

@@ -34,9 +34,10 @@
 }
 
 .h5p-course-presentation {
-    /*font-family: H5PDroidSans, sans-serif;*/
+    /*font-family: H5PDroidSans, sans-serif;
+    color: #323232;*/
     font-family: 'Poppins-regular';
-    color: #323232;
+    color: #062971;
     line-height: 1.25
 }
 
@@ -800,7 +801,7 @@
 }
 
 .h5p-course-presentation .h5p-content-controls {
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: absolute;
     top: 0
 }
@@ -1839,8 +1840,4 @@
     padding: 0.3em 0.4em 0.3em 0.5em;
     border-radius: 1em;
     font-size: 0.8em;
-}
-
-.h5p-advanced-text {
-    height: 100%;
 }

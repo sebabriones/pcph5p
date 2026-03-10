@@ -15,9 +15,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.AdvancedText",
+            "machineName": "H5P.Customize",
             "majorVersion": 1,
-            "minorVersion": 1
+            "minorVersion": 0
         },
         {
             "machineName": "H5P.Image",
@@ -53,6 +53,11 @@
             "machineName": "H5P.Question",
             "majorVersion": 1,
             "minorVersion": 5
+        },
+        {
+            "machineName": "H5P.AdvancedText",
+            "majorVersion": 1,
+            "minorVersion": 1
         },
         {
             "machineName": "H5P.CoursePresentation",

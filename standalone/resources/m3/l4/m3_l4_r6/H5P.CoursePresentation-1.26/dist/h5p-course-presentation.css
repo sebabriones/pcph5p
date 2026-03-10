@@ -664,9 +664,7 @@
 }
 
 .h5p-course-presentation .h5p-button-element {
-    margin: 0 auto;
-    width: 100% !important; /*nuevo*/
-    height: 100% !important; /*nuevo*/
+    margin: 0 auto
 }
 
 .h5p-course-presentation .h5p-popup-container dl {

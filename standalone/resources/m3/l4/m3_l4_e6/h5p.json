@@ -20,14 +20,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Image",
+            "machineName": "H5P.Summary",
             "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.SingleChoiceSet",
-            "majorVersion": 1,
-            "minorVersion": 11
+            "minorVersion": 10
         },
         {
             "machineName": "FontAwesome",
@@ -53,11 +48,6 @@
             "machineName": "H5P.Question",
             "majorVersion": 1,
             "minorVersion": 5
-        },
-        {
-            "machineName": "H5P.AdvancedText",
-            "majorVersion": 1,
-            "minorVersion": 1
         },
         {
             "machineName": "H5P.CoursePresentation",

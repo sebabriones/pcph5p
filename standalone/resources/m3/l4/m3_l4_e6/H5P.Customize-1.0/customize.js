@@ -87,32 +87,4 @@ jQuery(document).ready(()=>{
             $(finishBtn).css('visibility','hidden');
         }, 500);
     });
-
-    //Funcionalidad que bloquea el boton de avanzar cuando se tienen varias preguntas en una misma slide
-    //de esta forma no se avanza a la slide de puntuación. Esto se hace para que el avance en las preguntas
-    //sea mas interactivo.
-    let h5pScSet = $('.h5p-current .h5p-sc-set'),
-        h5pNxtBtn = $('.h5p-current .h5p-ssc-next-button');
-
-    const hiddenH5pNxtBtn = () => {
-        if(h5pScSet[0].children[h5pScSet[0].children.length-2].classList.contains('h5p-sc-current-slide')){
-            console.log('oculto');
-            $(h5pNxtBtn).css({'display':'none'});
-        }
-    };
-
-    $(h5pNxtBtn).click(() => hiddenH5pNxtBtn());
-
-    $(h5pNavigation).click(() => {
-        setTimeout(() => {
-            h5pScSet = $('.h5p-current .h5p-sc-set');
-            h5pNxtBtn = $('.h5p-current .h5p-ssc-next-button');
-
-            hiddenH5pNxtBtn();
-
-            $(h5pNxtBtn).click(() => hiddenH5pNxtBtn());
-        }, 500);
-    });
-
-    hiddenH5pNxtBtn();
 });

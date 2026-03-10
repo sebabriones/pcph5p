@@ -5,13 +5,13 @@
                 "elements": [
                     {
                         "x": 2.178649237472767,
-                        "y": 13.55603969983055,
-                        "width": 44.66230936819172,
-                        "height": 23.238925199709513,
+                        "y": 7,
+                        "width": 45.751633986928105,
+                        "height": 56.731541999515855,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p>Una aplicación de farmacia debe calcular el costo de un pedido y verificar si el despacho es gratuito. La regla es: si el monto es mayor o igual a $20.000, el despacho es gratis. El programa entregado es el siguiente:</p>"
+                                "text": "<p style='font-size:0.9em;'>Un banco desarrolla un sistema para validar retiros desde un cajero automático.<br>El programa debe:</p><ul style='font-size:0.9em;'><li>Solicitar el nombre del cliente.</li><li>Solicitar el saldo disponible.</li><li>Solicitar el monto a retirar.</li><li>Mostrar un resumen de la operación.</li><li>Verificar si el retiro puede realizarse.</li></ul><p style='font-size:0.9em;'>Regla del banco:<br>Si el <strong>saldo es mayor o igual</strong> al monto solicitado, la operación se aprueba.<br>El código del sistema del banco es el siguiente:</p>"
                             },
                             "subContentId": "73d4c556-2653-4b48-a497-ce497acaad1c",
                             "metadata": {
@@ -31,10 +31,10 @@
                         "solution": ""
                     },
                     {
-                        "x": 2.178649237472767,
-                        "y": 42.60469619946744,
-                        "width": 41.87941176470588,
-                        "height": 44.54127329944323,
+                        "x": 4.178649237472767,
+                        "y": 64.2241587993222,
+                        "width": 32.462418300653596,
+                        "height": 33.60469619946744,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -43,13 +43,13 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r6/content/images/image-jBWFoA7v.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r6/content/images/image-wX7VSsGe.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 2434,
-                                    "height": 1456
+                                    "width": 1692,
+                                    "height": 978
                                 }
                             },
                             "subContentId": "b320a429-571b-48c3-8069-fb022d13803b",
@@ -71,20 +71,21 @@
                     },
                     {
                         "x": 50.10893246187364,
-                        "y": 16.654563059791816,
+                        "y": 18.809731299927378,
                         "width": 47.930283224400874,
-                        "height": 73.27281529895909,
+                        "height": 74.95570079883805,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
                                         "subContentId": "9408143a-0b95-4ee9-a234-1188cd48b4d1",
-                                        "question": "<p>Un cliente compra productos por un total de $20.000 exactos, y el programa muestra <strong>“Despacho con costo adicional”</strong>. ¿Dónde está el error que se presenta y por qué ocurre?</p>",
+                                        "question": "<p>Un cliente tiene un saldo de $50.000 y solicita un retiro de $20.000. El programa muestra “Fondos insuficientes”. ¿Cuál es el error que se presenta y por qué?</p>",
                                         "answers": [
-                                            "<p>El error está en la condición del <strong>if</strong>, ya que se usa <strong>&gt;</strong> en lugar de <strong>&gt;=</strong>, por lo que el caso límite de $20.000 no se considera como despacho gratuito.</p>",
-                                            "<p>El error está en la variable <strong>monto_total</strong>, porque <strong>sum(precios)</strong> no calcula correctamente el total cuando hay varios productos.</p>",
-                                            "<p>El error está en el <strong>else</strong>, ya que debería imprimirse siempre “Despacho gratuito” cuando hay muchos productos registrados.</p>"
+                                            "<p>El error está en la condición del <strong>if</strong>, ya que se compara el monto del retiro con el saldo en el orden incorrecto, invirtiendo la lógica de aprobación.</p>",
+                                            "<p>El error está en el tipo de dato de las variables, ya que deberían ser <strong>float</strong> en lugar de <strong>int</strong>.</p>",
+                                            "<p>El error está en la <strong>actualización del saldo</strong>, ya que la resta debería hacerse antes de mostrar el mensaje.</p>",
+                                            "<p>El error está en el <strong>print</strong> del resumen, porque confunde al usuario respecto al monto real disponible.</p>"
                                         ]
                                     }
                                 ],
@@ -97,7 +98,7 @@
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<strong>¡Correcto!</strong><br>El error está en la condición del if, ya que solo considera montos mayores a $20.000 y no incluye el caso en que el monto es exactamente $20.000, que según la regla también corresponde a despacho gratuito."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El error se encuentra en la <strong>condición del if</strong>, ya que se está aprobando el retiro cuando el <strong>monto solicitado es mayor o igual al saldo</strong>, lo que invierte la lógica definida por el banco, donde la operación debe aprobarse <strong>solo cuando el saldo es mayor o igual al monto a retirar.</strong>"
                                     }
                                 ],
                                 "behaviour": {
@@ -146,9 +147,9 @@
                         "solution": ""
                     },
                     {
-                        "x": 44.66230936819172,
-                        "y": 42.60469619946744,
-                        "width": 37.613324175824175,
+                        "x": 38.66230936819172,
+                        "y": 65.2241587993222,
+                        "width": 38.926380368098165,
                         "height": 40,
                         "action": {
                             "library": "H5P.Image 1.1",
@@ -158,13 +159,13 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r6/content/images/image-456TKwaE.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r6/content/images/image-MwvvgNPX.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 2434,
-                                    "height": 1456
+                                    "width": 1692,
+                                    "height": 978
                                 }
                             },
                             "subContentId": "daf2c5aa-f623-4ed6-b70a-728b68e2cd62",

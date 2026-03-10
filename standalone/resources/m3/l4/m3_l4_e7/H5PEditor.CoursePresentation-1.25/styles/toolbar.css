@@ -246,34 +246,6 @@
   content: "\e91e";
 }
 
-/* Iconos para SortParagraphs y MatchingGame usando imágenes SVG */
-.h5p-dragnbar-sortparagraphs-button:before,
-.h5p-dragnbar-matchinggame-button:before,
-.h5p-dragnbar-matchinggamecp-button:before {
-  content: "";
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  vertical-align: top;
-  color: #494949;
-  font-size: 1.2em;
-}
-
-.h5p-dragnbar-sortparagraphs-button:before {
-  background-image: url('../../H5P.SortParagraphs-0.11/icon.svg');
-}
-
-.h5p-dragnbar-matchinggame-button:before {
-  background-image: url('../../H5P.MatchingGame-0.1/icon.svg');
-}
-
-.h5p-dragnbar-matchinggamecp-button:before {
-  background-image: url('../../H5P.MatchingGameCP-0.1/icon.svg');
-}
-
 .h5p-dragnbar-li-ul {
   padding: 0;
   list-style: none;

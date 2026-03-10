@@ -4,37 +4,10 @@
             {
                 "elements": [
                     {
-                        "x": 2.178649237472767,
-                        "y": 7,
-                        "width": 45.751633986928105,
-                        "height": 56.731541999515855,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p style='font-size:0.9em;'>Un banco desarrolla un sistema para validar retiros desde un cajero automático.<br>El programa debe:</p><ul style='font-size:0.9em;'><li>Solicitar el nombre del cliente.</li><li>Solicitar el saldo disponible.</li><li>Solicitar el monto a retirar.</li><li>Mostrar un resumen de la operación.</li><li>Verificar si el retiro puede realizarse.</li></ul><p style='font-size:0.9em;'>Regla del banco:<br>Si el <strong>saldo es mayor o igual</strong> al monto solicitado, la operación se aprueba.<br>El código del sistema del banco es el siguiente:</p>"
-                            },
-                            "subContentId": "73d4c556-2653-4b48-a497-ce497acaad1c",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 4.178649237472767,
-                        "y": 64.2241587993222,
-                        "width": 32.462418300653596,
-                        "height": 33.60469619946744,
+                        "x": 11.982570806100219,
+                        "y": 47.33890784836057,
+                        "width": 18.51851851851852,
+                        "height": 51.77025997667483,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -43,16 +16,16 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-wX7VSsGe.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-xihVwBLH.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 1692,
-                                    "height": 978
+                                    "width": 845,
+                                    "height": 1196
                                 }
                             },
-                            "subContentId": "b320a429-571b-48c3-8069-fb022d13803b",
+                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -70,43 +43,37 @@
                         "solution": ""
                     },
                     {
-                        "x": 50.10893246187364,
-                        "y": 18.809731299927378,
-                        "width": 47.930283224400874,
-                        "height": 74.95570079883805,
+                        "x": 56.37690631808279,
+                        "y": 53.035370771236884,
+                        "width": 39.21568627450981,
+                        "height": 55.94598200260795,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
-                                        "subContentId": "9408143a-0b95-4ee9-a234-1188cd48b4d1",
-                                        "question": "<p>Un cliente tiene un saldo de $50.000 y solicita un retiro de $20.000. El programa muestra “Fondos insuficientes”. ¿Cuál es el error que se presenta y por qué?</p>",
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>1. ¿Cuál código <strong>NO</strong> corresponde a este flujo de control?</p>",
                                         "answers": [
-                                            "<p>El error está en la condición del <strong>if</strong>, ya que se compara el monto del retiro con el saldo en el orden incorrecto, invirtiendo la lógica de aprobación.</p>",
-                                            "<p>El error está en el tipo de dato de las variables, ya que deberían ser <strong>float</strong> en lugar de <strong>int</strong>.</p>",
-                                            "<p>El error está en la <strong>actualización del saldo</strong>, ya que la resta debería hacerse antes de mostrar el mensaje.</p>",
-                                            "<p>El error está en el <strong>print</strong> del resumen, porque confunde al usuario respecto al monto real disponible.</p>"
+                                            "<p style=\"text-align:center;\">D</p>",
+                                            "<p style=\"text-align:center;\">A</p>",
+                                            "<p style=\"text-align:center;\">B</p>",
+                                            "<p style=\"text-align:center;\">C</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 99,
-                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "<strong>¡Correcto!</strong><br>El error se encuentra en la <strong>condición del if</strong>, ya que se está aprobando el retiro cuando el <strong>monto solicitado es mayor o igual al saldo</strong>, lo que invierte la lógica definida por el banco, donde la operación debe aprobarse <strong>solo cuando el saldo es mayor o igual al monto a retirar.</strong>"
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
                                     "soundEffectsEnabled": false,
-                                    "enableRetry": true,
+                                    "enableRetry": false,
                                     "enableSolutionsButton": false,
                                     "passPercentage": 100
                                 },
@@ -128,7 +95,7 @@
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "9c532eda-b6d1-4752-9034-204f0b910389",
+                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
@@ -147,9 +114,75 @@
                         "solution": ""
                     },
                     {
-                        "x": 38.66230936819172,
-                        "y": 65.2241587993222,
-                        "width": 38.926380368098165,
+                        "x": 0.751633986928105,
+                        "y": 13.607074154247377,
+                        "width": 52.624931903783256,
+                        "height": 27.522410669329123,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-PL1H5eKT.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1964,
+                                    "height": 520
+                                }
+                            },
+                            "subContentId": "f07d7cb1-1763-4e0c-935d-c8c7ede899e8",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 55.178649237472767,
+                        "y": 6.758842692809221,
+                        "width": 42.48366013071895,
+                        "height": 44.428296616989506,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Se pretende crear un código que revise números naturales de una lista ordenada que comienza en 1, y que mientras el número sea menor a 11 muestre en pantalla el número y luego realice ese procedimiento con todos los números de la lista. Observa el diagrama de flujo como apoyo visual para comprender el flujo de control del programa.</p>"
+                            },
+                            "subContentId": "779bbe77-7739-4966-8402-fc07d9b6c3f1",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 31.59041394335512,
+                        "y": 49.490676386922416,
+                        "width": 14.307127811075476,
                         "height": 40,
                         "action": {
                             "library": "H5P.Image 1.1",
@@ -159,16 +192,641 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-MwvvgNPX.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-MA7gvkLf.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 1692,
-                                    "height": 978
+                                    "width": 845,
+                                    "height": 1196
                                 }
                             },
-                            "subContentId": "daf2c5aa-f623-4ed6-b70a-728b68e2cd62",
+                            "subContentId": "5ab1e4ed-3881-446c-904d-8205b8e5fd63",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 49.59041394335512,
+                        "y": 43.490676386922416,
+                        "width": 14.307127811075476,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-PL1H5eKT.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 845,
+                                    "height": 1196
+                                }
+                            },
+                            "subContentId": "5ab1e4ed-3881-446c-904d-8205b8e5fd63",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 23.758842692809221,
+                        "width": 16.51533824547272,
+                        "height": 32.62274763628226,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-Y8UK0GUj.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 742,
+                                    "height": 742
+                                }
+                            },
+                            "subContentId": "05e087bb-5258-4326-be40-0ebf38620c88",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 52.287581699346404,
+                        "y": 48.517685385618442,
+                        "width": 43.57298474945534,
+                        "height": 49.85659323397901,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p style=\"text-align:center\">2. ¿Cuál es la secuencia que le permite al ratón llegar al queso?</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>C</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>A</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>D</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "7518d06e-947e-4055-a84e-69adc11c9840",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 62.33890784836057,
+                        "width": 39.21568627450981,
+                        "height": 22.082524626990924,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-rayk8Jf0.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1754,
+                                    "height": 500
+                                }
+                            },
+                            "subContentId": "a58eb99a-7508-42e1-a899-8116862e16df",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 21.78649237472767,
+                        "y": 25.062379769932909,
+                        "width": 26.143790849673202,
+                        "height": 30.821222462742128,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>El ratón quiere llegar al queso. Sus movimientos dentro del laberinto que ves en la imagen se representan con estas funciones:</p>"
+                            },
+                            "subContentId": "f6a099bd-15c5-49f6-865c-0b140c22ccfc",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 43.57298474945534,
+                        "y": 63.33890784836057,
+                        "width": 71.03731078823469,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-lIKb2L5H.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1754,
+                                    "height": 500
+                                }
+                            },
+                            "subContentId": "868446b2-b518-4291-b3e3-33cb60853681",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 52.178649237472767,
+                        "y": 16.1601303111027,
+                        "width": 40.30501089324619,
+                        "height": 23.54852453231311,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-seMaiZXj.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1758,
+                                    "height": 520
+                                }
+                            },
+                            "subContentId": "8787c34d-3f3c-4cbd-b73c-d18ba70c5ca3",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 93.57298474945534,
+                        "y": 17.1601303111027,
+                        "width": 68.46087643941134,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-E8kSt0HC.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1758,
+                                    "height": 520
+                                }
+                            },
+                            "subContentId": "e912b602-241f-4266-a357-4d3dfa580efb",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 53.37690631808279,
+                        "y": 39.44694384314468,
+                        "width": 43.57298474945534,
+                        "height": 60.55305615685532,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>3. ¿Cuál de las siguientes alternativas corresponde a un código que permite encontrar la posición del producto “jeans” dentro de la estructura?</p>",
+                                        "answers": [
+                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>A</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>C</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>D</strong></p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "5e2aca00-4b5b-4bdb-a474-c2f4198cea98",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 3",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 3"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.178649237472767,
+                        "y": 45.187139309798724,
+                        "width": 42.48366013071895,
+                        "height": 22.254020579514304,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-Ab0v9SjJ.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1644,
+                                    "height": 436
+                                }
+                            },
+                            "subContentId": "559ac322-8f65-4c1b-8b69-68b3266a694e",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.338126361655775,
+                        "y": 9.75884269280922,
+                        "width": 43.411764705882355,
+                        "height": 35.27652807842766,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p style=\"font-size:0.9em\">Una tienda de ropa digital ha organizado su inventario en una lista llamada “cajas”.Cada elemento contiene:<ul style=\"font-size:0.9em\"><li>Una etiqueta de categoría.</li><li>Una lista con todas las prendas disponibles dentro de esa categoría.</li></ul></p>"
+                            },
+                            "subContentId": "3668554f-82f5-4b45-9e27-9caae80ad096",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 69.00836177254085,
+                        "width": 50.10893246187364,
+                        "height": 31.048875270584894,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p><span style=\"font-size:0.9em\">La tienda recibe una búsqueda del usuario: “jeans”, y necesita saber en qué posición del inventario está este producto.Para ello, se debe recorrer cada categoría y cada prenda hasta encontrar una coincidencia, para luego devolver su ubicación como un par de índices:(índice_caja, índice_prenda).</span></p>"
+                            },
+                            "subContentId": "7bef2078-d692-4b45-b12f-e8ea59f7307c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 46.84095860566449,
+                        "y": 14.607074154247377,
+                        "width": 47.930283224400874,
+                        "height": 19.318836151432862,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-wFMxloZr.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 2548,
+                                    "height": 520
+                                }
+                            },
+                            "subContentId": "5c4a0e11-140e-47dd-950d-f304023700c1",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 95.86056644880175,
+                        "y": 15.607074154247377,
+                        "width": 99.22543411127424,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-YV3XPRhF.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 2548,
+                                    "height": 520
+                                }
+                            },
+                            "subContentId": "262b4063-858d-44ee-b822-5a957c458c61",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": true,
+                        "buttonSize": "small",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 46,
+                        "y": 46.607074154247377,
+                        "width": 99.22543411127424,
+                        "height": 40,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l4/m3_l4_r7/content/images/image-Ab0v9SjJ.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 2548,
+                                    "height": 520
+                                }
+                            },
+                            "subContentId": "262b4063-858d-44ee-b822-5a957c458c61",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -199,9 +857,9 @@
         "keywordListOpacity": 90
     },
     "override": {
-        "activeSurface": true,
-        "hideSummarySlide": true,
-        "summarySlideSolutionButton": true,
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
         "summarySlideRetryButton": true,
         "enablePrintButton": false,
         "social": {
@@ -220,7 +878,7 @@
             "googleShareUrl": "@currentpageurl"
         },
         "showSolutionButton": "off",
-        "retryButton": "on"
+        "retryButton": "off"
     },
     "l10n": {
         "slide": "Diapositiva",
