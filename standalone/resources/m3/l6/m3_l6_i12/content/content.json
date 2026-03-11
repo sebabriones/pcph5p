@@ -81,7 +81,7 @@
                                 "initialCode": "equipos = [\"Colo Colo\", \"Cobreloa\", \"Rangers\", \"Huachipato\"]\ncontador = 0\n\nfor i in equipos:\n    contador =+ 1\n\nprint(\"Número de equipos inscritos: \", contador)",
                                 "showLineNumbers": true,
                                 "theme": "dark",
-                                "layoutMode": "horizontal",
+                                "layoutMode": "vertical",
                                 "minTerminalHeight": 520,
                                 "consoleHeightPercent": 35,
                                 "allowInput": true,

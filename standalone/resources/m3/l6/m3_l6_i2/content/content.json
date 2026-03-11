@@ -120,7 +120,7 @@
                                 "initialCode": "peso = float(input(\"Ingrese su peso en kg: \"))\nestatura = float(input(\"Ingrese su estatura en metros: \"))\nimc = peso * pow(estatura, 2)\nprint(f\"Tu índice de masa corporal es: {round(imc,2)}\")",
                                 "showLineNumbers": true,
                                 "theme": "dark",
-                                "layoutMode": "horizontal",
+                                "layoutMode": "vertical",
                                 "minTerminalHeight": 520,
                                 "consoleHeightPercent": 35,
                                 "allowInput": true,

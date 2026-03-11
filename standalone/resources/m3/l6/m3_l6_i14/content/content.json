@@ -147,7 +147,7 @@
                                 "initialCode": "",
                                 "showLineNumbers": true,
                                 "theme": "dark",
-                                "layoutMode": "horizontal",
+                                "layoutMode": "vertical",
                                 "minTerminalHeight": 520,
                                 "consoleHeightPercent": 35,
                                 "allowInput": true,

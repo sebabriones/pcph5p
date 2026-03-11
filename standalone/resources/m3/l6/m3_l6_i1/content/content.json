@@ -120,7 +120,7 @@
                                 "initialCode": "nombre = input(\"Ingrese su nombre y apellido: \")\n\nprint(f\"Cómo ingresó su nombre: {nombre}\")\nprint(nombre.lower())\nprint(nombre.upper())\nprint(nombre.capitalize())",
                                 "showLineNumbers": true,
                                 "theme": "dark",
-                                "layoutMode": "horizontal",
+                                "layoutMode": "vertical",
                                 "minTerminalHeight": 520,
                                 "consoleHeightPercent": 35,
                                 "allowInput": true,

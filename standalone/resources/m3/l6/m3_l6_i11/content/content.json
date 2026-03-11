@@ -81,7 +81,7 @@
                                 "initialCode": "anio_nacimiento = input(\"Ingrese su año de nacimiento: \")\nanio_actual = input(\"Ingrese el año actual: \")\n\nedad = int(anio_actual) - anio_nacimiento\n\nprint(f\"Su edad es: {edad}\")",
                                 "showLineNumbers": true,
                                 "theme": "dark",
-                                "layoutMode": "horizontal",
+                                "layoutMode": "vertical",
                                 "minTerminalHeight": 520,
                                 "consoleHeightPercent": 35,
                                 "allowInput": true,
