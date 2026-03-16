@@ -2,7 +2,7 @@ jQuery(document).ready(() => {
   const instructions = `Un alienígena tiene una cabeza, un cuerpo, dos brazos y dos piernas.<br><br>
                         El alienígena puede transformarse mediante los comandos de mutación que se muestran en la tabla en el área interactuable.<br><br>
                         ¿Cómo se verá el alienígena después de recibir los siguientes comandos?<br><br>
-                        C(T), T(C), B(-), P(-)<br><br>
+                        C(T), T(R), B(-), P(-)<br><br>
                         Desplaza hacia la izquierda o derecha cada parte del cuerpo del alien hasta dar con la forma que indica la serie de comandos dada.<br><br>
                         <strong>Nomenclatura:</strong><br><br>
                         <img src="resources/m2/l4/m2_l4_e4/content/images/table.png" alt="table" width="30%">
