@@ -13,7 +13,6 @@
       "minorVersion": 24
     },
     "embedTypes": [
-        "div",
         "iframe"
     ],
     "preloadedJs": [

@@ -77,26 +77,24 @@ H5P.MatchingGame = (function ($, Question) {
         // Registrar los botones de acción (Check, Retry, etc.)
         self.registerButtons();
         
-        // Disparar resize inicial después de que el DOM esté completamente renderizado
-        // Usar requestAnimationFrame para asegurar que los botones estén en el DOM
+        // Disparar resize inicial cuando el layout ya está pintado
         requestAnimationFrame(function() {
-            // Primer resize para calcular líneas y tamaño de fuente
-            self.trigger('resize');
-            
-            // Segundo resize después de un pequeño delay para asegurar que los botones estén completamente renderizados
-            setTimeout(function() {
+            requestAnimationFrame(function () {
                 self.trigger('resize');
-            }, 200);
+            });
         });
 
         // Escuchar cambios de viewport y fullscreen
         if (!self._viewportResizeHandler) {
-            self._viewportResizeTimer = null;
+            self._viewportResizeRaf = null;
             self._viewportResizeHandler = function () {
-                clearTimeout(self._viewportResizeTimer);
-                self._viewportResizeTimer = setTimeout(function () {
+                if (self._viewportResizeRaf) {
+                    cancelAnimationFrame(self._viewportResizeRaf);
+                }
+                self._viewportResizeRaf = requestAnimationFrame(function () {
+                    self._viewportResizeRaf = null;
                     self.trigger('resize');
-                }, 80);
+                });
             };
 
             window.addEventListener('resize', self._viewportResizeHandler);
@@ -107,14 +105,8 @@ H5P.MatchingGame = (function ($, Question) {
             document.addEventListener('MSFullscreenChange', self._viewportResizeHandler);
         }
 
-        if (window.ResizeObserver && !self._viewportResizeObserver && self.$gameViewport && self.$gameViewport[0]) {
-            self._viewportResizeObserver = new ResizeObserver(function () {
-                if (self._viewportResizeHandler) {
-                    self._viewportResizeHandler();
-                }
-            });
-            self._viewportResizeObserver.observe(self.$gameViewport[0]);
-        }
+        // Nota: se omite ResizeObserver en esta actividad para evitar loops
+        // de resize/redraw cuando el viewport cambia de alto durante el escalado.
     };
     
     //Esta función crea el DOM del juego, pero NO lo añade a la página.
@@ -164,6 +156,7 @@ H5P.MatchingGame = (function ($, Question) {
         self.matchesName = [];
         self.status = false;
         self.showingSolution = false;  // Resetear flag de solución
+        self.attemptStartTime = Date.now();
         self.definitions = [...self.options.pairs].sort(() => Math.random() - 0.5);
         
         // Reiniciar la UI si ya fue creada
@@ -273,8 +266,28 @@ H5P.MatchingGame = (function ($, Question) {
         const itemId = clickedItem.dataset.id;
         const itemName = clickedItem.dataset.name;
         
-        // Si ya fue emparejado, ignora el clic
-        if (self.matchesId.some(m => m.includes(itemId))) return; //si ya esta emparejado no hace nada
+        // Si ya fue emparejado, permitir deshacer ese pareo con un clic.
+        const matchedPairIndex = self.matchesId.findIndex(m => m.includes(itemId));
+        if (matchedPairIndex !== -1) {
+            const removedPair = self.matchesId[matchedPairIndex];
+            self.matchesId.splice(matchedPairIndex, 1);
+            self.matchesName.splice(matchedPairIndex, 1);
+
+            // Quitar el estado visual selected de ambos elementos del par removido.
+            if (removedPair && removedPair.length === 2) {
+                self.$gameWrapper.find(`div[data-id="${removedPair[0]}"]`).removeClass('selected');
+                self.$gameWrapper.find(`div[data-id="${removedPair[1]}"]`).removeClass('selected');
+            }
+
+            // Limpiar selección temporal y redibujar conexiones restantes.
+            if (self.selectedElement) {
+                self.selectedElement.classList.remove('selected');
+                self.selectedElement = null;
+            }
+
+            self.redrawAllConnections();
+            return;
+        }
         
         // 1. Primer clic (seleccionar)
         //Si no se ha seleccionado un primer elemento
@@ -384,12 +397,7 @@ H5P.MatchingGame = (function ($, Question) {
                     var el1 = self.$gameWrapper.find('.term[data-name="' + pair.answer + '"]')[0];
                     var el2 = self.$gameWrapper.find('.definition[data-name="' + pair.answer + '"]')[0];
                     if (el1 && el2) {
-                        // Verificar que los elementos tengan dimensiones válidas
-                        const r1 = el1.getBoundingClientRect();
-                        const r2 = el2.getBoundingClientRect();
-                        if (r1.width > 0 && r1.height > 0 && r2.width > 0 && r2.height > 0) {
-                            self.drawConnection(el1, el2);
-                        }
+                        self.drawConnection(el1, el2);
                     }
                 });
             });
@@ -427,12 +435,7 @@ H5P.MatchingGame = (function ($, Question) {
                     var el1 = self.$gameWrapper.find('.term[data-name="' + pair.answer + '"]')[0];
                     var el2 = self.$gameWrapper.find('.definition[data-name="' + pair.answer + '"]')[0];
                     if (el1 && el2) {
-                        // Verificar que los elementos tengan dimensiones válidas
-                        const r1 = el1.getBoundingClientRect();
-                        const r2 = el2.getBoundingClientRect();
-                        if (r1.width > 0 && r1.height > 0 && r2.width > 0 && r2.height > 0) {
-                            self.drawConnection(el1, el2);
-                        }
+                        self.drawConnection(el1, el2);
                     }
                 });
             });
@@ -446,15 +449,27 @@ H5P.MatchingGame = (function ($, Question) {
                     const el1 = self.$gameWrapper.find(`div[data-id="${match[0]}"]`)[0];
                     const el2 = self.$gameWrapper.find(`div[data-id="${match[1]}"]`)[0];
                     if (el1 && el2) {
-                        const r1 = el1.getBoundingClientRect();
-                        const r2 = el2.getBoundingClientRect();
-                        if (r1.width > 0 && r1.height > 0 && r2.width > 0 && r2.height > 0) {
-                            self.drawConnection(el1, el2);
-                        }
+                        self.drawConnection(el1, el2);
                     }
                 });
             });
         }
+    };
+
+    /**
+     * Programa un único redraw en el próximo frame para evitar
+     * múltiples redibujos en cascada durante resize.
+     */
+    MatchingGame.prototype.scheduleRedrawAllConnections = function () {
+        let self = this;
+        if (self._redrawRaf) {
+            return;
+        }
+
+        self._redrawRaf = requestAnimationFrame(function () {
+            self._redrawRaf = null;
+            self.redrawAllConnections();
+        });
     };
     
     //La función de 'resize' que se llamará en cada redimensionamiento.
@@ -463,38 +478,61 @@ H5P.MatchingGame = (function ($, Question) {
         if (!self.$gameViewport || !self.$gameStage || !self.$gameWrapper) {
             return;
         }
+        if (self._isResizing) {
+            return;
+        }
+        self._isResizing = true;
 
-        // Escalado proporcional sobre un escenario base.
-        const baseWidth = 900;
-        const minBaseHeight = 520;
-        const leftColumn = self.$gameWrapper.find('.left-column')[0];
-        const rightColumn = self.$gameWrapper.find('.right-column')[0];
-        const contentHeight = Math.max(
-            leftColumn ? leftColumn.scrollHeight : 0,
-            rightColumn ? rightColumn.scrollHeight : 0
-        );
-        const baseHeight = Math.max(minBaseHeight, contentHeight + 40);
-        const viewportWidth = self.$gameViewport.width() || baseWidth;
-        const $content = self.$gameViewport.closest('.h5p-content');
-        const contentHeightAvailable = ($content.height && $content.height()) || window.innerHeight;
-        const controlsHeight =
-            ($content.find('.h5p-question-buttons:visible').outerHeight(true) || 0) +
-            ($content.find('.h5p-question-feedback:visible').outerHeight(true) || 0) + 16;
-        const viewportHeight = Math.max(200, contentHeightAvailable - controlsHeight);
-        const scaleByWidth = viewportWidth / baseWidth;
-        const scaleByHeight = viewportHeight / baseHeight;
-        const scaleRatio = Math.min(scaleByWidth, scaleByHeight);
-        self.scaleFactor = scaleRatio;
+        try {
+            // Escalado proporcional sobre un escenario base.
+            const baseWidth = 900;
+            const minBaseHeight = 520;
+            const leftColumn = self.$gameWrapper.find('.left-column')[0];
+            const rightColumn = self.$gameWrapper.find('.right-column')[0];
+            const contentHeight = Math.max(
+                leftColumn ? leftColumn.scrollHeight : 0,
+                rightColumn ? rightColumn.scrollHeight : 0
+            );
+            const baseHeight = Math.max(minBaseHeight, contentHeight + 40);
+            const viewportWidth = self.$gameViewport.width() || baseWidth;
+            const $content = self.$gameViewport.closest('.h5p-content');
+            const contentHeightAvailable = ($content.height && $content.height()) || window.innerHeight;
+            const controlsHeight =
+                ($content.find('.h5p-question-buttons:visible').outerHeight(true) || 0) +
+                ($content.find('.h5p-question-feedback:visible').outerHeight(true) || 0) + 16;
+            const viewportHeight = Math.max(200, contentHeightAvailable - controlsHeight);
+            const scaleByWidth = viewportWidth / baseWidth;
+            const scaleByHeight = viewportHeight / baseHeight;
+            const scaleRatio = Math.min(scaleByWidth, scaleByHeight);
+            self.scaleFactor = scaleRatio;
 
-        self.$gameStage.css('height', baseHeight + 'px');
-        self.$gameStage.css({
-            transform: `scale(${scaleRatio})`,
-            transformOrigin: 'top left'
-        });
-        self.$gameViewport.css('height', (baseHeight * scaleRatio) + 'px');
-        
-        //Redibujar las líneas SVG
-        self.redrawAllConnections();
+            self.$gameStage.css('height', baseHeight + 'px');
+            self.$gameStage.css({
+                transform: `scale(${scaleRatio})`,
+                transformOrigin: 'top left'
+            });
+
+            const nextViewportHeight = (baseHeight * scaleRatio);
+            const currentViewportHeight = parseFloat(self.$gameViewport[0].style.height || '0');
+            if (Math.abs(nextViewportHeight - currentViewportHeight) > 0.5) {
+                self.$gameViewport.css('height', nextViewportHeight + 'px');
+            }
+
+            // Redibujar sólo cuando el tamaño efectivo cambie de forma apreciable.
+            const viewportRect = self.$gameViewport[0].getBoundingClientRect();
+            const currentWidth = Math.round(viewportRect.width);
+            const currentHeight = Math.round(viewportRect.height);
+            const widthChanged = (self._lastViewportWidth === undefined) || (Math.abs(currentWidth - self._lastViewportWidth) > 1);
+            const heightChanged = (self._lastViewportHeight === undefined) || (Math.abs(currentHeight - self._lastViewportHeight) > 1);
+
+            if (widthChanged || heightChanged) {
+                self._lastViewportWidth = currentWidth;
+                self._lastViewportHeight = currentHeight;
+                self.scheduleRedrawAllConnections();
+            }
+        } finally {
+            self._isResizing = false;
+        }
     };
 
     //***Métodos de H5P.Question que manejan los botones, score y statement xApi***
@@ -559,6 +597,28 @@ H5P.MatchingGame = (function ($, Question) {
         return userResponse;
     }
 
+    /**
+     * Calcula la duración del intento actual en formato ISO 8601 (PT#H#M#S)
+     * para incluirla en el statement xAPI.
+     * @returns {string}
+     */
+    MatchingGame.prototype.getAttemptDurationISO8601 = function () {
+        let self = this;
+        let start = self.attemptStartTime || Date.now();
+        let elapsedSeconds = Math.max(0, Math.round((Date.now() - start) / 1000));
+
+        let hours = Math.floor(elapsedSeconds / 3600);
+        let minutes = Math.floor((elapsedSeconds % 3600) / 60);
+        let seconds = elapsedSeconds % 60;
+
+        let duration = 'PT';
+        if (hours > 0) duration += `${hours}H`;
+        if (minutes > 0) duration += `${minutes}M`;
+        duration += `${seconds}S`;
+
+        return duration;
+    };
+
     //Entrega statement xAPI
     MatchingGame.prototype.reportCompletion = function(score, maxScore){
         let self = this;
@@ -577,19 +637,15 @@ H5P.MatchingGame = (function ($, Question) {
             pairs.push({answer: pair.answer, definition: pair.definition});
         });
 
-        let result = {
-            score: {
-                raw: score,
-                min: 0,
-                max: maxScore,
-                scaled: maxScore > 0 ? (score/maxScore) : 0
-            },
-            response: userResponse.join('[,]'),
-            success: isSuccess,
-            completion: true
-        };
+        // Usa la API estándar de H5P.Question para poblar score/success/completion
+        // y habilitar campos como duration cuando el contenedor los soporta.
+        xAPIEvent.setScoredResult(score, maxScore, self, true, isSuccess);
+        xAPIEvent.data.statement.result.response = userResponse.join('[,]');
 
-        xAPIEvent.data.statement.result = result;
+        // Asegurar duration en todos los entornos standalone/LMS.
+        if (!xAPIEvent.data.statement.result.duration) {
+            xAPIEvent.data.statement.result.duration = self.getAttemptDurationISO8601();
+        }
 
         xAPIEvent.data.statement.object.definition.correctResponsesPattern = correctResponses;
         xAPIEvent.data.statement.object.definition.pairs = pairs;

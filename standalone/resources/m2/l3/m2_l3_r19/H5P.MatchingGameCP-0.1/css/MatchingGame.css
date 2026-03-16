@@ -6,19 +6,24 @@
     position: relative;
     width: 100%;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
 }
 
 .matching-game-stage {
     width: 900px;
-    height: 520px;
+    height: 22em;
     position: relative;
-    transform-origin: top left;
+    transform-origin: top center;
+    margin: 0 auto;
 }
 
 .matching-game-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;  /* Centra las columnas verticalmente */
+    align-items: flex-start;
     position: relative; /* Contenedor para posicionar el SVG */
     width: 100%;
     height: 100%;
@@ -29,6 +34,8 @@
     width: 45%;
     min-width: 0;
     box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 
 .item {
@@ -71,6 +78,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none; /* Permite hacer clic a través de la línea */
+    z-index: 2;
 }
 
 .connection-line {

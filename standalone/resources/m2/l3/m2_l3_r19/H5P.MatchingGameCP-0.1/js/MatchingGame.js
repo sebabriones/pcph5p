@@ -48,6 +48,8 @@ H5P.MatchingGameCP = (function ($, Question) {
         self.showingSolution = false;
         self.solutionDrawn = false; // Bandera para saber si las líneas de solución ya fueron dibujadas correctamente
         self.scaleFactor = 1;
+        self._fullscreenResizeTimers = [];
+        self._fullscreenListenersBound = false;
         
         //Se inicializa la estructura de la actividad
         self.initGame();
@@ -77,6 +79,7 @@ H5P.MatchingGameCP = (function ($, Question) {
         
         // Registrar los botones de acción (Check, Retry, etc.)
         self.registerButtons();
+        self.bindFullscreenResizeHandler();
         
         // Disparar resize inicial después de que el DOM esté completamente renderizado
         // Usar requestAnimationFrame para asegurar que los botones estén en el DOM
@@ -89,6 +92,48 @@ H5P.MatchingGameCP = (function ($, Question) {
                 self.trigger('resize');
             }, 200);
         });
+    };
+
+    // Recalcular layout al entrar/salir de fullscreen en Course Presentation.
+    MatchingGame.prototype.bindFullscreenResizeHandler = function () {
+        let self = this;
+        if (self._fullscreenListenersBound) {
+            return;
+        }
+
+        const scheduleResizePasses = function () {
+            requestAnimationFrame(function () {
+                self.trigger('resize');
+            });
+
+            if (self._fullscreenResizeTimers && self._fullscreenResizeTimers.length) {
+                self._fullscreenResizeTimers.forEach(function (timerId) {
+                    clearTimeout(timerId);
+                });
+            }
+            self._fullscreenResizeTimers = [];
+            self._fullscreenResizeTimers.push(setTimeout(function () {
+                self.trigger('resize');
+            }, 180));
+            self._fullscreenResizeTimers.push(setTimeout(function () {
+                self.trigger('resize');
+            }, 420));
+            self._fullscreenResizeTimers.push(setTimeout(function () {
+                self.trigger('resize');
+            }, 700));
+        };
+
+        const onFullscreenChange = function () {
+            scheduleResizePasses();
+        };
+
+        document.addEventListener('fullscreenchange', onFullscreenChange);
+        document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+        document.addEventListener('mozfullscreenchange', onFullscreenChange);
+        document.addEventListener('MSFullscreenChange', onFullscreenChange);
+        window.addEventListener('resize', scheduleResizePasses);
+        window.addEventListener('orientationchange', scheduleResizePasses);
+        self._fullscreenListenersBound = true;
     };
     
     //Esta función crea el DOM del juego, pero NO lo añade a la página.
@@ -139,6 +184,7 @@ H5P.MatchingGameCP = (function ($, Question) {
         self.status = false;
         self.showingSolution = false;  // Resetear flag de solución
         self.solutionDrawn = false;  // Resetear bandera de líneas dibujadas
+        self.attemptStartTime = Date.now();
         self.definitions = [...self.options.pairs].sort(() => Math.random() - 0.5);
         
         // Reiniciar la UI si ya fue creada
@@ -247,8 +293,28 @@ H5P.MatchingGameCP = (function ($, Question) {
         const itemId = clickedItem.dataset.id;
         const itemName = clickedItem.dataset.name;
         
-        // Si ya fue emparejado, ignora el clic
-        if (self.matchesId.some(m => m.includes(itemId))) return; //si ya esta emparejado no hace nada
+        // Si ya fue emparejado, permitir deshacer ese pareo con un clic.
+        const matchedPairIndex = self.matchesId.findIndex(m => m.includes(itemId));
+        if (matchedPairIndex !== -1) {
+            const removedPair = self.matchesId[matchedPairIndex];
+            self.matchesId.splice(matchedPairIndex, 1);
+            self.matchesName.splice(matchedPairIndex, 1);
+
+            // Quitar el estado visual selected de ambos elementos del par removido.
+            if (removedPair && removedPair.length === 2) {
+                self.$gameWrapper.find(`div[data-id="${removedPair[0]}"]`).removeClass('selected');
+                self.$gameWrapper.find(`div[data-id="${removedPair[1]}"]`).removeClass('selected');
+            }
+
+            // Limpiar selección temporal y redibujar conexiones restantes.
+            if (self.selectedElement) {
+                self.selectedElement.classList.remove('selected');
+                self.selectedElement = null;
+            }
+
+            self.redrawAllConnections();
+            return;
+        }
         
         // 1. Primer clic (seleccionar)
         //Si no se ha seleccionado un primer elemento
@@ -537,26 +603,49 @@ H5P.MatchingGameCP = (function ($, Question) {
             return;
         }
 
-        // Escalado en modo normal: solo por ancho del contenedor.
+        // Escalado en modo CP: considerar ancho y alto disponibles del contenedor.
         const baseWidth = 900;
-        const minBaseHeight = 280;
+        const minBaseHeight = 290;
+        const maxBaseHeight = 520;
         const leftColumn = self.$gameWrapper.find('.left-column')[0];
         const rightColumn = self.$gameWrapper.find('.right-column')[0];
         const contentHeight = Math.max(
             leftColumn ? leftColumn.scrollHeight : 0,
             rightColumn ? rightColumn.scrollHeight : 0
         );
-        const baseHeight = Math.max(minBaseHeight, contentHeight + 40);
+        const baseHeight = Math.min(maxBaseHeight, Math.max(minBaseHeight, contentHeight + 40));
         const viewportWidth = self.$gameViewport.width() || baseWidth;
-        const scaleRatio = Math.min(1, viewportWidth / baseWidth);
+
+        // Evitar encogimiento acumulativo entre ciclos fullscreen.
+        // Si medimos con una altura inline previa, el cálculo se retroalimenta y reduce el tamaño gradualmente.
+        self.$gameViewport.css('height', 'auto');
+
+        const isFullscreen = !!document.fullscreenElement;
+        const $fullscreenContainer = self.$gameViewport.closest('.h5p-course-presentation');
+        const $windowContainer = self.$gameViewport.closest('.h5p-slide');
+        const $fallbackContainer = self.$gameViewport.closest('.h5p-content').first();
+        const $measureContainer = isFullscreen
+            ? ($fullscreenContainer.length ? $fullscreenContainer : $fallbackContainer)
+            : ($windowContainer.length ? $windowContainer : $fallbackContainer);
+        const slideHeightAvailable = ($measureContainer.height && $measureContainer.height()) || window.innerHeight;
+        const controlsHeight =
+            ($measureContainer.find('.h5p-question-buttons:visible').outerHeight(true) || 0) +
+            ($measureContainer.find('.h5p-question-feedback:visible').outerHeight(true) || 0) + 16;
+        const viewportHeight = Math.max(200, slideHeightAvailable - controlsHeight);
+        const scaleByWidth = viewportWidth / baseWidth;
+        const scaleByHeight = viewportHeight / baseHeight;
+        const scaleRatio = Math.min(1, scaleByWidth, scaleByHeight);
         self.scaleFactor = scaleRatio;
 
         self.$gameStage.css('height', baseHeight + 'px');
         self.$gameStage.css({
             transform: `scale(${scaleRatio})`,
-            transformOrigin: 'top left'
+            transformOrigin: 'top center'
         });
-        self.$gameViewport.css('height', (baseHeight * scaleRatio) + 'px');
+        const scaledHeight = (baseHeight * scaleRatio);
+        const extraViewportHeight = isFullscreen ? 64 : 4;
+        const clampedHeight = Math.min(scaledHeight + extraViewportHeight, viewportHeight);
+        self.$gameViewport.css('height', clampedHeight + 'px');
         
         // Si estamos en modo solución y las líneas no se han dibujado correctamente,
         // intentar dibujarlas ahora (cuando la diapositiva se hace visible)
@@ -735,6 +824,28 @@ H5P.MatchingGameCP = (function ($, Question) {
         return userResponse;
     }
 
+    /**
+     * Calcula la duración del intento actual en formato ISO 8601 (PT#H#M#S)
+     * para incluirla en el statement xAPI.
+     * @returns {string}
+     */
+    MatchingGame.prototype.getAttemptDurationISO8601 = function () {
+        let self = this;
+        let start = self.attemptStartTime || Date.now();
+        let elapsedSeconds = Math.max(0, Math.round((Date.now() - start) / 1000));
+
+        let hours = Math.floor(elapsedSeconds / 3600);
+        let minutes = Math.floor((elapsedSeconds % 3600) / 60);
+        let seconds = elapsedSeconds % 60;
+
+        let duration = 'PT';
+        if (hours > 0) duration += `${hours}H`;
+        if (minutes > 0) duration += `${minutes}M`;
+        duration += `${seconds}S`;
+
+        return duration;
+    };
+
     //Entrega statement xAPI
     MatchingGame.prototype.reportCompletion = function(score, maxScore){
         let self = this;
@@ -753,19 +864,15 @@ H5P.MatchingGameCP = (function ($, Question) {
             pairs.push({answer: pair.answer, definition: pair.definition});
         });
 
-        let result = {
-            score: {
-                raw: score,
-                min: 0,
-                max: maxScore,
-                scaled: maxScore > 0 ? (score/maxScore) : 0
-            },
-            response: userResponse.join('[,]'),
-            success: isSuccess,
-            completion: true
-        };
+        // Usa la API estándar de H5P.Question para poblar score/success/completion
+        // y habilitar campos como duration cuando el contenedor los soporta.
+        xAPIEvent.setScoredResult(score, maxScore, self, true, isSuccess);
+        xAPIEvent.data.statement.result.response = userResponse.join('[,]');
 
-        xAPIEvent.data.statement.result = result;
+        // Asegurar duration en todos los entornos standalone/LMS.
+        if (!xAPIEvent.data.statement.result.duration) {
+            xAPIEvent.data.statement.result.duration = self.getAttemptDurationISO8601();
+        }
 
         xAPIEvent.data.statement.object.definition.correctResponsesPattern = correctResponses;
         xAPIEvent.data.statement.object.definition.pairs = pairs;
@@ -778,10 +885,3 @@ H5P.MatchingGameCP = (function ($, Question) {
     return MatchingGame;
 
 })(H5P.jQuery, H5P.Question);
-
-// Verificar que el constructor esté disponible
-if (typeof H5P.MatchingGameCP === 'undefined') {
-    console.error('H5P.MatchingGameCP: Error al inicializar el constructor');
-} else if (typeof H5P.MatchingGameCP !== 'function') {
-    console.error('H5P.MatchingGameCP: El constructor no es una función');
-}

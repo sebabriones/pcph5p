@@ -29,6 +29,8 @@
     width: 45%;
     min-width: 0;
     box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 
 .item {
@@ -71,6 +73,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none; /* Permite hacer clic a través de la línea */
+    z-index: 2;
 }
 
 .connection-line {
