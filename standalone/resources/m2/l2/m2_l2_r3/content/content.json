@@ -108,7 +108,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>Recursos materiales y humanos</p>"
+                            "text": "<p>Gestionar recursos materiales y humanos</p>"
                         },
                         "subContentId": "2f30397d-d428-40c7-a0b6-ebe4373d05ba",
                         "metadata": {

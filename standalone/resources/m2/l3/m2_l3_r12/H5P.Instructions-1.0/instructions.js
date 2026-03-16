@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Observa la matriz de figuras; cada fila y cada columna sigue un patrón lógico. Identifica el patrón que organiza las formas; luego, toma y arrastra hacia el espacio vacío la opción que completa correctamente la matriz.`;
+  const instructions = `Observa las matrices de figuras (slide 1 y 2); cada fila y cada columna sigue un patrón lógico. Identifica el patrón que organiza las formas, luego toma y arrastra hacia el espacio vacío la opción que completa correctamente la matriz.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

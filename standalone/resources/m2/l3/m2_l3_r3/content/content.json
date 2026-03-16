@@ -207,7 +207,7 @@
                     "type": {
                         "library": "H5P.AdvancedText 1.1",
                         "params": {
-                            "text": "<p>>Datos personales de Michi (peso, edad, etc)</p>"
+                            "text": "<p>Datos personales de Michi (peso, edad, etc)</p>"
                         },
                         "subContentId": "ec4fe4ce-dbc4-447c-ba66-8fcf49e473c2",
                         "metadata": {

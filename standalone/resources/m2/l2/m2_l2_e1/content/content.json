@@ -17,7 +17,6 @@
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
                                     "path": "http://localhost/pcph5p/standalone/resources/m2/l2/m2_l2_e1/content/images/image-P0DUCSpK.png",
-                                    "path2": "images/image-P0DUCSpK.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -45,9 +44,9 @@
                     },
                     {
                         "x": 43.57298474945534,
-                        "y": 11.214148308494753,
+                        "y": 6.214148308494753,
                         "width": 51.19825708061002,
-                        "height": 82.1601303111027,
+                        "height": 93.1601303111027,
                         "action": {
                             "library": "H5P.MultiChoice 1.16",
                             "params": {
@@ -764,9 +763,9 @@
                     },
                     {
                         "x": 43.57298474945534,
-                        "y": 11.214148308494753,
+                        "y": 6.214148308494753,
                         "width": 51.19825708061002,
-                        "height": 87.1601303111027,
+                        "height": 95.1601303111027,
                         "action": {
                             "library": "H5P.MultiChoice 1.16",
                             "params": {

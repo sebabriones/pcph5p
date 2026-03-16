@@ -34,7 +34,8 @@
 }
 
 .h5p-course-presentation {
-    font-family: H5PDroidSans, sans-serif;
+    /*font-family: H5PDroidSans, sans-serif;*/
+    font-family: 'Poppins-regular', sans-serif;
     color: #323232;
     line-height: 1.25
 }

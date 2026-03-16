@@ -152,7 +152,7 @@
                                         "text": "<div>El problema ocurre solo en equipos antiguos que siempre fallan.</div>"
                                     },
                                     {
-                                        "correct": false,
+                                        "correct": true,
                                         "tipsAndFeedback": {
                                             "tip": "",
                                             "chosenFeedback": "",

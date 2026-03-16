@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta.`;
+  const instructions = `Seleccione la alternativa correcta de acuerdo a cada caso presentado.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

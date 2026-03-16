@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Clasifica las figuras por textura.<br>Toma y arrastra cada elemento hacia la zona de elementos lisos, rugosos o punteados según corresponda.`;
+  const instructions = `Observa las matrices de figuras (slide 1 y 2); cada fila y cada columna sigue un patrón lógico. Identifica el patrón que organiza las formas, luego toma y arrastra hacia el espacio vacío la opción que completa correctamente la matriz.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

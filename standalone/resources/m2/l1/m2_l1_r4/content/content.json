@@ -122,10 +122,37 @@
             {
                 "elements": [
                     {
-                        "x": 4.357298474945534,
-                        "y": 19.365916847056596,
-                        "width": 35.947712418300654,
-                        "height": 71.00836177254085,
+                        "x": 2.178649237472767,
+                        "y": 13.682885499878964,
+                        "width": 40.84095860566449,
+                        "height": 25.35100459937061,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>El <strong>modelo de 8 etapas de Basadur</strong> tiene como objetivo guiar a individuos y equipos en el proceso de resolver problemas a través de un proceso estructurado. Lo que busca este modelo es:</p>"
+                            },
+                            "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 6.357298474945534,
+                        "y": 38.365916847056596,
+                        "width": 30.947712418300654,
+                        "height": 61.00836177254085,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {

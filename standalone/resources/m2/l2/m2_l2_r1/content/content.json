@@ -45,9 +45,9 @@
                     },
                     {
                         "x": 43.57298474945534,
-                        "y": 11.214148308494753,
+                        "y": 6.214148308494753,
                         "width": 51.19825708061002,
-                        "height": 82.1601303111027,
+                        "height": 91.1601303111027,
                         "action": {
                             "library": "H5P.MultiChoice 1.16",
                             "params": {
@@ -123,7 +123,7 @@
                                     {
                                         "from": 0,
                                         "to": 100,
-                                        "feedback": "Este caso muestra que falló el sistema informático que afecta realizar los pagos y trámites de la Municipalidad (dimensión física). Por lo mismo, los usuarios/as se ven afectados, porque deben acudir presencialmente a hacer el trámite, ocupando parte de s"
+                                        "feedback": "Este caso muestra que falló el sistema informático que afecta realizar los pagos y trámites de la Municipalidad (dimensión física). Por lo mismo, los usuarios/as se ven afectados, porque deben acudir presencialmente a hacer el trámite, ocupando parte de su tiempo y generando, además, aglomeración en el edificio (dimensión social).Por otra parte, muchos trámites no logran concretarse por el fallo, generando la pérdida de dinero a la Municipalidad (dimensión económica). Todo esto ocurre porque no hay solución por parte del proveedor y tampoco existe un plan de contingencia (dimensión administrativa).<br><br>Por otra parte, no es una dimensión del problema que el proveedor cobre el doble por arreglar el fallo, o que este haya sido generado por un ataque informático con un virus ni que los computadores estén obsoletos, pues esa información no  ha sido entregada, es especulación."
                                     }
                                 ],
                                 "behaviour": {
@@ -239,9 +239,9 @@
                     },
                     {
                         "x": 43.57298474945534,
-                        "y": 15.214148308494753,
+                        "y": 11.214148308494753,
                         "width": 51.19825708061002,
-                        "height": 80.1601303111027,
+                        "height": 87.1601303111027,
                         "action": {
                             "library": "H5P.MultiChoice 1.16",
                             "params": {
@@ -465,7 +465,7 @@
                                     {
                                         "from": 0,
                                         "to": 100,
-                                        "feedback": "El problema consiste en que el sistema informático que gestiona los pagos de permisos y trámites en línea de una Municipalidad, ha estado presentando fallas constantes durante los últimos dos meses. Los usuarios/as no pueden completar sus pagos, lo que ge"
+                                        "feedback": "El problema consiste en que el sistema informático que gestiona los pagos de permisos y trámites en línea de una Municipalidad, ha estado presentando fallas constantes durante los últimos dos meses. Los usuarios/as no pueden completar sus pagos, lo que genera largas filas presenciales y retrasos en la entrega de documentos, además de pérdida económica para la Municipalidad. El proveedor del software fue notificado en varias ocasiones, pero no ha dado solución definitiva. Además, el personal municipal no cuenta con capacitación para resolver problemas técnicos básicos ni se cuenta con un plan de contingencia para estos casos."
                                     }
                                 ],
                                 "behaviour": {
@@ -631,8 +631,7 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100,
-                                        "feedback": "El problema consiste en que el sistema informático que gestiona los pagos de permisos y trámites en línea de una Municipalidad, ha estado presentando fallas constantes durante los últimos dos meses. Los usuarios/as no pueden completar sus pagos, lo que ge"
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
@@ -748,9 +747,9 @@
                     },
                     {
                         "x": 43.57298474945534,
-                        "y": 11.214148308494753,
+                        "y": 6.214148308494753,
                         "width": 51.19825708061002,
-                        "height": 82.1601303111027,
+                        "height": 91.1601303111027,
                         "action": {
                             "library": "H5P.MultiChoice 1.16",
                             "params": {
@@ -825,8 +824,7 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100,
-                                        "feedback": "El problema consiste en que el sistema informático que gestiona los pagos de permisos y trámites en línea de una Municipalidad, ha estado presentando fallas constantes durante los últimos dos meses. Los usuarios/as no pueden completar sus pagos, lo que ge"
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {

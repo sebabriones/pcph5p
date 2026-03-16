@@ -190,7 +190,9 @@
                     "y": 23.3,
                     "width": 16.3,
                     "height": 4.75,
-                    "correctElements": [],
+                    "correctElements": [
+                        "1"
+                    ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
                     "tipsAndFeedback": {
@@ -208,7 +210,9 @@
                     "y": 23.3,
                     "width": 16.3,
                     "height": 4.75,
-                    "correctElements": [],
+                    "correctElements": [
+                        "5"
+                    ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
                     "tipsAndFeedback": {
@@ -226,7 +230,9 @@
                     "y": 38.2,
                     "width": 16.3,
                     "height": 4.75,
-                    "correctElements": [],
+                    "correctElements": [
+                        "2"
+                    ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
                     "tipsAndFeedback": {
@@ -244,7 +250,9 @@
                     "y": 38.2,
                     "width": 16.3,
                     "height": 4.75,
-                    "correctElements": [],
+                    "correctElements": [
+                        "4"
+                    ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
                     "tipsAndFeedback": {
@@ -262,7 +270,9 @@
                     "y": 53.3,
                     "width": 16.3,
                     "height": 4.75,
-                    "correctElements": [],
+                    "correctElements": [
+                        "0"
+                    ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
                     "tipsAndFeedback": {
@@ -280,7 +290,9 @@
                     "y": 53.3,
                     "width": 16.3,
                     "height": 4.75,
-                    "correctElements": [],
+                    "correctElements": [
+                        "3"
+                    ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
                     "tipsAndFeedback": {
