@@ -1,7 +1,8 @@
 jQuery(document).ready(() => {
   const instructions = `<strong>Caso:</strong><br>
                         Como parte de una actividad evaluada, los/as estudiantes debían completar una bitácora digital semanal para registrar sus avances en el desarrollo de una aplicación móvil. Sin embargo, esta bitácora contenía campos obligatorios poco claros, instrucciones extensas y ambiguas, y un diseño confuso. Muchos la enviaron incompleta, con información repetida o con errores, y algunos ni siquiera lograron enviarla. Al momento de la evaluación, los/as docentes encontraron difícil valorar el proceso real de aprendizaje.<br><br>
-                        Una con una línea clickeando un término (fila izquierda) y luego clickea una de las definiciones (fila derecha).`;
+                        Una con una línea clickeando un término (fila izquierda) y luego clickea una de las definiciones (fila derecha).<br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

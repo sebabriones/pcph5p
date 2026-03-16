@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Une con una línea cada principio de la descomposición de problemas con su respectiva descripción.`;
+  const instructions = `Une con una línea cada principio de la descomposición de problemas con su respectiva descripción.<br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

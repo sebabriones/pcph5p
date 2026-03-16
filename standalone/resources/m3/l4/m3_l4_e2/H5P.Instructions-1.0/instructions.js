@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Una con una línea cada estructura de control con su función correspondiente clickeando un término (fila izquierda) y luego clickea una de las definiciones (fila derecha).`;
+  const instructions = `Una con una línea cada estructura de control con su función correspondiente clickeando un término (fila izquierda) y luego clickea una de las definiciones (fila derecha).<br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

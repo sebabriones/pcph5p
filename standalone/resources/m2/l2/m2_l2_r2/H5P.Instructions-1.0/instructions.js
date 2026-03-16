@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Una con una línea cada etapa del respectivo plan de acción con su información correspondiente.`;
+  const instructions = `Una con una línea cada etapa del respectivo plan de acción (fila izquierda) con su información correspondiente (fila derecha).<br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

@@ -1,6 +1,8 @@
 jQuery(document).ready(() => {
   const instructions = `Lea atentamente el siguiente caso. Luego, una cada etapa de la preparación de un plan de acción con su respectiva información del caso.<br><br>
-                        En una universidad pública, estudiantes de primer año presentan altos niveles de deserción durante el primer semestre, con muy mal rendimiento en asignaturas de matemática. Muchos provienen de contextos escolares con baja preparación en matemáticas y sienten que los cursos iniciales son demasiado exigentes y descontextualizados. A esto se suma la falta de tutorías accesibles, escasa vinculación entre estudiantes de distintos niveles y una débil cultura de acompañamiento académico. Aunque algunos docentes están dispuestos a colaborar, no existe un plan institucional articulado para abordar esta problemática.`;
+                        En una universidad pública, estudiantes de primer año presentan altos niveles de deserción durante el primer semestre, con muy mal rendimiento en asignaturas de matemática. Muchos provienen de contextos escolares con baja preparación en matemáticas y sienten que los cursos iniciales son demasiado exigentes y descontextualizados. A esto se suma la falta de tutorías accesibles, escasa vinculación entre estudiantes de distintos niveles y una débil cultura de acompañamiento académico. Aunque algunos docentes están dispuestos a colaborar, no existe un plan institucional articulado para abordar esta problemática.<br><br>
+                        Una con una línea clickeando un término (fila izquierda) y luego clickea una de las definiciones (fila derecha).<br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

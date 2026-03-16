@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Une con una línea cada nombre de función con su tarea correspondiente.`;
+  const instructions = `Une con una línea cada nombre de función con su tarea correspondiente.<br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">
