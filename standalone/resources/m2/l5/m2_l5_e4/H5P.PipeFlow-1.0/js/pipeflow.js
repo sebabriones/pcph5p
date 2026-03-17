@@ -154,6 +154,7 @@ H5P.PipeFlow = (function ($, Question) {
     // Puntuación
     self.score = 0;
     self.maxScore = 0;
+    self.attemptStartTime = Date.now();
 
     // Referencias a elementos DOM
     self.canvas = null;
@@ -430,6 +431,7 @@ H5P.PipeFlow = (function ($, Question) {
     var self = this;
     self.score = 0;
     self.maxScore = 0;
+    self.attemptStartTime = Date.now();
     self.initGame();
     self.hideButton('try-again');
     self.showButton('check-answer');
@@ -928,12 +930,14 @@ H5P.PipeFlow = (function ($, Question) {
   PipeFlow.prototype.getxAPIDefinition = function () {
     var self = this;
     var definition = {};
+    var scoringMode = (self.options.behaviour && self.options.behaviour.scoringMode) || 'destinations';
     definition.interactionType = 'other';
     definition.type = 'http://adlnet.gov/expapi/activities/cmi.interaction';
     definition.description = {
       'en-US': 'Pipe Flow Game - Route water from sources to correct destinations',
       'es': 'Juego de Tuberías - Dirige el agua desde las fuentes a los destinos correctos'
     };
+    definition.correctResponsesPattern = self.buildCorrectResponsesPattern();
 
     var openValves = [];
     self.gameState.valves.forEach(function (isOpen, key) {
@@ -945,7 +949,9 @@ H5P.PipeFlow = (function ($, Question) {
 
     definition.extensions = {
       'http://h5p.org/x-api/h5p-local-content-id': self.contentId || 0,
-      'https://h5p.org/x-api/pipe-flow-valves': openValves
+      'https://h5p.org/x-api/pipe-flow-valves': openValves,
+      'https://h5p.org/x-api/pipe-flow/scoring-mode': scoringMode,
+      'https://h5p.org/x-api/pipe-flow/accepted-sources-by-destination': self.getAcceptedSourcesByDestination()
     };
 
     return definition;
@@ -958,6 +964,83 @@ H5P.PipeFlow = (function ($, Question) {
       if (isOpen) openValves.push(key);
     });
     return openValves.join('[,]');
+  };
+
+  PipeFlow.prototype.getAcceptedSourcesByDestination = function () {
+    var self = this;
+    var result = {};
+
+    self.gameState.destinations.forEach(function (destPos, destId) {
+      result[String(200 + destId)] = self.getDestAcceptedSources(destId);
+    });
+
+    return result;
+  };
+
+  PipeFlow.prototype.buildCorrectResponsesPattern = function () {
+    var self = this;
+    var scoringMode = (self.options.behaviour && self.options.behaviour.scoringMode) || 'destinations';
+
+    // En modo "destinations" pueden existir múltiples soluciones válidas.
+    // Dejamos patrón neutral y confiamos en score/success para la evaluación.
+    if (scoringMode !== 'shortestPath') {
+      return [''];
+    }
+
+    var valvePattern = self.getShortestPathValvePattern();
+    return [valvePattern];
+  };
+
+  PipeFlow.prototype.getShortestPathValvePattern = function () {
+    var self = this;
+    var savedValves = new Map();
+    self.gameState.valves.forEach(function (value, key) {
+      savedValves.set(key, value);
+    });
+
+    self.gameState.valves.forEach(function (value, key) {
+      self.gameState.valves.set(key, true);
+    });
+
+    var firstSource = self.gameState.sources.values().next().value;
+    var firstDest = self.gameState.destinations.values().next().value;
+    var path = (firstSource && firstDest) ? self.findPath(firstSource, firstDest) : [];
+
+    self.gameState.valves = savedValves;
+
+    if (!path || path.length === 0) {
+      return '';
+    }
+
+    var valveKeys = [];
+    var valveSeen = {};
+
+    for (var i = 0; i < path.length; i++) {
+      var row = path[i].row;
+      var col = path[i].col;
+      var key = row + '-' + col;
+
+      if (self.gameState.valves.has(key) && !valveSeen[key]) {
+        valveSeen[key] = true;
+        valveKeys.push(key);
+      }
+    }
+
+    valveKeys.sort(function (a, b) {
+      var aParts = a.split('-');
+      var bParts = b.split('-');
+      var aRow = parseInt(aParts[0], 10);
+      var aCol = parseInt(aParts[1], 10);
+      var bRow = parseInt(bParts[0], 10);
+      var bCol = parseInt(bParts[1], 10);
+
+      if (aRow !== bRow) {
+        return aRow - bRow;
+      }
+      return aCol - bCol;
+    });
+
+    return valveKeys.join('[,]');
   };
 
   PipeFlow.prototype.addQuestionToXAPI = function (xAPIEvent) {
@@ -979,10 +1062,18 @@ H5P.PipeFlow = (function ($, Question) {
         scaled: maxScore > 0 ? (score / maxScore) : 0
       },
       response: self.getxAPIResponse(),
+      duration: self.getAttemptDurationISO8601(),
       success: isSuccess,
       completion: completion || false
     };
     self.trigger(xAPIEvent);
+  };
+
+  PipeFlow.prototype.getAttemptDurationISO8601 = function () {
+    var self = this;
+    var startTs = self.attemptStartTime || Date.now();
+    var seconds = Math.max(0, (Date.now() - startTs) / 1000);
+    return 'PT' + seconds.toFixed(2) + 'S';
   };
 
 
@@ -1321,6 +1412,7 @@ H5P.PipeFlow = (function ($, Question) {
         scaled: self.maxScore > 0 ? (self.score / self.maxScore) : 0
       },
       response: self.getxAPIResponse(),
+      duration: self.getAttemptDurationISO8601(),
       success: isSuccess,
       completion: self.gameState.gameWon
     };

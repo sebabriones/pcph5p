@@ -783,6 +783,133 @@ H5P.Blockly = (function ($, Question) {
     return lines.join(' | ');
   };
 
+  C.prototype.getxAPIDefinition = function () {
+    var definition = {
+      interactionType: 'sequencing',
+      type: 'http://adlnet.gov/expapi/activities/cmi.interaction',
+      description: {
+        'en-US': this.options.taskDescription || 'Blockly maze challenge'
+      }
+    };
+
+    definition.correctResponsesPattern = [this.getCanonicalCorrectResponse()];
+    return definition;
+  };
+
+  C.prototype.addQuestionToXAPI = function (xAPIEvent) {
+    var definition = xAPIEvent.getVerifiedStatementValue(['object', 'definition']);
+    if (definition && typeof $.extend === 'function') {
+      $.extend(true, definition, this.getxAPIDefinition());
+    }
+  };
+
+  C.prototype.getCanonicalCorrectResponse = function () {
+    var commands = this.getCanonicalSolutionCommands();
+    return commands.join(' | ');
+  };
+
+  C.prototype.getCanonicalSolutionCommands = function () {
+    var startRow = this.startPosition.y / this.MAZE_CONFIG.SQUARE;
+    var startCol = this.startPosition.x / this.MAZE_CONFIG.SQUARE;
+    var finishRow = this.finishPosition.y / this.MAZE_CONFIG.SQUARE;
+    var finishCol = this.finishPosition.x / this.MAZE_CONFIG.SQUARE;
+    var startDirection = parseInt(this.options.initialDirection, 10);
+    var allowForward = !this.options.availableBlocks || this.options.availableBlocks.forward !== false;
+    var allowRight = !this.options.availableBlocks || this.options.availableBlocks.turnRight !== false;
+    var allowLeft = !this.options.availableBlocks || this.options.availableBlocks.turnLeft !== false;
+
+    if (isNaN(startDirection)) {
+      startDirection = this.MAZE_CONFIG.directionType.EAST;
+    }
+
+    var queue = [{
+      row: startRow,
+      col: startCol,
+      dir: startDirection,
+      commands: []
+    }];
+    var visited = {};
+    visited[startRow + '-' + startCol + '-' + startDirection] = true;
+
+    while (queue.length > 0) {
+      var current = queue.shift();
+
+      if (current.row === finishRow && current.col === finishCol) {
+        return current.commands;
+      }
+
+      if (allowForward) {
+        var delta = this.getForwardDelta(current.dir);
+        var nextRow = current.row + delta.row;
+        var nextCol = current.col + delta.col;
+        var forwardKey = nextRow + '-' + nextCol + '-' + current.dir;
+
+        if (this.isWalkableCell(nextRow, nextCol) && !visited[forwardKey]) {
+          visited[forwardKey] = true;
+          queue.push({
+            row: nextRow,
+            col: nextCol,
+            dir: current.dir,
+            commands: current.commands.concat(['moveForward();'])
+          });
+        }
+      }
+
+      if (allowRight) {
+        var rightDir = (current.dir + 1) % 4;
+        var rightKey = current.row + '-' + current.col + '-' + rightDir;
+        if (!visited[rightKey]) {
+          visited[rightKey] = true;
+          queue.push({
+            row: current.row,
+            col: current.col,
+            dir: rightDir,
+            commands: current.commands.concat(['turnRight();'])
+          });
+        }
+      }
+
+      if (allowLeft) {
+        var leftDir = (current.dir + 3) % 4;
+        var leftKey = current.row + '-' + current.col + '-' + leftDir;
+        if (!visited[leftKey]) {
+          visited[leftKey] = true;
+          queue.push({
+            row: current.row,
+            col: current.col,
+            dir: leftDir,
+            commands: current.commands.concat(['turnLeft();'])
+          });
+        }
+      }
+    }
+
+    return [];
+  };
+
+  C.prototype.getForwardDelta = function (direction) {
+    switch (direction) {
+      case this.MAZE_CONFIG.directionType.NORTH:
+        return { row: -1, col: 0 };
+      case this.MAZE_CONFIG.directionType.EAST:
+        return { row: 0, col: 1 };
+      case this.MAZE_CONFIG.directionType.SOUTH:
+        return { row: 1, col: 0 };
+      case this.MAZE_CONFIG.directionType.WEST:
+        return { row: 0, col: -1 };
+      default:
+        return { row: 0, col: 0 };
+    }
+  };
+
+  C.prototype.isWalkableCell = function (row, col) {
+    return row >= 0 &&
+      row < this.MAZE_CONFIG.ROWS &&
+      col >= 0 &&
+      col < this.MAZE_CONFIG.COLS &&
+      this.MAZE_CONFIG.map[row][col] !== this.MAZE_CONFIG.pathType.WALL;
+  };
+
   /**
    * Disparar xAPI answered al finalizar cada intento
    * @param {string} response
@@ -790,6 +917,7 @@ H5P.Blockly = (function ($, Question) {
    */
   C.prototype.triggerXAPIAnswered = function(response, success) {
     var xAPIEvent = this.createXAPIEventTemplate('answered');
+    this.addQuestionToXAPI(xAPIEvent);
     xAPIEvent.setScoredResult(this.score, this.maxScore, this, true, success);
     xAPIEvent.data.statement.result.response = response;
     this.trigger(xAPIEvent);

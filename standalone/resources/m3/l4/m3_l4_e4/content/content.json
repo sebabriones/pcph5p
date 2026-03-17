@@ -227,8 +227,8 @@
                                         "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
                                         "question": "<p>2. Un sistema automatizado en una planta de tratamiento de agua, que debería dirigir el flujo del líquido según su color, está fallando. Debido a un error en el código, el agua no está siendo desviada por el camino correcto.<br>¿Cuál de los siguientes ejemplos tiene un error e impide que el programa funcione correctamente?</p>",
                                         "answers": [
-                                            "<p>Letra B</p>",
                                             "<p>Letra A</p>",
+                                            "<p>Letra B</p>",
                                             "<p>Ninguno</p>",
                                             "<p>Ambos</p>"
                                         ]
