@@ -111,26 +111,6 @@
                     "width": 16.7,
                     "height": 4.2,
                     "correctElements": [
-                        "2"
-                    ],
-                    "showLabel": false,
-                    "backgroundOpacity": 100,
-                    "tipsAndFeedback": {
-                        "tip": ""
-                    },
-                    "single": true,
-                    "autoAlign": true,
-                    "type": {
-                        "library": "H5P.DragQuestionDropzone 0.1"
-                    },
-                    "label": "<div>Mayor nivel de abstracción</div>"
-                },
-                {
-                    "x": 35.2,
-                    "y": 48.8,
-                    "width": 16.7,
-                    "height": 4.2,
-                    "correctElements": [
                         "0"
                     ],
                     "showLabel": false,
@@ -144,6 +124,26 @@
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
                     "label": "<div>Menor nivel de abstracción</div>"
+                },
+                {
+                    "x": 35.2,
+                    "y": 48.8,
+                    "width": 16.7,
+                    "height": 4.2,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Mayor nivel de abstracción</div>"
                 },
                 {
                     "x": 66.8,
