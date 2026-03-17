@@ -1,9 +1,27 @@
+.pattern-game-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.pattern-game-stage {
+  width: 640px;
+  height: 440px;
+  position: relative;
+  transform-origin: top center;
+  margin: 0 auto;
+}
+
 .pattern-game-wrapper {
   margin: 0 auto;
   position: relative;
   width: 640px;
-  max-width: 1280px;
-  min-width: 320px;
+  max-width: 100%;
+  min-width: 0;
   height: 440px;
   text-align: center;
   font-size: 16px;
@@ -76,7 +94,7 @@
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  min-width: 15.625em;
+  min-width: 12em;
 }
 
 .interactive-label {
@@ -97,27 +115,29 @@
   border: 0.125em solid #667eea;
   justify-content: space-around;
   height: 100%;
-  min-height: 12.5em;
+  min-height: 0;
+  overflow: auto;
 }
 
 .control-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.625em;
-  padding: 0.5em;
+  gap: 0.25em;
+  padding: 0.25em;
   background: white;
   border-radius: 0.5em;
   border: 0.125em solid #ddd;
   flex: 1;
   min-height: 0;
+  flex-wrap: nowrap;
 }
 
 .arrow-btn {
-  width: 2em;
-  height: 2em;
-  min-width: 2em;
-  min-height: 2em;
+  width: 1.55em;
+  height: 1.55em;
+  min-width: 1.55em;
+  min-height: 1.55em;
   border: none;
   border-radius: 50%;
   font-size: 1em;
@@ -161,10 +181,10 @@
 }
 
 .part-preview {
-  width: 4em;
-  height: 3em;
-  min-width: 4em;
-  min-height: 3em;
+  width: 2.8em;
+  height: 2.1em;
+  min-width: 2.8em;
+  min-height: 2.1em;
   border-radius: 0.5em;
   border: 0.125em solid #ccc;
   display: flex;
@@ -173,6 +193,10 @@
   background: white;
   flex-shrink: 0;
   overflow: hidden;
+}
+
+.controls-container {
+  font-size: 0.92em;
 }
 
 .part-preview-image {

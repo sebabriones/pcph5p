@@ -114,7 +114,9 @@
         "successMessage": "¡Excelente! Has encontrado el patrón correcto. <img src=\"http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_r4/content/images/image-success.png\">",
         "failureMessage": "El patrón no coincide completamente. Sigue intentando."
     },
-    "behaviour": true,
+    "behaviour": {
+        "enableRetry": true
+    },
     "l10n": {
         "checkAnswerButtonLabel": "Comprobar",
         "retryButtonLabel": "Reintentar"

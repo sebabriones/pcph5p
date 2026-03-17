@@ -206,7 +206,9 @@
         "successMessage": "¡Excelente! Has encontrado el patrón correcto.<img src=\"http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r10/content/images/image-success.png\">",
         "failureMessage": "El patrón no coincide completamente. Sigue intentando.<img src=\"http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r10/content/images/image-failure.png\">"
     },
-    "behaviour": true,
+    "behaviour": {
+        "enableRetry": true
+    },
     "l10n": {
         "checkAnswerButtonLabel": "Comprobar",
         "retryButtonLabel": "Reintentar"

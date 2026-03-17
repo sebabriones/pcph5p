@@ -113,6 +113,16 @@ H5P.PatternGame = (function ($, Question) {
 
     // Manejar redimensionamiento
     self.on('resize', self.resize.bind(self));
+    self._windowResizeTimer = null;
+    self._windowResizeHandler = function () {
+      if (self._windowResizeTimer) {
+        clearTimeout(self._windowResizeTimer);
+      }
+      self._windowResizeTimer = setTimeout(function () {
+        self.trigger('resize');
+      }, 120);
+    };
+    window.addEventListener('resize', self._windowResizeHandler);
   }
 
   // Establecer herencia
@@ -128,11 +138,13 @@ H5P.PatternGame = (function ($, Question) {
       self.setIntroduction(self.options.instructions);
     }
 
-    // Crear contenido del juego
-    self.$gameWrapper = self.createGameContent();
+    // Crear contenido del juego (viewport + stage + wrapper)
+    self.$gameViewport = self.createGameContent();
+    self.$gameStage = self.$gameViewport.find('.pattern-game-stage');
+    self.$gameWrapper = self.$gameViewport.find('.pattern-game-wrapper');
 
     // Registrar contenido principal
-    self.setContent(self.$gameWrapper);
+    self.setContent(self.$gameViewport);
 
     // Registrar botones de acción
     self.registerButtons();
@@ -147,6 +159,14 @@ H5P.PatternGame = (function ($, Question) {
   PatternGame.prototype.createGameContent = function () {
     const self = this;
 
+    const $viewport = $('<div>', {
+      'class': 'pattern-game-viewport'
+    });
+
+    const $stage = $('<div>', {
+      'class': 'pattern-game-stage'
+    });
+
     const $wrapper = $('<div>', {
       'class': 'pattern-game-wrapper'
     });
@@ -157,12 +177,11 @@ H5P.PatternGame = (function ($, Question) {
       'class': 'elements-row'
     });
     
-    // Ajustar grid dinámicamente según el número de elementos
-    // Si hay muchos elementos, usar auto-fit, si no, usar columnas específicas
+    // Mantener columnas fijas cuando hay hasta 4 elementos.
     if (totalElements <= 4) {
       $elementsRow.css('grid-template-columns', 'repeat(' + totalElements + ', 1fr)');
     } else {
-      // Para más de 4 elementos, usar auto-fit con minmax
+      // Para más de 4 elementos, usar auto-fit con minmax.
       $elementsRow.css('grid-template-columns', 'repeat(auto-fit, minmax(150px, 1fr))');
     }
 
@@ -182,8 +201,10 @@ H5P.PatternGame = (function ($, Question) {
     }
 
     $wrapper.append($elementsRow);
+    $stage.append($wrapper);
+    $viewport.append($stage);
 
-    return $wrapper;
+    return $viewport;
   };
 
   // Crear contenedor de elemento
@@ -658,82 +679,66 @@ H5P.PatternGame = (function ($, Question) {
   PatternGame.prototype.resize = function () {
     const self = this;
     
-    if (!self.$gameWrapper || !self.$gameWrapper.length) {
+    if (!self.$gameViewport || !self.$gameViewport.length || !self.$gameStage || !self.$gameStage.length || !self.$gameWrapper || !self.$gameWrapper.length) {
       return;
     }
     
-    // Dimensiones base (como Course Presentation)
+    // Dimensiones base del componente (stage sin escalar)
     const baseWidth = 640;
     const baseHeight = 440;
     const baseFontSize = 16;
     
-    // Obtener el contenedor padre
-    const $container = self.$gameWrapper.parent();
-    if (!$container || !$container.length) {
-      return;
-    }
-    
-    // Obtener dimensiones del contenedor
-    const containerWidth = $container.width();
-    const containerHeight = $container.height();
-    
-    if (containerWidth <= 0 || containerHeight <= 0) {
-      return;
-    }
-    
-    // Calcular ratios
+    // Evitar acumulación al recalcular altura del viewport.
+    self.$gameViewport.css('height', 'auto');
+
+    const isFullscreen = !!document.fullscreenElement;
+    const $fullscreenContainer = self.$gameViewport.closest('.h5p-course-presentation');
+    const $windowContainer = self.$gameViewport.closest('.h5p-slide');
+    const $fallbackContainer = self.$gameViewport.closest('.h5p-content').first();
+    const $measureContainer = isFullscreen
+      ? ($fullscreenContainer.length ? $fullscreenContainer : $fallbackContainer)
+      : ($windowContainer.length ? $windowContainer : $fallbackContainer);
+
+    const containerWidth = self.$gameViewport.width() || baseWidth;
+    const containerHeight = ($measureContainer.height && $measureContainer.height()) || window.innerHeight;
+    const controlsHeight =
+      ($measureContainer.find('.h5p-question-buttons:visible').outerHeight(true) || 0) +
+      ($measureContainer.find('.h5p-question-feedback:visible').outerHeight(true) || 0) + 16;
+    const availableHeight = Math.max(200, containerHeight - controlsHeight);
+
     const widthRatio = containerWidth / baseWidth;
-    const heightRatio = containerHeight / baseHeight;
-    
-    // Determinar el ratio de escalado
-    // Cuando la pantalla crece, priorizar el ancho para que los elementos crezcan
-    // Cuando se reduce, usar el menor ratio para mantener proporciones
-    let scaleRatio;
-    if (containerWidth > baseWidth) {
-      // Cuando hay más espacio, usar el ancho pero limitar por altura si es necesario
-      // Usar 90% del widthRatio para un crecimiento más controlado
-      scaleRatio = Math.min(widthRatio * 0.9, heightRatio);
-    } else {
-      // Cuando es más pequeño, usar el menor ratio para mantener proporciones
-      scaleRatio = Math.min(widthRatio, heightRatio);
-    }
-    
-    // Limitar el ratio mínimo para evitar que se haga muy pequeño
-    scaleRatio = Math.max(scaleRatio, 0.5);
-    // Limitar el ratio máximo para evitar que se haga demasiado grande
-    // 2.0 significa que puede crecer hasta el doble del tamaño base
-    scaleRatio = Math.min(scaleRatio, 2.0);
-    
-    // Calcular nuevo font-size
+    const heightRatio = availableHeight / baseHeight;
+    let scaleRatio = Math.min(widthRatio, heightRatio);
+
+    // Escala moderada: permite crecer sin sobredimensionar.
+    scaleRatio = Math.max(0.3, Math.min(scaleRatio, 1.2));
     const newFontSize = baseFontSize * scaleRatio;
-    
-    // Aplicar font-size al wrapper (esto escalará todos los elementos con em)
-    self.$gameWrapper.css('font-size', newFontSize + 'px');
-    
-    // Ajustar ancho del wrapper: usar el ancho disponible basado en el ratio
-    // Permitir que crezca hasta 1280px (2x el tamaño base) cuando hay espacio
-    const maxAllowedWidth = 1280;
-    const calculatedWidth = baseWidth * scaleRatio;
-    
-    // Cuando la pantalla crece, usar el ancho calculado pero asegurar que use bien el espacio
-    // Si el contenedor es más grande, usar el 95% del contenedor o el ancho calculado, el que sea mayor
-    // Esto reduce el espacio vacío a la derecha
-    let newWidth;
-    if (containerWidth > baseWidth) {
-      // Usar el mayor entre el ancho calculado y el 95% del contenedor, pero limitado al máximo
-      newWidth = Math.min(Math.max(calculatedWidth, containerWidth * 0.95), maxAllowedWidth);
-    } else {
-      newWidth = calculatedWidth;
-    }
-    
-    const newHeight = baseHeight * scaleRatio;
-    
+
     self.$gameWrapper.css({
-      'width': newWidth + 'px',
-      'max-width': maxAllowedWidth + 'px',
-      'height': newHeight + 'px',
-      'margin': '0 auto' // Centrar si hay espacio extra
+      'width': baseWidth + 'px',
+      'height': baseHeight + 'px',
+      'font-size': baseFontSize + 'px',
+      'margin': '0 auto'
     });
+    self.$gameStage.css({
+      'width': baseWidth + 'px',
+      'height': baseHeight + 'px',
+      'transform': 'scale(' + scaleRatio + ')',
+      'transform-origin': 'top center'
+    });
+
+    const scaledHeight = baseHeight * scaleRatio;
+    const clampedHeight = Math.min(scaledHeight, availableHeight);
+    self.$gameViewport.css('height', clampedHeight + 'px');
+
+    // Sincronizar escala tipográfica de feedback y controles de H5P.Question.
+    const $question = self.$gameWrapper.closest('.h5p-question');
+    if ($question && $question.length) {
+      $question.find(
+        '.h5p-question-feedback, .h5p-question-feedback-content, .h5p-question-feedback-content-text, ' +
+        '.h5p-question-buttons, .h5p-question-scorebar, .h5p-joubelui-button'
+      ).css('font-size', newFontSize + 'px');
+    }
   };
 
   /**
