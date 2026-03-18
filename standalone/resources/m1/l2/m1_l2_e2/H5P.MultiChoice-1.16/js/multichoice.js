@@ -164,6 +164,18 @@ H5P.MultiChoice = function (options, contentId, contentData) {
 
   var score = 0;
   var solutionsVisible = false;
+  var attemptStartTime = Date.now();
+
+  /**
+   * Returns attempt duration in xAPI ISO8601 format.
+   *
+   * @returns {string}
+   */
+  var getAttemptDurationISO8601 = function () {
+    var start = attemptStartTime || Date.now();
+    var elapsedSeconds = Math.max(0, Math.round((Date.now() - start) / 1000));
+    return 'PT' + elapsedSeconds + 'S';
+  };
 
   /**
    * Add feedback to element
@@ -590,6 +602,7 @@ H5P.MultiChoice = function (options, contentId, contentData) {
     self.hideButton('show-solution');
     enableInput();
     $myDom?.find('.h5p-feedback-available').remove();
+    attemptStartTime = Date.now();
   };
 
   var calculateMaxScore = function () {
@@ -957,6 +970,9 @@ H5P.MultiChoice = function (options, contentId, contentData) {
     var success = (100 * score / maxScore) >= params.behaviour.passPercentage;
 
     xAPIEvent.setScoredResult(score, maxScore, self, true, success);
+    if (!xAPIEvent.data.statement.result.duration) {
+      xAPIEvent.data.statement.result.duration = getAttemptDurationISO8601();
+    }
     if (params.userAnswers === undefined) {
       calcScore();
     }

@@ -165,6 +165,9 @@ H5P.Blanks = (function ($, Question) {
     // ... and buttons
     self.registerButtons();
 
+    // Track attempt start to include duration in answered xAPI.
+    self.attemptStartTime = Date.now();
+
     // Restore previous state
     self.setH5PUserState();
   }
@@ -616,6 +619,7 @@ H5P.Blanks = (function ($, Question) {
    */
   Blanks.prototype.resetTask = function () {
     this.answered = false;
+    this.attemptStartTime = Date.now();
     this.hideEvaluation();
     this.hideSolutions();
     this.clearAnswers();
@@ -771,7 +775,20 @@ H5P.Blanks = (function ($, Question) {
    */
   Blanks.prototype.addResponseToXAPI = function (xAPIEvent) {
     xAPIEvent.setScoredResult(this.getScore(), this.getMaxScore(), this);
+    xAPIEvent.data.statement.result = xAPIEvent.data.statement.result || {};
     xAPIEvent.data.statement.result.response = this.getxAPIResponse();
+    xAPIEvent.data.statement.result.duration = this.getAttemptDurationISO8601();
+  };
+
+  /**
+   * Get current attempt duration in ISO8601 format.
+   *
+   * @return {string}
+   */
+  Blanks.prototype.getAttemptDurationISO8601 = function () {
+    var startTs = this.attemptStartTime || Date.now();
+    var seconds = Math.max(0, (Date.now() - startTs) / 1000);
+    return 'PT' + seconds.toFixed(2) + 'S';
   };
 
   /**

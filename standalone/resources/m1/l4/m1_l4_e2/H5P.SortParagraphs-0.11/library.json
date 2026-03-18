@@ -18,6 +18,9 @@
     "preloadedJs": [
         {
             "path": "dist/h5p-sort-paragraphs.js"
+        },
+        {
+            "path": "sort-paragraphs-duration-patch.js"
         }
     ],
     "preloadedCss": [

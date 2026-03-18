@@ -75,8 +75,7 @@
                       "H5P.InteractiveVideo 1.27",
                       "H5P.TwitterUserFeed 1.0",
                       "H5P.AudioRecorder 1.0",
-                      "H5P.MultiMediaChoice 0.3",
-                      "H5P.SortParagraphs 0.11"
+                      "H5P.MultiMediaChoice 0.3"
                     ],
                     "optional": true
                   },
