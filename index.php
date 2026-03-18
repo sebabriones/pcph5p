@@ -120,9 +120,6 @@
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e21">Ejercicio 21</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e22">Ejercicio 22</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e23">Ejercicio 23</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e24">Ejercicio 24</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e25">Ejercicio 25</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_e26">Ejercicio 26</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r1">Refuerzo 1</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r2">Refuerzo 2</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r3">Refuerzo 3</a></li>
@@ -145,10 +142,6 @@
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r20">Refuerzo 20</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r21">Refuerzo 21</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r22">Refuerzo 22</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r23">Refuerzo 23</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r24">Refuerzo 24</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r25">Refuerzo 25</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m2/l3/m2_l3_r26">Refuerzo 26</a></li>
             </ul>
             <li>Leccion 4</li>
             <ul>
