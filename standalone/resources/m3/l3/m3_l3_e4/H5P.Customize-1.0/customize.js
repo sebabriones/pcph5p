@@ -96,7 +96,7 @@ jQuery(document).ready(()=>{
 
     const hiddenH5pNxtBtn = () => {
         if(h5pScSet !== null && h5pScSet[0].children[h5pScSet[0].children.length-2].classList.contains('h5p-sc-current-slide')){
-            console.log('oculto');
+            //console.log('oculto');
             $(h5pNxtBtn).css({'display':'none'});
         }
     };
