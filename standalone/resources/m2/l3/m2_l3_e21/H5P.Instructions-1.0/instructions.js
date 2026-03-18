@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Analiza cuidadosamente la siguiente información y resuelve el problema planteado paso a paso.<br><br>Una empresa de logística necesita organizar su inventario para optimizar el espacio en el almacén. Durante la semana, se registraron las siguientes entradas:<br><br><img src=\"resources/m2/l3/m2_l3_e21/content/images/table.png\" alt=\"table\" width=\"45%\"><br><br><strong>Problema a resolver:</strong> Necesitas decidir cómo reorganizar el inventario para dar prioridad a la categoría con mayor demanda.`;
+  const instructions = `Un equipo de estudiantes analiza distintos casos de bajo rendimiento académico para identificar una regla general que les permita anticipar situaciones similares en el futuro. A continuación, se presentan distintos casos observados. Analízalos en conjunto e identifica la regla general que se puede extraer de ellos.<br><br>Selecciona todas las alternativas que representen una generalización válida, no una descripción puntual de un solo caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

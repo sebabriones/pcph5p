@@ -7,10 +7,15 @@
     "license": "U",
     "extraTitle": "Modulo 2 - Leccion 3 - Refuerzo 8",
     "title": "Modulo 2 - Leccion 3 - Refuerzo 8",
-    "mainLibrary": "H5P.CoursePresentation",
+    "mainLibrary": "H5P.QuestionSet",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
+            "majorVersion": 1,
+            "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.Customize",
             "majorVersion": 1,
             "minorVersion": 0
         },
@@ -20,14 +25,19 @@
             "minorVersion": 1
         },
         {
-            "machineName": "H5P.MultiChoice",
+            "machineName": "H5P.DragShuffle",
             "majorVersion": 1,
-            "minorVersion": 16
+            "minorVersion": 0
         },
         {
             "machineName": "FontAwesome",
             "majorVersion": 4,
             "minorVersion": 5
+        },
+        {
+            "machineName": "jQuery.ui",
+            "majorVersion": 1,
+            "minorVersion": 10
         },
         {
             "machineName": "H5P.JoubelUI",
@@ -50,9 +60,14 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.CoursePresentation",
+            "machineName": "H5P.Video",
             "majorVersion": 1,
-            "minorVersion": 26
+            "minorVersion": 6
+        },
+        {
+            "machineName": "H5P.QuestionSet",
+            "majorVersion": 1,
+            "minorVersion": 20
         }
     ]
 }

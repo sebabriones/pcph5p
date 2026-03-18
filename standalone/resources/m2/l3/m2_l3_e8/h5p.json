@@ -15,23 +15,18 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Customize",
+            "machineName": "H5P.Image",
             "majorVersion": 1,
-            "minorVersion": 0
+            "minorVersion": 1
         },
         {
-            "machineName": "H5P.Blanks",
+            "machineName": "H5P.SingleChoiceSet",
             "majorVersion": 1,
-            "minorVersion": 14
+            "minorVersion": 11
         },
         {
             "machineName": "FontAwesome",
             "majorVersion": 4,
-            "minorVersion": 5
-        },
-        {
-            "machineName": "H5P.Question",
-            "majorVersion": 1,
             "minorVersion": 5
         },
         {
@@ -50,14 +45,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.TextUtilities",
+            "machineName": "H5P.Question",
             "majorVersion": 1,
-            "minorVersion": 3
-        },
-        {
-            "machineName": "H5P.Image",
-            "majorVersion": 1,
-            "minorVersion": 1
+            "minorVersion": 5
         },
         {
             "machineName": "H5P.CoursePresentation",

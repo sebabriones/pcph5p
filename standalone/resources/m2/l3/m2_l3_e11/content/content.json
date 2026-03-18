@@ -4,10 +4,10 @@
             {
                 "elements": [
                     {
-                        "x": 2.178649237472767,
-                        "y": 40.54127329944323,
-                        "width": 39.28551198257081,
-                        "height": 15.492616799806342,
+                        "x": 4.357298474945534,
+                        "y": 32.92181069958848,
+                        "width": 37.88745098039216,
+                        "height": 30.616122004357294,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -16,13 +16,13 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e11/content/images/image-dULbwrIv.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e14/content/images/image-etcWJBeR.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
                                     "width": 1540,
-                                    "height": 340
+                                    "height": 700
                                 }
                             },
                             "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
@@ -44,34 +44,28 @@
                     },
                     {
                         "x": 44.66230936819172,
-                        "y": 28.238925199709513,
+                        "y": 30.92181069958848,
                         "width": 51.19825708061002,
-                        "height": 48.033890099249575,
+                        "height": 50.35100459937062,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
                                         "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>¿Cuál es el patrón que sigue esta secuencia? Selecciona la alternativa correcta.</p>",
+                                        "question": "<p>Se quiere analizar cómo el sueño afecta el rendimiento académico. ¿Qué combinación de fuentes permite obtener información más confiable?</p>",
                                         "answers": [
-                                            "<p>Cada número corresponde al producto de dos enteros consecutivos.</p>",
-                                            "<p>Cada número es múltiplo de 3.</p>",
-                                            "<p>Cada número es el cuadrado de un número entero.</p>",
-                                            "<p>Cada número se obtiene multiplicando por 3 el anterior.</p>"
+                                            "<p>Encuestas + registros de notas</p>",
+                                            "<p>Opinión personal + redes sociales</p>",
+                                            "<p>Comentarios informales + rumores</p>",
+                                            "<p>Horóscopo + experiencias aisladas</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 99,
-                                        "feedback": "Respuesta incorrecta. La secuencia sigue el patrón de los productos de enteros consecutivos. 2 = 1×2, 6 = 2×3, 12 = 3×4, 20 = 4×5, 30 = 5×6. El patrón es n × (n+1)."
-                                    },
-                                    {
-                                        "from": 100,
-                                        "to": 100,
-                                        "feedback": "¡Respuesta correcta!  La secuencia sigue el patrón de los productos de enteros consecutivos. 2 = 1×2, 6 = 2×3, 12 = 3×4, 20 = 4×5, 30 = 5×6. El patrón es n × (n+1)."
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {

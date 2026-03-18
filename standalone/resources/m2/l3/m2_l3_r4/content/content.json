@@ -4,10 +4,10 @@
             {
                 "elements": [
                     {
-                        "x": 2,
-                        "y": 13.55603969983055,
-                        "width": 42.488866183996365,
-                        "height": 73.22081820382473,
+                        "x": 6.5359477124183005,
+                        "y": 21.517685385618442,
+                        "width": 38.12636165577342,
+                        "height": 73.00219050037227,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -16,7 +16,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r4/content/images/image-gU3lYmc0.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r4/content/images/image-GnDL8vML.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -25,7 +25,7 @@
                                     "height": 1708
                                 }
                             },
-                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
+                            "subContentId": "a14383e8-f060-46f6-8f5d-23d96024ce03",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -43,17 +43,44 @@
                         "solution": ""
                     },
                     {
-                        "x": 44.66230936819172,
-                        "y": 25.30234809973372,
-                        "width": 51.19825708061002,
-                        "height": 65.84362139917695,
+                        "x": 4.357298474945534,
+                        "y": 10.75884269280922,
+                        "width": 91.50326797385621,
+                        "height": 12.910611231371064,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>La administración del edificio Parque Azul quiere implementar un sistema de registro y control de mascotas para mejorar la convivencia y la seguridad.</p>"
+                            },
+                            "subContentId": "6766d415-3cdf-4b63-a8d5-8093f8fafc04",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 47.930283224400874,
+                        "y": 28.821222462742128,
+                        "width": 42.48366013071895,
+                        "height": 64.85659323397901,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
-                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>Selecciona la opción con la información relevante para diseñar este sistema de registro.</p>",
+                                        "subContentId": "10f54f8b-5d3f-41a4-ac94-ef87c092af1c",
+                                        "question": "<p>De la siguiente lista de ideas, seleccione la opción con la <strong>información relevante</strong> para diseñar este sistema de registro.</p>",
                                         "answers": [
                                             "<p>Opción C</p>",
                                             "<p>Opción B</p>",
@@ -69,9 +96,9 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
                                     "soundEffectsEnabled": false,
                                     "enableRetry": false,
                                     "enableSolutionsButton": false,
@@ -95,7 +122,7 @@
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
+                            "subContentId": "c34ac7c3-4320-4bad-b07f-52e991f60a99",
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
@@ -103,6 +130,537 @@
                                 "authors": [],
                                 "changes": [],
                                 "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 5.446623093681917,
+                        "y": 34.428296616989506,
+                        "width": 40.850159568708115,
+                        "height": 32.27652807842766,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r4/content/images/image-ACJ7kNEw.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1540,
+                                    "height": 616
+                                }
+                            },
+                            "subContentId": "6e5623ff-c031-4e62-917b-c5bd7ad360b6",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 50.10893246187364,
+                        "y": 26.517685385618442,
+                        "width": 42.48366013071895,
+                        "height": 60.1601303111027,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "435710e2-997b-48df-a746-f6faec2f5c88",
+                                        "question": "<p>¿Cuál de los siguientes datos <strong>no es relevante</strong> para cumplir el objetivo de la actualización?</p>",
+                                        "answers": [
+                                            "<p>Color del fondo de la página web</p>",
+                                            "<p>Fecha de inicio de inscripciones</p>",
+                                            "<p>Requisitos para inscribirse</p>",
+                                            "<p>Nombre del curso</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "e99974b0-787f-4723-a858-3b0106738b9f",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 4.357298474945534,
+                        "y": 34.428296616989506,
+                        "width": 41.394335511982575,
+                        "height": 32.70688178614003,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r4/content/images/image-RdrNLIMR.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1540,
+                                    "height": 616
+                                }
+                            },
+                            "subContentId": "9466e729-4855-4935-8e45-f8d7e971ee6d",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 47.930283224400874,
+                        "y": 23.365916847056596,
+                        "width": 46.84095860566449,
+                        "height": 62.1601303111027,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "435710e2-997b-48df-a746-f6faec2f5c88",
+                                        "question": "<p>¿Cuál de los siguientes datos <strong>no es relevante</strong> para cumplir el objetivo de preparar el material?</p>",
+                                        "answers": [
+                                            "<p>Qué desinfectante se usará para limpiar el quirófano.</p>",
+                                            "<p>Tipo de cirugía que se realizará.</p>",
+                                            "<p>Instrumentos requeridos para la intervención.</p>",
+                                            "<p>Hora de ingreso del paciente al quirófano.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "00902b9f-ca20-487b-b230-45a668a33c27",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 3",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 3"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 4.357298474945534,
+                        "y": 32.27652807842766,
+                        "width": 40.738997821350765,
+                        "height": 36.58006515555135,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r4/content/images/image-kGFe3Ppv.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1540,
+                                    "height": 700
+                                }
+                            },
+                            "subContentId": "3fe3eabf-49ca-4909-b910-430362ca9525",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 47.930283224400874,
+                        "y": 24.365916847056596,
+                        "width": 46.84095860566449,
+                        "height": 61.1601303111027,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "435710e2-997b-48df-a746-f6faec2f5c88",
+                                        "question": "<p>¿Falta información para resolver el problema?</p>",
+                                        "answers": [
+                                            "<p>Sí, falta la dosis recomendada por kg.</p>",
+                                            "<p>Sí, falta el nombre del paciente.</p>",
+                                            "<p>No, la información es suficiente.</p>",
+                                            "<p>Sí, falta el tipo de presentación del medicamento (jarabe, pastillas).</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "104894d5-ad7d-430d-b906-c48bd22a6514",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 4",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 4"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 17.214148308494753,
+                        "width": 42.920936807066944,
+                        "height": 66.70482469541717,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r4/content/images/image-m638maHn.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1604,
+                                    "height": 1262
+                                }
+                            },
+                            "subContentId": "021ea779-cc79-43ab-9d97-1d87d19f6d03",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 47.930283224400874,
+                        "y": 4.303537077123688,
+                        "width": 46.84095860566449,
+                        "height": 92.5260471581593,
+                        "action": {
+                            "library": "H5P.MultiChoice 1.16",
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Número de personas que viajarán.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Costo promedio del alojamiento por noche en el destino.</div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Color de las toallas que llevarán a la playa.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Medio de transporte elegido y su costo estimado (bus, auto, avión).</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Cantidad de días que durará el viaje.</div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Lugares bonitos para sacarse fotos para Instagram.</div>"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": false,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Comprobar",
+                                    "submitAnswerButton": "Enviar",
+                                    "showSolutionButton": "Mostrar solución",
+                                    "tryAgainButton": "Intentar de nuevo",
+                                    "tipsLabel": "Mostrar pista",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "tipAvailable": "Pista disponible",
+                                    "feedbackAvailable": "Retroalimentación disponible",
+                                    "readFeedback": "Leer retroalimentación",
+                                    "wrongAnswer": "Respuesta incorrecta",
+                                    "correctAnswer": "Respuesta correcta",
+                                    "shouldCheck": "Debería haber sido marcada",
+                                    "shouldNotCheck": "No debería haber sido marcada",
+                                    "noInput": "Por favor responde antes de ver la solución",
+                                    "a11yCheck": "Revisa tus respuestas. Las respuestas se marcarán como correcta, incorrecta o sin contestar.",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                },
+                                "confirmCheck": {
+                                    "header": "¿Terminar?",
+                                    "body": "¿Seguro que quieres terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "question": "<p>Seleccione todas las alternativas que representen información indispensable que falta para poder calcular si el presupuesto destinado realmente permitirá cumplir el objetivo.</p>"
+                            },
+                            "subContentId": "0deddde1-eb41-4fc4-8264-bb675113bd23",
+                            "metadata": {
+                                "contentType": "Opción múltiple (Multiple Choice)",
+                                "license": "U",
+                                "title": "Slide 5",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 5"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -127,8 +685,8 @@
         "keywordListOpacity": 90
     },
     "override": {
-        "activeSurface": true,
-        "hideSummarySlide": true,
+        "activeSurface": false,
+        "hideSummarySlide": false,
         "summarySlideSolutionButton": false,
         "summarySlideRetryButton": true,
         "enablePrintButton": false,

@@ -1,33 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `La facultad de Ciencias Físicas analiza el rendimiento de sus estudiantes en Física y Cálculo.
-                        Además, se considera la actitud frente al aprendizaje, que se infiere según el patrón de notas.<br>
-                        <strong>Muestra de estudiantes de segundo año:</strong>
-                        <ul class="unordered-list" style="text-align:left;margin-top:0.5em;">
-                          <li style="text-align:left;margin-top:0.5em;"><strong>Ana:</strong> Física 2.5, Cálculo 5.6</li>
-                          <li style="text-align:left;margin-top:0.5em;"><strong>Luis:</strong> Física 2.9, Cálculo 5.0</li>
-                          <li style="text-align:left;margin-top:0.5em;"><strong>Marta:</strong> Física 4.2, Cálculo 4.0</li>
-                          <li style="text-align:left;margin-top:0.5em;"><strong>Pedro:</strong> Física 3.0, Cálculo 3.8</li>
-                          <li style="text-align:left;margin-top:0.5em;"><strong>Carla:</strong> Física 5.4, Cálculo 3.7</li>
-                        </ul>
-                        <strong>Criterios para clasificar:</strong>
-                        <ol type="i" class="unordered-list" style="text-align:left;margin-top:0.5em;">
-                          <li style="text-align:left;margin-top:0.5em;">Categoría de rendimiento académico
-                            <ul style="text-align:left;margin-top:0.5em;">
-                              <li style="text-align:left;margin-top:0.5em;">Aprobado en ambas (≥4.0 en ambas).</li>
-                              <li style="text-align:left;margin-top:0.5em;">Aprobado sólo en Cálculo.</li>
-                              <li style="text-align:left;margin-top:0.5em;">Aprobado sólo en Física.</li>
-                              <li style="text-align:left;margin-top:0.5em;">Reprobado en ambas.</li>
-                            </ul>
-                          </li>
-                          <li style="text-align:left;margin-top:0.5em;">Enfoque de estudio (inferida)
-                            <ul style="text-align:left;margin-top:0.5em;">
-                              <li style="text-align:left;margin-top:0.5em;"><strong>Motivado:</strong> Aprobada en ambas con ≥ 6.0.</li>
-                              <li style="text-align:left;margin-top:0.5em;"><strong>Proactivo:</strong> Notas equilibradas con ≥ 4.0 en ambas materias.</li>
-                              <li style="text-align:left;margin-top:0.5em;"><strong>Pasivo:</strong> Diferencia marcada entre materias con una < 4.0 y otra ≥ 5.0</li>
-                              <li style="text-align:left;margin-top:0.5em;"><strong>Crítico:</strong> Bajo rendimiento general (< 4.0 en ambas).</li>
-                            </ul>
-                          </li>
-                        </ol>`;
+  const instructions = `Analiza cuidadosamente la siguiente información y resuelve el problema planteado paso a paso.<br>Has terminado tus evaluaciones y obtuviste:<br><br><strong>Física:</strong> Muy baja nota, <strong>Cálculo:</strong> Nota aceptable, <strong>Álgebra:</strong> Buena nota<br><br>Durante la semana anterior, estudiaste lo siguiente:<br><br><img src=\"resources/m2/l3/m2_l3_r21/content/images/table.png\" alt=\"table\" width=\"45%\"><br><br><strong>Problema a resolver:</strong> Necesitas decidir cómo distribuir tu tiempo de estudio la próxima semana para mantener notas aceptables en todas las asignaturas para aprobarlas, sobre todo en Física.<br><br><p style="text-align:left;"><strong>Slide 1:</strong> Completa la tabla agrupando los días y el total de horas por asignatura para ver cuánto tiempo dedicaste a cada una la semana anterior. Escribe cada dato en su columna correspondiente.<br><strong>Slide 2 y 3:</strong> Seleccione la alternativa correcta.</p>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

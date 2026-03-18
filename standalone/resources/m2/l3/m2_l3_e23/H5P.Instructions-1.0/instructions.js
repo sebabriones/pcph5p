@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Lee las siguientes situaciones y selecciona la <strong>categoría general</strong> que las agrupa.`;
+  const instructions = `Una ciudad analiza distintos incidentes urbanos ocurridos en el último año para mejorar su sistema de respuesta ante emergencias. El equipo busca extraer una regla general que permita anticipar situaciones de riesgo, pero también quiere evitar conclusiones apresuradas.<br><br><strong>Actividad 1:</strong> Arrastra cada situación hacia la zona correspondiente, según si aporta directamente a construir una regla general sobre riesgo urbano o si no aporta información relevante para generalizar.<br><strong>Actividad 2:</strong> Selecciona la opción correcta.<br><strong>Actividad 3:</strong> Selecciona la o las opciones correctas.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

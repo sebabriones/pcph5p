@@ -7,7 +7,7 @@
     "license": "U",
     "extraTitle": "Modulo 2 - Leccion 3 - Ejercicio 18",
     "title": "Modulo 2 - Leccion 3 - Ejercicio 18",
-    "mainLibrary": "H5P.QuestionSet",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
@@ -18,11 +18,6 @@
             "machineName": "H5P.Customize",
             "majorVersion": 1,
             "minorVersion": 0
-        },
-        {
-            "machineName": "H5P.AdvancedText",
-            "majorVersion": 1,
-            "minorVersion": 1
         },
         {
             "machineName": "H5P.DragShuffle",
@@ -60,14 +55,24 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.Video",
+            "machineName": "H5P.AdvancedText",
             "majorVersion": 1,
-            "minorVersion": 6
+            "minorVersion": 1
         },
         {
-            "machineName": "H5P.QuestionSet",
+            "machineName": "H5P.Image",
             "majorVersion": 1,
-            "minorVersion": 20
+            "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.SingleChoiceSet",
+            "majorVersion": 1,
+            "minorVersion": 11
+        },
+        {
+            "machineName": "H5P.CoursePresentation",
+            "majorVersion": 1,
+            "minorVersion": 26
         }
     ]
 }

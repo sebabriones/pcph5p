@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `La administración del edificio Parque Azul quiere implementar un sistema de registro y control de mascotas para mejorar la convivencia y la seguridad.<br><br>De la siguiente lista de ideas, selecciona la opción con la información relevante para diseñar este sistema de registro.`;
+  const instructions = `<strong>Slides 1 a 4:</strong> Seleccione la alternativa correcta de acuerdo a cada caso presentado.<br>
+                        <strong>Slide 5:</strong> Seleccione las alternativas correctas de acuerdo al caso presentado.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

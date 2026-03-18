@@ -190,8 +190,6 @@ export default class Draggable extends H5P.EventDispatcher {
           }
           else {
             element.reset();
-            // Force visual sync after clearing dropZone.
-            self.updatePlacement(element);
           }
         }
       }).css('position', '');

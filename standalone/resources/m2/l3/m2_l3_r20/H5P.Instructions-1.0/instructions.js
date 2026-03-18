@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Una nutricionista recibe a un paciente que percibe que su alimentación no es saludable, pero no sabe exactamente cuál es la causa. Antes de diseñar un plan alimenticio, la nutricionista debe <strong>definir el problema general</strong> y luego <strong>clasificar la información en factores específicos</strong> para analizarla con claridad.<br><br><strong>Actividad 1:</strong> Lee atentamente las siguientes afirmaciones y selecciona el problema general que mejor representa la situación descrita.<br>Selecciona una sola opción.<br><br><strong>Actividad 2:</strong> Una vez seleccionado el problema general, arrastra los elementos que permiten descomponerlo en factores específicos, de modo que pueda analizarse con mayor claridad.<br><br><strong>Nota:</strong> No podrá avanzar a la siguiente slide si no completa la primera actividad.`;
+  const instructions = `En una empresa, se han detectado varios problemas con la pérdida de información en los computadores de los empleados/as.<br><br>A continuación, se presentan distintos casos observados. Analízalos en conjunto e identifica la <strong>regla general</strong> que se puede extraer de ellos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

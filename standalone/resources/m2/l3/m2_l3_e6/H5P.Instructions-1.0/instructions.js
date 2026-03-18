@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta de acuerdo al siguiente caso.`;
+  const instructions = `Un estudiante universitario afirma que estudia muchas horas, pero sus resultados académicos siguen siendo bajos. Dice sentirse frustrado porque “hace todo lo posible” y no entiende por qué no mejora su rendimiento. Un tutor académico quiere comprender el problema antes de proponer soluciones.<br><br>A continuación se presentan distintos tipos de información. Arrastra sólo aquella información que es necesaria para comprender el problema académico del estudiante a la zona correspondiente. Indicación: No todas las opciones deben usarse.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

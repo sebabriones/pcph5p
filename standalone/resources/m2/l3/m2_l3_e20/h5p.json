@@ -55,21 +55,6 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.DragShuffle",
-            "majorVersion": 1,
-            "minorVersion": 0
-        },
-        {
-            "machineName": "jQuery.ui",
-            "majorVersion": 1,
-            "minorVersion": 10
-        },
-        {
-            "machineName": "H5P.AdvancedText",
-            "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
             "machineName": "H5P.CoursePresentation",
             "majorVersion": 1,
             "minorVersion": 26

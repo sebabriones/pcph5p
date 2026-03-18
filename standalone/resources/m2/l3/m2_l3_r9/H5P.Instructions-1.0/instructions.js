@@ -1,5 +1,7 @@
 jQuery(document).ready(() => {
-  const instructions = `Una empresa de venta online observa que sus ingresos han disminuido en los últimos tres meses, a pesar de mantener la misma cantidad de productos en stock. Antes de tomar decisiones (como aumentar publicidad o bajar precios), el equipo de marketing necesita comprender el problema.<br><br>A continuación, se presentan distintos tipos de información. Arrastra sólo aquella información que es necesaria para comprender el problema antes de proponer soluciones. Indicación: No todas las opciones deben usarse.`;
+  const instructions = `Una empresa de ropa deportiva observa una caída del 25 % en las ventas de su línea de zapatillas para running en los últimos tres meses. Antes de definir una estrategia, el equipo de marketing debe reunir información desde distintas fuentes.<br><br>
+                        A continuación, se presentan distintas fuentes de información y tipos de datos que pueden aportar. Une con una línea cada fuente (fila izquierda) con el tipo de información que permite obtener (fila derecha), considerando qué datos serían útiles para comprender el problema de la caída en la ventas.<br><br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

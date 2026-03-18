@@ -1,204 +1,346 @@
 {
-    "presentation": {
-        "slides": [
-            {
-                "elements": [
-                    {
-                        "x": 4.357298474945534,
-                        "y": 32.92181069958848,
-                        "width": 37.88745098039216,
-                        "height": 30.616122004357294,
-                        "action": {
-                            "library": "H5P.Image 1.1",
-                            "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e14/content/images/image-etcWJBeR.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
-                                    },
-                                    "width": 1540,
-                                    "height": 700
-                                }
-                            },
-                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 44.66230936819172,
-                        "y": 30.92181069958848,
-                        "width": 51.19825708061002,
-                        "height": 50.35100459937062,
-                        "action": {
-                            "library": "H5P.SingleChoiceSet 1.11",
-                            "params": {
-                                "choices": [
-                                    {
-                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>Se quiere analizar cómo el sueño afecta el rendimiento académico. ¿Qué combinación de fuentes permite obtener información más confiable?</p>",
-                                        "answers": [
-                                            "<p>Encuestas + registros de notas</p>",
-                                            "<p>Opinión personal + redes sociales</p>",
-                                            "<p>Comentarios informales + rumores</p>",
-                                            "<p>Horóscopo + experiencias aisladas</p>"
-                                        ]
-                                    }
-                                ],
-                                "overallFeedback": [
-                                    {
-                                        "from": 0,
-                                        "to": 100
-                                    }
-                                ],
-                                "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
-                                    "soundEffectsEnabled": false,
-                                    "enableRetry": true,
-                                    "enableSolutionsButton": false,
-                                    "passPercentage": 100
-                                },
-                                "l10n": {
-                                    "nextButtonLabel": "Siguiente pregunta",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo",
-                                    "solutionViewTitle": "Lista Solución",
-                                    "correctText": "¡Correcto!",
-                                    "incorrectText": "¡Incorrecto!",
-                                    "shouldSelect": "Debería haber sido seleccionada",
-                                    "shouldNotSelect": "NO debería haber sido seleccionada",
-                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
-                                    "closeButtonLabel": "Cerrar",
-                                    "slideOfTotal": "Diapositiva :num de :total",
-                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                    "solutionListQuestionNumber": "Pregunta :num",
-                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
-                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
-                                }
-                            },
-                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
-                            "metadata": {
-                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
-                                "license": "U",
-                                "title": "Slide 1",
-                                "authors": [],
-                                "changes": [],
-                                "extraTitle": "Slide 1"
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    }
-                ],
-                "keywords": [],
-                "slideBackgroundSelector": {}
+    "scoreShow": "Comprobar",
+    "submit": "Enviar",
+    "tryAgain": "Intentar de nuevo",
+    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+    "question": {
+        "settings": {
+            "size": {
+                "width": 900,
+                "height": 540
+            },
+            "background": {
+                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e17/content/images/image-m7jfap4f.png",
+                "mime": "image/png",
+                "copyright": {
+                    "license": "U"
+                },
+                "width": 1800,
+                "height": 1080
             }
-        ],
-        "keywordListEnabled": true,
-        "globalBackgroundSelector": {
-            "fillGlobalBackground": "#f8feef"
         },
-        "keywordListAlwaysShow": false,
-        "keywordListAutoHide": false,
-        "keywordListOpacity": 90
+        "task": {
+            "elements": [
+                {
+                    "x": 10.7,
+                    "y": 71.8,
+                    "width": 13.65,
+                    "height": 3,
+                    "dropZones": [
+                        "0",
+                        "2",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Proyecto A</p>"
+                        },
+                        "subContentId": "e675a8b9-05e8-4d12-a2e8-687996f5a7c0",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 37.3,
+                    "y": 71.8,
+                    "width": 13.65,
+                    "height": 3,
+                    "dropZones": [
+                        "0",
+                        "2",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Proyecto B</p>"
+                        },
+                        "subContentId": "c9c831e7-b93d-4681-9a12-426178dd0c2c",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 64,
+                    "y": 71.8,
+                    "width": 13.65,
+                    "height": 3,
+                    "dropZones": [
+                        "0",
+                        "2",
+                        "4"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Proyecto C</p>"
+                        },
+                        "subContentId": "624ecbfb-02df-40fd-90c2-9513bec93f53",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 10.7,
+                    "y": 84.3,
+                    "width": 13.65,
+                    "height": 3,
+                    "dropZones": [
+                        "1",
+                        "3",
+                        "5"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Afecta ecosistemas acuáticos</p>"
+                        },
+                        "subContentId": "34428a0b-9526-4626-98c4-ccb3ca2b5f2d",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 37.3,
+                    "y": 84.3,
+                    "width": 13.65,
+                    "height": 3,
+                    "dropZones": [
+                        "1",
+                        "3",
+                        "5"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Afecta zona sin animales o humanos</p>"
+                        },
+                        "subContentId": "66db052e-323b-498e-9bcb-af30ff7e9444",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                },
+                {
+                    "x": 64,
+                    "y": 84.3,
+                    "width": 13.65,
+                    "height": 3,
+                    "dropZones": [
+                        "1",
+                        "3",
+                        "5"
+                    ],
+                    "type": {
+                        "library": "H5P.AdvancedText 1.1",
+                        "params": {
+                            "text": "<p>Paneles reciclables, instalación urbana</p>"
+                        },
+                        "subContentId": "5511a16c-9d64-43e3-b0d4-0501c43f88f5",
+                        "metadata": {
+                            "contentType": "es",
+                            "license": "U",
+                            "title": "Sin título es",
+                            "authors": [],
+                            "changes": []
+                        }
+                    },
+                    "backgroundOpacity": 100,
+                    "multiple": false
+                }
+            ],
+            "dropZones": [
+                {
+                    "x": 35.5,
+                    "y": 23.3,
+                    "width": 16.3,
+                    "height": 4.75,
+                    "correctElements": [
+                        "1"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Bajo/Proyectos</div>"
+                },
+                {
+                    "x": 65.05,
+                    "y": 23.3,
+                    "width": 16.3,
+                    "height": 4.75,
+                    "correctElements": [
+                        "5"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Bajo/Justificación</div>"
+                },
+                {
+                    "x": 35.5,
+                    "y": 38.2,
+                    "width": 16.3,
+                    "height": 4.75,
+                    "correctElements": [
+                        "2"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Medio/Proyectos</div>"
+                },
+                {
+                    "x": 65.05,
+                    "y": 38.2,
+                    "width": 16.3,
+                    "height": 4.75,
+                    "correctElements": [
+                        "4"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Medio/Justificación</div>"
+                },
+                {
+                    "x": 35.5,
+                    "y": 53.3,
+                    "width": 16.3,
+                    "height": 4.75,
+                    "correctElements": [
+                        "0"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Alto/Proyectos</div>"
+                },
+                {
+                    "x": 65.05,
+                    "y": 53.3,
+                    "width": 16.3,
+                    "height": 4.75,
+                    "correctElements": [
+                        "3"
+                    ],
+                    "showLabel": false,
+                    "backgroundOpacity": 100,
+                    "tipsAndFeedback": {
+                        "tip": ""
+                    },
+                    "single": true,
+                    "autoAlign": true,
+                    "type": {
+                        "library": "H5P.DragQuestionDropzone 0.1"
+                    },
+                    "label": "<div>Alto/Justificación</div>"
+                }
+            ]
+        }
     },
-    "override": {
-        "activeSurface": true,
-        "hideSummarySlide": true,
-        "summarySlideSolutionButton": false,
-        "summarySlideRetryButton": true,
-        "enablePrintButton": false,
-        "social": {
-            "showFacebookShare": false,
-            "facebookShare": {
-                "url": "@currentpageurl",
-                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
-            },
-            "showTwitterShare": false,
-            "twitterShare": {
-                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
-                "url": "@currentpageurl",
-                "hashtags": "h5p, curso"
-            },
-            "showGoogleShare": false,
-            "googleShareUrl": "@currentpageurl"
-        },
-        "showSolutionButton": "off",
-        "retryButton": "on"
+    "overallFeedback": [
+        {
+            "from": 0,
+            "to": 100
+        }
+    ],
+    "behaviour": {
+        "enableRetry": true,
+        "enableCheckButton": true,
+        "singlePoint": false,
+        "applyPenalties": true,
+        "enableScoreExplanation": false,
+        "dropZoneHighlighting": "dragging",
+        "autoAlignSpacing": 15,
+        "enableFullScreen": false,
+        "showScorePoints": true,
+        "showTitle": false
     },
-    "l10n": {
-        "slide": "Diapositiva",
-        "score": "Puntaje",
-        "yourScore": "Tu Puntaje",
-        "maxScore": "Puntaje Máximo",
-        "total": "Total",
-        "totalScore": "Puntuación Total",
-        "showSolutions": "Mostrar soluciones",
-        "retry": "Intentar de nuevo",
-        "exportAnswers": "Exportar texto",
-        "hideKeywords": "Ocultar lista de palabras clave",
-        "showKeywords": "Mostrar lista de palabras clave",
-        "fullscreen": "Pantalla Completa",
-        "exitFullscreen": "Salir de Pantalla completa",
-        "prevSlide": "Diapositiva anterior",
-        "nextSlide": "Diapositiva siguiente",
-        "currentSlide": "Diapositiva actual",
-        "lastSlide": "Última Diapositiva",
-        "solutionModeTitle": "Salir del modo de solución",
-        "solutionModeText": "Modo de solución",
-        "summaryMultipleTaskText": "Tareas múltiples",
-        "scoreMessage": "Has obtenido:",
-        "shareFacebook": "Compartir en Facebook",
-        "shareTwitter": "Compartir en Twitter",
-        "shareGoogle": "Compartir en Google+",
-        "summary": "Resumen",
-        "solutionsButtonTitle": "Mostrar comentarios",
-        "printTitle": "Imprimir",
-        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
-        "printAllSlides": "Imprimir todas las diapositivas",
-        "printCurrentSlide": "Imprimir diapositiva actual",
-        "noTitle": "Sin título",
-        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
-        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
-        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
-        "containsNotCompleted": "@slideName contiene una interacción no completada",
-        "containsCompleted": "@slideName contiene una interacción completada",
-        "slideCount": "Diapositiva @index de @total",
-        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
-        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
-        "shareResult": "Compartir Resultado",
-        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
-        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
-        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
-        "confirmDialogHeader": "Envía tus respuestas",
-        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
-        "confirmDialogConfirmText": "Enviar y ver resultados",
-        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
-        "confirmDialogConfirmLabel": "Confirmar",
-        "confirmDialogCancelLabel": "Cancelar"
+    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+    "grabbableSuffix": "Colocado en zona de colocación {num}.",
+    "dropzonePrefix": "Zona de colocación {num} de {total}.",
+    "noDropzone": "No es zona de colocación.",
+    "tipLabel": "Mostrar pista.",
+    "tipAvailable": "Pista disponible",
+    "correctAnswer": "Respuesta correcta",
+    "wrongAnswer": "Respuesta incorrecta",
+    "feedbackHeader": "Retroalimentación",
+    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+    "localize": {
+        "fullscreen": "Pantalla completa",
+        "exitFullscreen": "Salir de pantalla completa"
     }
 }

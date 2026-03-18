@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta de acuerdo al siguiente caso.`;
+  const instructions = `Completa el siguiente párrafo seleccionando las frases ubicadas en la listas desplegables.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

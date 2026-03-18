@@ -4,8 +4,7 @@
 .h5peditor .ui-dialog .h5p-joubelui-button,
 .h5peditor .h5p-joubelui-button,
 .h5p-joubelui-button {
-  /*font-size: 1em;*/
-  font-size: 0.8em; /*nuevo*/
+  font-size: 1em;
   line-height: 1.2;
   margin: 0 0.5em 1em;
   padding: 0.5em 1.25em;

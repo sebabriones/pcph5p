@@ -7,7 +7,7 @@
     "license": "U",
     "extraTitle": "Modulo 2 - Leccion 3 - Refuerzo 17",
     "title": "Modulo 2 - Leccion 3 - Refuerzo 17",
-    "mainLibrary": "H5P.DragShuffle",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
@@ -15,9 +15,14 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.AdvancedText",
+            "machineName": "H5P.Customize",
             "majorVersion": 1,
-            "minorVersion": 1
+            "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.DragShuffle",
+            "majorVersion": 1,
+            "minorVersion": 0
         },
         {
             "machineName": "FontAwesome",
@@ -50,9 +55,24 @@
             "minorVersion": 5
         },
         {
-            "machineName": "H5P.DragShuffle",
+            "machineName": "H5P.AdvancedText",
             "majorVersion": 1,
-            "minorVersion": 0
+            "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.Image",
+            "majorVersion": 1,
+            "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.SingleChoiceSet",
+            "majorVersion": 1,
+            "minorVersion": 11
+        },
+        {
+            "machineName": "H5P.CoursePresentation",
+            "majorVersion": 1,
+            "minorVersion": 26
         }
     ]
 }

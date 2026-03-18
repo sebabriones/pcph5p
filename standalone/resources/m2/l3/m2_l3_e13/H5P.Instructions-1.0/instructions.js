@@ -1,8 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `La biblioteca universitaria ha detectado una disminución en el préstamo de libros físicos, y quiere comprender las posibles causas antes de tomar decisiones. Para ello, necesita reunir información desde distintas fuentes, ya que ningún registro por sí solo permite entender completamente el problema.<br><br>
-                        A continuación, se presentan distintas fuentes de información y de diferentes tipos, según su aporte. Relaciona correctamente cada fuente con el tipo de información que permite obtener, considerando qué datos serían útiles para comprender el problema del uso de la biblioteca.<br><br>
-                        Una con una línea cada fuente con el tipo de información que mejor corresponda.<br>
-                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
+  const instructions = `Clasifica las figuras por sus caras geométricas. Toma y arrastra cada elemento hacia la zona que corresponda.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

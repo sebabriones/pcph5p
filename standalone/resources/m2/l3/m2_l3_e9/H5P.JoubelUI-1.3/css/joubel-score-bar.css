@@ -157,3 +157,8 @@
   font-size: 1em;
   line-height: 1;
 }
+
+/*nuevo*/
+.h5p-joubelui-score-bar .joubel-tip-container {
+  display: none;
+}

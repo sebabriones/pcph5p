@@ -1,6 +1,6 @@
 /* IcoMoon font licensed under the GNU General Public License: http://www.gnu.org/licenses/gpl.html */
 /*nuevo*/
-@font-face {
+/*@font-face {
   font-family: 'icomoon-multichoice';
   src:url('../fonts/icomoon.eot');
   src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
@@ -9,7 +9,7 @@
     url('../fonts/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 .h5p-container.h5p-single-choice-set {
   overflow: hidden;
@@ -70,7 +70,7 @@
 }
 
 .h5p-ssc-next-button {
-  display: none;
+  display: none !important;
   position: absolute;
   right: 0.5em;
   bottom: 0;
@@ -91,8 +91,7 @@
   position: absolute;
 }
 .navigatable .h5p-ssc-next-button {
-  /*display: inline-block;*/
-  display: none; /*nuevo*/
+  display: inline-block;
 }
 .h5p-ssc-next-button[aria-disabled="true"] {
   transform: scale(0.01);
@@ -118,8 +117,8 @@ ul.h5p-sc-alternatives li.h5p-sc-alternative {
   -moz-border-radius: 0.25em;
   /*border-radius: 0.25em;*/
   border-radius: 0.6em; /*nuevo*/
-  font-size: 1em; /*nuevo*/
   box-shadow: 0 0.1em 0 rgba(0,0,0, 0.3);
+  font-size: 0.85em; /*nuevo*/
 
   transition: -webkit-transform 0.5s ease-in-out, width 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
@@ -279,9 +278,7 @@ li.h5p-sc-alternative .h5p-sc-status {
   height: 100%;
   position: absolute;
   top: 0;
-  /*text-align: center;*/
-  text-align: left; /*nuevo*/
-  font-size: 1em !important; /*nuevo*/
+  text-align: center;
   box-sizing: border-box;
 }
 .h5p-sc-set-results > .h5p-sc-feedback {
@@ -463,22 +460,22 @@ li.h5p-sc-alternative .h5p-sc-status {
 
 .h5p-single-choice-set .h5p-sc-feedback-container {
   outline: none;
-  text-align: center; /*nuevo*/
 }
 
 /* Introduction */
 .h5p-sc-question {
-  font-family: "Poppins-regular"; /*nuevo*/
-  color: #062971; /*nuevo*/
-  margin: 0.888888889em;
-  padding-right: 1.777777778em;
-  font-size: 1.125em;
-  /*font-size: 1.2em !important;*/
-  /*display: none; /*nuevo*/
+  /*font-family: "Poppins-regular"; /*nuevo*/
+  /*color: #062971; /*nuevo*/
+  /*margin: 0.888888889em;
+  padding-right: 1.777777778em;*/
+  /*font-size: 1.125em;*/
+  /*font-size: 0.8em; /*nuevo*/
+  display: none; /*nuevo*/
 }
 
 .h5p-single-choice-set .h5p-sc-question p {
-  font-size: 1em;
+  /*font-size: 1em;*/
+  font-size: 1.2em; /*nuevo*/
   margin: 0.75em 0;
 }
 .h5p-single-choice-set .h5p-sc-question p:first-child {

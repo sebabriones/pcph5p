@@ -4,10 +4,10 @@
             {
                 "elements": [
                     {
-                        "x": 4.357298474945534,
-                        "y": 32.92181069958848,
-                        "width": 37.88745098039216,
-                        "height": 30.616122004357294,
+                        "x": 2.178649237472767,
+                        "y": 40.54127329944323,
+                        "width": 39.4719979495066,
+                        "height": 15.492616799806342,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -16,13 +16,13 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r7/content/images/image-EEwwJY7E.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r11/content/images/image-UJl8wRur.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
                                     "width": 1540,
-                                    "height": 700
+                                    "height": 340
                                 }
                             },
                             "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
@@ -44,28 +44,34 @@
                     },
                     {
                         "x": 44.66230936819172,
-                        "y": 22.92181069958848,
+                        "y": 25.238925199709513,
                         "width": 51.19825708061002,
-                        "height": 56.35100459937062,
+                        "height": 60.033890099249575,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
                                         "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>¿Falta información para resolver el problema?</p>",
+                                        "question": "<p>¿Cuál es el patrón que sigue esta secuencia? Selecciona la alternativa correcta.</p>",
                                         "answers": [
-                                            "<p>Sí, falta la dosis recomendada por kg.</p>",
-                                            "<p>Sí, falta el nombre del paciente.</p>",
-                                            "<p>No, la información es suficiente.</p>",
-                                            "<p>Sí, falta el tipo de presentación del medicamento (jarabe, pastillas).</p>"
+                                            "<p>Cada número se obtiene sumando un número impar consecutivo al anterior.</p>",
+                                            "<p>Cada número es múltiplo de 2.</p>",
+                                            "<p>Cada número es el cuadrado de un entero.</p>",
+                                            "<p>Cada número se obtiene multiplicando por 2 el anterior y restando 1.</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "Respuesta incorrecta. El patrón consiste en sumar números impares consecutivos:  2 + 3 = 5, 5 + 5 = 10, 10 + 7 = 17, 17 + 9 = 26."
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "¡Respuesta correcta!  El patrón consiste en sumar números impares consecutivos:  2 + 3 = 5, 5 + 5 = 10, 10 + 7 = 17, 17 + 9 = 26."
                                     }
                                 ],
                                 "behaviour": {

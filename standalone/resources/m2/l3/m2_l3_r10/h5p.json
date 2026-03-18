@@ -7,7 +7,7 @@
     "license": "U",
     "extraTitle": "Modulo 2 - Leccion 3 - Refuerzo 10",
     "title": "Modulo 2 - Leccion 3 - Refuerzo 10",
-    "mainLibrary": "H5P.PatternGame",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
@@ -15,9 +15,14 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Question",
+            "machineName": "H5P.Image",
             "majorVersion": 1,
-            "minorVersion": 5
+            "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.SingleChoiceSet",
+            "majorVersion": 1,
+            "minorVersion": 11
         },
         {
             "machineName": "FontAwesome",
@@ -40,9 +45,14 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.PatternGame",
+            "machineName": "H5P.Question",
             "majorVersion": 1,
-            "minorVersion": 0
+            "minorVersion": 5
+        },
+        {
+            "machineName": "H5P.CoursePresentation",
+            "majorVersion": 1,
+            "minorVersion": 26
         }
     ]
 }

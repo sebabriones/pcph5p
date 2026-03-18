@@ -4,77 +4,34 @@
             {
                 "elements": [
                     {
-                        "x": 42.48366013071895,
-                        "y": 32.175502299685306,
-                        "width": 54.46623093681917,
-                        "height": 67.41442749939482,
+                        "x": 2.178649237472767,
+                        "y": 40.54127329944323,
+                        "width": 39.28551198257081,
+                        "height": 15.492616799806342,
                         "action": {
-                            "library": "H5P.Blanks 1.14",
+                            "library": "H5P.Image 1.1",
                             "params": {
-                                "media": {
-                                    "disableImageZooming": false
-                                },
-                                "text": "<p>Completa el siguiente párrafo seleccionando las palabras ubicadas en la lista desplegable.</p>",
-                                "overallFeedback": [
-                                    {
-                                        "from": 0,
-                                        "to": 100
-                                    }
-                                ],
-                                "showSolutions": "Mostrar solución",
-                                "tryAgain": "Intentar de nuevo",
-                                "checkAnswer": "Comprobar",
-                                "submitAnswer": "Enviar",
-                                "notFilledOut": "Por favor, completa todos los huecos para poder ver la solución",
-                                "answerIsCorrect": "':ans' es correcta",
-                                "answerIsWrong": "':ans' es incorrecta",
-                                "answeredCorrectly": "Contestado correctamente",
-                                "answeredIncorrectly": "Contestado incorrectamente",
-                                "solutionLabel": "Respuesta correcta:",
-                                "inputLabel": "Hueco @num de @total",
-                                "inputHasTipLabel": "Pista disponible",
-                                "tipLabel": "Pista",
-                                "behaviour": {
-                                    "enableRetry": true,
-                                    "enableSolutionsButton": false,
-                                    "enableCheckButton": true,
-                                    "autoCheck": false,
-                                    "caseSensitive": true,
-                                    "showSolutionsRequiresInput": true,
-                                    "separateLines": false,
-                                    "confirmCheckDialog": false,
-                                    "confirmRetryDialog": false,
-                                    "acceptSpellingErrors": false
-                                },
-                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrectas o sin contestar.",
-                                "a11yShowSolution": "Mostrar la solución. La tarea se marcará con su solución correcta.",
-                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
-                                "a11yCheckingModeHeader": "Modo de Comprobación",
-                                "confirmCheck": {
-                                    "header": "¿ Terminar ?",
-                                    "body": "¿Está seguro que desea terminar ?",
-                                    "cancelLabel": "Cancelar",
-                                    "confirmLabel": "Terminar"
-                                },
-                                "confirmRetry": {
-                                    "header": "¿Intentar de nuevo?",
-                                    "body": "¿Seguro que quieres volver a intentarlo?",
-                                    "cancelLabel": "Cancelar",
-                                    "confirmLabel": "Confirmar"
-                                },
-                                "questions": [
-                                    "<p>Para poder analizar por qué las ventas son bajas, falta información sobre *el comportamiento de los usuarios(as) en el sitio web* , ya que sin ese dato no es posible *evaluar en qué parte del proceso se pierde a los(as) clientes* .</p>"
-                                ]
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e11/content/images/image-dULbwrIv.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1540,
+                                    "height": 340
+                                }
                             },
-                            "subContentId": "df25f5f4-5e39-4493-8dd1-345024466cbb",
+                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
                             "metadata": {
-                                "contentType": "Complete los espacios en blanco (Fill in the Blanks)",
+                                "contentType": "es",
                                 "license": "U",
-                                "title": "Slide 1",
+                                "title": "Sin título es",
                                 "authors": [],
-                                "changes": [],
-                                "extraTitle": "Slide 1"
+                                "changes": []
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -86,35 +43,72 @@
                         "solution": ""
                     },
                     {
-                        "x": 2.178649237472767,
-                        "y": 28.985233599612684,
-                        "width": 38.35098039215686,
-                        "height": 30.985233599612684,
+                        "x": 44.66230936819172,
+                        "y": 28.238925199709513,
+                        "width": 51.19825708061002,
+                        "height": 48.033890099249575,
                         "action": {
-                            "library": "H5P.Image 1.1",
+                            "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e8/content/images/image-53HDlLlF.png",
-                                    "path2": "images/image-53HDlLlF.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
+                                "choices": [
+                                    {
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>¿Cuál es el patrón que sigue esta secuencia? Selecciona la alternativa correcta.</p>",
+                                        "answers": [
+                                            "<p>Cada número corresponde al producto de dos enteros consecutivos.</p>",
+                                            "<p>Cada número es múltiplo de 3.</p>",
+                                            "<p>Cada número es el cuadrado de un número entero.</p>",
+                                            "<p>Cada número se obtiene multiplicando por 3 el anterior.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 99,
+                                        "feedback": "Respuesta incorrecta. La secuencia sigue el patrón de los productos de enteros consecutivos. 2 = 1×2, 6 = 2×3, 12 = 3×4, 20 = 4×5, 30 = 5×6. El patrón es n × (n+1)."
                                     },
-                                    "width": 1540,
-                                    "height": 700
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "¡Respuesta correcta!  La secuencia sigue el patrón de los productos de enteros consecutivos. 2 = 1×2, 6 = 2×3, 12 = 3×4, 20 = 4×5, 30 = 5×6. El patrón es n × (n+1)."
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "6c44e5db-30c0-4609-bba9-1f27d1a31d5e",
+                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
                             "metadata": {
-                                "contentType": "es",
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Sin título es",
+                                "title": "Slide 1",
                                 "authors": [],
-                                "changes": []
+                                "changes": [],
+                                "extraTitle": "Slide 1"
                             }
                         },
                         "alwaysDisplayComments": false,

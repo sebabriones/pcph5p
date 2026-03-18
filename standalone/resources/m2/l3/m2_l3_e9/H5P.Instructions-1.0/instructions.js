@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Un estudiante universitario afirma que estudia muchas horas, pero sus resultados académicos siguen siendo bajos. Dice sentirse frustrado porque “hace todo lo posible” y no entiende por qué no mejora su rendimiento. Un tutor académico quiere comprender el problema antes de proponer soluciones.<br><br>A continuación se presentan distintos tipos de información. Arrastra sólo aquella información que es necesaria para comprender el problema académico del estudiante a la zona correspondiente. Indicación: No todas las opciones deben usarse.`;
+  const instructions = `Observa las matrices de figuras (slide 1 y 2); cada fila y cada columna sigue un patrón lógico. Identifica el patrón que organiza las formas, luego toma y arrastra hacia el espacio vacío la opción que completa correctamente la matriz.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

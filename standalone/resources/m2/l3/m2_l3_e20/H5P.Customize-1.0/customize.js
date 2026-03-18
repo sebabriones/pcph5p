@@ -7,9 +7,6 @@ jQuery(document).ready(()=>{
     $('.h5p-footer').css({'display':'none'});
     $('.h5p-tooltip').css({'display':'none'});
 
-    //Se bloquea la interacción con el navbar ya que primero se debe responder la primera slide
-    $('.h5p-cp-navigation').css({'pointer-events':'none'});
-
     const h5pNavigation = $('.h5p-cp-navigation')[0],
           btnPrev = $('.h5p-footer-previous-slide')[0],
           btnNext = $('.h5p-footer-next-slide')[0],
@@ -54,17 +51,13 @@ jQuery(document).ready(()=>{
     });
     
     //Si se responden todas las diapos aparece el boton de "terminar"
-    //para ir al slide de resumen y si se responde la primera slide se
-    //devuelve la interacción al navbar
+    //para ir al slide de resumen
     const observerAnswered = new MutationObserver((mutationList, observerInstance)=>{
-        console.log(taskAnswered);
-        if($('.h5p-answered').length == 1){
-            $('.h5p-cp-navigation').css({'pointer-events':'auto'});
-        }else if($('.h5p-answered').length == taskAnswered.length){
+        if($('.h5p-answered').length == taskAnswered.length){
             //Muestra botón Terminar
             $(finishBtn).css('visibility','visible');
         }
-    });
+    })
 
     $(taskAnswered).each((i,el)=>{
         observerAnswered.observe(el, {

@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Selecciona todas las alternativas que representen información indispensable que falta para poder evaluar si la propuesta realmente resolverá el problema de congestión.`;
+  const instructions = `Observa la distribución de colores en los tres primeros loros; todos siguen el patron de cuatro colores: rojo, azul, verde y amarillo.<br>Para el cuarto loro, asegúrate de que ningún color se repita en la misma parte del cuerpo que en los anteriores.<br><br>Desplaza hacia la izquierda o derecha cada parte del cuerpo del cuarto loro hasta obtener el patrón correcto.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

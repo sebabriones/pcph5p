@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Clasifica los tipos de residuos. Toma y arrastra cada elemento hacia la zona que corresponda.`;
+  const instructions = `Una nutricionista recibe a un paciente que percibe que su alimentación no es saludable, pero no sabe exactamente cuál es la causa. Antes de diseñar un plan alimenticio, la nutricionista debe <strong>definir el problema general</strong> y luego <strong>clasificar la información en factores específicos</strong> para analizarla con claridad.<br><br><strong>Actividad 1:</strong> Lee atentamente las siguientes afirmaciones y selecciona el problema general que mejor representa la situación descrita.<br>Selecciona una sola opción.<br><br><strong>Actividad 2:</strong> Una vez seleccionado el problema general, arrastra los elementos que permiten descomponerlo en factores específicos, de modo que pueda analizarse con mayor claridad.<br><br><strong>Nota:</strong> No podrá avanzar a la siguiente slide si no completa la primera actividad.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

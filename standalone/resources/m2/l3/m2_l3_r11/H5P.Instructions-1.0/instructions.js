@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta de acuerdo al siguiente caso.`;
+  const instructions = `Clasifica los elementos por su forma.<br> Toma y arrastra cada figura hacia la zona de elementos cuadrados, redondos o triangulares según corresponda.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

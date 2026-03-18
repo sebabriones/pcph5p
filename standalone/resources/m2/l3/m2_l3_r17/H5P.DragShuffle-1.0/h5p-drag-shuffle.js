@@ -1784,6 +1784,8 @@ var Draggable = /*#__PURE__*/function (_H5P$EventDispatcher) {
             self.addToDropZone(index, element, addToZone);
           } else {
             element.reset();
+            // Force visual sync after clearing dropZone.
+            self.updatePlacement(element);
           }
         }
       }).css('position', '');
@@ -2404,11 +2406,9 @@ var DropZone = /*#__PURE__*/function () {
       var containerSize = self.$dropZone.parent()[0].getBoundingClientRect();
 
       // Calcuate borders and spacing values in percetage
-      //sbriones: Aquí se cambia el porcentaje de espaciado de las zonas drop, toman el valor de la configuración inicial o del archivo content.json
-      //IMPORTANTE: Estos valores dependen de cada ejercicio
       var spacing = {
         x: self.autoAlignable.spacing / self.autoAlignable.size.width * 100,
-        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 0
+        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 150
       };
 
       // Determine coordinates for first 'spot'
@@ -2714,10 +2714,10 @@ function C(options, contentId, contentData) {
   let shufflePos1 = [];
   let shufflePos2 = [];
 
-  for (var posicion = 0; posicion < 4; posicion++) {
+  for (var posicion = 0; posicion < 3; posicion++) {
     shufflePos1.push(posicion);
   }
-  for (var posicion = 4; posicion < 8; posicion++) {
+  for (var posicion = 3; posicion < 6; posicion++) {
     shufflePos2.push(posicion);
   }
 

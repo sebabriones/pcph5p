@@ -1,476 +1,498 @@
 {
-    "scoreShow": "Comprobar",
-    "submit": "Enviar",
-    "tryAgain": "Intentar de nuevo",
-    "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
-    "question": {
-        "settings": {
-            "size": {
-                "width": 900,
-                "height": 540
+    "presentation": {
+        "slides": [
+            {
+                "elements": [
+                    {
+                        "x": 4.357298474945534,
+                        "y": 21.517685385618442,
+                        "width": 37.38275141260669,
+                        "height": 58.09775054116979,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r20/content/images/image-m4867eYa.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1604,
+                                    "height": 1262
+                                }
+                            },
+                            "subContentId": "aefe1f1f-009f-4780-87b0-7e07eb0bd72a",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 45.751633986928105,
+                        "y": 17.214148308494753,
+                        "width": 47.930283224400874,
+                        "height": 79.61543592678824,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "6f98e037-1f43-42ff-9a87-b9c66a95453c",
+                                        "question": "<p>Lee atentamente las siguientes afirmaciones y selecciona el problema general que mejor representa la situación descrita. Selecciona una sola opción.</p>",
+                                        "answers": [
+                                            "<p>La paciente percibe que su alimentación no es saludable y no sabe el motivo.</p>",
+                                            "<p>La paciente no cocina comidas caseras, porque no tiene tiempo.</p>",
+                                            "<p>La paciente no consume frutas ni verduras, solamente comida “chatarra”.</p>",
+                                            "<p>La paciente no asiste a sus controles mensuales con su nutricionista.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "1698d27d-52d6-4fa8-89cc-09e463431afd",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 1",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 1"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
             },
-            "background": {
-                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-sDcbh62x.png",
-                "mime": "image/png",
-                "copyright": {
-                    "license": "U"
-                },
-                "width": 1800,
-                "height": 1080
+            {
+                "elements": [
+                    {
+                        "x": 15,
+                        "y": 0,
+                        "width": 70,
+                        "height": 105.99677234719216,
+                        "action": {
+                            "library": "H5P.DragShuffle 1.0",
+                            "params": {
+                                "scoreShow": "Comprobar",
+                                "submit": "Enviar",
+                                "tryAgain": "Intentar de nuevo",
+                                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                                "question": {
+                                    "settings": {
+                                        "size": {
+                                            "width": 900,
+                                            "height": 540
+                                        },
+                                        "background": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r20/content/images/image-Sj7cJIXZ.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 1800,
+                                            "height": 1080
+                                        }
+                                    },
+                                    "task": {
+                                        "elements": [
+                                            {
+                                                "x": 62.3,
+                                                "y": 7.5,
+                                                "width": 18.1,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Horario de las comidas</p>"
+                                                    },
+                                                    "subContentId": "4e8f1cf5-0062-4f19-af55-99391db5f0db",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 62.3,
+                                                "y": 20.5,
+                                                "width": 18.1,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Cantidad de alimentos procesados consumidos</p>"
+                                                    },
+                                                    "subContentId": "d5f70501-4b3e-4a39-be74-189aeec08321",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 62.3,
+                                                "y": 33.4,
+                                                "width": 18.1,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Marca de la cocina</p>"
+                                                    },
+                                                    "subContentId": "6b08d29b-3e9d-4f19-b941-8d07b93307b3",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 62.3,
+                                                "y": 46.4,
+                                                "width": 18.1,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Frecuencia de compra de frutas y verduras</p>"
+                                                    },
+                                                    "subContentId": "cb3bce93-3ee7-4148-bd24-f0654e318751",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 62.3,
+                                                "y": 59.4,
+                                                "width": 18.1,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Técnica de preparación (fritura, horno, vapor)</p>"
+                                                    },
+                                                    "subContentId": "64e52674-86d0-4186-9595-91483ca4fcdb",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 62.3,
+                                                "y": 72.3,
+                                                "width": 18.1,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Tipo de música escuchada al cocinar</p>"
+                                                    },
+                                                    "subContentId": "f805bede-257c-4f1e-bdb6-408de2acbc5d",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            },
+                                            {
+                                                "x": 62.3,
+                                                "y": 85.3,
+                                                "width": 18.1,
+                                                "height": 2.7,
+                                                "dropZones": [
+                                                    "0"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Consumo de agua diario</p>"
+                                                    },
+                                                    "subContentId": "6862a940-01bf-4c04-aea7-e236235a23d9",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": false
+                                            }
+                                        ],
+                                        "dropZones": [
+                                            {
+                                                "x": 4.7,
+                                                "y": 13,
+                                                "width": 30.3,
+                                                "height": 26.5,
+                                                "correctElements": [
+                                                    "0",
+                                                    "1",
+                                                    "3",
+                                                    "4",
+                                                    "6"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": false,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Elementos relevantes para analizar el problema</div>"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": false,
+                                    "enableCheckButton": true,
+                                    "singlePoint": false,
+                                    "applyPenalties": true,
+                                    "enableScoreExplanation": false,
+                                    "dropZoneHighlighting": "dragging",
+                                    "autoAlignSpacing": 2,
+                                    "enableFullScreen": false,
+                                    "showScorePoints": false,
+                                    "showTitle": false
+                                },
+                                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                                "noDropzone": "No es zona de colocación.",
+                                "tipLabel": "Mostrar pista.",
+                                "tipAvailable": "Pista disponible",
+                                "correctAnswer": "Respuesta correcta",
+                                "wrongAnswer": "Respuesta incorrecta",
+                                "feedbackHeader": "Retroalimentación",
+                                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "localize": {
+                                    "fullscreen": "Pantalla completa",
+                                    "exitFullscreen": "Salir de pantalla completa"
+                                }
+                            },
+                            "subContentId": "fba30616-23f6-49ec-9d34-8b66a1475d93",
+                            "metadata": {
+                                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                                "license": "U",
+                                "title": "Slide 2",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
             }
+        ],
+        "keywordListEnabled": true,
+        "globalBackgroundSelector": {
+            "fillGlobalBackground": "#f8feef"
         },
-        "task": {
-            "elements": [
-                {
-                    "x": 76.48401826484019,
-                    "y": 15.220873906475338,
-                    "width": 4.4085616438356166,
-                    "height": 4.941244515650719,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-JY9ydpbu.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 143,
-                                "height": 160
-                            },
-                            "alt": "Bolsa plastica"
-                        },
-                        "subContentId": "0c355c47-6d17-46dc-9dd6-5f7cc480ea9e",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                },
-                {
-                    "x": 89.04109589041096,
-                    "y": 17.123483144784757,
-                    "width": 2.0463959129819567,
-                    "height": 4.4085616438356166,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-dn3hxYxN.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 81,
-                                "height": 160
-                            },
-                            "alt": "Botella plástica"
-                        },
-                        "subContentId": "ec30cfaa-d400-4891-a08d-5219d5e5e3dd",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                },
-                {
-                    "x": 76.48401826484019,
-                    "y": 36.14957552787893,
-                    "width": 2.949414113478935,
-                    "height": 4.4085616438356166,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-A93NDpi5.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 110,
-                                "height": 160
-                            },
-                            "alt": "Frasco de vidrio"
-                        },
-                        "subContentId": "d640c4b5-8178-411e-8b43-d222bd5e2ed7",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                },
-                {
-                    "x": 90.18264840182648,
-                    "y": 36.14957552787893,
-                    "width": 1.789359099804305,
-                    "height": 4.4085616438356166,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-xbkW0M2L.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 73,
-                                "height": 160
-                            },
-                            "alt": "Botella de vidrio"
-                        },
-                        "subContentId": "692f83dd-f73c-46e2-9c93-a293b03fdb18",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                },
-                {
-                    "x": 76.48401826484019,
-                    "y": 55.175667910973104,
-                    "width": 4.4085616438356166,
-                    "height": 4.644306927332859,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-44BFdELI.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 152,
-                                "height": 160
-                            },
-                            "alt": "Cascara de plátano"
-                        },
-                        "subContentId": "782a28d9-0bf0-4b2f-a096-75adf09f0072",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                },
-                {
-                    "x": 89.04109589041096,
-                    "y": 55.175667910973104,
-                    "width": 4.4085616438356166,
-                    "height": 4.1845123485833104,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-dM5vSJuO.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 160,
-                                "height": 152
-                            },
-                            "alt": "Pollo"
-                        },
-                        "subContentId": "cd82c3aa-075e-473f-b643-b36e88035d74",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                },
-                {
-                    "x": 76.48401826484019,
-                    "y": 74.19878746713242,
-                    "width": 4.4085616438356166,
-                    "height": 3.792192853174925,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-aSMjt6GR.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 160,
-                                "height": 138
-                            },
-                            "alt": "Caja de cartón"
-                        },
-                        "subContentId": "723071d9-858e-4ec6-ac50-bfbd70cd0808",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                },
-                {
-                    "x": 89.04109589041096,
-                    "y": 74.20176029406727,
-                    "width": 4.4085616438356166,
-                    "height": 4.212401896131425,
-                    "dropZones": [
-                        "0",
-                        "1",
-                        "2",
-                        "3"
-                    ],
-                    "type": {
-                        "library": "H5P.Image 1.1",
-                        "params": {
-                            "decorative": false,
-                            "contentName": "Imagen",
-                            "expandImage": "Expandir Imagen",
-                            "minimizeImage": "Minimizar Imagen",
-                            "file": {
-                                "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-rj8FE1Is.png",
-                                "mime": "image/png",
-                                "copyright": {
-                                    "license": "U"
-                                },
-                                "width": 160,
-                                "height": 153
-                            },
-                            "alt": "Periodico"
-                        },
-                        "subContentId": "20d849a5-260d-40c7-b936-de86f325d036",
-                        "metadata": {
-                            "contentType": "es",
-                            "license": "U",
-                            "title": "Sin título es",
-                            "authors": [],
-                            "changes": []
-                        }
-                    },
-                    "backgroundOpacity": 0,
-                    "multiple": false
-                }
-            ],
-            "dropZones": [
-                {
-                    "x": 3.4,
-                    "y": 13,
-                    "width": 19.6,
-                    "height": 13.3,
-                    "correctElements": [
-                        "5",
-                        "4"
-                    ],
-                    "showLabel": false,
-                    "backgroundOpacity": 100,
-                    "tipsAndFeedback": {
-                        "tip": ""
-                    },
-                    "single": false,
-                    "autoAlign": true,
-                    "type": {
-                        "library": "H5P.DragQuestionDropzone 0.1"
-                    },
-                    "label": "<div>Orgánicos</div>"
-                },
-                {
-                    "x": 39.5,
-                    "y": 13,
-                    "width": 19.6,
-                    "height": 13.3,
-                    "correctElements": [
-                        "6",
-                        "7"
-                    ],
-                    "showLabel": false,
-                    "backgroundOpacity": 100,
-                    "tipsAndFeedback": {
-                        "tip": ""
-                    },
-                    "single": false,
-                    "autoAlign": true,
-                    "type": {
-                        "library": "H5P.DragQuestionDropzone 0.1"
-                    },
-                    "label": "<div>Papel</div>"
-                },
-                {
-                    "x": 3.4,
-                    "y": 54.2,
-                    "width": 19.6,
-                    "height": 13.3,
-                    "correctElements": [
-                        "0",
-                        "1"
-                    ],
-                    "showLabel": false,
-                    "backgroundOpacity": 100,
-                    "tipsAndFeedback": {
-                        "tip": ""
-                    },
-                    "single": false,
-                    "autoAlign": true,
-                    "type": {
-                        "library": "H5P.DragQuestionDropzone 0.1"
-                    },
-                    "label": "<div>Plásticos</div>"
-                },
-                {
-                    "x": 39.5,
-                    "y": 54.2,
-                    "width": 19.6,
-                    "height": 13.3,
-                    "correctElements": [
-                        "2",
-                        "3"
-                    ],
-                    "showLabel": false,
-                    "backgroundOpacity": 100,
-                    "tipsAndFeedback": {
-                        "tip": ""
-                    },
-                    "single": false,
-                    "autoAlign": true,
-                    "type": {
-                        "library": "H5P.DragQuestionDropzone 0.1"
-                    },
-                    "label": "<div>Vidrio</div>"
-                }
-            ]
-        }
+        "keywordListAlwaysShow": false,
+        "keywordListAutoHide": false,
+        "keywordListOpacity": 90
     },
-    "overallFeedback": [
-        {
-            "from": 0,
-            "to": 100
-        }
-    ],
-    "behaviour": {
-        "enableRetry": true,
-        "enableCheckButton": true,
-        "singlePoint": false,
-        "applyPenalties": true,
-        "enableScoreExplanation": false,
-        "dropZoneHighlighting": "dragging",
-        "autoAlignSpacing": 2,
-        "enableFullScreen": false,
-        "showScorePoints": false,
-        "showTitle": false
+    "override": {
+        "activeSurface": false,
+        "hideSummarySlide": false,
+        "summarySlideSolutionButton": false,
+        "summarySlideRetryButton": true,
+        "enablePrintButton": false,
+        "social": {
+            "showFacebookShare": false,
+            "facebookShare": {
+                "url": "@currentpageurl",
+                "quote": "He conseguido @score de @maxScore en una tarea en @currentpageurl."
+            },
+            "showTwitterShare": false,
+            "twitterShare": {
+                "statement": "He conseguido @score de @maxScore en una tarea en @currentpageurl.",
+                "url": "@currentpageurl",
+                "hashtags": "h5p, curso"
+            },
+            "showGoogleShare": false,
+            "googleShareUrl": "@currentpageurl"
+        },
+        "showSolutionButton": "off",
+        "retryButton": "off"
     },
-    "grabbablePrefix": "Elemento a colocar {num} de {total}.",
-    "grabbableSuffix": "Colocado en zona de colocación {num}.",
-    "dropzonePrefix": "Zona de colocación {num} de {total}.",
-    "noDropzone": "No es zona de colocación.",
-    "tipLabel": "Mostrar pista.",
-    "tipAvailable": "Pista disponible",
-    "correctAnswer": "Respuesta correcta",
-    "wrongAnswer": "Respuesta incorrecta",
-    "feedbackHeader": "Retroalimentación",
-    "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
-    "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
-    "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
-    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
-    "localize": {
-        "fullscreen": "Pantalla completa",
-        "exitFullscreen": "Salir de pantalla completa"
+    "l10n": {
+        "slide": "Diapositiva",
+        "score": "Puntaje",
+        "yourScore": "Tu Puntaje",
+        "maxScore": "Puntaje Máximo",
+        "total": "Total",
+        "totalScore": "Puntuación Total",
+        "showSolutions": "Mostrar soluciones",
+        "retry": "Intentar de nuevo",
+        "exportAnswers": "Exportar texto",
+        "hideKeywords": "Ocultar lista de palabras clave",
+        "showKeywords": "Mostrar lista de palabras clave",
+        "fullscreen": "Pantalla Completa",
+        "exitFullscreen": "Salir de Pantalla completa",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Diapositiva siguiente",
+        "currentSlide": "Diapositiva actual",
+        "lastSlide": "Última Diapositiva",
+        "solutionModeTitle": "Salir del modo de solución",
+        "solutionModeText": "Modo de solución",
+        "summaryMultipleTaskText": "Tareas múltiples",
+        "scoreMessage": "Has obtenido:",
+        "shareFacebook": "Compartir en Facebook",
+        "shareTwitter": "Compartir en Twitter",
+        "shareGoogle": "Compartir en Google+",
+        "summary": "Resumen",
+        "solutionsButtonTitle": "Mostrar comentarios",
+        "printTitle": "Imprimir",
+        "printIngress": "¿Cómo te gustaría imprimir esta presentación?",
+        "printAllSlides": "Imprimir todas las diapositivas",
+        "printCurrentSlide": "Imprimir diapositiva actual",
+        "noTitle": "Sin título",
+        "accessibilitySlideNavigationExplanation": "Usa las flecha izquierda y derecha para cambiar la diapositiva en esa dirección siempre que se haya seleccionado el lienzo",
+        "accessibilityCanvasLabel": "Lienzo de presentación. Usa las flechas izquierda y derecha para moverte entre diapositivas.",
+        "accessibilityProgressBarLabel": "Elegir diapositiva para mostrar",
+        "containsNotCompleted": "@slideName contiene una interacción no completada",
+        "containsCompleted": "@slideName contiene una interacción completada",
+        "slideCount": "Diapositiva @index de @total",
+        "containsOnlyCorrect": "@slideName solamente contiene respuestas correctas",
+        "containsIncorrectAnswers": "@slideName contiene respuestas incorrectas",
+        "shareResult": "Compartir Resultado",
+        "accessibilityTotalScore": "Has obtenido @score de un total de @maxScore puntos",
+        "accessibilityEnteredFullscreen": "Has pasado a pantalla completa",
+        "accessibilityExitedFullscreen": "Has salido de pantalla completa",
+        "confirmDialogHeader": "Envía tus respuestas",
+        "confirmDialogText": "Esto enviará tus resultados, ¿quieres continuar?",
+        "confirmDialogConfirmText": "Enviar y ver resultados",
+        "slideshowNavigationLabel": "Navegación por la presentación de diapositivas",
+        "confirmDialogConfirmLabel": "Confirmar",
+        "confirmDialogCancelLabel": "Cancelar"
     }
 }

@@ -1,7 +1,33 @@
 jQuery(document).ready(() => {
-  const instructions = `Una empresa de ropa deportiva observa una caída del 25 % en las ventas de su línea de zapatillas para running en los últimos tres meses. Antes de definir una estrategia, el equipo de marketing debe reunir información desde distintas fuentes.<br><br>
-                        A continuación, se presentan distintas fuentes de información y tipos de datos que pueden aportar. Une con una línea cada fuente (fila izquierda) con el tipo de información que permite obtener (fila derecha), considerando qué datos serían útiles para comprender el problema de la caída en la ventas.<br><br>
-                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.`;
+  const instructions = `La facultad de Ciencias Físicas analiza el rendimiento de sus estudiantes en Física y Cálculo.
+                        Además, se considera la actitud frente al aprendizaje, que se infiere según el patrón de notas.<br>
+                        <strong>Muestra de estudiantes de segundo año:</strong>
+                        <ul class="unordered-list" style="text-align:left;margin-top:0.5em;">
+                          <li style="text-align:left;margin-top:0.5em;"><strong>Ana:</strong> Física 2.5, Cálculo 5.6</li>
+                          <li style="text-align:left;margin-top:0.5em;"><strong>Luis:</strong> Física 2.9, Cálculo 5.0</li>
+                          <li style="text-align:left;margin-top:0.5em;"><strong>Marta:</strong> Física 4.2, Cálculo 4.0</li>
+                          <li style="text-align:left;margin-top:0.5em;"><strong>Pedro:</strong> Física 3.0, Cálculo 3.8</li>
+                          <li style="text-align:left;margin-top:0.5em;"><strong>Carla:</strong> Física 5.4, Cálculo 3.7</li>
+                        </ul>
+                        <strong>Criterios para clasificar:</strong>
+                        <ol type="i" class="unordered-list" style="text-align:left;margin-top:0.5em;">
+                          <li style="text-align:left;margin-top:0.5em;">Categoría de rendimiento académico
+                            <ul style="text-align:left;margin-top:0.5em;">
+                              <li style="text-align:left;margin-top:0.5em;">Aprobado en ambas (≥4.0 en ambas).</li>
+                              <li style="text-align:left;margin-top:0.5em;">Aprobado sólo en Cálculo.</li>
+                              <li style="text-align:left;margin-top:0.5em;">Aprobado sólo en Física.</li>
+                              <li style="text-align:left;margin-top:0.5em;">Reprobado en ambas.</li>
+                            </ul>
+                          </li>
+                          <li style="text-align:left;margin-top:0.5em;">Enfoque de estudio (inferida)
+                            <ul style="text-align:left;margin-top:0.5em;">
+                              <li style="text-align:left;margin-top:0.5em;"><strong>Motivado:</strong> Aprobada en ambas con ≥ 6.0.</li>
+                              <li style="text-align:left;margin-top:0.5em;"><strong>Proactivo:</strong> Notas equilibradas con ≥ 4.0 en ambas materias.</li>
+                              <li style="text-align:left;margin-top:0.5em;"><strong>Pasivo:</strong> Diferencia marcada entre materias con una < 4.0 y otra ≥ 5.0</li>
+                              <li style="text-align:left;margin-top:0.5em;"><strong>Crítico:</strong> Bajo rendimiento general (< 4.0 en ambas).</li>
+                            </ul>
+                          </li>
+                        </ol>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

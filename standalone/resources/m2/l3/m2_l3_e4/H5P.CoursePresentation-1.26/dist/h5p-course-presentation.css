@@ -58,7 +58,7 @@
 
 .h5p-course-presentation p {
     /*font-size: 1em;*/
-    font-size: 1.1em; /*nuevo*/
+    font-size: 0.9em; /*nuevo*/
     font-weight: normal;
     line-height: 1.25em;
     padding: 0;
@@ -734,7 +734,7 @@
 
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-advanced-text,
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-link {
-    padding: 0
+    /*padding: 0*/
 }
 
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-ct>.ct {
@@ -801,7 +801,7 @@
 }
 
 .h5p-course-presentation .h5p-content-controls {
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: absolute;
     top: 0
 }
@@ -1812,7 +1812,7 @@
     margin-right: 0.5em;
 }
 .h5p-footer-next-slide {
-    margin-left: 0.5em;
+    margin-left: -0.5em;
 }
 
 .h5p-footer-previous-slide,
@@ -1838,4 +1838,21 @@
     padding: 0.3em 0.4em 0.3em 0.5em;
     border-radius: 1em;
     font-size: 0.8em;
+}
+
+/*Tamaño de scorebar en drag and drop*/
+.h5p-dragquestion .h5p-question-scorebar,
+.h5p-multichoice .h5p-question-scorebar,
+.h5p-blank .h5p-question-scorebar {
+    font-size: 0.7em !important;
+}
+
+.h5p-dragquestion .h5p-question-check-answer,
+.h5p-multichoice .h5p-question-check-answer,
+.h5p-blank .h5p-question-check-answer {
+    float: right;
+}
+
+.h5p-multichoice .h5p-element {
+    font-size: 0.7em;
 }

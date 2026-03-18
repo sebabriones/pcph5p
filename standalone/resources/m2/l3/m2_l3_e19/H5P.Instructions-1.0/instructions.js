@@ -1,10 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Un estudiante universitario quiere mejorar la forma en que organiza su tiempo y sus responsabilidades académicas, ya que siente que realiza muchas tareas, pero no siempre logra priorizarlas ni distribuirlas adecuadamente. Para comprender mejor su situación, decide ordenar la información que ha recopilado sobre sus actividades, con el fin de analizarla de manera más clara y tomar mejores decisiones.<br><br>
-                        Lea atentamente el siguiente texto y completa los espacios en blanco utilizando parejas de expresiones que representen categorías adecuadas para organizar la información. Las palabras que completes deben permitir clasificar las actividades de forma coherente, de modo que la información quede ordenada y sea más fácil de analizar.<br><br>
-                        <strong>Una con una línea solamente las 3 posibles combinaciones correctas de expresiones que completan el texto coherentemente.<br>
-                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.</strong><br><br>
-                        <strong>Texto:</strong><br>
-                        Al organizar la información sobre mis actividades, puedo agruparlas en categorías como ________________, lo que me permite analizar ________________ de manera más clara y tomar mejores decisiones sobre cómo distribuir mi tiempo.`;
+  const instructions = `Un estudiante registró durante dos semanas distintos aspectos de su rutina académica para comprender por qué su rendimiento varía. Los datos fueron recolectados por separado y ahora deben integrarse para identificar relaciones.<br><br><ul style='text-align:left;'><li><strong>Pregunta 1:</strong> Observa los datos recolectados y selecciona el problema general que mejor resume la situación.</li><li><strong>Pregunta 2:</strong> Considerando todos los datos en conjunto, selecciona la alternativa que mejor integre la información para explicar el problema identificado.</li></ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

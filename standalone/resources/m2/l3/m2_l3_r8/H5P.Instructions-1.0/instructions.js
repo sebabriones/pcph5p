@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Una familia quiere saber si el presupuesto que han destinado para sus vacaciones en la playa les alcanzará. Hacen una lluvia de ideas para planificar bien el presupuesto. Hasta el momento solo tienen claro que:<br><br>“Las vacaciones serán en febrero y se busca gastar lo menos posible.”<br><br>Selecciona todas las alternativas que representen información indispensable que falta para poder calcular si el presupuesto destinado realmente permitirá cumplir el objetivo.`;
+  const instructions = `Observa las matrices de figuras (slide 1 y 2); cada fila y cada columna sigue un patrón lógico. Identifica el patrón que organiza las formas, luego toma y arrastra hacia el espacio vacío la opción que completa correctamente la matriz.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

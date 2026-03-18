@@ -4,101 +4,216 @@
             {
                 "elements": [
                     {
-                        "x": 3.2679738562091503,
-                        "y": 25.175502299685306,
-                        "width": 37.37919389978214,
-                        "height": 58.2241587993222,
+                        "x": 15,
+                        "y": 0,
+                        "width": 70,
+                        "height": 105.99677234719216,
                         "action": {
-                            "library": "H5P.Image 1.1",
+                            "library": "H5P.DragShuffle 1.0",
                             "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e23/content/images/image-vIOYI978.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
+                                "scoreShow": "Comprobar",
+                                "submit": "Enviar",
+                                "tryAgain": "Intentar de nuevo",
+                                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
+                                "question": {
+                                    "settings": {
+                                        "size": {
+                                            "width": 900,
+                                            "height": 540
+                                        },
+                                        "background": {
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e26/content/images/image-PSacIukw.png",
+                                            "path2": "images/image-PSacIukw.png",
+                                            "mime": "image/png",
+                                            "copyright": {
+                                                "license": "U"
+                                            },
+                                            "width": 1800,
+                                            "height": 1080
+                                        }
                                     },
-                                    "width": 1604,
-                                    "height": 1262
-                                }
-                            },
-                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 44.66230936819172,
-                        "y": 29.04865649963689,
-                        "width": 51.19825708061002,
-                        "height": 60.033890099249575,
-                        "action": {
-                            "library": "H5P.SingleChoiceSet 1.11",
-                            "params": {
-                                "choices": [
-                                    {
-                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>1. ¿Cuál es la categoría general?</p>",
-                                        "answers": [
-                                            "<p>Organizar personas según el orden de llegada.</p>",
-                                            "<p>Controlar el comportamiento de las personas.</p>",
-                                            "<p>Transportar personas de un lugar a otro.</p>",
-                                            "<p>Clasificar personas según sus intereses.</p>"
+                                    "task": {
+                                        "elements": [
+                                            {
+                                                "x": 67.8,
+                                                "y": 37.9,
+                                                "width": 12.4,
+                                                "height": 3,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>Aporta información relevante</p>"
+                                                    },
+                                                    "subContentId": "d36790f7-f219-4015-91f9-304c49aed8ee",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": true
+                                            },
+                                            {
+                                                "x": 67.8,
+                                                "y": 53.27305867266368,
+                                                "width": 12.4,
+                                                "height": 3,
+                                                "dropZones": [
+                                                    "0",
+                                                    "1",
+                                                    "2",
+                                                    "3"
+                                                ],
+                                                "type": {
+                                                    "library": "H5P.AdvancedText 1.1",
+                                                    "params": {
+                                                        "text": "<p>No aporta información relevante</p>"
+                                                    },
+                                                    "subContentId": "ff5e5ed4-0687-4a89-b08f-6adc412e66eb",
+                                                    "metadata": {
+                                                        "contentType": "es",
+                                                        "license": "U",
+                                                        "title": "Sin título es",
+                                                        "authors": [],
+                                                        "changes": []
+                                                    }
+                                                },
+                                                "backgroundOpacity": 100,
+                                                "multiple": true
+                                            }
+                                        ],
+                                        "dropZones": [
+                                            {
+                                                "x": 8.9,
+                                                "y": 18.8,
+                                                "width": 29.9,
+                                                "height": 4.2,
+                                                "correctElements": [
+                                                    "0"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Corte masivo de electricidad durante una ola de calor provoca colapso del transporte.</div>"
+                                            },
+                                            {
+                                                "x": 8.9,
+                                                "y": 36,
+                                                "width": 29.9,
+                                                "height": 4.2,
+                                                "correctElements": [
+                                                    "1"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Accidente aislado de un automóvil por exceso de velocidad en una calle secundaria.</div>"
+                                            },
+                                            {
+                                                "x": 8.9,
+                                                "y": 53.3,
+                                                "width": 29.9,
+                                                "height": 4.2,
+                                                "correctElements": [
+                                                    "0"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Lluvias intensas generan anegamientos en múltiples sectores de la ciudad.</div>"
+                                            },
+                                            {
+                                                "x": 8.9,
+                                                "y": 70.5,
+                                                "width": 29.9,
+                                                "height": 4.2,
+                                                "correctElements": [
+                                                    "1"
+                                                ],
+                                                "showLabel": false,
+                                                "backgroundOpacity": 100,
+                                                "tipsAndFeedback": {
+                                                    "tip": ""
+                                                },
+                                                "single": true,
+                                                "autoAlign": true,
+                                                "type": {
+                                                    "library": "H5P.DragQuestionDropzone 0.1"
+                                                },
+                                                "label": "<div>Evento cultural con alta asistencia que se desarrolla sin incidentes.</div>"
+                                            }
                                         ]
                                     }
-                                ],
+                                },
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100,
-                                        "feedback": "En todas  estas situaciones se aplica un criterio común: las personas se ordenan en función del turno en que llegan, formando una fila o esperando su turno de manera secuencial."
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
-                                    "soundEffectsEnabled": false,
                                     "enableRetry": false,
-                                    "enableSolutionsButton": false,
-                                    "passPercentage": 100
+                                    "enableCheckButton": true,
+                                    "singlePoint": false,
+                                    "applyPenalties": true,
+                                    "enableScoreExplanation": false,
+                                    "dropZoneHighlighting": "dragging",
+                                    "autoAlignSpacing": 140,
+                                    "enableFullScreen": false,
+                                    "showScorePoints": false,
+                                    "showTitle": false
                                 },
-                                "l10n": {
-                                    "nextButtonLabel": "Siguiente pregunta",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo",
-                                    "solutionViewTitle": "Lista Solución",
-                                    "correctText": "¡Correcto!",
-                                    "incorrectText": "¡Incorrecto!",
-                                    "shouldSelect": "Debería haber sido seleccionada",
-                                    "shouldNotSelect": "NO debería haber sido seleccionada",
-                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
-                                    "closeButtonLabel": "Cerrar",
-                                    "slideOfTotal": "Diapositiva :num de :total",
-                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                    "solutionListQuestionNumber": "Pregunta :num",
-                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
-                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
+                                "grabbableSuffix": "Colocado en zona de colocación {num}.",
+                                "dropzonePrefix": "Zona de colocación {num} de {total}.",
+                                "noDropzone": "No es zona de colocación.",
+                                "tipLabel": "Mostrar pista.",
+                                "tipAvailable": "Pista disponible",
+                                "correctAnswer": "Respuesta correcta",
+                                "wrongAnswer": "Respuesta incorrecta",
+                                "feedbackHeader": "Retroalimentación",
+                                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
+                                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
+                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
+                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                "localize": {
+                                    "fullscreen": "Pantalla completa",
+                                    "exitFullscreen": "Salir de pantalla completa"
                                 }
                             },
-                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
+                            "subContentId": "40bc73d0-ff63-40b7-aeb2-e4e752e51162",
                             "metadata": {
-                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "contentType": "Arrastrar y soltar (Drag and Drop)",
                                 "license": "U",
                                 "title": "Slide 1",
                                 "authors": [],
@@ -122,9 +237,9 @@
                 "elements": [
                     {
                         "x": 3.2679738562091503,
-                        "y": 25.175502299685306,
-                        "width": 37.36383442265795,
-                        "height": 58.2241587993222,
+                        "y": 34.428296616989506,
+                        "width": 38.34596949891068,
+                        "height": 34.428296616989506,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -133,16 +248,17 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e23/content/images/image-mgN8Svpw.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e26/content/images/image-akRGGFU0.png",
+                                    "path2": "images/image-akRGGFU0.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 1604,
-                                    "height": 1262
+                                    "width": 1540,
+                                    "height": 700
                                 }
                             },
-                            "subContentId": "4b067315-c29e-4a64-aaf9-0cf1de847b5f",
+                            "subContentId": "aefe1f1f-009f-4780-87b0-7e07eb0bd72a",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -160,30 +276,29 @@
                         "solution": ""
                     },
                     {
-                        "x": 44.66230936819172,
-                        "y": 25.175502299685306,
-                        "width": 51.19825708061002,
-                        "height": 62.033890099249575,
+                        "x": 46.751633986928105,
+                        "y": 23.214148308494753,
+                        "width": 47.930283224400874,
+                        "height": 79.61543592678824,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
-                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>2. Considerando las dos situaciones anteriores (a y b), ¿Cuál es la subcategoría que mejor las representa?</p>",
+                                        "subContentId": "6f98e037-1f43-42ff-9a87-b9c66a95453c",
+                                        "question": "<p>A partir de los casos relevantes, ¿cuál de las siguientes formulaciones representa la mejor generalización?</p>",
                                         "answers": [
-                                            "<p>Asignación de turnos mediante número o ticket.</p>",
-                                            "<p>Formación de filas en espacios reducidos.</p>",
-                                            "<p>Clasificación por tipo de trámite.</p>",
-                                            "<p>Control de aforo en espacios cerrados.</p>"
+                                            "<p>Cuando se combinan eventos climáticos extremos con alta exposición urbana, aumenta el riesgo de incidentes generalizados.</p>",
+                                            "<p>Todos los eventos urbanos terminan en emergencias.</p>",
+                                            "<p>Las emergencias ocurren solo por fallas técnicas.</p>",
+                                            "<p>Las ciudades siempre fallan ante cualquier imprevisto.</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100,
-                                        "feedback": "En ambas situaciones —esperar turno en un banco y tomar número en una carnicería— las personas reciben un número o ticket que determina el orden en que serán atendidas. No forman una fila física tradicional, sino que el sistema organiza a las personas med"
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
@@ -213,7 +328,7 @@
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "0e10bcdf-68fb-42f5-a9db-6ad71fc86abf",
+                            "subContentId": "1698d27d-52d6-4fa8-89cc-09e463431afd",
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
@@ -239,9 +354,9 @@
                 "elements": [
                     {
                         "x": 3.2679738562091503,
-                        "y": 25.175502299685306,
-                        "width": 37.36383442265795,
-                        "height": 58.2241587993222,
+                        "y": 34.428296616989506,
+                        "width": 38.34468311516069,
+                        "height": 34.428296616989506,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -250,16 +365,17 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e23/content/images/image-a6srK04u.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e26/content/images/image-dpW9o11N.png",
+                                    "path2": "images/image-dpW9o11N.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 1604,
-                                    "height": 1262
+                                    "width": 1540,
+                                    "height": 700
                                 }
                             },
-                            "subContentId": "0a02c3b5-2724-4d81-a3ce-2f583faa5a01",
+                            "subContentId": "a2bba7bd-f931-43ca-be12-120ccf647ff5",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -278,61 +394,109 @@
                     },
                     {
                         "x": 44.66230936819172,
-                        "y": 25.175502299685306,
-                        "width": 51.19825708061002,
-                        "height": 62.033890099249575,
+                        "y": 13.455305615685532,
+                        "width": 52.287581699346404,
+                        "height": 92.5260471581593,
                         "action": {
-                            "library": "H5P.SingleChoiceSet 1.11",
+                            "library": "H5P.MultiChoice 1.16",
                             "params": {
-                                "choices": [
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
                                     {
-                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
-                                        "question": "<p>3. Considerando los siguientes registros, ¿Qué regla siguen?</p>",
-                                        "answers": [
-                                            "<p>Multiplica la entrada por sí misma y luego suma la entrada.</p>",
-                                            "<p>Multiplica por 2 y suma 1.</p>",
-                                            "<p>Eleva la entrada al cuadrado.</p>",
-                                            "<p>Eleva la entrada al cuadrado y luego suma 1.</p>"
-                                        ]
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Un temblor leve sin daños ni interrupciones.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Una falla eléctrica menor en un barrio con baja población.</div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Una tormenta intensa que afecta simultáneamente a varios servicios urbanos.</div>"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Un evento masivo planificado con medidas preventivas adecuadas.</div>"
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100,
-                                        "feedback": "La regla correcta consiste en: multiplicar el número por sí mismo y luego sumar ese mismo número (entrada 1: 1 × 1 + 1 = 2, entrada 2: 2 × 2 + 2 = 6, entrada 3: 3 × 3 + 3 = 12)."
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
-                                    "timeoutCorrect": 500,
-                                    "timeoutWrong": 500,
-                                    "soundEffectsEnabled": false,
                                     "enableRetry": false,
                                     "enableSolutionsButton": false,
-                                    "passPercentage": 100
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": false
                                 },
-                                "l10n": {
-                                    "nextButtonLabel": "Siguiente pregunta",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo",
-                                    "solutionViewTitle": "Lista Solución",
-                                    "correctText": "¡Correcto!",
-                                    "incorrectText": "¡Incorrecto!",
-                                    "shouldSelect": "Debería haber sido seleccionada",
-                                    "shouldNotSelect": "NO debería haber sido seleccionada",
-                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
-                                    "closeButtonLabel": "Cerrar",
-                                    "slideOfTotal": "Diapositiva :num de :total",
+                                "UI": {
+                                    "checkAnswerButton": "Comprobar",
+                                    "submitAnswerButton": "Enviar",
+                                    "showSolutionButton": "Mostrar solución",
+                                    "tryAgainButton": "Intentar de nuevo",
+                                    "tipsLabel": "Mostrar pista",
                                     "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "tipAvailable": "Pista disponible",
+                                    "feedbackAvailable": "Retroalimentación disponible",
+                                    "readFeedback": "Leer retroalimentación",
+                                    "wrongAnswer": "Respuesta incorrecta",
+                                    "correctAnswer": "Respuesta correcta",
+                                    "shouldCheck": "Debería haber sido marcada",
+                                    "shouldNotCheck": "No debería haber sido marcada",
+                                    "noInput": "Por favor responde antes de ver la solución",
+                                    "a11yCheck": "Revisa tus respuestas. Las respuestas se marcarán como correcta, incorrecta o sin contestar.",
                                     "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
-                                }
+                                },
+                                "confirmCheck": {
+                                    "header": "¿Terminar?",
+                                    "body": "¿Seguro que quieres terminar ?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Terminar"
+                                },
+                                "confirmRetry": {
+                                    "header": "¿Intentar de nuevo?",
+                                    "body": "¿Seguro que quieres volver a intentarlo?",
+                                    "cancelLabel": "Cancelar",
+                                    "confirmLabel": "Confirmar"
+                                },
+                                "question": "<p>¿Cuáles de las siguientes situaciones <strong>NO</strong> deberían incluirse automáticamente bajo esta generalización? (Selecciona todas las correctas)</p>"
                             },
-                            "subContentId": "f0b26b5d-75c5-46ee-9d44-56694c4b55cf",
+                            "subContentId": "3b341f49-5405-4c1d-ba6f-6ed7ad581ff3",
                             "metadata": {
-                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "contentType": "Opción múltiple (Multiple Choice)",
                                 "license": "U",
                                 "title": "Slide 3",
                                 "authors": [],

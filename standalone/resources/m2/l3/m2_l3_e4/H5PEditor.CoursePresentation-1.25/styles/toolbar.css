@@ -248,7 +248,8 @@
 
 /* Iconos para SortParagraphs y MatchingGame usando imágenes SVG */
 .h5p-dragnbar-sortparagraphs-button:before,
-.h5p-dragnbar-matchinggame-button:before {
+.h5p-dragnbar-matchinggame-button:before,
+.h5p-dragnbar-matchinggamecp-button:before {
   content: "";
   display: inline-block;
   width: 1.2em;
@@ -267,6 +268,10 @@
 
 .h5p-dragnbar-matchinggame-button:before {
   background-image: url('../../H5P.MatchingGame-0.1/icon.svg');
+}
+
+.h5p-dragnbar-matchinggamecp-button:before {
+  background-image: url('../../H5P.MatchingGameCP-0.1/icon.svg');
 }
 
 .h5p-dragnbar-li-ul {

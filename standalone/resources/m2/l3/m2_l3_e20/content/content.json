@@ -4,10 +4,10 @@
             {
                 "elements": [
                     {
-                        "x": 4.357298474945534,
-                        "y": 22.517685385618442,
-                        "width": 37.38082788671024,
-                        "height": 58.09775054116979,
+                        "x": 3.2679738562091503,
+                        "y": 25.175502299685306,
+                        "width": 37.37919389978214,
+                        "height": 58.2241587993222,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -16,8 +16,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e20/content/images/image-Os1U7mV5.png",
-                                    "path2": "images/image-Os1U7mV5.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e23/content/images/image-vIOYI978.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -26,7 +25,7 @@
                                     "height": 1262
                                 }
                             },
-                            "subContentId": "aefe1f1f-009f-4780-87b0-7e07eb0bd72a",
+                            "subContentId": "404f060e-3af2-4725-b520-a694a2810d86",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -44,29 +43,30 @@
                         "solution": ""
                     },
                     {
-                        "x": 45.751633986928105,
-                        "y": 19.214148308494753,
-                        "width": 47.930283224400874,
-                        "height": 79.61543592678824,
+                        "x": 44.66230936819172,
+                        "y": 29.04865649963689,
+                        "width": 51.19825708061002,
+                        "height": 60.033890099249575,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
-                                        "subContentId": "6f98e037-1f43-42ff-9a87-b9c66a95453c",
-                                        "question": "<p>Lee atentamente las siguientes afirmaciones y selecciona el problema general que mejor representa la situación descrita.</p>",
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>1. ¿Cuál es la categoría general?</p>",
                                         "answers": [
-                                            "<p>El estudiante percibe un bajo rendimiento y no sabe a qué se debe aquello.</p>",
-                                            "<p>El estudiante no se esfuerza lo suficiente para estudiar.</p>",
-                                            "<p>El estudiante no entiende los contenidos del curso.</p>",
-                                            "<p>El estudiante no asiste a clases con regularidad.</p>"
+                                            "<p>Organizar personas según el orden de llegada.</p>",
+                                            "<p>Controlar el comportamiento de las personas.</p>",
+                                            "<p>Transportar personas de un lugar a otro.</p>",
+                                            "<p>Clasificar personas según sus intereses.</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 100,
+                                        "feedback": "En todas  estas situaciones se aplica un criterio común: las personas se ordenan en función del turno en que llegan, formando una fila o esperando su turno de manera secuencial."
                                     }
                                 ],
                                 "behaviour": {
@@ -96,7 +96,7 @@
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "1698d27d-52d6-4fa8-89cc-09e463431afd",
+                            "subContentId": "815eba89-0831-41ef-b847-0953aaade90e",
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
@@ -121,258 +121,223 @@
             {
                 "elements": [
                     {
-                        "x": 15,
-                        "y": 0,
-                        "width": 70,
-                        "height": 105.99677234719216,
+                        "x": 3.2679738562091503,
+                        "y": 25.175502299685306,
+                        "width": 37.36383442265795,
+                        "height": 58.2241587993222,
                         "action": {
-                            "library": "H5P.DragShuffle 1.0",
+                            "library": "H5P.Image 1.1",
                             "params": {
-                                "scoreShow": "Comprobar",
-                                "submit": "Enviar",
-                                "tryAgain": "Intentar de nuevo",
-                                "scoreExplanation": "Las respuestas correctas dan +1 punto. Las incorrectas dan -1 punto. La puntuación más baja posible es 0.",
-                                "question": {
-                                    "settings": {
-                                        "size": {
-                                            "width": 900,
-                                            "height": 540
-                                        },
-                                        "background": {
-                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e20/content/images/image-TWGx45xr.png",
-                                            "path2": "images/image-TWGx45xr.png",
-                                            "mime": "image/png",
-                                            "copyright": {
-                                                "license": "U"
-                                            },
-                                            "width": 1800,
-                                            "height": 1080
-                                        }
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e23/content/images/image-mgN8Svpw.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
                                     },
-                                    "task": {
-                                        "elements": [
-                                            {
-                                                "x": 8.5,
-                                                "y": 73.1,
-                                                "width": 14.2,
-                                                "height": 2.75,
-                                                "dropZones": [
-                                                    "0"
-                                                ],
-                                                "type": {
-                                                    "library": "H5P.AdvancedText 1.1",
-                                                    "params": {
-                                                        "text": "<p>Uso del celular durante el estudio</p>"
-                                                    },
-                                                    "subContentId": "a99c0dd2-e139-4192-a2f1-018cf7bb081a",
-                                                    "metadata": {
-                                                        "contentType": "es",
-                                                        "license": "U",
-                                                        "title": "Sin título es",
-                                                        "authors": [],
-                                                        "changes": []
-                                                    }
-                                                },
-                                                "backgroundOpacity": 100,
-                                                "multiple": false
-                                            },
-                                            {
-                                                "x": 36.25,
-                                                "y": 73.1,
-                                                "width": 14.2,
-                                                "height": 2.7,
-                                                "dropZones": [
-                                                    "0"
-                                                ],
-                                                "type": {
-                                                    "library": "H5P.AdvancedText 1.1",
-                                                    "params": {
-                                                        "text": "<p>Horario en que estudia</p>"
-                                                    },
-                                                    "subContentId": "56a1a577-03e2-4f0c-9681-77607e8c82bc",
-                                                    "metadata": {
-                                                        "contentType": "es",
-                                                        "license": "U",
-                                                        "title": "Sin título es",
-                                                        "authors": [],
-                                                        "changes": []
-                                                    }
-                                                },
-                                                "backgroundOpacity": 100,
-                                                "multiple": false
-                                            },
-                                            {
-                                                "x": 64.05,
-                                                "y": 73.1,
-                                                "width": 14.2,
-                                                "height": 2.7,
-                                                "dropZones": [
-                                                    "0"
-                                                ],
-                                                "type": {
-                                                    "library": "H5P.AdvancedText 1.1",
-                                                    "params": {
-                                                        "text": "<p>Tipo de espacio donde estudia</p>"
-                                                    },
-                                                    "subContentId": "7048e4f7-a119-4e8f-ada1-6286cfde1447",
-                                                    "metadata": {
-                                                        "contentType": "es",
-                                                        "license": "U",
-                                                        "title": "Sin título es",
-                                                        "authors": [],
-                                                        "changes": []
-                                                    }
-                                                },
-                                                "backgroundOpacity": 100,
-                                                "multiple": false
-                                            },
-                                            {
-                                                "x": 8.5,
-                                                "y": 85.3,
-                                                "width": 14.2,
-                                                "height": 2.7,
-                                                "dropZones": [
-                                                    "0"
-                                                ],
-                                                "type": {
-                                                    "library": "H5P.AdvancedText 1.1",
-                                                    "params": {
-                                                        "text": "<p style='font-size:0.9em;'>Técnica de estudio utilizada para cada evaluación</p>"
-                                                    },
-                                                    "subContentId": "7f23ee37-9a12-4621-85d1-bbb8ce876151",
-                                                    "metadata": {
-                                                        "contentType": "es",
-                                                        "license": "U",
-                                                        "title": "Sin título es",
-                                                        "authors": [],
-                                                        "changes": []
-                                                    }
-                                                },
-                                                "backgroundOpacity": 100,
-                                                "multiple": false
-                                            },
-                                            {
-                                                "x": 36.25,
-                                                "y": 85.3,
-                                                "width": 14.2,
-                                                "height": 2.7,
-                                                "dropZones": [
-                                                    "0"
-                                                ],
-                                                "type": {
-                                                    "library": "H5P.AdvancedText 1.1",
-                                                    "params": {
-                                                        "text": "<p>Color del escritorio</p>"
-                                                    },
-                                                    "subContentId": "ede61b4a-ed75-4880-a9b9-73d555929389",
-                                                    "metadata": {
-                                                        "contentType": "es",
-                                                        "license": "U",
-                                                        "title": "Sin título es",
-                                                        "authors": [],
-                                                        "changes": []
-                                                    }
-                                                },
-                                                "backgroundOpacity": 100,
-                                                "multiple": false
-                                            },
-                                            {
-                                                "x": 64.05,
-                                                "y": 85.3,
-                                                "width": 14.2,
-                                                "height": 2.7,
-                                                "dropZones": [
-                                                    "0"
-                                                ],
-                                                "type": {
-                                                    "library": "H5P.AdvancedText 1.1",
-                                                    "params": {
-                                                        "text": "<p>Marca del cuaderno</p>"
-                                                    },
-                                                    "subContentId": "f9be1dbd-b40f-465c-bf39-538e7a08fb4d",
-                                                    "metadata": {
-                                                        "contentType": "es",
-                                                        "license": "U",
-                                                        "title": "Sin título es",
-                                                        "authors": [],
-                                                        "changes": []
-                                                    }
-                                                },
-                                                "backgroundOpacity": 100,
-                                                "multiple": false
-                                            }
-                                        ],
-                                        "dropZones": [
-                                            {
-                                                "x": 22.9,
-                                                "y": 13.2,
-                                                "width": 30.5,
-                                                "height": 18.6,
-                                                "correctElements": [
-                                                    "0",
-                                                    "1",
-                                                    "2",
-                                                    "3"
-                                                ],
-                                                "showLabel": false,
-                                                "backgroundOpacity": 100,
-                                                "tipsAndFeedback": {
-                                                    "tip": ""
-                                                },
-                                                "single": false,
-                                                "autoAlign": true,
-                                                "type": {
-                                                    "library": "H5P.DragQuestionDropzone 0.1"
-                                                },
-                                                "label": "<div>Elementos para analizar mejor el problema</div>"
-                                            }
+                                    "width": 1604,
+                                    "height": 1262
+                                }
+                            },
+                            "subContentId": "4b067315-c29e-4a64-aaf9-0cf1de847b5f",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 44.66230936819172,
+                        "y": 25.175502299685306,
+                        "width": 51.19825708061002,
+                        "height": 62.033890099249575,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>2. Considerando las dos situaciones anteriores (a y b), ¿Cuál es la subcategoría que mejor las representa?</p>",
+                                        "answers": [
+                                            "<p>Asignación de turnos mediante número o ticket.</p>",
+                                            "<p>Formación de filas en espacios reducidos.</p>",
+                                            "<p>Clasificación por tipo de trámite.</p>",
+                                            "<p>Control de aforo en espacios cerrados.</p>"
                                         ]
                                     }
-                                },
+                                ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 100,
+                                        "feedback": "En ambas situaciones —esperar turno en un banco y tomar número en una carnicería— las personas reciben un número o ticket que determina el orden en que serán atendidas. No forman una fila física tradicional, sino que el sistema organiza a las personas med"
                                     }
                                 ],
                                 "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
                                     "enableRetry": false,
-                                    "enableCheckButton": true,
-                                    "singlePoint": false,
-                                    "applyPenalties": true,
-                                    "enableScoreExplanation": false,
-                                    "dropZoneHighlighting": "dragging",
-                                    "autoAlignSpacing": 2,
-                                    "enableFullScreen": false,
-                                    "showScorePoints": false,
-                                    "showTitle": false
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
                                 },
-                                "grabbablePrefix": "Elemento a colocar {num} de {total}.",
-                                "grabbableSuffix": "Colocado en zona de colocación {num}.",
-                                "dropzonePrefix": "Zona de colocación {num} de {total}.",
-                                "noDropzone": "No es zona de colocación.",
-                                "tipLabel": "Mostrar pista.",
-                                "tipAvailable": "Pista disponible",
-                                "correctAnswer": "Respuesta correcta",
-                                "wrongAnswer": "Respuesta incorrecta",
-                                "feedbackHeader": "Retroalimentación",
-                                "scoreBarLabel": "Has obtenido :num de un total de :total puntos",
-                                "scoreExplanationButtonLabel": "Mostrar explicación de la puntuación",
-                                "a11yCheck": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar.",
-                                "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
-                                "localize": {
-                                    "fullscreen": "Pantalla completa",
-                                    "exitFullscreen": "Salir de pantalla completa"
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "fba30616-23f6-49ec-9d34-8b66a1475d93",
+                            "subContentId": "0e10bcdf-68fb-42f5-a9db-6ad71fc86abf",
                             "metadata": {
-                                "contentType": "Arrastrar y soltar (Drag and Drop)",
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
                                 "title": "Slide 2",
                                 "authors": [],
                                 "changes": [],
                                 "extraTitle": "Slide 2"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 25.175502299685306,
+                        "width": 37.36383442265795,
+                        "height": 58.2241587993222,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e23/content/images/image-a6srK04u.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1604,
+                                    "height": 1262
+                                }
+                            },
+                            "subContentId": "0a02c3b5-2724-4d81-a3ce-2f583faa5a01",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 44.66230936819172,
+                        "y": 25.175502299685306,
+                        "width": 51.19825708061002,
+                        "height": 62.033890099249575,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "1cd8f4b5-5f66-4359-a391-cf1bd8a14cc9",
+                                        "question": "<p>3. Considerando los siguientes registros, ¿Qué regla siguen?</p>",
+                                        "answers": [
+                                            "<p>Multiplica la entrada por sí misma y luego suma la entrada.</p>",
+                                            "<p>Multiplica por 2 y suma 1.</p>",
+                                            "<p>Eleva la entrada al cuadrado.</p>",
+                                            "<p>Eleva la entrada al cuadrado y luego suma 1.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100,
+                                        "feedback": "La regla correcta consiste en: multiplicar el número por sí mismo y luego sumar ese mismo número (entrada 1: 1 × 1 + 1 = 2, entrada 2: 2 × 2 + 2 = 6, entrada 3: 3 × 3 + 3 = 12)."
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": true,
+                                    "timeoutCorrect": 500,
+                                    "timeoutWrong": 500,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "f0b26b5d-75c5-46ee-9d44-56694c4b55cf",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Slide 3",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Slide 3"
                             }
                         },
                         "alwaysDisplayComments": false,

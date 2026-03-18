@@ -1,9 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Julia está organizando las actividades que necesita para abrir una cafetería. Ha anotado varias tareas en una hoja, pero están desordenadas. Su misión es ayudarle a organizar la información en categorías adecuadas.<br><br>
-                        <strong>Slide 1:</strong> Arrastre hacia el recuadro vacío las 4 categorías que mejor permiten a Julia organizar lo que necesita para abrir una cafetería.<br>
-                        <strong>Slide 2:</strong> Una con una línea cada categoría con la tarea que le corresponde.<br>
-                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.<br><br>
-                        <strong>Nota:</strong> No podrá avanzar a la siguiente slide si no completa la primera actividad.`;
+  const instructions = `Lee las siguientes situaciones y selecciona la <strong>categoría general</strong> que las agrupa.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

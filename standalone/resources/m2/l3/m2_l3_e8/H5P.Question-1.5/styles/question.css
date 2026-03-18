@@ -141,7 +141,8 @@
 .h5p-question-scorebar.h5p-question-visible {
   width: 13em;
   max-width: calc(100% - 2em);
-  margin: 0 0 1em 1em;
+  /*margin: 0 0 1em 1em;*/
+  margin: 0 0 1em 0; /*nuevo*/
   padding-right: 0.5em;
   display: inline-block;
 }
@@ -157,7 +158,8 @@
 
 .h5p-question-feedback {
   font-family: "Poppins-regular" !important; /*nuevo*/
-  font-size: 0.9em !important;
+  /*font-size: 0.9em !important;*/
+  font-size: 1.2em !important; /*nuevo*/
   /*font-weight: bold;*/
   /*color: #1a73d9;*/
   color: #062971 !important; /*nuevo*/
@@ -197,10 +199,9 @@
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {
   margin: 0 0.5em 0 0;
   white-space: nowrap;
-  float: right; /*nuevo*/
 }
 .h5p-question-buttons.has-scorebar {
-  width: calc(100% - 10em); /* Need the 1px because of rounding */
+  width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
   margin-left: 0;
 }
 

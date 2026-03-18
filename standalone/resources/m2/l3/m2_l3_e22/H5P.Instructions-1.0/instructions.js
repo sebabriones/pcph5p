@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Un estudiante registró durante dos semanas distintos aspectos de su rutina académica para comprender por qué su rendimiento varía. Los datos fueron recolectados por separado y ahora deben integrarse para identificar relaciones.<br><br><ul style='text-align:left;'><li><strong>Pregunta 1:</strong> Observa los datos recolectados y selecciona el problema general que mejor resume la situación.</li><li><strong>Pregunta 2:</strong> Considerando todos los datos en conjunto, selecciona la alternativa que mejor integre la información para explicar el problema identificado.</li></ul>`;
+  const instructions = `Una empresa de delivery analiza reclamos de clientes para mejorar su servicio.Tras revisar múltiples situaciones, el equipo formula la siguiente regla general:<br><br>“Cuando los pedidos se concentran en periodos de alta demanda, aumenta la probabilidad de retrasos en la entrega.”<br><br>Ahora se quiere evaluar si esta regla se aplica correctamente a distintos escenarios.<br>Arrastra cada situación al recuadro que corresponda, según si cumple o no con la regla general planteada. Analiza cada caso considerando la relación entre demanda y desempeño del servicio, no detalles superficiales.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

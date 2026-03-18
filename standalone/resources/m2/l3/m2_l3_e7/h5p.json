@@ -7,7 +7,7 @@
     "license": "U",
     "extraTitle": "Modulo 2 - Leccion 3 - Ejercicio 7",
     "title": "Modulo 2 - Leccion 3 - Ejercicio 7",
-    "mainLibrary": "H5P.CoursePresentation",
+    "mainLibrary": "H5P.PatternGame",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
@@ -15,14 +15,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Image",
+            "machineName": "H5P.Question",
             "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.MultiChoice",
-            "majorVersion": 1,
-            "minorVersion": 16
+            "minorVersion": 5
         },
         {
             "machineName": "FontAwesome",
@@ -45,14 +40,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Question",
+            "machineName": "H5P.PatternGame",
             "majorVersion": 1,
-            "minorVersion": 5
-        },
-        {
-            "machineName": "H5P.CoursePresentation",
-            "majorVersion": 1,
-            "minorVersion": 26
+            "minorVersion": 0
         }
     ]
 }

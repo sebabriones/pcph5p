@@ -189,6 +189,11 @@ H5PEditor.CoursePresentation.prototype.addElement = function (library, options) 
         case 'H5P.MultiMediaChoice':
           elementParams.action.params.behaviour = { aspectRatio: '16to9' }
           break;
+
+        case 'H5P.MatchingGameCP':
+          elementParams.width = 50;
+          elementParams.height = 50;
+          break;
       }
     }
 

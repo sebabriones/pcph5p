@@ -1,5 +1,10 @@
 jQuery(document).ready(() => {
-  const instructions = `Clasifica las figuras por sus caras geométricas. Toma y arrastra cada elemento hacia la zona que corresponda.`;
+  const instructions = `Un estudiante universitario quiere mejorar la forma en que organiza su tiempo y sus responsabilidades académicas, ya que siente que realiza muchas tareas, pero no siempre logra priorizarlas ni distribuirlas adecuadamente. Para comprender mejor su situación, decide ordenar la información que ha recopilado sobre sus actividades, con el fin de analizarla de manera más clara y tomar mejores decisiones.<br><br>
+                        Lea atentamente el siguiente texto y completa los espacios en blanco utilizando parejas de expresiones que representen categorías adecuadas para organizar la información. Las palabras que completes deben permitir clasificar las actividades de forma coherente, de modo que la información quede ordenada y sea más fácil de analizar.<br><br>
+                        <strong>Una con una línea solamente las 3 posibles combinaciones correctas de expresiones que completan el texto coherentemente.<br>
+                        Para deshacer una pareja haga clic en cualquiera de los dos términos unidos.</strong><br><br>
+                        <strong>Texto:</strong><br>
+                        Al organizar la información sobre mis actividades, puedo agruparlas en categorías como ________________, lo que me permite analizar ________________ de manera más clara y tomar mejores decisiones sobre cómo distribuir mi tiempo.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

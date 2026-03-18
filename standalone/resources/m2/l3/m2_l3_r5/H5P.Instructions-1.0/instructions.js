@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la alternativa correcta de acuerdo al siguiente caso.`;
+  const instructions = `Una empresa de venta online observa que sus ingresos han disminuido en los últimos tres meses, a pesar de mantener la misma cantidad de productos en stock. Antes de tomar decisiones (como aumentar publicidad o bajar precios), el equipo de marketing necesita comprender el problema.<br><br>A continuación, se presentan distintos tipos de información. Arrastra sólo aquella información que es necesaria para comprender el problema antes de proponer soluciones. Indicación: No todas las opciones deben usarse.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

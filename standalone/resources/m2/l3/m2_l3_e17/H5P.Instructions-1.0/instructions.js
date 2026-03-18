@@ -1,12 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `La empresa Energy está evaluando tres proyectos de generación de energía renovable.<br>
-                        Tienes los siguientes datos sobre estos proyectos:
-                        <ul class="unordered-list" style="text-align:left">
-                          <li style="list-style-position: inside;"><strong>Proyecto A</strong> – Energía Hidráulica – Costo: $9000 – Duración:  24 meses<br>Descripción: Requiere gran infraestructura, Se implementará cerca de ecosistemas acuáticos.</li>
-                          <li style="list-style-position: inside;"><strong>Proyecto B</strong> –  Energía Solar – Costo: $5000 – Duración: 3 meses<br>Descripción: Paneles reciclables, instalación en techos urbanos.</li>
-                          <li style="list-style-position: inside;"><strong>Proyecto C</strong> – Energía Eólica – Costo: $7000 – Duración: 12 meses<br>Descripción: Gran gasto operativo. Se implementará en una zona natural libre de intervención humana y animales.</li>
-                          </ul>
-                          Clasifica los proyectos por su nivel de impacto ecológico. Toma y arrastra los datos hacia la tabla para completarla.`;
+  const instructions = `Un grupo de estudiantes universitarios percibe que su desempeño académico ha disminuido, pero la causa no es clara. Antes de analizar datos específicos, necesitan definir correctamente el problema general y luego descomponerlo en factores observables.<br><br><strong>Actividad 1:</strong> Lee atentamente las siguientes afirmaciones y selecciona el problema general que mejor representa la situación descrita.<br>Selecciona una sola opción.<br><br><strong>Actividad 2:</strong> Una vez seleccionado el problema general, arrastra los elementos que permiten descomponerlo en factores específicos, de modo que pueda analizarse con mayor claridad.<br><br><strong>Nota:</strong> No podrá avanzar a la siguiente slide si no completa la primera actividad.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

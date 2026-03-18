@@ -142,6 +142,7 @@
   width: 13em;
   max-width: calc(100% - 2em);
   /*margin: 0 0 1em 1em;*/
+  margin: 0 0 1em 0; /*nuevo*/
   padding-right: 0.5em;
   display: inline-block;
 }
@@ -157,7 +158,8 @@
 
 .h5p-question-feedback {
   font-family: "Poppins-regular" !important; /*nuevo*/
-  font-size: 1.1em !important;
+  /*font-size: 0.9em !important;*/
+  font-size: 1.2em !important; /*nuevo*/
   /*font-weight: bold;*/
   /*color: #1a73d9;*/
   color: #062971 !important; /*nuevo*/

@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Observa la distribución de colores en los tres primeros cohetes; todos siguen el patron de cuatro colores: rojo, azul, verde y amarillo.<br>Para el cuarto cohete, asegúrate de que ningún color se repita en la misma parte del cuerpo que en los anteriores.<br><br>Desplaza hacia la izquierda o derecha cada parte del cuerpo del cuarto cohete hasta obtener el patrón correcto.`;
+  const instructions = `Seleccione la alternativa correcta de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">
