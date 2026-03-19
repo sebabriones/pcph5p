@@ -16,7 +16,7 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r20/content/images/image-m4867eYa.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-m4867eYa.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
@@ -138,7 +138,7 @@
                                             "height": 540
                                         },
                                         "background": {
-                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r20/content/images/image-Sj7cJIXZ.png",
+                                            "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_r16/content/images/image-Sj7cJIXZ.png",
                                             "mime": "image/png",
                                             "copyright": {
                                                 "license": "U"
