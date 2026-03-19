@@ -252,7 +252,7 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>zona 1</div>\n"
+                    "label": "<div>Hardware</div>\n"
                 },
                 {
                     "x": 53.9,
@@ -275,7 +275,7 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>zona 2</div>\n"
+                    "label": "<div>Software</div>\n"
                 }
             ]
         }

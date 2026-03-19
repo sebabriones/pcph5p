@@ -265,7 +265,7 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>zona 1</div>\n"
+                    "label": "<div>Paso 1</div>\n"
                 },
                 {
                     "x": 29.84,
@@ -285,7 +285,7 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>zona 2</div>\n"
+                    "label": "<div>Paso 2</div>\n"
                 },
                 {
                     "x": 53.2,
@@ -305,7 +305,7 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>Zona 3</div>\n"
+                    "label": "<div>Paso 3</div>\n"
                 },
                 {
                     "x": 76.6,
@@ -325,7 +325,7 @@
                     "type": {
                         "library": "H5P.DragQuestionDropzone 0.1"
                     },
-                    "label": "<div>Zona 4</div>\n"
+                    "label": "<div>Paso 4</div>\n"
                 }
             ]
         }
