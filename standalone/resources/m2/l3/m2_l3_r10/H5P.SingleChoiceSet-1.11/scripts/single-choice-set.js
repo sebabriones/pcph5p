@@ -393,19 +393,7 @@ H5P.SingleChoiceSet = (function ($, UI, Question, SingleChoice, SolutionView, Re
     self.scoreTimeout = undefined;
 
     if (!noXAPI) {
-      // Emitir completed con duration para mantener consistencia con answered.
-      var xapiEvent = self.createXAPIEventTemplate('completed');
-      xapiEvent.setScoredResult(
-        score,
-        self.options.choices.length,
-        self,
-        true,
-        (100 * score / self.options.choices.length) >= self.options.behaviour.passPercentage
-      );
-
-      xapiEvent.data.statement.result = xapiEvent.data.statement.result || {};
-      xapiEvent.data.statement.result.duration = 'PT' + self.getTotalPassedTime() + 'S';
-      self.trigger(xapiEvent);
+      self.triggerXAPIScored(score, self.options.choices.length, 'completed', true, (100 * score / self.options.choices.length) >= self.options.behaviour.passPercentage);
     }
 
     self.trigger('resize');

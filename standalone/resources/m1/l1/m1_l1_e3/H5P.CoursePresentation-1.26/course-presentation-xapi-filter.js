@@ -1,47 +1,46 @@
 (function () {
-  if (!window.H5P || !H5P.CoursePresentation || !H5P.CoursePresentation.prototype) {
-    return;
+  function applyFilter() {
+    if (!window.H5P || !H5P.externalDispatcher || !H5P.CoursePresentation) return false;
+
+    H5P.externalDispatcher.on('xAPI', function (event) {
+      try {
+        var statement = event.data && event.data.statement;
+        if (!statement) return;
+
+        var verbId        = (statement.verb && statement.verb.id) || '';
+        var objectId      = (statement.object && statement.object.id) || '';
+        var hasSubContent = objectId.indexOf('subContentId=') !== -1;
+
+        // Solo answered de contenido embebido
+        if (!/\/answered$/.test(verbId) || !hasSubContent) return;
+
+        var instances = H5P.instances || [];
+        for (var i = 0; i < instances.length; i++) {
+          var inst = instances[i];
+          if (!(inst instanceof H5P.CoursePresentation)) continue;
+          (function (cp) {
+            setTimeout(function () {
+              try {
+                if (typeof cp.triggerXAPICompleted === 'function') {
+                  var score    = typeof cp.getScore    === 'function' ? cp.getScore()    : 0;
+                  var maxScore = typeof cp.getMaxScore === 'function' ? cp.getMaxScore() : 0;
+                  cp.triggerXAPICompleted(score, maxScore);
+                }
+              } catch (e) {}
+            }, 0);
+          })(inst);
+          break;
+        }
+      } catch (e) {}
+    });
+    return true;
   }
 
-  var originalTrigger = H5P.CoursePresentation.prototype.trigger;
-  if (typeof originalTrigger !== 'function') {
-    return;
+  if (!applyFilter()) {
+    var attempts = 0;
+    var interval = setInterval(function () {
+      attempts++;
+      if (applyFilter() || attempts >= 100) clearInterval(interval);
+    }, 100);
   }
-
-  H5P.CoursePresentation.prototype.trigger = function (event) {
-    try {
-      var statement = event && event.data && event.data.statement;
-      var hasParent = !!(
-        statement &&
-        statement.context &&
-        statement.context.contextActivities &&
-        statement.context.contextActivities.parent &&
-        statement.context.contextActivities.parent.length
-      );
-      var hasSubContentId = !!(
-        statement &&
-        statement.context &&
-        statement.context.extensions &&
-        statement.context.extensions['http://h5p.org/x-api/h5p-subContentId']
-      );
-      var hasInteractionType = !!(
-        statement &&
-        statement.object &&
-        statement.object.definition &&
-        statement.object.definition.interactionType
-      );
-      var isEmbeddedStatement = hasParent || hasSubContentId || hasInteractionType;
-
-      // Para esta copia local de Course Presentation (m3_l1_e3),
-      // priorizar statements del contenido embebido y bloquear los del contenedor.
-      if (statement && !isEmbeddedStatement) {
-        return;
-      }
-    }
-    catch (e) {
-      // Si algo falla, no romper la emisión de eventos.
-    }
-
-    return originalTrigger.apply(this, arguments);
-  };
 })();
