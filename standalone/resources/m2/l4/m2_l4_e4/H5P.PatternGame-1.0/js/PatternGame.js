@@ -77,16 +77,21 @@ H5P.PatternGame = (function ($, Question) {
       return index >= 0 ? index : 0;
     };
     
-    // Función auxiliar para normalizar rutas de imágenes
-    self.normalizePath = function(path) {
+    // Función auxiliar para normalizar rutas de imágenes para comparación
+    // (mantiene comparación case-insensitive para no alterar la lógica del juego).
+    self.normalizePathForCompare = function(path) {
       if (!path) return '';
-      // Eliminar parámetros como #tmp
       let normalized = path.split('#')[0];
-      // Convertir a minúsculas para comparación case-insensitive
       normalized = normalized.toLowerCase();
-      // Extraer solo el nombre del archivo para comparación más flexible
-      const filename = normalized.split('/').pop();
-      return filename;
+      return normalized.split('/').pop();
+    };
+
+    // Función auxiliar para normalizar rutas de imágenes para xAPI
+    // (preserva mayúsculas/minúsculas originales del nombre de archivo).
+    self.normalizePathForXAPI = function(path) {
+      if (!path) return '';
+      const normalized = path.split('#')[0];
+      return normalized.split('/').pop();
     };
     
     // Función auxiliar para mezclar un array (Fisher-Yates shuffle)
@@ -412,9 +417,9 @@ H5P.PatternGame = (function ($, Question) {
         
         // Asegurar que la imagen correcta esté en el array de imágenes opcionales
         if (correctImage && correctImage.path) {
-          const correctImageFilename = self.normalizePath(correctImage.path);
+          const correctImageFilename = self.normalizePathForCompare(correctImage.path);
           const isCorrectImageInOptions = images.some(img => 
-            img && img.path && self.normalizePath(img.path) === correctImageFilename
+            img && img.path && self.normalizePathForCompare(img.path) === correctImageFilename
           );
           
           // Si la imagen correcta no está en las opciones, agregarla
@@ -610,7 +615,7 @@ H5P.PatternGame = (function ($, Question) {
         // Verificar si la imagen seleccionada es la correcta
         // Usar normalización de rutas para comparación más robusta
         if (selectedImage && selectedImage.path && 
-            self.normalizePath(selectedImage.path) === self.normalizePath(correctImage.path)) {
+            self.normalizePathForCompare(selectedImage.path) === self.normalizePathForCompare(correctImage.path)) {
           correctRows++;
         } else {
           allCorrect = false;
@@ -833,7 +838,7 @@ H5P.PatternGame = (function ($, Question) {
         const correctImage = correctImages[i];
         if (correctImage && correctImage.path) {
           // Usar el nombre del archivo como identificador
-          const filename = self.normalizePath(correctImage.path);
+          const filename = self.normalizePathForXAPI(correctImage.path);
           pattern.push(filename);
         }
       }
@@ -893,7 +898,7 @@ H5P.PatternGame = (function ($, Question) {
         const selectedImage = images[selectedIndex];
         
         if (selectedImage && selectedImage.path) {
-          const filename = self.normalizePath(selectedImage.path);
+          const filename = self.normalizePathForXAPI(selectedImage.path);
           responses.push(filename);
         }
       }
