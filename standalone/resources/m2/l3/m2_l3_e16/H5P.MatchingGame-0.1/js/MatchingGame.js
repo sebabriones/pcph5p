@@ -47,6 +47,23 @@ H5P.MatchingGame = (function ($, Question) {
         //Flag para indicar si estamos mostrando la solución
         self.showingSolution = false;
         self.scaleFactor = 1;
+        self._lastResizeReason = 'init';
+        self._debugLines = false;
+        self._debugMetrics = {
+            resizeCalls: 0,
+            redrawCalls: 0,
+            viewportEvents: 0,
+            viewportScheduled: 0
+        };
+
+        try {
+            const search = (window && window.location && window.location.search) ? window.location.search : '';
+            const params = new URLSearchParams(search);
+            const localDebug = (window && window.localStorage) ? window.localStorage.getItem('h5pMatchingDebugLines') : null;
+            self._debugLines = params.get('h5p_debug_lines') === '1' || localDebug === '1';
+        } catch (e) {
+            self._debugLines = false;
+        }
         
         //Se inicializa la estructura de la actividad
         self.initGame();
@@ -87,14 +104,31 @@ H5P.MatchingGame = (function ($, Question) {
         // Escuchar cambios de viewport y fullscreen
         if (!self._viewportResizeHandler) {
             self._viewportResizeRaf = null;
+            self._viewportResizeTimer = null;
+            self._lastViewportEventAt = 0;
             self._viewportResizeHandler = function () {
+                self._debugMetrics.viewportEvents++;
+                const now = Date.now();
+                const elapsed = now - self._lastViewportEventAt;
+                self._lastViewportEventAt = now;
+
+                // Evitar ráfagas excesivas de resize (especialmente al salir de fullscreen en Firefox).
+                // Mantenemos 1 ejecución estable por ventana corta.
                 if (self._viewportResizeRaf) {
                     cancelAnimationFrame(self._viewportResizeRaf);
                 }
-                self._viewportResizeRaf = requestAnimationFrame(function () {
-                    self._viewportResizeRaf = null;
-                    self.trigger('resize');
-                });
+                if (self._viewportResizeTimer) {
+                    clearTimeout(self._viewportResizeTimer);
+                }
+                self._viewportResizeTimer = setTimeout(function () {
+                    self._viewportResizeTimer = null;
+                    self._viewportResizeRaf = requestAnimationFrame(function () {
+                        self._viewportResizeRaf = null;
+                        self._lastResizeReason = 'viewport';
+                        self._debugMetrics.viewportScheduled++;
+                        self.trigger('resize');
+                    });
+                }, elapsed < 120 ? 120 : 40);
             };
 
             window.addEventListener('resize', self._viewportResizeHandler);
@@ -415,6 +449,7 @@ H5P.MatchingGame = (function ($, Question) {
     //Función centralizada para redibujar todas las conexiones existentes.
     MatchingGame.prototype.redrawAllConnections = function () {
         let self = this;
+        self._debugMetrics.redrawCalls++;
         let svg = self.$gameWrapper.find('.lines-svg');
         if (!svg.length) return;
 
@@ -454,6 +489,17 @@ H5P.MatchingGame = (function ($, Question) {
                 });
             });
         }
+
+        if (self._debugLines) {
+            console.debug('[MatchingGame] redrawAllConnections', {
+                redrawCalls: self._debugMetrics.redrawCalls,
+                resizeCalls: self._debugMetrics.resizeCalls,
+                viewportEvents: self._debugMetrics.viewportEvents,
+                viewportScheduled: self._debugMetrics.viewportScheduled,
+                showingSolution: self.showingSolution,
+                matches: (self.matchesId || []).length
+            });
+        }
     };
 
     /**
@@ -475,6 +521,7 @@ H5P.MatchingGame = (function ($, Question) {
     //La función de 'resize' que se llamará en cada redimensionamiento.
     MatchingGame.prototype.resize = function () {
         let self = this;
+        self._debugMetrics.resizeCalls++;
         if (!self.$gameViewport || !self.$gameStage || !self.$gameWrapper) {
             return;
         }
@@ -529,6 +576,19 @@ H5P.MatchingGame = (function ($, Question) {
                 self._lastViewportWidth = currentWidth;
                 self._lastViewportHeight = currentHeight;
                 self.scheduleRedrawAllConnections();
+            }
+
+            if (self._debugLines) {
+                console.debug('[MatchingGame] resize', {
+                    reason: self._lastResizeReason,
+                    resizeCalls: self._debugMetrics.resizeCalls,
+                    redrawCalls: self._debugMetrics.redrawCalls,
+                    viewportEvents: self._debugMetrics.viewportEvents,
+                    viewportScheduled: self._debugMetrics.viewportScheduled,
+                    currentWidth: currentWidth,
+                    currentHeight: currentHeight,
+                    scaleFactor: self.scaleFactor
+                });
             }
         } finally {
             self._isResizing = false;
