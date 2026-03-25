@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Una escuela recibe donaciones de útiles escolares. Algunos productos están repetidos. Debes eliminar los artículos duplicados en la lista y calcular el valor total del inventario.<br><br>
+  const instructions = `Un centro comunitario organiza actividades durante la semana, tales como: yoga, pintura, lectura y cine. Cada actividad tiene un día asignado. Agrupa las actividades según el día en que se realizan y muestra la agenda semanal.<br><br>
                         <strong>Botones Terminal Python:</strong>
                         <ul style=\"text-align:left;\">
                           <li style=\"list-style-position: inside;\">▶️ Ejecutar: Ejecuta el código.</li>

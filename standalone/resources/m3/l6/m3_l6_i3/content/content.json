@@ -5,13 +5,13 @@
                 "elements": [
                     {
                         "x": 2.178649237472767,
-                        "y": 8.746308399903171,
-                        "width": 95.10893246187364,
-                        "height": 25.175502299685306,
+                        "y": 16.365770999757927,
+                        "width": 50.10893246187364,
+                        "height": 25.30234809973372,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p><span>Se desea escribir un programa que almacene la cadena de caracteres de la palabra “contraseña” en una variable. Que luego pregunte al usuario por la contraseña e imprima por pantalla si la contraseña que introdujo coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.</span></p><p style='font-size:0.9em;'>Puede ver las alternativas de código en la Terminal Python en la sección: 💡 Cargar ejemplo</p>"
+                                "text": "<p>Se te pide escribir un programa que muestre los equipos inscritos en un torneo de fútbol y cuente cuántos hay. Sin embargo, el programa tiene un error.</p><p>Se escribe el siguiente código:</p>"
                             },
                             "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
                             "metadata": {
@@ -31,9 +31,9 @@
                         "solution": ""
                     },
                     {
-                        "x": 40.48366013071895,
-                        "y": 36.85838779956427,
-                        "width": 24.825949367088608,
+                        "x": 45.751633986928105,
+                        "y": 44.54127329944323,
+                        "width": 95.67567567567568,
                         "height": 40,
                         "action": {
                             "library": "H5P.Image 1.1",
@@ -43,13 +43,13 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i3/content/images/image-ydKMTAWv.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i12/content/images/image-SrVVZnDT.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 2092,
-                                    "height": 1896
+                                    "width": 1888,
+                                    "height": 444
                                 }
                             },
                             "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
@@ -71,14 +71,14 @@
                     },
                     {
                         "x": 2.178649237472767,
-                        "y": 91.01912369886226,
+                        "y": 67.78019849915275,
                         "width": 90,
                         "height": 85,
                         "action": {
                             "library": "H5P.PythonTerminal 1.1",
                             "params": {
                                 "title": "Terminal Python Interactiva",
-                                "initialCode": "",
+                                "initialCode": "equipos = [\"Colo Colo\", \"Cobreloa\", \"Rangers\", \"Huachipato\"]\ncontador = 0\n\nfor i in equipos:\n    contador =+ 1\n\nprint(\"Número de equipos inscritos: \", contador)",
                                 "showLineNumbers": true,
                                 "theme": "dark",
                                 "layoutMode": "vertical",
@@ -89,25 +89,7 @@
                                 "showUploadButton": false,
                                 "maxOutputLines": 1000,
                                 "passingPercentage": 70,
-                                "description": "",
-                                "examples": [
-                                    {
-                                        "name": "A",
-                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \")\n\nif contraseña_ingresada == contraseña_guardada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
-                                    },
-                                    {
-                                        "name": "B",
-                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \")\n\nif contrasena_ingresada.capitalize() == contrasena_guardada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
-                                    },
-                                    {
-                                        "name": "C",
-                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \").upper()\n\nif contrasena_guardada == contrasena_ingresada:\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
-                                    },
-                                    {
-                                        "name": "D",
-                                        "code": "contrasena_guardada = \"contraseña\"\ncontrasena_ingresada = input(\"Ingrese la contraseña: \")\n\nif contrasena_ingresada.lower() == contrasena_guardada.lower():\n    print(\"La contraseña es correcta\")\nelse:\n    print(\"La contraseña es incorrecta\")"
-                                    }
-                                ]
+                                "description": ""
                             },
                             "subContentId": "450dd51c-490c-4a29-8704-4a8ee31010f6",
                             "metadata": {
@@ -129,21 +111,21 @@
                     },
                     {
                         "x": 54.46623093681917,
-                        "y": 43.365770999757927,
+                        "y": 21.30234809973372,
                         "width": 42.48366013071895,
-                        "height": 52.52650689905592,
+                        "height": 60.65335269910433,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
                                         "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
-                                        "question": "<p style='font-size:1.2em;text-align:center;'>Selecciona la alternativa que muestra el programa correcto.</p>",
+                                        "question": "<p style='font-size:1.2em;text-align:center;'>¿Dónde está el error en este código?</p>",
                                         "answers": [
-                                            "<p style=\"text-align:center;\"><strong>D</strong></p>",
-                                            "<p style=\"text-align:center;\"><strong>A</strong></p>",
-                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
-                                            "<p style=\"text-align:center;\"><strong>C</strong></p>"
+                                            "<p>Está en el contador, porque se usa contador <strong>=+ 1</strong> en lugar de contador <strong>+= 1</strong>.</p>",
+                                            "<p>El error se encuentra en el bucle <strong>for</strong>, porque no recorre la lista completa.</p>",
+                                            "<p>El error está en la lista de equipos, porque no tiene suficientes elementos.</p>",
+                                            "<p>Está en el <strong>print</strong>, porque no muestra el resultado en pantalla.</p>"
                                         ]
                                     }
                                 ],
@@ -205,10 +187,10 @@
                         "solution": ""
                     },
                     {
-                        "x": 8.625272331154684,
-                        "y": 35.85838779956427,
-                        "width": 28.65337690631808,
-                        "height": 49.2241587993222,
+                        "x": 3.2679738562091503,
+                        "y": 44.54127329944323,
+                        "width": 41.688747571100514,
+                        "height": 17.429193899782135,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -217,13 +199,13 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i3/content/images/image-ydKMTAWv.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i12/content/images/image-VsLWmmJF.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 2092,
-                                    "height": 1896
+                                    "width": 1888,
+                                    "height": 444
                                 }
                             },
                             "subContentId": "23c2673c-8488-4871-941a-8207ea8800cf",

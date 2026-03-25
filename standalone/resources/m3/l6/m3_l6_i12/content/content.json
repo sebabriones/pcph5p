@@ -4,14 +4,14 @@
             {
                 "elements": [
                     {
-                        "x": 2.178649237472767,
-                        "y": 16.365770999757927,
-                        "width": 50.10893246187364,
-                        "height": 25.30234809973372,
+                        "x": 3.2679738562091507,
+                        "y": 6.746308399903171,
+                        "width": 45.5925925925926,
+                        "height": 27.55603969983055,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p>Se te pide escribir un programa que muestre los equipos inscritos en un torneo de fútbol y cuente cuántos hay. Sin embargo, el programa tiene un error.</p><p>Se escribe el siguiente código:</p>"
+                                "text": "<p>Imagina que preparas tu mochila para ir a clases. Algunos objetos están repetidos por error. Tu tarea es eliminar los artículos duplicados de la lista y calcular el peso total que llevarás en tu mochila; el siguiente programa cumple con esto:</p>"
                             },
                             "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
                             "metadata": {
@@ -31,9 +31,9 @@
                         "solution": ""
                     },
                     {
-                        "x": 45.751633986928105,
-                        "y": 44.54127329944323,
-                        "width": 95.67567567567568,
+                        "x": 92.48366013071895,
+                        "y": 11.238925199709513,
+                        "width": 61.95812807881774,
                         "height": 40,
                         "action": {
                             "library": "H5P.Image 1.1",
@@ -43,13 +43,13 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i12/content/images/image-SrVVZnDT.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i5/content/images/image-6vOXt9nl.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 1888,
-                                    "height": 444
+                                    "width": 2236,
+                                    "height": 812
                                 }
                             },
                             "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
@@ -70,15 +70,15 @@
                         "solution": ""
                     },
                     {
-                        "x": 2.178649237472767,
-                        "y": 67.78019849915275,
+                        "x": 4.2679738562091503,
+                        "y": 90.01912369886226,
                         "width": 90,
                         "height": 85,
                         "action": {
                             "library": "H5P.PythonTerminal 1.1",
                             "params": {
                                 "title": "Terminal Python Interactiva",
-                                "initialCode": "equipos = [\"Colo Colo\", \"Cobreloa\", \"Rangers\", \"Huachipato\"]\ncontador = 0\n\nfor i in equipos:\n    contador =+ 1\n\nprint(\"Número de equipos inscritos: \", contador)",
+                                "initialCode": "",
                                 "showLineNumbers": true,
                                 "theme": "dark",
                                 "layoutMode": "vertical",
@@ -89,7 +89,25 @@
                                 "showUploadButton": false,
                                 "maxOutputLines": 1000,
                                 "passingPercentage": 70,
-                                "description": ""
+                                "description": "",
+                                "examples": [
+                                    {
+                                        "name": "A",
+                                        "code": "mochila = []\nobj = input(\"Ingresa un objeto o 'fin':\")\n\nwhile obj != \"fin\":\n    mochila.append(obj)\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(mochila_unica)\nprint(peso_total, \" gramos\")"
+                                    },
+                                    {
+                                        "name": "B",
+                                        "code": "mochila = []\nobj = input(\"Ingresa un objeto o 'fin':\")\n\nwhile obj != \"fin\":\n    mochila.append(obj)\n    obj = input(\"Ingresa un objeto o 'fin':\")\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nif peso_total > 3000:\n    print(\"Advertencia: tu mochila pesa demasiado.\")\n\nprint(\"Objetos: \", mochila_unica)\nprint(\"Peso total: \", peso_total, \" gramos\")"
+                                    },
+                                    {
+                                        "name": "C",
+                                        "code": "mochila = []\nobj = \"\"\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\n\nfor o in pesos:\n    mochila.append(o)\n\nmochila_unica = mochila\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(\"Objetos únicos: \", mochila_unica)\nprint(\"Peso total: \", peso_total)"
+                                    },
+                                    {
+                                        "name": "D",
+                                        "code": "mochila = []\n\nwhile True:\n    mochila.append(input(\"Ingresa un objeto: \"))\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\n\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(mochila_unica)"
+                                    }
+                                ]
                             },
                             "subContentId": "450dd51c-490c-4a29-8704-4a8ee31010f6",
                             "metadata": {
@@ -110,22 +128,22 @@
                         "solution": ""
                     },
                     {
-                        "x": 54.46623093681917,
-                        "y": 21.30234809973372,
+                        "x": 52.28758169934641,
+                        "y": 42.985233599612684,
                         "width": 42.48366013071895,
-                        "height": 60.65335269910433,
+                        "height": 53.033890099249575,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
                                         "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
-                                        "question": "<p style='font-size:1.2em;text-align:center;'>¿Dónde está el error en este código?</p>",
+                                        "question": "<p style='font-size:1.2em;text-align:center;'>Selecciona la alternativa que corresponde a una versión mejorada correcta del programa.</p>",
                                         "answers": [
-                                            "<p>Está en el contador, porque se usa contador <strong>=+ 1</strong> en lugar de contador <strong>+= 1</strong>.</p>",
-                                            "<p>El error se encuentra en el bucle <strong>for</strong>, porque no recorre la lista completa.</p>",
-                                            "<p>El error está en la lista de equipos, porque no tiene suficientes elementos.</p>",
-                                            "<p>Está en el <strong>print</strong>, porque no muestra el resultado en pantalla.</p>"
+                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>A</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>C</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>D</strong></p>"
                                         ]
                                     }
                                 ],
@@ -187,10 +205,10 @@
                         "solution": ""
                     },
                     {
-                        "x": 3.2679738562091503,
-                        "y": 44.54127329944323,
-                        "width": 41.688747571100514,
-                        "height": 17.429193899782135,
+                        "x": 51.5359477124183005,
+                        "y": 9.238925199709513,
+                        "width": 39.85838779956427,
+                        "height": 27.50070200919874,
                         "action": {
                             "library": "H5P.Image 1.1",
                             "params": {
@@ -199,16 +217,43 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i12/content/images/image-VsLWmmJF.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i5/content/images/image-5Gy0kio4.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 1888,
-                                    "height": 444
+                                    "width": 2236,
+                                    "height": 812
                                 }
                             },
                             "subContentId": "23c2673c-8488-4871-941a-8207ea8800cf",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 34.41442749939482,
+                        "width": 45.751633986928105,
+                        "height": 53.66811909949165,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Ahora, se pide una versión mejorada que cumpla con los siguientes requisitos:</p><ul style='font-size:0.9em;'><li>Permitir que el usuario ingrese los objetos de su mochila uno por uno, usando un bucle, hasta que escriba \"fin\".</li><li>Usar una estructura condicional para mostrar un mensaje de advertencia si el peso total supera los 3000 gramos.</li><li>Mostrar finalmente: La lista de objetos sin duplicados y el peso total en gramos.</li></ul><p style='font-size:0.9em;'>Puede ver las alternativas de código en la Terminal Python en la sección: 💡 Cargar ejemplo</p>"
+                            },
+                            "subContentId": "92107a24-4534-409d-b104-5304a212a747",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",

@@ -7,27 +7,12 @@
     "license": "U",
     "extraTitle": "Modulo 3 - Leccion 6 - Integrador 14",
     "title": "Modulo 3 - Leccion 6 - Integrador 14",
-    "mainLibrary": "H5P.CoursePresentation",
+    "mainLibrary": "H5P.PythonTerminal",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
             "majorVersion": 1,
             "minorVersion": 0
-        },
-        {
-            "machineName": "H5P.AdvancedText",
-            "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.Image",
-            "majorVersion": 1,
-            "minorVersion": 1
-        },
-        {
-            "machineName": "H5P.PythonTerminal",
-            "majorVersion": 1,
-            "minorVersion": 1
         },
         {
             "machineName": "FontAwesome",
@@ -55,14 +40,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.SingleChoiceSet",
+            "machineName": "H5P.PythonTerminal",
             "majorVersion": 1,
-            "minorVersion": 11
-        },
-        {
-            "machineName": "H5P.CoursePresentation",
-            "majorVersion": 1,
-            "minorVersion": 26
+            "minorVersion": 1
         }
     ]
 }

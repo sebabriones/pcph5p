@@ -5,15 +5,15 @@
                 "elements": [
                     {
                         "x": 3.2679738562091507,
-                        "y": 6.746308399903171,
-                        "width": 45.5925925925926,
-                        "height": 27.55603969983055,
+                        "y": 8.746308399903171,
+                        "width": 48.19825708061002,
+                        "height": 24.365770999757927,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p>Imagina que preparas tu mochila para ir a clases. Algunos objetos están repetidos por error. Tu tarea es eliminar los artículos duplicados de la lista y calcular el peso total que llevarás en tu mochila; el siguiente programa cumple con esto:</p>"
+                                "text": "<p>Una empresa de transporte necesita registrar los viajes solicitados por los usuarios. Se te solicita escribir este programa, el que más adelante será una aplicación móvil. El programa inicial solo muestra una lista fija de destinos:</p>"
                             },
-                            "subContentId": "dbf7e41b-e878-4ed9-bcb9-ab943fbb4f1c",
+                            "subContentId": "0fa6538d-d070-4cf5-9a58-a6f6358c39de",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -31,9 +31,48 @@
                         "solution": ""
                     },
                     {
-                        "x": 92.48366013071895,
-                        "y": 11.238925199709513,
-                        "width": 61.95812807881774,
+                        "x": 52.446623093681917,
+                        "y": 13.1120793996611,
+                        "width": 41.394335511982575,
+                        "height": 19.078305495037522,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i14/content/images/image-0hJ5COns.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1944,
+                                    "height": 504
+                                }
+                            },
+                            "subContentId": "f9851643-0158-4bca-aab0-d14d1749d876",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 94.930283224400874,
+                        "y": 14.1120793996611,
+                        "width": 86.78571428571429,
                         "height": 40,
                         "action": {
                             "library": "H5P.Image 1.1",
@@ -43,16 +82,16 @@
                                 "expandImage": "Expandir Imagen",
                                 "minimizeImage": "Minimizar Imagen",
                                 "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i5/content/images/image-6vOXt9nl.png",
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i14/content/images/image-n9OZLPoA.png",
                                     "mime": "image/png",
                                     "copyright": {
                                         "license": "U"
                                     },
-                                    "width": 2236,
-                                    "height": 812
+                                    "width": 1944,
+                                    "height": 504
                                 }
                             },
-                            "subContentId": "f2f8d5e0-15c3-4c4e-9cdf-a79485cb2dec",
+                            "subContentId": "da449f8a-38d8-4396-953f-4419c36cd8dd",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -70,8 +109,35 @@
                         "solution": ""
                     },
                     {
-                        "x": 4.2679738562091503,
-                        "y": 90.01912369886226,
+                        "x": 3.2679738562091507,
+                        "y": 33.35100459937061,
+                        "width": 50.19825708061002,
+                        "height": 52.731541999515855,
+                        "action": {
+                            "library": "H5P.AdvancedText 1.1",
+                            "params": {
+                                "text": "<p>Ahora se pide una versión mejorada del programa con los siguientes requisitos:</p><ul><li>Permitir que el usuario ingrese destinos uno por uno hasta escribir “fin”.</li><li>Usar una función que muestre la lista ordenada alfabéticamente.</li><li>Usar un condicional para mostrar un mensaje de “poca demanda” si es que hay 2 o menos destinos registrados.</li></ul><p style='font-size:0.9em;'>Puede ver las alternativas de código en la Terminal Python en la sección: 💡 Cargar ejemplo</p>"
+                            },
+                            "subContentId": "2315fca2-7ea7-40c4-8989-5bb360f28829",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 3.2679738562091503,
+                        "y": 89.01912369886226,
                         "width": 90,
                         "height": 85,
                         "action": {
@@ -89,27 +155,27 @@
                                 "showUploadButton": false,
                                 "maxOutputLines": 1000,
                                 "passingPercentage": 70,
-                                "description": "",
                                 "examples": [
                                     {
                                         "name": "A",
-                                        "code": "mochila = []\nobj = input(\"Ingresa un objeto o 'fin':\")\n\nwhile obj != \"fin\":\n    mochila.append(obj)\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(mochila_unica)\nprint(peso_total, \" gramos\")"
+                                        "code": "def mostrar_destinos(destinos):\n    print(\"Destinos registrados en la aplicación:\")\n    for destino in destinos:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\":\n        break\n    destinos.append(destino)\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
                                     },
                                     {
                                         "name": "B",
-                                        "code": "mochila = []\nobj = input(\"Ingresa un objeto o 'fin':\")\n\nwhile obj != \"fin\":\n    mochila.append(obj)\n    obj = input(\"Ingresa un objeto o 'fin':\")\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nif peso_total > 3000:\n    print(\"Advertencia: tu mochila pesa demasiado.\")\n\nprint(\"Objetos: \", mochila_unica)\nprint(\"Peso total: \", peso_total, \" gramos\")"
+                                        "code": "destinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\":\n        break\n    destinos.append(destino)\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    destinos.sort()\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos:\n        print(\"-\", destino)\n    print(\"Número total de destinos: \", len(destinos))"
                                     },
                                     {
                                         "name": "C",
-                                        "code": "mochila = []\nobj = \"\"\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\n\nfor o in pesos:\n    mochila.append(o)\n\nmochila_unica = mochila\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(\"Objetos únicos: \", mochila_unica)\nprint(\"Peso total: \", peso_total)"
+                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados alfabéticamente):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = [\"Centro\", \"Hospital\", \"Universidad\"]\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
                                     },
                                     {
                                         "name": "D",
-                                        "code": "mochila = []\n\nwhile True:\n    mochila.append(input(\"Ingresa un objeto: \"))\n\npesos = {\"cuaderno\": 500, \"lápiz\": 50, \"libro\": 800, \"botella\": 600}\n\nmochila_unica = list(set(mochila))\npeso_total = sum(pesos[o] for o in mochila_unica)\n\nprint(mochila_unica)"
+                                        "code": "def mostrar_destinos(destinos):\n    destinos_ordenados = sorted(destinos)\n    print(\"Destinos registrados en la aplicación (ordenados):\")\n    for destino in destinos_ordenados:\n        print(\"-\", destino)\n\ndestinos = []\n\nwhile True:\n    destino = input(\"Ingresa un destino (o escribe 'fin' para terminar): \")\n    if destino.lower() == \"fin\":\n        break\n    destinos.append(destino)\n\nif len(destinos) <= 2:\n    print(\"Poca demanda: se registraron 2 o menos destinos.\")\nelse:\n    mostrar_destinos(destinos)\n    print(\"Número total de destinos: \", len(destinos))"
                                     }
-                                ]
+                                ],
+                                "description": ""
                             },
-                            "subContentId": "450dd51c-490c-4a29-8704-4a8ee31010f6",
+                            "subContentId": "0bc25596-194f-4ff3-b1f8-7795bf04abc1",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
@@ -128,22 +194,22 @@
                         "solution": ""
                     },
                     {
-                        "x": 52.28758169934641,
-                        "y": 42.985233599612684,
-                        "width": 42.48366013071895,
-                        "height": 53.033890099249575,
+                        "x": 56.64488017429194,
+                        "y": 39.238925199709513,
+                        "width": 39.99869281045751,
+                        "height": 55.033890099249575,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
                                 "choices": [
                                     {
-                                        "subContentId": "15dbb028-f898-4436-b50a-ce4f478ac252",
+                                        "subContentId": "086bfb33-6e1d-49ab-ba45-0ace0e7ea83e",
                                         "question": "<p style='font-size:1.2em;text-align:center;'>Selecciona la alternativa que corresponde a una versión mejorada correcta del programa.</p>",
                                         "answers": [
-                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>D</strong></p>",
                                             "<p style=\"text-align:center;\"><strong>A</strong></p>",
-                                            "<p style=\"text-align:center;\"><strong>C</strong></p>",
-                                            "<p style=\"text-align:center;\"><strong>D</strong></p>"
+                                            "<p style=\"text-align:center;\"><strong>B</strong></p>",
+                                            "<p style=\"text-align:center;\"><strong>C</strong></p>"
                                         ]
                                     }
                                 ],
@@ -186,7 +252,7 @@
                                     "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
                                 }
                             },
-                            "subContentId": "236d54d1-0002-4eb4-8fdb-3485d3d28c66",
+                            "subContentId": "1bff6160-d0dd-4e4a-8ad6-ade56637e809",
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
@@ -194,72 +260,6 @@
                                 "authors": [],
                                 "changes": [],
                                 "extraTitle": "Slide 1"
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 51.5359477124183005,
-                        "y": 9.238925199709513,
-                        "width": 39.85838779956427,
-                        "height": 27.50070200919874,
-                        "action": {
-                            "library": "H5P.Image 1.1",
-                            "params": {
-                                "decorative": true,
-                                "contentName": "Imagen",
-                                "expandImage": "Expandir Imagen",
-                                "minimizeImage": "Minimizar Imagen",
-                                "file": {
-                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l6/m3_l6_i5/content/images/image-5Gy0kio4.png",
-                                    "mime": "image/png",
-                                    "copyright": {
-                                        "license": "U"
-                                    },
-                                    "width": 2236,
-                                    "height": 812
-                                }
-                            },
-                            "subContentId": "23c2673c-8488-4871-941a-8207ea8800cf",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 3.2679738562091503,
-                        "y": 34.41442749939482,
-                        "width": 45.751633986928105,
-                        "height": 53.66811909949165,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p>Ahora, se pide una versión mejorada que cumpla con los siguientes requisitos:</p><ul style='font-size:0.9em;'><li>Permitir que el usuario ingrese los objetos de su mochila uno por uno, usando un bucle, hasta que escriba \"fin\".</li><li>Usar una estructura condicional para mostrar un mensaje de advertencia si el peso total supera los 3000 gramos.</li><li>Mostrar finalmente: La lista de objetos sin duplicados y el peso total en gramos.</li></ul><p style='font-size:0.9em;'>Puede ver las alternativas de código en la Terminal Python en la sección: 💡 Cargar ejemplo</p>"
-                            },
-                            "subContentId": "92107a24-4534-409d-b104-5304a212a747",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
                             }
                         },
                         "alwaysDisplayComments": false,

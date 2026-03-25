@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Una biblioteca quiere organizar sus libros por género. Agrupa los títulos según su categoría usando listas paralelas.<br><br>
+  const instructions = `Una escuela recibe donaciones de útiles escolares. Algunos productos están repetidos. Debes eliminar los artículos duplicados en la lista y calcular el valor total del inventario.<br><br>
                         <strong>Botones Terminal Python:</strong>
                         <ul style=\"text-align:left;\">
                           <li style=\"list-style-position: inside;\">▶️ Ejecutar: Ejecuta el código.</li>

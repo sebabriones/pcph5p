@@ -1,5 +1,7 @@
 jQuery(document).ready(() => {
-  const instructions = `Un centro comunitario organiza actividades durante la semana, tales como: yoga, pintura, lectura y cine. Cada actividad tiene un día asignado. Agrupa las actividades según el día en que se realizan y muestra la agenda semanal.<br><br>
+  const instructions = `Seleccione la alternativa correcta.<br><br>
+                        <strong>Nota: </strong>Para mejor comprensión del ejercicio, tiene a disposición la Terminal Python.<br>
+                        Al hacer clic en el botón "Terminal Python" se mostrar una ventana con ella.<br><br>
                         <strong>Botones Terminal Python:</strong>
                         <ul style=\"text-align:left;\">
                           <li style=\"list-style-position: inside;\">▶️ Ejecutar: Ejecuta el código.</li>
