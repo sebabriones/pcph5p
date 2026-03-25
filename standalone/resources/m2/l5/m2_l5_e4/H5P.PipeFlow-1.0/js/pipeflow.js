@@ -176,6 +176,33 @@ H5P.PipeFlow = (function ($, Question) {
   PipeFlow.prototype.init = function () {
     var self = this;
     self.on('resize', self.resize.bind(self));
+
+    if (!self._viewportResizeHandler) {
+      self._viewportResizeRaf = null;
+      self._viewportResizeTimer = null;
+      self._viewportResizeHandler = function () {
+        if (self._viewportResizeRaf) {
+          cancelAnimationFrame(self._viewportResizeRaf);
+        }
+        if (self._viewportResizeTimer) {
+          clearTimeout(self._viewportResizeTimer);
+        }
+        self._viewportResizeTimer = setTimeout(function () {
+          self._viewportResizeTimer = null;
+          self._viewportResizeRaf = requestAnimationFrame(function () {
+            self._viewportResizeRaf = null;
+            self.trigger('resize');
+          });
+        }, 80);
+      };
+
+      window.addEventListener('resize', self._viewportResizeHandler);
+      window.addEventListener('orientationchange', self._viewportResizeHandler);
+      document.addEventListener('fullscreenchange', self._viewportResizeHandler);
+      document.addEventListener('webkitfullscreenchange', self._viewportResizeHandler);
+      document.addEventListener('mozfullscreenchange', self._viewportResizeHandler);
+      document.addEventListener('MSFullscreenChange', self._viewportResizeHandler);
+    }
   };
 
   /**
@@ -1081,15 +1108,25 @@ H5P.PipeFlow = (function ($, Question) {
 
   PipeFlow.prototype.getCellFromMouse = function (event) {
     var self = this;
-    var CANVAS_SIZE = self.options.settings.canvasSize;
-    var CELL_SIZE = CANVAS_SIZE / self.gameState.gridSize;
+    var geometry = self.getBoardGeometry();
+    if (!geometry) return null;
     var rect = self.canvas.getBoundingClientRect();
-    var scaleX = CANVAS_SIZE / rect.width;
-    var scaleY = CANVAS_SIZE / rect.height;
+    var scaleX = self.options.settings.canvasSize / rect.width;
+    var scaleY = self.options.settings.canvasSize / rect.height;
     var x = (event.clientX - rect.left) * scaleX;
     var y = (event.clientY - rect.top) * scaleY;
-    var col = Math.floor(x / CELL_SIZE);
-    var row = Math.floor(y / CELL_SIZE);
+
+    if (
+      x < geometry.boardX ||
+      y < geometry.boardY ||
+      x > geometry.boardX + geometry.boardSize ||
+      y > geometry.boardY + geometry.boardSize
+    ) {
+      return null;
+    }
+
+    var col = Math.floor((x - geometry.boardX) / geometry.cellSize);
+    var row = Math.floor((y - geometry.boardY) / geometry.cellSize);
     if (row >= 0 && row < self.gameState.gridSize && col >= 0 && col < self.gameState.gridSize) {
       return { row: row, col: col };
     }
@@ -1098,13 +1135,11 @@ H5P.PipeFlow = (function ($, Question) {
 
   // === Dibujo ===
 
-  PipeFlow.prototype.drawCell = function (ctx, x, y, size, cellType, waterSourceId, isHovered) {
+  PipeFlow.prototype.drawCell = function (ctx, x, y, size, cellType, waterSourceId, isHovered, row, col) {
     var self = this;
     var centerX = x + size / 2;
     var centerY = y + size / 2;
     var pipeWidth = size * 0.2;
-    var row = Math.floor(y / size);
-    var col = Math.floor(x / size);
     var isLeak = self.gameState.leakCell &&
                  self.gameState.leakCell.row === row &&
                  self.gameState.leakCell.col === col;
@@ -1322,6 +1357,73 @@ H5P.PipeFlow = (function ($, Question) {
     ctx.restore();
   };
 
+  PipeFlow.prototype.getColumnLabel = function (columnIndex) {
+    var label = '';
+    var value = columnIndex;
+    do {
+      label = String.fromCharCode(65 + (value % 26)) + label;
+      value = Math.floor(value / 26) - 1;
+    } while (value >= 0);
+    return label;
+  };
+
+  PipeFlow.prototype.getBoardGeometry = function () {
+    var self = this;
+    if (!self.canvas || !self.gameState.gridSize) return null;
+
+    var CANVAS_SIZE = self.options.settings.canvasSize;
+    var gridSize = self.gameState.gridSize;
+
+    // Espacios reservados para mostrar coordenadas (A.., 1..)
+    var axisLeft = 34;
+    var axisTop = 24;
+    var axisRight = 8;
+    var axisBottom = 8;
+    var availableWidth = CANVAS_SIZE - axisLeft - axisRight;
+    var availableHeight = CANVAS_SIZE - axisTop - axisBottom;
+    var boardSize = Math.min(availableWidth, availableHeight);
+
+    return {
+      boardX: axisLeft + Math.floor((availableWidth - boardSize) / 2),
+      boardY: axisTop + Math.floor((availableHeight - boardSize) / 2),
+      boardSize: boardSize,
+      cellSize: boardSize / gridSize
+    };
+  };
+
+  PipeFlow.prototype.drawBoardCoordinates = function (ctx, geometry) {
+    var self = this;
+    var gridSize = self.gameState.gridSize;
+    var boardX = geometry.boardX;
+    var boardY = geometry.boardY;
+    var boardSize = geometry.boardSize;
+    var cellSize = geometry.cellSize;
+
+    ctx.save();
+    ctx.fillStyle = '#374151';
+    ctx.font = 'bold 12px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    for (var col = 0; col < gridSize; col++) {
+      var x = boardX + (col * cellSize) + (cellSize / 2);
+      ctx.fillText(self.getColumnLabel(col), x, boardY - 10);
+    }
+
+    ctx.textAlign = 'right';
+    for (var row = 0; row < gridSize; row++) {
+      var y = boardY + (row * cellSize) + (cellSize / 2);
+      ctx.fillText(String(row + 1), boardX - 8, y);
+    }
+
+    ctx.restore();
+    ctx.save();
+    ctx.strokeStyle = '#cfd8dc';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(boardX, boardY, boardSize, boardSize);
+    ctx.restore();
+  };
+
   // === Renderizado ===
 
   PipeFlow.prototype.renderGame = function () {
@@ -1329,11 +1431,16 @@ H5P.PipeFlow = (function ($, Question) {
     if (!self.canvas || !self.ctx) return;
 
     var CANVAS_SIZE = self.options.settings.canvasSize;
-    var CELL_SIZE = CANVAS_SIZE / self.gameState.gridSize;
+    var geometry = self.getBoardGeometry();
+    if (!geometry) return;
+    var CELL_SIZE = geometry.cellSize;
+    var boardX = geometry.boardX;
+    var boardY = geometry.boardY;
 
     self.ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
     self.ctx.fillStyle = '#f5f5f5';
     self.ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+    self.drawBoardCoordinates(self.ctx, geometry);
 
     var hasAnyWater = Object.keys(self.gameState.waterOwnership).length > 0;
     if (self.gameState.isRunning && hasAnyWater) {
@@ -1343,8 +1450,8 @@ H5P.PipeFlow = (function ($, Question) {
     for (var row = 0; row < self.gameState.gridSize; row++) {
       for (var col = 0; col < self.gameState.gridSize; col++) {
         var cellType = self.gameState.grid[row][col];
-        var xPos = col * CELL_SIZE;
-        var yPos = row * CELL_SIZE;
+        var xPos = boardX + (col * CELL_SIZE);
+        var yPos = boardY + (row * CELL_SIZE);
 
         var cellKey = row + '-' + col;
         var waterSourceId = self.gameState.waterOwnership[cellKey] || 0;
@@ -1353,7 +1460,7 @@ H5P.PipeFlow = (function ($, Question) {
                         self.gameState.hoveredCell.row === row &&
                         self.gameState.hoveredCell.col === col;
 
-        self.drawCell(self.ctx, xPos, yPos, CELL_SIZE, cellType, waterSourceId, isHovered);
+        self.drawCell(self.ctx, xPos, yPos, CELL_SIZE, cellType, waterSourceId, isHovered, row, col);
       }
     }
 
@@ -1374,8 +1481,10 @@ H5P.PipeFlow = (function ($, Question) {
 
     var $container = $(self.canvas).closest('.pipe-flow-container');
     if (!$container || !$container.length) return;
+    var $canvasContainer = $(self.canvas).parent();
+    if (!$canvasContainer || !$canvasContainer.length) return;
 
-    var containerWidth = $container.parent().width();
+    var containerWidth = $canvasContainer.width();
     if (!containerWidth || containerWidth <= 0) return;
 
     var baseWidth = 700;
@@ -1385,11 +1494,44 @@ H5P.PipeFlow = (function ($, Question) {
 
     $container.css('font-size', (baseFontSize * ratio) + 'px');
 
-    // Forzar proporción cuadrada del canvas
-    var canvasWidth = self.canvas.offsetWidth;
-    if (canvasWidth > 0) {
-      self.canvas.style.height = canvasWidth + 'px';
+    var isFullscreen = Boolean(
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement
+    );
+    var forceConstrainedResize = window.__PIPEFLOW_CONSTRAINED_RESIZE__ === true;
+    var useConstrainedResize = isFullscreen || forceConstrainedResize;
+
+    if (!useConstrainedResize) {
+      // Modo legado para vista estudiante normal: mantener el comportamiento previo.
+      self.canvas.style.width = '100%';
+      self.canvas.style.maxWidth = self.options.settings.canvasSize + 'px';
+      var legacyCanvasWidth = self.canvas.getBoundingClientRect().width || self.canvas.offsetWidth || containerWidth;
+      if (legacyCanvasWidth > 0) {
+        self.canvas.style.height = legacyCanvasWidth + 'px';
+      }
+      self.renderGame();
+      return;
     }
+
+    // Modo acotado para vista instructor y fullscreen.
+    var containerRect = $canvasContainer[0].getBoundingClientRect();
+    var $parent = $container.parent();
+    var parentRect = ($parent && $parent.length) ? $parent[0].getBoundingClientRect() : null;
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+
+    var maxByWidth = Math.max(200, containerRect.width - 8);
+    var maxByParent = parentRect ? Math.max(200, parentRect.height - 24) : Number.POSITIVE_INFINITY;
+    var maxByViewport = viewportHeight > 0
+      ? Math.max(220, viewportHeight - containerRect.top - 160)
+      : Number.POSITIVE_INFINITY;
+
+    var targetSize = Math.max(200, Math.min(maxByWidth, maxByParent, maxByViewport));
+
+    self.canvas.style.width = '100%';
+    self.canvas.style.maxWidth = targetSize + 'px';
+    self.canvas.style.height = targetSize + 'px';
 
     self.renderGame();
   };
