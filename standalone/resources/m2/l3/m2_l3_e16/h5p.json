@@ -7,12 +7,22 @@
     "license": "U",
     "extraTitle": "Modulo 2 - Leccion 3 - Ejercicio 16",
     "title": "Modulo 2 - Leccion 3 - Ejercicio 16",
-    "mainLibrary": "H5P.MatchingGame",
+    "mainLibrary": "H5P.CoursePresentation",
     "preloadedDependencies": [
         {
             "machineName": "H5P.Instructions",
             "majorVersion": 1,
             "minorVersion": 0
+        },
+        {
+            "machineName": "H5P.Image",
+            "majorVersion": 1,
+            "minorVersion": 1
+        },
+        {
+            "machineName": "H5P.AdvancedText",
+            "majorVersion": 1,
+            "minorVersion": 1
         },
         {
             "machineName": "FontAwesome",
@@ -40,9 +50,14 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.MatchingGame",
-            "majorVersion": 0,
-            "minorVersion": 1
+            "machineName": "H5P.MultiChoice",
+            "majorVersion": 1,
+            "minorVersion": 16
+        },
+        {
+            "machineName": "H5P.CoursePresentation",
+            "majorVersion": 1,
+            "minorVersion": 26
         }
     ]
 }

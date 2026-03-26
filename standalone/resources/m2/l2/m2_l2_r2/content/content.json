@@ -99,7 +99,7 @@
                         "x": 2.178649237472767,
                         "y": 18.910611231371064,
                         "width": 95.86056644880175,
-                        "height": 80.6393894141595,
+                        "height": 84.6393894141595,
                         "action": {
                             "library": "H5P.MatchingGameCP 0.1",
                             "params": {
@@ -165,98 +165,6 @@
                                 "text": "<p style=\"text-align:center\"><span><strong>B. </strong></span><span><strong>Implementar un sistema de inteligencia artificial para atención al cliente.</strong></span></p>"
                             },
                             "subContentId": "dc2ed1d6-d3ea-4b78-966b-5b9900b4aa6d",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "Sin título es",
-                                "authors": [],
-                                "changes": []
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    }
-                ],
-                "keywords": [],
-                "slideBackgroundSelector": {}
-            },
-            {
-                "elements": [
-                    {
-                        "x": 2.178649237472767,
-                        "y": 18.910611231371064,
-                        "width": 95.86056644880175,
-                        "height": 80.6393894141595,
-                        "action": {
-                            "library": "H5P.MatchingGameCP 0.1",
-                            "params": {
-                                "pairs": [
-                                    {
-                                        "answer": "Definir la meta",
-                                        "definition": "Ahorrar $20.000 pesos chilenos por semana durante dos meses."
-                                    },
-                                    {
-                                        "answer": "Identificar rutas para resolver el problema",
-                                        "definition": "Registrar gastos diarios."
-                                    },
-                                    {
-                                        "answer": "Definir indicadores de éxito",
-                                        "definition": "Monto ahorrado por semana."
-                                    },
-                                    {
-                                        "answer": "Identificar recursos de apoyo",
-                                        "definition": "Cuenta de ahorro y app de finanzas."
-                                    },
-                                    {
-                                        "answer": "Evaluar incertidumbre",
-                                        "definition": "Gastos inesperados (salud, transporte…)."
-                                    }
-                                ],
-                                "behaviour": {
-                                    "enableRetry": false,
-                                    "enableSolutionButton": false,
-                                    "enableScoreText": false
-                                },
-                                "l10n": {
-                                    "checkAnswerButtonLabel": "Comprobar",
-                                    "showSolutionButtonLabel": "Mostrar solución",
-                                    "retryButtonLabel": "Intentar de nuevo"
-                                }
-                            },
-                            "subContentId": "a07516fb-03f9-4c04-b740-ad890619e904",
-                            "metadata": {
-                                "contentType": "es",
-                                "license": "U",
-                                "title": "C. Ahorrar dinero mensualmente",
-                                "authors": [],
-                                "changes": [],
-                                "extraTitle": "C. Ahorrar dinero mensualmente"
-                            }
-                        },
-                        "alwaysDisplayComments": false,
-                        "backgroundOpacity": 0,
-                        "displayAsButton": false,
-                        "buttonSize": "big",
-                        "goToSlideType": "specified",
-                        "invisible": false,
-                        "solution": ""
-                    },
-                    {
-                        "x": 6.5359477124183005,
-                        "y": 10.379421346404611,
-                        "width": 86.64389978213508,
-                        "height": 8.607074154247377,
-                        "action": {
-                            "library": "H5P.AdvancedText 1.1",
-                            "params": {
-                                "text": "<p style=\"text-align:center\"><span><strong>C. Ahorrar dinero mensualmente</strong></span><span><strong>.</strong></span></p>"
-                            },
-                            "subContentId": "c354705d-6837-4def-b33e-bbe8155cf592",
                             "metadata": {
                                 "contentType": "es",
                                 "license": "U",
