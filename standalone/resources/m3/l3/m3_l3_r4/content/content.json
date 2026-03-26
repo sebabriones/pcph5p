@@ -16,16 +16,21 @@
                                         "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
                                         "question": "<p>1. ¿Cuál es la salida del siguiente código?</p>",
                                         "answers": [
-                                            "<p style=\"text-align:center;\">20</p>",
+                                            "<p style=\"text-align:center;\">El resultado es: 20</p>",
                                             "<p style=\"text-align:center;\">36</p>",
-                                            "<p style=\"text-align:center;\">18</p>",
-                                            "<p style=\"text-align:center;\">13</p>"
+                                            "<p style=\"text-align:center;\">20</p>",
+                                            "<p style=\"text-align:center;\">El resultado es: 13</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
                                         "feedback": "El orden correcto para resolver este ejercicio es: <ol><li>Resolver el paréntesis</li><li>Resolver la multiplicación</li><li>Resolver la suma</li></ol>"
                                     }
@@ -61,10 +66,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Refuerzo 4 - 1",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Refuerzo 4 - 1"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -134,16 +139,21 @@
                                         "subContentId": "84cc5f32-7205-4bad-a483-2bd02c50ec17",
                                         "question": "<p>2. ¿Cuál es la salida del siguiente código?</p>",
                                         "answers": [
-                                            "<p style=\"text-align:center;\">16</p>",
+                                            "<p style=\"text-align:center;\">El resultado es: 16</p>",
+                                            "<p style=\"text-align:center;\">El resultado es: 0.5</p>",
                                             "<p style=\"text-align:center;\">8</p>",
-                                            "<p style=\"text-align:center;\">0.5</p>",
-                                            "<p style=\"text-align:center;\">6</p>"
+                                            "<p style=\"text-align:center;\">16</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
                                         "feedback": "El símbolo <span style='font-weight:bold;'>**</span> significa potencia."
                                     }
@@ -179,10 +189,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Refuerzo 4 - 2",
+                                "title": "Pregunta 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Refuerzo 4 - 2"
+                                "extraTitle": "Pregunta 2"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -255,13 +265,18 @@
                                             "<p style=\"text-align:center;\">18</p>",
                                             "<p style=\"text-align:center;\">10</p>",
                                             "<p style=\"text-align:center;\">20</p>",
-                                            "<p style=\"text-align:center;\">8</p>"
+                                            "<p style=\"text-align:center;\">El resultado es: 18</p>"
                                         ]
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
                                         "feedback": "El orden para resolver el ejercicio es: <ol><li>Resolver el primer paréntesis</li><li>Resolver el segundo paréntesis</li><li>Resolver la suma</li></ol>"
                                     }
@@ -297,10 +312,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Refuerzo 4 - 3",
+                                "title": "Pregunta 3",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Refuerzo 4 - 3"
+                                "extraTitle": "Pregunta 3"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -378,6 +393,11 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
                                         "feedback": "El símbolo <span style='font-weight:bold;'>+</span> se utiliza para unir dos o más cadenas."
                                     }
@@ -413,10 +433,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Refuerzo 4 - 4",
+                                "title": "Pregunta 4",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Refuerzo 4 - 4"
+                                "extraTitle": "Pregunta 4"
                             }
                         },
                         "alwaysDisplayComments": false,

@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `¿Qué tipo de error se presenta en los siguientes ejemplos? Seleccione la alternativa correcta.`;
+  const instructions = `¿Qué tipo de error se presenta en las siguientes variables? Seleccione la alternativa correcta.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

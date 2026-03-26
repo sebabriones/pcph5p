@@ -4,76 +4,85 @@
             {
                 "elements": [
                     {
-                        "x": 6.5359477124183005,
-                        "y": 12.910611231371064,
-                        "width": 87.14596949891067,
-                        "height": 83.91897300391192,
+                        "x": 2.178649237472767,
+                        "y": 17.619462599854756,
+                        "width": 95.86056644880175,
+                        "height": 73.3362381989833,
                         "action": {
-                            "library": "H5P.Summary 1.10",
+                            "library": "H5P.SortParagraphs 0.11",
                             "params": {
-                                "intro": "<p>1. ¿Cuál es el orden correcto para resolver operaciones en Python?</p>",
-                                "summaries": [
-                                    {
-                                        "subContentId": "d8254877-c298-4e31-8297-e1f7f95963d1",
-                                        "summary": [
-                                            "<p>Paréntesis</p>",
-                                            "<p>Exponentes de potencias</p>",
-                                            "<p>Multiplicación y división</p>",
-                                            "<p>Adición y sustracción</p>"
-                                        ],
-                                        "tip": ""
-                                    },
-                                    {
-                                        "subContentId": "23b7c4a0-a8aa-4f4b-9513-7d2e8dfee9ed",
-                                        "summary": [
-                                            "<p>Exponentes de potencias</p>",
-                                            "<p>Multiplicación y división</p>",
-                                            "<p>Adición y sustracción</p>"
-                                        ],
-                                        "tip": ""
-                                    },
-                                    {
-                                        "subContentId": "a2feb302-4343-41d2-a271-6b21dbc70891",
-                                        "summary": [
-                                            "<p>Multiplicación y división</p>",
-                                            "<p>Adición y sustracción</p>"
-                                        ],
-                                        "tip": ""
-                                    },
-                                    {
-                                        "subContentId": "9382e7f9-9523-4888-9ccc-e7a46704ff8d",
-                                        "summary": [
-                                            "<p>Adición y sustracción</p>"
-                                        ],
-                                        "tip": ""
-                                    }
-                                ],
+                                "media": {
+                                    "disableImageZooming": false
+                                },
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Para resolver operaciones, Python sigue la convención matemática. Comienza evaluando:<br><ol><li>Paréntesis.</li><li>Exponentes de potencias.</li><li>Multiplicación y división.</li><li>Adición y sustracción.</li></ol><br>Los operadores con la misma prioridad se evalúan de izquierda a derecha."
+                                        "feedback": "<p style='text-align:left;'>Para resolver operaciones, Python sigue la convención matemática. Comienza evaluando:</p><ol style='text-align:left;'><li>Paréntesis.</li><li>Exponentes de potencias.</li><li>Multiplicación y división.</li><li>Adición y sustracción.</li></ol><p style='text-align:left;'>Los operadores con la misma prioridad se evalúan de izquierda a derecha.</p>"
                                     }
                                 ],
-                                "solvedLabel": "Progreso:",
-                                "scoreLabel": "Respuestas incorrectas:",
-                                "resultLabel": "Tu resultado:",
-                                "labelCorrect": "Correcta.",
-                                "labelIncorrect": "¡Incorrecto! Por favor inténtalo otra vez.",
-                                "alternativeIncorrectLabel": "Incorrecto",
-                                "labelCorrectAnswers": "Respuestas correctas.",
-                                "tipButtonLabel": "Mostrar pista",
-                                "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
-                                "progressText": "Progreso :num de :total"
+                                "behaviour": {
+                                    "scoringMode": "positions",
+                                    "applyPenalties": true,
+                                    "duplicatesInterchangeable": false,
+                                    "addButtonsForMovement": false,
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false
+                                },
+                                "l10n": {
+                                    "checkAnswer": "Comprobar",
+                                    "submitAnswer": "Enviar",
+                                    "tryAgain": "Intentar de nuevo",
+                                    "showSolution": "Mostrar solución",
+                                    "up": "Arriba",
+                                    "down": "Abajo",
+                                    "disabled": "Deshabilitado"
+                                },
+                                "a11y": {
+                                    "check": "Comprobar las respuestas. Las respuestas se marcarán como correcta o incorrecta.",
+                                    "showSolution": "Mostrar la solución. Se mostrará la solución correcta.",
+                                    "retry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo.",
+                                    "yourResult": "Has obtenido @score de un total de @total puntos",
+                                    "listDescription": "Lista ordenable de párrafos.",
+                                    "listDescriptionCheckAnswer": "Lista de párrafos con resultados.",
+                                    "listDescriptionShowSolution": "Lista de párrafos con soluciones.",
+                                    "paragraph": "Párrafo",
+                                    "correct": "correcto",
+                                    "wrong": "incorrecto",
+                                    "point": "@score punto",
+                                    "sevenOfNine": "@current de @total",
+                                    "currentPosition": "Posición actual en lista",
+                                    "instructionsSelected": "Presiona la barra espaciadora para reordenar",
+                                    "instructionsGrabbed": "Presiona las teclas de dirección arriba y abajo para cambiar la posición, barra espaciadora para soltar, escape para cancelar",
+                                    "grabbed": "Cogido",
+                                    "moved": "Movido",
+                                    "dropped": "Soltado",
+                                    "reorderCancelled": "Reordenación cancelada",
+                                    "finalPosition": "Posición final",
+                                    "nextParagraph": "Párrafo siguiente",
+                                    "correctParagraph": "Párrafo correcto en la posición"
+                                },
+                                "taskDescription": "<p>1. ¿Cuál es el orden correcto para resolver operaciones en Python? Toma cada elemento y desplázalo hacia arriba o abajo para reorganizarlos según corresponda.</p>",
+                                "paragraphs": [
+                                    "<p>Paréntesis.</p>",
+                                    "<p>Exponentes de potencias.</p>",
+                                    "<p>Multiplicación y división.</p>",
+                                    "<p>Adición y sustracción.</p>"
+                                ]
                             },
-                            "subContentId": "744de265-9fbf-47fb-9db8-e887df075b2c",
+                            "subContentId": "94b36387-7c30-4ac4-863a-35a8dbb150b3",
                             "metadata": {
-                                "contentType": "Resumen (Summary)",
+                                "contentType": "Ordenar los párrafos (Sort the Paragraphs)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Ejercicio 5 - 1",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 5 - 1"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -188,10 +197,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Ejercicio 5 - 2",
+                                "title": "Pregunta 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 5 - 2"
+                                "extraTitle": "Pregunta 2"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -306,10 +315,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Ejercicio 5 - 3",
+                                "title": "Pregunta 3",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 5 - 3"
+                                "extraTitle": "Pregunta 3"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -424,10 +433,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Ejercicio 5 - 4",
+                                "title": "Pregunta 4",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 5 - 4"
+                                "extraTitle": "Pregunta 4"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -542,10 +551,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Ejercicio 5 - 5",
+                                "title": "Pregunta 5",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 5 - 5"
+                                "extraTitle": "Pregunta 5"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -660,10 +669,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 3 - Ejercicio 5 - 6",
+                                "title": "Pregunta 6",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 3 - Ejercicio 5 - 6"
+                                "extraTitle": "Pregunta 6"
                             }
                         },
                         "alwaysDisplayComments": false,

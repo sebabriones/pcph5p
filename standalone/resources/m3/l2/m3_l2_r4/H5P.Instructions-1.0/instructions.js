@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `¿Cuál o cuáles de las siguientes opciones son reglas básicas para nombrar variables?`;
+  const instructions = `Seleccione las opciones que crea correctas.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

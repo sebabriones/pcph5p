@@ -20,9 +20,9 @@
             "minorVersion": 0
         },
         {
-            "machineName": "H5P.Summary",
-            "majorVersion": 1,
-            "minorVersion": 10
+            "machineName": "H5P.SortParagraphs",
+            "majorVersion": 0,
+            "minorVersion": 11
         },
         {
             "machineName": "FontAwesome",

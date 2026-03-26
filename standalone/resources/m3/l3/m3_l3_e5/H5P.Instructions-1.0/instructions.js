@@ -1,6 +1,6 @@
 jQuery(document).ready(() => {
   const instructions = `<strong>Múltiples ejercicios</strong><br><br>
-                        <strong>Slide 1:</strong> ¿Cuál es el orden correcto para resolver operaciones en Python?<br> Haga click en cada elemento en el orden que corresponda.<br>
+                        <strong>Slide 1:</strong> ¿Cuál es el orden correcto para resolver operaciones en Python?<br> Tome y arrastre los términos hacia arriba o abajo de forma descendente en el orden que crea correcto.<br>
                         <strong>Slide 2 en adelante:</strong> Seleccione la alternativa correcta.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////

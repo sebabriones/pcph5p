@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `¿Cuál es el resultado de las siguientes sentencias? Ejecute en la consola usando <strong>print()</strong> y luego seleccione la alternativa correcta.`;
+  const instructions = `¿Cuál es el resultado de las siguientes sentencias? Ejecute en la consola usando <strong>print()</strong> (dentro del print() debe escribir lo necesario para mostrar la respuesta) y luego, seleccione la alternativa correcta del resultado.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

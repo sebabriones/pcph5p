@@ -5,9 +5,9 @@
                 "elements": [
                     {
                         "x": 51.19825708061002,
-                        "y": 21.517685385618442,
+                        "y": 25.517685385618442,
                         "width": 43.57298474945534,
-                        "height": 68.85659323397901,
+                        "height": 62.85659323397901,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -60,10 +60,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 5 - Ejercicio 4 - 1",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 5 - Ejercicio 4 - 1"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -76,7 +76,7 @@
                     },
                     {
                         "x": 14.161220043572985,
-                        "y": 23.669453924180285,
+                        "y": 30.669453924180285,
                         "width": 20.697167755991288,
                         "height": 40.88360223267504,
                         "action": {
@@ -122,7 +122,7 @@
                 "elements": [
                     {
                         "x": 51.19825708061002,
-                        "y": 19.365916847056596,
+                        "y": 15.365916847056596,
                         "width": 43.57298474945534,
                         "height": 78.46366738822638,
                         "action": {
@@ -177,10 +177,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 5 - Ejercicio 4 - 2",
+                                "title": "Pregunta 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 5 - Ejercicio 4 - 2"
+                                "extraTitle": "Pregunta 2"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -239,9 +239,9 @@
                 "elements": [
                     {
                         "x": 52.287581699346404,
-                        "y": 19.365916847056596,
+                        "y": 22.365916847056596,
                         "width": 43.57298474945534,
-                        "height": 77.46366738822638,
+                        "height": 64.46366738822638,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -254,16 +254,6 @@
                                             "<p>Guarda el nombre en una lista.</p>",
                                             "<p>Crear una variable llamada <strong>\"nombre\"</strong>.</p>",
                                             "<p>Pide el nombre al usuario con <strong>input()</strong>.</p>"
-                                        ]
-                                    },
-                                    {
-                                        "subContentId": "88ad696c-e4e0-4e51-8738-8fe230763962",
-                                        "question": "<p style=\"text-align:center\">4. ¿Qué significa la <strong>f</strong> en <strong>print(f\"¡Hola!, bienvenido(a) {nombre}\")</strong>?</p>",
-                                        "answers": [
-                                            "<p>Que usa un f-string para formatear una cadena con una variable.</p>",
-                                            "<p>Quiere decir que se trata de una función especial.</p>",
-                                            "<p>Significa que se está definiendo una función.</p>",
-                                            "<p>Que el texto se convierte a formato flotante.</p>"
                                         ]
                                     }
                                 ],
@@ -304,10 +294,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 5 - Ejercicio 4 - 3",
+                                "title": "Pregunta 3",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 5 - Ejercicio 4 - 3"
+                                "extraTitle": "Pregunta 3"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -366,9 +356,126 @@
                 "elements": [
                     {
                         "x": 52.287581699346404,
-                        "y": 19.365916847056596,
+                        "y": 15.365916847056596,
                         "width": 43.57298474945534,
                         "height": 77.46366738822638,
+                        "action": {
+                            "library": "H5P.SingleChoiceSet 1.11",
+                            "params": {
+                                "choices": [
+                                    {
+                                        "subContentId": "88ad696c-e4e0-4e51-8738-8fe230763962",
+                                        "question": "<p style=\"text-align:center\">4. ¿Qué significa la <strong>f</strong> en <strong>print(f\"¡Hola!, bienvenido(a) {nombre}\")</strong>?</p>",
+                                        "answers": [
+                                            "<p>Que usa un f-string para formatear una cadena con una variable.</p>",
+                                            "<p>Quiere decir que se trata de una función especial.</p>",
+                                            "<p>Significa que se está definiendo una función.</p>",
+                                            "<p>Que el texto se convierte a formato flotante.</p>"
+                                        ]
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "autoContinue": false,
+                                    "timeoutCorrect": 2000,
+                                    "timeoutWrong": 3000,
+                                    "soundEffectsEnabled": false,
+                                    "enableRetry": false,
+                                    "enableSolutionsButton": false,
+                                    "passPercentage": 100
+                                },
+                                "l10n": {
+                                    "nextButtonLabel": "Siguiente pregunta",
+                                    "showSolutionButtonLabel": "Mostrar solución",
+                                    "retryButtonLabel": "Intentar de nuevo",
+                                    "solutionViewTitle": "Lista Solución",
+                                    "correctText": "¡Correcto!",
+                                    "incorrectText": "¡Incorrecto!",
+                                    "shouldSelect": "Debería haber sido seleccionada",
+                                    "shouldNotSelect": "NO debería haber sido seleccionada",
+                                    "muteButtonLabel": "Silenciar sonido de retroalimentación",
+                                    "closeButtonLabel": "Cerrar",
+                                    "slideOfTotal": "Diapositiva :num de :total",
+                                    "scoreBarLabel": "Has conseguido :num de un total de :total puntos",
+                                    "solutionListQuestionNumber": "Pregunta :num",
+                                    "a11yShowSolution": "Mostrar la solución. La tarea se calificará con su solución correcta.",
+                                    "a11yRetry": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+                                }
+                            },
+                            "subContentId": "79af42a7-5715-476e-88bb-c70b35a83ad4",
+                            "metadata": {
+                                "contentType": "Conjunto de Opción Única (Single Choice Set)",
+                                "license": "U",
+                                "title": "Pregunta 4",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Pregunta 4"
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    },
+                    {
+                        "x": 2.178649237472767,
+                        "y": 38.73183369411319,
+                        "width": 47.52863693819743,
+                        "height": 17.214148308494753,
+                        "action": {
+                            "library": "H5P.Image 1.1",
+                            "params": {
+                                "decorative": true,
+                                "contentName": "Imagen",
+                                "expandImage": "Expandir Imagen",
+                                "minimizeImage": "Minimizar Imagen",
+                                "file": {
+                                    "path": "http://localhost/pcph5p/standalone/resources/m3/l5/m3_l5_e4/content/images/image-XMHgBvx1.png",
+                                    "path2": "images/image-XMHgBvx1.png",
+                                    "mime": "image/png",
+                                    "copyright": {
+                                        "license": "U"
+                                    },
+                                    "width": 1418,
+                                    "height": 260
+                                }
+                            },
+                            "subContentId": "01c870ad-a3c0-402c-8c1d-c48b587ebd42",
+                            "metadata": {
+                                "contentType": "es",
+                                "license": "U",
+                                "title": "Sin título es",
+                                "authors": [],
+                                "changes": []
+                            }
+                        },
+                        "alwaysDisplayComments": false,
+                        "backgroundOpacity": 0,
+                        "displayAsButton": false,
+                        "buttonSize": "big",
+                        "goToSlideType": "specified",
+                        "invisible": false,
+                        "solution": ""
+                    }
+                ],
+                "keywords": [],
+                "slideBackgroundSelector": {}
+            },
+            {
+                "elements": [
+                    {
+                        "x": 52.287581699346404,
+                        "y": 22.365916847056596,
+                        "width": 43.57298474945534,
+                        "height": 67.46366738822638,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -421,10 +528,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 5 - Ejercicio 4 - 4",
+                                "title": "Pregunta 5",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 5 - Ejercicio 4 - 4"
+                                "extraTitle": "Pregunta 5"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -483,9 +590,9 @@
                 "elements": [
                     {
                         "x": 52.287581699346404,
-                        "y": 19.365916847056596,
+                        "y": 24.365916847056596,
                         "width": 43.57298474945534,
-                        "height": 77.46366738822638,
+                        "height": 71.46366738822638,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -538,10 +645,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 5 - Ejercicio 4 - 5",
+                                "title": "Pregunta 6",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 5 - Ejercicio 4 - 5"
+                                "extraTitle": "Pregunta 6"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -554,7 +661,7 @@
                     },
                     {
                         "x": 3.2679738562091503,
-                        "y": 32.27652807842766,
+                        "y": 37.27652807842766,
                         "width": 46.37461873638345,
                         "height": 27.972991001303974,
                         "action": {
@@ -600,9 +707,9 @@
                 "elements": [
                     {
                         "x": 51.19825708061002,
-                        "y": 21.517685385618442,
+                        "y": 23.517685385618442,
                         "width": 43.57298474945534,
-                        "height": 68.85659323397901,
+                        "height": 65.85659323397901,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -655,10 +762,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Modulo 3 - Leccion 5 - Ejercicio 4 - 6",
+                                "title": "Pregunta 7",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 3 - Leccion 5 - Ejercicio 4 - 6"
+                                "extraTitle": "Pregunta 7"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -671,7 +778,7 @@
                     },
                     {
                         "x": 5.446623093681917,
-                        "y": 47.33890784836057,
+                        "y": 42.33890784836057,
                         "width": 41.54749455337691,
                         "height": 43.035370771236884,
                         "action": {
@@ -711,7 +818,7 @@
                     },
                     {
                         "x": 5.446623093681917,
-                        "y": 22.214148308494753,
+                        "y": 17.214148308494753,
                         "width": 42.48366013071895,
                         "height": 24.972991001303974,
                         "action": {

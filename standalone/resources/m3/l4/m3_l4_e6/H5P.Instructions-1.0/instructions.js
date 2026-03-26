@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Identifique y ordene los elementos clave de un ciclo <strong>while</strong> y <strong>for...in</strong>. Haga clic en las sentencias en el orden que corresponde a cada estructura.`;
+  const instructions = `Identifique y ordene los elementos clave de un ciclo <strong>while</strong> (slide 1) y <strong>for...in</strong> (slide 2).
+                        <br>Tome y arrastre los términos hacia arriba o abajo de forma descendente en el orden que crea correcto.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

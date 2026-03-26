@@ -276,15 +276,14 @@ li.h5p-sc-alternative .h5p-sc-status {
   box-shadow: none;
 }
 .h5p-sc-set-results {
-  /*width: 100%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  /*text-align: center;*/
-  /*text-align: left; /*nuevo*/
-  /*font-size: 1em !important; /*nuevo*/
-  /*box-sizing: border-box;*/
-  display: none;
+  text-align: center;
+  font-size: 1em !important; /*nuevo*/
+  box-sizing: border-box;
+  /*display: none;*/
 }
 .h5p-sc-set-results > .h5p-sc-feedback {
   display: block;
