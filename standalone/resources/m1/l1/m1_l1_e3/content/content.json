@@ -73,8 +73,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Muchas ventanas abiertas hacen que la memoria RAM se llene o que utilice la memoria secundaria (disco duro) lo que produce que el computador trabaje a menor velocidad. Un procesador lento influye en el tiempo de respuesta en ir de una ventana a otra (velocidad más baja)."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Muchas ventanas abiertas hacen que la memoria RAM se llene o que utilice la memoria secundaria (disco duro) lo que produce que el computador trabaje a menor velocidad. Un procesador lento influye en el tiempo de respuesta en ir de una ventana a otra (velocidad más baja)."
                                     }
                                 ],
                                 "behaviour": {
@@ -128,10 +133,10 @@
                             "metadata": {
                                 "contentType": "Opción múltiple (Multiple Choice)",
                                 "license": "U",
-                                "title": "Modulo 1 - Leccion 1 - Ejercicio 3",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 1 - Leccion 1 - Ejercicio 3"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,

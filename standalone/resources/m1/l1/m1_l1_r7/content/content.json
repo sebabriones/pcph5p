@@ -64,7 +64,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
                                     }
                                 ],
                                 "behaviour": {
@@ -118,10 +124,10 @@
                             "metadata": {
                                 "contentType": "Opción múltiple (Multiple Choice)",
                                 "license": "U",
-                                "title": "Modulo 1 - Leccion 1 - Refuerzo 7",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 1 - Leccion 1 - Refuerzo 7"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,

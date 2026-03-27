@@ -115,14 +115,19 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Dimensión administrativa: no ha llegado una solución de parte del DEM todavía.</div>"
+                                        "text": "<div>Dimensión administrativa: no ha llegado una solución de parte del DAEM todavía.</div>"
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Como en esta escuela no hay calefacción  (dimensión física), muchos estudiantes se ven afectados/as al enfermarse, generando como consecuencia, problemas de asistencia y colapso del centro de salud de su comuna (dimensión social). La escuela no tiene recu"
+                                        "feedback": "<strong>¡Correcto!</strong><br>Como en esta escuela no hay calefacción  (dimensión física), muchos estudiantes se ven afectados/as al enfermarse, generando como consecuencia, problemas de asistencia y colapso del centro de salud de su comuna (dimensión social). La escuela no tiene recursos para instalar calefacción y quien tiene los dineros (dimensión económica), el DAEM, aún no ha respondido (dimensión administrativa).<br>Lo que no corresponde como dimensión son aspectos que escapan del caso, como la calidad de la ropa de invierno o asumir que la Municipalidad “prefiere” ocupar su dinero en otros proyectos (no hay información comprobable en este caso) y que la dirección de la escuela no ha actuado a tiempo."
                                     }
                                 ],
                                 "behaviour": {
@@ -315,7 +320,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
                                     }
                                 ],
                                 "behaviour": {
@@ -481,7 +492,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
                                     }
                                 ],
                                 "behaviour": {
@@ -647,7 +664,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
                                     }
                                 ],
                                 "behaviour": {
@@ -831,7 +854,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
                                     }
                                 ],
                                 "behaviour": {

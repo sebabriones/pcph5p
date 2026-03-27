@@ -55,8 +55,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Con base en los contenidos revisados en la lección, todas las opciones presentadas son correctas y dan cuenta de la importancia de la computación en el proceso formativo y futuro quehacer profesional de cada estudiante."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Con base en los contenidos revisados en la lección, todas las opciones presentadas son correctas y dan cuenta de la importancia de la computación en el proceso formativo y futuro quehacer profesional de cada estudiante."
                                     }
                                 ],
                                 "behaviour": {
@@ -110,10 +115,10 @@
                             "metadata": {
                                 "contentType": "Opción múltiple (Multiple Choice)",
                                 "license": "U",
-                                "title": "Modulo 1 - Leccion 1 - Ejercicio 9",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 1 - Leccion 1 - Ejercicio 9"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,

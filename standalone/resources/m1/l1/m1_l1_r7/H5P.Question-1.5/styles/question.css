@@ -201,6 +201,8 @@
 .h5p-question-visible .h5p-question-feedback-content.has-content {
   display: block;
   margin-bottom: 0.8em;
+  text-align: center; /*nuevo*/
+  font-size: 0.9em; /*nuevo*/
 }
 
 .h5p-question-feedback-content-text {

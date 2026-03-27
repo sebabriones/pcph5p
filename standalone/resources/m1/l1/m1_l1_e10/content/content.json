@@ -73,8 +73,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "El “mejoramiento del sistema de gestión” en los centros de salud, la reducción de la contaminación gracias a la “digitalización” y la “optimización de procesos” en el área industrial, son aportes de la computación al desarrollo sostenible."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El “mejoramiento del sistema de gestión” en los centros de salud, la reducción de la contaminación gracias a la “digitalización” y la “optimización de procesos” en el área industrial, son aportes de la computación al desarrollo sostenible."
                                     }
                                 ],
                                 "behaviour": {
@@ -128,10 +133,10 @@
                             "metadata": {
                                 "contentType": "Opción múltiple (Multiple Choice)",
                                 "license": "U",
-                                "title": "Modulo 1 - Leccion 1 - Ejercicio 10",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 1 - Leccion 1 - Ejercicio 10"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,

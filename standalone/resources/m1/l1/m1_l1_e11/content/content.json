@@ -64,8 +64,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "“Monitorear el buen funcionamiento de sistemas computacionales”, “considerar consecuencias negativas y elaborar plan de mitigación” e “informar y resolver errores” reflejan la responsabilidad humana en la toma de decisiones de sistemas computacionales."
+                                        "feedback": "<strong>¡Correcto!</strong><br>“Monitorear el buen funcionamiento de sistemas computacionales”, “considerar consecuencias negativas y elaborar plan de mitigación” e “informar y resolver errores” reflejan la responsabilidad humana en la toma de decisiones de sistemas computacionales."
                                     }
                                 ],
                                 "behaviour": {
@@ -119,10 +124,10 @@
                             "metadata": {
                                 "contentType": "Opción múltiple (Multiple Choice)",
                                 "license": "U",
-                                "title": "Modulo 1 - Leccion 1 - Ejercicio 11",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Modulo 1 - Leccion 1 - Ejercicio 11"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,
