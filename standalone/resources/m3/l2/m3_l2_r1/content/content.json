@@ -24,8 +24,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Python es un lenguaje de programación de alto nivel, pero porque se trata de un lenguaje muy similar al lenguaje natural."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Python es un lenguaje de programación de alto nivel, pero porque se trata de un lenguaje muy similar al lenguaje natural."
                                     }
                                 ],
                                 "behaviour": {
@@ -140,8 +145,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Que Python sea multiplataforma significa que el mismo código puede ejecutarse en diferentes sistemas operativos (como Windows, macOS y Linux) sin necesidad de hacer cambios."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Que Python sea multiplataforma significa que el mismo código puede ejecutarse en diferentes sistemas operativos (como Windows, macOS y Linux) sin necesidad de hacer cambios."
                                     }
                                 ],
                                 "behaviour": {
@@ -256,8 +266,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Python es un lenguaje que se puede integrar con otros lenguajes de programación."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Python es un lenguaje que se puede integrar con otros lenguajes de programación."
                                     }
                                 ],
                                 "behaviour": {
@@ -372,8 +387,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Math es una biblioteca para hacer operaciones matemáticas."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Math es una biblioteca para hacer operaciones matemáticas."
                                     }
                                 ],
                                 "behaviour": {
@@ -488,8 +508,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Una de las ventajas más importantes de Python es que es completamente gratuito y de código abierto (open source)."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Una de las ventajas más importantes de Python es que es completamente gratuito y de código abierto (open source)."
                                     }
                                 ],
                                 "behaviour": {

@@ -105,12 +105,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "La <strong>precisión</strong> se cumple porque cada paso está claramente definido y no deja ambigüedades sobre qué hacer en cada etapa."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La <strong>precisión</strong> se cumple porque cada paso está claramente definido y no deja ambigüedades sobre qué hacer en cada etapa."
                                     }
                                 ],
                                 "behaviour": {
@@ -266,12 +266,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "La <strong>efectividad</strong> se observa porque el algoritmo siempre conduce a una acción concreta (eficacia) y alcanzable, utilizando pasos realizables que llevan a un resultado (eficiencia)."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La <strong>efectividad</strong> se observa porque el algoritmo siempre conduce a una acción concreta (eficacia) y alcanzable, utilizando pasos realizables que llevan a un resultado (eficiencia)."
                                     }
                                 ],
                                 "behaviour": {
@@ -427,12 +427,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "La <strong>generalidad</strong> se cumple porque el mismo algoritmo puede utilizarse en múltiples contextos de planificación de viajes sin modificar su estructura básica."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La <strong>generalidad</strong> se cumple porque el mismo algoritmo puede utilizarse en múltiples contextos de planificación de viajes sin modificar su estructura básica."
                                     }
                                 ],
                                 "behaviour": {

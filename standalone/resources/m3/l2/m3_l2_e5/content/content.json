@@ -66,8 +66,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Una variable es un nombre que tiene asignado un valor, es decir, que guarda un dato para usarlo más adelante en el programa."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Una variable es un nombre que tiene asignado un valor, es decir, que guarda un dato para usarlo más adelante en el programa."
                                     }
                                 ],
                                 "behaviour": {
@@ -184,8 +189,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Una cadena (string) es una secuencia de caracteres, es decir, un texto, y puede ser una palabra, frase o números considerados como texto. Las cadenas siempre van entre comillas <span style='font-weight:bold;'>\" \"</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Una cadena (string) es una secuencia de caracteres, es decir, un texto, y puede ser una palabra, frase o números considerados como texto. Las cadenas siempre van entre comillas <span style='font-weight:bold;'>\" \"</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -302,8 +312,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Una lista es una estructura de datos (una \"caja\") que guarda varios elementos en orden y se escribe con corchetes <span style='font-weight:bold;'>[ ]</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Una lista es una estructura de datos (una \"caja\") que guarda varios elementos en orden y se escribe con corchetes <span style='font-weight:bold;'>[ ]</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -420,8 +435,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Un comentario es un bloque de texto que comenta el código; este no es considerado en la ejecución del programa. Se reconoce por el símbolo numeral <span style='font-weight:bold;'>#</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Un comentario es un bloque de texto que comenta el código; este no es considerado en la ejecución del programa. Se reconoce por el símbolo numeral <span style='font-weight:bold;'>#</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -538,8 +558,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Los operadores aritméticos son signos matemáticos necesarios para realizar operaciones como <span style='font-weight:bold;'>sumar</span>, <span style='font-weight:bold;'>restar</span>, <span style='font-weight:bold;'>multiplicar</span> o <span style='font-weight:bold;'>dividir</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Los operadores aritméticos son signos matemáticos necesarios para realizar operaciones como <span style='font-weight:bold;'>sumar</span>, <span style='font-weight:bold;'>restar</span>, <span style='font-weight:bold;'>multiplicar</span> o <span style='font-weight:bold;'>dividir</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -656,8 +681,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Es una instrucción que le dice al programa que tome una decisión. Generalmente se reconoce por el uso del <span style='font-weight:bold;'>if</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Es una instrucción que le dice al programa que tome una decisión. Generalmente se reconoce por el uso del <span style='font-weight:bold;'>if</span>."
                                     }
                                 ],
                                 "behaviour": {

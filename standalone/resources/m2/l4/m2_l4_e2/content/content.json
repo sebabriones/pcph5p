@@ -66,12 +66,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "¡Respuesta incorrecta! Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El apagado ocurre tanto con batería como con cargador, y también con y sin programas ejecutándose, lo que descarta un problema de energía o de software. En cambio, el aumento de temperatura junto con la ausencia de ventilación activa indica sobrecalentamiento, lo que provoca el apagado automático como medida de seguridad del equipo."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El apagado ocurre tanto con batería como con cargador, y también con y sin programas ejecutándose, lo que descarta un problema de energía o de software. En cambio, el aumento de temperatura junto con la ausencia de ventilación activa indica sobrecalentamiento, lo que provoca el apagado automático como medida de seguridad del equipo."
                                     }
                                 ],
                                 "behaviour": {
@@ -188,12 +188,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "¡Respuesta incorrecta! Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El problema se resolvió aislando los componentes y observando que el fallo se producía únicamente en el sistema de arrastre, permitiendo aplicar una solución específica sin reemplazos innecesarios."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El problema se resolvió aislando los componentes y observando que el fallo se producía únicamente en el sistema de arrastre, permitiendo aplicar una solución específica sin reemplazos innecesarios."
                                     }
                                 ],
                                 "behaviour": {

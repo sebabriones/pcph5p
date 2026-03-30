@@ -162,8 +162,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "El orden correcto para resolver este ejercicio es: Primero resolver el paréntesis, luego la potencia, después la multiplicación y división, finalmente, la sustracción."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El orden correcto para resolver este ejercicio es: Primero resolver el paréntesis, luego la potencia, después la multiplicación y división, finalmente, la sustracción."
                                     }
                                 ],
                                 "behaviour": {
@@ -280,8 +285,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "El doble asterisco <span style='font-weight:bold;'>**</span> indica que esta operación es una potencia."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El doble asterisco <span style='font-weight:bold;'>**</span> indica que esta operación es una potencia."
                                     }
                                 ],
                                 "behaviour": {
@@ -398,8 +408,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "El <span style='font-weight:bold;'>módulo</span> devuelve el <span style='font-weight:bold;'>resto</span> de una división y se reconoce por el operador porcentaje <span style='font-weight:bold;'>%</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El <span style='font-weight:bold;'>módulo</span> devuelve el <span style='font-weight:bold;'>resto</span> de una división y se reconoce por el operador porcentaje <span style='font-weight:bold;'>%</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -516,8 +531,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Concatenación es el proceso de unir dos o más cadenas de texto (strings) para formar una sola. En Python se usa el operador <span style='font-weight:bold;'>+</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Concatenación es el proceso de unir dos o más cadenas de texto (strings) para formar una sola. En Python se usa el operador <span style='font-weight:bold;'>+</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -634,8 +654,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Con el operador <span style='font-weight:bold;'>*</span> se puede repetir el texto. En este caso, <span style='font-weight:bold;'>*</span> repite <span style='font-weight:bold;'>\"¡Python!\"</span> tres veces y lo muestra en pantalla."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Con el operador <span style='font-weight:bold;'>*</span> se puede repetir el texto. En este caso, <span style='font-weight:bold;'>*</span> repite <span style='font-weight:bold;'>\"¡Python!\"</span> tres veces y lo muestra en pantalla."
                                     }
                                 ],
                                 "behaviour": {

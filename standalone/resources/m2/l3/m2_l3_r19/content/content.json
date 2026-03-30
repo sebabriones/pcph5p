@@ -65,8 +65,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Todas las acciones implican distribuir y acomodar objetos dentro de un contenedor o espacio específico, no transportarlos, clasificarlos por rubro ni ordenarlos por nombre."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Todas las acciones implican distribuir y acomodar objetos dentro de un contenedor o espacio específico, no transportarlos, clasificarlos por rubro ni ordenarlos por nombre."
                                     }
                                 ],
                                 "behaviour": {
@@ -182,8 +187,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Tanto empacar manzanas como organizar libros son subcategorías que implican acomodar objetos de forma relativamente regular dentro de espacios físicos limitados (una caja y una estantería)."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Tanto empacar manzanas como organizar libros son subcategorías que implican acomodar objetos de forma relativamente regular dentro de espacios físicos limitados (una caja y una estantería)."
                                     }
                                 ],
                                 "behaviour": {
@@ -299,8 +309,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Respuesta correcta es \"Multiplica por 4 y resta 1\", porque: (4×3 − 1 = 11, 4×5 − 1 = 19, 4×8 − 1 = 31)"
+                                        "feedback": "<strong>¡Correcto!</strong><br>Respuesta correcta es \"Multiplica por 4 y resta 1\", porque: (4×3 − 1 = 11, 4×5 − 1 = 19, 4×8 − 1 = 31)"
                                     }
                                 ],
                                 "behaviour": {

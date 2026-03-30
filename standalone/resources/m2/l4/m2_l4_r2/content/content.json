@@ -66,12 +66,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "¡Respuesta incorrecta! Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El problema aparece únicamente bajo una condición específica (uso de datos móviles) y solo en una aplicación, lo que descarta fallos de hardware o del sistema completo."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El problema aparece únicamente bajo una condición específica (uso de datos móviles) y solo en una aplicación, lo que descarta fallos de hardware o del sistema completo."
                                     }
                                 ],
                                 "behaviour": {
@@ -188,12 +188,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "¡Respuesta incorrecta! Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "La causa se identificó contrastando el funcionamiento de la aplicación en distintos contextos (Wi-Fi vs. datos móviles), lo que permitió aislar la variable relevante sin desarmar el sistema."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La causa se identificó contrastando el funcionamiento de la aplicación en distintos contextos (Wi-Fi vs. datos móviles), lo que permitió aislar la variable relevante sin desarmar el sistema."
                                     }
                                 ],
                                 "behaviour": {

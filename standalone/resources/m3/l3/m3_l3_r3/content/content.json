@@ -24,8 +24,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Números enteros son representados por <span style='font-weight:bold;'>int</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Números enteros son representados por <span style='font-weight:bold;'>int</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -140,8 +145,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "La gran mayoría de lenguajes, incluyendo Python, representan los números reales con <span style='font-weight:bold;'>float</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La gran mayoría de lenguajes, incluyendo Python, representan los números reales con <span style='font-weight:bold;'>float</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -256,8 +266,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Los booleanos solo pueden tomar dos valores: <span style='font-weight:bold;'>Verdadero (True)</span> y <span style='font-weight:bold;'>Falso (False)</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Los booleanos solo pueden tomar dos valores: <span style='font-weight:bold;'>Verdadero (True)</span> y <span style='font-weight:bold;'>Falso (False)</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -372,8 +387,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Números son de tipo <span style='font-weight:bold;'>integer</span>; Cadenas son de tipo <span style='font-weight:bold;'>string</span> y Booleanos son de tipo <span style='font-weight:bold;'>boolean</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Números son de tipo <span style='font-weight:bold;'>integer</span>; Cadenas son de tipo <span style='font-weight:bold;'>string</span> y Booleanos son de tipo <span style='font-weight:bold;'>boolean</span>."
                                     }
                                 ],
                                 "behaviour": {

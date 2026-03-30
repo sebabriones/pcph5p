@@ -26,8 +26,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Una palabra reservada es un identificador que tiene un significado especial y predefinido en un lenguaje de programación. No se pueden usar como nombres para variables. Por ejemplo: <strong>else</strong>, <strong>if</strong>, <strong>for</strong>, <strong>import</strong>."
+                                        "feedback": "<strong>¡Correcto!</strong><br><br>Una palabra reservada es un identificador que tiene un significado especial y predefinido en un lenguaje de programación. No se pueden usar como nombres para variables. Por ejemplo: <strong>else</strong>, <strong>if</strong>, <strong>for</strong>, <strong>import</strong>."
                                     }
                                 ],
                                 "behaviour": {

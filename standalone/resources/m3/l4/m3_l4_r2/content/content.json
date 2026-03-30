@@ -26,8 +26,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Sólo la alternativa <span style='font-weight:bold;'>A</span> está escrita como sentencia condicional."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Sólo la alternativa <span style='font-weight:bold;'>A</span> está escrita como sentencia condicional."
                                     }
                                 ],
                                 "behaviour": {

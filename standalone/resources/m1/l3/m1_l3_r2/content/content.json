@@ -91,13 +91,13 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> No existe precisión, porque en el paso 1, una vez que la persona busca el símbolo, no se específica que debe hacer clic sobre él, entonces no se desplegará el menú para seguir con el paso 2. Esto se corrige agregando al final del paso 1 la frase: «y haga clic sobre él»."
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
 
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Muy bien!</span> Efectivamente, no existe precisión, porque en el paso 1, una vez que la persona busca el símbolo, no se específica que debe hacer clic sobre él, entonces no se desplegará el menú para seguir con el paso 2. Esto se corrige agregando al final del paso 1 la frase: «y haga clic sobre él»."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Efectivamente, no existe precisión, porque en el paso 1, una vez que la persona busca el símbolo, no se específica que debe hacer clic sobre él, entonces no se desplegará el menú para seguir con el paso 2. Esto se corrige agregando al final del paso 1 la frase: «y haga clic sobre él»."
                                     }
                                 ],
                                 "behaviour": {
@@ -239,12 +239,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Este algoritmo sí es finito, pues tiene 5 pasos exactos."
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> Este algoritmo es finito, pues tiene 5 pasos exactos."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Este algoritmo es finito, pues tiene 5 pasos exactos."
                                     }
                                 ],
                                 "behaviour": {
@@ -386,12 +386,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Este algoritmo sí es efectivo, pues se logra conectar el computador a una red wifi."
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> Sí se logra conectar el computador a una red wifi."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Sí se logra conectar el computador a una red wifi."
                                     }
                                 ],
                                 "behaviour": {
@@ -533,12 +533,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Sí se establece la entrada y la salida. Entrada es un computador y una red wifi disponible, y salida es un computador conectado a esta red."
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> La entrada es un computador y una red wifi disponible; la salida es el computador conectado a esta red."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La entrada es un computador y una red wifi disponible; la salida es el computador conectado a esta red."
                                     }
                                 ],
                                 "behaviour": {
@@ -680,12 +680,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "<span style='font-weight:bold;'>Incorrecto.</span> Se cumple la generalidad al utilizar el término «computador», no registrando a notebook, teléfono inteligente u otro dispositivo electrónico. El símbolo de Acceso a Internet es común en todos los dispositivos. También se consideran las variantes de mensajes para avanzar en la conexión en los pasos 3 y 4."
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<span style='font-weight:bold;'>¡Correcto!</span> Al utilizar el término «computador» no se registra a notebook, teléfono inteligente u otro dispositivo electrónico. El símbolo de Acceso a Internet es común en todos los dispositivos. También se consideran las variantes de mensajes para avanzar en la conexión en los pasos 3 y 4."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Al utilizar el término «computador» no se registra a notebook, teléfono inteligente u otro dispositivo electrónico. El símbolo de Acceso a Internet es común en todos los dispositivos. También se consideran las variantes de mensajes para avanzar en la conexión en los pasos 3 y 4."
                                     }
                                 ],
                                 "behaviour": {

@@ -66,12 +66,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "Respuesta incorrecta. El patrón consiste en sumar números impares consecutivos:  2 + 3 = 5, 5 + 5 = 10, 10 + 7 = 17, 17 + 9 = 26."
+                                        "feedback": "<strong>Intentalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "¡Respuesta correcta!  El patrón consiste en sumar números impares consecutivos:  2 + 3 = 5, 5 + 5 = 10, 10 + 7 = 17, 17 + 9 = 26."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El patrón consiste en sumar números impares consecutivos:  2 + 3 = 5, 5 + 5 = 10, 10 + 7 = 17, 17 + 9 = 26."
                                     }
                                 ],
                                 "behaviour": {

@@ -66,8 +66,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "El guion medio se interpreta como operador de resta. <span style='font-weight:bold;'>Corrección</span>: edad_alumno = 20"
+                                        "feedback": "<strong>¡Correcto!</strong><br>El guion medio se interpreta como operador de resta. <span style='font-weight:bold;'>Corrección</span>: edad_alumno = 20"
                                     }
                                 ],
                                 "behaviour": {
@@ -184,8 +189,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Las variables no pueden contener espacios. <span style='font-weight:bold;'>Corrección</span>: nombre_completo = \"Pedro González\""
+                                        "feedback": "<strong>¡Correcto!</strong><br>Las variables no pueden contener espacios. <span style='font-weight:bold;'>Corrección</span>: nombre_completo = \"Pedro González\""
                                     }
                                 ],
                                 "behaviour": {
@@ -302,8 +312,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "class es una palabra reservada en Python. <span style='font-weight:bold;'>Corrección</span>: nombre_clase = \"Matemáticas\""
+                                        "feedback": "<strong>¡Correcto!</strong><br>class es una palabra reservada en Python. <span style='font-weight:bold;'>Corrección</span>: nombre_clase = \"Matemáticas\""
                                     }
                                 ],
                                 "behaviour": {
@@ -420,8 +435,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Las variables no pueden comenzar con un número. <span style='font-weight:bold;'>Corrección</span>:  nombre1 = \"Jorge\""
+                                        "feedback": "<strong>¡Correcto!</strong><br>Las variables no pueden comenzar con un número. <span style='font-weight:bold;'>Corrección</span>:  nombre1 = \"Jorge\""
                                     }
                                 ],
                                 "behaviour": {
@@ -538,8 +558,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Las variables en Python no pueden contener caracteres. <span style='font-weight:bold;'>Por ejemplo</span>: <span style='font-weight:bold;'>$</span> y <span style='font-weight:bold;'>@</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Las variables en Python no pueden contener caracteres. <span style='font-weight:bold;'>Por ejemplo</span>: <span style='font-weight:bold;'>$</span> y <span style='font-weight:bold;'>@</span>."
                                     }
                                 ],
                                 "behaviour": {

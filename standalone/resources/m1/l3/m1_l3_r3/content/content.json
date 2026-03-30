@@ -24,8 +24,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
                                     }
                                 ],
                                 "behaviour": {
@@ -139,8 +144,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
                                     }
                                 ],
                                 "behaviour": {
@@ -254,8 +264,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
                                     }
                                 ],
                                 "behaviour": {
@@ -369,8 +384,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
                                     }
                                 ],
                                 "behaviour": {
@@ -484,8 +504,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
                                     }
                                 ],
                                 "behaviour": {
@@ -599,8 +624,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Recuerda que un algoritmo es un conjunto de pasos bien definidos que resuelven un problema, no sentencias que declaran el objetivo de un algoritmo o problemas que se quieren resolver."
                                     }
                                 ],
                                 "behaviour": {

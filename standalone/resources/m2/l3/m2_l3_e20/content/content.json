@@ -65,8 +65,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "En todas  estas situaciones se aplica un criterio común: las personas se ordenan en función del turno en que llegan, formando una fila o esperando su turno de manera secuencial."
+                                        "feedback": "<strong>¡Correcto!</strong><br>En todas  estas situaciones se aplica un criterio común: las personas se ordenan en función del turno en que llegan, formando una fila o esperando su turno de manera secuencial."
                                     }
                                 ],
                                 "behaviour": {
@@ -182,8 +187,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "En ambas situaciones —esperar turno en un banco y tomar número en una carnicería— las personas reciben un número o ticket que determina el orden en que serán atendidas. No forman una fila física tradicional, sino que el sistema organiza a las personas med"
+                                        "feedback": "<strong>¡Correcto!</strong><br>En ambas situaciones —esperar turno en un banco y tomar número en una carnicería— las personas reciben un número o ticket que determina el orden en que serán atendidas. No forman una fila física tradicional, sino que el sistema organiza a las personas med"
                                     }
                                 ],
                                 "behaviour": {
@@ -299,8 +309,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 0,
                                         "to": 100,
-                                        "feedback": "La regla correcta consiste en: multiplicar el número por sí mismo y luego sumar ese mismo número (entrada 1: 1 × 1 + 1 = 2, entrada 2: 2 × 2 + 2 = 6, entrada 3: 3 × 3 + 3 = 12)."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La regla correcta consiste en: multiplicar el número por sí mismo y luego sumar ese mismo número (entrada 1: 1 × 1 + 1 = 2, entrada 2: 2 × 2 + 2 = 6, entrada 3: 3 × 3 + 3 = 12)."
                                     }
                                 ],
                                 "behaviour": {

@@ -105,12 +105,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "La <strong>precisión</strong> se evidencia porque cada etapa del algoritmo describe acciones concretas y no ambiguas, indicando claramente qué se debe hacer en cada paso."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La <strong>precisión</strong> se evidencia porque cada etapa del algoritmo describe acciones concretas y no ambiguas, indicando claramente qué se debe hacer en cada paso."
                                     }
                                 ],
                                 "behaviour": {
@@ -266,12 +266,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El principio de <strong>efectividad</strong> se cumple porque el algoritmo utiliza pasos realizables (eficiencia) que llevan a un resultado final claro: entregar el proyecto o ajustar el trabajo hasta que cumpla los requisitos (eficacia)."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El principio de <strong>efectividad</strong> se cumple porque el algoritmo utiliza pasos realizables (eficiencia) que llevan a un resultado final claro: entregar el proyecto o ajustar el trabajo hasta que cumpla los requisitos (eficacia)."
                                     }
                                 ],
                                 "behaviour": {
@@ -427,12 +427,12 @@
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "Inténtalo de nuevo"
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
                                     },
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "La <strong>generalidad</strong> se cumple porque la estructura del algoritmo es válida para múltiples contextos académicos (informes, maquetas, presentaciones, etc.) sin depender de condiciones específicas."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La <strong>generalidad</strong> se cumple porque la estructura del algoritmo es válida para múltiples contextos académicos (informes, maquetas, presentaciones, etc.) sin depender de condiciones específicas."
                                     }
                                 ],
                                 "behaviour": {

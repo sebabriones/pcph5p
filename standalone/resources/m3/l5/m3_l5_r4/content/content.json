@@ -24,8 +24,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Es imprescindible importar el modulo math para usar la función sqrt()."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Es imprescindible importar el modulo math para usar la función sqrt()."
                                     }
                                 ],
                                 "behaviour": {
@@ -140,8 +145,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "En Python existen funciones integradas (built-in) que se pueden usar directamente, como print(), len(), abs(), entre otras. Sin embargo, no todas las funciones vienen definidas por defecto, por lo que sí es necesario importar módulos."
+                                        "feedback": "<strong>¡Correcto!</strong><br>En Python existen funciones integradas (built-in) que se pueden usar directamente, como print(), len(), abs(), entre otras. Sin embargo, no todas las funciones vienen definidas por defecto, por lo que sí es necesario importar módulos."
                                     }
                                 ],
                                 "behaviour": {
@@ -256,8 +266,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Un módulo es esencialmente un archivo que contiene una colección de funciones, clases y variables relacionadas que puedes usar en tu propio código mediante la declaración \"import\"."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Un módulo es esencialmente un archivo que contiene una colección de funciones, clases y variables relacionadas que puedes usar en tu propio código mediante la declaración \"import\"."
                                     }
                                 ],
                                 "behaviour": {
@@ -372,8 +387,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "La f delante de las comillas (f\"...\") indica que estamos usando un f-string (formatted string literal) en Python. Esto permite insertar valores de variables o expresiones dentro de una cadena usando { }."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La f delante de las comillas (f\"...\") indica que estamos usando un f-string (formatted string literal) en Python. Esto permite insertar valores de variables o expresiones dentro de una cadena usando { }."
                                     }
                                 ],
                                 "behaviour": {

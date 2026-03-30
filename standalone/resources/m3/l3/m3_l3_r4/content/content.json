@@ -32,7 +32,7 @@
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El orden correcto para resolver este ejercicio es: <ol><li>Resolver el paréntesis</li><li>Resolver la multiplicación</li><li>Resolver la suma</li></ol>"
+                                        "feedback": "<strong>¡Correcto!</strong><br>El orden correcto para resolver este ejercicio es: <ol><li>Resolver el paréntesis</li><li>Resolver la multiplicación</li><li>Resolver la suma</li></ol>"
                                     }
                                 ],
                                 "behaviour": {
@@ -155,7 +155,7 @@
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El símbolo <span style='font-weight:bold;'>**</span> significa potencia."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El símbolo <span style='font-weight:bold;'>**</span> significa potencia."
                                     }
                                 ],
                                 "behaviour": {
@@ -278,7 +278,7 @@
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El orden para resolver el ejercicio es: <ol><li>Resolver el primer paréntesis</li><li>Resolver el segundo paréntesis</li><li>Resolver la suma</li></ol>"
+                                        "feedback": "<strong>¡Correcto!</strong><br>El orden para resolver el ejercicio es: <ol><li>Resolver el primer paréntesis</li><li>Resolver el segundo paréntesis</li><li>Resolver la suma</li></ol>"
                                     }
                                 ],
                                 "behaviour": {
@@ -399,7 +399,7 @@
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "El símbolo <span style='font-weight:bold;'>+</span> se utiliza para unir dos o más cadenas."
+                                        "feedback": "<strong>¡Correcto!</strong><br>El símbolo <span style='font-weight:bold;'>+</span> se utiliza para unir dos o más cadenas."
                                     }
                                 ],
                                 "behaviour": {

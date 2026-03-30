@@ -66,8 +66,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "Las variables no pueden comenzar con un número. En este caso, <span style='font-weight:bold;'>1nombre</span> es inválido. Debe renombrarse, por ejemplo, como <span style='font-weight:bold;'>nombre1</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>Las variables no pueden comenzar con un número. En este caso, <span style='font-weight:bold;'>1nombre</span> es inválido. Debe renombrarse, por ejemplo, como <span style='font-weight:bold;'>nombre1</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -184,8 +189,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "No se pueden usar espacios en los nombres de variables. En este caso, <span style='font-weight:bold;'>nombre completo</span> debe cambiarse a <span style='font-weight:bold;'>nombre_completo</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>No se pueden usar espacios en los nombres de variables. En este caso, <span style='font-weight:bold;'>nombre completo</span> debe cambiarse a <span style='font-weight:bold;'>nombre_completo</span>."
                                     }
                                 ],
                                 "behaviour": {
@@ -302,8 +312,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong>"
+                                    },
+                                    {
+                                        "from": 100,
                                         "to": 100,
-                                        "feedback": "No se deben usar caracteres especiales. En este caso, <span style='font-weight:bold;'>celul@r</span> tiene un arroba (@), por lo que debe corregirse a <span style='font-weight:bold;'>celular</span>."
+                                        "feedback": "<strong>¡Correcto!</strong><br>No se deben usar caracteres especiales. En este caso, <span style='font-weight:bold;'>celul@r</span> tiene un arroba (@), por lo que debe corregirse a <span style='font-weight:bold;'>celular</span>."
                                     }
                                 ],
                                 "behaviour": {
