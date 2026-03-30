@@ -5,8 +5,8 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">Física: Prioridad media (30 % del tiempo)</li>
                           <li style="list-style-position: inside;">Química: Prioridad baja (20 % del tiempo)</li>
                         </ul>
-                        Andrea escribió un programa para determinar las horas que dedicará a cada asignatura, pero el programa no funciona correctamente:<br><br>
-                        <img src="resources/m3/l6/m3_l6_e3/content/images/m3l6e3.png" alt="image" width="60%"><br>
+                        Andrea escribió un programa para determinar las horas que dedicará a cada asignatura, pero el programa no funciona correctamente:<br>
+                        <img src="resources/m3/l6/m3_l6_e3/content/images/m3l6e3.png" alt="image" width="60%" style="margin: 2% 25%;"><br>
                         <ul style="text-align:left;margin-top:0.5em;">
                           <li style="list-style-position: inside;">Revisa el código que escribió Andrea. (Disponible en consola python en 💡 Cargar ejemplo)</li>
                           <li style="list-style-position: inside;">Detecta los errores por los cuales el código no corre correctamente.</li>
@@ -21,8 +21,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

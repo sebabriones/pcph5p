@@ -1,5 +1,11 @@
 jQuery(document).ready(() => {
-  const instructions = `Analiza cuidadosamente la siguiente información y resuelve el problema planteado paso a paso.<br>Has terminado tus evaluaciones y obtuviste:<br><br><strong>Física:</strong> Muy baja nota, <strong>Cálculo:</strong> Nota aceptable, <strong>Álgebra:</strong> Buena nota<br><br>Durante la semana anterior, estudiaste lo siguiente:<br><br><img src=\"resources/m2/l3/m2_l3_r17/content/images/table.png\" alt=\"table\" width=\"45%\"><br><br><strong>Problema a resolver:</strong> Necesitas decidir cómo distribuir tu tiempo de estudio la próxima semana para mantener notas aceptables en todas las asignaturas para aprobarlas, sobre todo en Física.<br><br><p style="text-align:left;"><strong>Slide 1:</strong> Completa la tabla agrupando los días y el total de horas por asignatura para ver cuánto tiempo dedicaste a cada una la semana anterior. Escribe cada dato en su columna correspondiente.<br><strong>Slide 2 y 3:</strong> Seleccione la alternativa correcta.</p>`;
+  const instructions = `Analiza cuidadosamente la siguiente información y resuelve el problema planteado paso a paso.<br>
+                        Has terminado tus evaluaciones y obtuviste:<br><br>
+                        <strong>Física:</strong> Muy baja nota, <strong>Cálculo:</strong> Nota aceptable, <strong>Álgebra:</strong> Buena nota<br><br>
+                        Durante la semana anterior, estudiaste lo siguiente:<br>
+                        <img src="resources/m2/l3/m2_l3_r17/content/images/table.png" alt="table" width="45%" style="margin: 2% 25%;"><br>
+                        <strong>Problema a resolver:</strong> Necesitas decidir cómo distribuir tu tiempo de estudio la próxima semana para mantener notas aceptables en todas las asignaturas para aprobarlas, sobre todo en Física.<br><br>
+                        <strong>Slide 1:</strong> Completa la tabla agrupando los días y el total de horas por asignatura para ver cuánto tiempo dedicaste a cada una la semana anterior. Escribe cada dato en su columna correspondiente.<br><strong>Slide 2 y 3:</strong> Seleccione la alternativa correcta.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

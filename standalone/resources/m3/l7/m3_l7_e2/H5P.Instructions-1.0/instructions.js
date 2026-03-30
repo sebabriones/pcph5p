@@ -7,7 +7,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">Mostrar el porcentaje de personas del grupo que cumple con el mínimo de asistencia (3 asistencias).</li>
                         </ol>
                         <strong>Pista: </strong>Si el nuevo integrante es Lucas y ha asistido 2 veces, el código debería mostrar esta salida:<br>
-                        <img src="resources/m3/l7/m3_l7_e2/content/images/m3l7e2.png" alt="image" width="30%"><br>
+                        <img src="resources/m3/l7/m3_l7_e2/content/images/m3l7e2.png" alt="image" width="30%" style="margin: 2% 35%;"><br>
                         <strong>Botones Terminal Python:</strong>
                         <ul style="text-align:left;">
                           <li style="list-style-position: inside;">▶️ Ejecutar: Ejecuta el código.</li>
@@ -15,8 +15,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

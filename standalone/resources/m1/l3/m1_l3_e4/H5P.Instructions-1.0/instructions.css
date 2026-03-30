@@ -10,11 +10,12 @@
   flex-direction: column;
   color: #fff;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .intro-text {
-  font-size: 1.5vw;
+  font-size: 1.8vw;
+  text-align: justify;
   margin-bottom: 5%;
   padding: 0 15%;
   word-break: break-word;
@@ -30,6 +31,8 @@
   padding: .5em 1em;
   cursor: pointer;
   border-radius: .5em;
+  display: table;
+  margin: 0 auto;
 }
 
 /*Estilos de instrucciones como pestaña*/
@@ -101,8 +104,9 @@ a {
 .instructions-text{
     word-break: break-word;
     padding: 10px 0;
-    font-size: 13px;
-    line-height: 1.25;
+    font-size: 15px;
+    line-height: 1.35;
+    text-align: justify;
     /* Agregar scroll vertical para instrucciones largas */
     max-height: 60vh;
     overflow-y: auto;

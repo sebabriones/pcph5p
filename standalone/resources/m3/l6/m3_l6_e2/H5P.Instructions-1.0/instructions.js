@@ -1,8 +1,8 @@
 jQuery(document).ready(() => {
-  const instructions = `En un grupo de lectura se tiene el siguiente registro de asistencia:<br><br>
-                        <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-1.png" alt="image" width="30%"><br>
-                        El siguiente código pretende categorizar con baja asistencia a quienes han asistido en menos de 3 ocasiones y con buena asistencia a quienes han asistido 3 o más veces al grupo de lectura:<br><br>
-                        <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-2.png" alt="image" width="60%"><br>
+  const instructions = `En un grupo de lectura se tiene el siguiente registro de asistencia:<br>
+                        <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-1.png" alt="image" width="30%" style="margin: 2% 40%;"><br>
+                        El siguiente código pretende categorizar con baja asistencia a quienes han asistido en menos de 3 ocasiones y con buena asistencia a quienes han asistido 3 o más veces al grupo de lectura:<br>
+                        <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-2.png" alt="image" width="60%" style="margin: 2% 25%;"><br>
                         <ol style="text-align:left;margin-top:0.5em;">
                           <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo)</li>
                           <li style="list-style-position: inside;">Responde las siguientes preguntas:
@@ -19,8 +19,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

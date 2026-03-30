@@ -3,7 +3,7 @@ jQuery(document).ready(() => {
                         Ahora, Gabriela quiere un programa que no sólo le indique la actividad, sino que también cumpla con los siguientes requerimientos:
                         <ol style="text-align:left;margin-top:0.5em;">
                           <li style="list-style-position: inside;">Preguntar día de la semana. (1=Lunes, 7= Domingo).</li>
-                          <li style="list-style-position: inside;">Cambiar las actividades y horarios si es sábado o domingo.<img src="resources/m3/l7/m3_l7_e5/content/images/m3l7e5.png" alt="image" width="30%"><br></li>
+                          <li style="list-style-position: inside;">Cambiar las actividades y horarios si es sábado o domingo.<img src="resources/m3/l7/m3_l7_e5/content/images/m3l7e5.png" alt="image" width="50%" style="margin: 2% 25%;"><br></li>
                           <li style="list-style-position: inside;">Validar que la hora ingresada esté entre 0 y 23.</li>
                           <li style="list-style-position: inside;">Preguntar al usuario si es feriado, solicitando que responda con un <strong>“sí”</strong> o un <strong>“no”</strong>. En caso de que la respuesta sea “sí”, el programa asignará todas las actividades como “Descanso” ese día.</li>
                         </ol>
@@ -14,8 +14,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

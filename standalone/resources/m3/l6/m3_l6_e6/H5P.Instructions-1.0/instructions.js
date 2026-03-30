@@ -1,7 +1,7 @@
 jQuery(document).ready(() => {
   const instructions = `El centro cultural Mundo Feliz organiza funciones de cine por género (Animación, Drama, Acción y Comedia). Reciben una lista de títulos y su género para organizar la cartelera.<br><br>
-                        La empleada del mes, Marcela, creó el siguiente programa para clasificar las películas:<br><br>
-                        <img src="resources/m3/l6/m3_l6_e6/content/images/m3l6e6.png" alt="image" width="80%"><br>
+                        La empleada del mes, Marcela, creó el siguiente programa para clasificar las películas:<br>
+                        <img src="resources/m3/l6/m3_l6_e6/content/images/m3l6e6.png" alt="image" width="80%" style="margin: 2% 10%;"><br>
                         <ol style="text-align:left;margin-top:0.5em;">
                           <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo)</li>
                           <li style="list-style-position: inside;">Responde: ¿Qué ocurre?, ¿qué errores detectas?</li>
@@ -16,8 +16,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

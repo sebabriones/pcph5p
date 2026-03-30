@@ -1,7 +1,7 @@
 jQuery(document).ready(() => {
   const instructions = `Se necesita crear una lista semanal de compras que no tenga productos duplicados y que permita determinar el valor del gasto total para los siguientes productos: pan, leche, queso y jugo, sabiendo que el precio de ellos es $1000, $800, $1500 y $1200, respectivamente.<br><br>
-                        Observa el siguiente código:<br><br>
-                        <img src="resources/m3/l6/m3_l6_e1/content/images/m3l6e1.png" alt="image" width="60%"><br>
+                        Observa el siguiente código:<br>
+                        <img src="resources/m3/l6/m3_l6_e1/content/images/m3l6e1.png" alt="image" width="60%" style="margin: 2% 25%;"><br>
                         <ol style="text-align:left;margin-top:0.5em;">
                           <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo)</li>
                           <li style="list-style-position: inside;">Responde las preguntas que vienen a continuación:
@@ -24,8 +24,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

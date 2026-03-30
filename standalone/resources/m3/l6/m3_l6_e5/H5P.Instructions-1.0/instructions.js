@@ -1,8 +1,8 @@
 jQuery(document).ready(() => {
-  const instructions = `Gabriela quiere una alarma que sugiera las siguientes actividades según la hora, donde solo se ingresen valores enteros de hora, y en la que 08 en el primer intervalo considera que estará estudiando desde las 08:00 hasta las 08:59, y así en cada caso.<br><br>
-                        <img src="resources/m3/l6/m3_l6_e5/content/images/m3l6e5-1.png" alt="image" width="60%"><br>
-                        Para esto, Gabriela escribe el siguiente programa:<br><br>
-                        <img src="resources/m3/l6/m3_l6_e5/content/images/m3l6e5-2.png" alt="image" width="60%"><br>
+  const instructions = `Gabriela quiere una alarma que sugiera las siguientes actividades según la hora, donde solo se ingresen valores enteros de hora, y en la que 08 en el primer intervalo considera que estará estudiando desde las 08:00 hasta las 08:59, y así en cada caso.<br>
+                        <img src="resources/m3/l6/m3_l6_e5/content/images/m3l6e5-1.png" alt="image" width="60%" style="margin: 2% 20%;"><br>
+                        Para esto, Gabriela escribe el siguiente programa:<br>
+                        <img src="resources/m3/l6/m3_l6_e5/content/images/m3l6e5-2.png" alt="image" width="60%" style="margin: 2% 20%;"><br>
                         <ol style="text-align:left;margin-top:0.5em;">
                           <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo).<br>ingresa algunas horas que tú quieras, además te sugerimos que ingreses los siguientes valores: -5, 28, 24, ¿qué ocurre?, ¿está bien?</li>
                           <li style="list-style-position: inside;">Responde las preguntas que vienen a continuación:
@@ -21,8 +21,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

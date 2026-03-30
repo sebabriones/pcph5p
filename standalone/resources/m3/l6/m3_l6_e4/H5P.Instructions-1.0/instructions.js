@@ -1,7 +1,7 @@
 jQuery(document).ready(() => {
   const instructions = `Una profesora planifica realizar tres evaluaciones en la asignatura de Programación, donde cada evaluación corresponderá a un 25%, 35% y 40% de la nota final, respectivamente. El sistema debe calcular la nota final e indicar que la o el estudiante aprueba, donde el criterio de aprobación es obtener un promedio ponderado mayor o igual a 4.0.<br><br>
-                        La docente, pide a un estudiante que escriba un programa que calcule la nota final, el estudiante entrega el siguiente código:<br><br>
-                        <img src="resources/m3/l6/m3_l6_e4/content/images/m3l6e4.png" alt="image" width="60%"><br>
+                        La docente, pide a un estudiante que escriba un programa que calcule la nota final, el estudiante entrega el siguiente código:<br>
+                        <img src="resources/m3/l6/m3_l6_e4/content/images/m3l6e4.png" alt="image" width="40%" style="margin: 2% 30%;"><br>
                         <ol style="text-align:left;margin-top:0.5em;">
                           <li style="list-style-position: inside;">Ejecuta este código. (Disponible en consola python en 💡 Cargar ejemplo)</li>
                           <li style="list-style-position: inside;">Responde a las siguientes preguntas:
@@ -20,8 +20,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">🗑️ Limpiar: Limpia la consola.</li>
                           <li style="list-style-position: inside;">📁 Cargar archivo(s): Carga archivos almacenados en su equipo.</li>
                           <li style="list-style-position: inside;">💡 Cargar ejemplo: Carga uno o varios ejemplos de código.</li>
-                        </ul>
-                        `;
+                        </ul>`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">
