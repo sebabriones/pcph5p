@@ -119,6 +119,12 @@
   margin: 1em;
 }
 
+/*nuevo*/
+.h5p-question-check-answer,
+.h5p-question-try-again {
+  float: right; /*nuevo*/
+}
+
 .h5p-question-content.h5p-has-question-popup {
   position: relative;
 }

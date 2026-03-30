@@ -162,7 +162,7 @@
 
 .h5p-question-feedback {
   font-family: "Poppins-regular" !important; /*nuevo*/
-  font-size: 1.1em !important;
+  /*font-size: 1.1em !important;*/
   /*font-weight: bold;*/
   /*color: #1a73d9;*/
   color: #062971 !important; /*nuevo*/
@@ -186,6 +186,7 @@
 .h5p-question-visible .h5p-question-feedback-content.has-content {
   display: block;
   margin-bottom: 0.8em;
+  text-align: center; /*nuevo*/
 }
 
 .h5p-question-feedback-content-text {

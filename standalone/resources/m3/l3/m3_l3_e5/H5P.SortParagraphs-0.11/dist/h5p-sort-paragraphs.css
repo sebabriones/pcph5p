@@ -250,7 +250,7 @@ div .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-but
 .h5p-sort-paragraphs .h5p-sort-paragraphs-separator {
     border-radius: .3em;
     height: .4em;
-    margin: .4em 0;
+    margin: .2em 0;
     text-align: center;
     width: calc(100% - .5em);
     margin-left: auto;
@@ -311,5 +311,10 @@ div .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-but
 
 /*Nuevo: Centra texto del feedback*/
 .h5p-question-visible .h5p-question-feedback-content.has-content {
+    text-align: center;
+}
+
+/*Nuevo: centra el texto de los elementos a ordenar*/
+.h5p-sort-paragraphs-paragraph-container {
     text-align: center;
 }

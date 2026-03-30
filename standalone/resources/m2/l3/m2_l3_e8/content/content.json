@@ -71,7 +71,7 @@
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<strong>¡Correcto!<strong><br>La secuencia sigue el patrón de los productos de enteros consecutivos. 2 = 1×2, 6 = 2×3, 12 = 3×4, 20 = 4×5, 30 = 5×6. El patrón es n × (n+1)."
+                                        "feedback": "<strong>¡Correcto!</strong><br>La secuencia sigue el patrón de los productos de enteros consecutivos. 2 = 1×2, 6 = 2×3, 12 = 3×4, 20 = 4×5, 30 = 5×6. El patrón es n × (n+1)."
                                     }
                                 ],
                                 "behaviour": {
