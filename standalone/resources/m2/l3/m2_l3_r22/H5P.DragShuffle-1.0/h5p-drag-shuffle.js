@@ -2409,8 +2409,8 @@ var DropZone = /*#__PURE__*/function () {
       //sbriones: Aquí se cambia el porcentaje de espaciado de las zonas drop, toman el valor de la configuración inicial o del archivo content.json
       //IMPORTANTE: Estos valores dependen de cada ejercicio
       var spacing = {
-        x: self.autoAlignable.spacing / self.autoAlignable.size.width * 50,
-        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 0
+        x: self.autoAlignable.spacing / self.autoAlignable.size.width * 1400,
+        y: self.autoAlignable.spacing / self.autoAlignable.size.height * 30
       };
 
       // Determine coordinates for first 'spot'

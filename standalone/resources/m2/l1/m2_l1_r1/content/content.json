@@ -5,9 +5,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 42.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 45.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -28,7 +28,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -74,7 +74,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 38.58006515555135,
                         "width": 51.05359477124183,
                         "height": 30.124759539865817,
                         "action": {
@@ -120,9 +120,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 42.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 45.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -143,7 +143,7 @@
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -189,7 +189,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 38.58006515555135,
                         "width": 51.05677914790418,
                         "height": 30.124759539865817,
                         "action": {
@@ -235,9 +235,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 42.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 45.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -254,12 +254,11 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100,
-                                        "feedback": "Esta habilidad nos ayuda más allá de eso, como a manejar situaciones personales, tomar mejores decisiones y sentirnos seguros/as frente a desafíos."
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -351,9 +350,9 @@
                 "elements": [
                     {
                         "x": 63.18082788671025,
-                        "y": 34.428296616989506,
+                        "y": 42.428296616989506,
                         "width": 30.501089324618736,
-                        "height": 60.249519079731634,
+                        "height": 45.249519079731634,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -370,12 +369,11 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100,
-                                        "feedback": "Este es un ejemplo de una situación bien abordada que evitará que se presenten problemas que dificulten llegar a la meta."
+                                        "to": 100
                                     }
                                 ],
                                 "behaviour": {
-                                    "autoContinue": true,
+                                    "autoContinue": false,
                                     "timeoutCorrect": 500,
                                     "timeoutWrong": 500,
                                     "soundEffectsEnabled": false,
@@ -421,7 +419,7 @@
                     },
                     {
                         "x": 4.357298474945534,
-                        "y": 36.58006515555135,
+                        "y": 31.58006515555135,
                         "width": 49.01960784313726,
                         "height": 44.01033709605925,
                         "action": {

@@ -9,7 +9,7 @@
                         "width": 70,
                         "height": 105.99677234719216,
                         "action": {
-                            "library": "H5P.DragQuestion 1.14",
+                            "library": "H5P.DragShuffle 1.0",
                             "params": {
                                 "scoreShow": "Comprobar",
                                 "submit": "Enviar",
@@ -187,7 +187,7 @@
                                     "applyPenalties": true,
                                     "enableScoreExplanation": false,
                                     "dropZoneHighlighting": "dragging",
-                                    "autoAlignSpacing": 4,
+                                    "autoAlignSpacing": 10,
                                     "enableFullScreen": false,
                                     "showScorePoints": false,
                                     "showTitle": false
@@ -214,10 +214,10 @@
                             "metadata": {
                                 "contentType": "Arrastrar y soltar (Drag and Drop)",
                                 "license": "U",
-                                "title": "Slide 1",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Slide 1"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -330,10 +330,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Slide 2",
+                                "title": "Pregunta 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Slide 2"
+                                "extraTitle": "Pregunta 2"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -513,10 +513,10 @@
                             "metadata": {
                                 "contentType": "Opción múltiple (Multiple Choice)",
                                 "license": "U",
-                                "title": "Slide 3",
+                                "title": "Pregunta 3",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Slide 3"
+                                "extraTitle": "Pregunta 3"
                             }
                         },
                         "alwaysDisplayComments": false,

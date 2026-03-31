@@ -60,10 +60,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Ejemplo 1",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Ejemplo 1"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -178,10 +178,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Ejemplo 2",
+                                "title": "Pregunta 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Ejemplo 2"
+                                "extraTitle": "Pregunta 2"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -296,10 +296,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Ejemplo 2",
+                                "title": "Pregunta 3",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Ejemplo 2"
+                                "extraTitle": "Pregunta 3"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -414,10 +414,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Ejemplo 2",
+                                "title": "Pregunta 4",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Ejemplo 2"
+                                "extraTitle": "Pregunta 4"
                             }
                         },
                         "alwaysDisplayComments": false,

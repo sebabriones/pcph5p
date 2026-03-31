@@ -126,10 +126,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Algoritmo 1",
+                                "title": "Pregunta 1",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Algoritmo 1"
+                                "extraTitle": "Pregunta 1"
                             }
                         },
                         "alwaysDisplayComments": false,
@@ -269,10 +269,10 @@
                             "metadata": {
                                 "contentType": "Conjunto de Opción Única (Single Choice Set)",
                                 "license": "U",
-                                "title": "Algoritmo 2",
+                                "title": "Pregunta 2",
                                 "authors": [],
                                 "changes": [],
-                                "extraTitle": "Algoritmo 2"
+                                "extraTitle": "Pregunta 2"
                             }
                         },
                         "alwaysDisplayComments": false,

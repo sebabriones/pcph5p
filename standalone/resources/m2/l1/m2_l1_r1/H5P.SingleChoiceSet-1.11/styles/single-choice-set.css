@@ -80,7 +80,8 @@
   position: absolute;
 }
 .navigatable .h5p-ssc-next-button {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: none; /*nuevo*/
 }
 .h5p-ssc-next-button[aria-disabled="true"] {
   transform: scale(0.01);

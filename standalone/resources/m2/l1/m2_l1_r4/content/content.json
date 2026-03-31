@@ -47,7 +47,7 @@
                         "x": 44.66230936819172,
                         "y": 23,
                         "width": 51.19825708061002,
-                        "height": 64,
+                        "height": 70,
                         "action": {
                             "library": "H5P.SingleChoiceSet 1.11",
                             "params": {
@@ -123,9 +123,9 @@
                 "elements": [
                     {
                         "x": 2.178649237472767,
-                        "y": 13.682885499878964,
+                        "y": 10.682885499878964,
                         "width": 40.84095860566449,
-                        "height": 25.35100459937061,
+                        "height": 28.35100459937061,
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
