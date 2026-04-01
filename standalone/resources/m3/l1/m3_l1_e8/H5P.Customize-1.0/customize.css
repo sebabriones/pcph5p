@@ -1,6 +1,7 @@
 /*Estilos Nuevos Selects*/
 .h5p-input-wrapper {
     vertical-align: bottom;
+    position: relative;
 }
 
 .original-select {
@@ -80,6 +81,14 @@
     width: 100%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 1000;
+    max-height: 14em;
+    overflow-y: auto;
+}
+
+.custom-options.open-up {
+    top: auto;
+    bottom: calc(100% + 4px);
+    margin: 0 0 5px 0;
 }
 
 .custom-options.hidden {
@@ -88,7 +97,8 @@
 
 /* Estilos para cada opción (el LI) */
 .custom-options li {
-    padding: 2px 10px;
+    /*padding: 2px 10px;*/
+    padding: 0.2em 0.5em; /*nuevo*/
     cursor: pointer;
     transition: background-color 0.2s ease;
     background-color: #fff; /* Color de fondo de la opción */
@@ -99,7 +109,8 @@
 
 .custom-options > li:first-child {
     border-radius: 10px 10px 0 0;
-    padding: 14px 0;
+    /*padding: 14px 0;*/
+    padding: 1em 0; /*nuevo*/
 }
 
 .custom-options li:last-child {

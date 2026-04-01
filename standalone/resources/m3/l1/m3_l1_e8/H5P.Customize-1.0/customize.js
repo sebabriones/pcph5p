@@ -178,10 +178,32 @@ jQuery(document).ready(()=>{
           optionsList = $('.custom-options'); //Nuevas options
 
     for(let i=0; i<options.length; i++){
+        const closeDropdown = () => {
+            optionsList[i].classList.add('hidden');
+            optionsList[i].classList.remove('open-up');
+        };
 
-        // Abrir/cerrar el menú
-        display[i].addEventListener('click', () => {
-            optionsList[i].classList.toggle('hidden');
+        // Abrir/cerrar el menú; orientar hacia arriba si no cabe abajo
+        display[i].addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            if (!optionsList[i].classList.contains('hidden')) {
+                closeDropdown();
+                return;
+            }
+
+            optionsList[i].classList.remove('hidden');
+            optionsList[i].classList.remove('open-up');
+
+            const rect = display[i].getBoundingClientRect();
+            const dropdownHeight = optionsList[i].scrollHeight;
+            const viewportPadding = 8;
+            const spaceBelow = window.innerHeight - rect.bottom - viewportPadding;
+            const spaceAbove = rect.top - viewportPadding;
+
+            if (spaceBelow < dropdownHeight && spaceAbove > spaceBelow) {
+                optionsList[i].classList.add('open-up');
+            }
         });
 
         // Seleccionar una opción
@@ -191,7 +213,7 @@ jQuery(document).ready(()=>{
 
                 text[i].textContent = selectedText;
                 inputsWrapper[i].children[0].value = selectedText;
-                optionsList[i].classList.add('hidden'); // Cerrar el menú
+                closeDropdown();
 
                 // Actualizar la clase 'selected'
                 optionsList[i].querySelectorAll('li').forEach(li => li.classList.remove('selected'));
@@ -202,14 +224,13 @@ jQuery(document).ready(()=>{
         // Cerrar al hacer clic fuera
         document.addEventListener('click', (e) => {
             if(!inputsWrapper[i].contains(e.target)) {
-                optionsList[i].classList.add('hidden');
+                closeDropdown();
             }
         });
 
         $('iframe').contents().on('click', (e) => {
-            console.log('click');
             if (!inputsWrapper[i].contains(e.target)) {
-                optionsList[i].classList.add('hidden');
+                closeDropdown();
             }
         });
 
