@@ -305,8 +305,13 @@
     "overallFeedback": [
         {
             "from": 0,
+            "to": 99,
+            "feedback": "<strong>Inténtalo de nuevo</strong>"
+        },
+        {
+            "from": 100,
             "to": 100,
-            "feedback": "En Python no hay palabras reservadas en español. Por otra parte, <span style='font-weight:bold;'>many</span> y <span style='font-weight:bold;'>down</span> tampoco son palabras reservadas."
+            "feedback": "<strong>¡Correcto!</strong> En Python no hay palabras reservadas en español. Por otra parte, <span style='font-weight:bold;'>many</span> y <span style='font-weight:bold;'>down</span> tampoco son palabras reservadas."
         }
     ],
     "behaviour": {

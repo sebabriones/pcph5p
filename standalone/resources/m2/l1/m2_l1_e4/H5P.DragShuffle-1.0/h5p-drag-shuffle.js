@@ -2265,6 +2265,9 @@ var DropZone = /*#__PURE__*/function () {
             // Add to alignables
             self.alignables.push(ui.draggable);
           }
+          if (self.alignables.length > 0) {
+            $this.addClass('h5p-has-items');
+          }
           if (self.autoAlignable.enabled) {
             // Trigger alignment
             self.autoAlign();
@@ -2310,6 +2313,9 @@ var DropZone = /*#__PURE__*/function () {
       });
       if (self.autoAlignable.enabled) {
         self.autoAlign();
+      }
+      if (self.alignables.length > 0) {
+        self.$dropZone.children('.h5p-inner').addClass('h5p-has-items');
       }
 
       // Set element opacity when element has been appended
@@ -2384,6 +2390,9 @@ var DropZone = /*#__PURE__*/function () {
       if (index !== -1) {
         // Remove alignable
         self.alignables.splice(index, 1);
+        if (self.alignables.length === 0 && self.$dropZone) {
+          self.$dropZone.children('.h5p-inner').removeClass('h5p-has-items');
+        }
         if (self.autoAlignTimer === undefined && self.autoAlignable.enabled) {
           // Schedule re-aligment of alignables left
           self.autoAlignTimer = setTimeout(function () {
