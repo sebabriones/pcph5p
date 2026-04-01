@@ -615,12 +615,13 @@
         /*margin-right: 1em;
         width: 100%;*/
         margin-right: 1.5em; /*nuevo*/
-        width: 60%; /*nuevo*/
+        margin-left: 1em; /*nuevo*/
+        width: 50%; /*nuevo*/
     }
 
     .h5p-crossword .h5p-crossword-input-container .h5p-crossword-input-fields-group:first-child {
         /*margin-top: 0;*/
-        margin-top: 10vh; /*nuevo*/
+        /*margin-top: 10vh; /*nuevo*/
     }
 }
 
