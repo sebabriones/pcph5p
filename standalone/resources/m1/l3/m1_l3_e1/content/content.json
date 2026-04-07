@@ -17,7 +17,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m1/l3/m1_l3_e1/content/images/image-BFtpNFpN.png",
@@ -32,8 +32,8 @@
                     "task": {
                         "elements": [
                             {
-                                "x": 55.7,
-                                "y": 39.3,
+                                "x": 55.65,
+                                "y": 35.1,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -58,8 +58,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 51.4,
+                                "x": 55.65,
+                                "y": 49.3,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -84,8 +84,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 63.44,
+                                "x": 55.65,
+                                "y": 63.5,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -112,10 +112,10 @@
                         ],
                         "dropZones": [
                             {
-                                "x": 14.4,
-                                "y": 46.8,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 38.9,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "1"
                                 ],
@@ -132,10 +132,10 @@
                                 "label": "<div>zona 1</div>"
                             },
                             {
-                                "x": 14.4,
-                                "y": 76.8,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 73.2,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "2"
                                 ],
@@ -167,7 +167,7 @@
                     "applyPenalties": true,
                     "enableScoreExplanation": false,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": 2,
+                    "autoAlignSpacing": 0,
                     "enableFullScreen": false,
                     "showScorePoints": false,
                     "showTitle": false
@@ -211,7 +211,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m1/l3/m1_l3_e1/content/images/image-LeBUPjRb.png",
@@ -226,8 +226,8 @@
                     "task": {
                         "elements": [
                             {
-                                "x": 55.7,
-                                "y": 39.5,
+                                "x": 55.65,
+                                "y": 35.1,
                                 "width": 18.7,
                                 "height": 2.12,
                                 "dropZones": [
@@ -253,8 +253,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 51.54,
+                                "x": 55.65,
+                                "y": 49.3,
                                 "width": 18.7,
                                 "height": 2.12,
                                 "dropZones": [
@@ -280,8 +280,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 63.6,
+                                "x": 55.65,
+                                "y": 63.5,
                                 "width": 18.7,
                                 "height": 2.12,
                                 "dropZones": [
@@ -309,10 +309,10 @@
                         ],
                         "dropZones": [
                             {
-                                "x": 14.7,
-                                "y": 37.7,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 31.7,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "2"
                                 ],
@@ -329,10 +329,10 @@
                                 "label": "<div>zona 1</div>"
                             },
                             {
-                                "x": 14.7,
-                                "y": 73.9,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 70.8,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "1"
                                 ],
@@ -349,10 +349,10 @@
                                 "label": "<div>zona 2</div>"
                             },
                             {
-                                "x": 14.7,
-                                "y": 85.9,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 83.8,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "0"
                                 ],
@@ -384,7 +384,7 @@
                     "applyPenalties": true,
                     "enableScoreExplanation": false,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": 2,
+                    "autoAlignSpacing": 0,
                     "enableFullScreen": false,
                     "showScorePoints": false,
                     "showTitle": false
@@ -428,7 +428,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m1/l3/m1_l3_e1/content/images/image-HPu22Due.png",
@@ -443,8 +443,8 @@
                     "task": {
                         "elements": [
                             {
-                                "x": 55.7,
-                                "y": 27.5,
+                                "x": 55.65,
+                                "y": 21.1,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -472,8 +472,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 39.5,
+                                "x": 55.65,
+                                "y": 35.1,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -501,8 +501,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 51.6,
+                                "x": 55.65,
+                                "y": 49.3,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -530,8 +530,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 63.6,
+                                "x": 55.65,
+                                "y": 63.5,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -559,8 +559,8 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 75.7,
+                                "x": 55.65,
+                                "y": 77.5,
                                 "width": 18.7,
                                 "height": 2.1,
                                 "dropZones": [
@@ -590,10 +590,10 @@
                         ],
                         "dropZones": [
                             {
-                                "x": 14.7,
-                                "y": 36.8,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 27.3,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "2"
                                 ],
@@ -610,10 +610,10 @@
                                 "label": "<div>zona 1</div>"
                             },
                             {
-                                "x": 14.7,
-                                "y": 47,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 38.9,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "0"
                                 ],
@@ -630,10 +630,10 @@
                                 "label": "<div>zona 2</div>"
                             },
                             {
-                                "x": 14.7,
-                                "y": 67.4,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 62,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "3"
                                 ],
@@ -650,10 +650,10 @@
                                 "label": "<div>zona 3</div>"
                             },
                             {
-                                "x": 14.7,
-                                "y": 77.6,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 73.4,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "1"
                                 ],
@@ -670,10 +670,10 @@
                                 "label": "<div>zona 4</div>"
                             },
                             {
-                                "x": 14.7,
-                                "y": 87.8,
-                                "width": 19.5,
-                                "height": 3,
+                                "x": 14.8,
+                                "y": 84.9,
+                                "width": 19.4,
+                                "height": 2.9,
                                 "correctElements": [
                                     "4"
                                 ],
@@ -705,7 +705,7 @@
                     "applyPenalties": true,
                     "enableScoreExplanation": false,
                     "dropZoneHighlighting": "dragging",
-                    "autoAlignSpacing": 2,
+                    "autoAlignSpacing": 0,
                     "enableFullScreen": false,
                     "showScorePoints": false,
                     "showTitle": false

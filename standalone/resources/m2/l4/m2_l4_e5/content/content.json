@@ -17,7 +17,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e5/content/images/image-ulO8isZI.png",
@@ -32,10 +32,10 @@
                     "task": {
                         "elements": [
                             {
-                                "x": 55.7,
-                                "y": 17.8,
-                                "width": 21.75,
-                                "height": 3,
+                                "x": 55.6,
+                                "y": 19.05,
+                                "width": 21.8,
+                                "height": 2.45,
                                 "dropZones": [
                                     "0"
                                 ],
@@ -57,10 +57,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 32.6,
-                                "width": 21.75,
-                                "height": 3,
+                                "x": 55.6,
+                                "y": 34.45,
+                                "width": 21.8,
+                                "height": 2.45,
                                 "dropZones": [
                                     "0"
                                 ],
@@ -82,10 +82,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 47.4,
-                                "width": 21.75,
-                                "height": 3,
+                                "x": 55.6,
+                                "y": 49.65,
+                                "width": 21.8,
+                                "height": 2.45,
                                 "dropZones": [
                                     "0"
                                 ],
@@ -107,10 +107,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 62.2,
-                                "width": 21.75,
-                                "height": 3,
+                                "x": 55.6,
+                                "y": 64.8,
+                                "width": 21.8,
+                                "height": 2.45,
                                 "dropZones": [
                                     "0"
                                 ],
@@ -132,10 +132,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 77.1,
-                                "width": 21.75,
-                                "height": 3,
+                                "x": 55.6,
+                                "y": 80.1,
+                                "width": 21.8,
+                                "height": 2.45,
                                 "dropZones": [
                                     "0"
                                 ],
@@ -159,10 +159,10 @@
                         ],
                         "dropZones": [
                             {
-                                "x": 4.6,
-                                "y": 12.2,
-                                "width": 27.35,
-                                "height": 27.4,
+                                "x": 4.5,
+                                "y": 11.1,
+                                "width": 27.4,
+                                "height": 24.9,
                                 "correctElements": [
                                     "1",
                                     "4",
@@ -198,7 +198,7 @@
                     "dropZoneHighlighting": "dragging",
                     "autoAlignSpacing": 10,
                     "enableFullScreen": false,
-                    "showScorePoints": false,
+                    "showScorePoints": true,
                     "showTitle": false
                 },
                 "grabbablePrefix": "Elemento a colocar {num} de {total}.",
@@ -240,7 +240,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e5/content/images/image-3Iyv5BP0.png",
@@ -256,9 +256,9 @@
                         "elements": [
                             {
                                 "x": 3.7,
-                                "y": 91.7,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "y": 92.6,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -283,9 +283,9 @@
                             },
                             {
                                 "x": 3.7,
-                                "y": 76.1,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "y": 77.3,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -309,10 +309,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 35.15,
-                                "y": 76.1,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "x": 35.1,
+                                "y": 77.3,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -336,10 +336,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 66.6,
-                                "y": 76.1,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "x": 66.4,
+                                "y": 77.3,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -363,10 +363,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 18.7,
-                                "y": 83.9,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "x": 19.45,
+                                "y": 84.95,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -390,10 +390,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 51.6,
-                                "y": 83.9,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "x": 50.75,
+                                "y": 84.95,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -417,10 +417,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 35.15,
-                                "y": 91.7,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "x": 35.1,
+                                "y": 92.6,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -429,7 +429,7 @@
                                 "type": {
                                     "library": "H5P.AdvancedText 1.1",
                                     "params": {
-                                        "text": "<p>Confirmar asistencia invitados</p>"
+                                        "text": "<p style='font-size:0.9em;'>Confirmar asistencia invitados</p>"
                                     },
                                     "subContentId": "d80d32b6-9ed6-4a63-85ed-60358250cb9b",
                                     "metadata": {
@@ -444,10 +444,10 @@
                                 "multiple": false
                             },
                             {
-                                "x": 66.6,
-                                "y": 91.7,
-                                "width": 16.1,
-                                "height": 1.45,
+                                "x": 66.4,
+                                "y": 92.6,
+                                "width": 16.2,
+                                "height": 1.15,
                                 "dropZones": [
                                     "0",
                                     "1",
@@ -474,9 +474,9 @@
                         "dropZones": [
                             {
                                 "x": 3.9,
-                                "y": 21.1,
+                                "y": 18.7,
                                 "width": 17.15,
-                                "height": 17.55,
+                                "height": 16.1,
                                 "correctElements": [
                                     "1",
                                     "2",
@@ -497,9 +497,9 @@
                             },
                             {
                                 "x": 34.75,
-                                "y": 21.1,
+                                "y": 18.7,
                                 "width": 17.15,
-                                "height": 17.55,
+                                "height": 16.1,
                                 "correctElements": [
                                     "3",
                                     "0"
@@ -518,9 +518,9 @@
                             },
                             {
                                 "x": 65.6,
-                                "y": 21.1,
+                                "y": 18.7,
                                 "width": 17.15,
-                                "height": 17.55,
+                                "height": 16.1,
                                 "correctElements": [
                                     "4",
                                     "5",
@@ -556,7 +556,7 @@
                     "dropZoneHighlighting": "dragging",
                     "autoAlignSpacing": 1,
                     "enableFullScreen": false,
-                    "showScorePoints": false,
+                    "showScorePoints": true,
                     "showTitle": false
                 },
                 "grabbablePrefix": "Elemento a colocar {num} de {total}.",
@@ -593,7 +593,7 @@
     "randomQuestions": false,
     "endGame": {
         "showResultPage": true,
-        "showSolutionButton": true,
+        "showSolutionButton": false,
         "showRetryButton": true,
         "noResultMessage": "Terminado",
         "message": "Tu resultado:",

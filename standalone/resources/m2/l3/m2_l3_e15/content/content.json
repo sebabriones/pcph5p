@@ -17,7 +17,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-UGCGVB7P.png",
@@ -33,9 +33,9 @@
                     "task": {
                         "elements": [
                             {
-                                "x": 55.7,
-                                "y": 19.6,
-                                "width": 19.25,
+                                "x": 55.6,
+                                "y": 20.7,
+                                "width": 19.35,
                                 "height": 2.45,
                                 "dropZones": [
                                     "0"
@@ -58,9 +58,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 32.45,
-                                "width": 19.25,
+                                "x": 55.6,
+                                "y": 34.9,
+                                "width": 19.35,
                                 "height": 2.45,
                                 "dropZones": [
                                     "0"
@@ -83,9 +83,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 45.4,
-                                "width": 19.25,
+                                "x": 55.6,
+                                "y": 49.05,
+                                "width": 19.35,
                                 "height": 2.45,
                                 "dropZones": [
                                     "0"
@@ -108,9 +108,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 58.4,
-                                "width": 19.25,
+                                "x": 55.6,
+                                "y": 63.1,
+                                "width": 19.35,
                                 "height": 2.45,
                                 "dropZones": [
                                     "0"
@@ -133,9 +133,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 55.7,
-                                "y": 71.4,
-                                "width": 19.25,
+                                "x": 55.6,
+                                "y": 77.3,
+                                "width": 19.35,
                                 "height": 2.45,
                                 "dropZones": [
                                     "0"
@@ -161,7 +161,7 @@
                         "dropZones": [
                             {
                                 "x": 8.8,
-                                "y": 13.3,
+                                "y": 11,
                                 "width": 25,
                                 "height": 25,
                                 "correctElements": [
@@ -199,7 +199,7 @@
                     "dropZoneHighlighting": "dragging",
                     "autoAlignSpacing": 10,
                     "enableFullScreen": false,
-                    "showScorePoints": false,
+                    "showScorePoints": true,
                     "showTitle": false
                 },
                 "grabbablePrefix": "Elemento a colocar {num} de {total}.",
@@ -241,7 +241,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m2/l3/m2_l3_e15/content/images/image-AMwCsZGi.png",
@@ -257,9 +257,9 @@
                     "task": {
                         "elements": [
                             {
-                                "x": 9,
-                                "y": 75.6,
-                                "width": 13,
+                                "x": 13.7,
+                                "y": 82.7,
+                                "width": 12.7,
                                 "height": 1.45,
                                 "dropZones": [
                                     "0",
@@ -284,9 +284,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 66.8,
-                                "y": 75.6,
-                                "width": 13,
+                                "x": 38.2,
+                                "y": 82.7,
+                                "width": 12.7,
                                 "height": 1.45,
                                 "dropZones": [
                                     "0",
@@ -311,9 +311,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 21.1,
-                                "y": 83.7,
-                                "width": 13,
+                                "x": 62.55,
+                                "y": 82.7,
+                                "width": 12.7,
                                 "height": 1.45,
                                 "dropZones": [
                                     "0",
@@ -338,9 +338,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 54.6,
-                                "y": 83.7,
-                                "width": 13,
+                                "x": 1.5,
+                                "y": 91.3,
+                                "width": 12.7,
                                 "height": 1.45,
                                 "dropZones": [
                                     "0",
@@ -365,9 +365,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 9,
-                                "y": 92,
-                                "width": 13,
+                                "x": 25.9,
+                                "y": 91.3,
+                                "width": 12.7,
                                 "height": 1.45,
                                 "dropZones": [
                                     "0",
@@ -392,9 +392,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 37.91,
-                                "y": 92,
-                                "width": 13,
+                                "x": 50.5,
+                                "y": 91.3,
+                                "width": 12.7,
                                 "height": 1.45,
                                 "dropZones": [
                                     "0",
@@ -419,9 +419,9 @@
                                 "multiple": false
                             },
                             {
-                                "x": 66.8,
-                                "y": 92,
-                                "width": 13,
+                                "x": 74.9,
+                                "y": 91.3,
+                                "width": 12.7,
                                 "height": 1.45,
                                 "dropZones": [
                                     "0",
@@ -449,7 +449,7 @@
                         "dropZones": [
                             {
                                 "x": 9.2,
-                                "y": 21.1,
+                                "y": 19.6,
                                 "width": 15.2,
                                 "height": 17.6,
                                 "correctElements": [
@@ -472,7 +472,7 @@
                             },
                             {
                                 "x": 36.5,
-                                "y": 21.1,
+                                "y": 19.6,
                                 "width": 15.2,
                                 "height": 17.6,
                                 "correctElements": [
@@ -493,7 +493,7 @@
                             },
                             {
                                 "x": 63.8,
-                                "y": 21.1,
+                                "y": 19.6,
                                 "width": 15.2,
                                 "height": 17.6,
                                 "correctElements": [
@@ -529,7 +529,7 @@
                     "dropZoneHighlighting": "dragging",
                     "autoAlignSpacing": 3,
                     "enableFullScreen": false,
-                    "showScorePoints": false,
+                    "showScorePoints": true,
                     "showTitle": false
                 },
                 "grabbablePrefix": "Elemento a colocar {num} de {total}.",

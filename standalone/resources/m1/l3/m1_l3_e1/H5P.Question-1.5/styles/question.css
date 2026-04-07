@@ -198,7 +198,7 @@
   width: calc(100% - 1.5em);
   margin-left: 1em;
   margin-right: 0.5em;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
 }
 .h5p-question-buttons .h5p-joubelui-button,
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {

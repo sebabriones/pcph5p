@@ -17,7 +17,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r1/content/images/image-agx8FIJA.png",
@@ -33,7 +33,7 @@
                         "elements": [
                             {
                                 "x": 54.85,
-                                "y": 42.2,
+                                "y": 39.9,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -58,7 +58,7 @@
                             },
                             {
                                 "x": 54.85,
-                                "y": 59,
+                                "y": 59.7,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -83,7 +83,7 @@
                             },
                             {
                                 "x": 54.85,
-                                "y": 75.9,
+                                "y": 79.4,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -108,7 +108,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 42.2,
+                                "y": 39.9,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -133,7 +133,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 59,
+                                "y": 59.7,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -158,7 +158,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 75.9,
+                                "y": 79.4,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -185,7 +185,7 @@
                         "dropZones": [
                             {
                                 "x": 54.8,
-                                "y": 23.6,
+                                "y": 18.3,
                                 "width": 10.5,
                                 "height": 4.7,
                                 "correctElements": [
@@ -205,7 +205,7 @@
                             },
                             {
                                 "x": 75.6,
-                                "y": 23.6,
+                                "y": 18.3,
                                 "width": 10.5,
                                 "height": 4.7,
                                 "correctElements": [
@@ -283,7 +283,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r1/content/images/image-H7BsLoxy.png",
@@ -299,7 +299,7 @@
                         "elements": [
                             {
                                 "x": 54.85,
-                                "y": 42.2,
+                                "y": 39.9,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -324,7 +324,7 @@
                             },
                             {
                                 "x": 54.85,
-                                "y": 59,
+                                "y": 59.7,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -349,7 +349,7 @@
                             },
                             {
                                 "x": 54.85,
-                                "y": 75.9,
+                                "y": 79.4,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -374,7 +374,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 42.2,
+                                "y": 39.9,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -399,7 +399,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 59,
+                                "y": 59.7,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -424,7 +424,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 75.9,
+                                "y": 79.4,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -451,7 +451,7 @@
                         "dropZones": [
                             {
                                 "x": 54.8,
-                                "y": 23.6,
+                                "y": 18.3,
                                 "width": 10.5,
                                 "height": 4.7,
                                 "correctElements": [
@@ -471,7 +471,7 @@
                             },
                             {
                                 "x": 75.6,
-                                "y": 23.6,
+                                "y": 18.3,
                                 "width": 10.5,
                                 "height": 4.7,
                                 "correctElements": [
@@ -549,7 +549,7 @@
                     "settings": {
                         "size": {
                             "width": 900,
-                            "height": 540
+                            "height": 460
                         },
                         "background": {
                             "path": "http://localhost/pcph5p/standalone/resources/m1/l4/m1_l4_r1/content/images/image-pkN4R51V.png",
@@ -565,7 +565,7 @@
                         "elements": [
                             {
                                 "x": 54.85,
-                                "y": 42.2,
+                                "y": 39.9,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -590,7 +590,7 @@
                             },
                             {
                                 "x": 54.85,
-                                "y": 59,
+                                "y": 59.7,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -615,7 +615,7 @@
                             },
                             {
                                 "x": 54.85,
-                                "y": 75.9,
+                                "y": 79.4,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -640,7 +640,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 42.2,
+                                "y": 39.9,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -665,7 +665,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 59,
+                                "y": 59.7,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -690,7 +690,7 @@
                             },
                             {
                                 "x": 75.75,
-                                "y": 75.9,
+                                "y": 79.4,
                                 "width": 9.8,
                                 "height": 4.05,
                                 "dropZones": [
@@ -717,7 +717,7 @@
                         "dropZones": [
                             {
                                 "x": 54.8,
-                                "y": 23.6,
+                                "y": 18.3,
                                 "width": 10.5,
                                 "height": 4.7,
                                 "correctElements": [
@@ -737,7 +737,7 @@
                             },
                             {
                                 "x": 75.6,
-                                "y": 23.6,
+                                "y": 18.3,
                                 "width": 10.5,
                                 "height": 4.7,
                                 "correctElements": [
