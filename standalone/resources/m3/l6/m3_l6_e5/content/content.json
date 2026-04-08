@@ -1,1 +1,22 @@
-{"title":"Terminal Python Interactiva","initialCode":"","showLineNumbers":true,"theme":"dark","layoutMode":"vertical","minTerminalHeight":520,"consoleHeightPercent":35,"allowInput":true,"showSubmitButton":true,"showUploadButton":false,"maxOutputLines":1000,"passingPercentage":70,"examples":[{"name":"Código","code":"hora = int(input(\"Hora (0-23): \"))\n\nif hora &gt; 6 and hora &lt; 8:\n    print(\"Estudiar\")\nelif hora &gt;= 8 and hora &lt;= 18:\n    print(\"Clases/Tareas\")\nelif hora &gt; 18 and hora &lt; 22:\n    print(\"Descanso\")\nelse:\n    print(\"Dormir\")"}],"passingScore":7,"description":"<p>Gabriela quiere una alarma que sugiera las siguientes actividades según la hora, donde solo se ingresen valores enteros de hora, y en la que 08 en el primer intervalo considera que estará estudiando desde las 08:00 hasta las 08:59, y así en cada caso. (tabla en instrucciones). Para esto, Gabriela escribe el siguiente programa: (código en instrucciones). 1. Ejecuta el código: ingresa algunas horas que tú quieras, además te sugerimos que ingreses los siguientes valores: -5, 28, 24, ¿qué ocurre?, ¿está bien? 2. Responde las siguientes preguntas: -¿Se utilizan los &gt;= y &lt;= de forma consistente en el código? -¿Hay casos que se repiten o no se consideran en el código? 3. Corrige el código para que funcione como debería, cubriendo el rango de 0 a 23 horas.</p><p><br /> </p>"}
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "layoutMode": "horizontal",
+    "minTerminalHeight": 380,
+    "consoleHeightPercent": 35,
+    "allowInput": true,
+    "showSubmitButton": true,
+    "showUploadButton": false,
+    "maxOutputLines": 1000,
+    "passingPercentage": 70,
+    "examples": [
+        {
+            "name": "Código",
+            "code": "hora = int(input(\"Hora (0-23): \"))\n\nif hora &gt; 6 and hora &lt; 8:\n    print(\"Estudiar\")\nelif hora &gt;= 8 and hora &lt;= 18:\n    print(\"Clases/Tareas\")\nelif hora &gt; 18 and hora &lt; 22:\n    print(\"Descanso\")\nelse:\n    print(\"Dormir\")"
+        }
+    ],
+    "passingScore": 7,
+    "description": "<p>Gabriela quiere una alarma que sugiera las siguientes actividades según la hora, donde solo se ingresen valores enteros de hora, y en la que 08 en el primer intervalo considera que estará estudiando desde las 08:00 hasta las 08:59, y así en cada caso. (tabla en instrucciones). Para esto, Gabriela escribe el siguiente programa: (código en instrucciones). 1. Ejecuta el código: ingresa algunas horas que tú quieras, además te sugerimos que ingreses los siguientes valores: -5, 28, 24, ¿qué ocurre?, ¿está bien? 2. Responde las siguientes preguntas: -¿Se utilizan los &gt;= y &lt;= de forma consistente en el código? -¿Hay casos que se repiten o no se consideran en el código? 3. Corrige el código para que funcione como debería, cubriendo el rango de 0 a 23 horas.</p><p><br /> </p>"
+}

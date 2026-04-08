@@ -1,1 +1,22 @@
-{"title":"Terminal Python Interactiva","initialCode":"","showLineNumbers":true,"theme":"dark","layoutMode":"vertical","minTerminalHeight":520,"consoleHeightPercent":35,"allowInput":true,"showSubmitButton":true,"showUploadButton":false,"maxOutputLines":1000,"passingPercentage":70,"examples":[{"name":"Código","code":"total_horas = \"12\"\nmatematicas = total_horas * 0.5\nfisica = total_horas * 0.3\nquimica = total_horas * 0.2\n\nif matematicas + fisica + quimica = total_horas:\n    print(\"Distribución correcta\")\nelse:\n    print(\"Error en la distribución\")\n\nprint(\"Matemáticas:\", matematicas)\nprint(\"Historia:\", fisica\nprint(\"Biología:\", quimica)"}],"passingScore":7,"description":"<p>Andrea está preparando sus exámenes finales y decidió estudiar tres asignaturas: Álgebra, Física y Química. Dispone de 12 horas de estudio para repartir en la semana, pero quiere hacerlo de acuerdo con la complejidad que le significa a ella cada asignatura: -Álgebra: prioridad alta (50 % del tiempo). -Física: Prioridad media (30 % del tiempo). -Química: Prioridad baja (20 % del tiempo). Andrea escribió un programa para determinar las horas que dedicará a cada asignatura, pero el programa no funciona correctamente: (código en instrucciones). -Revisa el código que escribió Andrea. -Detecta los errores por los cuales el código no corre correctamente. -Corrige el código para que determine las horas correctamente según las prioridades, verifique el que el total de las horas repartidas sea exactamente 12. -Muestre los resultados con una cifra decimal.</p><p><br /> </p>"}
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "layoutMode": "horizontal",
+    "minTerminalHeight": 380,
+    "consoleHeightPercent": 35,
+    "allowInput": true,
+    "showSubmitButton": true,
+    "showUploadButton": false,
+    "maxOutputLines": 1000,
+    "passingPercentage": 70,
+    "examples": [
+        {
+            "name": "Código",
+            "code": "total_horas = \"12\"\nmatematicas = total_horas * 0.5\nfisica = total_horas * 0.3\nquimica = total_horas * 0.2\n\nif matematicas + fisica + quimica = total_horas:\n    print(\"Distribución correcta\")\nelse:\n    print(\"Error en la distribución\")\n\nprint(\"Matemáticas:\", matematicas)\nprint(\"Historia:\", fisica\nprint(\"Biología:\", quimica)"
+        }
+    ],
+    "passingScore": 7,
+    "description": "<p>Andrea está preparando sus exámenes finales y decidió estudiar tres asignaturas: Álgebra, Física y Química. Dispone de 12 horas de estudio para repartir en la semana, pero quiere hacerlo de acuerdo con la complejidad que le significa a ella cada asignatura: -Álgebra: prioridad alta (50 % del tiempo). -Física: Prioridad media (30 % del tiempo). -Química: Prioridad baja (20 % del tiempo). Andrea escribió un programa para determinar las horas que dedicará a cada asignatura, pero el programa no funciona correctamente: (código en instrucciones). -Revisa el código que escribió Andrea. -Detecta los errores por los cuales el código no corre correctamente. -Corrige el código para que determine las horas correctamente según las prioridades, verifique el que el total de las horas repartidas sea exactamente 12. -Muestre los resultados con una cifra decimal.</p><p><br /> </p>"
+}

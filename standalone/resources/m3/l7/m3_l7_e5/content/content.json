@@ -1,1 +1,16 @@
-{"title":"Terminal Python Interactiva","initialCode":"","showLineNumbers":true,"theme":"dark","layoutMode":"vertical","minTerminalHeight":550,"consoleHeightPercent":35,"allowInput":true,"showSubmitButton":true,"showUploadButton":false,"maxOutputLines":1000,"passingPercentage":70,"passingScore":7,"description":"<p>En la actividad anterior, Gabriela diseñó una alarma que sugería actividades según la hora del día. El programa debía interpretar correctamente los intervalos horarios y asignar una actividad específica, como estudiar, asistir a clases o descansar. Ahora, Gabriela quiere un programa que no sólo le indique la actividad, sino que también cumpla con los siguientes requerimientos: a. Preguntar día de la semana. (1=Lunes, 7= Domingo), b. Cambiar las actividades y horarios si es sábado o domingo, c. Validar que la hora ingresada esté entre 0 y 23, d. Preguntar al usuario si es feriado, solicitando que responda con un “sí” o un “no”. En caso de que la respuesta sea “sí”, el programa asignará todas las actividades como “Descanso” ese día. </p>"}
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "layoutMode": "horizontal",
+    "minTerminalHeight": 380,
+    "consoleHeightPercent": 35,
+    "allowInput": true,
+    "showSubmitButton": true,
+    "showUploadButton": false,
+    "maxOutputLines": 1000,
+    "passingPercentage": 70,
+    "passingScore": 7,
+    "description": "<p>En la actividad anterior, Gabriela diseñó una alarma que sugería actividades según la hora del día. El programa debía interpretar correctamente los intervalos horarios y asignar una actividad específica, como estudiar, asistir a clases o descansar. Ahora, Gabriela quiere un programa que no sólo le indique la actividad, sino que también cumpla con los siguientes requerimientos: a. Preguntar día de la semana. (1=Lunes, 7= Domingo), b. Cambiar las actividades y horarios si es sábado o domingo, c. Validar que la hora ingresada esté entre 0 y 23, d. Preguntar al usuario si es feriado, solicitando que responda con un “sí” o un “no”. En caso de que la respuesta sea “sí”, el programa asignará todas las actividades como “Descanso” ese día. </p>"
+}

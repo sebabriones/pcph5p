@@ -1,1 +1,16 @@
-{"title":"Terminal Python Interactiva","initialCode":"","showLineNumbers":true,"theme":"dark","layoutMode":"vertical","minTerminalHeight":600,"consoleHeightPercent":35,"allowInput":true,"showSubmitButton":true,"showUploadButton":false,"maxOutputLines":1000,"passingPercentage":70,"description":"<p>Cada estudiante ha entregado una cantidad de tareas esta semana. Tu tarea es mostrar cuántas tareas entregó cada uno y decir si ha entregado varias o pocas tareas. Para ello, crea dos listas: nombres y número de tareas entregadas.</p>","passingScore":7}
+{
+    "title": "Terminal Python Interactiva",
+    "initialCode": "",
+    "showLineNumbers": true,
+    "theme": "dark",
+    "layoutMode": "horizontal",
+    "minTerminalHeight": 380,
+    "consoleHeightPercent": 35,
+    "allowInput": true,
+    "showSubmitButton": true,
+    "showUploadButton": false,
+    "maxOutputLines": 1000,
+    "passingPercentage": 70,
+    "description": "<p>Cada estudiante ha entregado una cantidad de tareas esta semana. Tu tarea es mostrar cuántas tareas entregó cada uno y decir si ha entregado varias o pocas tareas. Para ello, crea dos listas: nombres y número de tareas entregadas.</p>",
+    "passingScore": 7
+}
