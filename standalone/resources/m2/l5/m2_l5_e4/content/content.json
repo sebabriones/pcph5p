@@ -30,7 +30,8 @@
     "settings": {
         "animationSpeed": 100,
         "showPathInfo": false,
-        "canvasSize": 450
+        "canvasSize": 450,
+        "designViewportWidth": 900
     },
     "behaviour": {
         "enableRetry": true,

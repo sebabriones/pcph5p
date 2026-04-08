@@ -196,11 +196,20 @@
       {
         "name": "canvasSize",
         "type": "number",
-        "label": "Tamaño del canvas (px)",
-        "description": "Tamaño del canvas del juego en píxeles",
+        "label": "Resolución lógica del tablero",
+        "description": "Unidades internas de dibujo (p. ej. 450). El tamaño en pantalla escala con el contenedor.",
         "default": 450,
         "min": 300,
         "max": 1000
+      },
+      {
+        "name": "designViewportWidth",
+        "type": "number",
+        "label": "Ancho de diseño de referencia (px)",
+        "description": "A este ancho corresponde escala 1 (como MatchingGameCP: 900). El juego se reescala proporcionalmente al ancho real del contenedor.",
+        "default": 900,
+        "min": 400,
+        "max": 1600
       }
     ]
   },

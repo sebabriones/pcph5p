@@ -61,6 +61,30 @@ H5P.PipeFlow = (function ($, Question) {
     return cellType >= 14 && cellType <= 24;
   }
 
+  function getFullscreenElementForDoc(doc) {
+    if (!doc) return null;
+    return doc.fullscreenElement ||
+      doc.webkitFullscreenElement ||
+      doc.mozFullScreenElement ||
+      doc.msFullscreenElement;
+  }
+
+  /**
+   * Pantalla completa en este documento o en el top (mismo origen).
+   * H5P suele poner en fullscreen el reproductor en el padre; el iframe no es fullscreenElement.
+   */
+  function isPipeFlowFullscreenContext() {
+    if (getFullscreenElementForDoc(document)) return true;
+    try {
+      if (window.top && window.top !== window) {
+        if (getFullscreenElementForDoc(window.top.document)) return true;
+      }
+    } catch (ignore) {
+      // Origen cruzado
+    }
+    return false;
+  }
+
   /**
    * Aclarar un color hexadecimal
    */
@@ -115,7 +139,8 @@ H5P.PipeFlow = (function ($, Question) {
       settings: {
         animationSpeed: 100,
         showPathInfo: true,
-        canvasSize: 450
+        canvasSize: 450,
+        designViewportWidth: 900
       },
       l10n: {
         checkAnswerButtonLabel: 'Comprobar',
@@ -202,6 +227,18 @@ H5P.PipeFlow = (function ($, Question) {
       document.addEventListener('webkitfullscreenchange', self._viewportResizeHandler);
       document.addEventListener('mozfullscreenchange', self._viewportResizeHandler);
       document.addEventListener('MSFullscreenChange', self._viewportResizeHandler);
+
+      try {
+        if (window.top && window.top !== window && window.top.document) {
+          var topDoc = window.top.document;
+          topDoc.addEventListener('fullscreenchange', self._viewportResizeHandler);
+          topDoc.addEventListener('webkitfullscreenchange', self._viewportResizeHandler);
+          topDoc.addEventListener('mozfullscreenchange', self._viewportResizeHandler);
+          topDoc.addEventListener('MSFullscreenChange', self._viewportResizeHandler);
+        }
+      } catch (ignore) {
+        // Origen cruzado: no se puede adjuntar a top
+      }
     }
   };
 
@@ -376,9 +413,6 @@ H5P.PipeFlow = (function ($, Question) {
     self.gameState.animationTime = 0;
 
     self.gameState.gridSize = self.gameConfig.length;
-    var CANVAS_SIZE = self.options.settings.canvasSize;
-    self.canvas.width = CANVAS_SIZE;
-    self.canvas.height = CANVAS_SIZE;
 
     // Parsear grid
     for (var row = 0; row < self.gameState.gridSize; row++) {
@@ -406,7 +440,7 @@ H5P.PipeFlow = (function ($, Question) {
     }
 
     self.setupEventListeners();
-    self.renderGame();
+    self.resize();
     self.updatePathInfo();
   };
 
@@ -1426,9 +1460,42 @@ H5P.PipeFlow = (function ($, Question) {
 
   // === Renderizado ===
 
+  /**
+   * Tamaño bitmap = CSS × devicePixelRatio; el dibujo sigue en unidades lógicas (canvasSize).
+   */
+  PipeFlow.prototype.syncCanvasResolution = function () {
+    var self = this;
+    if (!self.canvas || !self.ctx) return;
+    var logical = self.options.settings.canvasSize;
+    var dpr = window.devicePixelRatio || 1;
+    var rect = self.canvas.getBoundingClientRect();
+    var cssW = rect.width;
+    var cssH = rect.height;
+    var bw;
+    var bh;
+    if (cssW > 0 && cssH > 0) {
+      bw = Math.max(1, Math.round(cssW * dpr));
+      bh = Math.max(1, Math.round(cssH * dpr));
+    } else {
+      bw = Math.max(1, Math.round(logical * dpr));
+      bh = Math.max(1, Math.round(logical * dpr));
+    }
+    if (self.canvas.width !== bw || self.canvas.height !== bh) {
+      self.canvas.width = bw;
+      self.canvas.height = bh;
+    }
+    if (cssW > 0 && cssH > 0) {
+      self.ctx.setTransform(bw / logical, 0, 0, bh / logical, 0, 0);
+    } else {
+      self.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+  };
+
   PipeFlow.prototype.renderGame = function () {
     var self = this;
     if (!self.canvas || !self.ctx) return;
+
+    self.syncCanvasResolution();
 
     var CANVAS_SIZE = self.options.settings.canvasSize;
     var geometry = self.getBoardGeometry();
@@ -1487,47 +1554,50 @@ H5P.PipeFlow = (function ($, Question) {
     var containerWidth = $canvasContainer.width();
     if (!containerWidth || containerWidth <= 0) return;
 
-    var baseWidth = 700;
-    var baseFontSize = 16;
-    var ratio = containerWidth / baseWidth;
-    ratio = Math.max(0.5, Math.min(ratio, 1.5));
+    var designW = self.options.settings.designViewportWidth;
+    if (!designW || designW <= 0) {
+      designW = 900;
+    }
+    var scaleRatio = containerWidth / designW;
+    scaleRatio = Math.max(0.35, Math.min(scaleRatio, 2.5));
 
-    $container.css('font-size', (baseFontSize * ratio) + 'px');
-
-    var isFullscreen = Boolean(
-      document.fullscreenElement ||
-      document.webkitFullscreenElement ||
-      document.mozFullScreenElement ||
-      document.msFullscreenElement
-    );
+    var isFullscreen = isPipeFlowFullscreenContext();
     var forceConstrainedResize = window.__PIPEFLOW_CONSTRAINED_RESIZE__ === true;
     var useConstrainedResize = isFullscreen || forceConstrainedResize;
 
     if (!useConstrainedResize) {
-      // Modo legado para vista estudiante normal: mantener el comportamiento previo.
+      // Mismo criterio que MatchingGameCP / contenido en Course Presentation: el contenedor
+      // escala en em según el ancho disponible; el canvas usa max-width en em respecto a esa fuente.
+      $container.css('font-size', scaleRatio + 'em');
       self.canvas.style.width = '100%';
-      self.canvas.style.maxWidth = self.options.settings.canvasSize + 'px';
-      var legacyCanvasWidth = self.canvas.getBoundingClientRect().width || self.canvas.offsetWidth || containerWidth;
-      if (legacyCanvasWidth > 0) {
-        self.canvas.style.height = legacyCanvasWidth + 'px';
-      }
+      var logical = self.options.settings.canvasSize || 450;
+      var maxEm = logical / 16;
+      self.canvas.style.maxWidth = maxEm + 'em';
+      self.canvas.style.height = '';
       self.renderGame();
       return;
     }
 
-    // Modo acotado para vista instructor y fullscreen.
+    $container.css('font-size', scaleRatio + 'em');
+
+    // Modo acotado: pantalla completa (local o top) u override de instructor.
     var containerRect = $canvasContainer[0].getBoundingClientRect();
     var $parent = $container.parent();
     var parentRect = ($parent && $parent.length) ? $parent[0].getBoundingClientRect() : null;
     var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth || 0;
+    var viewportTopOffset = (isFullscreen || forceConstrainedResize) ? 120 : 160;
 
     var maxByWidth = Math.max(200, containerRect.width - 8);
     var maxByParent = parentRect ? Math.max(200, parentRect.height - 24) : Number.POSITIVE_INFINITY;
     var maxByViewport = viewportHeight > 0
-      ? Math.max(220, viewportHeight - containerRect.top - 160)
+      ? Math.max(220, viewportHeight - containerRect.top - viewportTopOffset)
+      : Number.POSITIVE_INFINITY;
+    var maxByViewportWidth = viewportWidth > 0
+      ? Math.max(220, viewportWidth - 24)
       : Number.POSITIVE_INFINITY;
 
-    var targetSize = Math.max(200, Math.min(maxByWidth, maxByParent, maxByViewport));
+    var targetSize = Math.max(200, Math.min(maxByWidth, maxByParent, maxByViewport, maxByViewportWidth));
 
     self.canvas.style.width = '100%';
     self.canvas.style.maxWidth = targetSize + 'px';

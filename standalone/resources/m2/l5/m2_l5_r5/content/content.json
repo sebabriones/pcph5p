@@ -1,1 +1,49 @@
-{"instructions":"Activa y desactiva las válvulas para dirigir el agua de color azul hasta el balde.","gameConfig":"[[101, 14, 3, 14, 24, 0, 21, 14, 3, 102],\n [0, 0, 0, 0, 15, 0, 15, 0, 0, 0],\n [0, 0, 21, 14, 16, 3, 16, 14, 24, 0],\n [0, 0, 15, 0, 15, 0, 15, 0, 15, 0],\n [0, 0, 4, 0, 7, 14, 9, 0, 4, 0],\n [0, 0, 15, 0, 15, 0, 15, 0, 15, 0],\n [0, 0, 22, 14, 16, 3, 16, 14, 23, 0],\n [0, 0, 0, 0, 15, 0, 15, 0, 0, 0],\n [0, 0, 0, 0, 22, 17, 23, 0, 0, 0],\n [0, 0, 0, 0, 0, 201, 0, 0, 0, 0]]","sources":[{"color":"#2196F3","label":"Fuente 1","emoji":"🚰"},{"color":"#F44336","label":"Fuente 2","emoji":"🚰"}],"destinations":[{"acceptedSources":"101","label":"Balde","emoji":"🪣"}],"messages":{"successMessage":"Has completado el circuito correctamente.","failureMessage":"El agua no llegó correctamente. Revisa las válvulas.","leakMessage":"El agua se fuga por una tubería abierta.","noPathMessage":"No hay camino hacia el destino. Abre más válvulas.","noSolutionMessage":"No existe solución posible para este circuito.","suboptimalPathMessage":"Tu camino tiene @current pasos. El óptimo es @optimal.","missingSourceDestMessage":"Falta fuente o destino en el circuito.","destNoWaterMessage":"@dest no recibió agua. Revisa las conexiones.","destWrongSourceMessage":"@dest recibió agua no aceptada de @sources.","destMissingSourceMessage":"@dest no recibió agua de todas las fuentes requeridas."},"settings":{"animationSpeed":100,"showPathInfo":false,"canvasSize":450},"behaviour":{"enableRetry":true,"scoringMode":"destinations"},"l10n":{"checkAnswerButtonLabel":"Comprobar","retryButtonLabel":"Reintentar"}}
+{
+    "instructions": "Activa y desactiva las válvulas para dirigir el agua de color azul hasta el balde.",
+    "gameConfig": "[[101, 14, 3, 14, 24, 0, 21, 14, 3, 102],\n [0, 0, 0, 0, 15, 0, 15, 0, 0, 0],\n [0, 0, 21, 14, 16, 3, 16, 14, 24, 0],\n [0, 0, 15, 0, 15, 0, 15, 0, 15, 0],\n [0, 0, 4, 0, 7, 14, 9, 0, 4, 0],\n [0, 0, 15, 0, 15, 0, 15, 0, 15, 0],\n [0, 0, 22, 14, 16, 3, 16, 14, 23, 0],\n [0, 0, 0, 0, 15, 0, 15, 0, 0, 0],\n [0, 0, 0, 0, 22, 17, 23, 0, 0, 0],\n [0, 0, 0, 0, 0, 201, 0, 0, 0, 0]]",
+    "sources": [
+        {
+            "color": "#2196F3",
+            "label": "Fuente 1",
+            "emoji": "🚰"
+        },
+        {
+            "color": "#F44336",
+            "label": "Fuente 2",
+            "emoji": "🚰"
+        }
+    ],
+    "destinations": [
+        {
+            "acceptedSources": "101",
+            "label": "Balde",
+            "emoji": "🪣"
+        }
+    ],
+    "messages": {
+        "successMessage": "Has completado el circuito correctamente.",
+        "failureMessage": "El agua no llegó correctamente. Revisa las válvulas.",
+        "leakMessage": "El agua se fuga por una tubería abierta.",
+        "noPathMessage": "No hay camino hacia el destino. Abre más válvulas.",
+        "noSolutionMessage": "No existe solución posible para este circuito.",
+        "suboptimalPathMessage": "Tu camino tiene @current pasos. El óptimo es @optimal.",
+        "missingSourceDestMessage": "Falta fuente o destino en el circuito.",
+        "destNoWaterMessage": "@dest no recibió agua. Revisa las conexiones.",
+        "destWrongSourceMessage": "@dest recibió agua no aceptada de @sources.",
+        "destMissingSourceMessage": "@dest no recibió agua de todas las fuentes requeridas."
+    },
+    "settings": {
+        "animationSpeed": 100,
+        "showPathInfo": false,
+        "canvasSize": 450,
+        "designViewportWidth": 900
+    },
+    "behaviour": {
+        "enableRetry": true,
+        "scoringMode": "destinations"
+    },
+    "l10n": {
+        "checkAnswerButtonLabel": "Comprobar",
+        "retryButtonLabel": "Reintentar"
+    }
+}
