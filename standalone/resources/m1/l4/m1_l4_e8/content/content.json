@@ -53,7 +53,7 @@
                                 "choices": [
                                     {
                                         "subContentId": "6247a870-3262-4959-9a08-393218a46326",
-                                        "question": "<p>Seleccione la alternativa que indique el o los pasos a los que le falta precisión.</p>",
+                                        "question": "<p>1. Seleccione la alternativa que indique el o los pasos a los que le falta precisión.</p>",
                                         "answers": [
                                             "<p>Paso 2 y Paso 3</p>",
                                             "<p>Paso 1 y Paso 4</p>",
@@ -63,7 +63,7 @@
                                     },
                                     {
                                         "subContentId": "90ee02a3-5192-4598-8f6e-acf98fe58d57",
-                                        "question": "<p>Seleccione la alternativa que le otorgue mas precisión al paso 2.</p>",
+                                        "question": "<p>2. Seleccione la alternativa que le otorgue mas precisión al paso 2.</p>",
                                         "answers": [
                                             "<p>Colocar 2 cucharaditas de café en una taza de 200cc.</p>",
                                             "<p>Colocar café en una taza chica.</p>",
@@ -73,7 +73,7 @@
                                     },
                                     {
                                         "subContentId": "7eb9b800-1e77-41f0-b897-550bf9a315c6",
-                                        "question": "<p>Seleccione la alternativa que le otorgue mas precisión al paso 3.</p>",
+                                        "question": "<p>3. Seleccione la alternativa que le otorgue mas precisión al paso 3.</p>",
                                         "answers": [
                                             "<p>Colocar una cucharadita de azúcar en la misma taza del café.</p>",
                                             "<p>Colocar azúcar suficiente en la misma taza del café.</p>",
