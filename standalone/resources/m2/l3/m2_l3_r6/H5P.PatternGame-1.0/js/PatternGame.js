@@ -128,6 +128,8 @@ H5P.PatternGame = (function ($, Question) {
       }, 120);
     };
     window.addEventListener('resize', self._windowResizeHandler);
+    window.addEventListener('orientationchange', self._windowResizeHandler);
+    document.addEventListener('fullscreenchange', self._windowResizeHandler);
   }
 
   // Establecer herencia
@@ -147,6 +149,24 @@ H5P.PatternGame = (function ($, Question) {
     self.$gameViewport = self.createGameContent();
     self.$gameStage = self.$gameViewport.find('.pattern-game-stage');
     self.$gameWrapper = self.$gameViewport.find('.pattern-game-wrapper');
+
+    // ResizeObserver sobre el padre para reaccionar a cambios del contenedor H5P.
+    if (typeof ResizeObserver !== 'undefined') {
+      if (self._resizeObserver) {
+        self._resizeObserver.disconnect();
+      }
+      self._observerTimer = null;
+      self._lastObservedWidth = 0;
+      var observedEl = self.$gameViewport[0].parentElement || self.$gameViewport[0];
+      self._resizeObserver = new ResizeObserver(function () {
+        var w = Math.round(observedEl.clientWidth || 0);
+        if (Math.abs(w - self._lastObservedWidth) < 2) { return; }
+        self._lastObservedWidth = w;
+        if (self._observerTimer) { clearTimeout(self._observerTimer); }
+        self._observerTimer = setTimeout(function () { self.trigger('resize'); }, 120);
+      });
+      self._resizeObserver.observe(observedEl);
+    }
 
     // Registrar contenido principal
     self.setContent(self.$gameViewport);
@@ -680,70 +700,42 @@ H5P.PatternGame = (function ($, Question) {
   };
 
 
-  // Redimensionar
+  // Redimensionar — modelo idéntico al de H5P.CoursePresentation:
+  // se calcula scaleRatio = containerWidth / designWidth y se aplica
+  // font-size: baseFontSize * scaleRatio + "px" sobre el wrapper.
+  // Todos los tamaños internos en "em" escalan automáticamente.
+  // No se usa transform: scale() en ningún elemento.
   PatternGame.prototype.resize = function () {
     const self = this;
-    
-    if (!self.$gameViewport || !self.$gameViewport.length || !self.$gameStage || !self.$gameStage.length || !self.$gameWrapper || !self.$gameWrapper.length) {
+
+    if (!self.$gameViewport || !self.$gameViewport.length ||
+        !self.$gameStage  || !self.$gameStage.length  ||
+        !self.$gameWrapper || !self.$gameWrapper.length) {
       return;
     }
-    
-    // Dimensiones base del componente (stage sin escalar)
-    const baseWidth = 640;
-    const baseHeight = 440;
-    const baseFontSize = 16;
-    
-    // Evitar acumulación al recalcular altura del viewport.
-    self.$gameViewport.css('height', 'auto');
 
-    const isFullscreen = !!document.fullscreenElement;
-    const $fullscreenContainer = self.$gameViewport.closest('.h5p-course-presentation');
-    const $windowContainer = self.$gameViewport.closest('.h5p-slide');
-    const $fallbackContainer = self.$gameViewport.closest('.h5p-content').first();
-    const $measureContainer = isFullscreen
-      ? ($fullscreenContainer.length ? $fullscreenContainer : $fallbackContainer)
-      : ($windowContainer.length ? $windowContainer : $fallbackContainer);
+    const baseWidth    = 640;  // ancho de diseño original (px)
+    const baseFontSize = 16;   // font-size base sobre la que se diseñó el CSS (px)
 
+    // Ancho disponible: el propio viewport (el padre directo del wrapper).
     const containerWidth = self.$gameViewport.width() || baseWidth;
-    const containerHeight = ($measureContainer.height && $measureContainer.height()) || window.innerHeight;
-    const controlsHeight =
-      ($measureContainer.find('.h5p-question-buttons:visible').outerHeight(true) || 0) +
-      ($measureContainer.find('.h5p-question-feedback:visible').outerHeight(true) || 0) + 16;
-    const availableHeight = Math.max(200, containerHeight - controlsHeight);
 
-    const widthRatio = containerWidth / baseWidth;
-    const heightRatio = availableHeight / baseHeight;
-    let scaleRatio = Math.min(widthRatio, heightRatio);
+    // Ratio igual al de CP: currentWidth / designWidth
+    const scaleRatio = Math.max(0.1, containerWidth / baseWidth);
 
-    // Escala moderada: permite crecer sin sobredimensionar.
-    scaleRatio = Math.max(0.3, Math.min(scaleRatio, 1.2));
-    const newFontSize = baseFontSize * scaleRatio;
-
+    // Aplicar font-size proporcional al wrapper (mismo patrón que CP).
+    // El stage y el viewport no necesitan dimensiones fijas; el layout fluye.
     self.$gameWrapper.css({
-      'width': baseWidth + 'px',
-      'height': baseHeight + 'px',
-      'font-size': baseFontSize + 'px',
-      'margin': '0 auto'
+      'font-size': (baseFontSize * scaleRatio) + 'px',
+      'width':     '100%',
+      'height':    'auto'
     });
     self.$gameStage.css({
-      'width': baseWidth + 'px',
-      'height': baseHeight + 'px',
-      'transform': 'scale(' + scaleRatio + ')',
-      'transform-origin': 'top center'
+      'width':     '100%',
+      'height':    'auto',
+      'transform': 'none'
     });
-
-    const scaledHeight = baseHeight * scaleRatio;
-    const clampedHeight = Math.min(scaledHeight, availableHeight);
-    self.$gameViewport.css('height', clampedHeight + 'px');
-
-    // Sincronizar escala tipográfica de feedback y controles de H5P.Question.
-    const $question = self.$gameWrapper.closest('.h5p-question');
-    if ($question && $question.length) {
-      $question.find(
-        '.h5p-question-feedback, .h5p-question-feedback-content, .h5p-question-feedback-content-text, ' +
-        '.h5p-question-buttons, .h5p-question-scorebar, .h5p-joubelui-button'
-      ).css('font-size', newFontSize + 'px');
-    }
+    self.$gameViewport.css('height', 'auto');
   };
 
   /**

@@ -9,69 +9,64 @@
 }
 
 .pattern-game-stage {
-  width: 640px;
-  height: 440px;
+  width: 100%;
+  height: auto;
   position: relative;
-  transform-origin: top center;
   margin: 0 auto;
 }
 
 .pattern-game-wrapper {
   margin: 0 auto;
   position: relative;
-  width: 640px;
+  width: 100%;
   max-width: 100%;
   min-width: 0;
-  height: 440px;
+  height: auto;
   text-align: center;
   font-size: 16px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  padding: 2.5em 1.25em 1.25em 1.25em;
+  padding: 1.75em 1.25em 0.25em 1.25em;
 }
 
 .elements-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9.375em, 1fr));
   gap: 1.25em;
-  margin-bottom: 1.875em;
+  margin-bottom: 0.5em;
   align-items: stretch;
   width: 100%;
-  height: 100%;
 }
 
 .element-container {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  min-width: 0; /* Permite que el contenedor se reduzca */
+  min-width: 0;
 }
 
 .element-label {
-  /*font-weight: bold;
+  font-weight: bold;
   color: #062971;
   margin-bottom: 0.625em;
-  font-size: 1em;*/
-  visibility: hidden;
+  font-size: 1em;
+  flex-shrink: 0;
 }
 
 .element-image {
+  flex: 1;
+  min-height: 0;
   width: 100%;
-  /*max-width: 9.375em;*/
-  height: auto;
-  /*aspect-ratio: 3 / 4;
-  margin: 0 auto;*/
+  margin: 0 auto;
   object-fit: contain;
   border-radius: 0.9375em;
   border: 0.1875em solid #ddd;
 }
 
 .element {
+  flex: 1;
+  min-height: 0;
   width: 100%;
-  max-width: 9.375em;
-  height: auto;
-  aspect-ratio: 3 / 4;
   margin: 0 auto;
   border-radius: 0.9375em;
   border: 0.1875em solid #ddd;
@@ -93,18 +88,16 @@
 .interactive-area {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: center;
   min-width: 0;
 }
 
 .interactive-label {
-  /*font-weight: bold;
+  font-weight: bold;
   color: #062971;
   margin-bottom: 0.625em;
   font-size: 1em;
-  text-align: center;*/
-  visibility: hidden;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .controls-container {
@@ -116,28 +109,30 @@
   border-radius: 0.625em;
   border: 0.125em solid #667eea;
   justify-content: space-around;
-  height: 100%;
+  flex: 1;
   min-height: 0;
+  overflow: auto;
 }
 
 .control-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.625em;
-  padding: 0.5em;
+  gap: 0.25em;
+  padding: 0.25em;
   background: white;
   border-radius: 0.5em;
   border: 0.125em solid #ddd;
   flex: 1;
   min-height: 0;
+  flex-wrap: nowrap;
 }
 
 .arrow-btn {
-  width: 2em;
-  height: 2em;
-  min-width: 2em;
-  min-height: 2em;
+  width: 1.55em;
+  height: 1.55em;
+  min-width: 1.55em;
+  min-height: 1.55em;
   border: none;
   border-radius: 50%;
   font-size: 1em;
@@ -181,10 +176,10 @@
 }
 
 .part-preview {
-  width: 4em;
-  height: 3em;
-  min-width: 4em;
-  min-height: 3em;
+  width: 2.8em;
+  height: 2.1em;
+  min-width: 2.8em;
+  min-height: 2.1em;
   border-radius: 0.5em;
   border: 0.125em solid #ccc;
   display: flex;
@@ -193,6 +188,10 @@
   background: white;
   flex-shrink: 0;
   overflow: hidden;
+}
+
+.controls-container {
+  font-size: 0.92em;
 }
 
 .part-preview-image {
