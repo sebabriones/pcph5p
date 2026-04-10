@@ -195,12 +195,12 @@
   display: inline-block;
   width: calc(100% - 1.5em);
   margin-left: 1em;
-  margin-right: 0.5em;
+  margin-right: 0.5em !important;
   margin-bottom: 1em;
 }
 .h5p-question-buttons .h5p-joubelui-button,
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {
-  margin: 0 0.5em 0 0;
+  /*margin: 0 0.5em 0 0;*/
   white-space: nowrap;
 }
 .h5p-question-buttons.has-scorebar {
@@ -370,5 +370,5 @@
 }
 
 .h5p-sort-paragraphs .h5p-question-buttons.h5p-question-visible {
-  width: calc(100% - -0.5em);
+  width: calc(100% - 0.5em);
 }
