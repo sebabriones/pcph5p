@@ -5,9 +5,9 @@
                 "elements": [
                     {
                         "x": 0,
-                        "y": 0,
+                        "y": 6,
                         "width": 80.61002178649238,
-                        "height": 99.99677234719216,
+                        "height": 95.99677234719216,
                         "action": {
                             "library": "H5P.DragShuffle 1.0",
                             "params": {
@@ -19,16 +19,16 @@
                                     "settings": {
                                         "size": {
                                             "width": 900,
-                                            "height": 540
+                                            "height": 460
                                         }
                                     },
                                     "task": {
                                         "elements": [
                                             {
                                                 "x": 56.7,
-                                                "y": 4.8,
+                                                "y": 5.1,
                                                 "width": 22.5,
-                                                "height": 3.8,
+                                                "height": 3.9,
                                                 "dropZones": [
                                                     "0",
                                                     "1",
@@ -55,9 +55,9 @@
                                             },
                                             {
                                                 "x": 56.7,
-                                                "y": 24.2,
+                                                "y": 24.4,
                                                 "width": 22.5,
-                                                "height": 3.8,
+                                                "height": 3.9,
                                                 "dropZones": [
                                                     "0",
                                                     "1",
@@ -84,9 +84,9 @@
                                             },
                                             {
                                                 "x": 56.7,
-                                                "y": 43.5,
+                                                "y": 43.65,
                                                 "width": 22.5,
-                                                "height": 3.8,
+                                                "height": 3.9,
                                                 "dropZones": [
                                                     "0",
                                                     "1",
@@ -115,7 +115,7 @@
                                                 "x": 56.7,
                                                 "y": 62.9,
                                                 "width": 22.5,
-                                                "height": 3.8,
+                                                "height": 3.9,
                                                 "dropZones": [
                                                     "0",
                                                     "1",
@@ -144,7 +144,7 @@
                                                 "x": 56.7,
                                                 "y": 82.2,
                                                 "width": 22.5,
-                                                "height": 3.8,
+                                                "height": 3.9,
                                                 "dropZones": [
                                                     "0",
                                                     "1",
@@ -172,10 +172,10 @@
                                         ],
                                         "dropZones": [
                                             {
-                                                "x": 8.2,
-                                                "y": 4.8,
-                                                "width": 25.8,
-                                                "height": 4.7,
+                                                "x": 8.5,
+                                                "y": 5.4,
+                                                "width": 25.3,
+                                                "height": 4.4,
                                                 "correctElements": [
                                                     "2"
                                                 ],
@@ -192,10 +192,10 @@
                                                 "label": "<div>En la biblioteca nos juntamos en la tarde mañana.</div>"
                                             },
                                             {
-                                                "x": 8.2,
-                                                "y": 24,
-                                                "width": 25.8,
-                                                "height": 4.7,
+                                                "x": 8.5,
+                                                "y": 24.6,
+                                                "width": 25.3,
+                                                "height": 4.4,
                                                 "correctElements": [
                                                     "3"
                                                 ],
@@ -212,10 +212,10 @@
                                                 "label": "<div>La lluvia se produce cuando las nubes se congelan.</div>"
                                             },
                                             {
-                                                "x": 8.2,
-                                                "y": 43.3,
-                                                "width": 25.8,
-                                                "height": 4.7,
+                                                "x": 8.5,
+                                                "y": 43.9,
+                                                "width": 25.3,
+                                                "height": 4.4,
                                                 "correctElements": [
                                                     "1"
                                                 ],
@@ -232,10 +232,10 @@
                                                 "label": "<div>Para el certamen de mañana te comparto mi resumen.</div>"
                                             },
                                             {
-                                                "x": 8.2,
-                                                "y": 62.6,
-                                                "width": 25.8,
-                                                "height": 4.7,
+                                                "x": 8.5,
+                                                "y": 63.1,
+                                                "width": 25.3,
+                                                "height": 4.4,
                                                 "correctElements": [
                                                     "0"
                                                 ],
@@ -252,10 +252,10 @@
                                                 "label": "<div>El piano es un instrumento de viento.</div>"
                                             },
                                             {
-                                                "x": 8.2,
-                                                "y": 82,
-                                                "width": 25.8,
-                                                "height": 4.7,
+                                                "x": 8.5,
+                                                "y": 82.4,
+                                                "width": 25.3,
+                                                "height": 4.4,
                                                 "correctElements": [
                                                     "4"
                                                 ],
@@ -330,9 +330,9 @@
                     },
                     {
                         "x": 80.58959694989107,
-                        "y": 0,
+                        "y": 11,
                         "width": 15,
-                        "height": 99.99677234719216,
+                        "height": 90.99677234719216,
                         "action": {
                             "library": "H5P.MarkTheWords 1.11",
                             "params": {
@@ -403,7 +403,7 @@
                     "license": "U"
                 },
                 "width": 1800,
-                "height": 922
+                "height": 920
             }
         },
         "keywordListAlwaysShow": false,

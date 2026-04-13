@@ -1169,10 +1169,10 @@
 }
 
 .h5p-course-presentation .h5p-summary-table-holder {
-    /*height: calc(100% - 4.5em);
-    margin: 1em;*/
-    height: calc(100% - 6.5em); /*nuevo*/
-    margin: 4em 1em 0 1em; /*nuevo*/
+    height: calc(100% - 7.5em);
+    margin: 3em 1em 1em 1em;
+    /*height: calc(100% - 6.5em); /*nuevo*/
+    /*margin: 4em 1em 0 1em; /*nuevo*/
 }
 
 .h5p-course-presentation .h5p-summary-table-pages {

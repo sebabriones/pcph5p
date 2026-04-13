@@ -8,14 +8,11 @@ definir una imágen de fondo para las diapos, esta se deforma y queda mal.*/
     background-color: #f8feef;
 }
 
-.h5p-wrapper {
-    margin: 2em 0 0 0 !important;
-}
-
 .check-btn-container {
     width: 99%;
     text-align: right;
     padding-bottom: 1em;
+    margin-top: -3em;
 }
 
 .check-btn {

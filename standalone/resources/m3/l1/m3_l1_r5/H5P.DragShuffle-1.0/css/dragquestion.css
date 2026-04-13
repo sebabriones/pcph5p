@@ -57,7 +57,7 @@ html.h5p-iframe .h5p-container.h5p-dragquestion.h5p-semi-fullscreen {
 .h5p-dragquestion .h5p-draggable {
   /*border-radius: 0.25em;
   border: 0.1em solid #c6c6c6;*/
-  border-radius: 0.6em; /*nuevo*/
+  border-radius: 0.7em; /*nuevo*/
   cursor: pointer;
   position: absolute;
   text-align: center;
@@ -328,4 +328,9 @@ html.h5p-iframe .h5p-container.h5p-dragquestion.h5p-semi-fullscreen {
 .h5p-dragquestion .h5p-question-introduction,
 .h5p-dragquestion .h5p-question-scorebar {
   display: none !important;
+}
+
+.h5p-element .h5p-dragquestion .h5p-question-content,
+.h5p-element .h5p-dragquestion .h5p-question-content .h5p-inner {
+  height: 100% !important;
 }

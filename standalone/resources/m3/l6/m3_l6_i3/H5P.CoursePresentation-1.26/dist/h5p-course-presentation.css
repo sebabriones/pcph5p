@@ -1862,3 +1862,17 @@
 .h5p-course-presentation .h5p-popup-container .h5p-popup-wrapper {
     height: 100%;
 }
+
+/*Se centran las imágenes que se muestran como modal*/
+.h5p-course-presentation .h5p-popup-container:has(.h5p-popup-wrapper .h5p-image) {
+    background-color: rgba(0,0,0,.7);
+}
+
+.h5p-course-presentation .h5p-popup-container .h5p-popup-wrapper:has(.h5p-image) {
+    display: flex;
+    align-items: center;
+}
+
+.h5p-course-presentation .h5p-popup-container .h5p-popup-wrapper:has(.h5p-image) .h5p-image {
+    height: fit-content;
+}
