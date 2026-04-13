@@ -5,7 +5,19 @@ jQuery(document).ready(() => {
 
     const d = document;
     const ENDING_POINT = 'http://id.tincanapi.com/extension/ending-point';
+    const H5P_SUBCONTENT_ID = 'http://h5p.org/x-api/h5p-subContentId';
     const VERB_ANSWERED = 'http://adlnet.gov/expapi/verbs/answered';
+    const TRACKED_LIBRARIES = new Set([
+        'H5P.Blanks',
+        'H5P.SingleChoiceSet',
+        'H5P.MultiChoice',
+        'H5P.TrueFalse',
+        'H5P.DragText',
+        'H5P.DragQuestion',
+        'H5P.MarkTheWords',
+        'H5P.Essay',
+        'H5P.SortParagraphs'
+    ]);
 
     $('.h5p-footer').css({ display: 'none' });
     $('.h5p-tooltip').css({ display: 'none' });
@@ -38,8 +50,153 @@ jQuery(document).ready(() => {
 
     $(finishBtn).css('visibility', 'hidden');
 
-    /** Slides (1-based) donde CP añade ending-point y que tienen tarea */
+    /** Fallback: slides (1-based) donde CP añade ending-point y hubo answered */
     const answeredStrictSlides = new Set();
+    /** Mapa de tareas esperadas por slide (slide 1-based -> Set<subContentId>) */
+    const expectedTasksBySlide = new Map();
+    /** Mapa de tareas respondidas por slide (slide 1-based -> Set<subContentId>) */
+    const answeredTasksBySlide = new Map();
+
+    function getLibraryMachineName(library) {
+        if (!library || typeof library !== 'string') {
+            return '';
+        }
+        return library.split(' ')[0];
+    }
+
+    function shouldTrackAction(action) {
+        if (!action || !action.subContentId || !action.library) {
+            return false;
+        }
+        const machineName = getLibraryMachineName(action.library);
+        return TRACKED_LIBRARIES.has(machineName);
+    }
+
+    function collectExpectedSubContentIdsForAction(action) {
+        const ids = new Set();
+        if (!action || !action.library) {
+            return ids;
+        }
+
+        const machineName = getLibraryMachineName(action.library);
+        if (machineName === 'H5P.SingleChoiceSet') {
+            const choices =
+                action &&
+                action.params &&
+                Array.isArray(action.params.choices) &&
+                action.params.choices;
+
+            if (choices && choices.length) {
+                choices.forEach(function (choice) {
+                    if (choice && choice.subContentId) {
+                        ids.add(choice.subContentId);
+                    }
+                });
+            }
+        }
+
+        if (!ids.size && action.subContentId) {
+            ids.add(action.subContentId);
+        }
+
+        return ids;
+    }
+
+    function getSubContentIdFromStatement(stmt) {
+        const definitionExtensions =
+            stmt &&
+            stmt.object &&
+            stmt.object.definition &&
+            stmt.object.definition.extensions;
+
+        const extensionSubContentId =
+            definitionExtensions && definitionExtensions[H5P_SUBCONTENT_ID];
+        if (extensionSubContentId) {
+            return extensionSubContentId;
+        }
+
+        const objectId = stmt && stmt.object && stmt.object.id;
+        if (typeof objectId !== 'string') {
+            return '';
+        }
+
+        const subContentMatch = objectId.match(/[?&]subContentId=([^&#]+)/);
+        if (!subContentMatch || !subContentMatch[1]) {
+            return '';
+        }
+
+        try {
+            return decodeURIComponent(subContentMatch[1]);
+        } catch (e) {
+            return subContentMatch[1];
+        }
+    }
+
+    function getCoursePresentationParamsFromIntegration() {
+        if (
+            typeof H5PIntegration === 'undefined' ||
+            !H5PIntegration ||
+            !H5PIntegration.contents
+        ) {
+            return null;
+        }
+
+        const contentKeys = Object.keys(H5PIntegration.contents);
+        for (let i = 0; i < contentKeys.length; i += 1) {
+            const content = H5PIntegration.contents[contentKeys[i]];
+            if (!content || !content.jsonContent) {
+                continue;
+            }
+
+            let parsed = content.jsonContent;
+            if (typeof parsed === 'string') {
+                try {
+                    parsed = JSON.parse(parsed);
+                } catch (e) {
+                    continue;
+                }
+            }
+
+            if (parsed && parsed.presentation && Array.isArray(parsed.presentation.slides)) {
+                return parsed;
+            }
+        }
+
+        return null;
+    }
+
+    function buildExpectedTasksBySlide() {
+        expectedTasksBySlide.clear();
+
+        const params = getCoursePresentationParamsFromIntegration();
+        if (!params || !params.presentation || !Array.isArray(params.presentation.slides)) {
+            return;
+        }
+
+        params.presentation.slides.forEach(function (slide, index) {
+            const slideNum = index + 1;
+            const taskIds = new Set();
+
+            if (!slide || !Array.isArray(slide.elements)) {
+                return;
+            }
+
+            slide.elements.forEach(function (element) {
+                const action = element && element.action;
+                if (!shouldTrackAction(action)) {
+                    return;
+                }
+                const expectedIds = collectExpectedSubContentIdsForAction(action);
+                expectedIds.forEach(function (id) {
+                    taskIds.add(id);
+                });
+            });
+
+            if (taskIds.size) {
+                expectedTasksBySlide.set(slideNum, taskIds);
+            }
+        });
+    }
 
     function getRequiredSlideNumbers() {
         const nums = [];
@@ -58,6 +215,14 @@ jQuery(document).ready(() => {
             return;
         }
         const done = required.every(function (n) {
+            const expectedForSlide = expectedTasksBySlide.get(n);
+            if (expectedForSlide && expectedForSlide.size) {
+                const answeredForSlide = answeredTasksBySlide.get(n);
+                return (
+                    answeredForSlide instanceof Set &&
+                    answeredForSlide.size >= expectedForSlide.size
+                );
+            }
             return answeredStrictSlides.has(n);
         });
         $(finishBtn).css('visibility', done ? 'visible' : 'hidden');
@@ -65,6 +230,7 @@ jQuery(document).ready(() => {
 
     function resetAnswerTracking() {
         answeredStrictSlides.clear();
+        answeredTasksBySlide.clear();
         syncFinishButtonVisibility();
     }
 
@@ -73,6 +239,8 @@ jQuery(document).ready(() => {
      * es true tras el primer arrastre. Solo el verbo xAPI "answered" implica Comprobar enviado
      * (o cierre real en Single Choice, etc.).
      */
+    buildExpectedTasksBySlide();
+
     if (typeof H5P !== 'undefined' && H5P.externalDispatcher) {
         H5P.externalDispatcher.on('xAPI', function (event) {
             const stmt = event.data && event.data.statement;
@@ -95,6 +263,18 @@ jQuery(document).ready(() => {
                 return;
             }
             answeredStrictSlides.add(slideNum);
+
+            const answeredSubContentId = getSubContentIdFromStatement(stmt);
+            if (answeredSubContentId) {
+                const expectedForSlide = expectedTasksBySlide.get(slideNum);
+                if (expectedForSlide && expectedForSlide.has(answeredSubContentId)) {
+                    if (!answeredTasksBySlide.has(slideNum)) {
+                        answeredTasksBySlide.set(slideNum, new Set());
+                    }
+                    answeredTasksBySlide.get(slideNum).add(answeredSubContentId);
+                }
+            }
+
             syncFinishButtonVisibility();
         });
     }
