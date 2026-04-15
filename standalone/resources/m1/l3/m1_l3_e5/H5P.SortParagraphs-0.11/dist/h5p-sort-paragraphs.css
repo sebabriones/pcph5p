@@ -249,8 +249,10 @@ div .h5p-sort-paragraphs .h5p-sort-paragraphs-paragraph .h5p-sort-paragraphs-but
 
 .h5p-sort-paragraphs .h5p-sort-paragraphs-separator {
     border-radius: .3em;
-    height: .4em;
-    margin: .4em 0;
+    /*height: .4em;
+    margin: .4em 0;*/
+    height: .3em; /*nuevo*/
+    margin: .15em 0; /*nuevo*/
     text-align: center;
     width: calc(100% - .5em);
     margin-left: auto;
