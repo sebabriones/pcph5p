@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Ordene los pasos del algoritmo que describe la secuencia del ciclo de procesamiento de datos de un computador. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.`;
+  const instructions = `Ordene los pasos del algoritmo que describe la secuencia del ciclo de procesamiento de datos de un computador.<br>Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

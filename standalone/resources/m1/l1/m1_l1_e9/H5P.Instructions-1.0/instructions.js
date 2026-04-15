@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Pensando en tu proceso formativo y futuro quehacer profesional, selecciona aquellas aseveraciones que dan cuenta de la importancia de la computación.`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

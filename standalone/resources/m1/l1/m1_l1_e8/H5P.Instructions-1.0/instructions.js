@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `¿Qué acciones podrías realizar para disminuir el impacto medioambiental de tu uso de la computación y/o sistemas computacionales? Selecciona las alternativas correctas.`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

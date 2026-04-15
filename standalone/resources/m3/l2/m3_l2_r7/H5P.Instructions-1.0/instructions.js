@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Selecciona las alternativas que contengan componentes fundamentales de Python.`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

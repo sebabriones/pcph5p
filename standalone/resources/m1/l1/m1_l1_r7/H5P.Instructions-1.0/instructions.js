@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Selecciona las opciones que incorporan medidas que permitan disminuir los efectos negativos de la computación en el desarrollo sostenible.`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

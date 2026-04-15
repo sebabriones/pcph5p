@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Tu notebook se pone lento cuando tienes muchas ventanas abiertas en el navegador.<br>Selecciona las alternativas correctas que indiquen dónde puede estar el problema.`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

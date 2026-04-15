@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `Selecciona al menos dos posibles aportes de la computación al desarrollo sostenible.`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

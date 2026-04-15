@@ -320,7 +320,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p>Escribe en la columna <strong>NÚMERO</strong> su equivalente a número decimal y escribe en la columna <strong>ASCII</strong> su equivalente en letras (símbolos).</p>"
+                                "text": "<p style='color:#062971;'>Escribe en la columna <strong>NÚMERO</strong> su equivalente a número decimal y escribe en la columna <strong>ASCII</strong> su equivalente en letras (símbolos).</p>"
                             },
                             "subContentId": "afb2bede-8717-409d-bb92-6c48c58f5895",
                             "metadata": {
@@ -510,7 +510,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>0100 0011</span></p>"
+                                "text": "<p style='text-align:center;'><span>0100 0011</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -537,7 +537,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>0100 0101</span></p>"
+                                "text": "<p style='text-align:center;'><span>0100 0101</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -564,7 +564,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center\"><span>0101 0010</span></p>"
+                                "text": "<p style='text-align:center;'><span>0101 0010</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",
@@ -591,7 +591,7 @@
                         "action": {
                             "library": "H5P.AdvancedText 1.1",
                             "params": {
-                                "text": "<p style=\"text-align:center;letter-spacing: 0.08em;\"><span>0100 1111</span></p>"
+                                "text": "<p style='text-align:center;letter-spacing: 0.08em;'><span>0100 1111</span></p>"
                             },
                             "metadata": {
                                 "contentType": "es",

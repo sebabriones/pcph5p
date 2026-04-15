@@ -1854,11 +1854,12 @@
     vertical-align: sub;
 }
 
-/*Modal con terminal python*/
+/*Amplía imágen en modal*/
 .h5p-course-presentation .h5p-popup-container {
     height: 100%;
 }
 
-.h5p-course-presentation .h5p-popup-container .h5p-popup-wrapper {
-    height: 100%;
+.h5p-course-presentation .h5p-popup-container .h5p-popup-wrapper .h5p-image {
+    height: auto !important;
+    width: 70% !important;
 }

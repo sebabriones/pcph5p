@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `De acuerdo a lo estudiado en la lección, identifica las áreas donde la legislación chilena regula y promueve el uso IA.`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

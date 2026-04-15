@@ -1,5 +1,5 @@
 jQuery(document).ready(() => {
-  const instructions = `¿Cuál de los siguientes enunciados corresponde a principios transversales de la Política Nacional de Inteligencia Artificial?`;
+  const instructions = `Selecciona las alternativas correctas de acuerdo al siguiente caso.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">
