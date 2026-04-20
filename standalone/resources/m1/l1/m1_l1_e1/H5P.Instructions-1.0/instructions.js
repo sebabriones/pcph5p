@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Clasifica el tipo de dispositivo electrónico digital arrastrando la definición al lugar que corresponda.`;
+  const instructions = `Clasifica el tipo de dispositivo electrónico digital arrastrando la definición al lugar que corresponda.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">
