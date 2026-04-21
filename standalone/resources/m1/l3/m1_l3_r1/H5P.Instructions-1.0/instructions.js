@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Arrastra las definiciones dentro del concepto que corresponda.`;
+  const instructions = `Arrastra las definiciones dentro del concepto que corresponda.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

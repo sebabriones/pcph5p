@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Marque el o los pasos del algoritmo que se pueden omitir de manera que el algoritmo funcionaría de todas formas.`;
+  const instructions = `Marque el o los pasos del algoritmo que se pueden omitir de manera que el algoritmo funcionaría de todas formas.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

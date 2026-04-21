@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `De cada algoritmo dado, determine el problema que logra resolver.`;
+  const instructions = `De cada algoritmo dado, determine el problema que logra resolver.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

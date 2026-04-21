@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Tome y arrastre uno de los términos al espacio faltante.`;
+  const instructions = `Tome y arrastre uno de los términos al espacio faltante.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

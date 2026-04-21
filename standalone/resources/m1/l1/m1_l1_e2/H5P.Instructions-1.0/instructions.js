@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Arrastra los componentes que son necesarios para formar un sistema computacional.`;
+  const instructions = `Arrastra los componentes que son necesarios para formar un sistema computacional.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

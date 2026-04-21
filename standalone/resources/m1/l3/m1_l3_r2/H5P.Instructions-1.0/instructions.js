@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Considera el siguiente algoritmo y selecciona si cada característica presentada se cumple o no en su estructura.`;
+  const instructions = `Considera el siguiente algoritmo y selecciona si cada característica presentada se cumple o no en su estructura.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

@@ -5,7 +5,7 @@
                 "elements": [
                     {
                         "x": 0,
-                        "y": 19.365770999757927,
+                        "y": 15.365770999757927,
                         "width": 52.19912854030501,
                         "height": 60.033890099249575,
                         "action": {
@@ -43,8 +43,8 @@
                         "solution": ""
                     },
                     {
-                        "x": 51.21568627450981,
-                        "y": 70.85838779956427,
+                        "x": 46.21568627450981,
+                        "y": 75.85838779956427,
                         "width": 22.713607594936715,
                         "height": 40,
                         "action": {
@@ -82,9 +82,9 @@
                         "solution": ""
                     },
                     {
-                        "x": 0,
-                        "y": 40.66811909949165,
-                        "width": 100,
+                        "x": 53,
+                        "y": 36.66811909949165,
+                        "width": 47,
                         "height": 59.331880900508345,
                         "action": {
                             "library": "H5P.Blanks 1.14",
@@ -96,7 +96,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Inténtalo de nuevo</strong><br>Asegúrate de seguir el orden de la tabla:<br>[H] [O] [L] [A] [M] [U] [N] [D] [O]<br> Verifica que cada letra esté compuesta por 8 dígitos (0 y 1) en dos grupos de 4 (ej: 0011 0011) y que no hayas confundido la columna de 'Decimal' con la de 'Binario'."
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong>"
                                     }
                                 ],
                                 "showSolutions": "Mostrar solución",
@@ -165,7 +171,7 @@
                     },
                     {
                         "x": 53.37690631808279,
-                        "y": 22.238925199709513,
+                        "y": 18.238925199709513,
                         "width": 43.57298474945534,
                         "height": 24.493,
                         "action": {

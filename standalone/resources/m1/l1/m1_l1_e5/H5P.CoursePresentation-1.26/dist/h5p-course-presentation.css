@@ -34,9 +34,11 @@
 }
 
 .h5p-course-presentation {
-    font-family: H5PDroidSans, sans-serif;
+    /*font-family: H5PDroidSans, sans-serif;
     color: #323232;
-    line-height: 1.25
+    line-height: 1.25*/
+    font-family: 'Poppins-regular';
+    line-height: 1;
 }
 
 .h5p-course-presentation h2 {
@@ -734,7 +736,8 @@
 
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-advanced-text,
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-link {
-    padding: 0
+    /*padding: 0*/
+    padding: .2em 0; /*nuevo*/
 }
 
 .h5p-course-presentation .h5p-element.h5p-transparent .h5p-element-inner.h5p-ct>.ct {

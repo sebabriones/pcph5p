@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Considerando la información de la tabla con el código ASCII, ¿qué números en base 10 y qué letras representa la siguiente cadena de bytes?`;
+  const instructions = `Considerando la información de la tabla con el código ASCII, ¿qué números en base 10 y qué letras representa la siguiente cadena de bytes?<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

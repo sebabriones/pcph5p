@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Lee atentamente los conceptos y relaciona cada elemento con su correspondiente par, verifica tus respuestas para asegurar que todas las asociaciones sean correctas.`;
+  const instructions = `Lee atentamente los conceptos y relaciona cada elemento con su correspondiente par, verifica tus respuestas para asegurar que todas las asociaciones sean correctas.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

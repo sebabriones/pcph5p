@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Seleccione la palabra Sí en aquellas sentencias que corresponden a algoritmos y la palabra NO para aquellas que no lo son.`;
+  const instructions = `Seleccione la palabra Sí en aquellas sentencias que corresponden a algoritmos y la palabra NO para aquellas que no lo son.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

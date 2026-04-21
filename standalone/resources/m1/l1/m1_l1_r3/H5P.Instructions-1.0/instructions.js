@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Arrastra los conceptos hacia los recuadros para mostrar correctamente el ciclo del procesamiento de las instrucciones dentro de un computador.`;
+  const instructions = `Arrastra los conceptos hacia los recuadros para mostrar correctamente el ciclo del procesamiento de las instrucciones dentro de un computador.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

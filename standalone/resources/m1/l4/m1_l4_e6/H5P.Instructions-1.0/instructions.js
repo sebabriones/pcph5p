@@ -1,6 +1,7 @@
 jQuery(document).ready(() => {
   const instructions = `Asocie cada paso del algoritmo en lenguaje natural con la ejecución del algoritmo.<br/>
-                        <strong>NOTA:</strong> El factorial de un número natural N es el producto de N con todos los números naturales menores que él, hasta 1. (Ej: 3! = 3•2•1)`;
+                        <strong>NOTA:</strong> El factorial de un número natural N es el producto de N con todos los números naturales menores que él, hasta 1. (Ej: 3! = 3•2•1)<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

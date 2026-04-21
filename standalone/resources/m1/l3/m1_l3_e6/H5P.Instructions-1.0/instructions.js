@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `<strong>Laberinto Blockly</strong><br>Ayuda al personaje (flecha) a llegar al punto B utilizando los bloques de la columna gris. Arrástralos hacia la zona blanca punteada para apilarlos de arriba abajo, siguiendo la lógica de pasos necesarios. Al finalizar, presiona 'INICIAR' para ver el resultado.`;
+  const instructions = `<strong>Laberinto Blockly</strong><br>Ayuda al personaje (flecha) a llegar al punto B utilizando los bloques de la columna gris. Arrástralos hacia la zona blanca punteada para apilarlos de arriba abajo, siguiendo la lógica de pasos necesarios. Al finalizar, presiona 'INICIAR' para ver el resultado.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Arrastra los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo, asegurandose de que el algoritmo adquiera el sentido más lógico posible para poder completar esta lección de aprendizaje.`;
+  const instructions = `Arrastra los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo, asegurandose de que el algoritmo adquiera el sentido más lógico posible para poder completar esta lección de aprendizaje.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

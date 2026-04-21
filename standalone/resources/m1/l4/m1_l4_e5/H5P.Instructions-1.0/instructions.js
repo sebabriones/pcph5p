@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Considere el siguiente algoritmo para lavarse las manos. Arrastre las palabras faltantes en los espacios en blanco.`;
+  const instructions = `Considere el siguiente algoritmo para lavarse las manos. Arrastre las palabras faltantes en los espacios en blanco.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

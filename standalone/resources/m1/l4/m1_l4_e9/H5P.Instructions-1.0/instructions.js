@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Arrastre los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo. Asegúrese de que el algoritmo para <strong>Determinar la edad actual de una persona</strong> adquiera el sentido más lógico posible.`;
+  const instructions = `Arrastre los pasos hacia los espacios vacíos del diagrama de flujo para poder completarlo. Asegúrese de que el algoritmo para <strong>Determinar la edad actual de una persona</strong> adquiera el sentido más lógico posible.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

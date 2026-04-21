@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Transcribe el texto a números del sistema decimal utilizando la tabla ASCII.`;
+  const instructions = `Utiliza la tabla ASCII para traducir la frase HOLA MUNDO a código binario.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Analice el siguiente algoritmo detectando errores e identificando opciones de modificaciones. De acuerdo a lo anterior, responda las preguntas seleccionando la alternativa correcta.`;
+  const instructions = `Analice el siguiente algoritmo detectando errores e identificando opciones de modificaciones. De acuerdo a lo anterior, responda las preguntas seleccionando la alternativa correcta.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

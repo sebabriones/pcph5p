@@ -17,7 +17,8 @@
   overflow: hidden;
   white-space: nowrap;
   /*width: 6em;*/
-  width: 44.5% !important; /*nuevo*/
+  /*width: 44.5% !important; /*nuevo*/
+  width: 100%;
 }
 .h5p-blanks .h5p-text-input:focus {
   outline: none;

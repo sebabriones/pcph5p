@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Resuelve el crucigrama de las características de un buen algoritmo escribiendo en cada casilla las letras que componen la palabra. Sigue las pistas para solucionarlo. Puedes escribir en el crucigrama o en las lineas punteadas. (No considerar tildes)`;
+  const instructions = `Resuelve el crucigrama de las características de un buen algoritmo escribiendo en cada casilla las letras que componen la palabra. Sigue las pistas para solucionarlo. Puedes escribir en el crucigrama o en las lineas punteadas. (No considerar tildes)<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

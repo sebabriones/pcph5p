@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Selecciona los sistemas que utilizan IA.`;
+  const instructions = `Selecciona los sistemas que utilizan IA.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

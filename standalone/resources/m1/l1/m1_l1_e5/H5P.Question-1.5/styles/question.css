@@ -147,13 +147,14 @@
 }
 
 .h5p-question-scorebar.h5p-question-visible {
-  width: 13em;
+  /*width: 13em;*/
+  width: 10em; /*nuevo*/
   max-width: calc(100% - 2em);
   /*margin: 0 0 1em 1em;*/
   margin: 0 0 0 1em; /*nuevo*/
-  padding-right: 0.5em;
+  /*padding-right: 0.5em;*/
   display: inline-block;
-  padding-left: 2em; /*nuevo*/
+  /*padding-left: 2em; /*nuevo*/
 }
 
 .h5p-question-scorebar.full-width {
@@ -168,12 +169,16 @@
 .h5p-question-feedback,
 .h5p-question-feedback.h5p-question-visible /*nuevo*/ {
   /*font-weight: bold;
-  color: #1a73d9;
+  color: #1a73d9;*/
+  font-family: 'Poppins-regular'; /*nuevo*/
+  color: #062971; /*nuevo*/
+  text-align: center;
   margin: 0 1em;
   max-height: 0;
-  opacity: 0;
-  transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);*/
-  display: none; /*nuevo*/
+  /*opacity: 0;*/
+  transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+  /*display: none; /*nuevo*/
+  line-height: 1.2em; /*nuevo*/
 }
 
 .h5p-question-feedback.h5p-question-visible {
@@ -190,12 +195,13 @@
 /*nuevo*/
 .h5p-question-scorebar.h5p-question-visible,
 .h5p-question-buttons.h5p-question-visible {
-  padding-top: 10em; /*nuevo*/
+  /*padding-top: 10em; /*nuevo*/
 }
 
 .h5p-question-visible .h5p-question-feedback-content.has-content {
   display: block;
-  margin-bottom: 0.8em;
+  /*margin-bottom: 0.8em;*/
+  margin: 0 1.5em 0.8em 0.5em; /*nuevo*/
 }
 
 .h5p-question-feedback-content-text {
@@ -215,7 +221,7 @@
 }
 .h5p-question-buttons.has-scorebar {
   /*width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
-  width: calc(100% - 17em - 1px); /*nuevo*/
+  width: calc(100% - 11em - 1px); /*nuevo*/
   margin-left: 0;
 }
 

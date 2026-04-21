@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Clasifica los elementos dentro de la categoría Hardware o Software, arrastrando cada concepto hacia el recuadro que corresponda.`;
+  const instructions = `Clasifica los elementos dentro de la categoría Hardware o Software, arrastrando cada concepto hacia el recuadro que corresponda.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

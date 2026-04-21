@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Ordene los pasos del algoritmo para que calcule el promedio de 3 números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.`;
+  const instructions = `Ordene los pasos del algoritmo para que calcule el promedio de 3 números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

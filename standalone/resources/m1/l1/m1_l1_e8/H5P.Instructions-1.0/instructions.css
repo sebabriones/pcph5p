@@ -155,3 +155,10 @@ a {
     background-color: var(--tabs-lite-color); 
     z-index: 0; 
 }
+
+/*Icono de full-screen para instrucciones*/
+.full-screen-icon::before {
+  font-family: 'H5P';
+  content: "\e88c";
+  font-size: 1.5em;
+}

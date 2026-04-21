@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Identifica a qué área de la sociedad actual corresponde el uso de la computación que se describe en cada una de las siguientes sentencias seleccionándolas en sus respectivos selectores.`;
+  const instructions = `Identifica a qué área de la sociedad actual corresponde el uso de la computación que se describe en cada una de las siguientes sentencias seleccionándolas en sus respectivos selectores.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Arrastra los pasos faltantes, ordenando de forma tal que el algoritmo permita resolver el problema dado.`;
+  const instructions = `Arrastra los pasos faltantes, ordenando de forma tal que el algoritmo permita resolver el problema dado.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

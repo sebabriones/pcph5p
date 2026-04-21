@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Para cada uno de los siguientes bytes determina el número en el sistema decimal y el carácter ASCII que le corresponde.`;
+  const instructions = `Para cada uno de los siguientes bytes determina el número en el sistema decimal y el carácter ASCII que le corresponde.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

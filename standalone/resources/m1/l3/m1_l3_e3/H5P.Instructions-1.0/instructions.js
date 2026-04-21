@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Ordene los pasos del algoritmo para que encuentre el número mayor de entre una lista de números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.  La entrada es una lista de números enteros, la salida esperada es le número mayor de la lista.`;
+  const instructions = `Ordene los pasos del algoritmo para que encuentre el número mayor de entre una lista de números. Tome y arrastre los términos para mover cada paso hacia arriba o abajo en el orden que crea correcto.  La entrada es una lista de números enteros, la salida esperada es le número mayor de la lista.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">

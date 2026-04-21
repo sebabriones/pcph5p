@@ -1,5 +1,6 @@
 jQuery(document).ready(() => {
-  const instructions = `Clasifique los siguientes algoritmos según su nombre (con base en el problema que resuelve) y forma de representación. Arrastre los conceptos correspondientes a cada columna según corresponda.`;
+  const instructions = `Clasifique los siguientes algoritmos según su nombre (con base en el problema que resuelve) y forma de representación. Arrastre los conceptos correspondientes a cada columna según corresponda.<br><br>
+                        Puedes activar el modo de pantalla completa haciendo clic en el icono <span class='full-screen-icon'></span>.`;
 
   /////////////////////////INTRO CON INSTRUCCIONES////////////////////////////
   $('body').prepend(`<div class="intro">
