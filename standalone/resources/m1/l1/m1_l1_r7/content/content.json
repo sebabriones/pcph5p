@@ -25,7 +25,7 @@
                                         "text": "<div>Asegurar el uso de sistemas computacionales, independiente de su potencial impacto a nivel medioambiental o en el desarrollo social y humano sostenible.</div>"
                                     },
                                     {
-                                        "correct": false,
+                                        "correct": true,
                                         "tipsAndFeedback": {
                                             "tip": "",
                                             "chosenFeedback": "",
@@ -34,7 +34,7 @@
                                         "text": "<div>Si se detectan efectos negativos en la preservación de recursos para generaciones actuales o futuras, implementar estrategias de reparación.</div>"
                                     },
                                     {
-                                        "correct": false,
+                                        "correct": true,
                                         "tipsAndFeedback": {
                                             "tip": "",
                                             "chosenFeedback": "",
