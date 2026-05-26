@@ -61,16 +61,7 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Establecer un espacio físico exclusivo para trabajar.</div>"
-                                    },
-                                    {
-                                        "correct": false,
-                                        "tipsAndFeedback": {
-                                            "tip": "",
-                                            "chosenFeedback": "",
-                                            "notChosenFeedback": ""
-                                        },
-                                        "text": "<div>Comprar una computadora más costosa para sentirse motivado.</div>"
+                                        "text": "<div>Gestionar el solapamiento de las tareas del hogar con la jornada laboral.</div>"
                                     },
                                     {
                                         "correct": true,
@@ -79,25 +70,7 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Definir horarios específicos para tareas domésticas.</div>"
-                                    },
-                                    {
-                                        "correct": false,
-                                        "tipsAndFeedback": {
-                                            "tip": "",
-                                            "chosenFeedback": "",
-                                            "notChosenFeedback": ""
-                                        },
-                                        "text": "<div>Pedir modalidad presencial en oficina y aumento de sueldo.</div>"
-                                    },
-                                    {
-                                        "correct": false,
-                                        "tipsAndFeedback": {
-                                            "tip": "",
-                                            "chosenFeedback": "",
-                                            "notChosenFeedback": ""
-                                        },
-                                        "text": "<div>Comprar ropa formal para sentirse más profesional.</div>"
+                                        "text": "<div>Definir los límites físicos del espacio de trabajo dentro de la casa.</div>"
                                     },
                                     {
                                         "correct": true,
@@ -106,13 +79,37 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Implementar técnicas para reducir el uso de redes sociales durante el trabajo.</div>"
+                                        "text": "<div>Identificar y mitigar los disparadores de distracción en redes sociales.</div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Negociar un aumento de sueldo con la empresa.</div>"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>Evaluar el rendimiento del hardware de la computadora.</div>"
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Incorrecto</strong> Recuerda que descomponer un problema no es pensar en \"qué hacer para solucionarlo\", sino fragmentar el problema original en sus causas o áreas más pequeñas."
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong> Has identificado con precisión los subproblemas. Descomponer un problema significa identificar qué componentes independientes lo integran."
                                     }
                                 ],
                                 "behaviour": {
