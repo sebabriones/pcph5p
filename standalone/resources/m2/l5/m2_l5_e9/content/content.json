@@ -5,7 +5,7 @@
                 "elements": [
                     {
                         "x": 3.2679738562091507,
-                        "y": 8.75884269280922,
+                        "y": 4.75884269280922,
                         "width": 92.5925925925926,
                         "height": 98.22251008103561,
                         "action": {
@@ -17,7 +17,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>Incorrecto.</strong> Para resolver este problema, recuerda que un algoritmo debe seguir una estructura lógica e incremental. No es posible asignar recursos o resolver conflictos sin antes haber recibido los datos de entrada y establecido los criterios de prioridad; de igual forma, la verificación de duplicados y la validación en tiempo real (las confirmaciones) deben ocurrir obligatoriamente antes de dar el proceso por cerrado, publicar el calendario final y registrar las métricas."
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>!Correcto¡</strong> as estructurado la secuencia de manera perfecta siguiendo el ciclo de vida lógico de un algoritmo eficiente. Al resolver este tipo de problemas bajo el enfoque del pensamiento computacional, es fundamental seguir este orden riguroso: primero se recopilan los datos de entrada y se preparan las reglas, luego se ejecuta el procesamiento (la asignación) y se verifican las restricciones del sistema, para finalmente aplicar filtros operativos en tiempo real y cerrar el ciclo guardando métricas que mejoren el rendimiento futuro."
                                     }
                                 ],
                                 "behaviour": {
