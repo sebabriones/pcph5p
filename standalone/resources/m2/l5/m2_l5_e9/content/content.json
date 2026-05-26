@@ -23,7 +23,7 @@
                                     {
                                         "from": 100,
                                         "to": 100,
-                                        "feedback": "<strong>!Correcto¡</strong> as estructurado la secuencia de manera perfecta siguiendo el ciclo de vida lógico de un algoritmo eficiente. Al resolver este tipo de problemas bajo el enfoque del pensamiento computacional, es fundamental seguir este orden riguroso: primero se recopilan los datos de entrada y se preparan las reglas, luego se ejecuta el procesamiento (la asignación) y se verifican las restricciones del sistema, para finalmente aplicar filtros operativos en tiempo real y cerrar el ciclo guardando métricas que mejoren el rendimiento futuro."
+                                        "feedback": "<strong>¡Correcto!</strong> as estructurado la secuencia de manera perfecta siguiendo el ciclo de vida lógico de un algoritmo eficiente. Al resolver este tipo de problemas bajo el enfoque del pensamiento computacional, es fundamental seguir este orden riguroso: primero se recopilan los datos de entrada y se preparan las reglas, luego se ejecuta el procesamiento (la asignación) y se verifican las restricciones del sistema, para finalmente aplicar filtros operativos en tiempo real y cerrar el ciclo guardando métricas que mejoren el rendimiento futuro."
                                     }
                                 ],
                                 "behaviour": {
