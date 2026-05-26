@@ -229,7 +229,8 @@
                     "width": 29.9,
                     "height": 3.95,
                     "correctElements": [
-                        "1"
+                        "1",
+                        "2"
                     ],
                     "showLabel": false,
                     "backgroundOpacity": 100,
