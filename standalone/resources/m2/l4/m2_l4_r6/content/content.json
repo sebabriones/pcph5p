@@ -61,7 +61,7 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Gestionar el solapamiento de las tareas del hogar con la jornada laboral.</div>"
+                                        "text": "<div>Falta de distribución equitativa de las tareas del hogar.</div>"
                                     },
                                     {
                                         "correct": true,
@@ -70,7 +70,7 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Definir los límites físicos del espacio de trabajo dentro de la casa.</div>"
+                                        "text": "<div>Interrupciones constantes por notificaciones y mensajes de carácter social.</div>"
                                     },
                                     {
                                         "correct": true,
@@ -79,7 +79,7 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Identificar y mitigar los disparadores de distracción en redes sociales.</div>"
+                                        "text": "<div>Exceso de estímulos distractores en el entorno físico de trabajo.</div>"
                                     },
                                     {
                                         "correct": false,
@@ -88,7 +88,7 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Negociar un aumento de sueldo con la empresa.</div>"
+                                        "text": "<div>Falta de claridad por parte de la jefatura respecto a las metas u objetivos semanales.</div>"
                                     },
                                     {
                                         "correct": false,
@@ -97,14 +97,14 @@
                                             "chosenFeedback": "",
                                             "notChosenFeedback": ""
                                         },
-                                        "text": "<div>Evaluar el rendimiento del hardware de la computadora.</div>"
+                                        "text": "<div>La silla y escritorio de trabajo son muy viejos.</div>"
                                     }
                                 ],
                                 "overallFeedback": [
                                     {
                                         "from": 0,
                                         "to": 99,
-                                        "feedback": "<strong>Incorrecto</strong> Recuerda que descomponer un problema no es pensar en \"qué hacer para solucionarlo\", sino fragmentar el problema original en sus causas o áreas más pequeñas."
+                                        "feedback": "Recuerda que descomponer un problema no es pensar en \"qué hacer para solucionarlo\", sino fragmentar el problema original en sus causas o áreas más pequeñas."
                                     },
                                     {
                                         "from": 100,
