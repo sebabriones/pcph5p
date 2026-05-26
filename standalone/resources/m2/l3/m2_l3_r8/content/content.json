@@ -363,7 +363,13 @@
                 "overallFeedback": [
                     {
                         "from": 0,
-                        "to": 100
+                        "to": 99,
+                        "feedback": "<strong>¡Casi lo tienes!</strong> Observa atentamente las dos primeras figuras de la primera y la segunda fila. ¿Qué pasa si pones una figura justo encima de la otra?"
+                    },
+                    {
+                        "from": 100,
+                        "to": 100,
+                        "feedback": "<strong>¡Correcto! Has descubierto el patrón.</strong> La lógica de este ejercicio se basa en la superposición: al combinar la primera figura con la segunda en cada fila, obtienes la tercera figura."
                     }
                 ],
                 "behaviour": {
@@ -763,7 +769,13 @@
                 "overallFeedback": [
                     {
                         "from": 0,
-                        "to": 100
+                        "to": 99,
+                        "feedback": "<strong>¡Casi lo tienes!</strong> No te fijes en la cantidad de elementos, sino en su orientación. Sigue el camino de las flechas de las primeras dos filas y encontrarás la respuesta de la tercera."
+                    },
+                    {
+                        "from": 100,
+                        "to": 100,
+                        "feedback": "<strong>¡Correcto!</strong> Has descubierto que las flechas siguen el movimiento de las agujas del reloj. Al rotar la flecha hacia abajo 45° a la derecha, la dirección correcta es hacia abajo a la izquierda."
                     }
                 ],
                 "behaviour": {
