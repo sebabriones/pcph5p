@@ -36,28 +36,6 @@
             {
                 "images": [
                     {
-                        "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_r4/content/images/image-Mk4I4Jom.png",
-                        "mime": "image/png",
-                        "copyright": {
-                            "license": "U"
-                        },
-                        "width": 110,
-                        "height": 83
-                    }
-                ],
-                "correctImage": {
-                    "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_r4/content/images/image-v2GjaRea.png",
-                    "mime": "image/png",
-                    "copyright": {
-                        "license": "U"
-                    },
-                    "width": 110,
-                    "height": 83
-                }
-            },
-            {
-                "images": [
-                    {
                         "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_r4/content/images/image-OvlUydbp.png",
                         "mime": "image/png",
                         "copyright": {
@@ -78,6 +56,28 @@
                 ],
                 "correctImage": {
                     "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_r4/content/images/image-xpS3U8MC.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 110,
+                    "height": 83
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_r4/content/images/image-Mk4I4Jom.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 110,
+                        "height": 83
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_r4/content/images/image-v2GjaRea.png",
                     "mime": "image/png",
                     "copyright": {
                         "license": "U"
