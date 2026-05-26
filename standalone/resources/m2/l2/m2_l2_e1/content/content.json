@@ -718,7 +718,7 @@
                                     "cancelLabel": "Cancel",
                                     "confirmLabel": "Confirm"
                                 },
-                                "question": "<p>D. Recursos disponibles ¿Qué recurso <strong>disponible</strong> puede ayudar a solucionar el problema?</p>"
+                                "question": "<p>D. Recursos disponibles ¿Qué recurso disponible puede ayudar a solucionar el problema?</p>"
                             },
                             "subContentId": "267ddf60-e2b7-4fdb-a8d2-9ecb80a463ba",
                             "metadata": {
