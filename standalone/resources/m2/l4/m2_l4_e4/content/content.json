@@ -36,28 +36,6 @@
             {
                 "images": [
                     {
-                        "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e4/content/images/image-GETVYWim.png",
-                        "mime": "image/png",
-                        "copyright": {
-                            "license": "U"
-                        },
-                        "width": 110,
-                        "height": 83
-                    }
-                ],
-                "correctImage": {
-                    "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e4/content/images/image-m4dnln42.png",
-                    "mime": "image/png",
-                    "copyright": {
-                        "license": "U"
-                    },
-                    "width": 110,
-                    "height": 83
-                }
-            },
-            {
-                "images": [
-                    {
                         "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e4/content/images/image-6VWs5PCm.png",
                         "mime": "image/png",
                         "copyright": {
@@ -78,6 +56,28 @@
                 ],
                 "correctImage": {
                     "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e4/content/images/image-MZHvINWW.png",
+                    "mime": "image/png",
+                    "copyright": {
+                        "license": "U"
+                    },
+                    "width": 110,
+                    "height": 83
+                }
+            },
+            {
+                "images": [
+                    {
+                        "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e4/content/images/image-GETVYWim.png",
+                        "mime": "image/png",
+                        "copyright": {
+                            "license": "U"
+                        },
+                        "width": 110,
+                        "height": 83
+                    }
+                ],
+                "correctImage": {
+                    "path": "http://localhost/pcph5p/standalone/resources/m2/l4/m2_l4_e4/content/images/image-m4dnln42.png",
                     "mime": "image/png",
                     "copyright": {
                         "license": "U"
