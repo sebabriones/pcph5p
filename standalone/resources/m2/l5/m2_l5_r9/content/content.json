@@ -341,7 +341,8 @@
                                                 "width": 50.1,
                                                 "height": 1.9,
                                                 "correctElements": [
-                                                    "4"
+                                                    "4",
+                                                    "5"
                                                 ],
                                                 "showLabel": false,
                                                 "backgroundOpacity": 100,
@@ -361,7 +362,8 @@
                                                 "width": 50.1,
                                                 "height": 1.9,
                                                 "correctElements": [
-                                                    "5"
+                                                    "5",
+                                                    "4"
                                                 ],
                                                 "showLabel": false,
                                                 "backgroundOpacity": 100,
