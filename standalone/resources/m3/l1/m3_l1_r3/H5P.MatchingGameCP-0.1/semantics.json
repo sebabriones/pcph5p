@@ -1,0 +1,101 @@
+[
+    {
+      "name": "gameSettings",
+      "type": "group",
+      "label": "Configuración del juego",
+      "fields": [
+      ]
+    },
+    {
+      "name": "pairs",
+      "type": "list",
+      "label": "Terminos",
+      "entity": "definicion",
+      "field": {
+        "name": "definition",
+        "type": "group",
+        "label": "Configuración del termino",
+        "fields": [
+          {
+            "name": "answer",
+            "type": "text",
+            "label": "Respuesta correcta",
+            "description": "La respuesta correcta para esta definición"
+          },
+          {
+            "name": "definition",
+            "type": "text",
+            "label": "Definición/Pregunta",
+            "widget": "textarea",
+            "description": "La pregunta o definición que aparecerá"
+          }
+        ]
+      },
+      "default": [
+        {"answer": "Aquí va la respuesta", "definition": "Aquí va la definición"}
+      ]
+    },
+    {
+      "name": "behaviour",
+      "type": "group",
+      "label": "Behavioural settings",
+      "importance": "low",
+      "optional": true,
+      "fields": [
+        {
+          "name": "enableRetry",
+          "type": "boolean",
+          "label": "Enable \"Retry\" button",
+          "importance": "low",
+          "default": true,
+          "optional": true
+        },
+        {
+          "name": "enableSolutionButton",
+          "type": "boolean",
+          "label": "Enable \"Show Solution\" button",
+          "importance": "low",
+          "default": false,
+          "optional": true
+        },
+        {
+          "name": "enableScoreText",
+          "type": "boolean",
+          "label": "Enable \"Score Text\"",
+          "importance": "low",
+          "default": false,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "l10n",
+      "type": "group",
+      "label": "Localize Matching Game",
+      "importance": "low",
+      "common": true,
+      "fields": [
+        {
+          "name": "checkAnswerButtonLabel",
+          "type": "text",
+          "label": "Label for the \"Check answer\" button",
+          "importance": "low",
+          "default": "Comprobar"
+        },
+        {
+          "name": "showSolutionButtonLabel",
+          "type": "text",
+          "label": "Label for the \"Show solution\" button",
+          "importance": "low",
+          "default": "Mostrar solución"
+        },
+        {
+          "name": "retryButtonLabel",
+          "type": "text",
+          "label": "Label for the \"Retry\" button",
+          "importance": "low",
+          "default": "Intentar de nuevo"
+        }
+      ]
+    }
+  ]

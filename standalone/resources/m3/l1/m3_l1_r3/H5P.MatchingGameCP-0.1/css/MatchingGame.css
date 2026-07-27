@@ -1,0 +1,59 @@
+.h5p-matching-game {
+    padding: 1em;
+}
+
+.matching-game-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Centra las columnas verticalmente */
+    position: relative; /* Contenedor para posicionar el SVG */
+}
+
+.column {
+    width: 45%;
+}
+
+.item {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: all 0.2s;
+}
+
+/* Estilos de interacción */
+.item:hover {
+    background-color: #eef;
+}
+
+.item.selected {
+    background-color: #007bff;
+}
+
+.item.correct {
+    background-color: #d4edda;
+    border-color: #155724;
+    cursor: default;
+}
+.item.incorrect {
+    background-color: #edd4d4;
+    border-color: #721C24;
+    cursor: default;
+}
+
+/* Estilo del SVG para las líneas - Cambiado de #lines-svg a .lines-svg */
+.lines-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite hacer clic a través de la línea */
+}
+
+.connection-line {
+    stroke: #007bff; /* Color de la línea */
+    stroke-width: 2; /* Grosor de la línea */
+    transition: stroke-width 0.3s;
+}

@@ -202,9 +202,9 @@
                 <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_e6">Ejercicio 6</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_e7">Ejercicio 7</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_e8">Ejercicio 8</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r1">Refuerzo 1 (Pregunta abierta en canvas)</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r2">Refuerzo 2 (Pregunta abierta en canvas)</a></li>
-                <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r3">Refuerzo 3 (Pregunta abierta en canvas)</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r1">Refuerzo 1</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r2">Refuerzo 2</a></li>
+                <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r3">Refuerzo 3</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r4">Refuerzo 4</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r5">Refuerzo 5</a></li>
                 <li><a href="./standalone/h5p.php?path=resources/m3/l1/m3_l1_r6">Refuerzo 6</a></li>
