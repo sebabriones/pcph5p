@@ -17,7 +17,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>¡Casi!</strong> Revisa tu secuencia considerando esta lógica de pasos: <ol><li><strong>Para escribir:</strong> Primero debes hacer clic en la casilla vacía antes de teclear.</li><li><strong>Para adjuntar:</strong> La ruta lógica es: presionar el ícono de adjuntar → abrir la carpeta → elegir el informe → confirmar el archivo.</li></ol><strong>Pista:</strong> Asegúrate de no intentar seleccionar el informe antes de abrir la carpeta que lo contiene. ¡Inténtalo de nuevo!"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong> Ordenaste los pasos con total lógica. Lo que acabas de hacer se llama construir un <strong>algoritmo</strong>: una serie de pasos ordenados sin omitir detalles. Las computadoras necesitan esta precisión porque no pueden adivinar intenciones; por eso no podías seleccionar un archivo sin antes abrir su carpeta, ni escribir un correo sin hacer clic en la casilla correspondiente."
                                     }
                                 ],
                                 "behaviour": {

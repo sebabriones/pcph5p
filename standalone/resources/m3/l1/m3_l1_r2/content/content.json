@@ -17,7 +17,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>¡Casi!</strong> Recuerda que para guardar en un lugar específico debes seguir una ruta lógica de macro a micro:<ol><li><strong>Menú:</strong> Abre Archivo → Guardar como → Examinar.</li><li><strong>Ruta:</strong> Selecciona la ubicación general (Escritorio) antes de buscar la carpeta específica (Informes).</li><li><strong>Cierre:</strong> Confirma la acción al final con el botón Guardar.</li></ol><strong>Pista:</strong> Revisa no haber intentado seleccionar la carpeta «Informes» antes de entrar al «Escritorio». ¡Inténtalo de nuevo!"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong> Ordenaste la secuencia a la perfección. Aplicaste con éxito la jerarquía de archivos: un equipo no puede entrar a una carpeta específica sin antes pasar por la ubicación que la contiene (Escritorio). Esta forma de dar instrucciones paso a paso es la base de la gestión de archivos y la programación estructurada."
                                     }
                                 ],
                                 "behaviour": {

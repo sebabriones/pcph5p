@@ -17,7 +17,13 @@
                                 "overallFeedback": [
                                     {
                                         "from": 0,
-                                        "to": 100
+                                        "to": 99,
+                                        "feedback": "<strong>¡Casi!</strong> Recuerda que para aplicar una función en Excel hay que seguir un orden lógico:<ol><li><strong>Ubicación:</strong> Seleccionar la celda vacía donde quieres el resultado.</li><li><strong>Herramienta:</strong> Ir al menú Fórmulas → Autosuma.</li><li><strong>Ajuste y confirmación:</strong> Asegurar que el rango de números sea el correcto antes de presionar Enter para calcular.</li></ol><strong>Pista:</strong> Revisa que el botón Enter sea la instrucción final, ya que es la que ejecuta y cierra la fórmula. ¡Inténtalo de nuevo!"
+                                    },
+                                    {
+                                        "from": 100,
+                                        "to": 100,
+                                        "feedback": "<strong>¡Correcto!</strong> Diste las instrucciones perfectas. En Excel, el orden de las acciones es fundamental: primero defines el destino del resultado (celda vacía), luego activas la operación (Autosuma), verificas el rango de datos y finalmente ejecutas (Enter). Saber explicar este paso a paso demuestra un buen dominio de la herramienta y del pensamiento lógico."
                                     }
                                 ],
                                 "behaviour": {
