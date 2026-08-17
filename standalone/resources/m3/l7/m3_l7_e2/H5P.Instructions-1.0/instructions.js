@@ -2,9 +2,18 @@ jQuery(document).ready(() => {
   const instructions = `En la lección anterior, aprendiste a categorizar la asistencia de los miembros de un grupo de lectura según el número de veces que han asistido.  Ahora, el escenario es más dinámico, pues tendrás que actualizar listas, validar la asistencia mínima y realizar nuevos cálculos.<br><br>
                         Escribe un programa que permita:
                         <ol type="a" style="text-align:left;margin-top:0.5em;">
-                          <li style="list-style-position: inside;">Agregar un nuevo miembro al grupo de lectura.</li>
-                          <li style="list-style-position: inside;">Registra el número de asistencias  del nuevo miembro.</li>
-                          <li style="list-style-position: inside;">Mostrar el porcentaje de personas del grupo que cumple con el mínimo de asistencia (3 asistencias).</li>
+                          <li style="list-style-position: inside;">Agregar un solo nuevo miembro a la lista del grupo de lectura solicitando su nombre.</li>
+                          <li style="list-style-position: inside;">Solicitar el número de asistencias de este nuevo miembro.</li>
+                          <li style="list-style-position: inside;">Agregar el número de asistencias de este nuevo miembro a la lista “asistencias”.</li>
+                          <li style="list-style-position: inside;">Calcular y mostrar el porcentaje de personas del grupo completo que cumple con el mínimo de 3 asistencias.</li>
+                          <li style="list-style-position: inside;">
+                            Mostrar:
+                            <ul style="text-align:left;">
+                              <li type="disc" style="list-style-position: inside;">El nuevo nombre del miembro del grupo de lectura.</li>
+                              <li type="disc" style="list-style-position: inside;">El número de asistencias del nuevo miembro.</li>
+                              <li type="disc" style="list-style-position: inside;">El porcentaje total de miembros que cumple con el umbral de 3 asistencias.</li>
+                            </ul>
+                          </li>
                         </ol>
                         <strong>Pista: </strong>Si el nuevo integrante es Lucas y ha asistido 2 veces, el código debería mostrar esta salida:<br>
                         <img src="resources/m3/l7/m3_l7_e2/content/images/m3l7e2.png" alt="image" width="30%" style="margin: 2% 35%;"><br>
