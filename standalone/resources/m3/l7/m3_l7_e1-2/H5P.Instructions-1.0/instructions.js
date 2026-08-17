@@ -6,6 +6,7 @@ jQuery(document).ready(() => {
                           <li style="list-style-position: inside;">Solicitar al usuario que ingrese el presupuesto máximo.</li>
                           <li style="list-style-position: inside;">Indicar si el total supera o no ese presupuesto.</li>
                         </ol>
+                        <strong>Nota: </strong>Previo a esta actividad encontrará el ítem "mil_productos.csv", archivo necesario para su solución.<br>
                         <strong>Botones Terminal Python:</strong>
                         <ul style="text-align:left;">
                           <li style="list-style-position: inside;">▶️ Ejecutar: Ejecuta el código.</li>

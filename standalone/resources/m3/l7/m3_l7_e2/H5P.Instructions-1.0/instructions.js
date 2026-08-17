@@ -8,6 +8,15 @@ jQuery(document).ready(() => {
                         </ol>
                         <strong>Pista: </strong>Si el nuevo integrante es Lucas y ha asistido 2 veces, el código debería mostrar esta salida:<br>
                         <img src="resources/m3/l7/m3_l7_e2/content/images/m3l7e2.png" alt="image" width="30%" style="margin: 2% 35%;"><br>
+                        <strong>Nota: </strong>Puede revisar las instrucciones de la actividad previa (Modulo 3 - Lección 6 - Ejercicio 2) para tener un mejor contexto
+                        <details>
+                          <summary>Instrucciones M3L6E2</summary>
+                          <p style="text-indent: 2em;">En un grupo de lectura se tiene el siguiente registro de asistencia:</p><br>
+                          <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-1.png" alt="image" width="30%" style="margin: 2% 40%;"><br>
+                          <p style="text-indent: 2em;">El siguiente código pretende categorizar con baja asistencia a quienes han asistido en menos de 3 ocasiones y con buena asistencia a quienes han asistido 3 o más veces al grupo de lectura:</p><br>
+                          <img src="resources/m3/l6/m3_l6_e2/content/images/m3l6e2-2.png" alt="image" width="60%" style="margin: 2% 25%;">
+                        </details>
+                        <br>
                         <strong>Botones Terminal Python:</strong>
                         <ul style="text-align:left;">
                           <li style="list-style-position: inside;">▶️ Ejecutar: Ejecuta el código.</li>
